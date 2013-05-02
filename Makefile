@@ -2,7 +2,7 @@ CC = gcc
 CFLAGS = -Wall -pedantic -std=c99
 EXEC = crawler
 LDFLAGS = 
-TEST = ./test.sh
+TEST = ./crawler_test.sh
 
 # my project details
 OBJS = crawler.o hash.o html.o
@@ -23,8 +23,10 @@ clean:
 	rm -f ./prs
 	rm -f *.o
 	rm -f *.gch
-	echo "done"
 test:
 	./crawler
+cleanlog:
+	rm -f *log.*
+	rm -f *.html.*
 
 

@@ -136,7 +136,7 @@ void validateArgs(int argc, char* argv[]){
 
   // check for correct number of parameters first
   if (argc != 4){
-    fprintf(stderr, "Error: insufficient arguments. 3 required, you provided %d \n", argc);
+    fprintf(stderr, "Error: insufficient arguments. 3 required, you provided %d \n", argc - 1);
     printf("Usage: ./crawler [SEED_URL] [TARGET_DIR WHERE TO PUT DATA] [CRAWLING_DEPTH] \n");
 
     exit(1);
@@ -167,7 +167,7 @@ void validateArgs(int argc, char* argv[]){
 
   // an exit status of not 0 means there was an error
   if (testResult != 0){
-    fprintf(stderr, "Error: The URL %s was invalid. Please enter a valid URL\n", argv[1]);
+    fprintf(stderr, "Error: The URL %s was invalid. Please enter a valid URL. \n", argv[1]);
     printf("Usage: ./crawler [SEED_URL] [TARGET_DIR WHERE TO PUT DATA] [CRAWLING_DEPTH] \n");
 
     exit(1);

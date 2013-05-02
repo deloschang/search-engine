@@ -18,11 +18,16 @@
 */
 
 #include <stdio.h>
+#include <string.h>
 #include <stdlib.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <unistd.h>
 #include "crawler.h"
 #include "html.h"
 #include "hash.h"
 #include "header.h"
+
 
 // Define the dict structure that holds the hash table 
 // and the double linked list of DNODES. Each DNODE holds
@@ -119,7 +124,13 @@ char *url_list[MAX_URL_PER_PAGE];
 */
 
 
-void validateArgs(int argc, char** argv){
+// This function validates the arguments provided by the user.
+// If there is an incorrect input, it will print an error message,
+// followed by a usage message (so the user can correct his/her input)
+void validateArgs(int argc, char* argv[]){
+  // struct for checking whether directory exists
+  struct stat s;
+
   // check for correct number of parameters first
   if (argc != 4){
     fprintf(stderr, "Error: insufficient arguments. 3 required, you provided %d \n", argc);
@@ -138,11 +149,17 @@ void validateArgs(int argc, char** argv){
     exit(1);
   }
 
-  // IF target_directory does not exist OR depth exceeds max_depth THEN
+  // Validate that directory exists
+  if ( stat(argv[2], &s) != 0){
+    fprintf(stderr, "Error: The dir argument %s was not found.  Please enter valid directory \n", argv[2]);
+    printf("Usage: ./crawler [SEED_URL] [TARGET_DIR WHERE TO PUT DATA] [CRAWLING_DEPTH] \n");
+
+    exit(1);
+  }
 
 }
 
-int main(int argc, char** argv) {
+int main(int argc, char* argv[]) {
 
   // Input command processing logic
   //(1) Command line processing on arguments

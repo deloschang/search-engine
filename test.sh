@@ -1,6 +1,6 @@
-echo '\n'
-echo '............. TESTING CRAWLER ..........'
-echo '\n'
+echo ""
+echo '............. TESTING CRAWLER ..............'
+echo ""
 
 # test insufficient arguments
 ./crawler
@@ -10,3 +10,6 @@ echo '\n'
 
 # test sufficient but incorrect depth (too low)
 ./crawler www.cs.dartmouth.edu ./data/ -1 
+
+# test sufficient but invalid directory (doesn't exist)
+./crawler www.cs.dartmouth.edu ./nonexistent/ 1 

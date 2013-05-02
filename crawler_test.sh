@@ -21,6 +21,14 @@ echo ""
 
 j=0
 
+
+### TEST FORMAT ###
+# Test Name: title of the test
+# Test Expected: expected output of the test 
+# Test Command:  actual command of the test
+
+
+
 # test insufficient arguments
 testName[j]="$j. testing insufficient arguments (0)"
 testExpected[j]="Expected Error: insufficient arguments. 3 required, you provided 0."
@@ -42,8 +50,14 @@ let j++
 
 # test sufficient args but invalid directory (doesn't exist)
 testName[j]="$j. testing invalid directory"
-testExpected[j]="Expected Error: The dir argument ./nonexistent/ was not found.  Please enter valid directory."
+testExpected[j]="Expected Error: The dir argument ./nonexistent/ was not found.  Please enter writable and valid directory."
 testCmd[j]="./crawler www.cs.dartmouth.edu ./nonexistent/ 1"
+let j++
+
+# test sufficient args but directory not writable
+testName[j]="$j. testing unwritable directory"
+testExpected[j]="Expected Error: The dir argument ./unwritable/ was not writable.  Please enter writable and valid directory."
+testCmd[j]="./crawler www.cs.dartmouth.edu ./unwritable/ 1"
 let j++
 
 # test invalid URL
@@ -69,6 +83,7 @@ while (($iterate < $j)); do
   echo ${testName[iterate]} >> "$crawler_testlog"
   echo ${testExpected[iterate]} >> "$crawler_testlog"
 
+  echo -n "Output -->"
   ${testCmd[iterate]} >> "$crawler_testlog" # goes to STDOUT too
   
   # increment and test next

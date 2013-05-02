@@ -154,7 +154,15 @@ void validateArgs(int argc, char* argv[]){
 
   // Validate that directory exists
   if ( stat(argv[2], &s) != 0){
-    fprintf(stderr, "Error: The dir argument %s was not found.  Please enter valid directory. \n", argv[2]);
+    fprintf(stderr, "Error: The dir argument %s was not found.  Please enter writable and valid directory. \n", argv[2]);
+    printf("Usage: ./crawler [SEED_URL] [TARGET_DIR WHERE TO PUT DATA] [CRAWLING_DEPTH] \n");
+
+    exit(1);
+  }
+
+  // Validate that directory is writable
+  if ( stat(argv[2], &s) != 0){
+    fprintf(stderr, "Error: The dir argument %s was not writable.  Please enter writable and valid directory. \n", argv[2]);
     printf("Usage: ./crawler [SEED_URL] [TARGET_DIR WHERE TO PUT DATA] [CRAWLING_DEPTH] \n");
 
     exit(1);

@@ -132,7 +132,9 @@ void validateArgs(int argc, char* argv[]){
   struct stat s;
   // test URL with default correct exit status
   int testResult = 0;
+  int writableResult = 0;
   char testURL[MAX_URL_LENGTH + 10]; // max URL length and space for the "wget -q"
+  char *writableTest = NULL; // dynamically allocate to prevent overflow
 
   // check for correct number of parameters first
   if (argc != 4){
@@ -161,12 +163,24 @@ void validateArgs(int argc, char* argv[]){
   }
 
   // Validate that directory is writable
-  if ( stat(argv[2], &s) != 0){
+  // Allocate memory to prevent overflow
+  size_t len1 = strlen("if [ -w "), len2 = strlen(argv[2]), len3 = strlen(" ] ; then exit 0 ; else exit 1 ; fi");
+  writableTest = (char*) malloc(len1 + len2 + len3 + 1);
+
+  memcpy(writableTest, "if [ -w ", len1);
+  memcpy(writableTest+len1, argv[2], len2);
+  memcpy(writableTest+len2, " ] ; then exit 0 ; else exit 1 ; fi", len3+1);
+
+  writableResult = system(writableTest);
+
+  if ( writableResult != 0){
     fprintf(stderr, "Error: The dir argument %s was not writable.  Please enter writable and valid directory. \n", argv[2]);
     printf("Usage: ./crawler [SEED_URL] [TARGET_DIR WHERE TO PUT DATA] [CRAWLING_DEPTH] \n");
 
     exit(1);
   }
+
+
 
   // Validate that URL exists
   strcpy(testURL, "wget -qt2 " );
@@ -180,10 +194,6 @@ void validateArgs(int argc, char* argv[]){
 
     exit(1);
   }
-
-  // inputs are correct
-  printf("Inputs correct.\n");
-
 }
 
 int main(int argc, char* argv[]) {

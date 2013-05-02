@@ -68,6 +68,7 @@ let j++
 
 # correct input 
 testName[j]="$j. testing correct input arguments"
+testExpected[j]="Expected: All arguments expected to be correct"
 testCmd[j]="./crawler www.cs.dartmouth.edu ./data/ 1"
 let j++
 
@@ -76,15 +77,17 @@ while (($iterate < $j)); do
 
   echo ""
 
-  ## send test result to the log
-  echo ${testName[iterate]}  # test to STDOUT for easy viewing
+  # test to STDOUT for easy viewing
+  echo ${testName[iterate]}  
   echo ${testExpected[iterate]} 
+  ${testCmd[iterate]}
 
+
+  ## send test result to the log
   echo ${testName[iterate]} >> "$crawler_testlog"
   echo ${testExpected[iterate]} >> "$crawler_testlog"
-
-  echo -n "Output -->"
-  ${testCmd[iterate]} >> "$crawler_testlog" # goes to STDOUT too
+  echo -n "Output -->" >> "$crawler_testlog"
+  { ${testCmd[iterate]} >> "$crawler_testlog";} 2>/dev/null # suppress
   
   # increment and test next
   let iterate++

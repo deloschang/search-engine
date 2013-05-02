@@ -23,7 +23,8 @@ clean:
 	rm -f ./prs
 	rm -f *.o
 	rm -f *.gch
-script:
+	echo "done"
+test:
 	./crawler
 
 

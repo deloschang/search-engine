@@ -130,6 +130,9 @@ char *url_list[MAX_URL_PER_PAGE];
 void validateArgs(int argc, char* argv[]){
   // struct for checking whether directory exists
   struct stat s;
+  // test URL with default correct exit status
+  int testResult = 0;
+  char testURL[MAX_URL_LENGTH + 10]; // max URL length and space for the "wget -q"
 
   // check for correct number of parameters first
   if (argc != 4){
@@ -151,11 +154,28 @@ void validateArgs(int argc, char* argv[]){
 
   // Validate that directory exists
   if ( stat(argv[2], &s) != 0){
-    fprintf(stderr, "Error: The dir argument %s was not found.  Please enter valid directory \n", argv[2]);
+    fprintf(stderr, "Error: The dir argument %s was not found.  Please enter valid directory. \n", argv[2]);
     printf("Usage: ./crawler [SEED_URL] [TARGET_DIR WHERE TO PUT DATA] [CRAWLING_DEPTH] \n");
 
     exit(1);
   }
+
+  // Validate that URL exists
+  // retry five times before giving up
+  strcpy(testURL, "wget -q " );
+  strcat(testURL, argv[1]); // add the URL to the wget command
+  testResult = system(testURL);
+
+  // an exit status of not 0 means there was an error
+  if (testResult != 0){
+    fprintf(stderr, "Error: The URL %s was invalid. Please enter a valid URL\n", argv[1]);
+    printf("Usage: ./crawler [SEED_URL] [TARGET_DIR WHERE TO PUT DATA] [CRAWLING_DEPTH] \n");
+
+    exit(1);
+  }
+
+  // inputs are correct
+  printf("Inputs correct.\n");
 
 }
 

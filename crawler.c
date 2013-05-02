@@ -18,6 +18,7 @@
 */
 
 #include <stdio.h>
+#include <stdlib.h>
 #include "crawler.h"
 #include "html.h"
 #include "hash.h"
@@ -118,20 +119,34 @@ char *url_list[MAX_URL_PER_PAGE];
 */
 
 
-int main() {
+void validateArgs(int argc, char** argv){
+  // check for correct number of parameters first
+  if (argc != 4){
+    fprintf(stderr, "Error: insufficient arguments. 3 required, you provided %d \n", argc);
+    printf("Usage: ./crawler [SEED_URL] [TARGET_DIR WHERE TO PUT DATA] [CRAWLING_DEPTH] \n");
 
-// Input command processing logic
+    exit(1);
+  }
 
-/*(1) Command line processing on arguments*/
-    /*Inform the user if arguments are not present*/
-    /*IF target_directory does not exist OR depth exceeds max_depth THEN*/
-       /*Inform user of usage and exit failed*/
+  // Validate the max depth (cannot exceed 4)
+  // Validate depth is single digit 
+  if ( (argv[argc - 1][1]) || (argv[argc - 1][0] > '4') 
+    || (argv[argc - 1][0] < '0') ) {
+    fprintf(stderr, "Error: Depth must be between 0 and 4. You entered %s \n", argv[argc - 1]);
+    printf("Usage: ./crawler [SEED_URL] [TARGET_DIR WHERE TO PUT DATA] [CRAWLING_DEPTH] \n");
 
-  printf("Get cooking cs50!\n");
+    exit(1);
+  }
 
-  printf("Translate the pseudo code. Data structures are in crawler.h\n");
+  // IF target_directory does not exist OR depth exceeds max_depth THEN
 
-  printf("Good luck\n");
+}
+
+int main(int argc, char** argv) {
+
+  // Input command processing logic
+  //(1) Command line processing on arguments
+  validateArgs(argc, argv);
 
   return 0;
 }

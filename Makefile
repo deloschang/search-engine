@@ -6,7 +6,7 @@ TEST = ./crawler_test.sh
 
 # my project details
 OBJS = crawler.o hash.o html.o
-SRCS = crawler.c hash.c html.c crawler.h hash.h html.h $(TEST)
+SRCS = crawler.c hash.c html.c crawler.h hash.h html.h 
 
 # Commands start with TAB not spaces
 $(EXEC): $(OBJS)

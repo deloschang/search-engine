@@ -57,9 +57,6 @@ char *url_list[MAX_URL_PER_PAGE];
 -------------
 
 
-// Initialization of any data structures
-
-(2) *initLists* Initialize any data structure and variables
 
 // Bootstrap part of Crawler for first time through with SEED_URL
 
@@ -196,11 +193,42 @@ void validateArgs(int argc, char* argv[]){
   }
 }
 
+int initLists(){
+  /*char *url_list[MAX_URL_PER_PAGE];*/
+
+  /*url_list[i] = malloc(MAX_URL_LENGTH);*/
+  /*MALLOC_CHECK(url_list[i]);*/
+  /*BZERO(url_list[i], MAX_URL_LENGTH);*/
+  /*strncpy(url_list[i], url, MAX_URL_LENGTH);*/
+
+  // malloc the dictionary and initialize with null for 
+  // the MAX_HASH_SLOT amount
+  dict = (DICTIONARY*)malloc(sizeof(DICTIONARY));
+  MALLOC_CHECK(dict);
+  BZERO(dict, sizeof(DICTIONARY));
+  dict->start = dict->end = NULL;  // make explicit
+  
+  // initialize
+  for (int i=0; i < MAX_HASH_SLOT; i++){
+    dict->hash[i] = NULL;
+  }
+
+  return(1);
+}
+
 int main(int argc, char* argv[]) {
 
   // Input command processing logic
   //(1) Command line processing on arguments
+  // If there are incorrect arguments, the program will exit
   validateArgs(argc, argv);
+
+  // Initialization of any data structures
+  //(2) *initLists* Initialize any data structure and variables
+  if (initLists() != 1){
+    printf("Initialization failed! Cannot Continue \n");
+    exit(1);
+  }
 
   return 0;
 }

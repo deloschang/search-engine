@@ -161,8 +161,7 @@ void validateArgs(int argc, char* argv[]){
   }
 
   // Validate that URL exists
-  // retry five times before giving up
-  strcpy(testURL, "wget -q " );
+  strcpy(testURL, "wget -qt2 " );
   strcat(testURL, argv[1]); // add the URL to the wget command
   testResult = system(testURL);
 

@@ -50,12 +50,6 @@ char *url_list[MAX_URL_PER_PAGE];
 (5) *Crawler*
 -------------
 
-// Input command processing logic
-
-(1) Command line processing on arguments
-    Inform the user if arguments are not present
-    IF target_directory does not exist OR depth exceeds max_depth THEN
-       Inform user of usage and exit failed
 
 // Initialization of any data structures
 
@@ -125,6 +119,13 @@ char *url_list[MAX_URL_PER_PAGE];
 
 
 int main() {
+
+// Input command processing logic
+
+/*(1) Command line processing on arguments*/
+    /*Inform the user if arguments are not present*/
+    /*IF target_directory does not exist OR depth exceeds max_depth THEN*/
+       /*Inform user of usage and exit failed*/
 
   printf("Get cooking cs50!\n");
 

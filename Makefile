@@ -28,5 +28,6 @@ clean:
 cleanlog:
 	rm -f *.html.*
 	rm -f *log.*
+	rm -f core.*
 
 

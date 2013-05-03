@@ -102,6 +102,7 @@ void validateArgs(int argc, char* argv[]){
   memcpy(writableTest+len2, " ] ; then exit 0 ; else exit 1 ; fi", len3+1);
 
   writableResult = system(writableTest);
+  free(writableTest);
 
   if ( writableResult != 0){
     fprintf(stderr, "Error: The dir argument %s was not writable.  Please enter writable and valid directory. \n", argv[2]);
@@ -125,24 +126,12 @@ void validateArgs(int argc, char* argv[]){
 }
 
 int initLists(){
-  /*char *url_list[MAX_URL_PER_PAGE];*/
-
-  /*url_list[i] = malloc(MAX_URL_LENGTH);*/
-  /*MALLOC_CHECK(url_list[i]);*/
-  /*BZERO(url_list[i], MAX_URL_LENGTH);*/
-  /*strncpy(url_list[i], url, MAX_URL_LENGTH);*/
-
   // malloc the dictionary and initialize with null for 
   // the MAX_HASH_SLOT amount
   dict = (DICTIONARY*)malloc(sizeof(DICTIONARY));
   MALLOC_CHECK(dict);
   BZERO(dict, sizeof(DICTIONARY)); // set the bytes to zero
   dict->start = dict->end = NULL;  // make explicit
-
-  // initialize
-  /*for (int i=0; i < MAX_HASH_SLOT; i++){*/
-  /*dict->hash[i] = NULL;*/
-  /*}*/
 
   return(1);
 }
@@ -170,6 +159,7 @@ char* getPage(char* url, int current_depth, char* target_directory){
   memcpy(wgetCmd + len1, url, len2);
 
   wgetResult = system(wgetCmd);
+  free(wgetCmd);
 
   // check if wget was successful
   do {
@@ -440,11 +430,12 @@ char *getAddressFromTheLinksToBeVisited(int *depth){
     DNode = dict->hash[i];
     
     // nothing at the hash slot
-    if (DNode == NULL){
-      continue;
-    }
+    /*if ( !DNode ){*/
+      /*continue;*/
+    /*}*/
+    //
 
-    while (DNode != NULL){
+    while ( (DNode) ){
       if (((URLNODE *)DNode->data)->visited == 0){
         // Update the depth using the URLNode depth
         // that is next to be visited
@@ -460,6 +451,38 @@ char *getAddressFromTheLinksToBeVisited(int *depth){
 
   }
   return NULL;
+}
+
+// cleans up after crawl
+void cleanup(){
+  DNODE* DNode;
+  DNODE* store;
+
+  for (int i = 0; i < MAX_HASH_SLOT; i++){
+    DNode = dict->hash[i];
+    
+    while ( (DNode) ){
+      store = DNode->next;
+      free(DNode->data);
+      free(DNode);
+
+      // iterate to next DNODE
+      DNode = store;
+    }
+
+  }
+  // final clean up
+  free(DNode);
+  free(dict);
+}
+
+// free the malloc'ed URL list
+void freeURLList(char* url_list[]){
+  int j = 0;
+  while (url_list[j] != NULL){
+    free(url_list[j]);
+    j++;
+  }
 }
 
 int main(int argc, char* argv[]) {
@@ -531,20 +554,23 @@ int main(int argc, char* argv[]) {
   // (5) Done with page so release it
   free(page);
 
-  printf("*******************PAGE GOTTEN SUCECESSSS *******");
 
   // (6) For all the URL in the URLList that do not exist already in the dictionary
   // then add a DNODE/URLNODE pair to the DNODE list. 
   updateListLinkToBeVisited(url_list, current_depth + 1);
 
+
   //(7) Mark the current URL visited in the URLNODE.
   setURLasVisited(seedURL);
+
+  // clean up the url list
+  freeURLList(url_list);
 
 
   // (8) Main processing loop of crawler. While there are URL to visit and the depth is not 
   // exceeded keep processing the URLs.
 
-  while ( (URLToBeVisited = *getAddressFromTheLinksToBeVisited(&current_depth)) != NULL){
+  while ( (URLToBeVisited = getAddressFromTheLinksToBeVisited(&current_depth)) != NULL){
     // Get the next URL to be visited from the DNODE list (first one not visited from start)
     if (current_depth > MAX_DEPTH) {
       // For URLs that are over max_depth, we just set them to visited
@@ -557,7 +583,7 @@ int main(int argc, char* argv[]) {
     /*also save a file (1..N) with correct format (URL, depth, HTML) */
     page = getPage(URLToBeVisited, current_depth, target_directory);
     if (page == NULL){
-      printf("Panic: Cannot crawl URL: %s. Marking as visited and continuing \n", seedURL);
+      printf("Panic: Cannot crawl URL: %s. Marking as visited and continuing \n", URLToBeVisited);
       setURLasVisited(URLToBeVisited);
       continue;
     }
@@ -574,10 +600,15 @@ int main(int argc, char* argv[]) {
     // Mark URL as visited
     setURLasVisited(URLToBeVisited);
 
-      // You must include a sleep delay before crawling the next page 
-      // See note below for reason.
-      /*sleep(INTERVAL_PER_FETCH);*/
+    freeURLList(url_list);
+
+    // You must include a sleep delay before crawling the next page 
+    // See note below for reason.
+    sleep(INTERVAL_PER_FETCH);
   }
+
+  // cleanup
+  cleanup();
 
   return 0;
 }

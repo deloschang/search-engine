@@ -69,7 +69,7 @@ let j++
 # correct input 
 testName[j]="$j. testing correct input arguments"
 testExpected[j]="No errors expected."
-testCmd[j]="./crawler www.cs.dartmouth.edu ./data/ 1"
+testCmd[j]="./crawler www.cs.dartmouth.edu ./data/ 0"
 let j++
 
 iterate=0

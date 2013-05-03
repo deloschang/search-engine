@@ -52,60 +52,6 @@ char *url_list[MAX_URL_PER_PAGE];
 
 int fileCounter = 0; // counter for the html files scraped
 
-/*
-
-(5) *Crawler*
--------------
-
-
-
-  
-
-
-// Main processing loop of crawler. While there are URL to visit and the depth is not 
-// exceeded keep processing the URLs.
-
-(8) WHILE ( URLToBeVisited = *getAddressFromTheLinksToBeVisited(current_depth)* ) DO
-        // Get the next URL to be visited from the DNODE list (first one not visited from start)
- 
-      IF current_depth > max_depth THEN
-    
-          // For URLs that are over max_depth, we just set them to visited
-          // and continue on
-    
-          setURLasVisited(URLToBeVisited) Mark the current URL visited in the URLNODE.
-          continue;
-
-    page = *getPage(URLToBeVisited, current_depth, target_directory)* Get HTML into a 
-            string and return as page, also save a file (1..N) with correct format (URL, depth, HTML) 
-
-    IF page == NULL THEN
-       *log(PANIC: Cannot crawl URLToBeVisited)* Inform user
-       setURLasVisited(URLToBeVisited) Mark the bad URL as visited in the URLNODE.
-       Continue; // We don't want the bad URL to stop us processing the remaining URLs.
-   
-    URLList = *extractURLs(page, URLToBeVisited)* Extract all URLs from current page.
-  
-    *free(page)* Done with the page so release it
-
-    *updateListLinkToBeVisited(URLList, current_depth + 1)* For all the URL 
-    in the URLList that do not exist already in the dictionary then add a DNODE/URLNODE 
-    pair to the DNODE list. 
-
-    *setURLasVisited(URLToBeVisited)* Mark the current URL visited in the URLNODE.
-
-    // You must include a sleep delay before crawling the next page 
-    // See note below for reason.
-
-    *sleep(INTERVAL_PER_FETCH)* Sneak by the server by sleeping. Use the 
-     standard Linux system call
-
-(9)  *log(Nothing more to crawl)
-
-(10) *cleanup* Clean up data structures and make sure all files are closed,
-      resources deallocated.
-
-*/
 
 
 // This function validates the arguments provided by the user.
@@ -454,6 +400,30 @@ void updateListLinkToBeVisited(char *url_list[ ], int depth){
 }
 
 
+// marks the url as visited
+void setURLasVisited(char* url){
+  // grab the DNODE by the hash first
+  int urlHash = hash1(url) % MAX_HASH_SLOT;
+  DNODE* target = dict->hash[urlHash];
+
+  // loop until find the URL
+  while (target){
+    if (!strcmp(target->key, url)){
+      // found it
+      ((URLNODE *)target->data)->visited = 1; // set to visited
+      break;
+    }
+
+    // error handling in case we reach end of cluster
+    if (target->next == NULL){
+      printf("Error marking the URL as visited. Reached end of cluster. Aborting \n");
+      exit(1);
+    }
+
+    target = target->next;
+  }
+}
+
 int main(int argc, char* argv[]) {
   int current_depth;
   char* target_directory;
@@ -527,6 +497,54 @@ int main(int argc, char* argv[]) {
   // then add a DNODE/URLNODE pair to the DNODE list. 
   updateListLinkToBeVisited(url_list, current_depth + 1);
 
-  /*(7) *setURLasVisited(SEED_URL)* Mark the current URL visited in the URLNODE.*/
+  //(7) Mark the current URL visited in the URLNODE.
+  setURLasVisited(seedURL);
+
+
+/*
+// Main processing loop of crawler. While there are URL to visit and the depth is not 
+// exceeded keep processing the URLs.
+
+(8) WHILE ( URLToBeVisited = *getAddressFromTheLinksToBeVisited(current_depth)* ) DO
+        // Get the next URL to be visited from the DNODE list (first one not visited from start)
+ 
+      IF current_depth > max_depth THEN
+    
+          // For URLs that are over max_depth, we just set them to visited
+          // and continue on
+    
+          setURLasVisited(URLToBeVisited) Mark the current URL visited in the URLNODE.
+          continue;
+
+    page = *getPage(URLToBeVisited, current_depth, target_directory)* Get HTML into a 
+            string and return as page, also save a file (1..N) with correct format (URL, depth, HTML) 
+
+    IF page == NULL THEN
+       *log(PANIC: Cannot crawl URLToBeVisited)* Inform user
+       setURLasVisited(URLToBeVisited) Mark the bad URL as visited in the URLNODE.
+       Continue; // We don't want the bad URL to stop us processing the remaining URLs.
+   
+    URLList = *extractURLs(page, URLToBeVisited)* Extract all URLs from current page.
+  
+    *free(page)* Done with the page so release it
+
+    *updateListLinkToBeVisited(URLList, current_depth + 1)* For all the URL 
+    in the URLList that do not exist already in the dictionary then add a DNODE/URLNODE 
+    pair to the DNODE list. 
+
+    *setURLasVisited(URLToBeVisited)* Mark the current URL visited in the URLNODE.
+
+    // You must include a sleep delay before crawling the next page 
+    // See note below for reason.
+
+    *sleep(INTERVAL_PER_FETCH)* Sneak by the server by sleeping. Use the 
+     standard Linux system call
+
+(9)  *log(Nothing more to crawl)
+
+(10) *cleanup* Clean up data structures and make sure all files are closed,
+      resources deallocated.
+
+*/
   return 0;
 }

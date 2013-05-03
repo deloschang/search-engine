@@ -17,6 +17,7 @@
 //    2048 characters + a NULL
 
 #define MAX_URL_LENGTH 2049
+#define MAX_DEPTH 4
 
 // The KEY is the same as a URL. The term KEY is just a
 // general Dictionary/hash function term 

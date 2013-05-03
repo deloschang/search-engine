@@ -1,21 +1,21 @@
 /*
 
-  FILE: crawler.c
+FILE: crawler.c
 
-  Description:
+Description:
 
-  Inputs: ./crawler [SEED URL] [TARGET DIRECTORY WHERE TO PUT THE DATA] [MAX CRAWLING DEPTH]
+Inputs: ./crawler [SEED URL] [TARGET DIRECTORY WHERE TO PUT THE DATA] [MAX CRAWLING DEPTH]
 
-  Outputs: For each webpage crawled the crawler program will create a file in the 
-  [TARGET DIRECTORY]. The name of the file will start a 1 for the  [SEED URL] 
-  and be incremented for each subsequent HTML webpage crawled. 
+Outputs: For each webpage crawled the crawler program will create a file in the 
+[TARGET DIRECTORY]. The name of the file will start a 1 for the  [SEED URL] 
+and be incremented for each subsequent HTML webpage crawled. 
 
-  Each file (e.g., 10) will include the URL associated with the saved webpage and the
-  depth of search in the file. The URL will be on the first line of the file 
-  and the depth on the second line. The HTML will for the webpage 
-  will start on the third line.
+Each file (e.g., 10) will include the URL associated with the saved webpage and the
+depth of search in the file. The URL will be on the first line of the file 
+and the depth on the second line. The HTML will for the webpage 
+will start on the third line.
 
-*/
+ */
 
 #include <stdio.h>
 #include <string.h>
@@ -77,7 +77,7 @@ void validateArgs(int argc, char* argv[]){
   // Validate the max depth (cannot exceed 4)
   // Validate depth is single digit 
   if ( (argv[argc - 1][1]) || (argv[argc - 1][0] > '4') 
-    || (argv[argc - 1][0] < '0') ) {
+      || (argv[argc - 1][0] < '0') ) {
     fprintf(stderr, "Error: Depth must be between 0 and 4. You entered %s \n", argv[argc - 1]);
     printf("Usage: ./crawler [SEED_URL] [TARGET_DIR WHERE TO PUT DATA] [CRAWLING_DEPTH] \n");
 
@@ -138,10 +138,10 @@ int initLists(){
   MALLOC_CHECK(dict);
   BZERO(dict, sizeof(DICTIONARY)); // set the bytes to zero
   dict->start = dict->end = NULL;  // make explicit
-  
+
   // initialize
   /*for (int i=0; i < MAX_HASH_SLOT; i++){*/
-    /*dict->hash[i] = NULL;*/
+  /*dict->hash[i] = NULL;*/
   /*}*/
 
   return(1);
@@ -203,7 +203,7 @@ char* getPage(char* url, int current_depth, char* target_directory){
       fprintf(stderr, "Error: file size not valid \n");
       exit(1);
     }
-    
+
     // Allocate buffer to that size
     fileBuffer = malloc(sizeof(char) * (tempFileSize + 1)); // +1 for terminal byte
 
@@ -259,16 +259,16 @@ char **extractURLs(char* html_buffer, char* current){
     retPosition = GetNextURL(html_buffer, current, result_buffer, retPosition);
 
     // Validate that URL in result_buffer matches prefix
-      // Normalize the URL (i.e. check for specific ext and strip)
+    // Normalize the URL (i.e. check for specific ext and strip)
     if ((!strncmp(result_buffer, URL_PREFIX, strlen(URL_PREFIX)))
-      && NormalizeURL(result_buffer) == 1){
+        && NormalizeURL(result_buffer) == 1){
 
       // initialize space in url list for the URL
       url_list[j] = malloc(MAX_URL_LENGTH);
       MALLOC_CHECK(url_list[j]);
       BZERO(url_list[j], MAX_URL_LENGTH);
       strncpy(url_list[j], result_buffer, strlen(result_buffer));
-      
+
       // Report the found link
       printf("[crawler]:Parser find link:%s \n", url_list[j]);
       j++;
@@ -295,19 +295,20 @@ void installDNODE(char* url, int urlHash, int urlDepth){
   strncpy(purln->url, url, MAX_URL_LENGTH-1);
 
   // New DNODE
-  dict->hash[urlHash] = (DNODE *)malloc(sizeof(DNODE));
-  MALLOC_CHECK(dict->hash[urlHash]);
+  DNODE *new = (DNODE *)malloc(sizeof(DNODE));
+  dict->hash[urlHash] = new;
+  MALLOC_CHECK(new);
 
   // Insert the URLNode into void pointer of DNode
-  dict->hash[urlHash]->data = purln;
-  BZERO(dict->hash[urlHash]->key, KEY_LENGTH); // being safe
-  strncpy(dict->hash[urlHash]->key, url, KEY_LENGTH);  // URLNode in DNode
+  new->data = purln;
+  BZERO(new->key, KEY_LENGTH); // being safe
+  strncpy(new->key, url, KEY_LENGTH);  // URLNode in DNode
 
   // Relink dictionary
-  dict->hash[urlHash]->next = NULL; // end of cluster
+  new->next = NULL; // end of cluster so far
   /*dict->hash[urlHash]->prev = dict->end; // first node of the hash slot*/
 
-  dict->end = dict->hash[urlHash]; // last node linked
+  dict->end = new; // last node linked
 }
 
 // Create a DNODE from the url and insert it at the end of the cluster
@@ -429,7 +430,36 @@ void setURLasVisited(char* url){
 // to that URL. Note, that the pointer to the depth is also passed. Update the
 // depth using the depth of the URLNODE that is next to be visited. 
 char *getAddressFromTheLinksToBeVisited(int *depth){
+  DNODE* DNode;
+  static char nextURL[MAX_URL_LENGTH];
 
+  // begin search through hash table
+  // since we are using SCHEMA A (from piazza), we cannot follow all links through
+  // because the end of cluster will reach a NULL
+  for (int i = 0; i < MAX_HASH_SLOT; i++){
+    DNode = dict->hash[i];
+    
+    // nothing at the hash slot
+    if (DNode == NULL){
+      continue;
+    }
+
+    while (DNode != NULL){
+      if (((URLNODE *)DNode->data)->visited == 0){
+        // Update the depth using the URLNode depth
+        // that is next to be visited
+        *depth = ((URLNODE *)DNode->data)->depth;
+
+        strncpy(nextURL, ((URLNODE *)DNode->data)->url, MAX_URL_LENGTH);
+        return nextURL;
+      }
+
+      // iterate to next DNODE
+      DNode = DNode->next;
+    }
+
+  }
+  return NULL;
 }
 
 int main(int argc, char* argv[]) {
@@ -437,6 +467,7 @@ int main(int argc, char* argv[]) {
   char* target_directory;
   char* seedURL;
   char* page;
+  char* URLToBeVisited;
   char** URLList;
 
   // Input command processing logic
@@ -458,7 +489,7 @@ int main(int argc, char* argv[]) {
   current_depth = 0;
   target_directory = argv[2];
   int seedHash = hash1(seedURL) % MAX_HASH_SLOT;
-  
+
   // Set up URLNode for the Seed
 
   URLNODE *seedURLNode = malloc(sizeof(URLNODE));
@@ -482,7 +513,7 @@ int main(int argc, char* argv[]) {
   dict->start = dict->end = seedDNode; // only node so far
   dict->hash[seedHash] = seedDNode; // link hash to the seed DNode in dict
 
-  
+
   ////// Done bootstrapping the first seed ///////
 
   // Get HTML into a string and return as page, 
@@ -515,13 +546,15 @@ int main(int argc, char* argv[]) {
 
   while ( (URLToBeVisited = *getAddressFromTheLinksToBeVisited(&current_depth)) != NULL){
     // Get the next URL to be visited from the DNODE list (first one not visited from start)
-    if (current_depth > max_depth) {
-        // For URLs that are over max_depth, we just set them to visited
-        // and continue on
-        setURLasVisited(URLToBeVisited); 
-        continue;
+    if (current_depth > MAX_DEPTH) {
+      // For URLs that are over max_depth, we just set them to visited
+      // and continue on
+      setURLasVisited(URLToBeVisited); 
+      continue;
     }
 
+    // Get HTML into a string and return as page, 
+    /*also save a file (1..N) with correct format (URL, depth, HTML) */
     page = getPage(URLToBeVisited, current_depth, target_directory);
     if (page == NULL){
       printf("Panic: Cannot crawl URL: %s. Marking as visited and continuing \n", seedURL);
@@ -539,12 +572,12 @@ int main(int argc, char* argv[]) {
     updateListLinkToBeVisited(URLList, current_depth + 1);
 
     // Mark URL as visited
-    setURLasVisited(URLToBeVisited)
+    setURLasVisited(URLToBeVisited);
 
-    // You must include a sleep delay before crawling the next page 
-    // See note below for reason.
-    sleep(INTERVAL_PER_FETCH)
+      // You must include a sleep delay before crawling the next page 
+      // See note below for reason.
+      /*sleep(INTERVAL_PER_FETCH);*/
   }
-    
+
   return 0;
 }

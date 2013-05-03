@@ -50,8 +50,9 @@ DICTIONARY* dict = NULL;
 
 char *url_list[MAX_URL_PER_PAGE]; 
 
-/*
+int fileCounter = 0; // counter for the html files scraped
 
+/*
 
 (5) *Crawler*
 -------------
@@ -170,8 +171,6 @@ void validateArgs(int argc, char* argv[]){
     exit(1);
   }
 
-
-
   // Validate that URL exists
   strcpy(testURL, "wget -qt2 " );
   strcat(testURL, argv[1]); // add the URL to the wget command
@@ -209,10 +208,107 @@ int initLists(){
   return(1);
 }
 
+char* getPage(char* url, int current_depth, char* target_directory){
+  char* wgetCmd;
+  char* fileBuffer = NULL;
+  int wgetResult;
+  int i = 0; 
+  int tempFileSize= 0;
+  FILE* tempStore;
+  FILE* fileSave;
+  size_t readResult;
+  char dirWithCounter[MAX_URL_LENGTH + 100];
+
+  printf("\n [Crawler] Crawling %s \n", url);
+
+  // allocate space to avoid overflow
+  size_t len1 = strlen("wget -O temp "), len2 = strlen(url);
+  wgetCmd = (char*) malloc(len1 + len2 + 1);
+
+  memcpy(wgetCmd, "wget -O temp ", len1);
+  memcpy(wgetCmd + len1, url, len2);
+
+  wgetResult = system(wgetCmd);
+
+  // check if wget was successful
+  do {
+    if (wgetResult != 0) {
+      // if not successful, try 2 more times before giving up
+      fprintf(stderr, "\n Did not successfully crawl page on try %d", i);
+
+      if (i == 2){
+        fprintf(stderr, "\n Retrieval failed after %d tries. Next URL \n", i);
+        return NULL;
+      }
+      i++;
+    } else {
+      // successful, exit loop and proceed
+      break;
+    }
+  } while (i < 3);
+
+  // Open the temp stored file from the successful wget
+  tempStore = fopen("temp", "r");
+
+  // Make sure temp exists first
+  if (tempStore == NULL){
+    fprintf(stderr, "Could not open the file from the URL %s. Skipping...\n", url);
+    return NULL;
+  }
+
+  if (fseek(tempStore, 0L, SEEK_END) == 0){
+    long tempFileSize = ftell(tempStore);
+    if (tempFileSize == -1){
+      fprintf(stderr, "Error: file size not valid \n");
+      exit(1);
+    }
+    
+    // Allocate buffer to that size
+    fileBuffer = malloc(sizeof(char) * (tempFileSize + 1));
+
+    rewind(tempStore);
+    /*if (fseek(tempStore, 0L, SEEK_SET) == 0){*/
+      /*fprintf(stderr, "Error moving back to beginning of file \n");*/
+      /*exit(1);*/
+    /*}*/
+
+    // Read file to memory
+    readResult = fread(fileBuffer, sizeof(char), tempFileSize, tempStore);
+    if (readResult == 0){
+      fprintf(stderr, "Error reading the temp file. Skipping. \n");
+      return NULL;
+    } else {
+      fileBuffer[++readResult] = '\0'; 
+    }
+  }
+
+  fclose(tempStore);
+
+
+  // increment the file counter for writing
+  fileCounter++;
+
+  sprintf(dirWithCounter, "%s/%d", target_directory, fileCounter);
+  fileSave = fopen(dirWithCounter, "w");
+
+  if (fileSave == NULL){
+    fprintf(stderr, "Error writing temp file to target directory. Aborting \n");
+    exit(1);
+  }
+
+  // Commit the buffer to file
+  fprintf(fileSave, "%s\n%d\n%s", url, current_depth, fileBuffer);
+  fclose(fileSave);
+
+  // return the pointer to the buffer
+  return fileBuffer;
+}
+
 int main(int argc, char* argv[]) {
   int current_depth;
-  char target_directory;
-  char seedURL;
+  char* target_directory;
+  char* seedURL;
+  char* page;
 
   // Input command processing logic
   //(1) Command line processing on arguments
@@ -230,14 +326,15 @@ int main(int argc, char* argv[]) {
   // Bootstrap part of Crawler for first time through with SEED_URL
   seedURL = argv[1];
   current_depth = 0;
-  target_directory = argv[2]
+  target_directory = argv[2];
   
   // Get HTML into a string and return as page, 
-  page = getPage(seedURL, current_depth, target_directory) 
+  page = getPage(seedURL, current_depth, target_directory);
             /*also save a file (1..N) with correct format (URL, depth, HTML) */
 
+  printf("*******************PAGE GOTTEN page gotten*******");
   if (page == NULL){
-    LOGSTATUS("PANIC: Cannot crawl %s", seedURL);
+    printf("Cannot crawl seed URL: %s. Aborting \n", seedURL);
     exit(1);
   }
 

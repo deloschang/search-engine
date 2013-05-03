@@ -17,6 +17,7 @@ $(OBJS): $(SRCS)
 debug: $(SRCS)
 	$(CC) $(CFLAGS) -g -ggdb -c $(SRCS)
 	$(CC) $(CFLAGS) -g -ggdb -o $(EXEC) $(OBJS)
+	gdb --args crawler www.cs.dartmouth.edu ./data/ 2
 clean:
 	rm -f *~
 	rm -f *#

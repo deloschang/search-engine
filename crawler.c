@@ -61,7 +61,6 @@ int fileCounter = 0; // counter for the html files scraped
 
   
 
-(7) *setURLasVisited(SEED_URL)* Mark the current URL visited in the URLNODE.
 
 // Main processing loop of crawler. While there are URL to visit and the depth is not 
 // exceeded keep processing the URLs.
@@ -516,15 +515,18 @@ int main(int argc, char* argv[]) {
     exit(1);
   }
 
-  // Extract all URLs from SEED_URL page.
+  // (4) Extract all URLs from SEED_URL page.
   char** url_list = extractURLs(page, seedURL);
+
+  // (5) Done with page so release it
   free(page);
 
   printf("*******************PAGE GOTTEN SUCECESSSS *******");
 
-  // For all the URL in the URLList that do not exist already in the dictionary
+  // (6) For all the URL in the URLList that do not exist already in the dictionary
   // then add a DNODE/URLNODE pair to the DNODE list. 
   updateListLinkToBeVisited(url_list, current_depth + 1);
 
+  /*(7) *setURLasVisited(SEED_URL)* Mark the current URL visited in the URLNODE.*/
   return 0;
 }

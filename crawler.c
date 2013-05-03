@@ -447,6 +447,7 @@ char *getAddressFromTheLinksToBeVisited(int *depth){
 
         // Update the depth using the URLNode depth
         // that is next to be visited
+
         *depth = ((URLNODE *)DNode->data)->depth;
 
         strncpy(nextURL, ((URLNODE *)DNode->data)->url, MAX_URL_LENGTH);
@@ -597,7 +598,6 @@ int main(int argc, char* argv[]) {
       setURLasVisited(URLToBeVisited); 
       continue;
     }
-
 
     // Get HTML into a string and return as page, 
     /*also save a file (1..N) with correct format (URL, depth, HTML) */

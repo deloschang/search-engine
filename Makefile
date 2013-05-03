@@ -17,18 +17,18 @@ $(OBJS): $(SRCS)
 debug: $(SRCS)
 	$(CC) $(CFLAGS) -g -ggdb -c $(SRCS)
 	$(CC) $(CFLAGS) -g -ggdb -o $(EXEC) $(OBJS)
-	gdb --args crawler www.cs.dartmouth.edu ./data/ 0
+	gdb --args crawler www.cs.dartmouth.edu ./data/ 1
 clean:
 	rm -f *~
 	rm -f *#
 	rm -f ./prs
 	rm -f *.o
 	rm -f *.gch
+	rm -f *.html.*
+	rm -f core.*
 
 cleanlog:
-	rm -f *.html.*
 	rm -f *log.*
-	rm -f core.*
 	cd ./data/ && rm -f *
 
 

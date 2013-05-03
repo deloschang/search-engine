@@ -338,6 +338,7 @@ char **extractURLs(char* html_buffer, char* current){
 }
 
 // Install the first DNODE at the hash
+// This node will be the first in its cluster
 void installDNODE(char* url, int urlHash, int urlDepth){
   // Copy URL into malloc'ed space
   URLNODE *purln = malloc(sizeof(URLNODE));
@@ -358,10 +359,63 @@ void installDNODE(char* url, int urlHash, int urlDepth){
   strncpy(dict->hash[urlHash]->key, url, KEY_LENGTH);  // URLNode in DNode
 
   // Relink dictionary
-  dict->hash[urlHash]->next = NULL; // end of dict
-  dict->hash[urlHash]->prev = dict->end; // first node of the hash slot
+  dict->hash[urlHash]->next = NULL; // end of cluster
+  /*dict->hash[urlHash]->prev = dict->end; // first node of the hash slot*/
 
-  dict->end = dict->hash[urlHash];
+  dict->end = dict->hash[urlHash]; // last node linked
+}
+
+// Create a DNODE from the url and insert it at the end of the cluster
+// the DNODE* existing will serve as a reference 
+void insertDNODE(char* url, DNODE* existing, int urlDepth){
+
+  // Copy URL into malloc'ed space
+  URLNODE *purln = malloc(sizeof(URLNODE));
+  MALLOC_CHECK(purln);
+  purln->depth = urlDepth; /* d and URL set earlier */
+  purln->visited = 0; /* newly installed, so not visited */
+
+  BZERO(purln->url, MAX_URL_LENGTH); /* being extra careful */
+  strncpy(purln->url, url, MAX_URL_LENGTH-1);
+
+  // New DNODE
+  DNODE *new = (DNODE *)malloc(sizeof(DNODE));
+  MALLOC_CHECK(new);
+  new->data = purln;
+  BZERO(new->key, KEY_LENGTH); // being safe
+  strncpy(new->key, url, KEY_LENGTH);  // URLNode in DNode
+
+  // Insert the DNODE at the end of the cluster
+  existing->next = new;
+  new->next = NULL; // at end of cluster pointing to NULL 
+}
+
+// This function will iterate through the linked list to check if 
+// the URL already exists with an existing DNode
+// Will return NULL if the node exists already
+DNODE* determineExists(char* urlToCheck, int urlHash){
+
+  // grab first DNode at hash slot
+  DNODE* checkNode = dict->hash[urlHash];
+
+  while ( (checkNode) ){
+    // check for identical URL match
+    // strcmp returns 0 if equal
+    if ( !strcmp(checkNode->key, urlToCheck)){
+      // identical URL so short circuit
+      return NULL;
+    }
+
+    // check if DNode has reached the end of its cluster
+    // won't be able to get into next hash slot because end is NULL
+    if (checkNode->next == NULL){
+      return checkNode;
+    }
+
+    checkNode = checkNode->next; // move to the next node until it becomes NULL
+  }
+  return NULL; 
+
 }
 
 // updateListLinkToBeVisited: Heavy lifting function. Could be made smaller. It takes
@@ -377,10 +431,10 @@ void installDNODE(char* url, int urlHash, int urlDepth){
 void updateListLinkToBeVisited(char *url_list[ ], int depth){
   int j = 0;
   int urlHash;
+  DNODE* existing = NULL;
 
   // Loop through each URL in the list
   while (url_list[j] != NULL){
-    printf("on %d \n", j);
 
     // Calculate the hash
     urlHash = hash1(url_list[j]) % MAX_HASH_SLOT;
@@ -390,7 +444,10 @@ void updateListLinkToBeVisited(char *url_list[ ], int depth){
       // unique
       // Install into new DNODE and have hash[j] point to new DNODE
       installDNODE(url_list[j], urlHash, depth);
-    } 
+    } else if ( (existing = determineExists(url_list[j], urlHash)) != NULL ){
+      // determined that the URL doesn't exist, so add to end of list
+      insertDNODE(url_list[j], existing, depth);
+    }
 
     j++;
   }

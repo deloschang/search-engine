@@ -59,7 +59,6 @@ int fileCounter = 0; // counter for the html files scraped
 
 
 
-(4) URLList = *extractURLs(page, SEED_URL)* Extract all URLs from SEED_URL page.
   
 (5) *free(page)* Done with the page so release it
 
@@ -208,12 +207,14 @@ int initLists(){
   return(1);
 }
 
+// given a URL, getPage function will use wget to grab the HTML and store it in
+// a file within the target directory along with the URL and current_depth
+// prepended to it
 char* getPage(char* url, int current_depth, char* target_directory){
   char* wgetCmd;
   char* fileBuffer = NULL;
   int wgetResult;
   int i = 0; 
-  int tempFileSize= 0;
   FILE* tempStore;
   FILE* fileSave;
   size_t readResult;
@@ -264,13 +265,10 @@ char* getPage(char* url, int current_depth, char* target_directory){
     }
     
     // Allocate buffer to that size
-    fileBuffer = malloc(sizeof(char) * (tempFileSize + 1));
+    fileBuffer = malloc(sizeof(char) * (tempFileSize + 1)); // +1 for terminal byte
 
+    // Rewind to top in preparation for reading
     rewind(tempStore);
-    /*if (fseek(tempStore, 0L, SEEK_SET) == 0){*/
-      /*fprintf(stderr, "Error moving back to beginning of file \n");*/
-      /*exit(1);*/
-    /*}*/
 
     // Read file to memory
     readResult = fread(fileBuffer, sizeof(char), tempFileSize, tempStore);
@@ -278,7 +276,7 @@ char* getPage(char* url, int current_depth, char* target_directory){
       fprintf(stderr, "Error reading the temp file. Skipping. \n");
       return NULL;
     } else {
-      fileBuffer[++readResult] = '\0'; 
+      fileBuffer[++readResult] = '\0'; // add terminal byte
     }
   }
 
@@ -304,6 +302,45 @@ char* getPage(char* url, int current_depth, char* target_directory){
   return fileBuffer;
 }
 
+// extractURL: Given a string of the HTML page, parse it (you have the code 
+// for this GetNextURL) and store all the URLs in the url_list (defined above).
+// NULL pointer represents end of list (no more URLs). Return the url_list
+char **extractURLs(char* html_buffer, char* current){
+  int retPosition = 0;
+  int j = 0;
+
+  // init result buffer 
+  char result_buffer[MAX_URL_LENGTH];
+  BZERO(result_buffer, MAX_URL_LENGTH);
+
+  // Loop until the end of HTML is reached
+  while (retPosition != -1){
+    // Update the return position based on the URL found in the buffer
+    retPosition = GetNextURL(html_buffer, current, result_buffer, retPosition);
+
+    // Validate that URL in result_buffer matches prefix
+      // Normalize the URL (i.e. check for specific ext and strip)
+    if ((!strncmp(result_buffer, URL_PREFIX, strlen(URL_PREFIX)))
+      && NormalizeURL(result_buffer) == 1){
+
+      // initialize space in url list for the URL
+      url_list[j] = malloc(MAX_URL_LENGTH);
+      MALLOC_CHECK(url_list[j]);
+      BZERO(url_list[j], MAX_URL_LENGTH);
+      strncpy(url_list[j], result_buffer, strlen(result_buffer));
+      
+      j++;
+    }
+
+    // Grab next URL so clear the buffer
+    BZERO(result_buffer, MAX_URL_LENGTH);
+  }
+
+  // Returned the complete url list
+  return(url_list);
+
+}
+
 int main(int argc, char* argv[]) {
   int current_depth;
   char* target_directory;
@@ -323,23 +360,25 @@ int main(int argc, char* argv[]) {
     exit(1);
   }
 
-  // Bootstrap part of Crawler for first time through with SEED_URL
+  // (3) Bootstrap part of Crawler for first time through with SEED_URL
   seedURL = argv[1];
   current_depth = 0;
   target_directory = argv[2];
   
   // Get HTML into a string and return as page, 
+  /*also save a file (1..N) with correct format (URL, depth, HTML) */
   page = getPage(seedURL, current_depth, target_directory);
-            /*also save a file (1..N) with correct format (URL, depth, HTML) */
 
-  printf("*******************PAGE GOTTEN page gotten*******");
   if (page == NULL){
     printf("Cannot crawl seed URL: %s. Aborting \n", seedURL);
     exit(1);
   }
 
-  // extract the URLs from the page
+  // Extract all URLs from SEED_URL page.
+  extractURLs(page, seedURL);
+  free(page);
 
+  printf("*******************PAGE GOTTEN page gotten*******");
 
   return 0;
 }

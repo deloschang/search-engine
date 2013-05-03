@@ -58,13 +58,6 @@ char *url_list[MAX_URL_PER_PAGE];
 
 
 
-// Bootstrap part of Crawler for first time through with SEED_URL
-
-(3) page = *getPage(seedURL, current_depth, target_directory)* Get HTML into a string and return as page, 
-            also save a file (1..N) with correct format (URL, depth, HTML) 
-    IF page == NULL THEN
-       *log(PANIC: Cannot crawl SEED_URL)* Inform user
-       exit failed
 (4) URLList = *extractURLs(page, SEED_URL)* Extract all URLs from SEED_URL page.
   
 (5) *free(page)* Done with the page so release it
@@ -205,18 +198,21 @@ int initLists(){
   // the MAX_HASH_SLOT amount
   dict = (DICTIONARY*)malloc(sizeof(DICTIONARY));
   MALLOC_CHECK(dict);
-  BZERO(dict, sizeof(DICTIONARY));
+  BZERO(dict, sizeof(DICTIONARY)); // set the bytes to zero
   dict->start = dict->end = NULL;  // make explicit
   
   // initialize
-  for (int i=0; i < MAX_HASH_SLOT; i++){
-    dict->hash[i] = NULL;
-  }
+  /*for (int i=0; i < MAX_HASH_SLOT; i++){*/
+    /*dict->hash[i] = NULL;*/
+  /*}*/
 
   return(1);
 }
 
 int main(int argc, char* argv[]) {
+  int current_depth;
+  char target_directory;
+  char seedURL;
 
   // Input command processing logic
   //(1) Command line processing on arguments
@@ -226,9 +222,27 @@ int main(int argc, char* argv[]) {
   // Initialization of any data structures
   //(2) *initLists* Initialize any data structure and variables
   if (initLists() != 1){
+    // Creation of dictionary failed
     printf("Initialization failed! Cannot Continue \n");
     exit(1);
   }
+
+  // Bootstrap part of Crawler for first time through with SEED_URL
+  seedURL = argv[1];
+  current_depth = 0;
+  target_directory = argv[2]
+  
+  // Get HTML into a string and return as page, 
+  page = getPage(seedURL, current_depth, target_directory) 
+            /*also save a file (1..N) with correct format (URL, depth, HTML) */
+
+  if (page == NULL){
+    LOGSTATUS("PANIC: Cannot crawl %s", seedURL);
+    exit(1);
+  }
+
+  // extract the URLs from the page
+
 
   return 0;
 }

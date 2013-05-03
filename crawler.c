@@ -60,11 +60,6 @@ int fileCounter = 0; // counter for the html files scraped
 
 
   
-(5) *free(page)* Done with the page so release it
-
-(6) *updateListLinkToBeVisited(URLList, current_depth + 1)*  For all the URL 
-    in the URLList that do not exist already in the dictionary then add a DNODE/URLNODE 
-    pair to the DNODE list. 
 
 (7) *setURLasVisited(SEED_URL)* Mark the current URL visited in the URLNODE.
 
@@ -329,6 +324,8 @@ char **extractURLs(char* html_buffer, char* current){
       BZERO(url_list[j], MAX_URL_LENGTH);
       strncpy(url_list[j], result_buffer, strlen(result_buffer));
       
+      // Report the found link
+      printf("[crawler]:Parser find link:%s \n", url_list[j]);
       j++;
     }
 
@@ -338,8 +335,68 @@ char **extractURLs(char* html_buffer, char* current){
 
   // Returned the complete url list
   return(url_list);
+}
+
+// Install the first DNODE at the hash
+void installDNODE(char* url, int urlHash, int urlDepth){
+  // Copy URL into malloc'ed space
+  URLNODE *purln = malloc(sizeof(URLNODE));
+  MALLOC_CHECK(purln);
+  purln->depth = urlDepth; /* d and URL set earlier */
+  purln->visited = 0; /* newly installed, so not visited */
+
+  BZERO(purln->url, MAX_URL_LENGTH); /* being extra careful */
+  strncpy(purln->url, url, MAX_URL_LENGTH-1);
+
+  // New DNODE
+  dict->hash[urlHash] = (DNODE *)malloc(sizeof(DNODE));
+  MALLOC_CHECK(dict->hash[urlHash]);
+
+  // Insert the URLNode into void pointer of DNode
+  dict->hash[urlHash]->data = purln;
+  BZERO(dict->hash[urlHash]->key, KEY_LENGTH); // being safe
+  strncpy(dict->hash[urlHash]->key, url, KEY_LENGTH);  // URLNode in DNode
+
+  // Relink dictionary
+  dict->hash[urlHash]->next = NULL; // end of dict
+  dict->hash[urlHash]->prev = dict->end; // first node of the hash slot
+
+  dict->end = dict->hash[urlHash];
+}
+
+// updateListLinkToBeVisited: Heavy lifting function. Could be made smaller. It takes
+// the url_list and for each URL in the list it first determines if it is unique.
+
+// If it is then it creates a DNODE (using malloc) and URLNODE (using malloc).
+
+// It copies the URL to the URLNODE and initialises it and then links it into the
+// DNODE (and initialise it). Then it links the DNODE into the linked list dict.
+// at the point in the list where its key cluster is (assuming that there are
+// elements hashed at the same slot and the URL was found to be unique. It does
+// this for *every* URL in the url_list
+void updateListLinkToBeVisited(char *url_list[ ], int depth){
+  int j = 0;
+  int urlHash;
+
+  // Loop through each URL in the list
+  while (url_list[j] != NULL){
+    printf("on %d \n", j);
+
+    // Calculate the hash
+    urlHash = hash1(url_list[j]) % MAX_HASH_SLOT;
+
+    // Check if spot @ hash exists already
+    if (dict->hash[urlHash] == NULL){
+      // unique
+      // Install into new DNODE and have hash[j] point to new DNODE
+      installDNODE(url_list[j], urlHash, depth);
+    } 
+
+    j++;
+  }
 
 }
+
 
 int main(int argc, char* argv[]) {
   int current_depth;
@@ -361,10 +418,38 @@ int main(int argc, char* argv[]) {
   }
 
   // (3) Bootstrap part of Crawler for first time through with SEED_URL
+  // Set up hash for the Seed
   seedURL = argv[1];
   current_depth = 0;
   target_directory = argv[2];
+  int seedHash = hash1(seedURL) % MAX_HASH_SLOT;
   
+  // Set up URLNode for the Seed
+
+  URLNODE *seedURLNode = malloc(sizeof(URLNODE));
+  MALLOC_CHECK(seedURLNode);
+  seedURLNode->depth = 0; // first node depth is always 0
+  seedURLNode->visited = 0; /* newly installed, so not visited */
+
+  BZERO(seedURLNode->url, MAX_URL_LENGTH); /* being extra careful */
+  strncpy(seedURLNode->url, seedURL, MAX_URL_LENGTH - 1);
+
+  // Set up DNode for the Seed
+  DNODE *seedDNode = malloc(sizeof(DNODE));
+  MALLOC_CHECK(seedDNode);
+  BZERO(seedDNode, sizeof(DNODE));
+  strncpy(seedDNode->key, seedURL, KEY_LENGTH);
+
+  seedDNode->next = seedDNode->prev = NULL; // initialize for FIRST DNode (set to NULL)
+  seedDNode->data = seedURLNode; 
+
+  // Link back to dictionary
+  dict->start = dict->end = seedDNode; // only node so far
+  dict->hash[seedHash] = seedDNode; // link hash to the seed DNode in dict
+
+  
+  ////// Done bootstrapping the first seed ///////
+
   // Get HTML into a string and return as page, 
   /*also save a file (1..N) with correct format (URL, depth, HTML) */
   page = getPage(seedURL, current_depth, target_directory);
@@ -375,10 +460,14 @@ int main(int argc, char* argv[]) {
   }
 
   // Extract all URLs from SEED_URL page.
-  extractURLs(page, seedURL);
+  char** url_list = extractURLs(page, seedURL);
   free(page);
 
-  printf("*******************PAGE GOTTEN page gotten*******");
+  printf("*******************PAGE GOTTEN SUCECESSSS *******");
+
+  // For all the URL in the URLList that do not exist already in the dictionary
+  // then add a DNODE/URLNODE pair to the DNODE list. 
+  updateListLinkToBeVisited(url_list, current_depth + 1);
 
   return 0;
 }

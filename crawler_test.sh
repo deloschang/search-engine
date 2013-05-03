@@ -67,9 +67,15 @@ testCmd[j]="./crawler www.cs.dartmouth.edu/deadlink ./data/ 1"
 let j++
 
 # correct input 
-testName[j]="$j. testing correct input arguments"
-testExpected[j]="No errors expected."
+testName[j]="$j. testing correct input arguments for depth 0"
+testExpected[j]="No errors expected. Should not go past depth 0."
 testCmd[j]="./crawler www.cs.dartmouth.edu ./data/ 0"
+let j++
+
+# correct input 
+testName[j]="$j. testing correct input arguments for depth 1"
+testExpected[j]="No errors expected. Should not go past depth 1."
+testCmd[j]="./crawler www.cs.dartmouth.edu ./data/ 1"
 let j++
 
 iterate=0

@@ -29,6 +29,6 @@ cleanlog:
 	rm -f *.html.*
 	rm -f *log.*
 	rm -f core.*
-	cd ./data/ && rm 
+	cd ./data/ && rm -f *
 
 

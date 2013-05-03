@@ -229,6 +229,9 @@ char* getPage(char* url, int current_depth, char* target_directory){
   fprintf(fileSave, "%s\n%d\n%s", url, current_depth, fileBuffer);
   fclose(fileSave);
 
+  // Remove the file
+  system("rm -f temp");
+
   // return the pointer to the buffer
   return fileBuffer;
 }

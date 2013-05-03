@@ -51,6 +51,7 @@ DICTIONARY* dict = NULL;
 char *url_list[MAX_URL_PER_PAGE]; 
 
 int fileCounter = 0; // counter for the html files scraped
+int url_listLength; // counts length of the URL for looping later
 
 
 
@@ -156,7 +157,7 @@ char* getPage(char* url, int current_depth, char* target_directory){
   wgetCmd = (char*) malloc(len1 + len2 + 1);
 
   memcpy(wgetCmd, "wget -O temp ", len1);
-  memcpy(wgetCmd + len1, url, len2);
+  memcpy(wgetCmd + len1, url, len2 + 1);
 
   wgetResult = system(wgetCmd);
   free(wgetCmd);
@@ -268,6 +269,9 @@ char **extractURLs(char* html_buffer, char* current){
     BZERO(result_buffer, MAX_URL_LENGTH);
   }
 
+  // set j to the length of the url list for looping later
+  url_listLength = j;
+
   // Returned the complete url list
   return(url_list);
 }
@@ -365,12 +369,11 @@ DNODE* determineExists(char* urlToCheck, int urlHash){
 // elements hashed at the same slot and the URL was found to be unique. It does
 // this for *every* URL in the url_list
 void updateListLinkToBeVisited(char *url_list[ ], int depth){
-  int j = 0;
   int urlHash;
   DNODE* existing = NULL;
 
   // Loop through each URL in the list
-  while (url_list[j] != NULL){
+  for(int j=0; j < url_listLength; j++){
 
     // Calculate the hash
     urlHash = hash1(url_list[j]) % MAX_HASH_SLOT;
@@ -384,8 +387,6 @@ void updateListLinkToBeVisited(char *url_list[ ], int depth){
       // determined that the URL doesn't exist, so add to end of list
       insertDNODE(url_list[j], existing, depth);
     }
-
-    j++;
   }
 
 }
@@ -393,6 +394,9 @@ void updateListLinkToBeVisited(char *url_list[ ], int depth){
 
 // marks the url as visited
 void setURLasVisited(char* url){
+  // Careful with URL -- make sure it is normalized
+  NormalizeURL(url);
+
   // grab the DNODE by the hash first
   int urlHash = hash1(url) % MAX_HASH_SLOT;
   DNODE* target = dict->hash[urlHash];
@@ -437,6 +441,7 @@ char *getAddressFromTheLinksToBeVisited(int *depth){
 
     while ( (DNode) ){
       if (((URLNODE *)DNode->data)->visited == 0){
+
         // Update the depth using the URLNode depth
         // that is next to be visited
         *depth = ((URLNODE *)DNode->data)->depth;
@@ -478,15 +483,23 @@ void cleanup(){
 
 // free the malloc'ed URL list
 void freeURLList(char* url_list[]){
-  int j = 0;
-  while (url_list[j] != NULL){
-    free(url_list[j]);
-    j++;
+  /*int j = 0;*/
+  
+  // loop through list and free
+  /*while (url_list[j] != NULL){*/
+    /*free(url_list[j]);*/
+    /*j++;*/
+  /*}*/
+  for (int i=0; i < url_listLength; i++){
+    if(url_list[i] != NULL){
+      free(url_list[i]);
+    }
   }
 }
 
 int main(int argc, char* argv[]) {
   int current_depth;
+  int specified_max_depth;
   char* target_directory;
   char* seedURL;
   char* page;
@@ -508,9 +521,11 @@ int main(int argc, char* argv[]) {
 
   // (3) Bootstrap part of Crawler for first time through with SEED_URL
   // Set up hash for the Seed
-  seedURL = argv[1];
   current_depth = 0;
+  seedURL = argv[1];
   target_directory = argv[2];
+  specified_max_depth = atoi(argv[argc - 1]);
+
   int seedHash = hash1(seedURL) % MAX_HASH_SLOT;
 
   // Set up URLNode for the Seed
@@ -572,24 +587,27 @@ int main(int argc, char* argv[]) {
 
   while ( (URLToBeVisited = getAddressFromTheLinksToBeVisited(&current_depth)) != NULL){
     // Get the next URL to be visited from the DNODE list (first one not visited from start)
-    if (current_depth > MAX_DEPTH) {
+    if (current_depth > specified_max_depth) {
       // For URLs that are over max_depth, we just set them to visited
       // and continue on
+      printf("Exceeds specified depth of %d \n", specified_max_depth);
       setURLasVisited(URLToBeVisited); 
       continue;
     }
+
 
     // Get HTML into a string and return as page, 
     /*also save a file (1..N) with correct format (URL, depth, HTML) */
     page = getPage(URLToBeVisited, current_depth, target_directory);
     if (page == NULL){
-      printf("Panic: Cannot crawl URL: %s. Marking as visited and continuing \n", URLToBeVisited);
+      printf("Panic: Cannot crawl URL: %s. \n Marking as visited and continuing \n", URLToBeVisited);
       setURLasVisited(URLToBeVisited);
       continue;
     }
 
     // extract URLs from this page  
     URLList = extractURLs(page, URLToBeVisited);
+
     free(page); // done with page so release
 
     // load into hash table
@@ -600,7 +618,8 @@ int main(int argc, char* argv[]) {
     // Mark URL as visited
     setURLasVisited(URLToBeVisited);
 
-    freeURLList(url_list);
+    // clean up the url list
+    freeURLList(URLList);
 
     // You must include a sleep delay before crawling the next page 
     // See note below for reason.

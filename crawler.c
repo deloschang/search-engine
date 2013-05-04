@@ -103,7 +103,7 @@ void validateArgs(int argc, char* argv[]){
   // Validate that directory is writable
   // Allocate memory to prevent overflow
 
-  // dangerous
+  // dangerous -- don't use 
   /*char command[100] = "if [ -w ";*/
   /*strcat(command, argv[2]);*/
   /*strcat(command, " ] ; then exit 0 ; else exit 1 ; fi");*/

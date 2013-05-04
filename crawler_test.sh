@@ -91,10 +91,10 @@ let j++
 #let j++
 
 # correct input 
-testName[j]="$j. testing correct input arguments for depth 3"
-testExpected[j]="No errors expected. Should not go past depth 3."
-testCmd[j]="./crawler www.cs.dartmouth.edu ./data/ 3"
-let j++
+#testName[j]="$j. testing correct input arguments for depth 3"
+#testExpected[j]="No errors expected. Should not go past depth 3."
+#testCmd[j]="./crawler www.cs.dartmouth.edu ./data/ 3"
+#let j++
 
 iterate=0
 while (($iterate < $j)); do
@@ -111,7 +111,7 @@ while (($iterate < $j)); do
   echo ${testName[iterate]} >> "$crawler_testlog"
   echo ${testExpected[iterate]} >> "$crawler_testlog"
   echo -n "Output -->" >> "$crawler_testlog"
-   ${testCmd[iterate]} >> "$crawler_testlog"
+  ${testCmd[iterate]} >> "$crawler_testlog" 2>&1
   
   # increment and test next
   let iterate++

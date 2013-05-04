@@ -66,6 +66,7 @@ void validateArgs(int argc, char* argv[]){
   int writableResult = 0;
   char testURL[MAX_URL_LENGTH + 10]; // max URL length and space for the "wget -q"
   char *writableTest = NULL; // dynamically allocate to prevent overflow
+  char command[100] = "if [ -w ";
 
   // check for correct number of parameters first
   if (argc != 4){
@@ -95,15 +96,19 @@ void validateArgs(int argc, char* argv[]){
 
   // Validate that directory is writable
   // Allocate memory to prevent overflow
-  size_t len1 = strlen("if [ -w "), len2 = strlen(argv[2]), len3 = strlen(" ] ; then exit 0 ; else exit 1 ; fi");
-  writableTest = (char*) malloc(len1 + len2 + len3 + 1);
+  strcat(command, argv[2]);
+  strcat(command, " ] ; then exit 0 ; else exit 1 ; fi");
+  writableResult = system(command);
 
-  memcpy(writableTest, "if [ -w ", len1);
-  memcpy(writableTest+len1, argv[2], len2);
-  memcpy(writableTest+len2, " ] ; then exit 0 ; else exit 1 ; fi", len3+1);
+  /*size_t len1 = strlen("if [ -w "), len2 = strlen(argv[2]), len3 = strlen(" ] ; then exit 0 ; else exit 1 ; fi");*/
+  /*writableTest = (char*) malloc(len1 + len2 + len3 + 1);*/
 
-  writableResult = system(writableTest);
-  free(writableTest);
+  /*memcpy(writableTest, "if [ -w ", len1);*/
+  /*memcpy(writableTest+len1, argv[2], len2);*/
+  /*memcpy(writableTest+len2, " ] ; then exit 0 ; else exit 1 ; fi", len3+1);*/
+
+  /*writableResult = system(writableTest);*/
+  /*free(writableTest);*/
 
   if ( writableResult != 0){
     fprintf(stderr, "Error: The dir argument %s was not writable.  Please enter writable and valid directory. \n", argv[2]);
@@ -124,6 +129,7 @@ void validateArgs(int argc, char* argv[]){
 
     exit(1);
   }
+
 }
 
 int initLists(){
@@ -134,6 +140,8 @@ int initLists(){
   BZERO(dict, sizeof(DICTIONARY)); // set the bytes to zero
   dict->start = dict->end = NULL;  // make explicit
 
+  /*dict->start = dict->end = malloc(sizeof(DNODE));*/
+
   return(1);
 }
 
@@ -141,26 +149,29 @@ int initLists(){
 // a file within the target directory along with the URL and current_depth
 // prepended to it
 char* getPage(char* url, int current_depth, char* target_directory){
-  char* wgetCmd;
-  char* fileBuffer = NULL;
+  /*char* wgetCmd;*/
   int wgetResult;
   int i = 0; 
   FILE* tempStore;
   FILE* fileSave;
-  size_t readResult;
   char dirWithCounter[MAX_URL_LENGTH + 100];
 
-  printf("\n [Crawler] Crawling %s \n", url);
+  char command[100] = "wget -O temp ";
+  strcat(command, url);
 
-  // allocate space to avoid overflow
-  size_t len1 = strlen("wget -O temp "), len2 = strlen(url);
-  wgetCmd = (char*) malloc(len1 + len2 + 1);
+  /*printf("\n [Crawler] Crawling %s \n", url);*/
 
-  memcpy(wgetCmd, "wget -O temp ", len1);
-  memcpy(wgetCmd + len1, url, len2 + 1);
+  /*// allocate space to avoid overflow*/
+  /*size_t len1 = strlen("wget -O temp "), len2 = strlen(url);*/
+  /*wgetCmd = (char*) malloc(len1 + len2 + 1);*/
 
-  wgetResult = system(wgetCmd);
-  free(wgetCmd);
+  /*memcpy(wgetCmd, "wget -O temp ", len1);*/
+  /*memcpy(wgetCmd + len1, url, len2 + 1);*/
+
+  /*wgetResult = system(wgetCmd);*/
+  /*free(wgetCmd);*/
+
+  wgetResult = system(command);
 
   // check if wget was successful
   do {
@@ -180,6 +191,9 @@ char* getPage(char* url, int current_depth, char* target_directory){
   } while (i < 3);
 
   // Open the temp stored file from the successful wget
+  char* fileBuffer = NULL; // prepare for storage
+
+  printf("opening the temp file\n");
   tempStore = fopen("temp", "r");
 
   // Make sure temp exists first
@@ -188,6 +202,7 @@ char* getPage(char* url, int current_depth, char* target_directory){
     return NULL;
   }
 
+  printf("seeking\n");
   if (fseek(tempStore, 0L, SEEK_END) == 0){
     long tempFileSize = ftell(tempStore);
     if (tempFileSize == -1){
@@ -196,28 +211,38 @@ char* getPage(char* url, int current_depth, char* target_directory){
     }
 
     // Allocate buffer to that size
-    fileBuffer = malloc(sizeof(char) * (tempFileSize + 1)); // +1 for terminal byte
+    printf("file Buffer\n");
+
+    // Length of buffer should be the same of output of wget + 1
+    fileBuffer = malloc(sizeof(char) * (tempFileSize + 2) ); // +1 for terminal byte
 
     // Rewind to top in preparation for reading
     rewind(tempStore);
 
-    // Read file to memory
-    readResult = fread(fileBuffer, sizeof(char), tempFileSize, tempStore);
+    // Read file to buffer
+    printf("Read file to buffer\n ");
+    size_t readResult = fread(fileBuffer, sizeof(char), tempFileSize, tempStore);
+
     if (readResult == 0){
       fprintf(stderr, "Error reading the temp file. Skipping. \n");
       return NULL;
     } else {
-      fileBuffer[++readResult] = '\0'; // add terminal byte
+      readResult++;
+      fileBuffer[readResult] = '\0'; // add terminal byte
     }
   }
 
+  printf("closing\n");
   fclose(tempStore);
 
 
   // increment the file counter for writing
   fileCounter++;
 
+  printf("Writing target path");
   sprintf(dirWithCounter, "%s/%d", target_directory, fileCounter);
+
+  printf("FileSave\n");
   fileSave = fopen(dirWithCounter, "w");
 
   if (fileSave == NULL){
@@ -226,11 +251,16 @@ char* getPage(char* url, int current_depth, char* target_directory){
   }
 
   // Commit the buffer to file
+  printf("Commit to buffer\n");
+  printf("Saving file");
   fprintf(fileSave, "%s\n%d\n%s", url, current_depth, fileBuffer);
+
+  printf("\n Closing file");
   fclose(fileSave);
 
   // Remove the file
-  system("rm -f temp");
+  printf("\n Removing file");
+  /*system("rm -f temp");*/
 
   // return the pointer to the buffer
   return fileBuffer;
@@ -398,17 +428,22 @@ void updateListLinkToBeVisited(char *url_list[ ], int depth){
 // marks the url as visited
 void setURLasVisited(char* url){
   // Careful with URL -- make sure it is normalized
-  NormalizeURL(url);
+  printf("In URL as Visited\n");
+  /*NormalizeURL(url);*/
 
   // grab the DNODE by the hash first
+  printf("Hashing the URL\n");
   int urlHash = hash1(url) % MAX_HASH_SLOT;
   DNODE* target = dict->hash[urlHash];
 
   // loop until find the URL
+  printf("Done hasing\n");
   while (target){
     if (!strcmp(target->key, url)){
+      printf("Match found. Set visited to 1. \n");
       // found it
       ((URLNODE *)target->data)->visited = 1; // set to visited
+      printf("Done setting visit");
       break;
     }
 
@@ -418,6 +453,7 @@ void setURLasVisited(char* url){
       exit(1);
     }
 
+    printf("No match found. Next target.\n");
     target = target->next;
   }
 }
@@ -467,22 +503,50 @@ void cleanup(){
   DNODE* DNode;
   DNODE* store;
 
+
+  int testcount=0;
+
   for (int i = 0; i < MAX_HASH_SLOT; i++){
+    /*printf("Looping over %d\n", i);*/
     DNode = dict->hash[i];
     
     while ( (DNode) ){
-      store = DNode->next;
-      free(DNode->data);
-      free(DNode);
+      /*printf("Inner while %d \n", testcount);*/
+
+
+
+      printf("Storing the DNODE\n");
+      store = DNode;
+      if ( (i == 5381 && testcount == 0) || (i == 631 && testcount == 0) ){
+        printf("Special point reached");
+        break;
+      }
+
+      printf("Freeing the DNODE data\n");
+      if (store->data !=NULL){
+        free(store->data);
+      }
+
 
       // iterate to next DNODE
-      DNode = store;
+      printf("Next DNODE");
+      DNode = DNode->next;
+
+      printf("Freeing the DNODE itself\n");
+      free(store);
+
+      store = NULL;
+      testcount++;
     }
+
+    testcount = 0;
 
   }
   // final clean up
-  free(DNode);
+  printf("Finishing dict final cleanup note.\n");
+  /*free(DNode);*/
   free(dict);
+  dict = NULL;
 }
 
 // free the malloc'ed URL list
@@ -496,6 +560,7 @@ void freeURLList(char* url_list[]){
   /*}*/
   for (int i=0; i < url_listLength; i++){
     if(url_list[i] != NULL){
+      printf("Freeing %s \n", url_list[i]);
       free(url_list[i]);
     }
   }
@@ -534,7 +599,7 @@ int main(int argc, char* argv[]) {
 
   // Set up URLNode for the Seed
 
-  URLNODE *seedURLNode = malloc(sizeof(URLNODE));
+  URLNODE* seedURLNode = malloc(sizeof(URLNODE));
   MALLOC_CHECK(seedURLNode);
   seedURLNode->depth = 0; // first node depth is always 0
   seedURLNode->visited = 0; /* newly installed, so not visited */
@@ -543,7 +608,7 @@ int main(int argc, char* argv[]) {
   strncpy(seedURLNode->url, seedURL, MAX_URL_LENGTH - 1);
 
   // Set up DNode for the Seed
-  DNODE *seedDNode = malloc(sizeof(DNODE));
+  DNODE* seedDNode = malloc(sizeof(DNODE));
   MALLOC_CHECK(seedDNode);
   BZERO(seedDNode, sizeof(DNODE));
   strncpy(seedDNode->key, seedURL, KEY_LENGTH);
@@ -590,6 +655,8 @@ int main(int argc, char* argv[]) {
   // exceeded keep processing the URLs.
 
   while ( (URLToBeVisited = getAddressFromTheLinksToBeVisited(&current_depth)) != NULL){
+    printf("\n Current Depth is %d \n", current_depth);
+
     // Get the next URL to be visited from the DNODE list (first one not visited from start)
     if (current_depth > specified_max_depth) {
       // For URLs that are over max_depth, we just set them to visited
@@ -601,6 +668,7 @@ int main(int argc, char* argv[]) {
 
     // Get HTML into a string and return as page, 
     /*also save a file (1..N) with correct format (URL, depth, HTML) */
+    printf("Getting page\n");
     page = getPage(URLToBeVisited, current_depth, target_directory);
     if (page == NULL){
       printf("Panic: Cannot crawl URL: %s. \n Marking as visited and continuing \n", URLToBeVisited);
@@ -611,6 +679,7 @@ int main(int argc, char* argv[]) {
     // extract URLs from this page  
     URLList = extractURLs(page, URLToBeVisited);
 
+    printf("Trying to free page\n");
     free(page); // done with page so release
 
     // load into hash table
@@ -622,15 +691,18 @@ int main(int argc, char* argv[]) {
     setURLasVisited(URLToBeVisited);
 
     // clean up the url list
+    printf("Trying to free URL list\n");
     freeURLList(URLList);
 
     // You must include a sleep delay before crawling the next page 
     // See note below for reason.
-    sleep(INTERVAL_PER_FETCH);
+    /*sleep(INTERVAL_PER_FETCH);*/
   }
 
+  printf("WOOOO DONEEEE CLEANUP TIME*(********\n\n\n");
   // cleanup
   cleanup();
 
+  printf("Done cleaning up");
   return 0;
 }

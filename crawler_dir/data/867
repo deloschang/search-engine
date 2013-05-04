@@ -1,9 +1,0 @@
-http://www.cs.dartmouth.edu/site-content/reports/authors/Keren-Tan.php
-3
-<div style="padding:5px;border:1px solid black;background-color:#ebebeb;color:#000;font-family:arial;"><p>Bad MySQL Statement:<br><font color=red>	insert into `SYS_logUser` <br />
-							set 	`dtCreate` = NOW(),<br />
-									`dtLastView` = NOW(),<br />
-									`sPasskey` = 'e27493e8461e0cc25111f6864eaf3940',<br />
-									`sUserAgent` = 'Wget/1.14 (linux-gnu)' ,<br />
-									sSessID= 'ct56c2r3q9uergf9tjqa6688p5'<br />
-							</font><div style="margin:5px 0 5px 0;height:1px;border-top:1px #000 dotted;"></div>MySQL says:<br><font color=red>Duplicate entry 'e27493e8461e0cc25111f6864eaf3940' for key 'sPasskey'</font><br><font size=2>(Line 89 ,/usr/katahdin/www/docs/include/class/class.User.php)</font><div style="margin:5px 0 5px 0;height:1px;border-top:1px #000 dotted;"></div></div>Å

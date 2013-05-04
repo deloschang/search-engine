@@ -53,6 +53,12 @@ char *url_list[MAX_URL_PER_PAGE];
 int fileCounter = 0; // counter for the html files scraped
 int url_listLength; // counts length of the URL for looping later
 
+// for crawler statistics
+// These are incremented as the crawler runs, then displayed
+// at the end of the crawl. 
+int unable_to_crawl = 0;
+int able_to_crawl = 0;
+
 
 
 // This function validates the arguments provided by the user.
@@ -181,11 +187,13 @@ char* getPage(char* url, int current_depth, char* target_directory){
 
       if (i == 2){
         fprintf(stderr, "\n Retrieval failed after %d tries. Next URL \n", i);
+        unable_to_crawl++;
         return NULL;
       }
       i++;
     } else {
       // successful, exit loop and proceed
+      able_to_crawl++;
       break;
     }
   } while (i < 3);
@@ -296,6 +304,10 @@ char **extractURLs(char* html_buffer, char* current){
       // Report the found link
       printf("[crawler]:Parser find link:%s \n", url_list[j]);
       j++;
+    } else {
+      // Either the normalization of the URL was not successful, or the crawler is
+      // trying to crawl a non URL PREFIX website (check crawler.h)
+      fprintf(stderr, "Please only crawl Dartmouth websites, not %s. Example:cs.dartmouth.edu. Skipping. \n", result_buffer);
     }
 
     // Grab next URL so clear the buffer
@@ -504,35 +516,22 @@ void cleanup(){
   DNODE* store;
 
 
+  // Iterate through each hashslot and free the nodes
   int testcount=0;
-
   for (int i = 0; i < MAX_HASH_SLOT; i++){
-    /*printf("Looping over %d\n", i);*/
     DNode = dict->hash[i];
     
     while ( (DNode) ){
-      /*printf("Inner while %d \n", testcount);*/
-
-
-
-      printf("Storing the DNODE\n");
       store = DNode;
-      if ( (i == 5381 && testcount == 0) || (i == 631 && testcount == 0) ){
-        printf("Special point reached");
-        break;
-      }
 
-      printf("Freeing the DNODE data\n");
       if (store->data !=NULL){
         free(store->data);
       }
 
 
       // iterate to next DNODE
-      printf("Next DNODE");
       DNode = DNode->next;
 
-      printf("Freeing the DNODE itself\n");
       free(store);
 
       store = NULL;
@@ -543,27 +542,26 @@ void cleanup(){
 
   }
   // final clean up
-  printf("Finishing dict final cleanup note.\n");
-  /*free(DNode);*/
   free(dict);
   dict = NULL;
 }
 
 // free the malloc'ed URL list
+// This function will run at the end of each main processing while loop in main().
 void freeURLList(char* url_list[]){
-  /*int j = 0;*/
-  
-  // loop through list and free
-  /*while (url_list[j] != NULL){*/
-    /*free(url_list[j]);*/
-    /*j++;*/
-  /*}*/
   for (int i=0; i < url_listLength; i++){
     if(url_list[i] != NULL){
-      printf("Freeing %s \n", url_list[i]);
       free(url_list[i]);
     }
   }
+}
+
+// Simple function that prints statistics of the crawl
+void printStatistics(){
+  printf("\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n");
+  printf("Successfully crawled %d pages \n", able_to_crawl);
+  printf("Could not crawl %d pages \n", unable_to_crawl);
+  printf("\n=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n");
 }
 
 int main(int argc, char* argv[]) {
@@ -598,7 +596,7 @@ int main(int argc, char* argv[]) {
   int seedHash = hash1(seedURL) % MAX_HASH_SLOT;
 
   // Set up URLNode for the Seed
-
+  // these mallocs will be free at freeURLList()
   URLNODE* seedURLNode = malloc(sizeof(URLNODE));
   MALLOC_CHECK(seedURLNode);
   seedURLNode->depth = 0; // first node depth is always 0
@@ -653,7 +651,6 @@ int main(int argc, char* argv[]) {
 
   // (8) Main processing loop of crawler. While there are URL to visit and the depth is not 
   // exceeded keep processing the URLs.
-
   while ( (URLToBeVisited = getAddressFromTheLinksToBeVisited(&current_depth)) != NULL){
     printf("\n Current Depth is %d \n", current_depth);
 
@@ -700,9 +697,11 @@ int main(int argc, char* argv[]) {
   }
 
   printf("WOOOO DONEEEE CLEANUP TIME*(********\n\n\n");
+
   // cleanup
   cleanup();
 
-  printf("Done cleaning up");
+  // print stats
+  printStatistics();
   return 0;
 }

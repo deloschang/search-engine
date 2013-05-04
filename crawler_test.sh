@@ -66,17 +66,23 @@ testExpected[j]="Expected Error: The URL www.cs.dartmouth.edu/deadlink was inval
 testCmd[j]="./crawler www.cs.dartmouth.edu/deadlink ./data/ 1"
 let j++
 
-# correct input 
-#testName[j]="$j. testing correct input arguments for depth 0"
-#testExpected[j]="No errors expected. Should not go past depth 0."
-#testCmd[j]="./crawler www.cs.dartmouth.edu ./data/ 0"
-#let j++
+# test dangerous crawling at foreign URL
+testName[j]="$j. testing dangerous crawling"
+testExpected[j]="Please only crawl Dartmouth websites. Example:cs.dartmouth.edu. Skipping."
+testCmd[j]="./crawler www.google.com ./data/ 1"
+let j++
 
 # correct input 
-testName[j]="$j. testing correct input arguments for depth 1"
-testExpected[j]="No errors expected. Should not go past depth 1."
-testCmd[j]="./crawler www.cs.dartmouth.edu ./data/ 1"
+testName[j]="$j. testing correct input arguments for depth 0"
+testExpected[j]="No errors expected. Should not go past depth 0."
+testCmd[j]="./crawler www.cs.dartmouth.edu ./data/ 0"
 let j++
+
+# correct input 
+#testName[j]="$j. testing correct input arguments for depth 1"
+#testExpected[j]="No errors expected. Should not go past depth 1."
+#testCmd[j]="./crawler www.cs.dartmouth.edu ./data/ 1"
+#let j++
 
 # correct input 
 #testName[j]="$j. testing correct input arguments for depth 2"
@@ -111,7 +117,7 @@ while (($iterate < $j)); do
   let iterate++
 done
 
-echo "Done testing. Cleaning up"
+echo "\n\n Done testing. Cleaning up \n\n"
 
 # cleanup
 make clean

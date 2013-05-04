@@ -1,0 +1,777 @@
+http://www.cs.dartmouth.edu/%7Ecampbell/mobilephonesensing.html
+3
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<!-- saved from url=(0032)http://www.cs.dartmouth.edu/~an/ -->
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <title>Andrew T. Campbell</title>
+  <link href="default.css" rel="stylesheet" type="text/css" media="screen">
+</head>
+
+
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="header">
+
+<h1><img style="width: 970px; height: 191px;" alt="" src="newphonecloud.jpg"></h1>
+
+
+
+
+
+<h1><font size="+3">computer systems seminar</font></h1>
+
+
+
+
+
+
+<h1 style="text-align: left;"><big><font size="+3"><big>clouds, crowds and phones -&nbsp; the new tech revolution underway </big></font></big></h1>
+
+
+
+
+
+
+<br>
+
+
+
+
+
+
+<h1>latest news</h1>
+
+
+<small><font size="+1"><small><span style="font-weight: bold;">Monday 17, January 5pm</span>. Mail one page PDF of your project idea for mobile phone sensing to campbell@cs.dartmouth.edu.<br>
+
+
+<br>
+
+</small></font></small><small><font size="+1"><small><span style="font-weight: bold;">Tuesday 2o, January 2 pm</span></small></font></small><small><font size="+1"><small>. Elevator pitch. </small></font></small><small><font size="+1"><small><span style="font-weight: bold;"> <br>
+
+<br>
+
+</span></small></font></small><small><font size="+1"><small>
+<span style="font-weight: bold;">Tuesday 25, January 2 pm</span>. Demo assignment one - see below. And, project group annoncements.<br>
+
+</small></font></small>
+<br>
+
+
+<h1>description</h1>
+
+
+
+
+
+
+<small><font size="+1"><small>In this seminar, we will study the latest
+advances in mobile phone sensing and its interaction with the computing
+cloud and exploiting big sensor data (the crowd). <br>
+
+
+
+
+
+
+<br>
+
+
+
+
+
+We will read the latest papers on this emerging field and program
+phones to test out some of the ideas that emerge in the seminar. A high
+degree of self learning is required for this seminar and a strong set
+of programming skills.<br>
+
+
+
+
+
+
+<br>
+
+
+
+
+Assesemnt is based on presenting research papers, class involvment and
+programming projects. A large commitment in programming is required.</small></font></small><small><font size="+1"><small><br>
+
+
+
+
+
+
+</small></font></small>&nbsp;<br>
+
+
+
+
+
+
+<span style="font-weight: bold;"></span>
+<h1>admin</h1>
+
+
+
+
+
+
+<small><font size="+1"><small>Prerequisite: cs 23 and cs78 or cs 58<br>
+
+
+
+
+
+
+Instructor: Andrew Campbell<br>
+
+
+
+
+
+
+When:&nbsp; Tuesday (presentations) and Thursday (lab)&nbsp; 2:00-3:50&nbsp;&nbsp; &nbsp;<br>
+
+
+
+
+
+
+Where:&nbsp; sensor lab (147 Sudikoff</small></font><font size="+1"><small>)<br>
+
+
+
+
+<br>
+
+
+
+
+</small></font></small>
+<h1>grading</h1>
+
+
+
+
+Class participation: 20%; paper presentations and review 30%; project: programming 20% and final paper 30%.<br>
+
+
+
+
+<br>
+
+
+
+
+Students will present papers and discuss the pros/cons of those papers
+in class. Students will also work on individual or group projects and
+write up a conference style paper. There is no midterm or final exam.<br>
+
+
+
+
+<br>
+
+
+
+
+<span style="font-weight: bold;">Top student will get an iPad (it's a large cellphone ;-) and an honourable mention on this webpage.<br>
+
+<br>
+
+
+</span>
+<h1>students</h1>
+
+
+
+
+<small><font size="+1"><small>Xiaoyi Chen <br>
+
+
+
+
+Shaohan Hu&nbsp;&nbsp;&nbsp; &nbsp;<br>
+
+
+
+
+Lei Liu&nbsp;&nbsp;&nbsp; &nbsp;<br>
+
+
+
+
+Hong Lu&nbsp;&nbsp;&nbsp; &nbsp;<br>
+
+
+
+
+Emiliano Miluzzo<br>
+
+
+
+
+Xiandong Ren&nbsp;&nbsp;&nbsp; &nbsp;<br>
+
+
+
+
+Senate J. Taka&nbsp;&nbsp;&nbsp; &nbsp;<br>
+
+
+
+
+Tianyu Wang&nbsp;&nbsp;&nbsp; &nbsp;<br>
+
+
+
+
+John F. Williamson&nbsp;&nbsp;&nbsp; &nbsp;<br>
+
+
+
+
+Rui Xie&nbsp;&nbsp;&nbsp; &nbsp;<br>
+
+
+
+
+Ye Xu&nbsp;&nbsp;&nbsp; &nbsp;<br>
+
+
+
+
+Xiaochao Yang</small></font></small><br>
+
+
+
+
+<small><font size="+1"><small>Mu Lin <br>
+
+Mashfiqui Rabbi<br>
+
+<br>
+
+
+
+
+</small></font></small>
+<h1>tips on presenting a paper</h1>
+
+
+
+
+<small><font size="+1"><small>You don't want to repeat all the details
+in the paper because we've all read it and know the content. Here are
+some tips for your presentation:<br>
+
+
+
+
+</small></font></small>
+<ul>
+
+
+  <li><small><font size="+1"><small>What's the problem addressed in the paper and why is it important?</small></font></small></li>
+
+
+  <li><small><font size="+1"><small>What's the proposed solution and why is it novel in comparison to the related work?</small></font></small></li>
+
+
+  <li><small><font size="+1"><small>Are the assumptions made by the authors reasonable, is the methodology OK?</small></font></small></li>
+
+
+  <li><small><font size="+1"><small>What are the design tradeoffs?</small></font></small></li>
+
+
+  <li><small><font size="+1"><small>Present one or two of the more important results</small></font></small></li>
+
+
+  <li><small><font size="+1"><small>What are your ideas for improving the ideas in the paper?</small></font></small></li>
+
+
+</ul>
+
+
+
+
+<small><font size="+1"><small>A good presentation gets the essence of
+the paper over and stimulates a discussion on the above topics. This is
+not a complete set of tips - I'm sure there are more.&nbsp; Important:
+have a set of questions ready before your presentation and ask the
+class those questions at suitable points during your presentation: your
+job is to drive the discussion of the ideas in the paper - the good,
+bad, and the ugly. Practice your talk. Make sure you talk to the
+audience not the wall that the slides are projected on.<br>
+
+
+
+
+<br>
+
+
+
+
+</small></font></small>
+<h1>tips written review requirement</h1>
+
+
+
+
+<small><font size="+1"><small>You need to write up one review of any paper you like and submit it
+before the last day of class. It would make sense to write the review
+up based on a paper you present in class. That way you can catch any
+discussion issues in your write up if you wish.<br>
+
+
+
+
+<br>
+
+
+
+
+The basic idea is as follows. You are the member of a technical program
+committee for a conference and you get this paper to review. You need
+to argue what the good and bad points of the paper are and how it could
+be improved. What's the novelty of the paper, etc. You can use the
+&ldquo;Tips for Presenting a Paper&rdquo; as a means of structuring
+your write up. It would make sense to survey some of the papers cited
+(the important ones) to give you some more background to the paper. You
+could then incorporate that into the review that you will write.<br>
+
+
+
+
+<br>
+
+
+
+
+I would assume the review would be around 3-5 pages. You could hand
+this in at any point. Perhaps the week after you have presented if you
+choose the paper you present in class to be your review paper.<br>
+
+
+
+
+<br>
+
+
+
+
+Let me know if you have any questions.<br>
+
+
+&nbsp;<br>
+
+
+</small></font></small>
+<h1>phone programming assignments and resources</h1>
+
+
+<small><font size="+1"><small>We can program iPhones or Andriod phones.
+You need to determine which phone you will use for the project and
+write some simple programs.&nbsp; </small></font></small><small><font size="+1"><small>Checkout the <a href="http://cs.dartmouth.edu/%7Exy/smartphoneprogramming.html">phone resource information</a>.</small></font></small><br>
+
+
+<small><font size="+1"><small><br>
+
+
+Assignment one (</small></font></small><small><font size="+1"><small>Due Tuesday 25, 2010)<br>
+
+
+</small></font></small><small><font size="+1"><small>&nbsp;<br>
+
+
+I suggest that you write a program that continously reads, records and
+displays the location, time, accelometer. Get going on this initial
+assignment and complete it by Tuesday 25, 2010. You need to demo this
+to me during Tuesday's seminar.<br>
+<br>
+<br>
+</small></font></small>
+<h1>projects</h1>
+<small><font size="+1"><small>Project AnnonifyMe (Senate, John, Nic)<br>
+&nbsp;<br>
+Project FaceBlur (Xiaochao, Xiandong, Xiaoyi)<br>
+<br>
+Project WalkSafe (Tianyu, Lei)<br>
+<br>
+Project Evolve (Hong, Ye)<br>
+<br>
+Project VibN (Emiliano, Shaohan)<br>
+<br>
+Each project needs to build a demonstrable system using the phone and
+backend. Each project should product a demo and conference quality
+paper as final output.<br>
+<br>
+
+
+</small></font></small>
+<h1>papers</h1>
+
+
+
+
+<br>
+
+
+
+
+<h2 style="font-weight: bold;">Thursday&nbsp; 6, January - Starting Point</h2>
+
+
+
+
+<small><font size="+1"><small>"<a href="qualcomm.pdf">2.5 billion smartphones shipped by 2014</a>", Qualcomm CEO, New York Times, Jan 05, 2011<br>
+
+
+
+
+<br>
+
+
+
+
+</small></font></small><small><font size="+1"><small><a href="papers/survey.pdf">A Survey of Mobile Phone Sensing</a></small></font></small><small><font size="+1"><small>, Nicholas D. Lane, Emiliano Miluzzo, Hong Lu, Daniel Peebles, Tanzeem
+Choudhury, Andrew T. Campbell,&nbsp;<a href="papers/survey.pdf"></a>, IEEE
+Communications Magazine, September, 2010.<br>
+
+
+
+
+<br>
+
+
+
+
+</small></font></small><small><font size="+1"><small><a href="http://delivery.acm.org/10.1145/1280000/1273458/p83-keshav.pdf?key1=1273458&amp;key2=2560534921&amp;coll=DL&amp;dl=ACM&amp;CFID=4687987&amp;CFTOKEN=93133010">How to Read a Paper</a>, S. Keshav, ACM SIGCOMM Computer Communication Review, 2007 </small></font></small><small><font size="+1"><small><br>
+
+
+
+
+<br>
+
+
+
+
+</small></font></small>
+<h2 style="font-weight: bold;">Tuesday&nbsp; 11, January - Phones, Crowds and Clouds</h2>
+
+
+
+
+<small><font size="+1"><small><a href="http://delivery.acm.org/10.1145/1820000/1814443/p77-yan.pdf?key1=1814443&amp;key2=4584334921&amp;coll=DL&amp;dl=ACM&amp;CFID=4687987&amp;CFTOKEN=93133010">CrowdSearch: Exploiting Crowds for Accurate Real-Time Image Search on Mobile Phones</a>, Tingxin Yan, Vikas Kumar, Deepak Ganesan (University of Massachusetts, Amherst),&nbsp;</small></font></small><small><font size="+1"><small>ACM MobiSys 2010.</small></font></small><small><font size="+1"><small> (Presenter: </small></font></small><small><font size="+1"><small>Tianyu Wang)&nbsp;</small></font></small><br>
+
+
+
+
+<small><font size="+1"><small><br>
+
+
+
+
+</small></font></small><small><font size="+1"><small><a href="http://delivery.acm.org/10.1145/1820000/1814441/p49-cuervo.pdf?key1=1814441&amp;key2=5605334921&amp;coll=DL&amp;dl=ACM&amp;CFID=4687987&amp;CFTOKEN=93133010">MAUI: Making Smartphones Last Longer with
+Code Offload</a>, Eduardo Cuervo (Duke University), Aruna Balasubramanian
+(University of Massachusetts, Amherst), Dae-ki Cho (University of
+California, Los Angeles), Alec Wolman, Stefan Saroiu, Ranveer Chandra,
+Paramvir Bahl (Microsoft Research), ACM MobiSys 2010.&nbsp; (Presenter: </small></font></small><small><font size="+1"><small>Hong Lu)<br>
+
+
+<br>
+
+
+</small></font></small>
+<h2 style="font-weight: bold;">Tuesday&nbsp; 18, January - Socio-Psycho Smart Phones</h2>
+
+
+<small><font size="+1"><small><a href="http://www.cs.st-andrews.ac.uk/%7Emirco/papers/ubicomp10.pdf">"EmotionSense: A Mobile Phones based Adaptive Platform for Experimental Social Psychology Research"</a>, Kiran K. Rachuri, Mirco Musolesi, Cecilia Mascolo, Jason Rentfrow, Chris Longworth, Andrius Aucinas, </small></font></small><small><font size="+1"><small>UbiComp 2010. (</small></font></small><small><font size="+1"><small>
+
+Presenter: Lei Liu) </small></font></small><small><font size="+1"><small><br>
+
+
+<br>
+
+
+<a href="http://web.media.mit.edu/%7Eanmol/fp-325madan.pdf">"Social Sensing to Model Epidemiological Behavior Change"</a>, Madan A., Cebrian M., Lazer D. and Pentland A.,&nbsp;</small></font></small><small><font size="+1"><small>UbiComp 2010. (Presenter: </small></font></small><small><font size="+1"><small>
+
+Xiaochao Yang)<br>
+
+</small></font></small><small><font size="+1"><small>
+
+
+
+</small></font></small><br>
+
+<h2 style="font-weight: bold;">Tuesday&nbsp; 25, January - Complex Networks and&nbsp;Social Dyanmics</h2>
+
+<small><font size="+1"><small><a href="http://www.barabasilab.com/pubs/CCNR-ALB_Publications/200902-06_Science-CompSocial/200902-06_Science-CompSocial.pdf">"Computation Social Science"</a>,
+D. Lazer, A. Pentland, L. Adamic, S. Aral, A.-L. Barab&aacute;si, D.
+Brewer, N. Christakis, N. Contractor, J. Fowler, M. Gutmann, T. Jebara,
+G. King, M. Macy, D. Roy, M. Van Alstyne, Science 323, 721-724 (2009). (</small></font></small><small><font size="+1"><small>Presenter: </small></font></small><small><font size="+1"><small>Nic Lane) <br>
+
+<br>
+
+<a href="http://www.barabasilab.com/pubs/CCNR-ALB_Publications/200907-24_Science-Decade/200907-24_Science-Decade.pdf">"Scale-Free Networks: A Decade and Beyond"</a>, A.-L. Barab&aacute;si, &nbsp; Science 325, 412-413 (2009). (Presenter:&nbsp;</small></font></small><small><font size="+1"><small>
+
+
+Emiliano Miluzzo)</small></font></small><small><font size="+1"><small> <br>
+
+<br>
+
+"<a href="http://www.barabasilab.com/pubs/CCNR-ALB_Publications/200806-05_Nature-MobilityPatterns/200806-05_Nature-MobilityPatterns.pdf">Understanding individual human mobility patterns</a>", M. C. Gonz&aacute;lez, C. A. Hidalgo, A.-L. Barab&aacute;si ,&nbsp; Nature 453, 779-782 (2008). (Presenter:&nbsp;</small></font></small><small><font size="+1"><small>
+
+
+Ye Xu )</small></font></small><br>
+<br>
+<h2><span style="font-weight: bold;">Thursday 3, February - Smartphone Usage Patterns; Topic Models
+</span><small><font size="+1"><small></small></font></small></h2>
+<small><font size="+1"><small><a href="http://research.microsoft.com/en-us/um/people/srikanth/data/mobi155-falaki.pdf">"Diversity in Smartphone Usage",</a>
+Hossein Falaki (University of California, Los Angeles), Ratul Mahajan,
+Srikanth Kandula, Dimitrios Lymberopoulos (Microsoft Research), Ramesh
+Govindan (University of Southern California), Deborah Estrin
+(University of California, Los Angeles), MobiSys 2010. (Presenter:&nbsp;</small></font></small><small><font size="+1"><small> John)</small></font></small><small><font size="+1"><small> <br>
+<br>
+<a href="http://www.eecs.berkeley.edu/%7Emfritz/papers/ubicomp2008.pdf">"Discovery of Activity Patterns using Topic Models"</a>, T. Huynh, M. Fritz, B. Shiele (TU Darmstadt), UbiComp 2008, (Presenter: </small></font></small><small><font size="+1"><small>
+
+
+
+Shaohan)</small></font></small><br>
+<small><font size="+1"><small><br>
+5 minuate project update from each team.<br>
+</small></font></small><small><font size="+1"><small><br>
+<br>
+</small></font></small><small><font size="+1"><small>&nbsp;</small></font></small><br>
+
+<br>
+
+
+<br>
+
+
+
+
+<br>
+
+
+
+
+<small><font size="+1"><small><br>
+
+
+
+
+</small></font></small><small><font size="+1"><small></small></font></small><small><font size="+1"><small><br>
+
+
+
+
+</small></font></small>
+
+
+
+
+
+<h3><br>
+
+
+
+
+
+
+</h3>
+
+
+
+
+
+
+<p></p>
+
+
+
+
+
+
+<br>
+
+
+
+
+
+
+<p><big><small><font size="+1"><small></small></font></small></big></p>
+
+
+
+
+
+
+
+
+<br>
+
+
+
+
+
+
+
+
+<br>
+
+
+
+
+
+
+
+
+<br>
+
+
+
+
+
+
+
+
+<br>
+
+
+
+
+
+
+
+
+<br>
+
+
+
+
+
+
+
+
+
+<br>
+
+
+
+
+
+
+
+
+<br>
+
+
+
+
+
+
+
+
+
+
+<br>
+
+
+
+
+
+
+
+
+
+<br>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+m

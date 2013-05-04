@@ -1,0 +1,88 @@
+http://www.cs.dartmouth.edu/content/syllabi/cs2/schedule.html
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<title>CS 2 | Programming for Interactive Digital Arts | Winter 2008</title>
+<link rel="stylesheet" type="text/css" href="style/style.css" />
+</head>
+
+<body>
+<div class="pagebackground">
+<div class="pagedecorationbefore"></div>
+<div class="pagedecoration">
+
+<div class="page">
+<div class="header">
+  <div class="title">CS 2, Winter 2008</div>
+  <div class="subtitle">Programming for Interactive Digital Arts</div>
+</div>
+
+<div class="navigation">
+  <a href="index.html" class="navthere">About</a>
+  <a href="schedule.html" class="navhere">Schedule</a>
+</div>
+
+<div class="content">
+<table class="schedule">
+
+<tr><th id="date">Date</th><th id="topics">Topics</th><th id="refs">References</th><th id="out">Out</th><th id="due">Due</th></tr>
+
+<tr class="on"><td>Jan 7</td><td>Introduction</td><td>Browse <a href="http://www.processing.org">Processing site</td><td>HW 0</td><td></td></tr>
+<tr class="on"><td>Jan 9</td><td>Basic drawing</td><td>Structure&nbsp;1, Shape&nbsp;1, Color&nbsp;1, Typography&nbsp;1</td><td></td><td></td></tr>
+<tr valign="top" class="on"><td>Jan 11</td><td>Basic interaction</td><td>Math&nbsp;1, Structure&nbsp;2, Input&nbsp;1</td><td>HW 1</td><td>HW 0</td></tr>
+<tr valign="top" class="off"><td>Jan 14</td><td>Responding conditionally</td><td>Control&nbsp;1, Input&nbsp;2</td><td></td><td></td></tr>
+<tr valign="top" class="off"><td>Jan 16</td><td>State</td><td>Data&nbsp;1, Input&nbsp;3</td><td></td><td></td></tr>
+<tr valign="top" class="off"><td>Jan 18</td><td>Repetition</td><td>Control&nbsp;2, Data&nbsp;4</td><td>HW 2</td><td>HW 1 </td></tr>
+<tr class="on"><td class="cancel">Jan 21</td><td class="cancel">No class (MLK day)</td><td></td><td></td><td></td></tr>
+<tr valign="top" class="on"><td>Jan 23</td><td>More complex shapes</td><td>Shape&nbsp;2, Structure&nbsp;3</td><td></td><td></td></tr>
+<tr valign="top" class="on"><td>Jan 24 <span class="xhour">(x)</span></td><td>Periodicity</td><td>Math&nbsp;3</td><td></td><td></td></tr>
+<tr valign="top" class="on"><td>Jan 25</td><td>Coordinates revisited</td><td>Transform&nbsp;1, Transform&nbsp;2</td><td>HW 3</td><td>HW 2 </td></tr>
+<tr class="off"><td>Jan 28</td><td>Review</td><td></td><td></td><td></td></tr>
+<tr valign="top" class="off"><td>Jan 30</td><td>Moving objects</td><td>Structure&nbsp;4</td><td></td><td></td></tr>
+<tr valign="top" class="off"><td>Feb 1</td><td>Pseudo-physics</td><td>Simulate&nbsp;2</td><td></td><td>HW 3 </td></tr>
+<tr valign="top" class="on"><td>Feb 4</td><td class="quiz">Quiz 1</td><td></td><td></td><td></td></tr>
+<tr valign="top" class="on"><td>Feb 6</td><td>Multi-object systems</td><td>Simulate&nbsp;2</td><td>Proj 1</td><td></td></tr>
+<tr valign="top" class="on"><td class="xhour">Feb 7 (x)</td><td>Spring systems</td><td></td><td></td><td></td></tr>
+<tr valign="top" class="on"><td class="cancel">Feb 8</td><td class="cancel">No class (winter carnival)</td><td></td><td></td><td></td></tr>
+<tr valign="top" class="off"><td>Feb 11</td><td>Holistic images</td><td>Image&nbsp;1, Image&nbsp;2</td><td></td><td></td></tr>
+<tr valign="top" class="off"><td>Feb 13</td><td>Pixels</td><td>Image&nbsp;3</td><td></td><td></td></tr>
+<tr valign="top" class="off"><td>Feb 15</td><td>Image processing</td><td>Image&nbsp;4, Image&nbsp;5</td><td></td><td></td></tr>
+<tr valign="top" class="on"><td>Feb 18</td><td>Video</td><td></td><td>HW 4</td><td>Proj 1 </td></tr>
+<tr valign="top" class="on"><td>Feb 20</td><td>Proj 1 presentations</td><td></td><td></td><td></td></tr>
+<tr valign="top" class="on"><td>Feb 22</td><td>Video processing</td><td></td><td></td><td></td></tr>
+<tr valign="top" class="off"><td>Feb 25</td><td>Text and web</td><td>Data&nbsp;2, Data&nbsp;3, Typography&nbsp;1, Typography&nbsp;2, Input&nbsp;6</td><td></td><td>HW 4 </td></tr>
+<tr valign="top" class="off"><td>Feb 27</td><td>Network visualization</td><td></td><td>Proj 2</td><td></td></tr>
+<tr valign="top" class="off"><td>Feb 29</td><td>Recursion</td><td>Shape&nbsp;3</td><td></td><td></td></tr>
+<tr valign="top" class="on"><td>Mar 3</td><td class="quiz">Quiz 2</td><td></td><td></td><td></td></tr>
+<tr valign="top" class="on"><td>Mar 5</td><td>Prof. Lorie Loeb: digital arts, 3D, motion, etc.</td><td></td><td></td><td></td></tr>
+<tr valign="top" class="on"><td>Mar 7</td><td>Proj 2 presentations</td><td></td><td></td><td>Proj 2</td></tr>
+
+</table>
+
+<p>Notes will be provided for each class (linked from the date).
+The references refer mostly to chapters in the course textbook, by
+Reas and Fry.  Since we aren't following the book in order, you'll
+have to skim those parts of a chapter that build on things we haven't
+covered yet.  It will be useful to refer back later.</p>
+
+</div>
+
+<div class="footer">
+<!-- hhmts start -->
+Last modified: Tue Mar 11 19:11:57 2008
+<!-- hhmts end -->
+</div>
+
+</div>
+
+</div>
+<div class="pagedecorationafter"></div>
+
+</div>
+
+</body>
+</html>

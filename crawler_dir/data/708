@@ -1,0 +1,177 @@
+http://www.cs.dartmouth.edu/reports/abstracts/TR2009-646
+3
+<HTML>
+<!-- WARNING! Do not modify this file; it is
+      automatically generated from a database in www/TRdata/. -->
+<link rel="alternate" type="application/rss+xml" title="Dartmouth Computer Science Technical Reports" href="http://www.cs.dartmouth.edu/reports/feed.xml"/>
+<HEAD>
+<TITLE> Dartmouth TR2009-646 </TITLE>
+<META NAME="description" CONTENT="An Information Complexity Approach to the Inner Product Problem">
+<META NAME="number" CONTENT="TR2009-646">
+<META NAME="year" CONTENT="2009">
+<META NAME="title" CONTENT="An Information Complexity Approach to the Inner Product Problem">
+<META NAME="abstract" CONTENT="We prove a lower bound of the randomized communication complexity of the inner product function on the uniform distribution.">
+<META NAME="author" CONTENT="Amit Chakrabarti">
+<META NAME="author" CONTENT="William B. Henderson-Frost">
+<META NAME="author" CONTENT="Ranganath Kondapally">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<!-- Include file for abstracts/*.shtml, abstracts/*/*.shtml and authors/*.shtml -->
+<!-- See also footer.htmlf -->
+<!-- I use absolute pathnames here because this file is used from several directories. -->
+<table border=0 rules=none>
+<col width=85><col width=100%><col width=85>
+<tr valign=center  bgcolor=#003300 border=0>
+ <td>
+   <a href=/><img src=/reports/Dartmouth2.png alt="Dartmouth logo"
+   width=82 height=91 border=0></a>
+ </td>
+ <td>
+   <font color=#ffffff size=+3>
+     Dartmouth College Computer Science<br>
+     Technical Report series
+   </font>
+ </td>
+ <td>
+  <a href="/"><font color=#ffffff>CS&nbsp;home</font></a><br>
+  <a href="/reports"><font color=#ffffff>TR&nbsp;home</font></a><br>
+  <a href="/reports/#search"><font color=#ffffff>TR&nbsp;search</font></a>
+  <a href="/reports/updates.html"><font color=#ffffff>TR&nbsp;listserv</font></a>
+ </td>
+</tr>
+<tr>
+  <td align=right> By author:
+  </td>
+  <td colspan=2>
+    <a href="/reports/authors/index.shtml#A">A</a>
+    <a href="/reports/authors/index.shtml#B">B</a>
+    <a href="/reports/authors/index.shtml#C">C</a>
+    <a href="/reports/authors/index.shtml#D">D</a>
+    <a href="/reports/authors/index.shtml#E">E</a>
+    <a href="/reports/authors/index.shtml#F">F</a>
+    <a href="/reports/authors/index.shtml#G">G</a>
+    <a href="/reports/authors/index.shtml#H">H</a>
+    <a href="/reports/authors/index.shtml#I">I</a>
+    <a href="/reports/authors/index.shtml#J">J</a>
+    <a href="/reports/authors/index.shtml#K">K</a>
+    <a href="/reports/authors/index.shtml#L">L</a>
+    <a href="/reports/authors/index.shtml#M">M</a>
+    <a href="/reports/authors/index.shtml#N">N</a>
+    <a href="/reports/authors/index.shtml#O">O</a>
+    <a href="/reports/authors/index.shtml#P">P</a>
+    <a href="/reports/authors/index.shtml#Q">Q</a>
+    <a href="/reports/authors/index.shtml#R">R</a>
+    <a href="/reports/authors/index.shtml#S">S</a>
+    <a href="/reports/authors/index.shtml#T">T</a>
+    <a href="/reports/authors/index.shtml#U">U</a>
+    <a href="/reports/authors/index.shtml#V">V</a>
+    <a href="/reports/authors/index.shtml#W">W</a>
+    <a href="/reports/authors/index.shtml#X">X</a>
+    <a href="/reports/authors/index.shtml#Y">Y</a>
+    <a href="/reports/authors/index.shtml#Z">Z</a>
+   </td>
+</tr>
+<tr>
+  <td align=right> By number: 
+  </td>
+  <td colspan=2>
+    <font size=-1>
+      <a href="/reports/abstracts/2013.shtml">2013</a>,
+      <a href="/reports/abstracts/2012.shtml">2012</a>,
+      <a href="/reports/abstracts/2011.shtml">2011</a>,
+      <a href="/reports/abstracts/2010.shtml">2010</a>,
+      <a href="/reports/abstracts/2009.shtml">2009</a>,
+      <a href="/reports/abstracts/2008.shtml">2008</a>,
+      <a href="/reports/abstracts/2007.shtml">2007</a>,
+      <a href="/reports/abstracts/2006.shtml">2006</a>,
+      <a href="/reports/abstracts/2005.shtml">2005</a>,
+      <a href="/reports/abstracts/2004.shtml">2004</a>,
+      <a href="/reports/abstracts/2003.shtml">2003</a>,
+      <a href="/reports/abstracts/2002.shtml">2002</a>,
+      <a href="/reports/abstracts/2001.shtml">2001</a>,
+      <a href="/reports/abstracts/2000.shtml">2000</a>,
+      <a href="/reports/abstracts/1999.shtml">1999</a>,
+      <a href="/reports/abstracts/1998.shtml">1998</a>,
+      <a href="/reports/abstracts/1997.shtml">1997</a>,
+      <a href="/reports/abstracts/1996.shtml">1996</a>,
+      <a href="/reports/abstracts/1995.shtml">1995</a>,
+      <a href="/reports/abstracts/1994.shtml">1994</a>,
+      <a href="/reports/abstracts/1993.shtml">1993</a>,
+      <a href="/reports/abstracts/1992.shtml">1992</a>,
+      <a href="/reports/abstracts/1991.shtml">1991</a>,
+      <a href="/reports/abstracts/1990.shtml">1990</a>,
+      <a href="/reports/abstracts/1989.shtml">1989</a>,
+      <a href="/reports/abstracts/1988.shtml">1988</a>,
+      <a href="/reports/abstracts/1987.shtml">1987</a>,
+      <a href="/reports/abstracts/1986.shtml">1986</a>
+    </font>
+  </td>
+</tr>
+</table>
+<hr>
+<!-- <table bgcolor=#lightyellow width=100%><tr><td> set the page background color -->
+
+<font size=+2><b> An Information Complexity Approach to the Inner Product Problem </b></font><br>
+<font size=+1><b>
+ <A HREF="../../authors/Chakrabarti,Amit.shtml">Amit Chakrabarti</A>,
+ <A HREF="../../authors/Henderson-Frost,William.B..shtml">William B. Henderson-Frost</A>,
+ <A HREF="../../authors/Kondapally,Ranganath.shtml">Ranganath Kondapally</A>
+<br>
+Dartmouth TR2009-646
+</b></font>
+<p><QUOTE>
+<b>Abstract:</b>
+We prove a lower bound of the randomized communication complexity of the inner product function on the uniform distribution.
+</QUOTE></p>
+<p><QUOTE>
+<b>Note:</b>
+Senior Honors Thesis. Advisor: Amit Chakrabarti.
+</QUOTE></p>
+<HR>
+ <a href="http://www.cs.dartmouth.edu/reports/TR2009-646.pdf"><img align=center alt="PDF" width=29 height=32 border=0 src=../../pdf.gif></a>
+ PDF (260KB)
+<p>
+Bibliographic citation for this report:
+  [<a href="TR2009-646.ascii">plain text</a>]
+  [<a href="TR2009-646.bib">BIB</a>]
+  [<a href="TR2009-646.bibtex">BibTeX</a>]
+  [<a href="TR2009-646.refer">Refer</a>]
+</p>
+<p>Or copy and paste:<br>
+&nbsp;&nbsp;
+Amit Chakrabarti,
+William B. Henderson-Frost, and
+Ranganath Kondapally, 
+"An Information Complexity Approach to the Inner Product Problem."
+Dartmouth Computer Science Technical Report TR2009-646,
+June 2009.
+</p>
+<!-- Include file for abstracts/*.html and authors/*.html -->
+<!-- See also header.htmlf -->
+<!-- I use absolute pathnames here because this file is used from several directories. -->
+<!-- </td></tr></table> -->
+<hr>
+
+<p><a href=/reports/updates.html>Notify me about new tech reports</a>.
+<a href=/reports/feed.xml><img src=/reports/rss.gif><a></p>
+<p><a href=/reports/index.shtml#search>Search the technical reports</a>.</p>
+<p>To receive paper copy of a report, by mail, 
+send your address and the TR number to <tt>reports</tt> AT <tt>cs.dartmouth.edu</tt>
+
+<hr>
+
+<p><font size=-1><b>Copyright notice</b>:	
+The documents contained in this server are included by the
+contributing authors as a means to ensure timely dissemination of
+scholarly and technical work on a non-commercial basis.  Copyright and
+all rights therein are maintained by the authors or by other copyright
+holders, notwithstanding that they have offered their works here
+electronically.  It is understood that all persons copying this
+information will adhere to the terms and constraints invoked by each
+author's copyright.  These works may not be reposted without the
+explicit permission of the copyright holder.
+</font></p> 
+<p><font size=-1><em>Technical reports collection maintained by David Kotz</em>.
+
+</BODY>
+</HTML>

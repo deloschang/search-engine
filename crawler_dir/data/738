@@ -1,0 +1,587 @@
+http://www.cs.dartmouth.edu/%7Erockmore
+2
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns:css="http://macVmlSchemaUri" xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta name=Title content="Dan Rockmore">
+<meta name=Keywords content="">
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 2008">
+<meta name=Originator content="Microsoft Word 2008">
+<link rel=File-List href="index_files/filelist.xml">
+<link rel=Edit-Time-Data href="index_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Dan Rockmore</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Dan Rockmore</o:Author>
+  <o:Template>Normal.dotm</o:Template>
+  <o:LastAuthor>Dan Rockmore</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>13</o:TotalTime>
+  <o:Created>2011-03-11T03:26:00Z</o:Created>
+  <o:LastSaved>2011-03-11T03:26:00Z</o:LastSaved>
+  <o:Pages>2</o:Pages>
+  <o:Words>829</o:Words>
+  <o:Characters>4727</o:Characters>
+  <o:Company>Dartmouth College</o:Company>
+  <o:Lines>39</o:Lines>
+  <o:Paragraphs>9</o:Paragraphs>
+  <o:CharactersWithSpaces>5805</o:CharactersWithSpaces>
+  <o:Version>12.0</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>150</w:Zoom>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:SplitPgBreakAndParaMark/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="276">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--h1
+	{mso-bidi-font-size:10pt;
+	mso-bidi-font-weight:normal;}
+h2
+	{mso-bidi-font-size:10pt;
+	mso-bidi-font-weight:normal;}
+h4
+	{mso-bidi-font-size:10pt;
+	mso-bidi-font-weight:normal;}
+span.HEADING1CHAR
+	{mso-bidi-font-size:16pt;
+	mso-style-locked:yes;}
+span.HEADING2CHAR
+	{mso-bidi-font-size:13pt;
+	mso-style-locked:yes;}
+span.HEADING4CHAR
+	{mso-bidi-font-size:10pt;
+	mso-style-locked:yes;}
+
+ /* Font Definitions */
+@font-face
+	{font-family:Times;
+	panose-1:2 0 5 0 0 0 0 0 0 0;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Times;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Times;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:24.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Times;
+	mso-hansi-font-family:Times;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	font-weight:bold;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Times;
+	mso-hansi-font-family:Times;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	font-weight:bold;}
+h4
+	{mso-style-link:"Heading 4 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-outline-level:4;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Times;
+	mso-hansi-font-family:Times;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Times;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Times;
+	mso-bidi-font-family:"Times New Roman";}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-locked:yes;
+	mso-style-link:"Heading 1";
+	mso-ansi-font-size:16.0pt;
+	font-family:Calibri;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#345A8A;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-locked:yes;
+	mso-style-link:"Heading 2";
+	mso-ansi-font-size:13.0pt;
+	font-family:Calibri;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#4F81BD;
+	font-weight:bold;}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	mso-style-locked:yes;
+	mso-style-link:"Heading 4";
+	mso-ansi-font-size:10.0pt;
+	font-family:Calibri;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#4F81BD;
+	font-weight:bold;
+	font-style:italic;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;}
+</style>
+<![endif]-->
+<meta name=description
+content="Dan Rockmore Homepage: includes publication&#10;links and link to the The Math Life Homepage.">
+<meta name=description
+content="Dan Rockmore Homepage: includes publication&#10;links and link to the The Math Life Homepage.">
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+<meta name=description
+content="Dan Rockmore Homepage: includes publication&#10;links and link to the The Math Life Homepage.">
+<meta name=description
+content="Dan Rockmore Homepage: includes publication&#10;links and link to the The Math Life Homepage.">
+</head>
+
+<body bgcolor=white lang=EN-US link=blue vlink=blue style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h1>Dan Rockmore, Professor </h1>
+
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="30%" align=center>
+
+</div>
+
+
+<h2 align=center style='text-align:center'><a href="Laurie2.html">Laurie Snell
+80th Birthday Celebration! </a><o:p></o:p></h2>
+
+<p align=center style='text-align:center;mso-outline-level:3'><b
+style='mso-bidi-font-weight:normal;mso-bidi-font-weight:normal'><span><span
+style='font-size:24.0pt;color:#3389CE'>Dan and collaborator <a
+href="digger-full.pdf">Digger (7/15/94--8/28/04) </a>on another research <span
+class=GramE>adventure</span>.</span></span></b><b style='mso-bidi-font-weight:
+normal;mso-bidi-font-weight:normal'><span><span style='font-size:18.0pt'> <o:p></o:p></span></b></p>
+
+</span>
+
+<div align=center>
+
+<table class=MsoNormalTable border=1 cellpadding=0 style='mso-cellspacing:1.5pt;
+ border:outset 2.25pt;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td width=450 style='width:6.25in;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><img border=0 width=454 height=454 id="_x0000_i1026"
+  src="DanRockmore1.gif"></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<h2><o:p>&nbsp;</o:p></h2>
+
+<h2><o:p>&nbsp;</o:p></h2>
+
+<h2><u><span style='font-size:24.0pt;mso-bidi-font-size:18.0pt'>Affiliations: <o:p></o:p></span></u></h2>
+
+<h2><o:p>&nbsp;</o:p></h2>
+
+<h2>Chair, <a href="http://www.math.dartmouth.edu">Department of Mathematics,
+Dartmouth College</a></h2>
+
+<h2>John G. <span class=SpellE>Kemeny</span> Parents Professor of Mathematics,
+Dartmouth College</h2>
+
+<h2>Professor of <a href="http://www.cs.dartmouth.edu">Computer Science</a>,
+Dartmouth College</h2>
+
+<h2>Member, External Faculty, <a href="http://www.santafe.edu">The Santa Fe
+Institute</a></h2>
+
+<h2><o:p>&nbsp;</o:p></h2>
+
+<h2><o:p>&nbsp;</o:p></h2>
+
+<h2><u><span style='font-size:24.0pt;mso-bidi-font-size:18.0pt'>Research
+Interests: <o:p></o:p></span></u></h2>
+
+<h2><o:p>&nbsp;</o:p></h2>
+
+<h2>Complex Systems, Network Analysis, Machine Learning, Cultural Evolution,
+Group Theoretic Transforms</h2>
+
+<h2><o:p>&nbsp;</o:p></h2>
+
+<h2><u><span style='font-size:24.0pt;mso-bidi-font-size:18.0pt'><a
+href="http://www.cs.dartmouth.edu/~rockmore/Publications.html">Publications:</a></span></u></h2>
+
+<h2><br>
+<a
+href="http://www.amazon.com/exec/obidos/ASIN/037542136X/qid=1111091478/sr=2-1/ref=pd_bbs_b_2_1/104-0075383-8393524">Stalking
+the Riemann Hypothesis </a>, (Pantheon) by Dan Rockmore - A non-technical
+account of the history of the Riemann Hypothesis, <span class=GramE>a 150</span>
+year-old unsolved math problem, whose solution gets to the heart of out
+understanding of the way in the which the prime numbers are distributed among
+the integers. <br>
+<br>
+<i style='mso-bidi-font-style:normal;mso-bidi-font-style:normal'>Stalking the
+Riemann Hypothesis </i>has been selected for inclusion in the <a
+href="http://www.sciambookclub.com/doc/full_site_enrollment/detail/fse_product_detail.jhtml?repositoryId=969520B450">Scientific
+American Book Club </a><br>
+<br>
+Some Related Press: <br>
+<a href="http://www.scienceandsociety.net/#rockmore">Interview with David <span
+class=SpellE>Lemberg</span> on &quot;Science and Society&quot; on World Talk
+Radio, 9/21/05 <br>
+</a><a href="wicn1.mp3">Interview with Mark Lynch on WICN, 8/21/05 <br>
+</a><a href="Globe.pdf">&quot;His Days are Numbered,&quot; Boston Globe, July
+18, 2005 </a><br>
+<a href="WaPo.pdf">&quot;Count Him In,&quot; Washington Post, May 23, 2005 </a><br>
+<a href="NS-RHreview2.html">New Scientist </a><br>
+<a href="WSJ.pdf">Wall Street Journal</a> <br>
+<a href="telegraph.html">The Telegraph (Calcutta, India) </a><br>
+<a href="http://nhpr.org/view_content/8573/">Interview on <span class=SpellE>NHPR's</span>
+&quot;Front Porch&quot; </a><br>
+<a href="switchboard_051905.wax">Interview on <span class=SpellE>VPR's</span>
+&quot;Switchboard,&quot; May 19, 2005</a> </h2>
+
+<h2><o:p>&nbsp;</o:p></h2>
+
+<h2><u><span style='font-size:22.0pt;mso-bidi-font-size:18.0pt'>Some other
+books: <o:p></o:p></span></u></h2>
+
+<h2><img border=0 width=104 height=104 id="_x0000_i1028"
+src="music_and_computers.jpg"><br>
+<a href="http://www.keycollege.com/catalog/titles/music_and_computers.html">Music
+and Computers: A theoretical and historical approach </a>, by Phil Burk
+(SoftSynth.com) Larry <span class=SpellE>Polansky</span> (Dartmouth College)
+Mary Roberts (Princeton University) Dan Rockmore (Dartmouth College) <span
+class=SpellE>douglas</span> <span class=SpellE>repetto</span> (Columbia
+University) -- This is a web-based, interactive book that gives a hands-on
+approach to understanding some of the ways in which computers and math are used
+in music. <br>
+<img border=0 width=104 height=104 id="_x0000_i1029" src="msp.jpg"><br>
+<a href="http://us.cambridge.org/titles/catalogue.asp?isbn=052182706X">Modern
+Signal Processing </a>Edited by Daniel N. Rockmore, Dennis M. Healy, <span
+class=SpellE>Jr</span> </h2>
+
+<h2><o:p>&nbsp;</o:p></h2>
+
+<h2><u><span style='font-size:24.0pt;mso-bidi-font-size:18.0pt'>Some projects: <o:p></o:p></span></u></h2>
+
+<h2><u><span style='font-size:22.0pt;mso-bidi-font-size:18.0pt'><o:p><span
+ style='text-decoration:none'>&nbsp;</span></o:p></span></u></h2>
+
+<h2><span class=GramE><span style='font-family:Symbol;mso-ascii-font-family:
+Times'>·</span><span style="mso-spacerun: yes">&nbsp; </span></span><a
+href="fft.html">Fast Fourier Transforms for Groups</a> </h2>
+
+<h2><span style='font-family:Symbol;mso-ascii-font-family:Times'>·</span><span
+style="mso-spacerun: yes">&nbsp; </span><a href="mathlife.html"><i
+style='mso-bidi-font-style:normal;mso-bidi-font-style:normal'>The Math Life </i></a>,
+a documentary film, co-produced with Wendy Conquest and Bob Drake </h2>
+
+<h2><span style='font-family:Symbol;mso-ascii-font-family:Times'>·</span> <span
+style="mso-spacerun: yes">&nbsp;</span><span class=GramE><i style='mso-bidi-font-style:
+normal;mso-bidi-font-style:normal'>Stalking</i></span><i style='mso-bidi-font-style:
+normal;mso-bidi-font-style:normal'> the Riemann Hypothesis</i> to appear, March
+2005 (Vintage Press) </h2>
+
+<h2><span style='font-family:Symbol;mso-ascii-font-family:Times'>·</span><span
+style="mso-spacerun: yes">&nbsp; </span><span class=GramE>Some</span> work on <a
+href="pnas-rev.pdf">digital techniques for art authentication </a></h2>
+
+<h2><o:p>&nbsp;</o:p></h2>
+
+<h2><u><span style='font-size:24.0pt;mso-bidi-font-size:18.0pt'>Lecture Series:<o:p></o:p></span></u></h2>
+
+<h2><u><span style='font-size:24.0pt;mso-bidi-font-size:18.0pt'><o:p><span
+ style='text-decoration:none'>&nbsp;</span></o:p></span></u></h2>
+
+<h2><span class=GramE><span style='font-family:Symbol;mso-ascii-font-family:
+Times'>·</span><span style="mso-spacerun: yes">&nbsp; </span></span><a
+href="http://www.cs.dartmouth.edu/~rockmore/mb-symposium.html">The First
+Mind/Brain Symposium at Dartmouth College</a> </h2>
+
+<h2><span style='font-family:Symbol;mso-ascii-font-family:Times'>·</span><span
+style="mso-spacerun: yes">&nbsp; </span><a href="./chance">The Chance Lectures
+2000</a> </h2>
+
+<h2><span style='font-family:Symbol;mso-ascii-font-family:Times'>·</span><span
+style="mso-spacerun: yes">&nbsp; </span><a
+href="http://www.dartmouth.edu/~chance/ChanceLecture/ChanceLecture.html">The
+Chance Lectures at Dartmouth</a> (RealPlayer videos of past lectures) </h2>
+
+<h2><o:p>&nbsp;</o:p></h2>
+
+<h2><u><span style='font-size:24.0pt;mso-bidi-font-size:18.0pt'>Some expository
+articles:<o:p></o:p></span></u></h2>
+
+<h2><u><span style='font-size:24.0pt;mso-bidi-font-size:18.0pt'><o:p><span
+ style='text-decoration:none'>&nbsp;</span></o:p></span></u></h2>
+
+<h2><span style='font-family:Symbol;mso-ascii-font-family:Times'>·</span><span
+style="mso-spacerun: yes">&nbsp; </span>A <a
+href="http://www.nytimes.com/library/national/science/090198sci-essay.html">New
+York Times Essay</a> I wrote on mathematics in the arts. </h2>
+
+<h2><span style='font-family:Symbol;mso-ascii-font-family:Times'>·</span><span
+style="mso-spacerun: yes">&nbsp; </span>A piece from <a href="Dan.html">The
+Dallas Morning News</a> on Jackson Pollock and mathematics. </h2>
+
+<h2><span style='font-family:Symbol;mso-ascii-font-family:Times'>·</span><span
+style="mso-spacerun: yes">&nbsp; </span><span class=GramE>A</span> few essays
+that I have written for the <a href="http://chron.com">Chronicle of Higher
+Education: </a></h2>
+
+<h2><span style='font-family:Symbol;mso-ascii-font-family:Times'>·</span><span
+style="mso-spacerun: yes">&nbsp; </span><span class=GramE>An</span> <a
+href="http://www.cs.dartmouth.edu/~rockmore/abel-chronicle.html">essay </a>on
+the Abel Prize written for the Chronicle of Higher Education </h2>
+
+<h2><span style='font-family:Symbol;mso-ascii-font-family:Times'>·</span><span
+style="mso-spacerun: yes">&nbsp; </span>A <a
+href="http://www.cs.dartmouth.edu/~rockmore/QuantumReflections.html">review of
+Peter Parnell's ``QED&quot; </a></h2>
+
+<h2><span style='font-family:Symbol;mso-ascii-font-family:Times'>·</span><span
+style="mso-spacerun: yes">&nbsp; </span>A <a
+href="http://www.math.dartmouth.edu/news/BeautifulMind">review of ``A Beautiful
+Mind&quot; </a></h2>
+
+<h2><span style='font-family:Symbol;mso-ascii-font-family:Times'>·</span><span
+style="mso-spacerun: yes">&nbsp; </span>A <a
+href="http://www.math.dartmouth.edu/news/Uncertainty__Is__Certain__in__Mathematics__and__Life.html">review
+of David Auburn's play ``Proof&quot; </a></h2>
+
+<h2><span style='font-family:Symbol;mso-ascii-font-family:Times'>·</span><span
+style="mso-spacerun: yes">&nbsp; </span><span class=GramE>A</span> <a
+href="chron.html">humor piece on the fragrance &quot;Pi&quot;</a> </h2>
+
+<h2><span style='font-family:Symbol;mso-ascii-font-family:Times'>·</span><span
+style="mso-spacerun: yes">&nbsp; </span><span class=GramE>An</span> <a
+href="Data_Chron.html">opinion piece on shared databases (with Mike <span
+class=SpellE>Gazzaniga</span>) </a></h2>
+
+<h2><span style='font-family:Symbol;mso-ascii-font-family:Times'>·</span><span
+style="mso-spacerun: yes">&nbsp; </span>A few art/math essays for the catalog
+of an math-inspired art exhibit: <a href="rothko.pdf">Rothko </a>; <a
+href="pollock.pdf">Pollock </a>; <a href="close.pdf">Close</a></h2>
+
+<h2><o:p>&nbsp;</o:p></h2>
+
+<h2><u><span style='font-size:24.0pt;mso-bidi-font-size:18.0pt'>Radio: <o:p></o:p></span></u></h2>
+
+<h2><o:p>&nbsp;</o:p></h2>
+
+<h2>I’ve been a commentator for <a href="http://www.vpr.net">Vermont Public
+Radio </a>. Here is a <a href="http://www.math.dartmouth.edu/news">link </a>to
+the audio. </h2>
+
+<h2><o:p>&nbsp;</o:p></h2>
+
+<h2><u><span style='font-size:24.0pt;mso-bidi-font-size:18.0pt'>CV:<o:p></o:p></span></u></h2>
+
+<h2><u><span style='font-size:24.0pt;mso-bidi-font-size:18.0pt'><o:p><span
+ style='text-decoration:none'>&nbsp;</span></o:p></span></u></h2>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid windowtext 1.0pt;
+mso-border-bottom-alt:solid windowtext .75pt;padding:0in 0in 1.0pt 0in'>
+
+<h2 style='border:none;mso-border-bottom-alt:solid windowtext .75pt;padding:
+0in;mso-padding-alt:0in 0in 1.0pt 0in'>Here is <span class=SpellE>pdf</span> of
+<a href="0708cv.pdf">my <span class=SpellE><span class=GramE>cv</span></span> </a></h2>
+
+</div>
+
+<h2><o:p>&nbsp;</o:p></h2>
+
+<h2><u><span style='font-size:24.0pt;mso-bidi-font-size:18.0pt'><o:p><span
+ style='text-decoration:none'>&nbsp;</span></o:p></span></u></h2>
+
+<h2><a href="old-sep.html">Just <span class=SpellE>Havin</span>' Fun...</a></h2>
+
+
+<h2 align=center style='text-align:center'>
+
+<hr size=2 width="30%" align=center>
+
+</h2>
+
+
+<h2 align=center style='text-align:center'><span><span style='font-size:24.0pt;
+color:#3389CE'>Professors Dan and Digger Rockmore discuss a <span class=SpellE>finepoint</span>
+of Digger's Grand Unified Theory of <span class=SpellE>Walks<span class=GramE>,Snacks</span></span>
+and Sleep (GUTWSS). </span></span></h2>
+
+<div align=center>
+
+<table class=MsoNormalTable border=1 cellpadding=0 style='mso-cellspacing:1.5pt;
+ border:outset 2.25pt;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes'>
+  <td width=450 style='width:6.25in;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><img border=0 width=454 height=454 id="_x0000_i1031"
+  src="DanRockmore2.gif"></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+
+<h2 align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</h2>
+
+
+<h4>Contact: <span class=SpellE>rockmore</span> at <span class=SpellE>cs-dot-dartmouth-dot-edu</span>
+<br>
+phone: 603-646-3260 </h4>
+
+<h4><a href="http://math.dartmouth.edu/people/faculty.html">Back to Faculty
+List</a> </h4>
+
+</div>
+
+</body>
+
+</html>
+:

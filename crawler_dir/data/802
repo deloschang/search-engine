@@ -1,0 +1,91 @@
+http://www.cs.dartmouth.edu/~sorber/eon/index.html
+3
+<html>
+<head>
+<title>Eon Project</title>
+<link rel=StyleSheet HREF="./display.css" TYPE="text/css"/>
+</head>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-2808122-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+
+<body >
+
+
+<div id="bodydiv">
+	<div id="topdiv">
+        <div id="eonImgDiv">
+            <img class="eonimg" src="fullprogram.png"/>
+        </div>
+    
+        <div id="titleDiv">
+            <h1>Eon</h1>
+            <h2>A Language and Runtime for Perpetual Systems</h2>
+        </div>
+	</div>
+    
+<div class="contents">
+
+
+
+<h2>Overview</h2>
+
+<p>Eon is the first energy-aware programming language.  It is a declarative 
+coordination language and runtime system designed to simplify the development of perpetual systems by 
+separating program logic from energy management.  Using Eon, the system designer describes program 
+operation as well as how the program can be adjusted in order to conserve energy.  During operation
+the Eon runtime system automatically adjust the program in order to sustain operation based on 
+online measurements of energy harvest and per-task energy consumption.
+</p>
+
+<p>Eon has been developed as part of the <a href="http://prisms.cs.umass.edu/dome/index.php?page=turtlenet">UMass TurtleNet</a> project.</p>
+
+<h2>People</h2>
+<h4>Faculty: Mark Corner, Emery Berger</h4>
+<h4>Students: Jacob Sorber, Alexander Kostadinov, Matthew Garber, Matthew Brennan</h4>
+
+
+<h2>Publications</h2>
+<ul>
+<li>J. Sorber, A. Kostadinov, M. Garber, M. Brennan, M. D. Corner,
+     E.D. Berger. <a href="http://prisms.cs.umass.edu/mcorner/papers/sorber07sensys.pdf">Eon: A Language
+     and Runtime System for Perpetual Systems.</a> In
+     Proceedings of the Fifth International
+     ACM Conference on Embedded Networked Sensor Systems (SenSys '07),
+     Sydney, Australia, November 2007.[<a 
+href="../slides/eon_sensys07.ppt">Slides</a>]</li>
+</ul>
+
+<h2>Source</h2>
+
+<table cellspacing="5" cellpadding="2">
+<tr>
+	<td width="200px">
+	<a href="eon-0.3.tar.gz">eon-0.3.tar.gz</a>
+	</td>
+	<td>
+	<a href="LICENSE-0.3">LICENSE</a>
+	</td>
+	<td>
+	<a href="README-0.3">README</a>
+	</td>
+</tr>
+<tr>
+	<td colspan="3">
+    	At some point in the future updates to eon will hopefully be available in the tinyos-2.x-contrib tree.
+    </td>
+</tr>
+</table>
+
+</div>
+</div>
+</body> </html>
+<

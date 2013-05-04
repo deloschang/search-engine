@@ -1,0 +1,104 @@
+http://www.cs.dartmouth.edu/~sasho
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<head>
+  <title>Alexander Iliev Home</title>
+
+  <link href="main.css" type="text/css" rel="stylesheet">
+</head>
+
+
+<body>
+  
+<div style="float: right; margin-left: 3ex;">
+<img src="pics/closeup-right-web.jpg"
+     alt="Photo of Alex Iliev">
+</div>
+
+
+<h1>Alex Iliev</h1>
+
+<h2>Classification</h2>
+Programmer and security expert, Goldman Sachs International, London.
+<p>
+Ph.D. graduate,
+<a href="http://www.cs.dartmouth.edu/">Computer Science</a>,
+<a href="http://www.dartmouth.edu/">Dartmouth College</a>. Advised
+by <a href="http://www.cs.dartmouth.edu/~sws/">Prof. Sean Smith</a>.<br/>
+Submitted <a href="http://www.cs.dartmouth.edu/reports/abstracts/TR2009-659/">final thesis</a> in Nov 2009.
+That is double-spaced, which is very ugly, but officials insist on it. I prefer this <a href="papers/alexander-iliev-thesis.pdf">single-spaced version</a>.
+</p>
+
+<h2>Patent</h2>
+US Patent 7,908,483 "Method and apparatus for binding TPM keys to execution
+entities". Co-inventors Vincent Scarlata and Carlos Rozas. Dreamed up and written while at
+Intel in 2004, issued in 2011. <a
+href="http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&r=1&f=G&l=50&s1=7908483.PN.&OS=PN/7908483&RS=PN/7908483">US
+Patent office link</a>. The <a
+href="http://www.google.com/patents/US7908483">Google patents</a> page is
+prettier.
+
+
+
+<h2>Software</h2>
+<a href="http://github.com/ailiev/">My github page</a>
+
+<h2>Research</h2>
+<p>
+<ul>
+  <li><a href="publications.html">Publications</a></li>
+
+  <li>Secure computation with <a href="http://www.cs.dartmouth.edu/~trust/w/index.php/Faerieplay">Faerieplay</a>.</li>
+  <li><a href="tttp/">Tiny Trusted Third Parties</a><br />
+  This project is featured in the ISTS newsletter, <a href="http://www.ists.dartmouth.edu/docs/ists_v2_4_06.pdf">winter 2005/6</a>.
+  </li>
+
+  <li><a href="privdir/">Directory server prototype, with Private Information
+  Retrieval</a></li>
+
+</ul>
+
+
+<h2>Links</h2>
+
+<ul>
+<li>Iga's <a href="http://www.soulfulbirthingschool.com/">birthing
+school</a></li>
+</ul>
+
+<h3>Archive</h3>
+
+<ul>
+<li>My <a href="http://wiki.cs.dartmouth.edu/sasho/">Dartmouth Wiki</a>. It has
+some juicy <a href="http://wiki.cs.dartmouth.edu/sasho/doku.php/fpga:code">VHDL
+samples</a> for our fancy new <a href="http://wiki.cs.dartmouth.edu/sasho/doku.php/fpga:board">Avnet PCI development board</a>. Please ignore the
+certificate warning, there's nothing sensitive in there. For friends of
+Dartmouth, you can get our CA certificate <a
+href="https://collegeca.dartmouth.edu/DownloadCerts.jsp">here</a>, after which you
+should have no more certificate warnings from Dartmouth servers.
+</li>
+<li>Iga's <a href="http://www.czarfilm.com/">website</a>.</li>
+<li>Iga's film <a href="http://www.czarfilm.com/bodycage/film/">From the Body Cage</a>.</li>
+</ul>
+
+
+<hr>
+
+<address>
+&#65;&#108;&#101;&#120;&#32;&#73;&#108;&#105;&#101;&#118;&#32;&#60;&#97;&#108;&#101;&#120;&#46;&#105;&#108;&#105;&#101;&#118;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;&#62;
+</address>
+
+<hr>
+
+<p>
+<!--time-start-->
+Last modified: Dec 04, 2011
+<!--time-end-->
+</p>
+
+</body>
+</html>

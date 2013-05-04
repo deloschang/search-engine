@@ -1,0 +1,297 @@
+http://www.cs.dartmouth.edu/~cs5/install/eclipse-osx/index.html
+3
+<html> <head>
+<title>Installing Eclipse on Mac OS X</title>
+</head>
+
+<body bgcolor=#ffffff>
+<h1>Installing Eclipse on Mac OS X</h1>
+
+This page tells you how to download Eclipse for Mac OS X, install it,
+and configure it so that it looks like how I use it.  If you need
+help, Blitz <a
+href="mailto:cs5help@cs.dartmouth.edu">cs5help@cs.dartmouth.edu</a>.
+
+<h2>How to download and install Eclipse</h2>
+
+<ol>
+  
+  <li> Go to <a
+       href="http://www.eclipse.org/downloads/">http://www.eclipse.org/downloads/</a>
+       to download a copy of eclipse.  The page will look like
+       this:
+       
+       <p>
+       <img src="EclipseDownloads.jpg">
+       <p>
+
+       The first item listed is "Eclipse IDE for Java Developers (98
+       MB)."  On the right is a green, downward-pointing arrow.  Next
+       to that are links labeled "Mac OS X 32 Bit" and "Mac OS X 64
+       Bit."  Click on the "Mac OS X 32 Bit" link.  (Even if you have
+       nice, new 64-bit Mac, it should run the 32-bit version just
+       fine.)
+       
+       <p>
+
+  <li> You will see a window like this:
+       
+       <p>
+       <img src="EclipseMirror.jpg">
+       <p>
+
+       (The location next to the green, downward-pointing arrow might
+       not be Virginia Tech, but that's OK.  And the "Get It Faster
+       Here" locations might be different, but that doesn't matter,
+       either.)  Click on the green, downward pointing arrow.  A
+       download of eclipse-java-helios-SR2-macosx-cocoa.tar.gz will
+       start.  If you first get a window like this
+       
+       <p>
+       <img src="OpeningTar.jpg">
+       <p>
+
+       just click "OK" so that the downloaded file opens with Archive
+       Utility.
+
+       <p>
+
+  <li> The download will go to your Downloads folder.  You will
+       normally have an icon for the Downloads folder on the
+       right-hand side of the dock.  Find
+       eclipse-java-helios-SR2-macosx-cocoa.tar.gz in your Downloads
+       folder, and drag it to the Desktop.  Then double-click it.  You
+       will see a folder named "eclipse."
+       
+       <p>
+
+  <li> Drag the "eclipse" folder into your Applications folder.  The
+       easiest way to do so is to open a new window in the Finder and
+       click on Applications in the list you get on the left-hand
+       side.  Then drag the "eclipse" folder in with the other
+       applications.  Make sure that you do <em>not</em> drag it into
+       a folder that's already within Applications.  In other words,
+       when you're done, the Applications folder should have directly
+       within it a folder named "eclipse."
+
+       <p>
+
+  <li> (This step is not required, but it's strongly recommended.)
+       Double click the "eclipse" folder.  You'll see an application
+       named "Eclipse"; it has a purple icon with white horizontal
+       stripes.  Drag it into your dock.  Now you will be able to
+       launch Eclipse by clicking on the icon in the dock.
+       
+       <p>
+
+  <li> You may now drag eclipse-java-helios-SR2-macosx-cocoa.tar.gz to
+       the Trash.  Empty the Trash whenever you wish.
+       
+       <p>
+
+  <li> When you launch Eclipse for the first time, you'll be asked
+       "'Eclipse' is an application downloaded from the Internet.  Are
+       you sure you want to open it?"  Click "Open."
+       
+       <p>
+
+  <li> You'll see something like the following window:
+       
+       <p>
+       <img src="WorkspaceLauncher.jpg">
+       <p>
+
+       Of course, the workspace name will have your user name in place
+       of "thc."  You can choose whatever place you want for your
+       workspace, but it's easiest to just use the default you're
+       given.  I recommend that you just click the checkbox next to
+       "Use this as the default and do not ask again" and then click
+       "OK."
+       
+       <p>
+
+  <li> You'll then see the following screen:
+       
+       <p>
+       <img src="EclipseWelcome.jpg">
+       <p>
+
+       Click on the folded-over arrow on the right.  You won't see
+       this screen again, even if you quit Eclipse and relaunch it.
+       
+       <p>
+
+  <li> Now you'll see the following screen:
+
+       <p>
+       <img src="FirstWorkspace.jpg">
+       <p>
+
+       Lots of buttons and panes, but nothing of consequence.
+
+       <p>
+
+  <li> You have now installed Eclipse!
+
+</ol>
+
+<!-- GOT THIS FAR -->
+
+<h2>How to configure Eclipse</h2>
+
+You don't <em>have</em> to configure Eclipse so that it looks like how
+I use it, but you'll probably avoid some confusion if you do so.
+Here's how.
+
+<ol start=12>
+
+  <li> In the Eclipse menu bar, click on the Eclipse menu and then on
+       "Preferences...".  You'll see a window with two panes.  On the
+       left pane is a list of types of things you can configure.
+       
+       <p>
+
+  <li> Click on the triangle to the left of "General."  Then click on
+       the triangle to the left of "Appearance."  Then click on
+       "Colors and Fonts."  You should see a window like this:
+       
+       <p>
+       <img src="ColorsandFonts.jpg">
+       <p>
+
+  <li> In the window in the middle, click on the triangle next to
+       "Java."  Then <em>double-click</em> on "Java Editor Text Font."
+       
+       <p>
+       <img src="JavaEditorTextFont.jpg">
+       <p>
+
+       As you can see, there's some text following "Java Editor Text
+       Font." Don't worry about it.
+
+       <p>
+
+  <li> The following window will pop up:
+       
+       <p>
+       <img src="Fonts.jpg">
+       <p>
+
+       On the right, where you can select the size, click "12."  Then
+       close this window by clicking on the window's close button.
+
+       <p>
+
+  <li> Close up the "General" preferences by clicking on the triangle
+       to the left of "General."  Click the triangle next to "Java"
+       and then click the triangle next to "Code Style."  Then click
+       "Formatter."  Here's what you should see:
+
+       <p>
+       <img src="Formatter.jpg">
+       <p>
+
+  <li> Click the button that says "New...".  You'll see a window such
+       as this one:
+       
+       <p>
+       <img src="NewProfile.jpg">
+       <p>
+       
+       You can type in any profile name you like.  I used "CS 5":
+       
+       <p>
+       <img src="CS5Profile.jpg">
+       <p>
+
+       Then click "OK."
+       
+       <p>
+
+  <li> You should see a window that looks like this:
+              
+       <p>
+       <img src="InitCS5Profile.jpg">
+       <p>
+
+       Change the tab size to 2:
+
+       <p>
+       <img src="TabSize2.jpg">
+       <p>
+
+       You'll see that the Indentation size automatically changes as
+       well.
+       
+       <p>
+
+  <li> Click on "Blank Lines," and after "Between import groups" and
+       "Before declarations of the same kind," change the values 1 to
+       0:
+              
+       <p>
+       <img src="BlankLines.jpg">
+       <p>
+
+  <li> Click on "Control Statements," and check the boxes as I've done
+       here:
+              
+       <p>
+       <img src="ControlStmts.jpg">
+       <p>
+
+       Click "OK."
+       
+       <p>
+
+  <li> Now click on triangles to close up "Java."  Click on the
+       triangle next to "Run/Debug," and then click on "Console."
+              
+       <p>
+       <img src="Console.jpg">
+       <p>
+
+  <li> Click on the green color sample next to "Standard In text
+       color." You'll get a color picker:
+              
+       <p>
+       <img src="LightGreen.jpg">
+       <p>
+
+  <li> Slide the slider on the right down, so that you get a dark
+       green.  (You're at Dartmouth. What other color could you
+       possibly want?)
+              
+       <p>
+       <img src="DarkGreen.jpg">
+       <p>
+
+       Close the color picker window by clicking its close button, and
+       click "OK" again to close the Preferences window.
+
+       <p>
+
+  <li> Finally, I don't use the Task List and Outline panes, which are
+       on the right-hand side of the window.  Click on the "X" next to
+       "Task List" and next to "Outline" in the tabs of these panes:
+              
+       <p>
+       <img src="ClosePanes.jpg">
+       <p>
+
+       You'll get something like this:
+              
+       <p>
+       <img src="EclipseDone.jpg">
+       <p>
+
+       And you're done!
+
+</ol>
+
+<hr>
+<address><a href="http://www.cs.dartmouth.edu/~thc/">Thomas H. Cormen &lt;thc@cs.dartmouth.edu&gt;</a></address>
+<!-- hhmts start -->
+Last modified: Fri Mar 25 17:37:31 2011
+<!-- hhmts end -->
+</body> </html>

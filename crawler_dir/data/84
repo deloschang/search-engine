@@ -1,0 +1,188 @@
+http://www.cs.dartmouth.edu/~wbc/led/WWW/LED.html
+3
+<HTML>
+<HEAD>
+<TITLE>LED Sign Info</TITLE>
+</HEAD>
+
+<BODY BACKGROUND="watercolor.jpg">
+<IMG SRC="ledsign27t.gif">
+
+<H3>Compatible with java 1.0 and Netscape 2.0b3 or newer</H3>
+
+<applet codebase="../LED" code="LED.class" width=500 height=48 align=center>
+   <param name="script" value="../scripts/Demo.led">
+   <param name="border" value="2">
+   <param name="bordercolor" value="100,130,130">
+   <param name="spacewidth" value="3">
+   <param name="wth" value="122">
+   <param name="ht" value="9">
+   <param name="font" value="../fonts/default.font">
+   <param name="ledsize" value="3">
+
+   <hr>
+   If you were using a Java-enabled browser,
+   you would see an animated scrolling text sign that looks like this:
+   <BR>
+   <IMG SRC="LEDSign.gif">
+   <hr>
+</applet>
+
+<P>
+</P>
+<H3>About LED Sign V2.7</H3>
+<BLOCKQUOTE>
+This is the newest version of LED Sign.  This will probably the
+last release of LED Sign for a while.  Version 2.7 is basically a
+"performanced enhanced" version of 2.5.  V2.7 will draw the sign
+to the screen quicker, thus producing a "quicker" content feed.
+However, it will only be a blank sign until the font and script
+have completed downloading.  Also in V2.7 is a more complete
+error/warning notification.  If the sign does not load, most
+likely an error and discription of what is causing the error will
+be printed to the java console.  Also check the java console for
+any runtime warnings.
+
+<P>
+Also, by popular demand, LED Sign V2.7 supports frame targets.
+To specify a frame target just append the target name to the end
+of the url, separating the url and target by a comma (','). ie:
+<BR>
+ScrollLeft URL=http://www.javasoft.com,_parent text=Goto Java!
+
+<BR>
+<BR>
+Released: March 21, 1996
+</BLOCKQUOTE>
+
+<FONT COLOR=#FF0000> <H3>* Support Notice *</H3></FONT>
+<BLOCKQUOTE>
+As of the release of LED Sign V2.7, I will no longer provide
+technical support for LED Sign due to time contraints and the
+amount of mail that I receive asking for technical support.  So
+please do not write me asking how to set it up, how to write a
+script, or about a problem you are having.  I feel that I have
+provided a fairly complete set of documentation, much more than
+you will find with other java applets.  If you do write to me
+asking for help, you will have only wasted your time and mine, as
+I will delete the mail.  I really wish I could provide support
+for LED Sign, but I do not have the time with my college
+graduation soon approaching, among other things.  I appreciate
+your understanding.
+
+<P>
+If you have questions about how to set up an applet, check the
+java site at http://www.javasoft.com/.  If you have other
+problems, I would suggest checking the usenet newsgroup
+comp.lang.java.
+
+<P>
+I will continue to improve LED Sign so if you have any bug
+reports or suggestions, please let me know.
+</BLOCKQUOTE>
+
+<H3>Features</H3>
+<UL>
+      <LI>Script controlled
+      <LI>Different colored text (red, orange, yellow, green, cyan, blue, purple, and white)
+      <LI>Different fonts
+      <LI>Different transistions
+      <LI>Displays the current time/date
+      <LI>Variable LED size
+      <LI>URL links - takes you to another page if you click on the sign
+         while a certain message is being displayed.
+      <LI>Frame targets!  Now you can use LED Sign with your
+         frames!
+</UL>
+
+
+<H3>Usability</H3>
+<BLOCKQUOTE>
+This applet was designed to be "user friendly".  Everything you see
+the sign displaying is run entirely by a script.  LED Sign will
+provide errors and warnings in the Java console of netscape to
+help make the setup easier and quicker.
+
+<BLOCKQUOTE>
+More on the 
+<A HREF="script.html"> Script Feature</A>.
+<BR>
+Here is the <A HREF="../scripts/Demo.led">Demo script</A> that the sign
+above is running.
+</BLOCKQUOTE>
+</P>
+</BLOCKQUOTE>
+
+<H3>Flexibility</H3>
+<BLOCKQUOTE>
+<P>
+The LED applet also has a large amount of flexibility.  The size, size
+of border, color of border, size of the LED's, and even the font that
+the sign uses are all configurable.  The size and border parameters
+can be easily set in the applet "command line" in the HTML.  The font
+is specified by a data file that contains the shape for each letter.
+The font data file can have as many or few characters as needed.  If a
+character is used in the message but is not in the font data file,
+then it will be substituted by a space.
+
+<BLOCKQUOTE>
+More on 
+<A HREF="font.html">fonts</A>
+.
+<BR>
+More on
+<A HREF="options.html">configurability</A>
+.
+</BLOCKQUOTE>
+</P>
+</BLOCKQUOTE>
+
+<H3>Examples of LED Sign</H3>
+<BLOCKQUOTE>
+Here are <A HREF="Examples.html">some sites</A> that use LED Sign on their pages.
+</BLOCKQUOTE>
+
+<H3>Download LED Sign V2.7</H3>
+<BLOCKQUOTE>
+The UNIX tar/gzip file <A HREF="ftp://ftp.cs.hope.edu/pub/LEDSign/LEDSignV27.tar.gz">LEDSignV27.tar.gz</A>
+
+<P>
+<B>Note:</B> If you are upgrading from LED Sign V2.5 or earlier,
+you will notice that there is a new parameter, "ht".  This is to
+specify the height of the sign in LED's and must be the same as
+the height of the font you are using.  If the "ht" parameter is
+not specified or incorrect, you will get an error or warning in
+the java console.  See the
+<A HREF="options.html">configurability</A> page for more info.
+
+<P>
+If you are running Win95/NT you might need
+<A HREF="ftp://ftp.winzip.com/winzip/winzip95.exe">WinZip95 6.0a</A>
+to unzip and untar the archive.  WinZip will retain the long filenames
+which are needed for the applet to work.
+
+<BR>
+<BR>
+The LED Sign V2.7 distribution comes with all source code,
+pre-compiled binaries, example scripts, fonts, and all the HTML
+documentation you see here.
+</BLOCKQUOTE>
+
+<H2>Questions???</H2>
+<BLOCKQUOTE>
+Check the <A HREF="FAQ.html">LEDSign FAQ</A>.
+</BLOCKQUOTE>
+
+<H3>Known bugs</H3>
+<UL>
+    <LI> None!
+</UL>
+
+<HR>
+<P></P>
+<ADDRESS>
+The LED Sign Java applet is written and Copyright 1995 by
+<A HREF="http://www.cs.hope.edu/~dbrown/">Darrick Brown</A>
+</ADDRESS>
+</BODY>
+</HTML>

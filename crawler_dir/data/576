@@ -1,0 +1,78 @@
+http://www.cs.dartmouth.edu/~ashok/cv.html
+3
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Curriculum vitae</title>
+  <meta name="description" content="A brief account of my work at Dartmouth" />
+  <meta name="keywords" content="Computer vision, Object recognition, unsupervised learning, machine learning" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="clouds">
+        <div id="clouds_text">
+          <h1>Ashok Chandrashekar</h1>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li class="selected"><a href="cv.html">curriculum vitae</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="content_header"></div>
+    <div id="site_content">
+
+      <div class="sidebar">
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<img src="images/dart.jpg" width="90" alt="Dartmouth"> 
+	<br>
+	<br>
+	<img src="images/rvce.jpg" width="100" alt="R.V.C.E"> 
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<img src="images/msft.jpg" width="150" alt="Microsoft"> 
+	<br>
+	<br>
+	<br>
+	<img src="images/huawei.jpg" width="90" alt="Huawei"> 
+      </div>
+
+      <div id="content">
+	<h2>Research Interests</h2>
+        <p> Computer vision, Machine learning <p>
+        <h2>Education</h2>
+        <p><span class="btext">Dartmouth College</span>, Hanover, NH <br><span class="itext">Ph.D. Computer Science, </span> <span class="itext">Expected completion - Jan 2013</span></p>
+        <p><span class="btext">R.V College of engineering</span>, Bangalore, India (2004)<br><span class="itext">Bachelor of Engineering, Computer Science</span></p>
+        <h2>Professional</h2>
+        <p><span class="btext">Microsoft Research</span>, Redmond, WA (Summer 2009)<br><span class="itext">Research Intern</span></p>
+        <p><span class="btext">Microsoft </span>, Redmond, WA (Summer 2008)<br><span class="itext">Intern (SDE), Parallel Computing platforms</span></p>
+        <p><span class="btext">Huawei R&D </span>, Bangalore, India (2004-2006)<br><span class="itext">Software Engineer, OSPF routing protocol</span></p>
+        
+	<h2>Resume: <a href="pdf/Resume.pdf">[Pdf]</a></h2>
+       
+      </div>
+    </div>
+    <div id="content_footer"></div>
+    <div id="footer">
+     <a href="http://www.dartmouth.edu/~rhg/">Brain Engineering Lab</a> |  <a href="http://www.cs.dartmouth.edu">Dartmouth Computer Science</a>
+    </div>
+  </div>
+</body>
+</html>

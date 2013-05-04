@@ -1,0 +1,63 @@
+http://www.cs.dartmouth.edu/~cs68
+2
+<html> <head>
+<title>Computer Science 68, Spring 2011</title>
+</head>
+
+<body>
+
+<center>
+<h2><a href="http:index.html">Computer Science 68
+</a><br> Spring 2011
+
+<br>Principles of Programming Languages</h2>
+</center>
+
+<h3> Information </h3>
+<ul>
+<li><a href="course-info.html">Course Information</a></li>
+<li><a href="syllabus.html">Detailed Syllabus</a></li>
+
+</ul>
+
+
+<h3>Syllabus Outline</h3>
+</a> 
+
+<ul>
+<li>History, Early Programming Languages (Fortran, Cobol, PL1, LISP)
+<li>LISP, Haskell, and the functional paradigm
+<li>Lambda Calculus and Computability
+<li>Data Types and Type Checking
+<li>Lexing and Parsing
+<li>Programming Language Semantics
+<li>Run-time Storage Management, Supporting Higher-order functions
+<li>Control and Exceptions
+<li>Data Abstraction and Modules
+<li>The Object Oriented Paradigm
+<li>Compare and contrasts some OO languages: Simula, Smalltalk, C++, Java
+<li>Concurrency
+</ul>
+
+<a name=HW> 
+<h3>Homework</h3>
+</a> 
+
+<ul>
+<li><a href="Homework/hmwk1.pdf">Homework 1</a>, due April 8.</li>
+<li><a href="Homework/hmwk2.pdf">Homework 2</a>, due April 15.</li>
+<li><a href="Homework/hmwk3.pdf">Homework 3</a>, due April 22.</li>
+<li><a href="Homework/hmwk4.pdf">Homework 4</a>, due April 29.</li>
+<li><a href="Homework/hmwk5.pdf">Homework 5</a>, due May 6.</li>
+<li><a href="Homework/hmwk6.pdf">Homework 6</a>, due May 13.</li>
+<li><a href="Homework/hmwk7.pdf">Homework 7</a>, due May 20</li>
+<li><a href="Homework/hmwk8.pdf">Homework 8</a>, due May 27</li>
+<li><a href="Homework/hmwk9.pdf">Homework 9</a>, due June 1</li>
+<li><a href="Homework/project.pdf">Python project </a>, Due June 1</li>
+<!--
+
+-->
+</ul>
+
+
+</body> </html>

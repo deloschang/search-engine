@@ -1,0 +1,128 @@
+http://www.cs.dartmouth.edu/~jdenning/publications.php
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>jon denning - dartmouth cs</title>
+<!-- <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css' /> -->
+<link rel="stylesheet" type="text/css" href="styles.css" />
+<link rel="shortcut icon" href="favicon.ico" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="google.js"></script>
+</head>
+
+<body>
+
+<div style="margin-bottom:20px">journal articles</div>
+
+<div style="margin-bottom:20px;">
+    <a href="images/meshgit13.png" class="nobrackets"><img src="images/meshgit13_small.png" align="left" width="100" style="margin-right:10px;" alt="meshgit" /></a><p>
+	meshgit: diffing and merging meshes for polygonal modeling<br />
+    j.d.denning, <a href="http://www.cs.dartmouth.edu/~fabio" target="_blank">f.pellacini</a>.<br />
+    to be published in acm transactions on graphics, vol. 32, no. 4, jul 2013.<br />
+    to be presented at siggraph 2013.<br clear="left" /><br />
+    submission: paper source<br />
+    <!-- preprint: <a href="http://cs.dartmouth.edu/~jdenning/projects/meshgit/meshgit_s13_preprint.pdf">paper</a><br/> -->
+    </p><p style="clear:left;"></p><br />
+    
+    <p>abstract:
+	<div style="margin-left:20px">This paper presents MeshGit, a practical algorithm for diffing and merging polygonal meshes typically used in subdivision modeling workflows. Inspired by version control for text editing, we introduce the mesh edit distance as a measure of the dissimilarity between meshes. This distance is defined as the minimum cost of matching the vertices and faces of one mesh to those of another. We propose an iterative greedy algorithm to approximate the mesh edit distance, which scales well with model complexity, providing a practical solution to our problem. We translate the mesh correspondence into a set of mesh editing operations that transforms the first mesh into the second. The editing operations can be displayed directly to provide a meaningful visual difference between meshes. For merging, we compute the difference between two versions and their common ancestor, as sets of editing operations. We robustly detect conflicting operations, automatically apply non-conflicting edits, and allow the user to choose how to merge the conflicting edits. We evaluate MeshGit by diffing and merging a variety of meshes and find it to work well for all.</div>
+    </p>
+</div>
+
+<div style="margin-bottom:20px;">
+    <a href="images/appwarp11.png" class="nobrackets"><img src="images/appwarp11_small.png" align="left" width="100" style="margin-right:10px;" alt="appwarp" /></a><p>
+    appwarp: retargeting measured materials by appearance-space warping<br />
+    x.an, <a href="http://research.microsoft.com/en-us/um/people/xtong/xtong.html" target="_blank">x.tong</a>, j.d.denning, <a href="http://www.cs.dartmouth.edu/~fabio" target="_blank">f.pellacini</a>.<br />
+    acm transactions on graphics, vol. 30, no. 6, article 147, dec 2011<br />
+    presented at siggraph asia 2011.<br clear="left" /><br />
+    submission: <a href="projects/appwarp/appwarp.pdf">paper</a> <a href="projects/appwarp/supplemental_images.zip">supplemental-images</a> <a href="projects/appwarp/main.mov">video</a><br />
+    </p><p style="clear:left;"></p><br />
+    
+    <p>abstract:
+	<div style="margin-left:20px">We propose a method for retargeting measured materials, where a source measured material is edited by applying the reﬂectance functions of a template measured dataset. The resulting dataset is a material that maintains the spatial patterns of the source dataset, while exhibiting the reﬂectance behaviors of the template. Compared to editing materials by subsequent selections and modiﬁcations, retargeting shortens the time required to achieve a desired look by directly using template data, just as color transfer does for editing images. With our method, users have to just mark corresponding regions of source and template with rough strokes, with no need for further input.<br />
+	<br />
+	This paper introduces AppWarp, an algorithm that achieves retargeting as a user-constrained, appearance-space warping operation, that executes in tens of seconds. Our algorithm is independent of the measured material representation and supports retargeting of analytic and tabulated BRDFs as well as BSSRDFs. In addition, our method makes no assumption of the data distribution in appearance-space nor on the underlying correspondence between source and target. These characteristics make AppWarp the ﬁrst general formulation for appearance retargeting. We validate our method on several types of materials, including leaves, metals, waxes, woods and greeting cards. Furthermore, we demonstrate how retargeting can be used to enhance diffuse texture with high quality reflectance.</div>
+    </p>
+</div>
+
+<div style="margin-bottom:20px;">
+    <a href="images/meshflow11.png" class="nobrackets"><img src="images/meshflow11.png" align="left" width="100" style="margin-right:10px;" alt="meshflow" /></a><p>
+    meshflow: interactive visualization of mesh construction sequences<br />
+    j.d.denning, <a href="http://www.cs.dartmouth.edu/~wkerr" target="_blank">w.b.kerr</a>, <a href="http://www.cs.dartmouth.edu/~fabio" target="_blank">f.pellacini</a>.<br />
+    acm transactions on graphics, vol. 30, no. 4, article 66, july 2011.<br />
+    presented at siggraph 2011.<br clear="left" /><br />
+    submission: <a href="projects/meshflow/meshflow_acm.pdf">paper</a> <a href="projects/meshflow/meshflow-bin-code-data.zip">bin-code-data</a> <a href="projects/meshflow/studydata.zip">study data</a><br />
+    videos: <a href="http://www.youtube.com/watch?v=oTH7zwS_Wto" target="_blank">main</a> <a href="http://www.youtube.com/watch?v=4nQJUY-DJZI" target="_blank">biped</a> <a href="http://www.youtube.com/watch?v=Qmu0aC_lV_A" target="_blank">helmet</a> <a href="http://www.youtube.com/watch?v=QpXMUALmmqw" target="_blank">hydrant</a> <a href="http://www.youtube.com/watch?v=lNBEtMz9x-g" target="_blank">robot</a> <a href="http://www.youtube.com/watch?v=6aLMGl1hXd4" target="_blank">shark</a> <a href="http://siggraphencore.myshopify.com/products/2011-tp055" target="_blank">encore</a> <a href="http://s3.amazonaws.com/soma-siggraphencore/2011/preview/TP055_11.mp4" target="_blank">preview</a><br />
+    presentation: <a href="projects/meshflow/presentation.pdf">pdf</a><br />
+    updates: <a href="projects.php">projects</a>
+    </p><p style="clear:left;"></p><br />
+    
+    <p>abstract:
+	<div style="margin-left:20px">The construction of polygonal meshes remains a complex task in Computer Graphics, taking tens of thousands of individual operations over several hours of modeling time. The complexity of modeling in terms of number of operations and time makes it difficult for artists to understand all details of how meshes are constructed. We present MeshFlow, an interactive system for visualizing mesh construction sequences. MeshFlow hierarchically clusters mesh editing operations to provide viewers with an overview of the model construction while still allowing them to view more details on demand. We base our clustering on an analysis of the frequency of repeated operations and implement it using substituting regular expressions. By filtering operations based on either their type or which vertices they affect, MeshFlow also ensures that viewers can interactively focus on the relevant parts of the modeling process. Automatically generated graphical annotations visualize the clustered operations. We have tested MeshFlow by visualizing five mesh sequences each taking a few hours to model, and we found it to work well for all. We have also evaluated MeshFlow with a case study using modeling students. We conclude that our system provides useful visualizations that are found to be more helpful than video or document-form instructions in understanding mesh construction.</div>
+    </p>
+</div>
+
+<div style="margin-bottom:20px;">
+	<a href="images/bendylight10.jpg" class="nobrackets"><img src="images/bendylight10.jpg" align="left" width="100" style="margin-right:10px;" alt="bendylights" /></a><p>
+	bendylights: artistic control of direct illumination by curving light rays<br />
+	<a href="http://www.cs.dartmouth.edu/~wkerr" target="_blank">w.b.kerr</a>, <a href="http://www.cs.dartmouth.edu/~fabio" target="_blank">f.pellacini</a>, j.d.denning.<br />
+	computer graphics forum (eurographics symposium on rendering), 2010.<br clear="left" /><br />
+	submission: <a href="papers/bendylight10.pdf">paper</a>
+	</p><p style="clear:left;"></p><br />
+	
+	<p>abstract:
+	<div style="margin-left:20px">In computer cinematography, artists routinely use non-physical lighting models to achieve desired appearances. This paper presents BendyLights, a non-physical lighting model where light travels nonlinearly along splines, allowing artists to control light direction and shadow position at different points in the scene independently. Since the light deformation is smoothly defined at all world-space positions, the resulting non-physical lighting effects remain spatially consistent, avoiding the frequent incongruences of many non-physical models. BendyLights are controlled simply by reshaping splines, using familiar interfaces, and require very few parameters. BendyLight control points can be keyframed to support animated lighting effects. We demonstrate BendyLights both in a real-time rendering system for editing and a production renderer for final rendering, where we show that BendyLights can also be used with global illumination.</div>
+	</p>
+</div>
+
+
+
+<div style="margin-bottom:20px; margin-top:60px">tech reports</div>
+
+<div style="margin-bottom:20px;">
+    <a href="images/meshgit12.jpg" class="nobrackets"><img src="images/meshgit12_small.jpg" align="left" width="100" style="margin-right:10px;" alt="meshgit" /></a><p>
+    meshgit: diffing and merging polygonal meshes<br />
+    j.d.denning, <a href="http://www.cs.dartmouth.edu/~fabio" target="_blank">f.pellacini</a>.<br />
+    dartmouth computer science technical report <a href="http://www.cs.dartmouth.edu/reports/abstracts/TR2012-722/" target="_blank">tr2012-722</a>, may 2012.<br clear="left" /><br />
+    submission: <a href="papers/meshgit-tr.pdf">paper</a><br />
+    </p><p style="clear:left;"></p><br />
+    
+    <p>abstract:
+    <div style="margin-left:20px">This paper presents MeshGit, a practical algorithm for difﬁng and merging polygonal meshes. Inspired by version control for text editing, we introduce the mesh edit distance as a measure of the dissimilarity between meshes. This distance is deﬁned as the minimum cost of matching the vertices and faces of one mesh to those of another. We propose an iterative greedy algorithm to approximate the mesh edit distance, which scales well with model complexity, providing a practical solution to our problem. We translate the mesh correspondence into a set of mesh editing operations that transforms the ﬁrst mesh into the second. The editing operations can be displayed directly to provide a meaningful visual difference between meshes. For merging, we compute the difference between two versions and their common ancestor, as sets of editing operations. We robustly detect conﬂicting operations, automatically apply non-conﬂicting edits, and allow the user to choose how to merge the conﬂicting edits. We evaluate MeshGit by difﬁng and merging a variety of meshes and ﬁnd it to work well for all.</div>
+    </p>
+</div>
+
+<div class="topleft">	<a href="index.php" title="home">home</a><br />
+	<a href="publications.php" class="selected" title="papers">publications</a><br />
+	<a href="teaching.php" title="teaching experience">teaching</a><br />
+	<a href="projects.php" title="projects">projects</a><br />
+	<a href="contact.php" title="traditional contact info">contact</a><br />
+<br />
+	<a href="papers/cv20130327.pdf" title="2013-mar-27">cv</a><br />
+	<a href="http://scholar.google.com/citations?user=V-szQZkAAAAJ&hl=en" title="google scholar" target="_blank">gscholar</a><br />
+</div>
+
+<div class="topright">
+	jon denning<br />
+	sudi 143,154<br />
+	<a href="mailto:jdenning-at-cs-dot-dartmouth-dot-edu" title="format as proper email">email</a><!--<a href="https://clients4.google.com/voice/embed/webCallButton?id=9b6cbd81a809ee57dcdff471714f3b1c3176dbed" title="via google voice">call</a>--><br />
+</div>
+
+<div class="bottomleft">
+	<a href="http://gfxcoder.us" title="personal wiki" target="_blank">wiki</a><a href="http://jonandcindy.blogspot.com/" title="personal blog" target="_blank">blog</a><br/>
+	<a href="http://www.xkcd.com" title="xkcd">xk</a><a href="http://www.drmcninja.com" title="dr mcninja" target="_blank">dr</a><a href="http://www.phdcomics.com" title="phd comics" target="_blank">phd</a><br />
+	<a href="http://www.slashdot.org" title="slashdot" target="_blank">/.</a><a href="http://www.last.fm/user/gfxcoder" title="lastfm" target="_blank">lastfm</a>
+</div>
+
+<div class="bottomright">
+	<a href="images/random/samuel_tree.jpg" class="nobrackets" title="random picture"><img src="images/random/samuel_tree.jpg" width="100px" height="75px"alt="random picture" /></a><br /><p style="clear:left;">
+	use <a href="https://fedorahosted.org/liberation-fonts/" title="best monospaced font">liberation mono</a><br />
+	page updated 2013-apr-15</p>
+</div>
+<!--
+<a href="http://validator.w3.org/check?uri=referer">xhtml 1.0 transitional</a><a href="http://jigsaw.w3.org/css-validator/check/referer">css 2.1</a></p>
+-->
+
+</body>
+</html>

@@ -1,0 +1,203 @@
+http://www.cs.dartmouth.edu/~cja
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<title>Chrisil J. Arackaparambil</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+<div class="page">
+
+<table>
+<tr>
+
+<td>
+<h2>Chrisil Arackaparambil</h2>
+Ph.D. candidate<br /> <br /> <br />
+
+<b>Advisor:</b> <a href="http://www.cs.dartmouth.edu/~ac/">Amit Chakrabarti</a><br />
+<b>Research Interests:</b> measurements in network traffic,
+    information security,
+   algorithms,
+   and theory
+<br />
+<br />
+<b>LinkedIn</b> <a href="http://www.linkedin.com/in/chrisil">profile</a>
+
+<br /> <br /> <br /> <br />
+<b>Contact</b>
+<br />
+
+<a href="http://www.cs.dartmouth.edu">Department of Computer Science</a><br />
+6211 Sudikoff Laboratory<br />
+<a href="http://www.dartmouth.edu">Dartmouth College</a><br />
+Hanover, NH 03755<br />
+<br />
+Phone: 1-603-646-3297<br />
+Email: <img src="email.png" alt="firstname@dartmouth.edu" /><br />
+
+</td>
+
+<td>
+<img src="cornfields.jpg" alt="Skiing Spring Cornfields" />
+</td>
+
+</tr>
+
+</table>
+
+<hr>
+<em>
+UPDATE: I have graduated and joined the
+ZFS
+<a href="http://hub.opensolaris.org/bin/download/Community+Group+zfs/docs/zfslast.pdf">[1]
+<a href="http://hub.opensolaris.org/bin/view/Community+Group+zfs/">[2]</a><a href="https://en.wikipedia.org/wiki/ZFS">[3]</a> team at Oracle.
+My Ph.D. dissertation is available as a tech report
+<a href="http://www.cs.dartmouth.edu/reports/abstracts/TR2011-707/">here</a>. I will remain reachable at the email address
+above.
+</em>
+<hr>
+
+<table border="2" rules="columns" frame="hsides">
+
+<tr>
+
+<td valign="top" width="50%">
+<h4>Papers</h4>
+<ol>
+    <li> On Tuning the Knobs of Distribution-based Methods for Detecting VoIP Covert Channels
+    <br />
+    Chrisil Arackaparambil, Guanhua Yan, Sergey Bratus, and Alper Caglayan<br />
+    To appear in Proceedings of <a href="http://www.hicss.hawaii.edu/hicss_45/apahome45.htm">HICSS-45</a>, 2012.
+    [<a href="papers/voip-cc.pdf">pdf</a>]<br />
+    <br /></li>
+
+    <li> Wiki-watchdog: Anomaly Detection in Wikipedia Through a Distributional Lens
+    <br />
+    Chrisil Arackaparambil and Guanhua Yan<br />
+    In Proceedings of
+    <a href="http://liris.cnrs.fr/~wi-iat11/WI_2011/">IEEE/ACM Web Intelligence 2011</a>.
+    [<a href="papers/wikiwatchdog.pdf">pdf</a>]<br />
+    <br /></li>
+
+    <li>On the Reliability of Wireless Fingerprinting using Clock Skews
+    <br />
+    Chrisil Arackaparambil, Sergey Bratus, Anna Shubina, and David Kotz<br />
+    In Proceedings of
+    <a href="http://www.sigsac.org/wisec/WiSec2010/"> ACM WiSec'10</a>.
+    [<a href="papers/clock-skew.pdf">pdf</a>]<br />
+        Also presented at
+                    <a href="http://sandiego.toorcon.org/">ToorCon 11</a>
+                                    [<a href="papers/toorcon11_ver6a.pdf">slides</a>]
+                                                        and <a href="http://www.shmoocon.org/">ShmooCon 2010</a>.<br />
+    <br /></li>
+
+    <li>
+    Distributed Monitoring of Conditional Entropy for Anomaly Detection in Streams<br />
+    Chrisil Arackaparambil, Sergey Bratus, Joshua Brody, and Anna Shubina<br />
+    <!--Dartmouth Computer Science Technical Report TR2009-653, 2009.-->
+    In Proceedings of <a href="http://research.ihost.com/ssps/">
+    IEEE Workshop on Scalable Stream Processing Systems (SSPS), 2010</a>.
+    [<a href="papers/condent.pdf">pdf</a>]<br />
+    <br/></li>
+
+    <li>
+    Functional Monitoring Without Monotonicity<br />
+    Chrisil Arackaparambil, Joshua Brody, and Amit Chakrabarti<br />
+    In Proceedings of <a href="http://icalp09.cti.gr/">ICALP'09</a>.
+    [<a href="papers/funcmon.pdf">pdf</a>]<br />
+    <br /></li>
+
+    <li>
+    Approximability of the Unsplittable Flow Problem on Trees<br />
+    Chrisil Arackaparambil, Amit Chakrabarti, and Chien-Chung Huang<br />
+    Dartmouth Computer Science Technical Report TR2009-642, 2009.
+    [<a href="http://www.cs.dartmouth.edu/reports/TR2009-642.pdf">pdf</a>]<br />
+    <br/></li>
+
+    <li>
+    Construction of 1-Resilient Boolean Functions with Very Good Nonlinearity<br />
+    Soumen Maity, Chrisil Arackaparambil, and Kezhasono Meyase<br />
+    In Proceedings of <a href="http://www.is.iscas.ac.cn/seta06/">Sequences
+    and Their Applications (SETA), 2006</a>. 
+    [<a href="papers/bent-res.pdf">pdf</a>]<br />
+    </li>
+</ol>
+</td>
+<!-- <h4>Code</h4>
+I am working on making documented source code from my projects available
+on my webpage here.
+-->
+<td valign="top" width="50%">
+<h4> Miscellany </h4>
+<ul>
+    <li>My <a href="http://delicious.com/chrisil">bookmarks</a> online.</li><br />
+    <li> My brother <a href="http://guitarhall.in/teachers/mathew-joseph/">Mathew</a>, is the rhythm guitarist for the progressive rock
+    band
+    <a href="http://www.myspace.com/summerpintjunkie">SummerPint jUNkie</a>.
+    If you own/work for a record-label and would like to sign them on please
+    get in touch with me! :-)
+    </li>
+
+    <br />
+
+      <li>Things I like: bushwacking, cooking, climbing, Unix pipes, picking
+      colors/styles/designs, people, critiquing driving quality, 
+      Lego, manual work, asymmetry, symmetry, taking and organizing mental notes,
+      HOT water/tea/soup, glisser, lying in bed doing nothing in particular,
+      tulips, orange juice, Tintin, getting things done
+      </li>
+    <br />
+      <li>... and things I don't: concurrent multitasking,
+      uncomfortable seating, acronyms, sweet
+      food (except ice-cream), getting late, entropy, staring at glowing screens
+      like this one ...
+      </li>
+    <br />
+
+    <li>I'm involved with instructing Upper Valler school students at robotics
+    camps conducted by Dartmouth College and the
+    <a href="http://www.thehowe.org/">Hanover town library</a>.
+    See, for example, <a href="http://www.cs.dartmouth.edu/~cja/camp1/">this</a>
+    one.
+    </li>
+
+    <br />
+
+    <li><a href="triceps-wall.html">Bouldering</a> at local crags.</li><br />
+
+    <li>My Vermontly <a href="garden/">garden</a> from Summer'07.</li>
+
+    <br />
+
+    <li> <a href="mtwashington/">Trip</a> to
+    <a href="http://www.tuckerman.org/">Tuckerman Ravine</a> on a warm
+    spring's day.
+    </li>
+</ul>
+<!--
+</p> -->
+
+</td>
+
+</tr>
+
+</table>
+
+<hr />
+
+<div class="footer">
+	Last modified:
+<script type="text/javascript">
+document.write(document.lastModified);
+</script> ET
+</div>
+	
+</div>
+
+</body>
+</html>
+>

@@ -1,0 +1,296 @@
+http://www.cs.dartmouth.edu/%7Esws/advising
+3
+<html> 
+<head> 
+<title>The Trust Lab (aka "Smith Lab") (aka "045 Sudikoff") (aka "PKI Lab")</title> 
+</head> 
+<body> 
+<table width=100%>
+<tr>
+<td align=center>
+<IMG ALIGN="center" SRC="http://www.cs.dartmouth.edu/images/Dtree.gif" ALT="">
+</td>
+<td align=left>
+<b>
+<big><big>
+ 
+The Trust Lab (aka "Smith Lab") (aka "045 Sudikoff") (aka "PKI Lab")
+</big></big><br>
+
+</b>
+<td align=right>
+<i> www.cs.dartmouth.edu/~sws/advising/index.shtml<br>
+
+Last modified: 09/03/12 10:45:32 AM
+</i>
+</td>
+</tr>
+</table>
+<hr>
+
+<p>
+
+<p>
+          
+ 
+ 
+<br> 
+<table width=100%>
+<tr>
+<td> 
+<h2>Current Labbies</h2> 
+ 
+Research scientists:
+<ul>
+<li> <a href="/~sergey/"><b>Sergey Bratus</b></a> (shared with DFK)
+<li> <a href="/~ashubina/"><b>Anna Shubina</b></a> (shared with DFK, Kiewit)
+</ul>
+<p>
+
+<p>
+Ph.D.: 
+<ul> 
+<li> <a href="/~pete/"><b>Pete Johnson</b></a> (co-advised by Sergey)
+<li> <a href="/~reeves/"><b>Jason Reeves</b></a>
+<li> <a href="/~bx/"><b>Rebecca "bx" Shapiro</b></a> (co-advised by Sergey)
+<li> <a href="/~sinclair/"><b>Scout Sinclair</b></a>
+<li> <a href="/~gweave01/"><b>Gabe Weaver</b></a>
+<br>
+<br>
+(<a href="../polarbear.jpg"><b>Participating in Dartmouth's annual "Polar Bear Swim"</b></a> may be required to be a funded PhD student in my lab.:)
+
+</ul> 
+<p>
+M.S.:
+<ul>
+<li> <a href="/~vijayk"><b>Vijay Kothari</b></a>
+<li> <a href="/~chen-qin"><b>Chen Qin</b></a>
+</ul>
+<p>
+<p>
+Undergrad interns:
+<ul>
+<li> <a href="/~dbear"><b>David Rice</b></a>
+<li> <a href="/~tlward/"><b>Tucker Ward</b></a>
+</ul>
+<p>
+Thayer visitors:
+<ul>
+<li> Michael Henson
+<li> Morgon Kanter
+<li> Steve Kuhn
+</ul>
+<p>
+</td>
+<td valign="top">
+<img align="right" src="/~sws/capresso.jpg">
+</td>
+</tr>
+</table>
+
+<hr> 
+<h2>Graduated Students</h2> 
+ 
+
+Ph.D.:
+<ul>
+<li> Alex Iliev, Ph.D. 2009.
+<a href="http://www.cs.dartmouth.edu/reports/abstracts/TR2009-659/"><cite>Hardware-Assisted Secure Computation</cite></a>
+<li> John Marchesini, Ph.D. 2005.
+<a href="../pubs/carlo-thesis.pdf"><cite>Secure Hardware Enhanced MyProxy.</cite></a>
+<li> Chris Masone, Ph.D. 2008.
+<a href="http://www.cs.dartmouth.edu/reports/abstracts/TR2008-633/"><cite>Attribute-Based, Usefully Secure Email</cite></a>
+<li> Meiyuan Zhao, Ph.D. 2005.
+<a href="http://www.cs.dartmouth.edu/reports/abstracts/TR2005-559/"><cite>Performance Evaluation of Distributed Security Protocols 
+Using Discrete Event Simulation.</cite></a>
+</ul>
+<p>
+
+ 
+M.S.: 
+<ul> 
+<li> Sanket Agrawal, M.S. 2003. 
+<cite><a href="/~sws/abstracts/agrawal.shtml">Investigation of Third Party 
+Rights Service and Shibboleth Modification to Introduce the Service</a></cite>.
+<li> Yasir Ali, M.S. 2003.  
+<cite><a href="/~sws/abstracts/ali.shtml">Adding Public Key Security to SSH</a></cite> 
+<li> Joseph Cooley, M.S. 2011.
+<cite><a href="http://www.cs.dartmouth.edu/reports/abstracts/TR2011-690/">Screen Capture for Sensitive Systems</a></cite>.
+<li> Nihal D'Cunha, M.S. 2007:
+<cite><a href="http://www.cs.dartmouth.edu/reports/abstracts/TR2007-594/">Exploring 
+the Integration of Memory Management and Trusted Computing</a></cite>.
+<li> Nicholas C. Goffee, M.S. 2004.
+<cite><a href="http://www.cs.dartmouth.edu/reports/abstracts/TR2004-509/">Greenpass
+Client Tools for Delegated Authorization in Wireless Networks</a></cite>
+<li> Shan Jiang, M.S. 2001.  
+<cite><a href="/~sws/abstracts/jiang.shtml">WebALPS Implementation and Performance Analysis: 
+Using Trusted Co-Serves to Enhance Privacy and Security of 
+Web Interactions</a></cite> 
+<li> Kunal Kain, M.S. 2003. 
+<cite><a href="/~sws/abstracts/kain.shtml">Electronic Documents and Digital Signatures.</a></cite> 
+<li> Sung Hoon Kim, M.S. 2004.
+<cite><a href="http://www.cs.dartmouth.edu/reports/abstracts/TR2004-510/">Greenpass 
+RADIUS Tools for Delegated Authorization in Wireless Networks</a></cite>
+<li> Sidharth Nazareth, M.S. 2003. 
+<cite><a href="/~sws/abstracts/nazareth.shtml">SPADE:   
+SPKI/SDSI for Attribute Release Policies in a Distributed Environment.</a></cite> 
+<li> Ashwin Ramaswamy, M.S. 2009.
+<cite><a href="http://www.cs.dartmouth.edu/reports/abstracts/TR2009-644/">Autoscopy: Detecting Pattern-Searching Rootkits via Control Flow Tracing.</a></cite>
+<li> Rouslan Solomakhin, M.S. 2010.
+<cite><a href="http://www.cs.dartmouth.edu/reports/abstracts/TR2010-665/">
+Predictive YASIR: High Security with Lower Latency in Legacy SCADA.</a></cite>
+<li> Josh Stabiner, M.S. 2005.
+<cite>Providing Compartmented Hardware-based Security on Commodity Machines.</cite>
+<li>  Eileen Zishuang Ye, M.S. 2002. 
+<cite><a href="/~sws/abstracts/ye.shtml">Building Trusted Paths for Web Browsers.</a></cite> 
+</ul> 
+<p> 
+ 
+
+
+B.A.: 
+<ul> 
+<li> Katelin Bailey, B.A. 2010, High Honors.
+<cite><a href="http://www.cs.dartmouth.edu/reports/abstracts/TR2010-674/">Virtual Container Attestation:
+Customized Trusted Containers for On-Demand
+Computing.</a></cite> <a href="../katelin.jpg"><b>1st place in the Sigma Xi Christopher Reed competition at the 2010 Wetterhahn Science Poster Symposium.</b></a>
+<li> Marco Barreno, B.A. 2002, Honors. 
+<cite><a href="/~sws/abstracts/barreno.shtml">The  
+Future of Cryptography under Quantum Computers</a></cite> 
+<li> Alex Barsamian, B.A. 2004, Honors.
+<cite>Software Compartmentalization and Attestation Using SELinux and the TPM/TCPA.</cite>
+<li> Ruslan Dimov, B.A. 2008, Honors.
+<cite><a href="http://www.cs.dartmouth.edu/reports/abstracts/TR2008-624/">Making RBAC Work in Dynamic, Fast-Changing Corporate Environments</a></cite>
+<li> Twum Djin, B.A. 2005, High Honors.
+<cite><a href="/~sws/abstracts/djin.shtml">Managing Access Control in Virtual Private Networks.</a></cite>
+<li> Andrew Flynn, B.A. 2007, High Honors.
+<cite>WikiD: A Dartmouth Wiki Implementing Fine-Grained, Decentralized Access Control.</cite>
+<li> Allen Harvey, B.A. 2006, Honors.
+<cite>Tunable Trust: Surveying Security for 
+Resource-Limited Scenarios.</cite>
+<li> Alex Iliev, B.A. 2001, Honors. 
+<cite><a href="/~sws/abstracts/iliev.shtml">An Armored Data Vault</a></cite> 
+<li> Dan Kang, B.A. 2003, Honors. 
+<cite><a href="/~sws/abstracts/kang.shtml">Strengthening Voice Authentication with Splicing Detection  
+for User with Untrusted Clients</a></cite> 
+<li> Evan Knop, B.A. 2001. 
+<cite><a href="/~sws/abstracts/knop.shtml">Secure Public-Key Services for Web-Based Mail.</a></cite> 
+<li> Rich MacDonald, B.A. 2002. 
+<cite>Boosting Security: Toward Combining Trusted Hardware and Trusted Operating Systems.</cite> (<a href="/~sws/abstracts/msmw03.shtml">outcome</a>) 
+<li> Fernando Orta, B.A. 2008, High Honors (Engineering).
+<cite>Project Coco (Proprietary and Confidential)</cite>
+<li> Mindy Pereira, B.A. 2003, Honors. 
+<cite><a href="/~sws/abstracts/pereira.shtml">Trusted S/MIME Gateways</a></cite> 
+<li> Kimberly Powell, B.A. 2004, Honors.
+<cite>Testing the Greenpass Wireless Security System</cite>.
+<li> Sean Richardson, B.A. 2001, Honors. 
+<cite><a href="/~sws/abstracts/richardson.shtml">Whom can you trust? Designing a System to Evaluate and Represent 
+the Security State of Machines using PKI.</a></cite> 
+<li> Loren Sands-Ramshaw, B.A. 2010, Honors.
+<cite>Creating Large Disturbances in the Power Grid:
+Methods of Attack After Cyber Infiltration.</cite>
+<li> Nick Santos, B.A. 2006, High Honors.
+<cite><a href="http://www.cs.dartmouth.edu/reports/abstracts/TR2006-574/">Limited Delegation (Without Sharing Secrets) in Web Applications.</a></cite>
+<li> David Schnur, B.A. 2005, Honors.
+<cite>GPUGrid: A Framework for Distributed Computing Across GPU Networks.</cite>
+<li> Oleg Seletsky, B.A. 2009, Honors.
+<cite><a href="http://www.cs.dartmouth.edu/reports/abstracts/TR2009-651/">Developing an Improved, Web-Based Classroom Response System with Web Services.</a></cite>
+<li> Paul Seligman, B.A. 2003, Honors. 
+<cite><a href="/~sws/abstracts/seligman.shtml">An Implementation of Machine Learning Algorithms to Detect Abnormal Data Access from Online Journal Archives</a></cite>. 
+<li> Manya Sleeper, B.A. 2008, Honors.
+<a href="http://www.cs.dartmouth.edu/reports/abstracts/TR2008-628/"><cite>Key Management for Secure Power SCADA</cite>.</a>
+<li> Evan Sparks, B.A. 2007, High Honors.
+<cite><a href="http://www.cs.dartmouth.edu/~pkilab/sparks">A Security Assessment of Trusted Platform Modules</a></cite>.
+<li> Stephanie Trudeau, B.A. 2009, Honors.
+<cite><a href="http://www.cs.dartmouth.edu/reports/abstracts/TR2009-652/">The Effects of Introspection on Computer Security Policies.</a></cite>
+<li> Gabe Vanrenen, B.A. 2003, High Honors. 
+<cite><a href="/~sws/abstracts/vanrenen.shtml">Distributed SEM: Extending SEM for Use on Distributed, Trusted Third Parties.</a></cite> 
+<li> Jerry Wang, B.A. 2004. 
+<cite>An Evaluation of Code Attestation in Trusted Computing Platforms.</cite>       
+</ul> 
+
+
+<P>
+Ninjas (because <a href="http://www.dartmouth.edu/~wisp/?page_id=172">WISPies</a>
+doesn't sound sufficiently empowering):
+<table width=100%>
+<tr>
+<td> 
+<ul>
+<li> Fabeah Adu-Oppong '11
+<li> Katelin Bailey '10
+<li> Casey Gardiner '11
+<li> Kelsey Harris '11
+<li> Lauren Kwan '14
+<li> Alexis Lim '11
+<li> Nathalie Rivest '10
+<li> Chang Tang '11
+<li> Stephanie Trudeau '09
+<li> Linden Vongsathorn '10
+<li> Yifei Wang '12
+<li> Geetha Wunnava '10 (Wellesley)
+<li> Lillian Xia '11
+<li> Yizhi Zhang '13
+<li> Qianqian Zhao '11
+</ul>
+</td>
+<td valign="top">
+<img align="right" src="/~sws/ninjas.jpg">
+</td>
+</tr>
+</table> 
+<hr> 
+ 
+<p>
+
+<hr>
+<table width=100%>
+<tr>
+<td align=center>
+<IMG ALIGN="center" SRC="http://www.cs.dartmouth.edu/icons/back.gif" ALT="">
+</td>
+<td align=left>
+<b>
+ 
+<a href="/~sws/"> 
+Back to Sean's Home Page</a> 
+</b>
+</td>
+<td align=right>
+<i>Maintained by 
+<a href="http://www.cs.dartmouth.edu/~sws/">Sean Smith</a>,
+<a href="mailto:sws@cs.dartmouth.edu">sws@cs.dartmouth.edu</a>
+</i>
+</td>
+</tr>
+</table>
+</font> 
+ 
+</body> 
+</html> 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

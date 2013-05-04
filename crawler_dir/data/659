@@ -1,0 +1,80 @@
+http://www.cs.dartmouth.edu/%7Eac/tcslinks.html
+3
+<html><head><title>Amit's TCS Links</title><body>
+
+<h2>TCS Links</h2>
+
+TCS is short for Theoretical Computer Science. The philosophy of TCS is
+that computers and computing are intrinsically interesting things that
+deserve rigorous study. 
+
+This page isn't meant to be comprehensive. Rather, I link to a
+TCS-related page here if, during some phase of my life, I have found
+myself visiting that page rather often.
+
+<h4>Conference Proceedings Online</h4>
+<ul>
+<li><a href="http://portal.acm.org/browse_dl.cfm?linked=1&part=series&coll=portal&dl=ACM&CFID=18935998&CFTOKEN=24179309">
+ACM conference proceedings</a>. Especially for TCS:
+<a href="http://portal.acm.org/browse_dl.cfm?linked=1&part=series&idx=SERIES396&coll=portal&dl=ACM&CFID=18935998&CFTOKEN=24179309">
+STOC</a>, <a href="http://portal.acm.org/browse_dl.cfm?linked=1&part=series&idx=SERIES422&coll=portal&dl=ACM&CFID=18935998&CFTOKEN=24179309">
+SODA</a>, <a href="http://portal.acm.org/browse_dl.cfm?linked=1&part=series&idx=SERIES391&coll=portal&dl=ACM&CFID=18935998&CFTOKEN=24179309">
+PODC</a>, <a href="http://portal.acm.org/browse_dl.cfm?linked=1&part=series&idx=SERIES362&coll=portal&dl=ACM&CFID=18935998&CFTOKEN=24179309">
+SPAA</a>.
+<li><a href="http://ieeexplore.ieee.org/xpl/conferences.jsp">IEEE
+conferences</a>. Especially for TCS:
+<a href="http://ieeexplore.ieee.org/xpl/conferences.jsp?letter=foundations+of+computer&findtitle=&srchtitle=yes&ilstrec=10">
+FOCS</a>, <a href="http://ieeexplore.ieee.org/xpl/conferences.jsp?letter=complexity&findtitle=&srchtitle=yes&ilstrec=10">
+CCC</a>.
+<li>European conferences; articles courtesy of Springer: 
+<a href="http://www.informatik.uni-trier.de/~ley/db/conf/icalp/">ICALP</a>,
+<a href="http://www.informatik.uni-trier.de/~ley/db/conf/stacs/">STACS</a>,
+<a href="http://www.informatik.uni-trier.de/~ley/db/conf/esa/">ESA</a>.
+<li>Miscellaneous others available via Springer:
+<a href="http://www.informatik.uni-trier.de/~ley/db/conf/random/">RANDOM</a>,
+<a href="http://www.informatik.uni-trier.de/~ley/db/conf/approx/">APPROX</a>,
+<a href="http://www.informatik.uni-trier.de/~ley/db/conf/crypto/">CRYPTO</a>,
+<a href="http://www.informatik.uni-trier.de/~ley/db/conf/ipco/">IPCO</a>,
+<a href="http://www.informatik.uni-trier.de/~ley/db/conf/fsttcs/">FSTTCS</a>,
+<a href="http://www.informatik.uni-trier.de/~ley/db/conf/cocoon/">COCOON</a>,
+<a href="http://www.informatik.uni-trier.de/~ley/db/conf/isaac/">ISAAC</a>.
+</ul>
+
+<h4>Compendia</h4>
+<ul>
+<li><a href="http://www.nada.kth.se/~viggo/problemlist/compendium.html">
+A Compendium of NP Optimization Problems</a>, by Pierluigi Crescenzi and 
+Viggo Kann.
+<li>The <a href="http://www.cs.berkeley.edu/~aaronson/zoo.html">
+Complexity Zoo</a>, by Scott Aaronson.
+<li>Some <a href="http://compgeom.cs.uiuc.edu/~jeffe/open">Some open problems
+in Computational Geometry</a>, by Jeff Erickson.
+<li><a href="http://kam.mff.cuni.cz/~matousek/haifaop.ps">Open problems
+from the Haifa workshop</a> on metric spaces, by Jiri Matousek.
+</ul>
+
+<h4>TCS Software</h4>
+<ul>
+<li> <a href="http://www.mpi-inf.mpg.de/~behle/azove.html">azove</a>:
+Another 0/1 Vertex Enumeration Tool. Supposedly the fastest code as of 
+Jul 11, 2006.
+</ul>
+
+<h4>The TCScientists</h4>
+<ul>
+<li><a href="http://sigact.acm.org/tcs-rolodex/">TCS Virtual Address Book</a>.
+<li><a href="http://sigact.acm.org/genealogy/">TCS Genealogy</a>.
+</ul>
+
+<h4>Weblogs</h4>
+<ul>
+<li><a href="http://www.fortnow.com/lance/complog/">My Computational
+Complexity Web Log</a>, by Lance Fortnow.
+<!-- (a neat name for the weblog, 
+somewhat like <a href="http://www.mysql.com/">MySQL</a>). -->
+<li><a href="http://geomblog.blogspot.com/">The Geomblog</a>, by Suresh
+Venkatasubramanian.
+<li><a href="http://hughanchor.blogspot.com/">Fred Bloggs Weblogs</a>,
+by Grwfpm Crztmbd.
+</ul>
+l

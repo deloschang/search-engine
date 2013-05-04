@@ -1,0 +1,188 @@
+http://www.cs.dartmouth.edu/content/syllabi/cs2/index.html
+2
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<title>CS 2 | Programming for Interactive Digital Arts | Winter 2008</title>
+<link rel="stylesheet" type="text/css" href="style/style.css" />
+</head>
+
+<body>
+<div class="pagebackground">
+<div class="pagedecorationbefore"></div>
+<div class="pagedecoration">
+
+<div class="page">
+<div class="header">
+  <div class="title">CS 2, Winter 2008</div>
+  <div class="subtitle">Programming for Interactive Digital Arts</div>
+</div>
+
+<div class="navigation">
+  <a href="index.html" class="navhere">About</a>
+  <a href="schedule.html" class="navthere">Schedule</a>
+</div>
+
+<div class="content">
+
+<h2>Course description</h2> 
+
+<p>This course introduces programming techniques necessary to generate
+interactive visual art on a computer. Although it briefly covers
+computer-generated media art, the course focuses on the programming
+skills required for creating <em>interactive</em> works. Rather than
+using commercial software, students write their own programs to create
+compositions with which users can interact. The course introduces
+fundamental concepts of how to represent and manipulate color,
+two-dimensional shapes, images, motion, and video. Coursework includes
+short programming assignments to practice the concepts introduced
+during lectures and projects to explore visual compositions. The
+course assumes no prior knowledge of programming.</p>
+
+<p>We'll be using a language called <a
+href="http://www.processing.org/">Processing</a>.</p>
+
+<a name="admin"></a>
+<h2>Administrative info</h2>
+
+<dl>
+  <dt>Instructor</dt>
+  <dd><a href="http://www.cs.dartmouth.edu/~cbk/">Chris Bailey-Kellogg</a> |
+       250 Sudikoff | office hour: M 3-4, Tu 1-2, Th (in classroom) 1-2</dd>
+
+  <dt>Teaching assistants</dt>
+  <dd><a href="http://www.cs.dartmouth.edu/~nfoti/">Nick Foti</a>, grad TA<br/>
+<a href="http://www.cs.dartmouth.edu/~sharon/">Rong Yang (Sharon)</a>, grad TA<br/>
+<a href="http://www.lorensr.com/">Loren Sands-Ramshaw</a>, undergrad lab TA<br/></dd>
+
+  <dt>Course staff email</dt>
+  <dd>cs2 -at- cs -dot- dartmouth -dot- edu</dd>
+
+  <dt>Announcements and discussion board</dt>
+  <dd>Available on <a href="http://www.dartmouth.edu/~blackboard/">Blackboard</a> </dd>
+
+  <dt>Lectures</dt>
+  <dd>2-hour | MWF 1:45-2:50 | x-hour (sometimes) Th 1-1:50 <br/> Moore 110</dd>
+
+  <dt>Lab</dt>
+  <dd>Sudikoff 005 (Mac lab).  Reserved, with TA in lab: M 4-6pm; W 5-7pm, Th 8-10pm.<br/>
+      Also available for use by CS 2 students when not reserved for other classes.<br/>(Note that CS 32 is using the lab during the 12 hour and x-hour, and Su 4-10 and Tu 7-10.)<br/>
+      See Kelly Clark (101 Sudikoff) to get your ID card enabled.</dd>
+
+  <dt>Textbook (Recommended)</dt>
+  <dd>Casey Reas and Ben Fry, <a href="http://www.processing.org/learning/books/"><i>Processing: A Programming Handbook for Visual Designers and Artists</i></a><br/>
+       Available at Baker reserve desk<br/>
+       The examples may be <a href="http://www.processing.org/img/learning/Processing-Examples-001.zip">downloaded</a>, and you are encouraged to do so.</dd>
+  <dt>Other materials</dt>
+  <dd><a href="http://www.processing.org/reference/index.html">Procesing reference</a><br/>
+Some examples used in class are drawn from the book <a href="http://www.friendsofed.com/book.html?isbn=159059617X"><i>Processing: Creative Coding and Computational Art</i></a> by Ira Greenberg.  These examples are also <a href="http://www.friendsofed.com/download.html?isbn=159059617X">downloadable</a>.
+  </dd>
+
+</dl>
+
+<a name="grading"></a>
+<h2>Coursework and grading</h2>
+
+<p>Coursework will include:</p>
+<dl>
+  <dt>Homeworks (~weekly; 50% total)</dt>
+  <dd>To help you learn and practice the basic techniques.  Done individually.</dd>
+  <dt>Projects (two; 25% total)</dt>
+  <dd>To allow you to synthesize the material to do something bigger of your own design.  Done individually or with a partner.</dd>
+  <dt>Quizzes (two; 25% total)</dt>
+  <dd>To give a quick check-up on your understanding of the material.</dd>
+</dl>
+
+<p>Homework and project assignments are to be turned in via <a
+href="http://www.dartmouth.edu/~blackboard/">Blackboard</a>
+<em>before</em> class on the due date, and must be accompanied by a
+hard copy turned in at the start of class.  Ample time is provided for
+each assignment, so in general, late submissions will not be accepted.
+Under extenuating circumstances (prolonged illness, death in the
+family, etc.), arrangements must be made with the instructor
+<em>before</em> the due date.</p>
+
+<p>Grades will be assessed according to correctness and quality of
+both the <em>product</em> (does it look and act like it should?) and
+the <em>code</em> (is it well-organized and easy to follow, does it
+effectively use the proper programming constructs?).  For
+exceptionally creative and interesting work, it is possible to receive
+extra credit points.  Extra credit is tabulated separately from the
+regular grades on homework and exams, and is used to adjust final
+grades after the final average is computed.  Thus extra credit is
+always optional, and not doing any extra credit work will never reduce
+your final grade, even if everyone else in the class does a lot of
+extra credit.</p>
+
+<a name="honor"></a>
+<h2>Honor code</h2>
+
+<p>Dartmouth's honor code applies to this course, and academic
+misconduct policies will be strictly enforced.  If you have questions,
+ask!</p>
+
+<p>You may discuss the homework with other current CS2 students, but
+your submitted homework must be entirely your own.  As part of a
+discussion, you may show (in person) another student your work.
+However, your code and any other solutions you submit must be created,
+written/typed, and documented by you alone.  You may not copy anything
+directly from another student's work.  For example, copying a portion
+of someone else's solution onto a piece of paper would violate the
+honor code, even if you eventually turn in a different answer.
+Similarly, e-mailing a portion of your code to another student, or
+posting it on-line for them to see would violate the honor code.
+Although all students must create and type in their own code, you may
+help other students debug their programs once you and they have
+already written your programs.  We do encourage discussion of homework
+assignments between students, subject to these rules.  Note that
+discussion between two students will be most useful when both students
+have already made serious attempts to solve the problem on their
+own.</p>
+
+<p>If you make use of any code taken from outside references -- for
+instance, from an off-site web page or a textbook other than the ones
+used for this course -- you must clearly attribute the source of the
+code with clear comments in the code that you submit.  Code from class
+examples or the course textbook does not have to be attributed.  You
+do not need to acknowledge discussion with other students on your
+submitted work.  Proper respect for copyright laws as applied to
+printed materials and software products is subsumed by Dartmouth
+College's <a
+href="http://www.dartmouth.edu/comp/about/policies/">Computing
+Policies</a>.</p>
+
+<p>On quizzes, you may not collaborate with, copy from, or otherwise
+share information with anyone.  (You may of course ask questions of
+the course staff.)</p>
+
+<a name="access"></a>
+<h2>Disabilities</h2>
+
+<p>Students with disabilities enrolled in this course and who may need
+disability-related classroom accommodations are encouraged to make an
+appointment to see the instructor before the end of the second week of
+the term. All discussions will remain confidential, although the <a
+href="http://www.dartmouth.edu/~accessibility/">Student Accessibility
+Services</a> office may be consulted to discuss appropriate
+implementation of any accommodation requested.</p>
+
+</div>
+
+<div class="footer">
+<!-- hhmts start -->
+Last modified: Mon Jan 28 13:40:48 2008
+<!-- hhmts end -->
+</div>
+
+</div>
+
+</div>
+<div class="pagedecorationafter"></div>
+
+</div>
+
+</body>
+</html>

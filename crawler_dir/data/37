@@ -1,0 +1,1788 @@
+http://www.cs.dartmouth.edu/site-content/site/upcoming-class-schedule.php
+1
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Dartmouth Computer Science | Upcoming Class Schedule</title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<meta http-equiv="content-language" content="en">
+		<link rel="icon" href="http://www.cs.dartmouth.edu/favicon.ico" type="image/x-icon">
+		<meta name="description" content="Approximate schedules of upcoming classes">
+		<meta name="keywords" content="dartmouth college computer science, dartmouth college, computer science, dartmouth computer science, dartmouth college cs, dartmouth cs, BASIC programming language, Sudikoff Laboratory, Sudikoff, Ph.D. program in Computer Science, M.S. program in Computer Science, undergraduate program in Computer Science">
+		<meta name="author" content="Dartmouth Computer Science">
+		<meta name="robots" content="all,index,follow">
+		<meta name="googlebot" content="all,index,follow">
+		<link href="http://www.cs.dartmouth.edu/css/support.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="http://www.cs.dartmouth.edu/css/site.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="http://www.cs.dartmouth.edu/css/dartmouth.css" rel="stylesheet" type="text/css" media="all" />
+		<script type="text/javascript" src="http://www.cs.dartmouth.edu/js/lib.js"></script>
+		<script type="text/javascript" src="http://www.cs.dartmouth.edu/js/topNavigation.js"></script>
+		<link href="http://www.cs.dartmouth.edu/css/baseline.type.css" rel="stylesheet" type="text/css" media="all" />
+		<script type="text/javascript" src="http://www.cs.dartmouth.edu/js/quickview.js"></script>
+		<script type="text/javascript">
+var imNavArr = [];
+imNavArr[0] = 'http://www.cs.dartmouth.edu/images/t2-mh_01_home.png';
+imNavArr[1] = 'http://www.cs.dartmouth.edu/images/t2-mh_02_people.png';
+imNavArr[2] = 'http://www.cs.dartmouth.edu/images/t2-mh_03_research.png';
+imNavArr[3] = 'http://www.cs.dartmouth.edu/images/t2-mh_04_programs.png';
+imNavArr[4] = 'http://www.cs.dartmouth.edu/images/t2-mh_05_admissions.png';
+
+function preloadNavImages() {
+	if (document.images) {
+		t2_mh_0_click = newImage("http://www.cs.dartmouth.edu/images/t2-mh_01_home-click.png");
+		t2_mh_0_click_left = newImage("http://www.cs.dartmouth.edu/images/t2-mh_02_people-click-left.png");
+
+		t2_mh_1_click = newImage("http://www.cs.dartmouth.edu/images/t2-mh_02_people-click.png");
+		t2_mh_1_click_left = newImage("http://www.cs.dartmouth.edu/images/t2-mh_03_research-click-left.png");
+
+		t2_mh_2_click = newImage("http://www.cs.dartmouth.edu/images/t2-mh_03_research-click.png");
+		t2_mh_2_click_left = newImage("http://www.cs.dartmouth.edu/images/t2-mh_04_programs-click-left.png");
+
+		t2_mh_3_click = newImage("http://www.cs.dartmouth.edu/images/t2-mh_04_programs-click.png");
+		t2_mh_3_click_left = newImage("http://www.cs.dartmouth.edu/images/t2-mh_05_admissions-click-left.png");
+
+		t2_mh_4_click = newImage("http://www.cs.dartmouth.edu/images/t2-mh_05_admissions-click.png");
+		t2_mh_4_click_right = newImage("http://www.cs.dartmouth.edu/images/t2-mh_04_programs-click-right.png");
+
+		preloadFlag = true;
+	}
+}
+
+function menuListener()
+	{
+	window.addEventListener('click',resetNav,false);
+	}
+
+addLoadEvent(preloadNavImages());
+addLoadEvent(menuListener());
+
+		</script>
+	</head>
+
+	<body id="pageBody">
+		<div id="helpdiv"><div id="helpdivcontent"></div></div>
+		<div id="formSubmissionDiv"><div id="formSubmissionDivContent"></div></div>
+<div id="quickview"><div id="quickviewclose"><a href="javascript:closeQuickView();">close</a></div><div id="quickviewcontent"></div></div>
+<a name="top"></a><!-- masthead and navigation table -->
+
+		<table width="838" border="0" cellpadding="0" cellspacing="0" align="center">
+			<tr>
+				<td>
+<div style="position:relative;">
+
+		<table width="838" height="44" border="0" cellpadding="0" cellspacing="0">
+			<tr height="44">
+				<td valign="bottom" width="237" height="99"><a href="http://www.cs.dartmouth.edu"><img src="http://www.cs.dartmouth.edu/images/t2-mh_01.png" width="237" height="99" border="0"></a></td>
+				<td valign="bottom" width="120" height="99"><a href="javascript:changeNavImages('t2_mh_0', 'http://www.cs.dartmouth.edu/images/t2-mh_01_home-click.png', 't2_mh_1', 'http://www.cs.dartmouth.edu/images/t2-mh_02_people-click-left.png');resetNavClock();"><img name="t2_mh_0" id="t2_mh_0_id" src="http://www.cs.dartmouth.edu/images/t2-mh_01_home.png" width="120" height="44" border="0" alt="Home"></a></td>
+				<td valign="bottom" width="120" height="99"><a href="javascript:changeNavImages('t2_mh_1', 'http://www.cs.dartmouth.edu/images/t2-mh_02_people-click.png', 't2_mh_2', 'http://www.cs.dartmouth.edu/images/t2-mh_03_research-click-left.png');resetNavClock();"><img name="t2_mh_1" id="t2_mh_1_id" src="http://www.cs.dartmouth.edu/images/t2-mh_02_people.png" width="120" height="44" border="0" alt="People"></a></td>
+				<td valign="bottom" width="120" height="99"><a href="javascript:changeNavImages('t2_mh_2', 'http://www.cs.dartmouth.edu/images/t2-mh_03_research-click.png', 't2_mh_3', 'http://www.cs.dartmouth.edu/images/t2-mh_04_programs-click-left.png');resetNavClock();"><img name="t2_mh_2" id="t2_mh_2_id" src="http://www.cs.dartmouth.edu/images/t2-mh_03_research.png" width="120" height="44" border="0" alt="Research"></a></td>
+				<td valign="bottom" width="120" height="99"><a href="javascript:changeNavImages('t2_mh_3', 'http://www.cs.dartmouth.edu/images/t2-mh_04_programs-click.png', 't2_mh_4', 'http://www.cs.dartmouth.edu/images/t2-mh_05_admissions-click-left.png');resetNavClock();"><img name="t2_mh_3" id="t2_mh_3_id" src="http://www.cs.dartmouth.edu/images/t2-mh_04_programs.png" width="120" height="44" border="0" alt="Programs"></a></td>
+				<td valign="bottom" width="120" height="99"><a href="javascript:changeNavImages('t2_mh_4', 'http://www.cs.dartmouth.edu/images/t2-mh_05_admissions-click.png', 't2_mh_3', 'http://www.cs.dartmouth.edu/images/t2-mh_04_programs-click-right.png');resetNavClock();"><img name="t2_mh_4" id="t2_mh_4_id" src="http://www.cs.dartmouth.edu/images/t2-mh_05_admissions.png" width="120" height="44" border="0" alt="Admissions"></a></td>
+				<td valign="bottom" width="1" height="99"><img src="http://www.cs.dartmouth.edu/images/spacer.gif" width="1" height="44"></td>
+			</tr>
+
+
+		</table>
+<div id="subnavwrap" style="position:absolute;top:99px;left:237px;width:599px;z-index:200;">
+<div class="topnavSubOverlay" id="div_t2_mh_0_sub" style="left:-2px;">
+
+<table width="241" border="0" cellpadding="0" cellspacing="0">
+	<tr height="12">
+		<td width="2" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_04.png" width="2" height="12" alt=""></td>
+		<td width="241" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_05.jpg" width="241" height="12" alt=""></td>
+		<td width="3" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_06.png" width="3" height="12" alt=""></td>
+	</tr>
+
+	<tr>
+		<td width="2" height="12" class="topnavSubOverlayLeft"></td>
+
+		<td class="topnavSubOverlayContent" onmouseover="resetNavClock();">
+<ul>
+<li><a href="http://www.cs.dartmouth.edu/" target="_self">Home</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/about-dartmouth-cs.php" target="_self">About</a></li><li><a href="http://www.dartmouth.edu" target="_blank">Dartmouth</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/jobs-in-dartmouth-cs.php" target="_self">Jobs</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/contact-dartmouth-computer-science.php" target="_self">Contact</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/internal/index.php" target="_self">Internal</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/connector/index.php" target="_self">Connector</a></li></ul>
+					</ul>
+				</td>
+		<td width="2" height="12" class="topnavSubOverlayRight"></td>
+	</tr>
+			<tr>
+			<tr height="19">
+		<td width="2" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_13.png" width="2" height="19" alt=""></td>
+		<td width="241" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_14.png" width="241" height="19" alt=""></td>
+		<td width="3" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_15.png" width="3" height="19" alt=""></td>
+	</tr>
+
+</table>
+
+</div>
+
+<div class="topnavSubOverlay" id="div_t2_mh_1_sub" style="left:118px;">
+
+<table width="241" border="0" cellpadding="0" cellspacing="0">
+	<tr height="12">
+		<td width="2" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_04.png" width="2" height="12" alt=""></td>
+		<td width="241" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_05.jpg" width="241" height="12" alt=""></td>
+		<td width="3" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_06.png" width="3" height="12" alt=""></td>
+	</tr>
+
+	<tr>
+		<td width="2" height="12" class="topnavSubOverlayLeft"></td>
+
+		<td class="topnavSubOverlayContent" onmouseover="resetNavClock();">
+<ul>
+<li><a href="http://www.cs.dartmouth.edu/site-content/tenure-track-faculty/index.php" target="_self">Tenure-Track Faculty</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/faculty-other/index.php" target="_self">Other Faculty</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/staff-administrative/index.php" target="_self">Administrative Staff</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/staff-technical/index.php" target="_self">Technical Staff</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/postdoctoral-researchers/index.php" target="_self">Postdoctoral Researchers</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/graduate-students/index.php" target="_self">Graduate Students</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/alumni-professors/index.php" target="_self">Alumni Professors</a></li><li><a href="http://myslu.stlawu.edu/~ltorrey/profiles/index.html" target="_self">Profiles of Dartmouth CS Alumni</a></li></ul>
+					</ul>
+				</td>
+		<td width="2" height="12" class="topnavSubOverlayRight"></td>
+	</tr>
+			<tr>
+			<tr height="19">
+		<td width="2" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_13.png" width="2" height="19" alt=""></td>
+		<td width="241" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_14.png" width="241" height="19" alt=""></td>
+		<td width="3" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_15.png" width="3" height="19" alt=""></td>
+	</tr>
+
+</table>
+
+</div>
+
+<div class="topnavSubOverlay" id="div_t2_mh_2_sub" style="left:238px;">
+
+<table width="241" border="0" cellpadding="0" cellspacing="0">
+	<tr height="12">
+		<td width="2" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_04.png" width="2" height="12" alt=""></td>
+		<td width="241" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_05.jpg" width="241" height="12" alt=""></td>
+		<td width="3" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_06.png" width="3" height="12" alt=""></td>
+	</tr>
+
+	<tr>
+		<td width="2" height="12" class="topnavSubOverlayLeft"></td>
+
+		<td class="topnavSubOverlayContent" onmouseover="resetNavClock();">
+<ul>
+<li><a href="http://www.cs.dartmouth.edu/site-content/news/index.php" target="_self">News</a></li><li><a href="http://www.cs.dartmouth.edu/~csrs/" target="_self">CSRS</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/research-projects/index.php" target="_self">Research Labs and Projects</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/colloquium.php" target="_self">Colloquium</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/books/index.php" target="_self">Books by Faculty</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/reports/index.php" target="_self">Technical Reports</a></li></ul>
+					</ul>
+				</td>
+		<td width="2" height="12" class="topnavSubOverlayRight"></td>
+	</tr>
+			<tr>
+			<tr height="19">
+		<td width="2" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_13.png" width="2" height="19" alt=""></td>
+		<td width="241" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_14.png" width="241" height="19" alt=""></td>
+		<td width="3" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_15.png" width="3" height="19" alt=""></td>
+	</tr>
+
+</table>
+
+</div>
+
+<div class="topnavSubOverlay" id="div_t2_mh_3_sub" style="left:358px;">
+
+<table width="241" border="0" cellpadding="0" cellspacing="0">
+	<tr height="12">
+		<td width="2" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_04.png" width="2" height="12" alt=""></td>
+		<td width="241" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_05.jpg" width="241" height="12" alt=""></td>
+		<td width="3" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_06.png" width="3" height="12" alt=""></td>
+	</tr>
+
+	<tr>
+		<td width="2" height="12" class="topnavSubOverlayLeft"></td>
+
+		<td class="topnavSubOverlayContent" onmouseover="resetNavClock();">
+<ul>
+<li><a href="http://www.cs.dartmouth.edu/site-content/site/a-major-redesign.php" target="_self">A Major Redesign</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/undergraduate-programs.php" target="_self">Undergraduate Programs</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/graduate-programs.php" target="_self">Graduate Programs</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/undergrad-courses/index.php" target="_self">Undergraduate Courses</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/graduate-courses/index.php" target="_self">Graduate Courses</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/upcoming-class-schedule.php" target="_self">Upcoming Class Schedule</a></li><li><a href="http://www.cs.dartmouth.edu/~robotics/summercamp/index.php/Main_Page" target="_self">Summer Robotics Camp</a></li></ul>
+					</ul>
+				</td>
+		<td width="2" height="12" class="topnavSubOverlayRight"></td>
+	</tr>
+			<tr>
+			<tr height="19">
+		<td width="2" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_13.png" width="2" height="19" alt=""></td>
+		<td width="241" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_14.png" width="241" height="19" alt=""></td>
+		<td width="3" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_15.png" width="3" height="19" alt=""></td>
+	</tr>
+
+</table>
+
+</div>
+
+<div class="topnavSubOverlay" id="div_t2_mh_4_sub" style="left:358px;">
+
+<table width="241" border="0" cellpadding="0" cellspacing="0">
+	<tr height="12">
+		<td width="2" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_04.png" width="2" height="12" alt=""></td>
+		<td width="241" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_05.jpg" width="241" height="12" alt=""></td>
+		<td width="3" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_06.png" width="3" height="12" alt=""></td>
+	</tr>
+
+	<tr>
+		<td width="2" height="12" class="topnavSubOverlayLeft"></td>
+
+		<td class="topnavSubOverlayContent" onmouseover="resetNavClock();">
+<ul>
+<li><a href="http://www.dartmouth.edu/admissions/" target="_self">Undergraduate Admissions</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/ms-admissions.php" target="_self">M.S. Admissions</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/phd-admissions.php" target="_self">Ph.D. Admissions</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/md---phd-in-compbio.php" target="_self">M.D. - Ph.D. in CompBio</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/graduate-student-life.php" target="_self">Graduate Student Life</a></li></ul>
+					</ul>
+				</td>
+		<td width="2" height="12" class="topnavSubOverlayRight"></td>
+	</tr>
+			<tr>
+			<tr height="19">
+		<td width="2" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_13.png" width="2" height="19" alt=""></td>
+		<td width="241" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_14.png" width="241" height="19" alt=""></td>
+		<td width="3" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_15.png" width="3" height="19" alt=""></td>
+	</tr>
+
+</table>
+
+</div>
+
+</div>
+				</td>
+			</tr>
+		</table>
+
+</div>
+
+
+<!-- end masthead and navigation table -->
+<!-- content table -->
+<table width="858" border="0" cellpadding="0" cellspacing="0" align="center">
+	<tr height="329">
+		<td class="contentLeft" valign="top" width="10" height="329"></td>
+		<td valign="top" bgcolor="white" width="838" height="329">
+<!-- begin page content -->
+<div style="padding:5px 10px 0px 10px;">
+<p>
+	&nbsp;</p>
+<p style="text-align: center; ">
+	<span style="font-size:18px;"><strong>Note: Courses and class times are subject to change.</strong></span><br />
+	<br />
+	&nbsp;</p>
+<center>
+	<table border="0">
+		<caption>
+			<b>Computer Science Department,&nbsp;Class Schedule Spring &nbsp;- &#39;13</b></caption>
+		<colgroup>
+		</colgroup>
+		<colgroup>
+			<col />
+			<col />
+			<col />
+			<col />
+			<col />
+		</colgroup>
+		<tbody>
+			<tr height="20">
+				<td height="20" style="height:20px;width:38px;">
+					<strong>Term</strong></td>
+				<td style="width:105px;">
+					<strong>Course Number</strong></td>
+				<td style="width:427px;">
+					<strong>Title</strong></td>
+				<td style="width:96px;">
+					<strong>Instructor</strong></td>
+				<td style="width:62px;">
+					<strong>Hour</strong></td>
+			</tr>
+			<tr height="20">
+				<td height="20" style="height:20px;">
+					<span data-scayt_word="13S" data-scaytid="1">13S</span></td>
+				<td>
+					001</td>
+				<td>
+					Intro Programming &amp; Computation</td>
+				<td>
+					<span data-scayt_word="Farid" data-scaytid="3">Farid</span></td>
+				<td>
+					2</td>
+			</tr>
+			<tr height="20">
+				<td height="20" style="height:20px;">
+					<span data-scayt_word="13S" data-scaytid="2">13S</span></td>
+				<td>
+					007</td>
+				<td>
+					First Year Seminar</td>
+				<td>
+					<span data-scayt_word="Heckman" data-scaytid="5">Heckman</span></td>
+				<td>
+					2</td>
+			</tr>
+			<tr height="20">
+				<td height="20" style="height:20px;">
+					<span data-scayt_word="13S" data-scaytid="4">13S</span></td>
+				<td>
+					020</td>
+				<td>
+					Motion study: Using Motion Analysis for Science, Art and Medicine</td>
+				<td>
+					<span data-scayt_word="Loeb" data-scaytid="7">Loeb</span></td>
+				<td>
+					<span data-scayt_word="2A" data-scaytid="8">2A</span></td>
+			</tr>
+			<tr height="20">
+				<td height="20" style="height:20px;">
+					<span data-scayt_word="13S" data-scaytid="9">13S</span></td>
+				<td>
+					027</td>
+				<td>
+					Projects in Digital Arts</td>
+				<td>
+					<span data-scayt_word="Loeb" data-scaytid="12">Loeb</span></td>
+				<td>
+					<span data-scayt_word="3A" data-scaytid="26">3A</span></td>
+			</tr>
+			<tr height="20">
+				<td height="20" style="height:20px;">
+					<span data-scayt_word="13S" data-scaytid="10">13S</span></td>
+				<td>
+					028</td>
+				<td>
+					Advanced Projects in Digital Arts</td>
+				<td>
+					<span data-scayt_word="Loeb" data-scaytid="13">Loeb</span></td>
+				<td>
+					<span data-scayt_word="ARR" data-scaytid="27">ARR</span></td>
+			</tr>
+			<tr height="20">
+				<td height="20" style="height:20px;">
+					<span data-scayt_word="13S" data-scaytid="11">13S</span></td>
+				<td>
+					031</td>
+				<td>
+					Algorithms</td>
+				<td>
+					<span data-scayt_word="Chakrabarti" data-scaytid="28">Chakrabarti</span></td>
+				<td>
+					10</td>
+			</tr>
+			<tr height="20">
+				<td height="20" style="height:20px;">
+					<span data-scayt_word="13S" data-scaytid="19">13S</span></td>
+				<td>
+					049/149</td>
+				<td>
+					Topics in Algorithms and Complexity</td>
+				<td>
+					<span data-scayt_word="Jayanti" data-scaytid="31">Jayanti</span></td>
+				<td>
+					10</td>
+			</tr>
+			<tr height="20">
+				<td height="20" style="height:20px;">
+					<span data-scayt_word="13S" data-scaytid="20">13S</span></td>
+				<td>
+					050</td>
+				<td>
+					Software Design and Implementation</td>
+				<td>
+					Palmer</td>
+				<td>
+					12</td>
+			</tr>
+			<tr height="20">
+				<td height="20" style="height:20px;">
+					<span data-scayt_word="13S" data-scaytid="32">13S</span></td>
+				<td>
+					051</td>
+				<td>
+					Computer Architecture</td>
+				<td>
+					Smith</td>
+				<td>
+					12</td>
+			</tr>
+			<tr height="20">
+				<td height="20" style="height:20px;">
+					<span data-scayt_word="13S" data-scaytid="33">13S</span></td>
+				<td>
+					056</td>
+				<td>
+					Digital Electronics</td>
+				<td>
+					Taylor</td>
+				<td>
+					12</td>
+			</tr>
+			<tr height="20">
+				<td height="20" style="height:20px;">
+					<span data-scayt_word="13S" data-scaytid="36">13S</span></td>
+				<td>
+					057</td>
+				<td>
+					Compilers</td>
+				<td>
+					<span data-scayt_word="Cormen" data-scaytid="44">Cormen</span></td>
+				<td>
+					2</td>
+			</tr>
+			<tr height="20">
+				<td height="20" style="height:20px;">
+					<span data-scayt_word="13S" data-scaytid="37">13S</span></td>
+				<td>
+					060</td>
+				<td>
+					Computer Networks</td>
+				<td>
+					Campbell</td>
+				<td>
+					2</td>
+			</tr>
+			<tr height="20">
+				<td height="20" style="height:20px;">
+					<span data-scayt_word="13S" data-scaytid="40">13S</span></td>
+				<td>
+					065/165</td>
+				<td>
+					Smartphone Programming</td>
+				<td>
+					Campbell</td>
+				<td>
+					10</td>
+			</tr>
+			<tr height="20">
+				<td height="20" style="height:20px;">
+					<span data-scayt_word="13S" data-scaytid="41">13S</span></td>
+				<td>
+					069</td>
+				<td>
+					Topics in Computer Systems</td>
+				<td>
+					<span data-scayt_word="Balkcom" data-scaytid="53">Balkcom</span></td>
+				<td>
+					12</td>
+			</tr>
+			<tr height="20">
+				<td height="20" style="height:20px;">
+					<span data-scayt_word="13S" data-scaytid="47">13S</span></td>
+				<td>
+					070/170</td>
+				<td>
+					Numerical and Computational Tools for Applied Science</td>
+				<td>
+					<span data-scayt_word="Grigoryan" data-scaytid="56">Grigoryan</span></td>
+				<td>
+					<span data-scayt_word="2A" data-scaytid="49">2A</span></td>
+			</tr>
+			<tr height="20">
+				<td height="20" style="height:20px;">
+					<span data-scayt_word="13S" data-scaytid="48">13S</span></td>
+				<td>
+					077</td>
+				<td>
+					Computer Graphics</td>
+				<td>
+					Denning</td>
+				<td>
+					<span data-scayt_word="2A" data-scaytid="50">2A</span></td>
+			</tr>
+			<tr height="20">
+				<td height="20" style="height:20px;">
+					<span data-scayt_word="13S" data-scaytid="59">13S</span></td>
+				<td>
+					089/189</td>
+				<td>
+					Topics in Computational Immunology</td>
+				<td>
+					Bailey-Kellogg</td>
+				<td>
+					<span data-scayt_word="ARR" data-scaytid="62">ARR</span></td>
+			</tr>
+			<tr height="20">
+				<td height="20" style="height:20px;">
+					<span data-scayt_word="13S" data-scaytid="60">13S</span></td>
+				<td>
+					089/189</td>
+				<td>
+					Digital Image Forensics</td>
+				<td>
+					<span data-scayt_word="Farid" data-scaytid="64">Farid</span></td>
+				<td>
+					<span data-scayt_word="ARR" data-scaytid="63">ARR</span></td>
+			</tr>
+			<tr height="20">
+				<td height="20" style="height:20px;">
+					<span data-scayt_word="13S" data-scaytid="61">13S</span></td>
+				<td>
+					094</td>
+				<td>
+					Reading Course</td>
+				<td>
+					<span data-scayt_word="Balkcom" data-scaytid="71">Balkcom</span></td>
+				<td>
+					<span data-scayt_word="ARR" data-scaytid="73">ARR</span></td>
+			</tr>
+			<tr height="20">
+				<td height="20" style="height:20px;">
+					<span data-scayt_word="13S" data-scaytid="74">13S</span></td>
+				<td>
+					098</td>
+				<td>
+					Senior Design and Implementation Project</td>
+				<td>
+					<span data-scayt_word="Balkcom" data-scaytid="72">Balkcom</span></td>
+				<td>
+					<span data-scayt_word="10A" data-scaytid="94">10A</span></td>
+			</tr>
+			<tr height="20">
+				<td height="20" style="height:20px;">
+					<span data-scayt_word="13S" data-scaytid="75">13S</span></td>
+				<td>
+					099</td>
+				<td>
+					Honors Thesis Research</td>
+				<td>
+					<span data-scayt_word="Balkcom" data-scaytid="81">Balkcom</span></td>
+				<td>
+					<span data-scayt_word="ARR" data-scaytid="82">ARR</span></td>
+			</tr>
+			<tr height="20">
+				<td height="20" style="height:20px;">
+					<span data-scayt_word="13S" data-scaytid="85">13S</span></td>
+				<td>
+					231</td>
+				<td>
+					Advanced Algorithms</td>
+				<td>
+					<span data-scayt_word="Drysdale" data-scaytid="116">Drysdale</span></td>
+				<td>
+					<span data-scayt_word="ARR" data-scaytid="83">ARR</span></td>
+			</tr>
+			<tr height="20">
+				<td height="20" style="height:20px;">
+					<span data-scayt_word="13S" data-scaytid="86">13S</span></td>
+				<td>
+					239</td>
+				<td>
+					Computational Complexity</td>
+				<td>
+					<span data-scayt_word="Chakrabarti" data-scaytid="88">Chakrabarti</span></td>
+				<td>
+					<span data-scayt_word="ARR" data-scaytid="84">ARR</span></td>
+			</tr>
+			<tr height="20">
+				<td height="20" style="height:20px;">
+					<span data-scayt_word="13S" data-scaytid="87">13S</span></td>
+				<td>
+					294</td>
+				<td>
+					Reading Course</td>
+				<td>
+					<span data-scayt_word="Jayanti" data-scaytid="103">Jayanti</span></td>
+				<td>
+					<span data-scayt_word="ARR" data-scaytid="105">ARR</span></td>
+			</tr>
+			<tr height="20">
+				<td height="20" style="height:20px;">
+					<span data-scayt_word="13S" data-scaytid="107">13S</span></td>
+				<td>
+					296</td>
+				<td>
+					Supervised Undergraduate Teaching</td>
+				<td>
+					<span data-scayt_word="Jayanti" data-scaytid="104">Jayanti</span></td>
+				<td>
+					<span data-scayt_word="ARR" data-scaytid="106">ARR</span></td>
+			</tr>
+			<tr height="20">
+				<td height="20" style="height:20px;">
+					<span data-scayt_word="13S" data-scaytid="108">13S</span></td>
+				<td>
+					297</td>
+				<td>
+					Graduate Research</td>
+				<td>
+					<span data-scayt_word="Jayanti" data-scaytid="124">Jayanti</span></td>
+				<td>
+					<span data-scayt_word="ARR" data-scaytid="127">ARR</span></td>
+			</tr>
+			<tr height="20">
+				<td height="20" style="height:20px;">
+					<span data-scayt_word="13S" data-scaytid="130">13S</span></td>
+				<td>
+					298</td>
+				<td>
+					Thesis Research</td>
+				<td>
+					<span data-scayt_word="Jayanti" data-scaytid="125">Jayanti</span></td>
+				<td>
+					<span data-scayt_word="ARR" data-scaytid="128">ARR</span></td>
+			</tr>
+			<tr height="20">
+				<td height="20" style="height:20px;">
+					<span data-scayt_word="13S" data-scaytid="131">13S</span></td>
+				<td>
+					299</td>
+				<td>
+					Full Time Research</td>
+				<td>
+					<span data-scayt_word="Jayanti" data-scaytid="126">Jayanti</span></td>
+				<td>
+					<span data-scayt_word="ARR" data-scaytid="129">ARR</span></td>
+			</tr>
+		</tbody>
+	</table>
+	<p style="text-align: center; ">
+		<br />
+		&nbsp;</p>
+	<center>
+		<table border="0">
+			<caption>
+				<b>Computer Science Department,&nbsp;Class Schedule Summer&nbsp; - &#39;13</b></caption>
+			<colgroup>
+			</colgroup>
+			<colgroup>
+				<col />
+				<col />
+				<col />
+				<col />
+				<col />
+			</colgroup>
+			<tbody>
+				<tr height="20">
+					<td height="20" style="height:20px;width:38px;">
+						<strong>Term</strong></td>
+					<td style="width:105px;">
+						<strong>Course Number</strong></td>
+					<td style="width:427px;">
+						<strong>Title</strong></td>
+					<td style="width:96px;">
+						<strong>Instructor</strong></td>
+					<td style="width:62px;">
+						<strong>Hour</strong></td>
+				</tr>
+				<tr>
+					<td valign="top">
+						<span data-scayt_word="13X" data-scaytid="140">13X</span></td>
+					<td valign="top">
+						006</td>
+					<td valign="top">
+						Networks in Our Social, Technological, and Natural Worlds</td>
+					<td valign="top">
+						<span data-scayt_word="Fleischer" data-scaytid="154">Fleischer</span></td>
+					<td valign="top">
+						<span data-scayt_word="2A" data-scaytid="149">2A</span></td>
+				</tr>
+				<tr>
+					<td valign="top">
+						<span data-scayt_word="13X" data-scaytid="150">13X</span></td>
+					<td valign="top">
+						028</td>
+					<td valign="top">
+						Advanced Projects in Digital Arts</td>
+					<td valign="top">
+						<span data-scayt_word="Loeb" data-scaytid="152">Loeb</span></td>
+					<td valign="top">
+						<span data-scayt_word="ARR" data-scaytid="153">ARR</span></td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="13X" data-scaytid="151">13X</span></td>
+					<td>
+						051</td>
+					<td>
+						Computer Architecture</td>
+					<td>
+						<span data-scayt_word="Molina-Markahm" data-scaytid="161">Molina-Markahm</span></td>
+					<td>
+						12</td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="13X" data-scaytid="160">13X</span></td>
+					<td>
+						056</td>
+					<td>
+						Digital Electronics</td>
+					<td>
+						Hansen</td>
+					<td>
+						<span data-scayt_word="9L" data-scaytid="163">9L</span></td>
+				</tr>
+			</tbody>
+		</table>
+		<p>
+			&nbsp;</p>
+		<p>
+			&nbsp;</p>
+		<p>
+			<b>Computer Science Department,&nbsp;Class Schedule Fall&nbsp; - &#39;13</b></p>
+		<table border="0">
+			<tbody>
+				<tr height="20">
+					<td height="20" style="height:20px;width:38px;">
+						<strong>Term</strong></td>
+					<td style="width:105px;">
+						<strong>Course Number</strong></td>
+					<td style="width:427px;">
+						<strong>Title</strong></td>
+					<td style="width:96px;">
+						<strong>Instructor</strong></td>
+					<td style="width:62px;">
+						<strong>Hour</strong></td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="13F" data-scaytid="165">13F</span></td>
+					<td>
+						001</td>
+					<td>
+						Intro Programming &amp; Computation</td>
+					<td>
+						<span data-scayt_word="Cormen" data-scaytid="164">Cormen</span></td>
+					<td>
+						2</td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="13F" data-scaytid="166">13F</span></td>
+					<td>
+						010</td>
+					<td>
+						Problem Solving via Object-Oriented Programming</td>
+					<td>
+						<span data-scayt_word="Grigoryan" data-scaytid="168">Grigoryan</span></td>
+					<td>
+						10</td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="13F" data-scaytid="169">13F</span></td>
+					<td>
+						016</td>
+					<td>
+						Introduction to Computational Neuroscience</td>
+					<td>
+						Granger</td>
+					<td>
+						<span data-scayt_word="2A" data-scaytid="170">2A</span></td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="13F" data-scaytid="174">13F</span></td>
+					<td>
+						022</td>
+					<td>
+						3D Digital Modeling</td>
+					<td>
+						<span data-scayt_word="Loeb" data-scaytid="177">Loeb</span></td>
+					<td>
+						<span data-scayt_word="3A" data-scaytid="179">3A</span></td>
+				</tr>
+				<tr>
+					<td valign="top">
+						<span data-scayt_word="13F" data-scaytid="175">13F</span></td>
+					<td valign="top">
+						028</td>
+					<td valign="top">
+						Advanced Projects in Digital Arts</td>
+					<td valign="top">
+						<span data-scayt_word="Loeb" data-scaytid="178">Loeb</span></td>
+					<td valign="top">
+						<span data-scayt_word="ARR" data-scaytid="180">ARR</span></td>
+				</tr>
+				<tr>
+					<td valign="top">
+						<span data-scayt_word="13F" data-scaytid="420">13F</span></td>
+					<td valign="top">
+						030</td>
+					<td valign="top">
+						Discrete Mathematics in Computer Science</td>
+					<td valign="top">
+						<span data-scayt_word="Jayanti" data-scaytid="422">Jayanti</span></td>
+					<td valign="top">
+						2</td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="13F" data-scaytid="190">13F</span></td>
+					<td>
+						031</td>
+					<td>
+						Algorithms</td>
+					<td>
+						<span data-scayt_word="Jayanti" data-scaytid="189">Jayanti</span></td>
+					<td>
+						10</td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="13F" data-scaytid="191">13F</span></td>
+					<td>
+						055</td>
+					<td>
+						Security and Privacy</td>
+					<td>
+						Palmer</td>
+					<td>
+						12</td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="13F" data-scaytid="196">13F</span></td>
+					<td>
+						058</td>
+					<td>
+						Operating Systems</td>
+					<td>
+						Smith</td>
+					<td>
+						11</td>
+				</tr>
+				<tr>
+					<td valign="top">
+						<span data-scayt_word="13F" data-scaytid="197">13F</span></td>
+					<td valign="top">
+						063</td>
+					<td valign="top">
+						Programming Parallel Systems</td>
+					<td valign="top">
+						Taylor</td>
+					<td valign="top">
+						<span data-scayt_word="2A" data-scaytid="198">2A</span></td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="13F" data-scaytid="202">13F</span></td>
+					<td>
+						069/169</td>
+					<td>
+						Topics in Computer Systems</td>
+					<td>
+						Zhou</td>
+					<td>
+						<span data-scayt_word="ARR" data-scaytid="204">ARR</span></td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="13F" data-scaytid="203">13F</span></td>
+					<td>
+						071</td>
+					<td>
+						Numerical Methods in Computation</td>
+					<td>
+						Shepherd</td>
+					<td>
+						12</td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="13F" data-scaytid="208">13F</span></td>
+					<td>
+						073</td>
+					<td>
+						Computational Linguistics</td>
+					<td>
+						Reddy</td>
+					<td>
+						12</td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="13F" data-scaytid="209">13F</span></td>
+					<td>
+						075/175</td>
+					<td>
+						Introduction to <span data-scayt_word="Bioinformatics" data-scaytid="213">Bioinformatics</span></td>
+					<td>
+						Bailey-Kellogg</td>
+					<td>
+						<span data-scayt_word="2A" data-scaytid="210">2A</span></td>
+				</tr>
+				<tr>
+					<td valign="top">
+						<span data-scayt_word="13F" data-scaytid="215">13F</span></td>
+					<td valign="top">
+						089/189</td>
+					<td valign="top">
+						Topics in Applied Computer Science</td>
+					<td valign="top">
+						<span data-scayt_word="Pellacini" data-scaytid="224">Pellacini</span></td>
+					<td valign="top">
+						<span data-scayt_word="ARR" data-scaytid="218">ARR</span></td>
+				</tr>
+				<tr>
+					<td valign="top">
+						<span data-scayt_word="13F" data-scaytid="216">13F</span></td>
+					<td valign="top">
+						094</td>
+					<td valign="top">
+						Reading Course</td>
+					<td valign="top">
+						<span data-scayt_word="Balkcom" data-scaytid="220">Balkcom</span></td>
+					<td valign="top">
+						<span data-scayt_word="ARR" data-scaytid="219">ARR</span></td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="13F" data-scaytid="217">13F</span></td>
+					<td>
+						098</td>
+					<td>
+						Senior Design and Implementation Project</td>
+					<td>
+						<span data-scayt_word="Balkcom" data-scaytid="228">Balkcom</span></td>
+					<td>
+						<span data-scayt_word="10A" data-scaytid="230">10A</span></td>
+				</tr>
+				<tr>
+					<td valign="top">
+						<span data-scayt_word="13F" data-scaytid="231">13F</span></td>
+					<td valign="top">
+						099</td>
+					<td valign="top">
+						Honors Thesis Research</td>
+					<td valign="top">
+						<span data-scayt_word="Balkcom" data-scaytid="229">Balkcom</span></td>
+					<td valign="top">
+						<span data-scayt_word="ARR" data-scaytid="233">ARR</span></td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="13F" data-scaytid="232">13F</span></td>
+					<td>
+						210</td>
+					<td>
+						Colloquium</td>
+					<td>
+						Staff</td>
+					<td>
+						Weds 4:15-5:45</td>
+				</tr>
+				<tr>
+					<td valign="top">
+						<span data-scayt_word="13F" data-scaytid="234">13F</span></td>
+					<td valign="top">
+						251</td>
+					<td valign="top">
+						Computer Architecture</td>
+					<td valign="top">
+						Staff</td>
+					<td valign="top">
+						<span data-scayt_word="ARR" data-scaytid="237">ARR</span></td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="13F" data-scaytid="235">13F</span></td>
+					<td>
+						294</td>
+					<td>
+						Reading Course</td>
+					<td>
+						<span data-scayt_word="Jayanti" data-scaytid="239">Jayanti</span></td>
+					<td>
+						<span data-scayt_word="ARR" data-scaytid="238">ARR</span></td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="13F" data-scaytid="236">13F</span></td>
+					<td>
+						296</td>
+					<td>
+						Supervised Undergraduate Teaching</td>
+					<td>
+						<span data-scayt_word="Jayanti" data-scaytid="247">Jayanti</span></td>
+					<td>
+						<span data-scayt_word="ARR" data-scaytid="249">ARR</span></td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="13F" data-scaytid="251">13F</span></td>
+					<td>
+						297</td>
+					<td>
+						Graduate Research</td>
+					<td>
+						<span data-scayt_word="Jayanti" data-scaytid="248">Jayanti</span></td>
+					<td>
+						<span data-scayt_word="ARR" data-scaytid="250">ARR</span></td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="13F" data-scaytid="252">13F</span></td>
+					<td>
+						298</td>
+					<td>
+						Thesis Research</td>
+					<td>
+						<span data-scayt_word="Jayanti" data-scaytid="253">Jayanti</span></td>
+					<td>
+						<span data-scayt_word="ARR" data-scaytid="255">ARR</span></td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="13F" data-scaytid="257">13F</span></td>
+					<td>
+						299</td>
+					<td>
+						Full Time Research</td>
+					<td>
+						<span data-scayt_word="Jayanti" data-scaytid="254">Jayanti</span></td>
+					<td>
+						<span data-scayt_word="ARR" data-scaytid="256">ARR</span></td>
+				</tr>
+			</tbody>
+		</table>
+		<p>
+			&nbsp;</p>
+		<p>
+			&nbsp;</p>
+		<p>
+			<b>Computer Science Department,&nbsp;Class Schedule Winter&nbsp; - &#39;14</b></p>
+		<table border="0">
+			<tbody>
+				<tr height="20">
+					<td height="20" style="height:20px;width:38px;">
+						<strong>Term</strong></td>
+					<td style="width:105px;">
+						<strong>Course Number</strong></td>
+					<td style="width:427px;">
+						<strong>Title</strong></td>
+					<td style="width:96px;">
+						<strong>Instructor</strong></td>
+					<td style="width:62px;">
+						<strong>Hour</strong></td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="14W" data-scaytid="264">14W</span></td>
+					<td>
+						001</td>
+					<td>
+						Intro Programming &amp; Computation</td>
+					<td>
+						<span data-scayt_word="Pellacini" data-scaytid="263">Pellacini</span></td>
+					<td>
+						2</td>
+				</tr>
+				<tr>
+					<td valign="top">
+						<span data-scayt_word="14W" data-scaytid="266">14W</span></td>
+					<td valign="top">
+						002</td>
+					<td valign="top">
+						Programming for Interactive Audio-Visual Arts</td>
+					<td valign="top">
+						Casey</td>
+					<td valign="top">
+						2</td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="14W" data-scaytid="267">14W</span></td>
+					<td>
+						010</td>
+					<td>
+						Problem Solving via Object-Oriented Programming</td>
+					<td>
+						Bailey-Kellogg</td>
+					<td>
+						10</td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="14W" data-scaytid="270">14W</span></td>
+					<td>
+						024</td>
+					<td>
+						Computer Animation: The State of the Art</td>
+					<td>
+						<span data-scayt_word="Hannaway" data-scaytid="278">Hannaway</span></td>
+					<td>
+						12</td>
+				</tr>
+				<tr>
+					<td valign="top">
+						<span data-scayt_word="14W" data-scaytid="271">14W</span></td>
+					<td valign="top">
+						028</td>
+					<td valign="top">
+						Advanced Projects in Digital Arts</td>
+					<td valign="top">
+						<span data-scayt_word="Loeb" data-scaytid="273">Loeb</span></td>
+					<td valign="top">
+						<span data-scayt_word="ARR" data-scaytid="274">ARR</span></td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="14W" data-scaytid="272">14W</span></td>
+					<td>
+						029</td>
+					<td>
+						Topics in Digital Arts</td>
+					<td>
+						<span data-scayt_word="Hannway" data-scaytid="283">Hannway</span></td>
+					<td>
+						<span data-scayt_word="ARR" data-scaytid="281">ARR</span></td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="14W" data-scaytid="282">14W</span></td>
+					<td>
+						030</td>
+					<td>
+						Discrete Mathematics in Computer Science</td>
+					<td>
+						<span data-scayt_word="Haddadan" data-scaytid="286">Haddadan</span></td>
+					<td>
+						11</td>
+				</tr>
+				<tr>
+					<td valign="top">
+						<span data-scayt_word="14W" data-scaytid="287">14W</span></td>
+					<td valign="top">
+						050</td>
+					<td valign="top">
+						Software Design and Implementation</td>
+					<td valign="top">
+						Campbell</td>
+					<td valign="top">
+						12</td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="14W" data-scaytid="288">14W</span></td>
+					<td>
+						069/169</td>
+					<td>
+						Topics in Computer Systems</td>
+					<td>
+						Smith</td>
+					<td>
+						<span data-scayt_word="ARR" data-scaytid="290">ARR</span></td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="14W" data-scaytid="289">14W</span></td>
+					<td>
+						076</td>
+					<td>
+						Artificial Intelligence</td>
+					<td>
+						<span data-scayt_word="Balkcom" data-scaytid="291">Balkcom</span></td>
+					<td>
+						<span data-scayt_word="ARR" data-scaytid="292">ARR</span></td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="14W" data-scaytid="294">14W</span></td>
+					<td>
+						089/189</td>
+					<td>
+						Topics in Applied Computer Science</td>
+					<td>
+						<span data-scayt_word="Grigoryan" data-scaytid="296">Grigoryan</span></td>
+					<td>
+						<span data-scayt_word="ARR" data-scaytid="293">ARR</span></td>
+				</tr>
+				<tr>
+					<td valign="top">
+						<span data-scayt_word="14W" data-scaytid="295">14W</span></td>
+					<td valign="top">
+						089/189</td>
+					<td valign="top">
+						Topics in Applied Computer Science</td>
+					<td valign="top">
+						Staff</td>
+					<td valign="top">
+						<span data-scayt_word="ARR" data-scaytid="303">ARR</span></td>
+				</tr>
+				<tr>
+					<td valign="top">
+						<span data-scayt_word="14W" data-scaytid="305">14W</span></td>
+					<td valign="top">
+						094</td>
+					<td valign="top">
+						Reading Course</td>
+					<td valign="top">
+						<span data-scayt_word="Balkcom" data-scaytid="307">Balkcom</span></td>
+					<td valign="top">
+						<span data-scayt_word="ARR" data-scaytid="304">ARR</span></td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="14W" data-scaytid="306">14W</span></td>
+					<td>
+						098</td>
+					<td>
+						Senior Design and Implementation Project</td>
+					<td>
+						<span data-scayt_word="Balkcom" data-scaytid="308">Balkcom</span></td>
+					<td>
+						<span data-scayt_word="10A" data-scaytid="310">10A</span></td>
+				</tr>
+				<tr>
+					<td valign="top">
+						<span data-scayt_word="14W" data-scaytid="311">14W</span></td>
+					<td valign="top">
+						099</td>
+					<td valign="top">
+						Honors Thesis Research</td>
+					<td valign="top">
+						<span data-scayt_word="Balkcom" data-scaytid="309">Balkcom</span></td>
+					<td valign="top">
+						<span data-scayt_word="ARR" data-scaytid="313">ARR</span></td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="14W" data-scaytid="312">14W</span></td>
+					<td>
+						210</td>
+					<td>
+						Colloquium</td>
+					<td>
+						Staff</td>
+					<td>
+						Weds 4:15-5:45</td>
+				</tr>
+				<tr>
+					<td valign="top">
+						<span data-scayt_word="14W" data-scaytid="314">14W</span></td>
+					<td valign="top">
+						231</td>
+					<td valign="top">
+						Advanced Algorithms</td>
+					<td valign="top">
+						<span data-scayt_word="Fleischer" data-scaytid="317">Fleischer</span></td>
+					<td valign="top">
+						<span data-scayt_word="ARR" data-scaytid="318">ARR</span></td>
+				</tr>
+				<tr>
+					<td valign="top">
+						<span data-scayt_word="14W" data-scaytid="315">14W</span></td>
+					<td valign="top">
+						258</td>
+					<td valign="top">
+						Advanced Operating Systems</td>
+					<td valign="top">
+						Zhou</td>
+					<td valign="top">
+						<span data-scayt_word="ARR" data-scaytid="319">ARR</span></td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="14W" data-scaytid="316">14W</span></td>
+					<td>
+						294</td>
+					<td>
+						Reading Course</td>
+					<td>
+						<span data-scayt_word="Jayanti" data-scaytid="320">Jayanti</span></td>
+					<td>
+						<span data-scayt_word="ARR" data-scaytid="322">ARR</span></td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="14W" data-scaytid="324">14W</span></td>
+					<td>
+						296</td>
+					<td>
+						Supervised Undergraduate Teaching</td>
+					<td>
+						<span data-scayt_word="Jayanti" data-scaytid="321">Jayanti</span></td>
+					<td>
+						<span data-scayt_word="ARR" data-scaytid="323">ARR</span></td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="14W" data-scaytid="325">14W</span></td>
+					<td>
+						297</td>
+					<td>
+						Graduate Research</td>
+					<td>
+						<span data-scayt_word="Jayanti" data-scaytid="326">Jayanti</span></td>
+					<td>
+						<span data-scayt_word="ARR" data-scaytid="329">ARR</span></td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="14W" data-scaytid="332">14W</span></td>
+					<td>
+						298</td>
+					<td>
+						Thesis Research</td>
+					<td>
+						<span data-scayt_word="Jayanti" data-scaytid="327">Jayanti</span></td>
+					<td>
+						<span data-scayt_word="ARR" data-scaytid="330">ARR</span></td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="14W" data-scaytid="333">14W</span></td>
+					<td>
+						299</td>
+					<td>
+						Full Time Research</td>
+					<td>
+						<span data-scayt_word="Jayanti" data-scaytid="328">Jayanti</span></td>
+					<td>
+						<span data-scayt_word="ARR" data-scaytid="331">ARR</span></td>
+				</tr>
+			</tbody>
+		</table>
+		<p>
+			&nbsp;</p>
+		<p>
+			&nbsp;</p>
+		<p>
+			<b>Computer Science Department,&nbsp;Class Schedule Spring &nbsp;- &#39;14</b></p>
+		<table border="0">
+			<caption>
+				&nbsp;</caption>
+			<colgroup>
+			</colgroup>
+			<colgroup>
+				<col />
+				<col />
+				<col />
+				<col />
+				<col />
+			</colgroup>
+			<tbody>
+				<tr height="20">
+					<td height="20" style="height:20px;width:38px;">
+						<strong>Term</strong></td>
+					<td style="width:105px;">
+						<strong>Course Number</strong></td>
+					<td style="width:427px;">
+						<strong>Title</strong></td>
+					<td style="width:96px;">
+						<strong>Instructor</strong></td>
+					<td style="width:62px;">
+						<strong>Hour</strong></td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="14S" data-scaytid="334">14S</span></td>
+					<td>
+						001</td>
+					<td>
+						Intro Programming &amp; Computation</td>
+					<td>
+						<span data-scayt_word="Farid" data-scaytid="335">Farid</span></td>
+					<td>
+						2</td>
+				</tr>
+				<tr>
+					<td valign="top">
+						<span data-scayt_word="14S" data-scaytid="336">14S</span></td>
+					<td valign="top">
+						006</td>
+					<td valign="top">
+						Networks in Our Social, Technological, and<br />
+						Natural Worlds</td>
+					<td valign="top">
+						<span data-scayt_word="Fleischer" data-scaytid="337">Fleischer</span></td>
+					<td valign="top">
+						<span data-scayt_word="ARR" data-scaytid="338">ARR</span></td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="14S" data-scaytid="340">14S</span></td>
+					<td>
+						007</td>
+					<td>
+						First Year Seminar</td>
+					<td>
+						<span data-scayt_word="Heckman" data-scaytid="342">Heckman</span></td>
+					<td>
+						<span data-scayt_word="ARR" data-scaytid="339">ARR</span></td>
+				</tr>
+				<tr>
+					<td valign="top">
+						<span data-scayt_word="14S" data-scaytid="341">14S</span></td>
+					<td valign="top">
+						010</td>
+					<td valign="top">
+						Problem Solving via Object-Oriented Programming</td>
+					<td valign="top">
+						Staff</td>
+					<td valign="top">
+						10</td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="14S" data-scaytid="343">14S</span></td>
+					<td>
+						022</td>
+					<td>
+						3D Digital Modeling</td>
+					<td>
+						<span data-scayt_word="Loeb" data-scaytid="346">Loeb</span></td>
+					<td>
+						<span data-scayt_word="ARR" data-scaytid="348">ARR</span></td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="14S" data-scaytid="344">14S</span></td>
+					<td>
+						027</td>
+					<td>
+						Projects in Digital Arts</td>
+					<td>
+						<span data-scayt_word="Loeb" data-scaytid="347">Loeb</span></td>
+					<td>
+						<span data-scayt_word="ARR" data-scaytid="349">ARR</span></td>
+				</tr>
+				<tr>
+					<td valign="top">
+						<span data-scayt_word="14S" data-scaytid="345">14S</span></td>
+					<td valign="top">
+						028</td>
+					<td valign="top">
+						Advanced Projects in Digital Arts</td>
+					<td valign="top">
+						<span data-scayt_word="Loeb" data-scaytid="350">Loeb</span></td>
+					<td valign="top">
+						<span data-scayt_word="ARR" data-scaytid="351">ARR</span></td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="14S" data-scaytid="352">14S</span></td>
+					<td>
+						031</td>
+					<td>
+						Algorithms</td>
+					<td>
+						<span data-scayt_word="Cormen" data-scaytid="354">Cormen</span></td>
+					<td>
+						10</td>
+				</tr>
+				<tr>
+					<td valign="top">
+						<span data-scayt_word="14S" data-scaytid="353">14S</span></td>
+					<td valign="top">
+						039</td>
+					<td valign="top">
+						Theory of Computation</td>
+					<td valign="top">
+						<span data-scayt_word="Chakrabarti" data-scaytid="355">Chakrabarti</span></td>
+					<td valign="top">
+						11</td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="14S" data-scaytid="362">14S</span></td>
+					<td>
+						049/149</td>
+					<td>
+						Topics in Algorithms and Complexity</td>
+					<td>
+						<span data-scayt_word="Jayanti" data-scaytid="364">Jayanti</span></td>
+					<td>
+						<span data-scayt_word="ARR" data-scaytid="365">ARR</span></td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="14S" data-scaytid="363">14S</span></td>
+					<td>
+						050</td>
+					<td>
+						Software Design and Implementation</td>
+					<td>
+						Palmer</td>
+					<td>
+						12</td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="14S" data-scaytid="366">14S</span></td>
+					<td>
+						051</td>
+					<td>
+						Computer Architecture</td>
+					<td>
+						Smith</td>
+					<td>
+						12</td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="14S" data-scaytid="367">14S</span></td>
+					<td>
+						056</td>
+					<td>
+						Digital Electronics</td>
+					<td>
+						Taylor</td>
+					<td>
+						12</td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="14S" data-scaytid="368">14S</span></td>
+					<td>
+						060</td>
+					<td>
+						Computer Networks</td>
+					<td>
+						Campbell</td>
+					<td>
+						2</td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="14S" data-scaytid="369">14S</span></td>
+					<td>
+						065/165</td>
+					<td>
+						Smartphone Programming</td>
+					<td>
+						Campbell</td>
+					<td>
+						10</td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="14S" data-scaytid="370">14S</span></td>
+					<td>
+						070/170</td>
+					<td>
+						Numerical and Computational Tools for Applied Science</td>
+					<td>
+						<span data-scayt_word="Farid" data-scaytid="371">Farid</span></td>
+					<td>
+						<span data-scayt_word="2A" data-scaytid="372">2A</span></td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="14S" data-scaytid="373">14S</span></td>
+					<td>
+						077/177</td>
+					<td>
+						Computer Graphics</td>
+					<td>
+						<span data-scayt_word="Pellacini" data-scaytid="374">Pellacini</span></td>
+					<td>
+						<span data-scayt_word="2A" data-scaytid="375">2A</span></td>
+				</tr>
+				<tr>
+					<td valign="top">
+						<span data-scayt_word="14S" data-scaytid="376">14S</span></td>
+					<td valign="top">
+						084/184</td>
+					<td valign="top">
+						Mathematical Optimization and Modeling</td>
+					<td valign="top">
+						<span data-scayt_word="Fleischer" data-scaytid="378">Fleischer</span></td>
+					<td valign="top">
+						<span data-scayt_word="ARR" data-scaytid="379">ARR</span></td>
+				</tr>
+				<tr>
+					<td valign="top">
+						<span data-scayt_word="14S" data-scaytid="377">14S</span></td>
+					<td valign="top">
+						086/186</td>
+					<td valign="top">
+						Computational Structural Biology</td>
+					<td valign="top">
+						<span data-scayt_word="Grigoryan" data-scaytid="386">Grigoryan</span></td>
+					<td valign="top">
+						<span data-scayt_word="2A" data-scaytid="387">2A</span></td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="14S" data-scaytid="388">14S</span></td>
+					<td>
+						089/189</td>
+					<td>
+						Topics in Applied Computer Science</td>
+					<td>
+						Bailey-Kellogg</td>
+					<td>
+						<span data-scayt_word="ARR" data-scaytid="390">ARR</span></td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="14S" data-scaytid="389">14S</span></td>
+					<td>
+						094</td>
+					<td>
+						Reading Course</td>
+					<td>
+						<span data-scayt_word="Balkcom" data-scaytid="396">Balkcom</span></td>
+					<td>
+						<span data-scayt_word="ARR" data-scaytid="398">ARR</span></td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="14S" data-scaytid="399">14S</span></td>
+					<td>
+						098</td>
+					<td>
+						Senior Design and Implementation Project</td>
+					<td>
+						<span data-scayt_word="Balkcom" data-scaytid="397">Balkcom</span></td>
+					<td>
+						<span data-scayt_word="10A" data-scaytid="401">10A</span></td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="14S" data-scaytid="400">14S</span></td>
+					<td>
+						099</td>
+					<td>
+						Honors Thesis Research</td>
+					<td>
+						<span data-scayt_word="Balkcom" data-scaytid="402">Balkcom</span></td>
+					<td>
+						<span data-scayt_word="ARR" data-scaytid="403">ARR</span></td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="14S" data-scaytid="405">14S</span></td>
+					<td>
+						210</td>
+					<td>
+						Colloquium</td>
+					<td>
+						Staff</td>
+					<td>
+						Weds 4:15-5:45</td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="14S" data-scaytid="406">14S</span></td>
+					<td>
+						294</td>
+					<td>
+						Reading Course</td>
+					<td>
+						<span data-scayt_word="Jayanti" data-scaytid="408">Jayanti</span></td>
+					<td>
+						<span data-scayt_word="ARR" data-scaytid="404">ARR</span></td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="14S" data-scaytid="407">14S</span></td>
+					<td>
+						296</td>
+					<td>
+						Supervised Undergraduate Teaching</td>
+					<td>
+						<span data-scayt_word="Jayanti" data-scaytid="409">Jayanti</span></td>
+					<td>
+						<span data-scayt_word="ARR" data-scaytid="411">ARR</span></td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="14S" data-scaytid="413">14S</span></td>
+					<td>
+						297</td>
+					<td>
+						Graduate Research</td>
+					<td>
+						<span data-scayt_word="Jayanti" data-scaytid="410">Jayanti</span></td>
+					<td>
+						<span data-scayt_word="ARR" data-scaytid="412">ARR</span></td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="14S" data-scaytid="414">14S</span></td>
+					<td>
+						298</td>
+					<td>
+						Thesis Research</td>
+					<td>
+						<span data-scayt_word="Jayanti" data-scaytid="415">Jayanti</span></td>
+					<td>
+						<span data-scayt_word="ARR" data-scaytid="417">ARR</span></td>
+				</tr>
+				<tr height="20">
+					<td height="20" style="height:20px;">
+						<span data-scayt_word="14S" data-scaytid="419">14S</span></td>
+					<td>
+						299</td>
+					<td>
+						Full Time Research</td>
+					<td>
+						<span data-scayt_word="Jayanti" data-scaytid="416">Jayanti</span></td>
+					<td>
+						<span data-scayt_word="ARR" data-scaytid="418">ARR</span></td>
+				</tr>
+			</tbody>
+		</table>
+		<p>
+			&nbsp;</p>
+	</center>
+</center>
+
+</div>
+<!-- end page content -->
+		</td>
+		<td class="contentRight" valign="top" width="10" height="329"></td>
+	</tr>
+</table>
+<!-- end content table -->
+
+<!-- page divider table -->
+<table width="858" height="20" border="0" cellpadding="0" cellspacing="0" align="center">
+	<tr height="20">
+		<td width="10" height="20"><img src="http://www.cs.dartmouth.edu/images/t2-page-bg_04.png" width="10" height="20" alt=""></td>
+		<td width="838" height="20"><img src="http://www.cs.dartmouth.edu/images/t2-page-bg_05.jpg" width="838" height="20" alt=""></td>
+		<td width="10" height="20"><img src="http://www.cs.dartmouth.edu/images/t2-page-bg_06.png" width="10" height="20" alt=""></td>
+		</tr>
+</table>
+<!-- end page divider table -->
+<!-- bottom navigation and search table -->
+<table width="838" align="center" height="144" border="0" cellpadding="0" cellspacing="0" align="center">
+	<tr height="128">
+		<td class="pageBottom" width="838" height="128">
+							<table border="0" cellspacing="0" cellpadding="0" align="center" class="bottomNav">
+		<tr>
+			<td class="bottomNavRowHead">About</td>
+			<td class="bottomNavLinks"><a href="http://www.cs.dartmouth.edu/" target="_self">Home</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/about-dartmouth-cs.php" target="_self">About</a> | <a href="http://www.dartmouth.edu" target="_self">Dartmouth</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/jobs-in-dartmouth-cs.php" target="_self">Jobs</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/contact-dartmouth-computer-science.php" target="_self">Contact</a> | <a href="http://www.cs.dartmouth.edu/site-content/internal/index.php" target="_self">Internal</a> | <a href="http://www.cs.dartmouth.edu/site-content/connector/index.php" target="_self">Connector</a></td>
+		</tr>
+		<tr>
+			<td class="bottomNavRowHead">People</td>
+			<td class="bottomNavLinks"><a href="http://www.cs.dartmouth.edu/site-content/tenure-track-faculty/index.php" target="_self">Tenure-Track Faculty</a> | <a href="http://www.cs.dartmouth.edu/site-content/faculty-other/index.php" target="_self">Other Faculty</a> | <a href="http://www.cs.dartmouth.edu/site-content/staff-administrative/index.php" target="_self">Administrative Staff</a> | <a href="http://www.cs.dartmouth.edu/site-content/staff-technical/index.php" target="_self">Technical Staff</a> | <a href="http://www.cs.dartmouth.edu/site-content/postdoctoral-researchers/index.php" target="_self">Postdoctoral Researchers</a> | <a href="http://www.cs.dartmouth.edu/site-content/graduate-students/index.php" target="_self">Graduate Students</a> | <a href="http://www.cs.dartmouth.edu/site-content/alumni-professors/index.php" target="_self">Alumni Professors</a> | <a href="http://myslu.stlawu.edu/~ltorrey/profiles/index.html" target="_self">Profiles of Dartmouth CS Alumni</a></td>
+		</tr>
+		<tr>
+			<td class="bottomNavRowHead">Research</td>
+			<td class="bottomNavLinks"><a href="http://www.cs.dartmouth.edu/site-content/news/index.php" target="_self">News</a> | <a href="http://www.cs.dartmouth.edu/~csrs/" target="_self">CSRS</a> | <a href="http://www.cs.dartmouth.edu/site-content/research-projects/index.php" target="_self">Research Labs and Projects</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/colloquium.php" target="_self">Colloquium</a> | <a href="http://www.cs.dartmouth.edu/site-content/books/index.php" target="_self">Books by Faculty</a> | <a href="http://www.cs.dartmouth.edu/site-content/reports/index.php" target="_self">Technical Reports</a></td>
+		</tr>
+		<tr>
+			<td class="bottomNavRowHead">Programs</td>
+			<td class="bottomNavLinks"><a href="http://www.cs.dartmouth.edu/site-content/site/a-major-redesign.php" target="_self">A Major Redesign</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/undergraduate-programs.php" target="_self">Undergraduate Programs</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/graduate-programs.php" target="_self">Graduate Programs</a> | <a href="http://www.cs.dartmouth.edu/site-content/graduate-courses/index.php" target="_self">Graduate Courses</a> | <a href="http://www.cs.dartmouth.edu/site-content/undergrad-courses/index.php" target="_self">Undergraduate Courses</a></td>
+		</tr>
+		<tr>
+			<td class="bottomNavRowHead">Admissions</td>
+			<td class="bottomNavLinks"><a href="http://www.dartmouth.edu/admissions/" target="_self">Undergraduate</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/ms-admissions.php" target="_self">M.S. Admissions</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/phd-admissions.php" target="_self">Ph.D. Admissions</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/md---phd-in-compbio.php" target="_self">M.D. - Ph.D. in CompBio</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/graduate-student-life.php" target="_self">Graduate Student Life</a></td>
+		</tr>
+	</table>
+
+		</td>
+	</tr>
+	<tr height="16">
+		<td width="838" height="16"><img src="http://www.cs.dartmouth.edu/images/t2-page-bg_11.gif" width="838" height="16" alt=""></td>
+	</tr>
+</table>
+<!-- end bottom navigation and search table -->
+
+<!-- copyright table -->
+<table width="858" border="0" cellpadding="0" cellspacing="0" align="center">
+	<tr>
+		<td class="pad5" width="838" style="padding-left:25px;"><span class="copyrightText">&copy; Copyright 2010, Dartmouth College Computer Science Department, All Rights Reserved</span></td>
+	</tr>
+</table>
+<!-- end copyright table -->
+
+<!-- pad the page bottom -->
+<div class="pad5"><div class="pad5"></div></div>
+<!-- end pad the page bottom -->
+	</body>
+</html>

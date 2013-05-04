@@ -1,0 +1,616 @@
+http://www.cs.dartmouth.edu/~mhshin
+3
+<html> 
+<head>
+	<title></title>
+	<meta http-equiv=Content-Type content=text/html; charset=EUC-KR>
+	<link rel=StyleSheet HREF=skin/dw_basic/style.css type=text/css title=style>
+	<script language='JavaScript'>
+	var select_obj;
+	function ZB_layerAction(name,status) { 
+		var obj=document.all[name];
+		var _tmpx,_tmpy, marginx, marginy;
+		_tmpx = event.clientX + parseInt(obj.offsetWidth);
+		_tmpy = event.clientY + parseInt(obj.offsetHeight);
+		_marginx = document.body.clientWidth - _tmpx;
+		_marginy = document.body.clientHeight - _tmpy ;
+		if(_marginx < 0)
+			_tmpx = event.clientX + document.body.scrollLeft + _marginx ;
+		else
+			_tmpx = event.clientX + document.body.scrollLeft ;
+		if(_marginy < 0)
+			_tmpy = event.clientY + document.body.scrollTop + _marginy +20;
+		else
+			_tmpy = event.clientY + document.body.scrollTop ;
+		obj.style.posLeft=_tmpx-13;
+		obj.style.posTop=_tmpy-12;
+		if(status=='visible') {
+			if(select_obj) {
+				select_obj.style.visibility='hidden';
+				select_obj=null;
+			}
+			select_obj=obj;
+		}else{
+			select_obj=null;
+		}
+		obj.style.visibility=status; 
+	}
+
+
+	function print_ZBlayer(name, homepage, mail, member_no, boardID, writer, traceID, traceType, isAdmin, isMember) {
+		var printHeight = 0;
+		var printMain="";
+	
+		if(homepage) {
+			printMain = "<tr onMouseOver=this.style.backgroundColor='#bbbbbb' onMouseOut=this.style.backgroundColor='' onMousedown=window.open('"+homepage+"');><td style=font-family:굴림;font-size:9pt height=18 nowrap>&nbsp;<img src=images/n_homepage.gif border=0 align=absmiddle>&nbsp;&nbsp;홈페이지&nbsp;&nbsp;</td></tr>";
+			printHeight = printHeight + 16;
+		}
+		if(mail) {
+			printMain = printMain +	"<tr onMouseOver=this.style.backgroundColor='#bbbbbb' onMouseOut=this.style.backgroundColor='' onMousedown=window.open('open_window.php?mode=m&str="+mail+"','ZBremote','width=1,height=1,left=1,top=1');><td style=font-family:굴림;font-size:9pt height=18 nowrap>&nbsp;<img src=images/n_mail.gif border=0 align=absmiddle>&nbsp;&nbsp;메일 보내기&nbsp;&nbsp;</td></tr>";
+			printHeight = printHeight + 16;
+		}
+		if(member_no) {
+			if(isMember) {
+				printMain = printMain +	"<tr onMouseOver=this.style.backgroundColor='#bbbbbb' onMouseOut=this.style.backgroundColor='' onMousedown=window.open('view_info.php?member_no="+member_no+"','view_info','width=400,height=510,toolbar=no,scrollbars=yes');><td style=font-family:굴림;font-size:9pt height=18 nowrap>&nbsp;<img src=images/n_memo.gif border=0 align=absmiddle>&nbsp;&nbsp;쪽지 보내기&nbsp;&nbsp;</td></tr>";
+				printHeight = printHeight + 16;
+			}
+			printMain = printMain +	"<tr onMouseOver=this.style.backgroundColor='#bbbbbb' onMouseOut=this.style.backgroundColor='' onMousedown=window.open('view_info2.php?member_no="+member_no+"','view_info','width=400,height=510,toolbar=no,scrollbars=yes');><td style=font-family:굴림;font-size:9pt height=18 nowrap>&nbsp;<img src=images/n_information.gif border=0 align=absmiddle>&nbsp;&nbsp;회원정보 보기&nbsp;&nbsp;</td></tr>";
+			printHeight = printHeight + 16;
+		}
+		if(writer) {
+			printMain = printMain +	"<tr onMouseOver=this.style.backgroundColor='#bbbbbb' onMouseOut=this.style.backgroundColor='' onMousedown=location.href='zboard.php?id="+boardID+"&sn1=on&sn=on&ss=off&sc=off&keyword="+writer+"';><td style=font-family:굴림;font-size:9pt height=18 nowrap>&nbsp;<img src=images/n_search.gif border=0 align=absmiddle>&nbsp;&nbsp;이름으로 검색&nbsp;&nbsp;</td></tr>";
+			printHeight = printHeight + 16;
+		}
+		if(isAdmin) {
+			if(member_no) {
+				printMain = printMain +	"<tr onMouseOver=this.style.backgroundColor='#bbbbbb' onMouseOut=this.style.backgroundColor='' onMousedown=window.open('open_window.php?mode=i&str="+member_no+"','ZBremote','width=1,height=1,left=1,top=1');><td style=font-family:굴림;font-size:9pt height=18 nowrap>&nbsp;<img src=images/n_modify.gif border=0 align=absmiddle>&nbsp;&nbsp;<font color=darkred>회원정보 변경&nbsp;&nbsp;</td></tr>";
+				printHeight = printHeight + 16;
+			}
+			printMain = printMain +	"<tr onMouseOver=this.style.backgroundColor='#bbbbbb' onMouseOut=this.style.backgroundColor='' onMousedown=window.open('open_window.php?mode="+traceType+"&str="+traceID+"','ZBremote','width=1,height=1,left=1,top=1');><td style=font-family:굴림;font-size:9pt height=18 nowrap>&nbsp;<img src=images/n_relationlist.gif border=0 align=absmiddle>&nbsp;&nbsp;<font color=darkred>관련글 추적</font>&nbsp;&nbsp;</td></tr>";
+			printHeight = printHeight + 16;
+		
+		}
+		var printHeader = "<div id='"+name+"' style='position:absolute; left:10px; top:25px; width:127; height: "+printHeight+"; z-index:1; visibility: hidden' onMousedown=ZB_layerAction('"+name+"','hidden')><table border=0><tr><td colspan=3 onMouseover=ZB_layerAction('"+name+"','hidden') height=3></td></tr><tr><td width=5 onMouseover=ZB_layerAction('"+name+"','hidden') rowspan=2>&nbsp;</td><td height=5></td></tr><tr><td><table style=cursor:hand border='0' cellspacing='1' cellpadding='0' bgcolor='black' width=100% height=100%><tr><td valign=top bgcolor=white><table border=0 cellspacing=0 cellpadding=3 width=100% height=100%>";
+		var printFooter = "</table></td></tr></table></td><td width=5 rowspan=2 onMouseover=ZB_layerAction('"+name+"','hidden')>&nbsp;</td></tr><tr><td colspan=3 height=10 onMouseover=ZB_layerAction('"+name+"','hidden')></td></tr></table></div>";
+	
+		document.writeln(printHeader+printMain+printFooter);
+	}
+</script>
+	
+<script language="javascript">
+browserName = navigator.appName;
+browserVer = parseInt(navigator.appVersion);
+if(browserName == "Netscape" && browserVer >= 3){ init = "net"; }
+else { init = "ie"; }
+
+
+if(((init == "net")&&(browserVer >=3))||((init == "ie")&&(browserVer >= 4))){
+
+ sn_on=new Image;
+ sn_off=new Image;
+ sn_on.src= "skin/dw_basic/name_on.gif";
+ sn_off.src= "skin/dw_basic/name_off.gif";
+
+ ss_on=new Image;
+ ss_off=new Image;
+ ss_on.src= "skin/dw_basic/subject_on.gif";
+ ss_off.src= "skin/dw_basic/subject_off.gif";
+
+ sc_on=new Image;
+ sc_off=new Image;
+ sc_on.src= "skin/dw_basic/content_on.gif";
+ sc_off.src= "skin/dw_basic/content_off.gif";
+
+}
+
+function OnOff(name) {
+if(((init == "net")&&(browserVer >=3))||((init == "ie")&&(browserVer >= 4))) {
+  if(document.search[name].value=='on')
+  {
+   document.search[name].value='off';
+   ImgSrc=eval(name+"_off.src");
+   document[name].src=ImgSrc;
+  }
+  else
+  {
+   document.search[name].value='on';
+   ImgSrc=eval(name+"_on.src");
+   document[name].src=ImgSrc;
+  }
+ }
+}
+</script>
+
+<script language="javascript">
+  function reverse() {
+   var i, chked=0;
+   if(confirm('목록을 반전하시겠습니까?\n\n반전을 원하지 않는다면 취소를 누르시면 다음으로 넘어갑니다'))
+   {
+    for(i=0;i<document.list.length;i++)
+    {
+     if(document.list[i].type=='checkbox')
+     {
+      if(document.list[i].checked) { document.list[i].checked=false; }
+      else { document.list[i].checked=true; }
+     }
+    }
+   }
+   for(i=0;i<document.list.length;i++)
+   {
+    if(document.list[i].type=='checkbox')
+    {
+     if(document.list[i].checked) chked=1;
+    }
+   }
+   if(chked) {
+    if(confirm('선택된 항목을 보시겠습니까?'))
+     {
+      document.list.selected.value='';
+      document.list.exec.value='view_all';
+      for(i=0;i<document.list.length;i++)
+      {
+       if(document.list[i].type=='checkbox')
+       {
+        if(document.list[i].checked)
+        {
+         document.list.selected.value=document.list[i].value+';'+document.list.selected.value;
+        }
+       }
+      }
+      document.list.submit();
+      return true;
+     }
+    }
+   }
+
+ function delete_all() {
+  var i, chked=0;
+  for(i=0;i<document.list.length;i++)
+  {
+   if(document.list[i].type=='checkbox')
+   {
+    if(document.list[i].checked) chked=1;
+    }
+   }
+  if(chked)
+  {
+    document.list.selected.value='';
+    document.list.exec.value='delete_all';
+    for(i=0;i<document.list.length;i++)
+    {
+     if(document.list[i].type=='checkbox')
+     {
+      if(document.list[i].checked)
+      {
+       document.list.selected.value=document.list[i].value+';'+document.list.selected.value;
+      }
+     }
+    }
+    window.open("select_list_all.php?id=index&selected="+document.list.selected.value,"게시물정리","width=260,height=180,toolbars=no,resize=no,scrollbars=no");
+  }
+  else {alert('정리할 게시물을 선택하여 주십시요');}
+ }
+
+ function category_change(obj) {
+  var myindex=obj.selectedIndex;
+  document.search.category.value=obj.options[myindex].value;
+  document.search.submit();
+  return true;
+ }
+
+//-->
+</script>
+</head>
+<body topmargin='0'  leftmargin='0' marginwidth='0' marginheight='0'  bgcolor=white >
+			<style type="text/css">
+body {background-color: white; color: black}
+tr.subject {background-color: #9999ee; color: black}
+<!--tr.subject {background-color: #9999ee; color: black}-->
+h2 {background-color: transparent}
+</style>			<table border=0 cellspacing=0 cellpadding=0 width=95% height=1 style="table-layout:fixed;"><col width=100%></col><tr><td><img src=images/t.gif border=0 width=98% height=1 name=zb_get_table_width><br><img src=images/t.gif border=0 name=zb_target_resize width=1 height=1></td></tr></table>
+			 
+
+<script language=JavaScript>
+function findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+function swapImage() {
+  var i,j=0,x,a=swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+
+<form method=post name=list action=list_all.php>
+<input type=hidden name=page value=1> 
+<input type=hidden name=id value=index> 
+<input type=hidden name=select_arrange value=no>
+<input type=hidden name=desc value=asc>
+<input type=hidden name=page_num value=20> 
+<input type=hidden name=selected> 
+<input type=hidden name=exec> 
+<input type=hidden name=keyword value=""> 
+<input type=hidden name=sn value="off"> 
+<input type=hidden name=ss value="on"> 
+<input type=hidden name=sc value="on">
+
+<table align=center border=0 cellpadding=0 cellspacing=0 width=95%>
+<tr>
+<td colspan=10 class=line1 height=1></td>
+</tr>
+</table>
+
+
+<table border=0 align=center cellpadding=2 cellspacing=0 width=95%>
+<tr  >
+<!--<td style='padding:8 8 0 10;'>-->
+<!--DWEB: show subject without href tags-->
+<td align=left>
+	&nbsp;</td>
+
+<tr>
+<td align=left  valign=top colspan=2><table border=0 cellspacing=0 cellpadding=0 width=100% style="table-layout:fixed;"><col width=100%></col><tr><td valign=top>  <TABLE cellPadding=10 border=0 width=100%>
+  <TBODY>
+  <TR>
+    <TD vAlign=center align=left><img name=zb_target_resize style="cursor:hand" onclick=window.open(this.src)  src="images/7107191000414.gif" width=120>  
+    </TD>
+    <TD vAlign=top align=left>
+      <TABLE cellPadding=0 border=0 width=100%>
+        <TBODY>
+        <TR>
+          <TD colspan=2 align=left><h1>Minho Shin</h1> </TD>
+        </TR>
+        <TR><TD height=10> </TD></TR>
+        <TR>
+          <TD align=left width=50%>
+            Postdoctoral Research Fellow (Nov 2007 -- Feb 2010)<BR>
+            <A href="http://www.ists.dartmouth.edu/">Institute for Security, Technology, and Society (ISTS)</A><BR><A href="http://www.dartmouth.edu/">Dartmouth College</A> 
+          </TD><TD>
+            Office: 253 <A 
+            href="http://www.dartmouth.edu/~tour/walking/12sudikoff.html">Sudikoff</A><BR>
+
+            Phone: (603) 646-0319<BR>
+            Email: <I>mhshin at cs dot dartmouth dot edu </I> 
+          </TD>
+      </TR><TR><TD colspan=2>
+<TABLE width="30%" border=0 cellPadding=4 cellSpacing=5>
+  <TBODY>
+  <TR align="center">
+
+    <TD width="15%" bgColor=#ffff99 class=main-text><div align="left"><a href=paper/cv.pdf>CV</a> <br>
+<!--
+<a href=paper/rs.pdf>Research Statement</a><br>
+<a href=paper/ts.pdf>Teaching Statement</a>
+-->
+</div></TD>
+<!--
+    <TD width="31%" bgColor=#ffff99 class=main-text><div align="center"><a href=http://www.howol.com target=howol>Personal Website</a></div></TD>
+-->
+  </TR></TBODY></TABLE>
+     </TD></TR>
+     </TBODY></TABLE>
+    </td>
+</TR></TBODY></TABLE>
+
+<!--"<--></table></td>
+</tr>
+</table>
+
+
+<table align=center border=0 cellpadding=0 cellspacing=0 width=95%>
+<tr>
+<td colspan=10 class=line1 height=1></td>
+</tr>
+</table>
+
+
+<table border=0 align=center cellpadding=2 cellspacing=0 width=95%>
+<tr class=subject >
+<!--<td style='padding:8 8 0 10;'>-->
+<!--DWEB: show subject without href tags-->
+<td align=left>
+	&nbsp;Current Position</td>
+
+<tr>
+<td align=left style='word-break:break-all;padding:8 30 15 30;' valign=top colspan=2><table border=0 cellspacing=0 cellpadding=0 width=100% style="table-layout:fixed;"><col width=100%></col><tr><td valign=top>  
+Recently, I joined Myongji University in Korea as Assistant Professor. My new home page is <a href=http://hmcl.mju.ac.kr/~mhshin>here</a>.<br> Before, I worked for Samsung Advanced Institute of Technology for one
+year.  <br> From Nov. 2007 to Feb. 2010, I was a postdoctoral research fellow of <a
+href=http://www.ists.dartmouth.edu/>ISTS at Dartmouth College</a> with
+Prof. <a href=http://www.cs.dartmouth.edu/~dfk/>David Kotz</a><br>
+I received a Ph.D in <a href=www.cs.umd.edu>Computer Science</a>
+at the <a href=www.umd.edu>University of Maryland</a> with advisor <a href="http://www.cs.umd.edu/%7Ewaa">William A. Arbaugh</a>.
+
+<!--"<--></table></td>
+</tr>
+</table>
+
+
+<table align=center border=0 cellpadding=0 cellspacing=0 width=95%>
+<tr>
+<td colspan=10 class=line1 height=1></td>
+</tr>
+</table>
+
+
+<table border=0 align=center cellpadding=2 cellspacing=0 width=95%>
+<tr class=subject >
+<!--<td style='padding:8 8 0 10;'>-->
+<!--DWEB: show subject without href tags-->
+<td align=left>
+	&nbsp;Education</td>
+
+<tr>
+<td align=left style='word-break:break-all;padding:8 30 15 30;' valign=top colspan=2><table border=0 cellspacing=0 cellpadding=0 width=100% style="table-layout:fixed;"><col width=100%></col><tr><td valign=top>  <IMG src="http://www.cs.umd.edu/~mhshin/images/barrow.gif" border=0> Ph.D (2007) in <a href="http://www.cs.umd.edu/">Computer Science, University of Maryland</a>, <i>College Park, MD</i> <br>     
+(Advisor: <a href=http://www.cs.umd.edu/~waa>Dr. William Arbaugh</a>)
+<br>
+<IMG src="http://www.cs.umd.edu/~mhshin/images/barrow.gif" border=0>  
+M.S. (2003), <A href="http://www.cs.umd.edu/">Computer Science</A>, <A href="http://www.umd.edu">University of Maryland</A>, <i>College Park, MD</i>
+<br>
+<IMG src="http://www.cs.umd.edu/~mhshin/images/barrow.gif" border=0> B.S. (1998), <A href="http://www.cse.snu.ac.kr">Computer Science and Statistics </A>, <A href="http://www.snu.ac.kr">Seoul National University </A>, <i>Seoul, Korea</i><!--"<--> </table></td>
+</tr>
+</table>
+
+
+<table align=center border=0 cellpadding=0 cellspacing=0 width=95%>
+<tr>
+<td colspan=10 class=line1 height=1></td>
+</tr>
+</table>
+
+
+<table border=0 align=center cellpadding=2 cellspacing=0 width=95%>
+<tr class=subject >
+<!--<td style='padding:8 8 0 10;'>-->
+<!--DWEB: show subject without href tags-->
+<td align=left>
+	&nbsp;Research Interests</td>
+
+<tr>
+<td align=left style='word-break:break-all;padding:8 30 15 30;' valign=top colspan=2><table border=0 cellspacing=0 cellpadding=0 width=100% style="table-layout:fixed;"><col width=100%></col><tr><td valign=top>  
+
+<IMG src="http://www.cs.umd.edu/~mhshin/images/barrow.gif" border=0>
+<b>Wireless Networking</b>: Wi-Fi, Ad-hoc, Wireless Mesh Networks, Vehicular Networks, 4G
+<br>
+<IMG src="http://www.cs.umd.edu/~mhshin/images/barrow.gif" border=0>
+<b>Pervasive Computing</b>: People-centric Urban Sensing, Health Monitoring
+<br>
+<IMG src="http://www.cs.umd.edu/~mhshin/images/barrow.gif" border=0>
+<b>Wireless Network Security</b>: Authentication, Privacy, Data Integrity
+<br>
+<IMG src="http://www.cs.umd.edu/~mhshin/images/barrow.gif" border=0>
+<b>Distributed Algorithms</b>: Randomized Algorithms, Probabilistic Analysis
+<!--
+My research interests are Wireless Network Security and fast & secure handoffs in intra-WLAN or 3G/WLAN environments. 
+<br><br>
+
+<IMG name=zb_target_resize style="cursor:hand" onclick=window.open(this.src)  alt=- src="http://www.cs.umd.edu/~mhshin/images/barrow.gif" border=0>  
+      <a href="iapp/index.html">IAPP( Inter Access Point Protocol ) with Proactive Caching using Neighbor Graph </a><br>
+-->
+<!--"<--> </table></td>
+</tr>
+</table>
+
+
+<table align=center border=0 cellpadding=0 cellspacing=0 width=95%>
+<tr>
+<td colspan=10 class=line1 height=1></td>
+</tr>
+</table>
+
+<table border=0 align=center cellpadding=2 cellspacing=0 width=95%>
+<tr class=subject >
+<!--<td style='padding:8 8 0 10;'>-->
+<!--DWEB: show subject without href tags-->
+<td align=left>
+	&nbsp;Work Experience</td>
+
+<tr>
+<td align=left style='word-break:break-all;padding:8 30 15 30;' valign=top colspan=2><table border=0 cellspacing=0 cellpadding=0 width=100% style="table-layout:fixed;"><col width=100%></col><tr><td valign=top>  
+
+<IMG src="http://www.cs.umd.edu/~mhshin/images/barrow.gif" border=0> (Mar 2010--Feb 2011) Research Scientist at Samsung Advanced Institute of Technology, Korea<br>     
+<IMG src="http://www.cs.umd.edu/~mhshin/images/barrow.gif" border=0> (Nov 2007--Feb 2010) Postdoctoral Research Fellow at Institution for Security Technology Studies, Dartmouth College<br>     
+
+<IMG src="http://www.cs.umd.edu/~mhshin/images/barrow.gif" border=0>  
+(Jun--Aug, 2006) Research Internship at Motorola Networks & Systems Lab, Schaumburg, IL<br>
+
+<IMG src="http://www.cs.umd.edu/~mhshin/images/barrow.gif" border=0>  
+(Jun--Aug, 2005) Research Internship at Motorola Networks & Systems Lab, Schaumburg, IL<br>
+
+<IMG src="http://www.cs.umd.edu/~mhshin/images/barrow.gif" border=0>  
+(May--Jun, 2003) Research Internship at Samsung Advanced Institute of Technology, Kiheung,
+Korea<br>
+ </table></td>
+</tr>
+</table>
+
+
+<!--
+<table border=0 align=center cellpadding=2 cellspacing=0 width=95%>
+<tr class=subject >
+
+<td align=left>
+	&nbsp;Projects</td>
+
+<tr>
+<td align=left style='word-break:break-all;padding:8 30 15 30;' valign=top colspan=2><table border=0 cellspacing=0 cellpadding=0 width=100% style="table-layout:fixed;"><col width=100%></col><tr><td valign=top>  
+
+<IMG name=zb_target_resize style="cursor:hand" onclick=window.open(this.src)  alt=- src="http://www.cs.umd.edu/~mhshin/images/barrow.gif" border=0> 
+SenseMed: Data Assurance in Pervasive Health Monitoring
+
+<br>
+<IMG name=zb_target_resize style="cursor:hand" onclick=window.open(this.src)  alt=- src="http://www.cs.umd.edu/~mhshin/images/barrow.gif" border=0> 
+Metrosec: Privacy and Security of People-centric Sensing
+
+<br>     
+<IMG name=zb_target_resize style="cursor:hand" onclick=window.open(this.src)  alt=- src="http://www.cs.umd.edu/~mhshin/images/barrow.gif" border=0>  
+Ring Interval Graph Search (RIGS) for Multi-hop Wireless Networks
+
+<br>
+<IMG name=zb_target_resize style="cursor:hand" onclick=window.open(this.src)  alt=- src="http://www.cs.umd.edu/~mhshin/images/barrow.gif" border=0>  
+Distributed Channel Assignment for Multi-radio, Multi-channel, Multi-hop Wireless Networks
+
+<br>
+<IMG name=zb_target_resize style="cursor:hand" onclick=window.open(this.src)  alt=- src="http://www.cs.umd.edu/~mhshin/images/barrow.gif" border=0>  
+Neighbor Graphs: Fast and Secure Hand-off in Wireless LANs
+
+<br>
+ </table></td>
+</tr>
+</table>
+-->
+
+
+<table align=center border=0 cellpadding=0 cellspacing=0 width=95%>
+<tr>
+<td colspan=10 class=line1 height=1></td>
+</tr>
+</table>
+
+<!--
+
+<table align=center border=0 cellpadding=0 cellspacing=0 width=95%>
+<tr>
+<td colspan=10 class=line1 height=1></td>
+</tr>
+</table>
+<table border=0 align=center cellpadding=2 cellspacing=0 width=95%>
+<tr class=subject >
+<td align=left>
+	&nbsp;Links</td>
+
+<tr>
+<td align=left style='word-break:break-all;padding:8 30 15 30;' valign=top colspan=2><table border=0 cellspacing=0 cellpadding=0 width=100% style="table-layout:fixed;"><col width=100%></col><tr><td valign=top>  <TABLE cellSpacing=2 cellPadding=0 border=0>
+  <TBODY>
+  <TR>
+    <TD width="114" class=main-text><h4><strong>Research</strong></h4></TD>
+    <TD width="112" class=main-text> </TD>
+    <TD width="117" class=main-text> </TD>
+    <TD width="113" class=main-text> </TD>
+  </TR>
+  <TR>
+    <TD class=main-text><IMG name=zb_target_resize style="cursor:hand" onclick=window.open(this.src)  alt=- src="http://www.cs.umd.edu/~mhshin/images/barrow.gif" border=0> <a href="http://www.cs.umd.edu/%7Emhshin/802.11.html">802.11 </a></TD> 
+    <TD class=main-text><IMG name=zb_target_resize style="cursor:hand" onclick=window.open(this.src)  alt=- src="http://www.cs.umd.edu/~mhshin/images/barrow.gif" border=0> <a href="http://www.cs.umd.edu/%7Emhshin/wlan3g.html">3G/WLAN</a> </TD> 
+
+    <TD class=main-text><IMG name=zb_target_resize style="cursor:hand" onclick=window.open(this.src)  alt=- src="http://www.cs.umd.edu/~mhshin/images/barrow.gif" border=0> <a href="http://www.faqs.org/rfcs/">RFCs</a> </TD> 
+    <TD class=main-text><IMG name=zb_target_resize style="cursor:hand" onclick=window.open(this.src)  alt=- src="http://www.cs.umd.edu/~mhshin/images/barrow.gif" border=0> <a href="http://www.isi.edu/nsnam/ns/">NS2</a> </TD> 
+    <TD class=main-text> </TD>
+    <TD class=main-text> </TD>
+  </TR>
+</TBODY></TABLE>
+<br>
+<TABLE cellSpacing=2 cellPadding=0 border=0>
+  <TBODY>
+    <TR>
+
+      <TD width="114" class=main-text><h4>Organizations</h4></TD>
+      <TD width="112" class=main-text> </TD>
+      <TD width="117" class=main-text> </TD>
+      <TD width="113" class=main-text> </TD>
+      <TD width="113" class=main-text> </TD>
+    </TR>
+    <TR>
+      <TD class=main-text><IMG name=zb_target_resize style="cursor:hand" onclick=window.open(this.src)  alt=- src="http://www.cs.umd.edu/~mhshin/images/barrow.gif" border=0> <a href="http://www.cs.umd.edu">CS UMD </a></TD> 
+
+      <TD class=main-text><IMG name=zb_target_resize style="cursor:hand" onclick=window.open(this.src)  alt=- src="http://www.cs.umd.edu/~mhshin/images/barrow.gif" border=0> <a href="http://kgcs.cs.umd.edu">KGCS</a></TD> 
+      <TD class=main-text><IMG name=zb_target_resize style="cursor:hand" onclick=window.open(this.src)  alt=- src="http://www.cs.umd.edu/~mhshin/images/barrow.gif" border=0> <a href="http://www.studentorg.umd.edu/kgsa/">KGSA</a></TD> 
+      <TD class=main-text><IMG name=zb_target_resize style="cursor:hand" onclick=window.open(this.src)  alt=- src="http://www.cs.umd.edu/~mhshin/images/barrow.gif" border=0> <a href="https://wiki.cs.dartmouth.edu/srg/">Security Reading Group</a></TD> 
+
+    </TR>
+  </TBODY>
+</TABLE>
+<br>
+-->
+<!--
+<TABLE cellSpacing=2 cellPadding=0 border=0>
+  <TBODY>
+    <TR>
+      <TD width="135" class=main-text><h4>People</h4></TD>
+      <TD width="131" class=main-text> </TD>
+      <TD width="137" class=main-text> </TD>
+
+      <TD width="133" class=main-text> </TD>
+      <TD width="133" class=main-text> </TD>
+    </TR>
+    <TR>
+      <TD class=main-text><IMG name=zb_target_resize style="cursor:hand" onclick=window.open(this.src)  alt=- src="http://www.cs.umd.edu/~mhshin/images/barrow.gif" border=0> <a href="http://www.cs.umd.edu/%7Ewaa">William  Arbaugh</a></TD> 
+      <TD class=main-text><IMG name=zb_target_resize style="cursor:hand" onclick=window.open(this.src)  alt=- src="http://www.cs.umd.edu/~mhshin/images/barrow.gif" border=0> <a href="http://www.cs.umd.edu/%7Ekang">Hyunmo Kang</a> </TD> 
+
+      <TD class=main-text><IMG name=zb_target_resize style="cursor:hand" onclick=window.open(this.src)  alt=- src="http://www.cs.umd.edu/~mhshin/images/barrow.gif" border=0> <a href="http://www.cs.umd.edu/%7Esbw">Bongwon Suh </a></TD> 
+      <TD class=main-text><IMG name=zb_target_resize style="cursor:hand" onclick=window.open(this.src)  alt=- src="http://www.cs.umd.edu/~mhshin/images/barrow.gif" border=0> <a href="http://www.cs.umd.edu/%7Ejyeo">Jihwang Yeo </a></TD> 
+      <TD class=main-text><img name=zb_target_resize style="cursor:hand" onclick=window.open(this.src)  alt=- src="http://www.cs.umd.edu/~mhshin/images/barrow.gif" border=0> <a href="http://www.cs.umd.edu/%7Echlee">Changha Lee </a></TD> 
+    </TR>
+    <TR>
+      <TD class=main-text><IMG name=zb_target_resize style="cursor:hand" onclick=window.open(this.src)  alt=- src="http://www.cs.umd.edu/~mhshin/images/barrow.gif" border=0> <a href="http://www.cs.umd.edu/%7Eslee">Seungjoon Lee </a></TD> 
+
+      <TD class=main-text><IMG name=zb_target_resize style="cursor:hand" onclick=window.open(this.src)  alt=- src="http://www.cs.umd.edu/~mhshin/images/barrow.gif" border=0> <a href="http://www.cs.umd.edu/%7Ebhhan">Bohyung Han </a></TD> 
+      <TD class=main-text><IMG name=zb_target_resize style="cursor:hand" onclick=window.open(this.src)  alt=- src="http://www.cs.umd.edu/~mhshin/images/barrow.gif" border=0> <a href="http://www.cs.umd.edu/%7Esunny">Jisun Shin </a></TD> 
+      <TD class=main-text> </TD>
+      <TD class=main-text> </TD>
+    </TR>
+  </TBODY>
+</TABLE>
+-->
+<!--
+<TABLE cellSpacing=2 cellPadding=0 border=0>
+  <TBODY>
+    <TR>
+      <TD width="135" class=main-text><h4>ETC</h4></TD>
+    </TR>
+    <TR>
+      <TD class=main-text><IMG name=zb_target_resize style="cursor:hand" onclick=window.open(this.src)  alt=- src="http://www.cs.umd.edu/~mhshin/images/barrow.gif" border=0> <a href="http://delivery.acm.org/10.1145/1280000/1273458/p83-keshav.pdf?key1=1273458&key2=2685417811&coll=GUIDE&dl=GUIDE&CFID=26778773&CFTOKEN=36916327">How To Read a Paper by Keshav</a></TD> 
+    </TR>
+  </TBODY>
+</TABLE>
+</table></td>
+</tr>
+</table>
+-->
+<div align=center>
+<table border=0 cellspacing=0 cellpadding=0 width=95%>
+<tr>
+<td colspan=10 class=line1 height=1></td>
+</tr>
+</table>
+
+
+
+</div>
+
+<script>
+print_ZBlayer('zbLayer1', '', '', '1', 'index', 'Minho+Shin', '', '', '', '');
+print_ZBlayer('zbLayer2', '', '', '1', 'index', 'Minho+Shin', '', '', '', '');
+print_ZBlayer('zbLayer3', '', '', '1', 'index', 'Minho+Shin', '', '', '', '');
+print_ZBlayer('zbLayer4', '', '', '1', 'index', 'Minho+Shin', '', '', '', '');
+print_ZBlayer('zbLayer5', '', '', '1', 'index', 'Minho+Shin', '', '', '', '');
+print_ZBlayer('zbLayer6', '', '', '1', 'index', 'Minho+Shin', '', '', '', '');
+</script>
+			<table border=0 cellpadding=0 cellspacing=0 height=20 width=95%>
+			<tr>
+				<td align=right style=font-family:tahoma,굴림;font-size:8pt;line-height:150%;letter-spacing:0px>
+					<font style=font-size:7pt>Copyright 1999-2009</font> 
+<!--
+<a href=http://www.zeroboard.com target=_blank onfocus=blur()><font style=font-family:tahoma,굴림;font-size:8pt;>Zeroboard</a> / skin by <a href=http://www.cs.umd.edu/~mhshin target=_blank onfocus=blur()><span style='font-family:tahoma;font-size:7pt;'>DynaWeb</span></a> -->
+				</td>   
+			</tr>
+			</table>
+
+						<!-- 이미지 리사이즈를 위해서 처리하는 부분 -->
+			<script>
+				function zb_img_check(){
+					var zb_main_table_width = document.zb_get_table_width.width;
+					var zb_target_resize_num = document.zb_target_resize.length;
+					for(i=0;i<zb_target_resize_num;i++){ 
+						if(document.zb_target_resize[i].width > zb_main_table_width) {
+							document.zb_target_resize[i].width = zb_main_table_width;
+						}
+					}
+				}
+				window.onload = zb_img_check;
+			</script>
+
+			</div>
+</body>
+</html>

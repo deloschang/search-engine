@@ -1,0 +1,133 @@
+http://www.cs.dartmouth.edu/~doug
+3
+<h2>M. Douglas McIlroy, Adjunct Professor</h2>
+<img src="doug.jpg" alt="McIlroy photo" align="right"> 
+<br>Department of Computer Science
+<br>6211 Sudikoff Hall
+<br>Dartmouth College 
+<br>Hanover, NH 03755
+<br><a href="mailto:mcilroy@dartmouth.edu">mcilroy@dartmouth.edu</a>
+<br>+1 603 646 1077 
+<hr>
+
+<dl>
+<dt>2003 marked my golden anniversary as a <b>programmer</b>. Hooked when Bob 
+Walker introduced his numerical analysis class to Cornell's newly-arrived IBM 
+CPC, I have ever since applied my training in engineering, physics, and math 
+to this endlessly fascinating vocation. I had the good fortune to head the 
+research department at Bell Labs in which <b>Unix</b> was born, and to work 
+with some of the most creative talents in computing. Some things I have worked 
+on: 
+  </dt><dd>
+  <ul>
+    <li>Languages and compilers: <b>macros</b>, Lisp, <b>PL/I</b>, TMG (a compiler-compiler), regular 
+    expressions; influenced Snobol, Altran, C++ 
+    </li><li>Stream processing: Unix <b>pipes</b>, classic coroutine sieve, power 
+    series 
+    </li><li>Computer <b>security</b> 
+    </li><li><b>Unix programs</b>: spell, diff, sort, join, graph, speak, tr, tsort, calendar, echo, tee, etc.
+    </li><li><b>Cartography</b>: map projections 
+    </li><li>Algorithms for <b>graphics</b> 
+    </li><li><b>Storage allocation</b> theory and practice; first conservative 
+    garbage collector 
+    </li><li><b>Theorem-proving</b> in logic and geometry 
+    </li><li>Documentation: making <b>Unix manuals</b> short and accurate </li></ul>
+</dd><dt>Upon retiring from Bell Labs, I moved to another happy
+situation, at Dartmouth as adjunct professor of
+<a href="http://www.cs.dartmouth.edu/">Computer Science</a>
+and affiliate of the
+<a href="http://www.ists.dartmouth.edu">Institute
+for Security Technology Studies</a>.  Here I have taught
+<dt><dd>
+    <ul>
+    <li>Advanced operating systems, CS108 
+    </li><li>Information systems, CS33 
+    </li><li>Data structures, CS15 
+    </li><li>Logic of programming, CS188
+    </li><li>Programming languages, CS118 </li></ul>
+</dd><dt>and have given guest lectures in several other
+courses.</dl>
+<hr>
+
+<h3><a name="gallery">Gallery</a></h3>
+<table>
+  <tbody>
+  <tr>
+    <td>
+        <img src="volc.gif" alt="Volcano map" height="137" width="144"> 
+    </td><td><img src="tref.gif" alt="Trefoil continents" height="137" width="139"> 
+    </td><td><img src="smile.gif" alt="Smiley world" height="158" width="150"> 
+    </td><td>
+        <img src="pentasmall.jpg" alt="Star world" align="top" height="140" width="140"> 
+  </td></tr><tr>
+    <td><a href="explan.html#maps">Ring of fire</a> 
+    </td><td><a href="explan.html#maps">Jerusalem trefoil</a> 
+    </td><td><a href="explan.html#maps">Way to go</a>
+    </td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="explan.html#maps">Big star</a> </td></tr>
+  <tr>
+    <td>
+        <img src="hexsmall.gif" alt="Hexagon map" width="141">
+    </td><td><img src="lagrange.png" alt="Lagrange">
+    </td><td><img src="icosi/icosi.jpg" alt="Coloring">
+    </td><td><img src="SimsonLive.gif" alt="Simson demo">
+  </td></tr><tr>
+    <td><a href="explan.html#maps">Sea whirled</a>
+    </td><td><a href="lagrange.html">Morphomap movie</a>
+    </td><td><a href="icosi/index.html">Rainbow icosahedron</a>
+    </td><td>&nbsp;&nbsp;&nbsp;
+	<a href="geometry.html">Dynamic geometry</a>
+  </td></tr></tbody>
+</table>
+<p><a href="explan.html#words">Best Webstern 
+word squares</a>
+</p><pre>      R A C I S M         W A S S A I L 
+      E V I N C E         A N T E N N A 
+      P E R S O N         S T R I N G Y 
+      A S C E N T         S E I Z U R E 
+      S T U C C O         A N N U L A R 
+      T A S T E R         I N G R A T E 
+                          L A Y E R E D    
+</pre>
+<a href="crypt.html">Dual cryptograms</a>
+<pre>HILLARY MENTORS SILVERY VERVAIN; BINDERY  SUCCORS CORRIDA SLOGGER.
+BARRENS HOLDING GARCONS CONCEAL  WALTONS' GYPPING PINNATE GRIFFON.
+</pre>
+<p><a href="powser.html">Power serious: Haskell magic</a>
+</p><pre>revert (0:ft) = rs where rs = 0 : 1/(ft#rs)</pre>
+<a href="tinysort.html">Tiniest C sort function?</a>
+<pre>s(a,n)int*a;{n-->1?s(a,n),s(a+1,n),n=*a,*a=a[1],a[n>*a]=n:0;}</pre>
+<a href="booklist">Basic CS reading list</a>
+<p><i>Cook's Travels and Other Salesmen's Tales</i> &mdash; Dick Karp</p>
+<hr>
+<h3><a href="pubs.html">Publications</a></h3>
+<p>An appreciation of the late <a href="dmr.pdf">Dennis Ritchie</a>
+<hr>
+<h3>Other info</h3>
+<a href="source.html">Source code</a>
+  for map projections, suffix arrays, quicksort and antiquicksort, word squares, etc.
+<br>Original description of <a href="darwin.pdf">Darwin</a>, a 1961 game of 
+  survival of the fittest among programs, progenitor of
+  <a href="http://www.corewars.org/">Core Wars</a>
+<br>Honors: Usenix Association 
+  <a href="http://www.usenix.org/about/flame.html">Flame</a> and
+  <a href="http://www.usenix.org/about/stug.html">Software Tools </a> awards; member
+  <a href="http://www.nae.edu/nae/naepub.nsf/Members+By+UNID/128BD28F0726220585257110004FD04F?opendocument">National Academy of Engineering</a>; fellow <a href="http://www.aaas.org">AAAS</a>
+<br>Erd&#246;s number: 3 (via non-mathematical works, alas)
+<br><a href="biography">Biography</a> &nbsp; | &nbsp; 
+  <a href="http://www.cs.dartmouth.edu/">Dartmouth CS</a> &nbsp; | &nbsp;
+  <a href="http://www.ists.dartmouth.edu">Dartmouth ISTS</a> &nbsp; | &nbsp;
+  <a href="http://cm.bell-labs.com/cm/cs">Bell Labs CSR</a> 
+<hr>
+
+<h3>Extracurricular</h3><a href="http://www.hanovernh.org/stories/storyReader$95">Hanover trails</a>, 
+mapped by a committee that I chair. 
+<br><a href="http://pisecoyachtclub.org/">Piseco Yacht Club</a>
+<br><a href="http://www.valley.net/~invasiveplants">Invasive plants</a> site 
+organized by my wife, Barbara McIlroy. 
+<br>Scenes from <a href="ghana">Ho, Ghana,</a> 2001. 
+<hr>
+<em>Modified September 29, 2012 </em>
+
+</div></body></html>
+=

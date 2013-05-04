@@ -1,0 +1,458 @@
+http://www.cs.dartmouth.edu/~cs106/MailArchive/mails.html
+3
+<html><head>
+  <title>CS106 Fall 2010: Mailing List Archive</title>
+  <link rel="stylesheet" type="text/css" href="../cs106.css"/>
+</head><body>
+<table>
+<tr class=oddrow><td><pre>
+From ac@cs.dartmouth.edu  Tue Sep 21 14:59:44 2010
+Date: Tue, 21 Sep 2010 14:59:43 -0400
+From: Amit Chakrabarti <ac@cs.dartmouth.edu>
+To: CS106 Entire Class <cs106-F10@cs.dartmouth.edu>
+Subject: Welcome to CS 106: First lecture postponed to Thursday
+Content-Length: 733
+Lines: 19
+
+Dear students:
+
+Welcome to the CS 106 mailing list! Any of you can use this list to send
+email to the entire class. Feel free to discuss class-related material
+on this list. The address is <cs106-F10@cs.dartmouth.edu>.
+
+An announcement: tomorrow (Wednesday) would normally have been our first
+lecture, but due to a scheduling conflict, I have to postpone this to
+Thursday's X-hour.  Those new to Dartmouth should knnow that every
+course has a designated X-hour.  Ours is on Thursdays, from 1:00 to
+1:50, and I ask that you keep that hour free, because we will
+occasionally use it.
+
+See you all on Thursday, at 1:00pm, in Sudikoff 214. I am looking
+forward to a great term!
+
+	Course website: http://www.cs.dartmouth.edu/~cs106
+
+-Amit
+
+</pre></td></tr><tr class=evenrow><td><pre>
+Date: Thu, 23 Sep 2010 16:41:56 -0400
+From: Amit Chakrabarti <ac@cs.dartmouth.edu>
+To: CS106 Entire Class <cs106-F10@cs.dartmouth.edu>
+Subject: CS106: First homework
+Content-Length: 1376
+Lines: 32
+
+Hi all:  The first homework set has been posted to the course website. Let me
+stress that this homework is meant to be review, and to get you used to flexing
+your linear algebra muscles (which may have lain dormant for a while). ***You
+should not be struggling to complete this.*** If you find yourself struggling,
+please consider taking a linear algebra course before returning to CS 106. 
+
+As I said in class, this is due before next Wednesday's class (unless an
+exception arises, homework will be due before each Wednesday class).
+
+For those who registered late, here is what I had sent to the list earlier.
+
+======================
+
+Dear students:
+
+Welcome to the CS 106 mailing list! Any of you can use this list to send
+email to the entire class. Feel free to discuss class-related material
+on this list. The address is <cs106-F10@cs.dartmouth.edu>.
+
+An announcement: tomorrow (Wednesday) would normally have been our first
+lecture, but due to a scheduling conflict, I have to postpone this to
+Thursday's X-hour.  Those new to Dartmouth should knnow that every
+course has a designated X-hour.  Ours is on Thursdays, from 1:00 to
+1:50, and I ask that you keep that hour free, because we will
+occasionally use it.
+
+See you all on Thursday, at 1:00pm, in Sudikoff 214. I am looking
+forward to a great term!
+
+        Course website: http://www.cs.dartmouth.edu/~cs106
+
+-Amit
+
+</pre></td></tr><tr class=oddrow><td><pre>
+Date: Sun, 26 Sep 2010 22:51:24 -0400
+From: Amit Chakrabarti <ac@cs.dartmouth.edu>
+To: CS106 Entire Class <cs106-F10@cs.dartmouth.edu>
+Subject: Updated course website + TA
+Content-Length: 570
+Lines: 14
+
+Hi all:  Just a quick note to say that I've updated the course website a
+bit, including a "course diary" where I will post one-line summaries of
+topics covered in each lecture. Also, office hours are announced and the
+grading formula is made explicit. Once again, the course website is at
+
+	http://www.cs.dartmouth.edu/~cs106
+
+but of course you knew that, since you've done the homework, right?
+
+I hope to introduce our TA, Hao Luo, on Monday. He's on this email list
+as well. (Hao, can you please stop by for a couple of minutes at the
+start of Monday's class?)
+
+-Amit
+
+</pre></td></tr><tr class=evenrow><td><pre>
+Date: Wed, 29 Sep 2010 18:58:59 -0400
+From: Amit Chakrabarti <ac@cs.dartmouth.edu>
+To: CS106 Entire Class <cs106-F10@cs.dartmouth.edu>
+Subject: HW 2 is on the website
+Content-Length: 22
+Lines: 3
+
+Happy solving!
+
+-Amit
+
+</pre></td></tr><tr class=oddrow><td><pre>
+Date: Wed, 29 Sep 2010 22:16:18 -0400
+From: Amit Chakrabarti <ac@cs.dartmouth.edu>
+To: CS106 Entire Class <cs106-F10@cs.dartmouth.edu>
+Subject: Re: HW 2 is on the website
+Content-Length: 339
+Lines: 11
+
+Also, I'll make solutions to HW1 available tomorrow; I'll place them
+into a "CS 106 outbox", which will be one of the boxes next to the main
+door of Sudikoff. For various reasons, I have a policy of only giving
+out hardcopies of these solutions.
+
+-Amit
+
+* Amit Chakrabarti (ac@cs.dartmouth.edu) [100929 18:59]:
+> Happy solving!
+> 
+> -Amit
+
+</pre></td></tr><tr class=evenrow><td><pre>
+Date: Thu, 30 Sep 2010 16:20:31 -0400
+From: Amit Chakrabarti <ac@cs.dartmouth.edu>
+To: CS106 Entire Class <cs106-F10@cs.dartmouth.edu>
+Subject: Re: HW 1 solutions ready
+Content-Length: 386
+Lines: 9
+
+* Amit Chakrabarti (ac@cs.dartmouth.edu) [100929 22:16]:
+> Also, I'll make solutions to HW1 available tomorrow; I'll place them
+> into a "CS 106 outbox", which will be one of the boxes next to the main
+> door of Sudikoff. For various reasons, I have a policy of only giving
+> out hardcopies of these solutions.
+
+It's done; please pick up a copy of the solutions from the outbox.
+
+-Amit
+
+</pre></td></tr><tr class=oddrow><td><pre>
+Date: Fri, 1 Oct 2010 12:13:22 -0400
+From: Amit Chakrabarti <ac@cs.dartmouth.edu>
+To: CS106 Entire Class <cs106-F10@cs.dartmouth.edu>
+Subject: Small typo in HW1 solutions
+Content-Length: 142
+Lines: 5
+
+In 4.2, in the first line, please replace \|x\|_2 with \|x\|_p. 
+
+(BTW, if anyone else finds any other typos, please let us all know.)
+
+-Amit
+
+</pre></td></tr><tr class=evenrow><td><pre>
+Date: Mon, 4 Oct 2010 16:06:14 -0400
+From: Amit Chakrabarti <ac@cs.dartmouth.edu>
+To: CS106 Entire Class <cs106-F10@cs.dartmouth.edu>
+Subject: CS 106 mailing list maintenance
+Content-Length: 777
+Lines: 18
+
+Hi all:
+
+As of today, there are 11 students registered for the course. We are
+past the basic add/drop period, so I assume these 11 will constitute the
+class for this term.
+
+Three of you had registered somewhat late and weren't on the mailing
+list, until just now. Sorry! Please catch up with what you missed by
+going through the CS106 mailing list archive, here:
+	http://www.cs.dartmouth.edu/~ac/Teach/CS106-Fall10/MailArchive/mails.html
+	(access is Dartmouth-only; also linked from course website)
+
+Finally, the mailing list includes several students who aren't
+registered for the course any more. **I will be removing them from the
+list by Wednesday unless I hear from them otherwise.** So, if this
+applies to you, and you want to stay on the list, please write back.
+
+-Amit
+
+</pre></td></tr><tr class=oddrow><td><pre>
+Date: Wed, 6 Oct 2010 18:25:52 -0400
+From: Amit Chakrabarti <ac@cs.dartmouth.edu>
+To: CS106 Entire Class <cs106-F10@cs.dartmouth.edu>
+Subject: CS 106 special session *tomorrow* (Thursday) at 1pm
+Content-Length: 696
+Lines: 19
+
+Hi all:
+
+The short message is that I will have a special session for CS 106,
+during the X-hour (1:00 - 2:50 pm) tomorrow. 
+
+I will try to keep it brief. The agenda is:
+
+(1) Talk about computational cost analysis of the algorithms we have
+seen so far (Gram-Schmidt, Householder, and a bit about least squares).
+You'll need to do some similar analysis for HW3, and although this
+material is easy to pick up (after all, you've all done an Algorithms
+class), it's best that I do it in class once, formally.
+
+(2) Distribute sample solutions to HW2, and answer any questions you may
+have about the homework so far.
+
+Feel free to stay for only part (1); that shouldn't take more than 15 minutes.
+
+-Amit
+
+</pre></td></tr><tr class=evenrow><td><pre>
+Date: Wed, 6 Oct 2010 22:08:46 -0400
+From: Amit Chakrabarti <ac@cs.dartmouth.edu>
+To: CS106 Entire Class <cs106-F10@cs.dartmouth.edu>
+Subject: HW3 is ready
+Content-Length: 208
+Lines: 6
+
+Hi all:  HW3 is ready, and you can start working on it. Happy solving!
+
+If you downloaded the 5pm version of HW3, please re-download. The
+problems haven't changed, but things are more fleshed out now.
+
+-Amit
+
+</pre></td></tr><tr class=oddrow><td><pre>
+Date: Tue, 12 Oct 2010 15:22:24 -0400
+From: Hao.Luo@Dartmouth.edu
+To: CS106 Entire Class <cs106-F10@cs.dartmouth.edu>
+Subject: question 10 in hw2
+Content-Length: 307
+Lines: 11
+
+Hi, folks,
+
+In Question 10 of hw2, some of you didn't get 10 points because I  
+thought you didn't have enough reasoning on how to get U, the  
+eigenvectors. But if you did find the correct U and verify it through  
+some computation, please let me know, I'd like to add the points for  
+you.
+
+Regards,
+
+Hao
+
+</pre></td></tr><tr class=evenrow><td><pre>
+Date: Thu, 14 Oct 2010 00:04:34 -0400
+From: Amit Chakrabarti <ac@cs.dartmouth.edu>
+To: CS106 Entire Class <cs106-F10@cs.dartmouth.edu>
+Subject: HW 4 is online, sort of
+Content-Length: 351
+Lines: 9
+
+Hi all:  I have put a bare-bones version of HW 4 online, on the course
+website.  I will add some details and clarifications (on what to turn
+in) for these problems, and some minor details may change.  I will email
+again when that's ready.  
+
+But you can certainly start thinking about the homework. Rest assured,
+no drastic changes will occur.
+
+-Amit
+
+</pre></td></tr><tr class=oddrow><td><pre>
+Date: Thu, 14 Oct 2010 19:17:50 -0400
+From: Amit Chakrabarti <ac@cs.dartmouth.edu>
+To: CS106 Entire Class <cs106-F10@cs.dartmouth.edu>
+Subject: Re: HW 4 fully fleshed out
+Content-Length: 640
+Lines: 17
+
+Following up on this, I have now added detailed instructions and
+clarifications where required, for this homework. The updated version of
+the HW is on the course website (you may have to RELOAD the page).
+
+-Amit
+
+
+* Amit Chakrabarti (ac@cs.dartmouth.edu) [101014 00:04]:
+> Hi all:  I have put a bare-bones version of HW 4 online, on the course
+> website.  I will add some details and clarifications (on what to turn
+> in) for these problems, and some minor details may change.  I will email
+> again when that's ready.  
+> 
+> But you can certainly start thinking about the homework. Rest assured,
+> no drastic changes will occur.
+> 
+> -Amit
+
+</pre></td></tr><tr class=evenrow><td><pre>
+Date: Sun, 17 Oct 2010 18:54:49 -0400
+From: Amit Chakrabarti <ac@cs.dartmouth.edu>
+To: CS106 Entire Class <cs106-F10@cs.dartmouth.edu>
+Subject: HW3 solutions
+Content-Length: 123
+Lines: 4
+
+Official solutions for HW3 are available in the CS 106 outbox (near
+Sudikoff main entrance). Please pick up a copy.
+
+-Amit
+
+</pre></td></tr><tr class=oddrow><td><pre>
+Date: Mon, 18 Oct 2010 17:11:33 -0400
+From: Amit Chakrabarti <ac@cs.dartmouth.edu>
+To: CS106 Entire Class <cs106-F10@cs.dartmouth.edu>
+Subject: HW4 problem 17 clarification added...
+Content-Length: 92
+Lines: 5
+
+...as indicated in class today.
+
+Please reload the homework from the course website.
+
+-Amit
+
+</pre></td></tr><tr class=evenrow><td><pre>
+Date: Wed, 20 Oct 2010 15:44:58 -0400
+From: Amit Chakrabarti <ac@cs.dartmouth.edu>
+To: CS106 Entire Class <cs106-F10@cs.dartmouth.edu>
+Subject: Important announcement about the CS 106 Midterm
+Content-Length: 1109
+Lines: 27
+
+Hi, all:
+
+The CS 106 midterm will be held in class, starting at 
+
+	1:00pm on Thu Oct 28 (i.e., the X-hour).
+
+The exam will be designed to be finishable within the X-hour, but I
+don't want it to be all about speed-solving, so the submission deadline
+will be 3:00pm on the same day. This will be a written exam; you won't
+need to use a computer (and in fact, you are not allowed to).
+
+The honor code principle applies to this exam as follows. The exam is
+closed-book and closed-notes, EXCEPT that you are allowed a "cheat
+sheet". This should consist of a single sheet of LETTER PAPER.  You can
+write (or print, using a printer) whatever you want on both sides of the
+sheet. Preparing this cheat sheet should be done entirely on your own,
+and you are not allowed to share any portion of your cheat sheet with
+others.
+
+The syllabus for the exam consists of Lectures 1 through 19 of the textbook.
+
+Please contact me ASAP if you have any questions. Thanks,
+
+-Amit
+
+PS: This info is also available at http://www.cs.dartmouth.edu/~ac/Teach/CS106-Fall10/mid.html
+and linked from the course website (under "Workload").
+
+</pre></td></tr><tr class=oddrow><td><pre>
+Date: Thu, 21 Oct 2010 19:59:34 -0400
+From: Hao.Luo@Dartmouth.edu
+To: CS106 Entire Class <cs106-F10@cs.dartmouth.edu>
+Subject: Office hour on next Monday
+Content-Length: 200
+Lines: 9
+
+Hello, all,
+
+Because Amit will not be in school on Monday, I will have an office  
+hour on Monday, from 4 pm to 5 pm, at Sudikoff 114. You are all  
+welcome, if you have any questions.
+
+Regards,
+
+Hao
+
+</pre></td></tr><tr class=evenrow><td><pre>
+Date: Thu, 21 Oct 2010 23:27:56 -0400
+From: Amit Chakrabarti <ac@cs.dartmouth.edu>
+To: CS106 Entire Class <cs106-F10@cs.dartmouth.edu>
+Subject: CS 106 HW 5 is out
+Content-Length: 100
+Lines: 5
+
+Thanks for your patience! HW5 is on the website. 
+
+It's shorter than usual, as you will see.
+
+-Amit
+
+</pre></td></tr><tr class=oddrow><td><pre>
+From: Andrew Lyons <lyonsam@gmail.com>
+Date: Sat, 23 Oct 2010 17:42:27 -0400
+Subject: Online talk on condition number of random and randomly perturbed matrices
+To: cs106-F10@cs.dartmouth.edu
+Content-Length: 110
+Lines: 6
+
+http://video.ias.edu/csdm/vu
+
+-- 
+------------------------------------------
+Lyons, Andrew Myers
+412.951.0816
+
+</pre></td></tr><tr class=evenrow><td><pre>
+Date: Tue, 26 Oct 2010 10:58:06 -0400
+From: Hao.Luo@Dartmouth.edu
+To: CS106 Entire Class <cs106-F10@cs.dartmouth.edu>
+Subject: HW 4 and sample solutions
+Content-Length: 180
+Lines: 9
+
+Hi, everyone,
+
+The graded homework 4 is now in your mailbox. And there is also a  
+sample solution with it. If you have any question about it, please let  
+me know.
+
+Regards,
+
+Hao
+
+</pre></td></tr><tr class=oddrow><td><pre>
+Date: Thu, 28 Oct 2010 15:48:36 -0400
+From: Amit Chakrabarti <ac@cs.dartmouth.edu>
+To: CS106 Entire Class <cs106-F10@cs.dartmouth.edu>
+Subject: Solutions to Midterm are in the CS 106 outbox
+Content-Length: 50
+Lines: 3
+
+Please pick up your copy of the solutions.
+
+-Amit
+
+</pre></td></tr><tr class=evenrow><td><pre>
+Date: Fri, 29 Oct 2010 21:43:30 -0400
+From: Amit Chakrabarti <ac@cs.dartmouth.edu>
+To: CS106 Entire Class <cs106-F10@cs.dartmouth.edu>
+Subject: References, for further reading
+Content-Length: 323
+Lines: 8
+
+Hi all:  As promised, I have added references (one for conditioning of
+least squares, one on smoothed analysis of Gaussian elimination) to the
+course website. It's at the bottom.
+
+Also, I will be posting HW6 tonight, and it will be due next _Friday_,
+rather than Wednesday. (So you still have a week to work on it.)
+
+-Amit
+
+
+</pre></td></tr></table></body></html>
+r

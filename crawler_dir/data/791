@@ -1,0 +1,21 @@
+http://www.cs.dartmouth.edu/~wbc/pipes/pipes.htm
+3
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<TITLE> The Bagpipe Page!</TITLE>
+<H1> Bagpipes </H1>
+
+<! IMG SRC = "wayne-2S.jpg" >
+
+<ul>
+<li>I used to play the 
+<A HREF="wayne-2.jpg">uilleann pipes.</A>
+
+
+<li>Here I am, playing the 
+<A HREF="w-1.jpg">Northumbrian Smallpipes</a>
+
+<li>I don't play the 
+<A HREF="Mun.au"><I>Spanish pipes</I></A>
+
+<li><A HREF="../index.html">My Home Page</A>
+</ul>

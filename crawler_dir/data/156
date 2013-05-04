@@ -1,0 +1,219 @@
+http://www.cs.dartmouth.edu/~wkerr
+3
+<html>
+<head>
+<title> William B. Kerr @ Dartmouth College </title>
+</head>
+<body bgcolor="#371700" text="#FFFFFF" link="#FEB72E" vlink="#FEB72E" alink="B7B5F7">
+<center>
+<table cellpadding=10>
+  <td width=620 height=427 valign="top" background="images/brandonleaf.jpg">
+  <font color="#FFFFFF" size="4"><b>
+  William Brandon Kerr
+  </b></font><br>
+  <font color="#FEB72E" size="2">
+  Computer Graphics Research
+  </font><br><br>
+<b>
+
+<font color="#FEB72E">
+Email:<br>
+</font>
+wkerr</b>
+<font color="#DDEEFF">
+<i>at</i>
+</font>
+<b>cs</b>
+<font color="#DDEEFF">
+<i>dot</i>
+</font>
+<b>dartmouth</b>
+<font color="#DDEEFF">
+<i>dot</i>
+</font>
+<b>edu <br>
+<font color="#FEB72E">
+Mailing Address:<br>
+</font>
+Dartmouth College<br>
+Sudikoff Lab: HB 6211<br>
+Hanover, NH 03755<br>
+<font color="#FEB72E">
+Phone:<br>
+</font>
+(603)646-8719<br>
+<font color="#FEB72E">
+Office:<br>
+</font>
+Sudikoff 154 <br>
+<font color="#FEB72E">
+Lab:<br>
+</font>
+Sudikoff 143 <br>
+<a href="kerr_cv.pdf">CV</a>
+<!--font color="#FEB72E">
+Lab Hours: <br>
+</font>
+Currently not teaching<br>
+<font color="#FEB72E">
+Office Hours: <br>
+</font>
+Stop by <br>
+<font color="#DDEEFF">
+-or- <br>
+</font>
+Email for a specific time <br-->
+<br>
+<br>
+  </td>
+  </table>
+  <br>
+  <table cellpadding=0>
+  <tr>
+  <td  width=620 height=30 valign="top" colspan=3>
+<font color="#FEB72E" size="4">
+<b>Publications<br>
+</font>
+  </td>
+  </tr>
+  <tr>
+  <td  width=620 height=30 valign="top" colspan=3>
+<font color="#FFFFFF" size="4">
+Journal Articles<br>
+</font>
+  </td>
+  </tr>
+  <tr>
+  <td  width=620 height=30 valign="top" colspan=3>
+<font color="#FFFFFF" size="4">
+SIGGRAPH (TOG)<br>
+</font>
+  </td>
+  </tr>
+  <tr>
+  <td  width=140 height=105 valign="top" background = "images/meshflow10_tn.jpg"></td>
+  <td  width=10></td>
+  <td  width=500 height=105 valign="center">
+  <b><font color="#99CCFF">MeshFlow: Interactive Visualization of Mesh Construction Sequences</font></b><br>
+  Jonathan D. Denning, William B. Kerr, Fabio Pellacini<br>
+  SIGGRAPH 2011, ACM Transactions on Graphics 2011<br>
+  <a href="papers/meshflow10.pdf">paper</a> | 
+  <a href="papers/meshflow10_video.mov">video</a> | 
+  <a href="papers/meshflow10_sourcebin.zip">source and bin</a> | 
+  <a href="papers/meshflow10_studydata.zip">study data</a> <br>
+  </td>
+  </tr>
+  <tr><td height=10></td><td></td><td></td></tr>
+  <tr>
+  <td  width=140 height=128 valign="top" background = "images/matstudy10_tn.jpg"></td>
+  <td  width=10></td>
+  <td  width=500 height=128 valign="center">
+  <b><font color="#99CCFF">Toward Evaluating Material Design Interface Paradigms for Novice Users</font></b><br>
+  William B. Kerr, Fabio Pellacini<br>
+  SIGGRAPH 2010, ACM Transactions on Graphics 2010<br>
+  <a href="papers/matstudy10.pdf">paper</a> | 
+  <a href="papers/matstudy10_video.mov">results video</a> | 
+  <a href="papers/matstudy10_video2.mov">interface video</a> | 
+  <a href="papers/matstudy10_questionnaires.pdf">questionnaires</a> | 
+  <a href="papers/matstudy10_workflow.pdf">data</a> <br>
+  <a href="papers/matstudy10_wedges.pdf">peceptual parameter scaling figures</a>
+  </td>
+  </tr>
+  <tr><td height=10></td><td></td><td></td></tr>
+  <tr>
+  <td  width=160 height=160 valign="top" background = "images/lightstudy09_tn.jpg"></td>
+  <td  width=10></td>
+  <td  width=500 height=160 valign="center">
+  <b><font color="#99CCFF">Toward Evaluating Lighting Design Interface Paradigms for Novice Users</font></b><br>
+  William B. Kerr, Fabio Pellacini<br>
+  SIGGRAPH 2009, ACM Transactions on Graphics 2009 <br>
+  <a href="papers/lightstudy09.pdf">paper</a> | 
+  <a href="papers/lightstudy09_vid1.mov">results video</a> | 
+  <a href="papers/lightstudy09_vid2.mov">interface video</a> | 
+  <a href="papers/lightstudy09_questionnaires.pdf">questionnaires</a> | 
+  <a href="papers/lightstudy09_subjects_workflow.pdf">data</a>
+  </td>
+  </tr>
+  <tr><td height=10></td><td></td><td></td></tr>
+  <tr>
+  <td  width=620 height=30 valign="top" colspan=3>
+<font color="#FFFFFF" size="4">
+EGSR (CGF)<br>
+</font>
+  </td>
+  </tr>
+  <tr>
+  <td  width=140 height=128 valign="top" background = "images/bendylight10_tn.jpg"></td>
+  <td  width=10></td>
+  <td  width=500 height=128 valign="center">
+  <b><font color="#99CCFF">BendyLights: Artistic Control of Direct Illumination by Curving Light Rays</font></b><br>
+  William B. Kerr, Fabio Pellacini, Jon Denning<br>
+  EGSR 2010, Computer Graphics Forum 2010<br>
+  <a href="papers/bendylight10.pdf">paper</a> | 
+  <a href="papers/bendylight_video.mov">video</a> | 
+  <a href="papers/bendylight_study.pdf">study data</a><br> 
+  (study data not included in EGSR publication)</a>
+  </td>
+  </tr>
+  <tr><td height=10></td><td></td><td></td></tr>
+  
+  <tr><td height=20></td><td></td><td></td></tr>
+  
+  <tr>
+  <td  width=620 height=30 valign="top" colspan=3>
+<font color="#FFFFFF" size="4">
+Conference Proceedings<br>
+</font>
+  </td>
+  </tr>
+  <tr>
+  <td  width=160 height=116 valign="top" background = "images/metric06_tn.jpg"></td>
+  <td  width=10></td>
+  <td  width=500 height=116 valign="center">
+  <b><font color="#99CCFF">A Methodology and Metric for Quantitative Analysis and Parameter Optimization of Unsupervised, Multi-region Image Segmentation</font></b><br>
+  William B. Kerr, Lucia Dettori, Lindsay Semler<br>
+  IASTED SIP 2006<br>
+  <a href="papers/segmentation_metric06.pdf">paper</a>
+  </td>
+  </tr>
+  <tr><td height=10></td><td></td><td></td></tr>
+  <tr>
+  <td  width=160 height=79 valign="top" background = "images/ridgelet06_tn.jpg"></td>
+  <td  width=10></td>
+  <td  width=500 height=79 valign="center">
+  <b><font color="#99CCFF">Ridgelet-based Texture Classification of Tissues in Computed Tomography</font></b><br>
+  Lindsay Semler, Lucia Dettori, William B. Kerr<br>
+  IASTED SIP 2006<br>
+  <a href="papers/ridgelet_classification06.pdf">paper</a>
+  </td>
+  </tr>
+  <tr><td height=10></td><td></td><td></td></tr>
+  
+  <tr><td height=20></td><td></td><td></td></tr>
+  
+  <tr>
+  <td  width=620 height=30 valign="top" colspan=3>
+<font color="#FFFFFF" size="4">
+Technical Reports<br>
+</font>
+  </td>
+  </tr>
+  <tr>
+  <td  width=160 height=80 valign="top" background = "images/relight07_tn.jpg"></td>
+  <td  width=10></td>
+  <td  width=500 height=80 valign="center">
+  <b><font color="#99CCFF">Light-Based Sample Reduction Methods for Interactive Relighting of Scenes with Minute Geometric Scale </font></b><br>
+  William B. Kerr, Fabio Pellacini<br>
+  <a href="papers/relight07.pdf">paper</a>
+  </td>
+  </tr>
+  
+  <tr><td height=20></td><td></td><td></td></tr>
+  
+</table>
+</body>
+</html>
+
+
+
+	i

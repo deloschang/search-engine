@@ -1,0 +1,143 @@
+http://www.cs.dartmouth.edu/calendar.php
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>Dartmouth Computer Science</title>
+	<style type="text/css" media="all">@import url(dartmouthcs.css);</style>		
+	
+<body id="home">
+
+
+
+<div id="header">
+
+	<h1>Dartmouth Computer Science</h1>
+		
+<!-- Google CSE Search Box Begins  -->
+<form action="http://www.google.com/cse" id="searchbox_001920968608620340798:tkrx06hp9rs">
+  <input type="hidden" name="cx" value="001920968608620340798:tkrx06hp9rs" />
+  <input type="text" name="q" size="25" />
+  <input type="submit" name="sa" value="Search" />
+</form>
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=searchbox_001920968608620340798%3Atkrx06hp9rs"></script>
+<!-- Google CSE Search Box Ends -->
+
+<!--
+	<form action="http://search.dartmouth.edu/query.html" method="get" name="seek">
+
+	<div>
+	<input type="hidden" name="qp" value="+url:http://www.cs.dartmouth.edu/"  />
+	<input type="hidden" name="qs" value="" /><input type="hidden"  name="qc" value="" />
+	<input type="hidden" name="ws" value="0" /><input type="hidden" name="qm" value="0" />
+	<input type="hidden" name="st" value="1" /><input type="hidden"  name="nh" value="10" />
+	<input type="hidden" name="lk" value="1" /><input type="hidden" name="rf" value="0" />
+	<input type="hidden" name="oq" value="" /><input type="hidden"  name="rq" value="0" />
+	<input type="text" id="search_dept" name="qt" value="" size="10"  maxlength="100" />&nbsp;
+	<input 	class="button" type="submit"  name="search" value="Search" />  
+	</div>
+
+	</form>
+-->	
+	
+	
+<!--		
+	<form method="get" action="http://www.htmldog.com/search/">
+		<div>
+		<input type="hidden" name="sp-a" value="sp1002e60e" />
+		<input type="hidden" name="sp-f" value="UTF-8" />
+		<label for="morombe">Search: </label>
+		<input type="text" name="sp-q" id="morombe" />
+		<input type="submit" value="Search" class="button" />
+		</div>
+	</form>
+-->	
+	
+</div>
+
+
+
+<div id="primaryNav">
+
+<ul>
+	<li>General
+		<ul>
+		<li> <a href="http://www.cs.dartmouth.edu/index.php">Home</a></li>
+		<li> <a href="http://www.cs.dartmouth.edu/about.php">About</a></li>
+		<!--li> <a href="http://www.cs.dartmouth.edu/calendar.php">Calendar</a></li-->
+		<li> <a href="http://www.cs.dartmouth.edu/news.php">News</a></li>
+		<li> <a href="http://www.cs.dartmouth.edu/people.php">People</a></li>
+		<li> <a href="http://www.cs.dartmouth.edu/jobs.php">Jobs</a></li>
+		<li> <a href="http://www.cs.dartmouth.edu/contact.php">Contact</a></li>
+		<li> <a href="http://www.cs.dartmouth.edu/internal/">Internal</a>
+		</ul>	
+	</li>
+
+	<li>Research
+	<ul>
+		<li><a href="http://www.cs.dartmouth.edu/research.php">Labs and Projects</a></li>
+		<li><a href="http://www.cs.dartmouth.edu/seminar.php">Colloquium</a></li> 
+		<li><a href="http://www.cs.dartmouth.edu/books.php">Books by Faculty</a></li>
+		<li><a href="http://www.cs.dartmouth.edu/reports">Technical Reports</a></li>
+	</ul>
+	</li>
+	
+	<li>Education
+	<ul>
+		<li><a href="http://www.cs.dartmouth.edu/ug.php">Undergraduate Programs</a></li>
+		<li><a href="http://www.cs.dartmouth.edu/gr.php">Graduate Programs</a></li>
+		<li><a href="http://www.cs.dartmouth.edu/ug_courses.php">Undergraduate Courses</a></li>
+		<li><a href="http://www.cs.dartmouth.edu/gr_courses.php">Graduate Courses</a></li> 
+		<li><a href="http://www.cs.dartmouth.edu/~robotics/summercamp">Summer Robotics Camp</a></li>	
+
+	</ul></li>
+
+	<li>Admissions
+		<ul>
+		<li> <a href="http://www.dartmouth.edu/apply">Undergraduate</a></li>
+		<li> <a href="http://www.cs.dartmouth.edu/admit_ms.php">M.S. Admissions</a></li>
+		<li> <a href="http://www.cs.dartmouth.edu/admit_phd.php">Ph.D. Admissions</a></li>
+		<li> <a href="http://www.cs.dartmouth.edu/~mdphd">M.D.-Ph.D. in CompBio</a></li>
+		<li> <a href="http://www.cs.dartmouth.edu/gr_life.php">Graduate Student Life</a></li>
+		</ul>
+	<ul>
+
+	</ul></li>
+	
+</ul>
+
+</div>
+	
+
+
+<div id="section">
+	
+	<div id="content">
+
+<h1>Calendar</h1>			
+<p>
+
+<iframe src="http://www.google.com/calendar/embed?showTitle=0&amp;showCalendars=0&amp;mode=AGENDA&amp;height=600&amp;wkst=2&amp;hl=en&amp;bgcolor=%23FFFFFF&amp;src=dartmouthcs%40gmail.com&amp;color=%23A32929&amp;ctz=America%2FNew_York"
+	style=" border-width:0 " width="800" height="600" frameborder="0"
+	scrolling="no"></iframe>
+<p>
+
+<a href =
+   "http://www.google.com/calendar/embed?src=dartmouthcs%40gmail.com&ctz=America/New_York">Non-embedded Calendar</a>
+<p>
+	
+	<div id="goToTop" class="sNav"><p><a href="#content">^ Top</a></p></div>
+
+</div>
+
+
+
+
+
+<div id="footer"><p>&copy; <a href="http://www.cs.dartmouth.edu/">Dartmouth College Computer Science Department</a> 2009 </p></div>
+
+
+</body>
+
+</html>

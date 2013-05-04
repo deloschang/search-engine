@@ -1,0 +1,125 @@
+http://www.cs.dartmouth.edu/~wbc/cederqvist-1.11.10.html/cvs.html
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html401/loose.dtd">
+<html>
+<!-- Created on December, 4 2003 by texi2html 1.67 -->
+<!--
+Written by: Lionel Cons <Lionel.Cons@cern.ch> (original author)
+            Karl Berry  <karl@freefriends.org>
+            Olaf Bachmann <obachman@mathematik.uni-kl.de>
+            and many others.
+Maintained by: Many creative people <dev@texi2html.cvshome.org>
+Send bugs and suggestions to <users@texi2html.cvshome.org>
+
+-->
+<head>
+<title>CVS--Concurrent Versions System v1.11.10: </title>
+
+<meta name="description" content="CVS--Concurrent Versions System v1.11.10: ">
+<meta name="keywords" content="CVS--Concurrent Versions System v1.11.10: ">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="texi2html 1.67">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+pre.display {font-family: serif}
+pre.format {font-family: serif}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+pre.smalldisplay {font-family: serif; font-size: smaller}
+pre.smallexample {font-size: smaller}
+pre.smallformat {font-family: serif; font-size: smaller}
+pre.smalllisp {font-size: smaller}
+ul.toc {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en" bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#800080" alink="#FF0000">
+
+<a name="NOD1"></a>
+<a name="SEC_Top"></a>
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#SEC_Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="cvs_toc.html#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="cvs_24.html#SEC188" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="cvs_abt.html#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<h1 class="settitle">CVS--Concurrent Versions System v1.11.10
+</h1>
+
+<p>This info manual describes how to use and administer
+<small>CVS</small> version 1.11.10.
+
+</p>
+<table class="menu" border="0" cellspacing="0">
+<tr><td align="left" valign="top"><a href="cvs_1.html#SEC1">1. Overview</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">                    An introduction to CVS
+</td></tr>
+<tr><td align="left" valign="top"><a href="cvs_2.html#SEC9">2. The Repository</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">                  Where all your sources are stored
+</td></tr>
+<tr><td align="left" valign="top"><a href="cvs_3.html#SEC38">3. Starting a project with CVS</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top"></td></tr>
+<tr><td align="left" valign="top"><a href="cvs_4.html#SEC44">4. Revisions</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">                   Numeric and symbolic names for revisions
+</td></tr>
+<tr><td align="left" valign="top"><a href="cvs_5.html#SEC54">5. Branching and merging</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">       Diverging/rejoining branches of development
+</td></tr>
+<tr><td align="left" valign="top"><a href="cvs_6.html#SEC65">6. Recursive behavior</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">          CVS descends directories
+</td></tr>
+<tr><td align="left" valign="top"><a href="cvs_7.html#SEC66">7. Adding, removing, and renaming files and directories</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">         Adding/removing/renaming files/directories
+</td></tr>
+<tr><td align="left" valign="top"><a href="cvs_8.html#SEC75">8. History browsing</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">            Viewing the history of files in various ways
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+CVS and the Real World.
+-----------------------
+</pre></th></tr><tr><td align="left" valign="top"><a href="cvs_9.html#SEC80">9. Handling binary files</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">                CVS can handle binary files
+</td></tr>
+<tr><td align="left" valign="top"><a href="cvs_10.html#SEC83">10. Multiple developers</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">         How CVS helps a group of developers
+</td></tr>
+<tr><td align="left" valign="top"><a href="cvs_11.html#SEC96">11. Revision management</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">         Policy questions for revision management
+</td></tr>
+<tr><td align="left" valign="top"><a href="cvs_12.html#SEC98">12. Keyword substitution</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">        CVS can include the revision inside the file
+</td></tr>
+<tr><td align="left" valign="top"><a href="cvs_13.html#SEC104">13. Tracking third-party sources</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top"></td></tr>
+<tr><td align="left" valign="top"><a href="cvs_14.html#SEC111">14. How your build system interacts with CVS</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">                      Issues related to CVS and builds
+</td></tr>
+<tr><td align="left" valign="top"><a href="cvs_15.html#SEC112">15. Special Files</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">		Devices, links and other non-regular files
+</td></tr>
+<tr><th colspan="3" align="left" valign="top"><pre class="menu-comment">
+References.
+-----------
+</pre></th></tr><tr><td align="left" valign="top"><a href="cvs_16.html#SEC113">A. Guide to CVS commands</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">                CVS commands share some things
+</td></tr>
+<tr><td align="left" valign="top"><a href="cvs_17.html#SEC155">B. Quick reference to CVS commands</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top"></td></tr>
+<tr><td align="left" valign="top"><a href="cvs_18.html#SEC156">C. Reference manual for Administrative files</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">        Reference manual for the Administrative files
+</td></tr>
+<tr><td align="left" valign="top"><a href="cvs_19.html#SEC180">D. All environment variables which affect CVS</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top"></td></tr>
+<tr><td align="left" valign="top"><a href="cvs_20.html#SEC181">E. Compatibility between CVS Versions</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">               Upgrading CVS versions
+</td></tr>
+<tr><td align="left" valign="top"><a href="cvs_21.html#SEC182">F. Troubleshooting</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">             Some tips when nothing works
+</td></tr>
+<tr><td align="left" valign="top"><a href="cvs_22.html#SEC186">G. Credits</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">                     Some of the contributors to this manual
+</td></tr>
+<tr><td align="left" valign="top"><a href="cvs_23.html#SEC187">H. Dealing with bugs in CVS or this manual</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top"></td></tr>
+<tr><td align="left" valign="top"><a href="cvs_24.html#SEC188">Index</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top"></td></tr>
+</table>
+
+<hr size="1">
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#SEC_Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="cvs_toc.html#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="cvs_24.html#SEC188" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="cvs_abt.html#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<p>
+ <font size="-1">
+  This document was generated by <em>Derek Robert Price</em> on <em>December, 4 2003</em> using <a href="http://texi2html.cvshome.org/"><em>texi2html 1.67</em></a>.
+ </font>
+ <br>
+
+</p>
+</body>
+</html>

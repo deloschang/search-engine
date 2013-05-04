@@ -1,0 +1,162 @@
+http://www.cs.dartmouth.edu/%7Esws/oasis
+2
+<html> 
+<head> 
+<title>The new expense forms</title> 
+</head> 
+<body> 
+<table width=100%>
+<tr>
+<td align=center>
+<IMG ALIGN="center" SRC="http://www.cs.dartmouth.edu/images/Dtree.gif" ALT="">
+</td>
+<td align=left>
+<b>
+<big><big>
+ 
+The new expense forms
+</big></big><br>
+
+</b>
+<td align=right>
+<i> www.cs.dartmouth.edu/~sws/oasis/index.shtml<br>
+
+Last modified: 08/07/08 10:58:23 AM
+</i>
+</td>
+</tr>
+</table>
+<hr>
+
+<p>
+
+<p>
+          
+ 
+<p>
+When Dartmouth switched to the new forms, I was thrown right 
+into the mess: since I was Dartmouth liaison to a number of external colleagues who were in the process of filing expenses, and were very confused.
+<p>
+Here's what I've worked out.   (And a big shout-out to Tracy Flynn-Scott,
+Mary Wood, and Tammy Chapin for their help here.  Especially Tracy, since I'm not even her department!)
+<p>
+
+<hr>
+<h2>Accounts and Forms</h2>
+<hr>
+<p>
+As before, there are "Travel Forms" (for travel) and "Request for
+Payment" forms (for other types of expenses).  However, under the new system,
+there are <i>two sets</i> of these:
+<ul>
+<li> One for "grant" accounts (e.g., NSF).   These live under the 
+tuber-invoking acronym "PTAEO."
+<li> One for non-grant accounts (e.g., IRR).  These live under the
+name "General Ledger."
+</ul>
+If you're not sure, ask your local Grant Wizard.  (E.g., industry
+sponsorship can be a bit ambiguous.)
+<p>
+The different sets live in different places on the Dartmouth web site.
+<p>
+I've collected the forms in one place and tried to set up the print area
+and pagination to be sane.  Enjoy:
+<ul>
+<li> <a href="grant-te2.xls"><b>grant-te2.xls</b></a>
+<li> <a href="grant-rfp.xls"><b>grant-rfp.xls</b></a>
+<li> <a href="nongrant-te2.xls"><b>nongrant-te2.xls</b></a>
+<li> <a href="nongrant-rfp.xls"><b>nongrant-rfp.xls</b></a>
+</ul>
+(I revised the TE forms in August 2008 to reflect updated mileage rates.)
+<p>
+<hr>
+<h2>Zillion-digit "Chart Strings"</h2>
+<hr>
+<p>
+<a href="https://oracle-dev.dartmouth.edu/dart/groucho/dartof.dc_account_lookup.lookup"><b>Here</b></a> is a Dartmouth page that
+will convert the old account codes into very long "chart strings."   
+(This might require authentication, and thus not be accessible to non-Dartmouth folks.)
+<p>
+<hr>
+<h2>Travel Forms</h2>
+<hr>
+<p>
+These are the most puzzling.  (As a colleague from CMU pointed out,
+they go "both forwards and backwards.")
+<p>
+<ul>
+<li> Go to the "Summary" sheet.  
+<ul>
+<li> Fill out your name and such on the top.  
+<li> For the "T" number (on the top right), enter your initials and the date of the first expense.  (E.g., "SWS080407.")
+<li> Go down to the bottom, and fill out your name, title, date in the "approval" part.
+<li> If you feel ambitious, you might go down to the first line
+of the big chart and enter the  zillion-character account code, 
+to indicate to your Grant Wizard where you want the charges to go.
+</ul>
+<li> Then, go to the first "Supplemental Worksheet."  
+<ul>
+<li> Fill out your travel costs, as with the old forms.   
+<li> BUT....  if you booked things like airfare or Dartmouth Coach through 
+College Travel, don't enter it on this page!  Even though it tells you to enter "airfare" here.
+<li> If your travel spills to more than one week, then go to additional "Supplemental Worksheets."
+</ul>
+<li> Then, go back to the "Details" page.
+<ul>
+<li> If you have direct-billed expenses (such as airfare or bus via College Travel), enter them on the bottom section here.
+<li> If you need to add annotations to explain things on your supplemental worksheet (e.g., "Dinner on Day 4 covered all the other Dartmouth personnel too, but no alcohol"), add them here as well.
+</ul>
+<li> Then print it out and sign it.  (You should print out all the pages
+on which you entered something.   I've tried to set up the pages and print
+area appropriately; select "Print" from the drop-down menu, "Entire Workbook,"
+and then whatever page range, usually 1 to 3.)
+</ul>
+<p>
+If you have foreign travel that requires currency conversion...  good luck.   (I haven't had to deal with that yet.)
+<p>
+<hr>
+<h2>But my external colleague sent in an old travel form!</h2>
+<hr>
+<p>
+Try filling out the new form, and for "signature" 
+add the note "see old-style travel form, attached."   That's worked for me.
+<p>
+<hr>
+<h2>"Request for Payment" Forms</h2>
+<hr>
+<p>
+These are simpler.    For the "RS" number, use your initials and date
+of first purchase (e.g,, "SWS080408.")
+<p>
+
+ 
+<p>
+
+<hr>
+<table width=100%>
+<tr>
+<td align=center>
+<IMG ALIGN="center" SRC="http://www.cs.dartmouth.edu/icons/back.gif" ALT="">
+</td>
+<td align=left>
+<b>
+ 
+<a href="/~sws/">
+Back home</a> 
+</b>
+</td>
+<td align=right>
+<i>Maintained by 
+<a href="http://www.cs.dartmouth.edu/~sws/">Sean Smith</a>,
+<a href="mailto:sws@cs.dartmouth.edu">sws@cs.dartmouth.edu</a>
+</i>
+</td>
+</tr>
+</table>
+</font> 
+</body> 
+</html> 
+ 
+ 
+ 
+ 

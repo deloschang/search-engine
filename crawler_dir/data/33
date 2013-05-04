@@ -1,0 +1,281 @@
+http://www.cs.dartmouth.edu/~cs68/syllabus.html
+3
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>CS 68 S11 Syllabus</title>
+  </head>
+
+  <body>
+    <h1>CS 68 S11 Syllabus</h1>
+
+
+
+
+    <hr>
+Detailed syllabus (subject to change):
+<ul> 
+<li> Monday, March 28
+<ul> 
+<li> Programming languages - History and Overview (M 1)
+<li> Skim <em>Programming Languages - the First 25 Years</em> 
+     linked to Blackboard</li>
+</ul> <p>  
+
+<li> Tuesday, March 29 (optional x-hour)
+<ul> 
+<li> Haskell (for those who have not taken CS 8).<br>
+     I will assume that you understand the material in the 
+     first 3 lectures and the short 
+     assignments SA-0, SA-1, and SA-2
+     in CS 8.  See <a href="http://www.cs.dartmouth.edu/~cs8">
+     the CS 8 course page</a>. Eventually you should look at lectures
+     4 through 7 (except the graphics and drawing) and do SA-4.
+
+</ul> <p>  
+
+<li> Wednesday, March 30
+<ul> 
+<li> Computability (M 2)
+<li> Begin LISP (M 3)
+<li> Examples: <a href="Examples/examples.lisp">examples.lisp</a>
+              <a href="Examples/hof.lisp">hof.lisp</a>
+<li> To download Dr. Scheme (now DrRacket): 
+     <a href="http://racket-lang.org/download/">Download Racket</a>
+</ul> <p>  
+
+<li> Friday, April 1
+<ul> 
+<li> LISP (<a href="http://www-formal.stanford.edu/jmc/recursive/recursive.html">
+     Recursive Functions of Symbolic Expressions and their Computation by Machine</a>).
+<li> Examples: <a href="Examples/hof.lisp">hof.lisp</a>,
+               <a href="Examples/inter.lisp">inter.lisp</a>,
+			   <a href="Examples/examples.env">examples.env</a>
+<li> Compilers, interpreters, and Virtual Machines (M 4.1)
+</ul> <p>  
+
+<li> Monday, April 4
+<ul> 
+<li> Lambda Calculus (M 4.2)
+<li> <a href="Handouts/Lambda.pdf">Lambda calculus cheat sheet</a>
+</ul> <p>  
+
+<li> Tuesday, April 5 (optional x-hour)
+<ul> 
+<li> More Haskell (for those who have not taken CS 8).<br>
+     We will discuss material in the List Processing, Data (representing 
+	 shapes), and Polymorphism lectures.  
+     Eventually you should look at the lectures on List Functions and Trees 
+	 and do SA-6.
+</ul><p>
+
+<li> Wednesday, April 6
+<ul> 
+<li> Lambda Calculus, cont.
+<li> <a href="Handouts/Lambda2.pdf">Lambda calculus cheat sheet (cont)</a>
+<li> Example: <a href="Examples/fix.hs">The "fix" function in Haskell</a>
+<li> Functional and imperative languages (M 4.4)
+<li> Read: "Can Programming Languages be Liberated from the Von Neuman Style?" (Backus) linked to Blackboard.
+</ul> <p>  
+
+<li> Friday, April 8
+<ul> 
+<li>The Algol family, ML, and Haskell (M 5)
+<li>Read "Report on the Algorithmic Language Algol 60" linked to Blackboard.
+<li>Read "Go to Statement Considered Harmful" (Dijkstra) linked to Blackboard.
+</ul> <p> 
+ 
+<li> Monday, April 11
+<ul> 
+<li> Data Types (M 6.1, 6.2, and 6.5)
+</ul> <p>  
+
+<li> Tuesday, April 12 (optional x-hour)
+<ul> 
+<li> More Haskell (for those who have not taken CS 8).<br>
+	 Parsing (lectures Intro to parsing, Parsing sentences, parsing 
+	 expressions).  Do SA 9.
+</ul><p>
+
+<li> Wednesday, April 13
+<ul> 
+<li> Type checking and Inference (M 6.3-6.4)
+</ul> <p>  
+
+<li> Friday, April 15
+<ul>
+<li> Lexing and Parsing
+<li> Examples: <a href="Examples/LexArithP.hs">LexArithP.hs</a>,
+               <a href="Examples/LexArith.hs">LexArith.hs</a>,
+               <a href="Examples/ParseArithP.hs">ParseArithP.hs</a>,
+               <a href="Examples/ParseArith.hs">ParseArith.hs</a>,
+               <a href="Examples/Parser68.hs">Parser68.hs</a>,
+               <a href="Examples/PcfLexer.hs">PcfLexer.hs</a>,
+               <a href="Examples/ParsePCF.hs">ParserPCF.hs</a>,
+               <a href="Examples/PCFcode.zip">PCFcode.zip</a>
+<li> Handouts: <a href="Handouts/parserGuide.txt">parserGuide.txt</a>
+			   
+</ul> <p>  
+
+<li> Monday, April 18
+<ul> 
+<li> Semantics (M 4.3) - operational.
+<li> Examples: <a href="Examples/ArithSemantics.hs">ArithSemantics.hs</a>,
+               <a href="Examples/PCFSubstInterpreter.hs">PCFSubstInterpreter.hs</a>,
+               <a href="Examples/PCFEnvInterpreter.hs">PCFEnvInterpreter.hs</a>
+</ul> <p> 
+
+<li> Tuesday, April 19 (optional x-hour)
+<ul>
+<li> More Haskell (for those who have not taken CS 8).<br>
+     Monads.  Lectures "Intro to monads," "List, IO, and state monads."
+	 Do SA 12.
+<li> Handout: <a href="Handouts/HaskellCheatSheet.pdf">HaskellCheatSheet.pdf</a>
+</ul><p>
+
+ 
+<li> Wednesday, April 20
+<ul> 
+<li> Semantics continued - axiomatic
+<li> Type checking
+<li> Examples: <a href="Examples/TypeCheck.hs">TypeCheck.hs</a>,
+               <a href="Examples/ParseTypedPCF.hs">ParseTypedPCF.hs</a>,
+               <a href="Examples/PcfTypedLexer.hs">PcfTypedLexer.hs</a>,
+               <a href="Examples/TypedPCFcode.zip">TypedPCFcode.zip</a>
+<li> Readings: Assigning Meaning to Programs (Floyd), </br>
+     An Axiomatic Basis for Computer Programming (Hoare),</br> 
+	 Proof of a Program: Find (Hoare) </br>
+	 Proving Type Safety (Bruce)</br>
+	 on Blackboard
+</ul> <p>  
+
+<li> Friday, April 22
+<ul> 
+<li> Run-time Storage Management (M 7.1-7.2)
+</ul> <p>  
+
+<li> Monday, April 25
+<ul> 
+<li> Functions, Procedures, and Tail Recursion (M 7.3)
+<li> Supporting Higher-Order Functions (M 7.4-7.5)
+<li> Managing the Heap
+</ul> <p>  
+
+<li> Wednesday, April 27
+<ul> 
+<li> Haskell and Monads (<a href="http://research.microsoft.com/en-us/um/people/simonpj/papers/marktoberdorf/">Tackling the Awkward Squad</a>, pp. 1-16)
+<li> Examples: <a href="Examples/controlIO.hs">controlIO.hs</a>,
+               <a href="Examples/Stack.hs">Stack.hs</a>,
+               <a href="Examples/stacks.hs">stacks.hs</a>,
+               <a href="Examples/State.hs">State.hs</a>,
+               <a href="Examples/randomNumGen.hs">randomNumGen.hs</a>
+<li> You may want to review the Monad lectures linked to the
+<a href="http://www.cs.dartmouth.edu/~cs8">CS 8 web page</a>.
+</ul> <p>  
+
+<li> Friday, April 29 
+<ul> 
+<li> Finish State monad, StateT monad, Parser using StateT monad, IORef
+<li> Examples: <a href="Examples/randomNumGenMonad.hs">randomNumGenMonad.hs</a>,
+               <a href="Examples/turtleS.hs">turtleS.hs</a>,
+               <a href="Examples/StateT.hs">StateT.hs</a>,
+               <a href="Examples/ParserST.hs">ParserST.hs</a>,
+			   <a href="Examples/IORefExample.hs">IORefExample.hs</a>
+</ul> <p>  
+
+<li> Monday, May 2
+<ul> 
+<li> Control and Exceptions (M 8.1-8.2)
+</ul> <p>  
+
+<li> Wednesday, May 4
+<ul> 
+<li> Continuations and Evaluation Order (M 8.3-8.5)
+<li> Example: <a href="Examples/factCont.hs">factCont.hs</a>
+</ul> <p>  
+
+<li> Friday, May 6
+<ul> 
+<li> Data Abstraction (M 9.1-9.2)
+<li> Modules (M 9.3-9.5)
+<li> ML Modules 
+</ul> <p>  
+
+<li> Monday, May 9
+<ul>	    
+<li> Subtyping ("Understanding Subtypes," Chap. 5 from Bruce's book. 
+     On blackboard.)
+<li> Examples: <a href="Examples/TreeNode.java">TreeNode.java</a>,
+               <a href="Examples/SearchTreeNode.java">SearchTreeNode.java</a>,
+               <a href="Examples/BinarySearchTree.java">BinarySearchTree.java</a>,
+<li> <b>Midterm 7 pm</b>, 006 Kemeney</li>
+</ul> <p>  
+
+<li> Wednesday, May 11
+<ul> 
+<li> OOLs (M 10)
+</ul> <p>  
+
+<li> Friday, May 13
+<ul>	    
+<li> OOLs: Simula and Smalltalk (M 11)
+</ul> <p>  
+
+<li> Monday, May 16
+<ul>	    
+<li> C++ and Implementation (M 12)
+</ul> <p>  
+
+<li> Wednesday, May 18
+<ul>	    
+<li> Java and Typing Issues (M 13.1-13.4)
+</ul> <p>  
+
+<li> Friday, May 20
+<ul>	    
+<li> Java 5 Generics and Wild Cards (M 13.5)
+</ul> <p>  
+
+<li> Monday, May 23
+<ul>	    
+<li> Concurrency (M 14)
+</ul> <p>  
+
+<li> Wednesday, May 25
+<ul>	    
+<li> Java and Haskell Concurrency
+<li> Examples: <a href="Examples/BoundedBuffer.java">BoundedBuffer.java</a>,
+               <a href="Examples/BoundedBufferTest.java">BoundedBufferTest.java</a>,
+               <a href="Examples/Producer.java">Producer.java</a>,
+               <a href="Examples/Consumer.java">Consumer.java</a>,
+               <a href="Examples/concur.hs">concur.hs</a>
+<li> Readings: <a href="http://research.microsoft.com/en-us/um/people/simonpj/papers/marktoberdorf/">Tackling the Awkward Squad</a> (Chap. 4)
+</ul> <p>  
+
+<li> Friday, May 27
+<ul>
+<li> Concurrency - Channels, Software Transactional Memory
+<li> Readings: <a href="http://research.microsoft.com/en-us/um/people/simonpj/papers/stm/#beautiful">Beautiful Concurrency</a>
+<li> Examples: <a href="Examples/stm.hs">stm.hs</a>,
+               <a href="Examples/phil.hs">phil.hs</a>
+<li> Optional Reading: Communicating Sequenctial Processes (Hoare), linked to blackboard
+</ul> <p> 
+
+<li> Monday, May 30 - No class - Memorial Day
+<p>
+
+<li> Wednesday, June 1
+<ul>
+<li> Programming Language Design - Principles, Discuss Python
+<li> Readings: On the Design of Programming Languages (Wirth), linked to blackboard
+</ul> <p> 
+<!--
+
+-->
+
+</ul> 
+
+    <hr>
+
+  </body>
+</html>

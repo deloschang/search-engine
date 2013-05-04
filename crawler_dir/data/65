@@ -1,0 +1,323 @@
+http://www.cs.dartmouth.edu/gr_courses.php
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>Dartmouth Computer Science:  Graduate Courses</title>
+	<style type="text/css" media="all">@import url(dartmouthcs.css);</style>		
+	
+<body id="home">
+
+
+
+<div id="header">
+
+	<h1>Dartmouth Computer Science</h1>
+		
+<!-- Google CSE Search Box Begins  -->
+<form action="http://www.google.com/cse" id="searchbox_001920968608620340798:tkrx06hp9rs">
+  <input type="hidden" name="cx" value="001920968608620340798:tkrx06hp9rs" />
+  <input type="text" name="q" size="25" />
+  <input type="submit" name="sa" value="Search" />
+</form>
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=searchbox_001920968608620340798%3Atkrx06hp9rs"></script>
+<!-- Google CSE Search Box Ends -->
+
+<!--
+	<form action="http://search.dartmouth.edu/query.html" method="get" name="seek">
+
+	<div>
+	<input type="hidden" name="qp" value="+url:http://www.cs.dartmouth.edu/"  />
+	<input type="hidden" name="qs" value="" /><input type="hidden"  name="qc" value="" />
+	<input type="hidden" name="ws" value="0" /><input type="hidden" name="qm" value="0" />
+	<input type="hidden" name="st" value="1" /><input type="hidden"  name="nh" value="10" />
+	<input type="hidden" name="lk" value="1" /><input type="hidden" name="rf" value="0" />
+	<input type="hidden" name="oq" value="" /><input type="hidden"  name="rq" value="0" />
+	<input type="text" id="search_dept" name="qt" value="" size="10"  maxlength="100" />&nbsp;
+	<input 	class="button" type="submit"  name="search" value="Search" />  
+	</div>
+
+	</form>
+-->	
+	
+	
+<!--		
+	<form method="get" action="http://www.htmldog.com/search/">
+		<div>
+		<input type="hidden" name="sp-a" value="sp1002e60e" />
+		<input type="hidden" name="sp-f" value="UTF-8" />
+		<label for="morombe">Search: </label>
+		<input type="text" name="sp-q" id="morombe" />
+		<input type="submit" value="Search" class="button" />
+		</div>
+	</form>
+-->	
+	
+</div>
+
+
+
+<div id="primaryNav">
+
+<ul>
+	<li>General
+		<ul>
+		<li> <a href="http://www.cs.dartmouth.edu/index.php">Home</a></li>
+		<li> <a href="http://www.cs.dartmouth.edu/about.php">About</a></li>
+		<!--li> <a href="http://www.cs.dartmouth.edu/calendar.php">Calendar</a></li-->
+		<li> <a href="http://www.cs.dartmouth.edu/news.php">News</a></li>
+		<li> <a href="http://www.cs.dartmouth.edu/people.php">People</a></li>
+		<li> <a href="http://www.cs.dartmouth.edu/jobs.php">Jobs</a></li>
+		<li> <a href="http://www.cs.dartmouth.edu/contact.php">Contact</a></li>
+		<li> <a href="http://www.cs.dartmouth.edu/internal/">Internal</a>
+		</ul>	
+	</li>
+
+	<li>Research
+	<ul>
+		<li><a href="http://www.cs.dartmouth.edu/research.php">Labs and Projects</a></li>
+		<li><a href="http://www.cs.dartmouth.edu/seminar.php">Colloquium</a></li> 
+		<li><a href="http://www.cs.dartmouth.edu/books.php">Books by Faculty</a></li>
+		<li><a href="http://www.cs.dartmouth.edu/reports">Technical Reports</a></li>
+	</ul>
+	</li>
+	
+	<li>Education
+	<ul>
+		<li><a href="http://www.cs.dartmouth.edu/ug.php">Undergraduate Programs</a></li>
+		<li><a href="http://www.cs.dartmouth.edu/gr.php">Graduate Programs</a></li>
+		<li><a href="http://www.cs.dartmouth.edu/ug_courses.php">Undergraduate Courses</a></li>
+		<li><a href="http://www.cs.dartmouth.edu/gr_courses.php">Graduate Courses</a></li> 
+		<li><a href="http://www.cs.dartmouth.edu/~robotics/summercamp">Summer Robotics Camp</a></li>	
+
+	</ul></li>
+
+	<li>Admissions
+		<ul>
+		<li> <a href="http://www.dartmouth.edu/apply">Undergraduate</a></li>
+		<li> <a href="http://www.cs.dartmouth.edu/admit_ms.php">M.S. Admissions</a></li>
+		<li> <a href="http://www.cs.dartmouth.edu/admit_phd.php">Ph.D. Admissions</a></li>
+		<li> <a href="http://www.cs.dartmouth.edu/~mdphd">M.D.-Ph.D. in CompBio</a></li>
+		<li> <a href="http://www.cs.dartmouth.edu/gr_life.php">Graduate Student Life</a></li>
+		</ul>
+	<ul>
+
+	</ul></li>
+	
+</ul>
+
+</div>
+	
+
+
+<div id="section">
+	
+	<div id="content">
+
+		<h1>Graduate Courses</h1>
+
+		
+<p>
+The following complete listing provides a an overview of available courses; course titles link to individual course home pages where available.
+
+<p>
+For brief descriptions of courses, the terms courses will next be offered, and scheduled instructors, please consult the official Dartmouth <a href="http://www.dartmouth.edu/~reg/courses/desc/cosc.html">Course Descriptions and Requirements</a> published by the <a href="http://www.dartmouth.edu/~reg/">Office of the Registrar</a>.
+
+<p>
+
+	<strong>Ph.D. requirements.</strong> In addition to the courses listed below, certain <a
+	href="ug_courses.php">undergraduate courses</a> can be taken for
+	graduate credit, although they do not necessarily count toward the
+	Ph.D. degree requirement.  Undergraduate courses that may be taken
+	for graduate credit include 33, 38, 46, 52, 54, 78.  
+	Students taking these courses for graduate credit will be asked to do assignments 
+	in addition to those required of undergraduates taking these courses.
+
+<p>
+
+	<strong>M.S. requirements.</strong> In addition to the courses listed below, certain <a
+	href="ug_courses.php">undergraduate courses</a> can be taken for
+	graduate credit.  Undergraduate courses that may be taken
+	for graduate credit include 33, 38, 39, 44, 46, 48, 52, 54, 56, 58, 68, 78.  
+	Students taking these courses for graduate credit will be asked to do assignments 
+	in addition to those required of undergraduates taking these courses.
+
+<p>
+
+<!--b><a href = "content/booklists/spring2009.xls">Book List for Spring 2009
+    (xls)</a></b-->
+
+<p>
+
+<table width="100%">
+	<tr>
+		<td align="center">104</td>
+		<td>Artificial Intelligence</td>
+	</tr>
+	<tr>
+		<td align="center">105</td>
+		<td><a href="/~cs105/" class="colorbg">Algorithms and Data Structures</a></td>
+		<TD><a href="content/syllabi/cs105-winter2008.pdf">Syllabus</a></TD>
+	</tr>
+	<tr>
+		<td align="center">106</td>
+		<td>Numerical Linear Algebra</td>
+	</tr>
+	<tr>
+		<td align="center">107</td>
+		<td><a href="http://engineering.dartmouth.edu/%7Eengs116/" class="colorbg">Computer Architecture</a></td>
+	</tr>
+	<tr>
+		<td align="center">108</td>
+		<td><a href="/~cs108/" class="colorbg">Advanced Operating Systems</a></td>
+		<TD><a href="content/syllabi/cs108.txt">Syllabus</a></TD>
+	</tr>
+	<tr>
+		<td align="center">109</td>
+		<td><a href = "~cs109">Theory of Computation</a></td>
+	</tr>
+
+	<tr>
+		<td align="center">110</td>
+		<td><a href="http://www.cs.dartmouth.edu/~cs110/">Writing, Presenting, and Evaluating Technical Papers in Computer Science</a></td>		
+	</tr>
+	
+	<tr>
+		<td align="center">118</td>
+		<td>Programming Languages</td>
+	</tr>
+
+	<TR>
+		<TD align="center">134 </TD>
+		<TD><a href="http://www.cs.dartmouth.edu/~lorenzo/teaching/cs134/Spring2009/" >Machine Learning and
+		Statistical Data Analysis</a></TD>
+	</TR>
+
+	<tr>
+		<td align="center">136</td>
+		<td><a href="http://www.cs.dartmouth.edu/~lorenzo/teaching/cs136/Winter2010/index.html">Numerical and Computational Tools for Applied Science</a></td>
+		<!--td>
+		<a href="content/syllabi/cs36-136-summer2007.pdf">Syllabus &ndash;
+		Summer 2007 (pdf)</a>
+		</td-->
+	</tr>
+
+	<TR>
+		<TD align="center">143 </TD>
+		<TD><a href="http://www.cs.dartmouth.edu/~cbk/bio">Introduction to Bioinformatics</a></TD>
+	</TR>
+
+	<TR>
+		<TD align="center">153</TD>
+		<TD><a href="http://www.dartmouth.edu/~rhg/">Introduction
+		to Computational Neuroscience</a></TD>
+	</TR>
+
+	<tr>
+		<td align="center">180</td>
+		<td>Reading Course</td>
+	</tr>
+	<tr>
+		<td align="center">181</td>
+		<td>Special Topics Seminar</td>
+	</tr>
+	<tr>
+		<td align="center">184</td>
+		<td>Artificial Intelligence Seminar</td>
+	</tr>
+	<tr valign = "top">
+		<td align="center">185</td>
+		<td> Algorithms Seminar:
+        <table width="100%">
+	<tr>
+		<td><a
+		href="http://www.cs.dartmouth.edu/~ac/Teach/CS85-Fall03/"
+		class="colorbg">Lower Bounds in Computer Science (Chakrabarti)</a></td> 
+	</tr>
+	<tr>
+		<td><a
+		href="http://www.cs.dartmouth.edu/~afra/courses/ct/spring07/"
+		class="colorbg">Introduction to Computational Topology
+		(Zomorodian)</a></td>
+	</tr>
+	<tr>	
+		<td><a
+		href="http://www.cs.dartmouth.edu/~datamining/"
+		class="colorbg">Data Mining and Pattern Recognition (Demidenko)</a></td> 
+	</tr>
+        </table>
+
+
+	</tr>
+	<tr>
+		<td align="center">186</td>
+		<td>Numerical Analysis Seminar</td>
+	</tr>
+	<tr>
+		<td align="center">187</td>
+		<td>Computer Architecture and Hardware Seminar</td>
+	</tr>
+	<tr valign = "top">
+	  <td align="center">188</td>
+		<td>Computer Systems Seminar:
+        <table width="100%">
+	<tr>	
+		<td><a
+		href="http://www.cs.dartmouth.edu/~tanzeem/teaching/CS188-Fall08/"
+		class="colorbg">Intelligent Systems Seminar (Choudhury)</a></td> 
+	</tr>
+	<tr>	
+		<td><a
+		href="http://www.cs.dartmouth.edu/~campbell/sensor-seminar.html"
+		class="colorbg">Seminar on Wireless Sensor Networks (Campbell)</a></td> 
+	</tr>
+	<tr>	
+		<td><a
+		href="http://www.cs.dartmouth.edu/~robotics"
+		class="colorbg">Robotics seminar (Balkcom)</a></td> 
+	</tr>
+	<tr>	
+		<td><a
+		href="http://www.cs.dartmouth.edu/~lorenzo/teaching/cs188/Fall2009/index.html"
+		class="colorbg">Web-powered computer vision seminar (Torresani)</a></td> 
+	</tr>
+        </table>
+
+
+	<tr>
+		<td align="center">257</td>
+		<td>Supervised Undergraduate Teaching</td>
+	</tr>
+	<tr>
+		<td align="center">297</td>
+		<td>Graduate Research</td>
+	</tr>
+	<tr>
+		<td align="center">298</td>
+		<td>Thesis Research</td>
+	</tr>
+	<tr>
+		<td align="center">299</td>
+		<td>Full-Time Thesis Research</td>
+	</tr>
+</table>
+
+
+	</div>
+	
+	
+	<div id="goToTop" class="sNav"><p><a href="#content">^ Top</a></p></div>
+
+</div>
+
+
+
+
+
+<div id="footer"><p>&copy; <a href="http://www.cs.dartmouth.edu/">Dartmouth College Computer Science Department</a> 2009 </p></div>
+
+
+</body>
+
+</html>r

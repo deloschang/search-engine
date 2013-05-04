@@ -1,0 +1,155 @@
+http://www.cs.dartmouth.edu/~hughes/software.html
+3
+<html>
+  <head>
+    <title>James M. Hughes / Dartmouth College / Department of Computer Science</title>
+    <link rel="stylesheet" type="text/css" href="include/style.css">
+    <script type="text/javascript" src="include/include.js"></script>
+  </head>
+
+  <body>
+    <!-- TOTAL CONTAINER DIV w/ SHADOWS -->
+    <div id="shadow-pane">
+      <!-- Actual content container -->
+      <div id="content-container">
+        <!-- title pane -->
+        <div id="title-pane">
+          <a href="index.html"><img id="panes-logo" src="images/panes_logo.png" border="0"></a>
+          <img id="name-logo" src="images/name.png" border="0">
+        </div>
+
+        <!-- nav pane -->
+        <div id="nav-pane">
+          <!-- nav pieces -->
+          <div id="nav-top-left"><img src="images/nav_top_left.png"></div>
+          <div id="nav-top-right"><img src="images/nav_top_right.png"></div>
+          <div id="nav-left"><img src="images/nav_left.png"></div>
+          <div id="about-link"><a href="about.html"><img src="images/about_link.png" 
+            onmouseover="this.src='images/about_hover.png'" onmouseout="this.src='images/about_link.png'" border="0"></a>
+          </div>
+          <div id="research-link"><a href="research.html"><img src="images/research_link.png" 
+            onmouseover="this.src='images/research_hover.png'" onmouseout="this.src='images/research_link.png'" border="0"></a></div>
+          <div id="p-and-s-link"><a href="software.html"><img src="images/p_and_s_selected.png" border="0"></a></div>
+          <div id="music-link"><a href="music.html"><img src="images/music_link.png"
+            onmouseover="this.src='images/music_hover.png'" onmouseout="this.src='images/music_link.png'" border="0"></a></div>
+          <div id="nav-right"><img src="images/nav_right.png"></div>
+          <div id="nav-bottom"><img src="images/nav_bottom.png"></div>
+        </div>
+
+        <!-- content pane -->
+        <div id="content-pane">
+          <div id="content-box" style="height: auto;">
+            <div id="content-box-inner" style="width: 450px;">
+              <p id="content-header-left">Projects &amp; Software</p>
+              <p id="project-text">Here you will find links to some projects and software that I am currently working on or have worked
+                on at some point in the past.
+              </p>
+              <p id="project-text">
+                I can't guarantee that everything is up to date, but please feel free to 
+                <a href="#" onclick="send_mail(); return false;">get in touch with me</a> 
+                if you have any questions or would like code.
+              </p>
+              <h3>View my <a href="http://houston.cs.dartmouth.edu/blog">research blog</a>.</h3>
+            </div>
+            <p id="license-box">
+            Unless otherwise noted, the content of this page and all linked pages is licensed, where applicable, under a<br>
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">
+<img alt="Creative Commons License" style="border-width:0" src="images/cc_license.png" /></a>
+<br /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-
+NonCommercial-ShareAlike 3.0 Unported License</a>.
+              </p>
+          </div>
+          <!-- RESEARCH -->
+          <div id="content-box" style="height: 735px;">
+            <div id="content-box-inner-left">
+              <p id="content-header-left">Research projects</p>
+
+              <!-- WriteLikeMe -->
+              <div id="project">
+                <p id="content-header-small"><a href="http://www.writelikeme.com">WriteLikeMe.com</a></p>
+                <p id="project-text">
+                  <b>WriteLikeMe.com</b> is a website that allows you to compare your writing style to that of
+                  famous authors from the past.
+                </p>
+                <p id="project-text">
+                  It consists of two major components:  text analysis, in which we
+                  extract features from input text, and <a href="#backbone">backbone network generation</a>, which
+                  allows for an intuitive visualization of style space.
+                </p>
+                <p id="project-text">
+                  This project was created out of work done in collaboration with <a href="http://cs.dartmouth.edu/~nfoti">Nicholas J.
+                  Foti</a>, <a href="http://tuvalu.santafe.edu/%7Ekrakauer/Site/Welcome.html">David Krakauer</a>, and <a 
+                  href="http://www.cs.dartmouth.edu/~rockmore">Daniel Rockmore</a>.
+                </p>
+                <a href="http://www.writelikeme.com">
+                <img src="images/text_to_feat.png" style="margin-left: 70px; border: 0px; width: 300px;">
+                </a>
+              </div>
+          
+              <!-- OpenNetworks for Google Maps -->
+              <div id="project">
+                <p id="content-header-small"><a href="http://open-networks.googlecode.com/">OpenNetworks for Google Maps</a></p>
+                <p id="project-text">
+                  <b>OpenNetworks for Google Maps</b> is is an open-source API for displaying networks in Google Maps</p>
+                <p id="project-text">
+                  OpenNetworks includes support for nodes, edges, positional layout, etc. In particular, it combines the geospatial information capabilities of Google Maps with the ability to render network/graph information on top of this geospatial content.
+                </p>
+                <p id="project-text">
+Embedding OpenNetworks networks into a web page allows the user to interactively explore a network with the ease of use, speed, and familiar interface of Google Maps. 
+                </p>
+                <p id="project-text"><b>Plese note that this project is under heavy development.</b></p>
+              </div>
+  
+            </div>
+          </div>
+          <!-- FUN STUFF -->
+          <div id="content-box" style="height: 735px;">
+            <div id="content-box-inner-left">
+              <p id="content-header-left">Just for fun</p>
+
+              <!-- macronym project -->
+              <div id="project">
+                <p id="content-header-small"><a href="macronym/index.html">macronym</a></p>
+                <p id="project-text"><b>macronym</b> is an automatic
+                  <a href="http://en.wikipedia.org/wiki/Backronym">backronym</a> generator (&quot;macro&quot; &quot;acronym&quot;).
+                </p>
+                <p id="project-text">If you have an acronym, it will attempt to
+                  derive a statistics/math-related sequence of words to match your acronym.  It probably won't
+                  make sense, but that's why it's funny.  For example, <b>LOBSTER</b> = &quot;Least-squares Orthogonal 
+                  Bayesian Supervised Tangent Entropy Regression.&quot;
+                </p>
+              </div>
+              <!-- iTunes button -->
+              <div id="project">
+                <p id="content-header-small"><a href="itunes_button.psd">iTunes button redux</a></p>
+                <p id="project-text">One day, while bored, I decided to test my Photoshop skills and see if I could re-create the (at the time) new iTunes logo.  Decide for yourself!</p>
+                <a href="itunes_button.psd"><img src="itunes_button.png" style="margin-left:105px;"></a>
+                <p id="project-text">Click the link above or the image to download the psd file so you can see the steps necessary to create the effect.  
+                  It's a lot of layers and a lot of gradients.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- contact info -->
+      <!--
+      <div id="contact"><p id="project-text" style="font-size: 10pt;">email:  hughes (at) cs (dot) dartmouth (dot) edu
+       [<a href="#" onclick="show_contact_info(false); return false;">x</a>]
+        </p>
+      </div> 
+      -->
+
+      <!-- Footer pane -->
+      <div id="footer">
+        <div id="footer-links">
+          <a href="about.html">about</a> | <a href="research.html">research</a> | 
+          <a href="software.html">projects & software</a> | <a href="music.html">music</a>
+        </div>
+        <div id="footer-text">
+          &copy;&nbsp;2010 James M. Hughes | <a href="#" onclick="send_mail(); return false;">Contact me</a>
+        </div>
+      </div><!-- end footer pane -->
+
+      </div> <!-- END CONTENT CONTAINER -->
+    </div> <!-- END SHADOW PANE -->
+  </body>
+</html>

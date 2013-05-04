@@ -1,0 +1,23 @@
+http://www.cs.dartmouth.edu/~hughes
+2
+<html>
+  <head>
+    <title>James M. Hughes / Dartmouth College / Department of Computer Science</title>
+    <link rel="stylesheet" type="text/css" href="include/style.css">
+    <script type="text/javascript"></script>
+  </head>
+
+  <body>&nbsp;
+    <div id="name-logo-big"><img src="images/name_big.png"></div>
+    <div id="index-container">
+      <div id="about-button"><a href="about.html"><img src="images/about_button.png" 
+  onmouseover="this.src='images/about_button_hover.png'" onmouseout="this.src='images/about_button.png'" border="0"></a></div>
+      <div id="research-button"><a href="research.html"><img src="images/research_button.png"
+  onmouseover="this.src='images/research_button_hover.png'" onmouseout="this.src='images/research_button.png'" border="0"></a></div>
+      <div id="software-button"><a href="software.html"><img src="images/p_and_s_button.png"
+  onmouseover="this.src='images/p_and_s_button_hover.png'" onmouseout="this.src='images/p_and_s_button.png'" border="0"></a></div>
+      <div id="music-button"><a href="music.html"><img src="images/music_button.png" 
+  onmouseover="this.src='images/music_button_hover.png'" onmouseout="this.src='images/music_button.png'" border="0"></a></div>
+    </div>
+  </body>
+</html>

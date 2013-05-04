@@ -1,0 +1,208 @@
+http://www.cs.dartmouth.edu/gr.php
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>Dartmouth Computer Science:  Graduate Programs</title>
+	<style type="text/css" media="all">@import url(dartmouthcs.css);</style>		
+	
+<body id="home">
+
+
+
+<div id="header">
+
+	<h1>Dartmouth Computer Science</h1>
+		
+<!-- Google CSE Search Box Begins  -->
+<form action="http://www.google.com/cse" id="searchbox_001920968608620340798:tkrx06hp9rs">
+  <input type="hidden" name="cx" value="001920968608620340798:tkrx06hp9rs" />
+  <input type="text" name="q" size="25" />
+  <input type="submit" name="sa" value="Search" />
+</form>
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=searchbox_001920968608620340798%3Atkrx06hp9rs"></script>
+<!-- Google CSE Search Box Ends -->
+
+<!--
+	<form action="http://search.dartmouth.edu/query.html" method="get" name="seek">
+
+	<div>
+	<input type="hidden" name="qp" value="+url:http://www.cs.dartmouth.edu/"  />
+	<input type="hidden" name="qs" value="" /><input type="hidden"  name="qc" value="" />
+	<input type="hidden" name="ws" value="0" /><input type="hidden" name="qm" value="0" />
+	<input type="hidden" name="st" value="1" /><input type="hidden"  name="nh" value="10" />
+	<input type="hidden" name="lk" value="1" /><input type="hidden" name="rf" value="0" />
+	<input type="hidden" name="oq" value="" /><input type="hidden"  name="rq" value="0" />
+	<input type="text" id="search_dept" name="qt" value="" size="10"  maxlength="100" />&nbsp;
+	<input 	class="button" type="submit"  name="search" value="Search" />  
+	</div>
+
+	</form>
+-->	
+	
+	
+<!--		
+	<form method="get" action="http://www.htmldog.com/search/">
+		<div>
+		<input type="hidden" name="sp-a" value="sp1002e60e" />
+		<input type="hidden" name="sp-f" value="UTF-8" />
+		<label for="morombe">Search: </label>
+		<input type="text" name="sp-q" id="morombe" />
+		<input type="submit" value="Search" class="button" />
+		</div>
+	</form>
+-->	
+	
+</div>
+
+
+
+<div id="primaryNav">
+
+<ul>
+	<li>General
+		<ul>
+		<li> <a href="http://www.cs.dartmouth.edu/index.php">Home</a></li>
+		<li> <a href="http://www.cs.dartmouth.edu/about.php">About</a></li>
+		<!--li> <a href="http://www.cs.dartmouth.edu/calendar.php">Calendar</a></li-->
+		<li> <a href="http://www.cs.dartmouth.edu/news.php">News</a></li>
+		<li> <a href="http://www.cs.dartmouth.edu/people.php">People</a></li>
+		<li> <a href="http://www.cs.dartmouth.edu/jobs.php">Jobs</a></li>
+		<li> <a href="http://www.cs.dartmouth.edu/contact.php">Contact</a></li>
+		<li> <a href="http://www.cs.dartmouth.edu/internal/">Internal</a>
+		</ul>	
+	</li>
+
+	<li>Research
+	<ul>
+		<li><a href="http://www.cs.dartmouth.edu/research.php">Labs and Projects</a></li>
+		<li><a href="http://www.cs.dartmouth.edu/seminar.php">Colloquium</a></li> 
+		<li><a href="http://www.cs.dartmouth.edu/books.php">Books by Faculty</a></li>
+		<li><a href="http://www.cs.dartmouth.edu/reports">Technical Reports</a></li>
+	</ul>
+	</li>
+	
+	<li>Education
+	<ul>
+		<li><a href="http://www.cs.dartmouth.edu/ug.php">Undergraduate Programs</a></li>
+		<li><a href="http://www.cs.dartmouth.edu/gr.php">Graduate Programs</a></li>
+		<li><a href="http://www.cs.dartmouth.edu/ug_courses.php">Undergraduate Courses</a></li>
+		<li><a href="http://www.cs.dartmouth.edu/gr_courses.php">Graduate Courses</a></li> 
+		<li><a href="http://www.cs.dartmouth.edu/~robotics/summercamp">Summer Robotics Camp</a></li>	
+
+	</ul></li>
+
+	<li>Admissions
+		<ul>
+		<li> <a href="http://www.dartmouth.edu/apply">Undergraduate</a></li>
+		<li> <a href="http://www.cs.dartmouth.edu/admit_ms.php">M.S. Admissions</a></li>
+		<li> <a href="http://www.cs.dartmouth.edu/admit_phd.php">Ph.D. Admissions</a></li>
+		<li> <a href="http://www.cs.dartmouth.edu/~mdphd">M.D.-Ph.D. in CompBio</a></li>
+		<li> <a href="http://www.cs.dartmouth.edu/gr_life.php">Graduate Student Life</a></li>
+		</ul>
+	<ul>
+
+	</ul></li>
+	
+</ul>
+
+</div>
+	
+
+
+<div id="section">
+	
+	<div id="content">
+
+		<h1>Graduate Programs</h1>
+<p>
+In the computer science department at 
+Dartmouth, graduate students interact closely with world-class researchers
+in a tight-knit, collegial environment that provides abundant 
+opportunities 
+for both intra- and interdisciplinary
+<a href = "http://www.cs.dartmouth.edu/research.php">research</a>.
+We actively collaborate with researchers in
+engineering, business, mathematics, the arts, biology, 
+sociology, and medicine.  
+Our department also boasts
+small class sizes, award-winning 
+<a href = "http://www.cs.dartmouth.edu/people.php">instructors</a>, 
+and a lively departmental spirit. 
+All students have access to state-of-art facilities
+and opportunities to start research the first year.
+
+<h2 class="break">The Programs</h2>	
+<p>
+Our doctoral program is a full-time program:  Admitted doctoral students
+have only the Ph.D. as their degree objective, and they have guaranteed
+funding for up to five years. 
+<p>
+We've recently restructured the M.S. program:
+<ul>
+<li>Instead of a required thesis, all students will start out in a
+coursework-only track, and move to a thesis track if it makes sense.
+<li>We've also streamlined the program to encourage Ph.D. students in other
+departments to concurrently pursue a COSC M.S. degree &ndash; and also to
+encourage Dartmouth undergraduates to remain for an M.S. degree.
+</ul>
+<ul>
+<li><strong><a href="content/updatedphdreq2010.pdf">Updated requirements from Prof. Cormen</a></strong>
+<li> <a href = "content/newgrads2009.pdf">Notes for New Graduate
+	    Students (pdf)</a> by <a href =
+	    "http://www.cs.dartmouth.edu/~sws/">Prof. Sean Smith</a> 
+<li>Course Transfer Policy (<a href = "content/courseTransferPolicy.pdf">pdf</a>,<a href = "content/courseTransferPolicy.docx">docx</a>) 
+<li> <a href = "dartmouth-cs-graduate.pdf">Poster for CS Graduate
+Programs (pdf)</a> </li>
+<li> <a href="gr_advice.php">Advice for Potential Graduate Students</a> </li>
+<li> <a href
+="http://www.dartmouth.edu/~reg/courses/desc/cosc-req.html">Requirements
+for all degrees</a>
+<li> <a href="http://www.dartmouth.edu/~reg/courses/desc/cosc.html">Course
+Descriptions from the ORC</a>
+<li> <a href = "http://www.cs.dartmouth.edu/admit_phd.php">Applying to
+    the Graduate Programs</a>
+<li> <a href="professors.php">Alumni Professors</a>
+</ul>
+
+<h2 class="break">Graduate Life</h2>
+<p>
+Dartmouth is situated in Hanover, on the Connecticut River,
+in the Upper Valley region of New Hampshire.  
+It is a beautiful, historic campus, 
+located in a scenic, year-round, outdoor recreational area.
+Dartmouth hosts an annual film festival; renowned 
+musical and theatrical performers; and 
+convenient public transportation to Boston, New York, 
+and Montreal, as well as local airports.
+<ul>
+<li> <a href = "http://www.cs.dartmouth.edu/gr_life.php">Graduate Student Life</a>
+</ul>
+
+<h2 class="break">Information for Current Students</h2>
+
+<ul>
+	<li> <a href="gr_expect.php">Expectations, Policies, and Procedures</a> </li>
+	<li> <a href="gr_fellow.php">Graduate Fellowships</a> </li>
+	<li> <a href="http://www.dartmouth.edu/~gradstdy/students/">Guide
+	for Graduate Students (from the Graduate Studies office)</a>
+</ul>
+
+	</div>
+	
+	
+	<div id="goToTop" class="sNav"><p><a href="#content">^ Top</a></p></div>
+
+</div>
+
+
+
+
+
+<div id="footer"><p>&copy; <a href="http://www.cs.dartmouth.edu/">Dartmouth College Computer Science Department</a> 2009 </p></div>
+
+
+</body>
+
+</html>

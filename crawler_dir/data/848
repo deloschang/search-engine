@@ -1,0 +1,615 @@
+http://www.cs.dartmouth.edu/site-content/site/colloquium-2011-2012.php
+2
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Dartmouth Computer Science | Colloquium 2011-2012</title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<meta http-equiv="content-language" content="en">
+		<link rel="icon" href="http://www.cs.dartmouth.edu/favicon.ico" type="image/x-icon">
+		<meta name="description" content="Dartmouth Computer Science Colloquium Schedule 2011-2012">
+		<meta name="keywords" content="dartmouth college computer science, dartmouth college, computer science, dartmouth computer science, dartmouth college cs, dartmouth cs, BASIC programming language, Sudikoff Laboratory, Sudikoff, Ph.D. program in Computer Science, M.S. program in Computer Science, undergraduate program in Computer Science">
+		<meta name="author" content="Dartmouth Computer Science">
+		<meta name="robots" content="all,index,follow">
+		<meta name="googlebot" content="all,index,follow">
+		<link href="http://www.cs.dartmouth.edu/css/support.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="http://www.cs.dartmouth.edu/css/site.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="http://www.cs.dartmouth.edu/css/dartmouth.css" rel="stylesheet" type="text/css" media="all" />
+		<script type="text/javascript" src="http://www.cs.dartmouth.edu/js/lib.js"></script>
+		<script type="text/javascript" src="http://www.cs.dartmouth.edu/js/topNavigation.js"></script>
+		<link href="http://www.cs.dartmouth.edu/css/baseline.type.css" rel="stylesheet" type="text/css" media="all" />
+		<script type="text/javascript" src="http://www.cs.dartmouth.edu/js/quickview.js"></script>
+		<script type="text/javascript">
+var imNavArr = [];
+imNavArr[0] = 'http://www.cs.dartmouth.edu/images/t2-mh_01_home.png';
+imNavArr[1] = 'http://www.cs.dartmouth.edu/images/t2-mh_02_people.png';
+imNavArr[2] = 'http://www.cs.dartmouth.edu/images/t2-mh_03_research.png';
+imNavArr[3] = 'http://www.cs.dartmouth.edu/images/t2-mh_04_programs.png';
+imNavArr[4] = 'http://www.cs.dartmouth.edu/images/t2-mh_05_admissions.png';
+
+function preloadNavImages() {
+	if (document.images) {
+		t2_mh_0_click = newImage("http://www.cs.dartmouth.edu/images/t2-mh_01_home-click.png");
+		t2_mh_0_click_left = newImage("http://www.cs.dartmouth.edu/images/t2-mh_02_people-click-left.png");
+
+		t2_mh_1_click = newImage("http://www.cs.dartmouth.edu/images/t2-mh_02_people-click.png");
+		t2_mh_1_click_left = newImage("http://www.cs.dartmouth.edu/images/t2-mh_03_research-click-left.png");
+
+		t2_mh_2_click = newImage("http://www.cs.dartmouth.edu/images/t2-mh_03_research-click.png");
+		t2_mh_2_click_left = newImage("http://www.cs.dartmouth.edu/images/t2-mh_04_programs-click-left.png");
+
+		t2_mh_3_click = newImage("http://www.cs.dartmouth.edu/images/t2-mh_04_programs-click.png");
+		t2_mh_3_click_left = newImage("http://www.cs.dartmouth.edu/images/t2-mh_05_admissions-click-left.png");
+
+		t2_mh_4_click = newImage("http://www.cs.dartmouth.edu/images/t2-mh_05_admissions-click.png");
+		t2_mh_4_click_right = newImage("http://www.cs.dartmouth.edu/images/t2-mh_04_programs-click-right.png");
+
+		preloadFlag = true;
+	}
+}
+
+function menuListener()
+	{
+	window.addEventListener('click',resetNav,false);
+	}
+
+addLoadEvent(preloadNavImages());
+addLoadEvent(menuListener());
+
+		</script>
+	</head>
+
+	<body id="pageBody">
+		<div id="helpdiv"><div id="helpdivcontent"></div></div>
+		<div id="formSubmissionDiv"><div id="formSubmissionDivContent"></div></div>
+<div id="quickview"><div id="quickviewclose"><a href="javascript:closeQuickView();">close</a></div><div id="quickviewcontent"></div></div>
+<a name="top"></a><!-- masthead and navigation table -->
+
+		<table width="838" border="0" cellpadding="0" cellspacing="0" align="center">
+			<tr>
+				<td>
+<div style="position:relative;">
+
+		<table width="838" height="44" border="0" cellpadding="0" cellspacing="0">
+			<tr height="44">
+				<td valign="bottom" width="237" height="99"><a href="http://www.cs.dartmouth.edu"><img src="http://www.cs.dartmouth.edu/images/t2-mh_01.png" width="237" height="99" border="0"></a></td>
+				<td valign="bottom" width="120" height="99"><a href="javascript:changeNavImages('t2_mh_0', 'http://www.cs.dartmouth.edu/images/t2-mh_01_home-click.png', 't2_mh_1', 'http://www.cs.dartmouth.edu/images/t2-mh_02_people-click-left.png');resetNavClock();"><img name="t2_mh_0" id="t2_mh_0_id" src="http://www.cs.dartmouth.edu/images/t2-mh_01_home.png" width="120" height="44" border="0" alt="Home"></a></td>
+				<td valign="bottom" width="120" height="99"><a href="javascript:changeNavImages('t2_mh_1', 'http://www.cs.dartmouth.edu/images/t2-mh_02_people-click.png', 't2_mh_2', 'http://www.cs.dartmouth.edu/images/t2-mh_03_research-click-left.png');resetNavClock();"><img name="t2_mh_1" id="t2_mh_1_id" src="http://www.cs.dartmouth.edu/images/t2-mh_02_people.png" width="120" height="44" border="0" alt="People"></a></td>
+				<td valign="bottom" width="120" height="99"><a href="javascript:changeNavImages('t2_mh_2', 'http://www.cs.dartmouth.edu/images/t2-mh_03_research-click.png', 't2_mh_3', 'http://www.cs.dartmouth.edu/images/t2-mh_04_programs-click-left.png');resetNavClock();"><img name="t2_mh_2" id="t2_mh_2_id" src="http://www.cs.dartmouth.edu/images/t2-mh_03_research.png" width="120" height="44" border="0" alt="Research"></a></td>
+				<td valign="bottom" width="120" height="99"><a href="javascript:changeNavImages('t2_mh_3', 'http://www.cs.dartmouth.edu/images/t2-mh_04_programs-click.png', 't2_mh_4', 'http://www.cs.dartmouth.edu/images/t2-mh_05_admissions-click-left.png');resetNavClock();"><img name="t2_mh_3" id="t2_mh_3_id" src="http://www.cs.dartmouth.edu/images/t2-mh_04_programs.png" width="120" height="44" border="0" alt="Programs"></a></td>
+				<td valign="bottom" width="120" height="99"><a href="javascript:changeNavImages('t2_mh_4', 'http://www.cs.dartmouth.edu/images/t2-mh_05_admissions-click.png', 't2_mh_3', 'http://www.cs.dartmouth.edu/images/t2-mh_04_programs-click-right.png');resetNavClock();"><img name="t2_mh_4" id="t2_mh_4_id" src="http://www.cs.dartmouth.edu/images/t2-mh_05_admissions.png" width="120" height="44" border="0" alt="Admissions"></a></td>
+				<td valign="bottom" width="1" height="99"><img src="http://www.cs.dartmouth.edu/images/spacer.gif" width="1" height="44"></td>
+			</tr>
+
+
+		</table>
+<div id="subnavwrap" style="position:absolute;top:99px;left:237px;width:599px;z-index:200;">
+<div class="topnavSubOverlay" id="div_t2_mh_0_sub" style="left:-2px;">
+
+<table width="241" border="0" cellpadding="0" cellspacing="0">
+	<tr height="12">
+		<td width="2" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_04.png" width="2" height="12" alt=""></td>
+		<td width="241" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_05.jpg" width="241" height="12" alt=""></td>
+		<td width="3" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_06.png" width="3" height="12" alt=""></td>
+	</tr>
+
+	<tr>
+		<td width="2" height="12" class="topnavSubOverlayLeft"></td>
+
+		<td class="topnavSubOverlayContent" onmouseover="resetNavClock();">
+<ul>
+<li><a href="http://www.cs.dartmouth.edu/" target="_self">Home</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/about-dartmouth-cs.php" target="_self">About</a></li><li><a href="http://www.dartmouth.edu" target="_blank">Dartmouth</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/jobs-in-dartmouth-cs.php" target="_self">Jobs</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/contact-dartmouth-computer-science.php" target="_self">Contact</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/internal/index.php" target="_self">Internal</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/connector/index.php" target="_self">Connector</a></li></ul>
+					</ul>
+				</td>
+		<td width="2" height="12" class="topnavSubOverlayRight"></td>
+	</tr>
+			<tr>
+			<tr height="19">
+		<td width="2" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_13.png" width="2" height="19" alt=""></td>
+		<td width="241" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_14.png" width="241" height="19" alt=""></td>
+		<td width="3" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_15.png" width="3" height="19" alt=""></td>
+	</tr>
+
+</table>
+
+</div>
+
+<div class="topnavSubOverlay" id="div_t2_mh_1_sub" style="left:118px;">
+
+<table width="241" border="0" cellpadding="0" cellspacing="0">
+	<tr height="12">
+		<td width="2" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_04.png" width="2" height="12" alt=""></td>
+		<td width="241" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_05.jpg" width="241" height="12" alt=""></td>
+		<td width="3" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_06.png" width="3" height="12" alt=""></td>
+	</tr>
+
+	<tr>
+		<td width="2" height="12" class="topnavSubOverlayLeft"></td>
+
+		<td class="topnavSubOverlayContent" onmouseover="resetNavClock();">
+<ul>
+<li><a href="http://www.cs.dartmouth.edu/site-content/tenure-track-faculty/index.php" target="_self">Tenure-Track Faculty</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/faculty-other/index.php" target="_self">Other Faculty</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/staff-administrative/index.php" target="_self">Administrative Staff</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/staff-technical/index.php" target="_self">Technical Staff</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/postdoctoral-researchers/index.php" target="_self">Postdoctoral Researchers</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/graduate-students/index.php" target="_self">Graduate Students</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/alumni-professors/index.php" target="_self">Alumni Professors</a></li><li><a href="http://myslu.stlawu.edu/~ltorrey/profiles/index.html" target="_self">Profiles of Dartmouth CS Alumni</a></li></ul>
+					</ul>
+				</td>
+		<td width="2" height="12" class="topnavSubOverlayRight"></td>
+	</tr>
+			<tr>
+			<tr height="19">
+		<td width="2" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_13.png" width="2" height="19" alt=""></td>
+		<td width="241" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_14.png" width="241" height="19" alt=""></td>
+		<td width="3" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_15.png" width="3" height="19" alt=""></td>
+	</tr>
+
+</table>
+
+</div>
+
+<div class="topnavSubOverlay" id="div_t2_mh_2_sub" style="left:238px;">
+
+<table width="241" border="0" cellpadding="0" cellspacing="0">
+	<tr height="12">
+		<td width="2" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_04.png" width="2" height="12" alt=""></td>
+		<td width="241" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_05.jpg" width="241" height="12" alt=""></td>
+		<td width="3" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_06.png" width="3" height="12" alt=""></td>
+	</tr>
+
+	<tr>
+		<td width="2" height="12" class="topnavSubOverlayLeft"></td>
+
+		<td class="topnavSubOverlayContent" onmouseover="resetNavClock();">
+<ul>
+<li><a href="http://www.cs.dartmouth.edu/site-content/news/index.php" target="_self">News</a></li><li><a href="http://www.cs.dartmouth.edu/~csrs/" target="_self">CSRS</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/research-projects/index.php" target="_self">Research Labs and Projects</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/colloquium.php" target="_self">Colloquium</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/books/index.php" target="_self">Books by Faculty</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/reports/index.php" target="_self">Technical Reports</a></li></ul>
+					</ul>
+				</td>
+		<td width="2" height="12" class="topnavSubOverlayRight"></td>
+	</tr>
+			<tr>
+			<tr height="19">
+		<td width="2" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_13.png" width="2" height="19" alt=""></td>
+		<td width="241" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_14.png" width="241" height="19" alt=""></td>
+		<td width="3" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_15.png" width="3" height="19" alt=""></td>
+	</tr>
+
+</table>
+
+</div>
+
+<div class="topnavSubOverlay" id="div_t2_mh_3_sub" style="left:358px;">
+
+<table width="241" border="0" cellpadding="0" cellspacing="0">
+	<tr height="12">
+		<td width="2" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_04.png" width="2" height="12" alt=""></td>
+		<td width="241" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_05.jpg" width="241" height="12" alt=""></td>
+		<td width="3" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_06.png" width="3" height="12" alt=""></td>
+	</tr>
+
+	<tr>
+		<td width="2" height="12" class="topnavSubOverlayLeft"></td>
+
+		<td class="topnavSubOverlayContent" onmouseover="resetNavClock();">
+<ul>
+<li><a href="http://www.cs.dartmouth.edu/site-content/site/a-major-redesign.php" target="_self">A Major Redesign</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/undergraduate-programs.php" target="_self">Undergraduate Programs</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/graduate-programs.php" target="_self">Graduate Programs</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/undergrad-courses/index.php" target="_self">Undergraduate Courses</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/graduate-courses/index.php" target="_self">Graduate Courses</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/upcoming-class-schedule.php" target="_self">Upcoming Class Schedule</a></li><li><a href="http://www.cs.dartmouth.edu/~robotics/summercamp/index.php/Main_Page" target="_self">Summer Robotics Camp</a></li></ul>
+					</ul>
+				</td>
+		<td width="2" height="12" class="topnavSubOverlayRight"></td>
+	</tr>
+			<tr>
+			<tr height="19">
+		<td width="2" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_13.png" width="2" height="19" alt=""></td>
+		<td width="241" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_14.png" width="241" height="19" alt=""></td>
+		<td width="3" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_15.png" width="3" height="19" alt=""></td>
+	</tr>
+
+</table>
+
+</div>
+
+<div class="topnavSubOverlay" id="div_t2_mh_4_sub" style="left:358px;">
+
+<table width="241" border="0" cellpadding="0" cellspacing="0">
+	<tr height="12">
+		<td width="2" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_04.png" width="2" height="12" alt=""></td>
+		<td width="241" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_05.jpg" width="241" height="12" alt=""></td>
+		<td width="3" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_06.png" width="3" height="12" alt=""></td>
+	</tr>
+
+	<tr>
+		<td width="2" height="12" class="topnavSubOverlayLeft"></td>
+
+		<td class="topnavSubOverlayContent" onmouseover="resetNavClock();">
+<ul>
+<li><a href="http://www.dartmouth.edu/admissions/" target="_self">Undergraduate Admissions</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/ms-admissions.php" target="_self">M.S. Admissions</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/phd-admissions.php" target="_self">Ph.D. Admissions</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/md---phd-in-compbio.php" target="_self">M.D. - Ph.D. in CompBio</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/graduate-student-life.php" target="_self">Graduate Student Life</a></li></ul>
+					</ul>
+				</td>
+		<td width="2" height="12" class="topnavSubOverlayRight"></td>
+	</tr>
+			<tr>
+			<tr height="19">
+		<td width="2" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_13.png" width="2" height="19" alt=""></td>
+		<td width="241" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_14.png" width="241" height="19" alt=""></td>
+		<td width="3" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_15.png" width="3" height="19" alt=""></td>
+	</tr>
+
+</table>
+
+</div>
+
+</div>
+				</td>
+			</tr>
+		</table>
+
+</div>
+
+
+<!-- end masthead and navigation table -->
+<!-- content table -->
+<table width="858" border="0" cellpadding="0" cellspacing="0" align="center">
+	<tr height="329">
+		<td class="contentLeft" valign="top" width="10" height="329"></td>
+		<td valign="top" bgcolor="white" width="838" height="329">
+<!-- begin page content -->
+<div style="padding:5px 10px 0px 10px;">
+<h1>
+	2011&ndash;2012&nbsp; Dartmouth Computer Science Colloquium Schedule</h1>
+<p>
+	All colloquia take place on Wednesday at 4:15 in <strong>006 Steele</strong> unless otherwise noted.</p>
+<hr />
+<h2>
+	May 16:<br />
+	Nicole <span data-scayt_word="Immorlica" data-scaytid="1">Immorlica</span>, Northwestern University</h2>
+<h3>
+	Optimal Auctions over Social Networks</h3>
+<p>
+	We consider the problem of selling a digital good, like a Facebook App, in a social network. &nbsp;We focus on goods that exhibit &quot;tennis racket externalities&quot; -- i.e., goods that have value only when used in conjunction with other users. &nbsp;In a social network, this means that the digital good has no value to a user unless at least one of his friends in the network also owns the good. &nbsp;This severely complicates the problem of selling the digital good as a user&#39;s value, and hence the price we can charge, depends not only on his own situation, but on the situation of his friends as well. &nbsp;In this talk, we develop auctions for selling such goods in a social network. &nbsp;Our auctions provably extract a constant fraction of the optimal revenue.</p>
+<p>
+	Joint work with N. <span data-scayt_word="Haghpanah" data-scaytid="3">Haghpanah</span>, V. <span data-scayt_word="Mirrokni" data-scaytid="4">Mirrokni</span>, and K. <span data-scayt_word="Munagala" data-scaytid="5">Munagala</span>.</p>
+<p>
+	<strong>Bio:</strong><br />
+	Nicole <span data-scayt_word="Immorlica" data-scaytid="2">Immorlica</span> is an assistant professor of computer science at Northwestern University. &nbsp;She received her B.Sc., M.Eng., and Ph.D. from MIT in computer science. &nbsp;Her research interests include all aspects of algorithmic game theory. &nbsp;In the field of social networks, she has studied mechanism design, technology adoption, and networked <span data-scayt_word="bimatrix" data-scaytid="7">bimatrix</span> games.</p>
+<hr />
+<h2>
+	May 9:<br />
+	<span data-scayt_word="Marsette" data-scaytid="8">Marsette</span> (Marty) <span data-scayt_word="Vona" data-scaytid="9">Vona</span>, Northeastern University</h2>
+<h3>
+	Sensing and Perception Algorithms for Climbing and Walking</h3>
+<p>
+	Robots which use limbs for locomotion (vs wheels or tracks) require sensing strategies and perception algorithms that ensure each grip or foothold is reliable---the penalty for a single &quot;miss&quot; can be high. This talk covers approaches for handling both fine and coarse uncertainty in this context.</p>
+<p>
+	I first present two experimental studies where fine uncertainty is handled reliably with strategies of soft contact (compliance) combined with sensing of the robot&#39;s own joint deflections during contact (<span data-scayt_word="exproprioception" data-scaytid="10">exproprioception</span>). In one study a novel robot grips and climbs a vertical structure; in the other a mini-humanoid climbs a step of unknown height. In these studies a basic map of the environment resolves coarse uncertainty by expectation.</p>
+<p>
+	I next present dense and sparse geometric mapping algorithms for handling coarse uncertainty when a map is not available. Optical range sensors first acquire bulk <span data-scayt_word="3D" data-scaytid="11">3D</span> point samples of environment surfaces currently in view. A <span data-scayt_word="GPU" data-scaytid="12">GPU</span> algorithm integrates these to maintain a dense volumetric representation of the robot&#39;s immediate surroundings. Curved surface patches, each approximately the size of the robot&#39;s hand or foot, are then sparsely fit in that data. The volumetric representation can support collision avoidance while the patches support grip/foothold planning.</p>
+<p>
+	We are aiming to integrate the above approaches by matching upcoming surface patches with compliant/<span data-scayt_word="exproprioceptive" data-scaytid="13">exproprioceptive</span> strategies to contact them.</p>
+<p>
+	<strong>Bio:</strong><br />
+	<span data-scayt_word="Marsette" data-scaytid="14">Marsette</span> <span data-scayt_word="Vona" data-scaytid="15">Vona</span> is Assistant Professor at the College of Computer and Information Science at Northeastern University. He founded the Geometric and Physical Computing group (http://ccis.neu.edu/research/<span data-scayt_word="gpc" data-scaytid="22">gpc</span>) and teaches robotics, geometric algorithms, and graphics. This talk covers work under his recently awarded NSF CAREER grant &quot;Reliable Contact Under Uncertainty: Integrating <span data-scayt_word="3D" data-scaytid="17">3D</span> Perception and Compliance.&quot; <span data-scayt_word="Vona" data-scaytid="16">Vona</span> completed his <span data-scayt_word="PhD" data-scaytid="25">PhD</span> and MS in <span data-scayt_word="EECS" data-scaytid="26">EECS</span> at MIT in 2009 and 2001. He spent 2001-2003 at NASA/<span data-scayt_word="JPL" data-scaytid="27">JPL</span> building <span data-scayt_word="3D" data-scaytid="18">3D</span> user interfaces for the Mars Exploration Rover mission (Spirit and Opportunity), for which he received the NASA Software of the Year award in 2004. He completed his BA at Dartmouth College in 1999, where he received the <span data-scayt_word="CRA" data-scaytid="28">CRA</span> Outstanding Undergraduate Researcher award for his work with Daniela <span data-scayt_word="Rus" data-scaytid="29">Rus</span> on self-reconfiguring robots.</p>
+<hr />
+<h2>
+	April 25:<br />
+	Vashek Maty&aacute;&scaron;, Harvard University and Masaryk University, Brno</h2>
+<h3>
+	Privacy Mechanisms for Wireless Sensor Networks &ndash; Issues and Solutions</h3>
+<p>
+	Wireless sensor networks come with some very challenging demands for security and privacy - they often call for protection against active attackers trying to disrupt a network operation, but also against passive attackers looking for some sensitive information like the location of a certain node or information about the movement of a tracked object. Typical countermeasures would include an intrusion detection system and a privacy mechanism. However, these often come with contradictory aims. A privacy mechanism typically tries to hide a relation between various events while an intrusion detection system tries to link the events up. This talk will present and explore some of the problems that might occur when such techniques are brought together and we also provide some ideas how these problems could be solved.</p>
+<p>
+	<strong>Bio:</strong><br />
+	Vashek Maty&aacute;&scaron; is a Fulbright-Masaryk Visiting Scholar at the Center for Research on Computation and Society (CRCS) at Harvard University and a Professor at the Masaryk University Brno, CZ. His research interests relate to applied cryptography and security. He worked with Microsoft Research Cambridge, University College Dublin, Ubilab at UBS AG, and was a Royal Society Postdoctoral Fellow with the Cambridge University Computer Lab. Vashek edited the Computer and Communications Security Reviews, and worked on the development of Common Criteria and with ISO/IEC JTC1 SC27.</p>
+<hr />
+<h2>
+	April 11:<br />
+	Lance Williams, Nokia Research</h2>
+<h3>
+	Intimate Display</h3>
+<p>
+	The unique human interface offered by head-mounted display systems was demonstrated long ago by Ivan Sutherland. As a graduate student, I wore an experimental version at the University of Utah in 1975, and comfortably interacted with three-dimensional line drawings suspended in space. Many of the researchers involved believed this would soon be a widespread capability, with countless applications in depicting and manipulating information in visual form. It&#39;s taken much longer than we imagined. The key difficulty is designing an optical system to present images to the user at a comfortable focal depth, superimposed on the visual field. This is straightforward if size and weight are unrestricted, but to engineer a comfortable and visually inoffensive system has proved a considerable challenge.&nbsp;</p>
+<p>
+	For over ten years, Nokia researchers in Finland worked to develop and refine innovative diffractive optics in support of a wearable eyeglass display. Putting on a prototype, which was equipped with a gaze-tracker, was a convincing inducement to join in this development effort. At Nokia Research Center Hollywood, where my small team worked for the last three years, we designed audio affordances for an eyeglass system. Our challenge was to deliver high-quality stereo sound to the wearer without obstructing the ears, and to capture the wearer&#39;s voice in high signal quality without a visible microphone. These goals were achieved through a combination of bone-conduction transducers, near-field exploitation of multipole audio sources, and computational beam-steering of air-conduction signals.</p>
+<p>
+	&nbsp; This project is an example of what musician Laurie Spiegel calls, &quot;aesthetic engineering,&quot; the mutual enhancement of human technology and human arts. In this presentation, I&#39;ll briefly review past experience and contributions in this area, and offer a vision of digital media as a master bead-game and universal solvent for science, technology and the arts.</p>
+<p>
+	<strong>Bio:</strong><br />
+	Lance Williams was introduced to computer programming by Jef Raskin, worked for Robert Haralick at the University of Kansas, and studied computer graphics and animation under Ivan Sutherland, David Evans, and Steven Coons at the University of Utah. He worked in the Computer Graphics Lab at the New York Institute of Technology (from 1976-1986) on research and commercial animation, and the development of shadow mapping and &quot;mip&quot; texture mapping. Subsequently Williams consulted for Jim Henson Associates, independently developed facial tracking for computer animation, worked for six years in Apple Computer&#39;s Advanced Technology Group and for three years at DreamWorks SKG. He completed a long-deferred Ph.D. at the University of Utah in August 2000, and received SIGGRAPH&#39;s Steven Anson Coons Award in 2001. In 2002, he received an honorary Doctorate of Fine Arts from Columbus College of Art and Design, and a motion picture Technical Academy Award. He served as Chief Scientist at Walt Disney Feature Animation before joining Applied Minds, Incorporated, in 2004, to pursue biomedical research. He worked subsequently in Google&#39;s Geo group (Maps and Earth), and most recently served as Principal Researcher at Nokia Research Center Hollywood, where he headed a small team developing audio systems for a wearable (eyeglass) display.</p>
+<hr />
+<h2>
+	April 2 (Monday):<br />
+	Kevin Fu, University of Massachusetts, Amherst</h2>
+<h3>
+	Your Abstractions are Worth^H^H^H^H^HPowerless! Perpetual Computation on Intermittently Powered Embedded Systems* (*Batteries Not Included)</h3>
+<p>
+	Did you hear the one about how many batteries it takes to turn on a Turing machine? None! It&#39;s outside the model of computation. Yet it&#39;s rather difficult to compute without power. This problem is particularly poignant on tiny embedded systems that resemble smart dust. Batteries overshadow the size of the computer itself. So why not remove the battery?</p>
+<p>
+	This talk explores the problems and approaches for computing under such extreme conditions: intermittent power and reboots every few hundred milliseconds. The approaches include low-voltage probabilistic storage on microcontrollers with NOR flash memory (Half-Wits) and energy-aware checkpointing of program state (Mementos). Writing to embedded flash memory at below-specification voltages can reduce energy consumption, but leads to stochastic behavior. The Half-Wits system uses software-only coding algorithms to restore reliability on unmodified hardware by exploiting the electrically cumulative nature of half-written data in write-once bits. Mementos is a software tool that automatically instruments programs with energy-aware checkpoints to protect RAM and registers from power failures. A suite of compile- and run-time tools help to transform long-running programs into interruptible computations. These techniques rethink basic conventions and representations of information for computing platforms that approach the limits of the digital abstraction.</p>
+<p>
+	<strong>Bio:</strong><br />
+	Kevin Fu is an Associate Professor of Computer Science and adjunct Associate Professor of Electrical &amp; Computer Engineering at the University of Massachusetts Amherst. Prof. Fu aims to make embedded computer systems smarter: better security and safety, reduced energy consumption, faster performance. His contributions on trustworthy medical devices and computational RFIDs appear at ACM ASPLOS, ACM SIGCOMM, ACM TECS, ACM/USENIX HotPower, ACM/USENIX MobiSys, IEEE Security &amp; Privacy, IEEE TC, USENIX FAST, USENIX Security, Financial Cryptography, and the Institute of Medicine.</p>
+<p>
+	Prof. Fu served as a visiting scientist at the Food &amp; Drug Administration, the Beth Israel Deaconess Medical Center of Harvard Medical School, and MIT CSAIL. He is a member of the NIST Information Security and Privacy Advisory Board. Prof. Fu received a Sloan Research Fellowship, NSF CAREER award, and best paper awards from USENIX Security, IEEE S&amp;P, and ACM SIGCOMM. He was named MIT Technology Review TR35 Innovator of the Year. Prof. Fu received his Ph.D. in EECS from MIT. He also holds a certificate of achievement in artisanal bread making from the French Culinary Institute.</p>
+<hr />
+<h2>
+	March 7:<br />
+	Azarias Reda, University of Michigan</h2>
+<h3>
+	CS Research and the Developing World: Improving Access to Information</h3>
+<p>
+	Due to improvements in the buying power of individuals and the cost implications of Moore&#39;s law, access to computing and communication technologies has accelerated in developing regions. With most of the next billion internet users expected to come from emerging markets, these regions present an increasing potential for building digital services across many application domains. However, several challenges---including poor network infrastructure, user inexperience and language barriers---render many existing systems unsuitable for developing regions. My talk will present several projects towards designing appropriate systems for developing region contexts by focusing on the challenges of information access in these regions. Based on field experience in developing nations in Africa and Asia, these projects aim to understand and improve end-user experience in accessing and using digital content in challenged networks. I will first present a nuanced analysis of content access behavior for web users in developing regions, exploring behavior from logs collected at shared internet access sites, as well as usage information from a commercial social networking service with over a hundred million members worldwide. Building on these observations, I will then present two systems that were designed for improving end-user experience in information access in these regions. Finally, I will highlight some opportunities developing regions present for conducting CS research with great impact and visibility.</p>
+<hr />
+<h2>
+	March 1 (Thursday, Oopik Auditorium):<br />
+	Vyas Sekar, Intel Labs</h2>
+<h3>
+	Enabling Innovation in Middlebox Deployment</h3>
+<p>
+	Today&#39;s computing landscape relies critically on high-performance, resilient, and secure networked systems. As application workloads, security requirements, and organizational policy constraints change over time, the network infrastructure needs to evolve in order to meet the increasing need for performance, reliability, and security.</p>
+<p>
+	Most of this evolution in today&#39;s networks happens via the deployment of specialized network appliances or ``middleboxes&#39;&#39;. Unfortunately, middleboxes today are expensive and closed systems, with little or no hooks for extensibility. Furthermore, they are acquired from independent vendors and deployed as standalone devices with little cohesiveness in how the ensemble of middleboxes is managed. As network requirements continue to grow in both scale and variety, this bottom-up approach puts the network infrastructure on a trajectory of growing device sprawl with corresponding escalation in capital and management costs.</p>
+<p>
+	To address this challenge, this talk describes the design and implementation of a new architecture for middlebox deployments that systematically explores opportunities for consolidation both at the level of building individual middleboxes and in managing a network of middleboxes. I will show that such consolidation introduces new opportunities for innovation and performance optimization that do not exist in current middlebox deployments.</p>
+<p>
+	<strong>Bio:</strong><br />
+	Vyas Sekar is a Research Scientist at Intel Labs. He is currently a member of the Intel Science and Technology Center for Secure Computing located at the University of California, Berkeley. His research interests lie at the intersection of networking, security, and systems. He received his Ph.D. from the Computer Science Department at Carnegie Mellon University in 2010, where he was co-advised by Michael Reiter and Hui Zhang. Before that, he obtained his B. Tech from the Computer Science Department at the Indian Institute of Technology Madras where he was awarded the President of India Gold Medal.</p>
+<hr />
+<h2>
+	February 29:<br />
+	Kaushik Veeraraghavan, University of Michigan</h2>
+<h3>
+	Uniparallel execution and its uses</h3>
+<p>
+	As multicore and multiprocessor machines grow ubiquitous, developers are increasingly writing multithreaded applications to exploit the available hardware parallelism. Unfortunately, while these multithreaded applications can scale performance with increasing cores, they are also susceptible to concurrency bugs, such as data races, atomicity violations and deadlocks, triggered by rare thread interleaving.</p>
+<p>
+	The research community has proposed many solutions to improve the reliability of multithreaded programs, including techniques like deterministic replay systems that record the execution of a program for offline analysis, and dynamic data race detectors that can detect harmful bugs at runtime. While these techniques run efficiently on a uniprocessor, they introduce too much overhead for practical use on a multiprocessor.</p>
+<p>
+	In this talk, I introduce uniparallelism, a new style of execution that allows multithreaded applications to benefit from the simplicity of uniprocessor execution while scaling performance with increasing cores. I demonstrate the utility of uniparallelism by building two novel systems: DoublePlay and Frost. DoublePlay is a software-only deterministic replay system that can record multithreaded execution on a multiprocessor and guarantee offline replay. Frost is a dynamic data race detector for commodity multiprocessors. For production systems, Frost also helps diagnose the type of data race bug and select a recovery strategy that masks the failure and continue program execution.</p>
+<p>
+	<strong>Bio:</strong><br />
+	Kaushik Veeraraghavan graduated with his PhD in Computer Science &amp; Engineering at the University of Michigan in September 2011. His research in operating systems addresses two problems: improving the reliability of multiprocessor execution, and devising storage systems for mobile computing. He has been recognized with best paper awards at ASPLOS 2011, FAST 2010 and OSDI 2006, and the best student presentation award at HotMobile 2008. He earned his Bachelors degree in Computer Engineering at the University of Maryland. He is currently pursuing a post-doctoral internship with the infrastructure team at Facebook.</p>
+<hr />
+<h2>
+	February 23 (Thursday, in Filene Aud, Moore):<br />
+	Matthew Lee, Carnegie Mellon University</h2>
+<h3>
+	Sensing and Sense-making of Everyday Actions</h3>
+<p>
+	Our interactions with people, objects, and technology in our everyday lives are an immense source of information for understanding our habits, motives, and intentions in how we manage our energy use, finances, social lives, and health. My research focuses on designing, building, and evaluating sensing systems that capture the rich behavioral patterns found in everyday life and reveal them to help people achieve their goals. Knowing a priori what context and features to sense in our everyday activities remains a challenge. Furthermore, identifying meaning within large amounts of personal sensor data remains a difficult task for computers. To address this, I bring the human into the loop and investigate their sensemaking process when making sense of personal sensor data to find opportunities for computational support. In this talk, I will discuss how I leverage the human sensemaking process through the design of two sensing systems that support healthy aging. I will discuss MemExerciser, a mobile lifelogging system that automatically records pictures and sounds and selects meaningful content to help people with Alzheimer&#39;s disease to remember their experiences better. I will also talk about dwellSense, a system of sensors embedded in the home that can automatically capture and analyze over time how older adults peform activities important for independence. I will conclude with new opportunities for computational support for sensing and acting on our everyday actions.</p>
+<p>
+	<strong>Bio:</strong><br />
+	Matthew Lee is a PhD Candidate in the Human-Computer Interaction Institute at Carnegie Mellon University. He is advised by Anind Dey. His research interests lie at the intersection of human-computer interaction, ubiquitous computing, human behavior, informatics, and applications in real-world problems such as health and sustainability. He is interested in bringing about the future of mobile and ubiquitous computing by designing, building, and evaluating sensing systems that capture the rich behavioral patterns found in everyday life and reveal them to help people achieve their goals. His work has been published in premier ACM academic conferences such as UbiComp, Assets, and CHI where he has been recognized with a best paper nomination. His doctoral work focuses sensing everyday activities in the home to support the self-awareness of changes in cognitive and functional abilities for older adults. He is the lead researcher for dwellSense, a Robert Wood Johnson Foundation Project HealthDesign project. He received his masters degree in Human-Computer Interaction from Carnegie Mellon University and his undergraduate degree in Computer Science and Cognitive Science with honors from the University of California at Berkeley.</p>
+<hr />
+<h2>
+	February 15: Chris Kanich, University of California, San Diego</h2>
+<h3>
+	Understanding Spam Economics</h3>
+<p>
+	Over the past two decades, the Internet has become an essential tool in the lives of millions of people. Unfortunately, this success has also attracted cybercriminals who exploit the Internet as a platform for illicit gain. &nbsp;Perhaps the most familiar scam is sending unsolicited advertisements (spam), clogging inboxes and putting people&#39;s computers at risk of dangerous malware infections.</p>
+<p>
+	Understanding the mechanisms and effectiveness of these scams is essential to building effective countermeasures to cybercrime. In this talk, I&#39;ll explain the modern spamming landscape and present research that help us better understand how spammers make their money online.</p>
+<p>
+	One effort uses the technique of botnet infiltration to examine a spam campaign from the point of view of the spammers. Botnet infiltration allows us to measure their operation including the advertisements&#39;</p>
+<p>
+	effectiveness and the worldwide use of spam filtering techniques. The second effort exploits key information leaks to answer key questions about the modern affiliate marketing-based spam ecosystem, from estimating their worldwide gross revenue, to understanding customer demographics and their most popular products. I&#39;ll end by discussing future work in this space and outline research directions that exploit criminal&#39;s online architecture and motivations to develop effective defenses.</p>
+<hr />
+<h2>
+	February 9 (Thursday): Zheng &quot;Eddy&quot; Zhang, College of William and Mary</h2>
+<h3>
+	Dynamic Optimization for Irregular Applications on Many-Core Architectures</h3>
+<p>
+	Enhancing the match between software executions and hardware features is key to computing efficiency in terms of both performance and energy consumption. The match is constantly complicated by emerging architecture features in computing systems and has become a continuously evolving problem. In this talk, I will present some recent findings in the implications of three prominent features of modern systems: the heterogeneity, the rapid growth of processor-level parallelism and the increasingly complex interplay among computing units. In particular, I will focus on how to streamline computations containing dynamic irregularities for General Purpose Graphic Processing Units (GPGPUs), a broadly adopted many-core architecture. The talk will begin with the theoretical foundations of GPGPU program-level transformation techniques, and further describe a runtime optimization system, named G-Streamline, as a unified software solution to irregularities in both memory references and control flows. The system enables on-the-fly elimination of irregularities through adaptive CPU-GPU pipelining and kernel splitting schemes. Working in a holistic fashion, it maximizes whole-program performance by resolving conflicts among optimizations. In the end, I will briefly describe my other work which includes a study of the influence of shared cache on multicore and a new paradigm, named shared-cache-aware optimizations, for parallel software locality enhancement.</p>
+<p>
+	<strong>Bio:</strong><br />
+	Zheng (Eddy) Zhang is a Ph.D. candidate at the Computer Science Department of the College of William &amp; Mary. She received her M.S. in Computer Science at William &amp; Mary with a Computational Operations Research(COR) specialization. Her research generally lies in the area of compilers and programming systems, with a focus on revealing and exploiting the implications of emerging hardware features on the development, compilation, and execution of software. She is the lead author of a paper that won the Best Paper Award at PPoPP&#39;10, and a recipient of the Google Anita Borg Memorial Scholarship.</p>
+<hr />
+<h2>
+	February 1: David Kempe, University of Southern California</h2>
+<h3>
+	Subset Selection for Linear Regression</h3>
+<p>
+	One of the central problems in many data-driven sciences is the right selection of attributes to observe in order to accurately predict a variable of interest. Applications abound in areas as diverse as medical sciences (predicting medical conditions based on observable attributes), social sciences (predicting future behaviors or outcomes) and sensor networks, among others.</p>
+<p>
+	In many of these cases, time or cost constraints prohibit sampling more than a few attributes. Also, many application domains use linear regression as a method of prediction, and evaluate the quality of attributes in terms of the R^2 fit with the quantity to be predicted. This motivates the following formal problem definition: &quot;Given the covariances between observable variables X_i and a target variable Z, select k of the variables X_i such that the selected set has the best possible R^2 fit with Z.&quot;</p>
+<p>
+	The main result presented in this talk is that so long as the covariance matrix between the X_i variables is far from singular, greedy algorithms frequently used in practice are provably constant-factor approximations. The proof is based on extending the widely used concept of submodularity to a notion of approximate submodularity, and relating it to the spectrum of the covariance matrix. Furthermore, we will investigate various graph-theoretical properties of covariance matrices which allow for efficient exact or approximate algorithms.</p>
+<p>
+	We conclude with several exciting open questions.</p>
+<p>
+	This talk is based on joint work with Abhimanyu Das, appearing in ICML 2011 and STOC 2008.</p>
+<hr />
+<h2>
+	January 18: Kimo Johnson, Co-founder of GelSight, Inc.</h2>
+<h3>
+	Portable, High-Resolution 3D Surface Metrology</h3>
+<p>
+	I will present a novel system for measuring 3D surface geometry using a single camera, some LEDs, and a block of clear rubber. While seemingly simple, this system is capable of measuring geometry down to single-digit microns. The key component of the system is the block of rubber, which we cover with a reflective skin on one side. When the rubber is pressed against a surface, the reflective skin conforms to the surface topography, effectively painting it with a uniform reflectance. By controlling the optical properties of the surface, our approach allows for the precise measurement of any material. We have called the system GelSight due to our unique elastomeric sensor. In this talk, I will present the core GelSight technology, describe several systems we have built, and show a working prototype. I will also show measurements from a variety of materials, representing applications from diverse industries.</p>
+<p>
+	<strong>Bio:</strong><br />
+	Kimo Johnson is a co-founder of GelSight, Inc., a company formed to commercialize the GelSight surface scanning technology. Before leaving academia to lead GelSight, Inc., Kimo was a Research Scientist at MIT. During his time at MIT, he worked on numerous projects in computer vision and graphics, including the project that became GelSight. Most recently, Kimo&#39;s research interests have focused on image-based analysis of shape, illumination, color, and texture. In addition, he enjoys collaborating on interdisciplinary problems, such as image enhancement, forensics, audio analysis, and music theory. He holds undergraduate degrees in Mathematics and Music Theory from the University of New Hampshire, a master&#39;s degree in Electro-Acoustic Music from Dartmouth College, and a Ph.D. in Computer Science from Dartmouth College, where he worked with Prof. Hany Farid on image forensics.</p>
+<hr />
+<h2>
+	January 11: Brendan Lucier, Microsoft Research NE</h2>
+<h3>
+	Dueling Algorithms</h3>
+<p>
+	In this talk I will revisit classic algorithmic search and optimization problems from the perspective of competition. Rather than a single optimizer minimizing expected cost, we consider a game in which a search problem is presented to two players, whose only goal is to outperform the opponent. Classic algorithms often perform quite badly in this competitive setting, which can be thought of as an exponentially large zero-sum game. I will describe general techniques by which optimal (or approximately optimal) strategies can be found, leveraging the structure inherent in an algorithmic duel. I will consider examples of ranking, hiring, compression, binary search, and others, and give bounds on how often one can beat the classic optimization algorithms in such duels.</p>
+<p>
+	Based on joint work with Nicole Immorlica, Adam Tauman Kalai, Ankur Moitra, Andrew Postlewaite, and Moshe Tennenholtz.</p>
+<hr />
+<h2>
+	January 4: Katrina Ligett, California Institute of Technology</h2>
+<h3>
+	A Formal Approach to Data Privacy</h3>
+<p>
+	Organizations commonly hold databases of sensitive information that they would like to use or publish in some sanitized manner. How can they do so? At what cost to the people whose information is contained in the database? At what loss of usefulness? What are the tradeoffs involved? How can one reason formally about private information?</p>
+<p>
+	In this talk we provide an introduction to the notion of differential privacy and a taste of recent results in this area. As time allows, we&#39;ll discuss some very recent work using privacy techniques to conduct unbiased surveys.</p>
+<p>
+	Based on joint work with Avrim Blum, Anupam Gupta, Moritz Hardt, Frank McSherry, Aaron Roth, and Kunal Talwar.</p>
+<hr />
+<h2>
+	November 30: Alessandro Senes, University of Wisconsin at Madison</h2>
+<h3>
+	Efficient Strategies for Conformational Sampling for the Optimization of Side Chains in Proteins</h3>
+<p>
+	A key problem in biology is predicting the structure of a protein directly from its amino acid sequence. The sequence corresponds to a well-defined three-dimensional structure, and the structure defines the biological function of the protein. The protein structural prediction problem can be subdivided into two parts: the prediction of the conformation of the backbone and the correct placement of the flexible side chains of the amino acids that branch out of the backbone, a step referred to as &quot;side chain optimization.&quot; Side chain optimization is combinatorially complex and is generally approached by using a library of representative conformations. The library transforms a continuum search space into a discretized problem for which a number of powerful deterministic or stochastic algorithms are available. The precise nature of the library is important because it determines the quality of the final outcome of a side chain optimization procedure. In this talk I will address the question of what would be the best possible selection of discretized elements for the library to maximize performance in side chain optimization, in terms of both time and accuracy. We are also creating methods for predicting the precise sampling needs of each individual position in a protein, with the idea that transferring sampling from positions that are easy to satisfy to those that require many conformations will result in improved performance.</p>
+<hr />
+<h2>
+	November 15: Jeffrey P. Bigham, University of Rochester</h2>
+<h3>
+	Real-Time Crowd Support for People with Disabilities</h3>
+<p>
+	The past few decades have seen the development of wonderful new intelligent technology that serves as sensors and agents onto an inaccessible world for people with disabilities, but it remains both too prone to errors and too limited in the scope to reliably address many problems faced by people with disabilities in their everyday lives. We have been developing approaches to crowdsourcing that work in real-time to overcome these problems. In this talk, I&#39;ll discuss the following recent projects that use real-time crowdsourcing: (i) VizWiz, an accessible iPhone application that blind people use to take a picture, speak a question, and receive answers from the crowd in under a minute. More than 20,000 questions have been asked so far, giving us insight into the types of questions blind people want answered. (ii) Legion, a system that lets dynamic groups collaboratively control existing user interfaces using a VNC-like setup. These applications collectively inform a new model of human-computer interaction in which a dynamic group of unreliable individuals act as a single reliable user.</p>
+<p>
+	<strong>Bio:</strong><br />
+	Jeffrey P. Bigham is an Assistant Professor in the Department of Computer Science at the University of Rochester where he directs ROC HCI. His works spans Access Technology, Human Computation, and Intelligent User Interfaces. He is specifically interested in technology that engages the crowd to assist people with disabilities in their everyday lives. Professor Bigham received his Ph.D. in 2009 in Computer Science and Engineering from the University of Washington working with Dr. Richard Ladner, and his B.S.E. from Princeton in 2003. Jeffrey has received a number of awards for his work, including the Andrew W. Mellon Foundation Award for Technology Collaboration, the MIT Technology Review Top 35 Innovators Under 35 Award, two ASSETS Best Student Paper Awards, and the UIST 2010 Best Paper Award.</p>
+<hr />
+<h2>
+	November 9: Dmitry Malioutov, DRW Algorithmic Trading</h2>
+<h3>
+	Smooth Isotonic Covariances for Interest Rate Risk Modeling</h3>
+<p>
+	In this talk we consider the problem of estimating the covariance matrix of a high-dimensional random vector in the scarce data setting, where the number of samples is less than or comparable to the dimension. The sample covariance matrix is a poor choice in this setting, and a variety of structural assumptions or priors have been considered in the literature: covariance selection models with sparse precision matrices, low-rank models (PCA and factor analysis), sparse plus low-rank, covariance shrinkage, and others.</p>
+<p>
+	We suggest to use another type of structure, which plays an important role in applications such as interest rate modeling in computational finance: we assume that the random vectors can be indexed over a low-dimensional manifold, and the covariance matrix has smoothness and monotonicity properties over the manifold. We describe how these assumptions can be enforced in a convex optimization framework using semidefinite programming (SDP) via interior point methods and first order proximal gradient methods. Furthermore we also describe how this framework could be applied to problems with missing data, and with asynchronous measurements.</p>
+<p>
+	<strong>Bio:</strong><br />
+	Dmitry Malioutov completed his PhD at MIT in the area of statistical signal processing, machine learning and convex optimization. After a postdoctoral position in Microsoft Research he is now a researcher in the Algorithmic trading group in DRW holdings. His research interests include sparse signal representation and compressed sensing, graphical models and message passing algorithms, convex optimization, and relaxations of combinatorial optimization problems. He is also interested in statistical risk management in high-dimensional settings, and market micro-structure analysis in computational finance. He coauthored more than 25 academic papers, and received the 2011 IEEE Signal Processing Society best paper award, the 2006 IEEE ICASSP best student paper award, and the MIT presidential fellowship.</p>
+<hr />
+<h2>
+	November 3 (Thursday): Jesse Walker, Intel Security Lab</h2>
+<h3>
+	Conceptual Foundations of the Ivy Bridge Random Number Generator</h3>
+<p>
+	This talk will describe the ideas behind the Ivy Bridge Random Number Generator. The talk begins with a discussion of how cryptography uses randomness, followed by a discussion of some important concepts associated with it. The presentation motivates the new design by examining the shortcomings of Intel&rsquo;s 1999 RNG. With this background, the talk describes Intel&rsquo;s new RNG architecture and its underlying theory.</p>
+<p>
+	<strong>Bio:</strong><br />
+	Jesse Walker is a researcher in Intel&rsquo;s Security Research Lab, based in Hillsboro, OR. He was the architect for Intel&rsquo;s new random number generator, which is scheduled to first ship in the Ivy Bridge processor. Dr. Walker is also a co-author of Skein, a finalist cryptographic hash algorithm in NIST&rsquo;s SHA-3 competition. Other notable accomplishments include being the first to identify the flaws in WEP, Wi-Fi&rsquo;s original security protocol, and serving as the architect for 802.11i, WEP&rsquo;s replacement. Dr. Walker was honored by the Wi-Fi Alliance and Intel in 2005 for opening China to Wi-Fi, where sales had been blocked due to China&rsquo;s encryption regulations. He received a Ph.D. in mathematics from the University of Texas in 1980.</p>
+<hr />
+<h2>
+	October 26: Mikael Vejdemo Johansson, University of St. Andrews (Scotland)</h2>
+<h3>
+	The Topology of Politics</h3>
+<p>
+	Data analysis techniques swept through the field of political science in the 1990s, providing completely new ways to look at political entities. By viewing members of parliaments as points in a vector space spanned by the votes they had to cast, questions like party classification and comparison reduce to pure data analysis.</p>
+<p>
+	In a completely different context, the last decade has seen the rise of algebraic topology as a source of methods for application areas far outside of mathematics. Data analysis tools with roots in algebraic topology have proven themselves to be useful to computational geometry, cancer research, materials sciences, and numerous other scientific endeavors. Throughout the rise of topological data analysis, a leading observation has been that through the use of topology, the analyses performed are <em>qualitative</em> rather than <em>quantitative</em>: topological approaches do not rely on the particular metrics used in any given dataset help them become stable and resilient to noise. In work jointly with Gunnar Carlsson (Stanford) and Anders Sandberg (Oxford), we work on using the developments in topological data analysis to improve on the analysis of political data. I shall give examples and demonstrate the relevant techniques, and show how we can improve on classical analyses with tools from topology.</p>
+<p>
+	<strong>Bio:</strong><br />
+	Mikael Vejdemo-Johansson finished his doctorate in computational homological algebra at the Friedrich-Schiller University in Jena, Germany, in 2008, and has since done research in algebraic topology by way of explicit computations. After a 3-year postdoctoral study at Stanford University, he is now a Scientific Officer at the University of St. Andrews in Scotland, working on parallelization, cluster computing and HPC-adaptation of computational algebra. He retains his interest in computational and applied algebraic topology, and is currently co-authoring the first textbook in Topological Data Analysis.</p>
+<hr />
+<h2>
+	October 19: Aleksander Madry, Microsoft Research</h2>
+<h3>
+	Online Algorithms and the k-Server Conjecture</h3>
+<p>
+	Traditionally, in the problems considered in optimization, one needs to produce the solution only after the whole input is made available. However, in many real-world scenarios the input is revealed gradually, and one needs to make irrevocable decisions along the way while having only partial information on the whole input. This motivates us to develop models that allow us to address such scenarios. In this talk, I will consider one of the most popular approaches to dealing with uncertainty in optimization: the online model and competitive analysis. I will focus on a central problem in this area: the k-server problem. This problem captures many online scenarios - in particular, the widely studied caching problem - and is considered by many to be the &quot;holy grail&quot; problem of the field. I will present a new randomized algorithm for the k-server problem that is the first online algorithm for this problem that achieves polylogarithmic competitiveness.</p>
+<p>
+	Based on joint work with Nikhil Bansal, Niv Buchbinder, and Joseph (Seffi) Naor.</p>
+<hr />
+<h2>
+	October 5: Tony Wirth, University of Melbourne</h2>
+<h3>
+	Set Cover Algorithms For Very Large Datasets</h3>
+<p>
+	The problem of Set Cover&mdash;to find the smallest subcollection of sets that covers some universe&mdash;is at the heart of many data and analysis tasks. It arises in a wide range of settings, including operations research, machine learning, planning, data quality and data mining. Although finding an optimal solution is NP-hard, the greedy algorithm is widely used, and typically finds solutions that are close to optimal. However, a direct implementation of the greedy approach, which picks the set with the largest number of uncovered items at each step, does not behave well when the input is very large and disk resident. The greedy algorithm must make many random accesses to disk, which are unpredictable and costly in comparison to linear scans. In order to scale Set Cover to large datasets, we provide a new algorithm which finds a solution that is provably close to that of greedy, but which is much more efficient to implement using modern disk technology. We also apply careful indexing techniques to implement the standard greedy algorithm. Our experiments show a ten-fold improvement in speed on moderately-sized datasets over a naive greedy implementation, and an even greater improvement on larger datasets.</p>
+<p>
+	This paper is joint work with Graham Cormode and Howard Karloff, both at AT&amp;T Labs-Research, and Andrew Turpin, at The University of Melbourne. A preliminary version of this paper appeared in CIKM 2010.</p>
+<p>
+	<strong>Bio:</strong></p>
+<p>
+	Tony Wirth is a senior lecturer in the Department of Computer Science and Software Engineering at The University of Melbourne: he joined the department in 2005. Tony received the BSc (Hons) and MSc degrees from The University of Melbourne, and the MA and PhD degrees at Princeton University. His research interests are based around theoretical computer science, including graph algorithms, approximation algorithms, algorithms on external memory, communication complexity, adaptive sampling, and sequence analysis problems in bioinformatics.</p>
+<hr />
+<h2>
+	September 28: Gayle Laakmann McDowell, CareerCup.com</h2>
+<h3>
+	How to Crack the Coding Interview: Skills and Strategies for Software<br />
+	Engineers</h3>
+<p>
+	CS interviews are a different breed from other interviews and, as such, require specialized skills and techniques. This talk will teach you how to prepare for coding interviews, what top companies like Google, Amazon, and Microsoft really look for, and how to tackle the toughest programming and algorithm problems.&nbsp; This talk will be a deeply technical and will include stories from the speaker&#39;s extensive interviewing experience as well as a live &quot;demo&quot; of how to tackle a technical problem.</p>
+<p>
+	Signed copies of McDowell&#39;s <em>Cracking the Coding Interview</em> and <em>The Google R&eacute;sum&eacute;</em> will be on sale after the talk for $20. <em>Cracking the Coding Interview</em> is the #1 interview prep book for software engineers and the 5th edition, just released in Aug 2011, is nearly double the size of the previous edition. <em>The Google </em><em>R&eacute;sum&eacute;</em> is a broader book to teach people what they need to do to position themselves for a tech job, starting from early in college up through the offer and job performance itself. The books are rated as 5 and 4.5 stars respectively on Amazon.</p>
+<p>
+	<strong>Bio:</strong><br />
+	Gayle Laakmann McDowell is the founder and CEO of CareerCup.com and the author of Cracking the Coding Interview and The Google Resume. CareerCup is the leading source of technical interview preparation and provides a free forum with 3000+ technical interview questions, a book, a video, and mock interviews.<br />
+	<br />
+	Gayle has worked as a Software Engineer for Google, Microsoft and Apple and has extensive interviewing experience on both sides of the table. She has interviewed and received offers from Google, Microsoft, Apple, Amazon, IBM, Goldman Sachs and a variety of other firms, and she has interviewed over 120 candidates at Google and served on its hiring committee.<br />
+	<br />
+	Gayle holds a BSE and MSE from UPenn in Computer Science, and an MBA from the Wharton School.</p>
+
+</div>
+<!-- end page content -->
+		</td>
+		<td class="contentRight" valign="top" width="10" height="329"></td>
+	</tr>
+</table>
+<!-- end content table -->
+
+<!-- page divider table -->
+<table width="858" height="20" border="0" cellpadding="0" cellspacing="0" align="center">
+	<tr height="20">
+		<td width="10" height="20"><img src="http://www.cs.dartmouth.edu/images/t2-page-bg_04.png" width="10" height="20" alt=""></td>
+		<td width="838" height="20"><img src="http://www.cs.dartmouth.edu/images/t2-page-bg_05.jpg" width="838" height="20" alt=""></td>
+		<td width="10" height="20"><img src="http://www.cs.dartmouth.edu/images/t2-page-bg_06.png" width="10" height="20" alt=""></td>
+		</tr>
+</table>
+<!-- end page divider table -->
+<!-- bottom navigation and search table -->
+<table width="838" align="center" height="144" border="0" cellpadding="0" cellspacing="0" align="center">
+	<tr height="128">
+		<td class="pageBottom" width="838" height="128">
+							<table border="0" cellspacing="0" cellpadding="0" align="center" class="bottomNav">
+		<tr>
+			<td class="bottomNavRowHead">About</td>
+			<td class="bottomNavLinks"><a href="http://www.cs.dartmouth.edu/" target="_self">Home</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/about-dartmouth-cs.php" target="_self">About</a> | <a href="http://www.dartmouth.edu" target="_self">Dartmouth</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/jobs-in-dartmouth-cs.php" target="_self">Jobs</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/contact-dartmouth-computer-science.php" target="_self">Contact</a> | <a href="http://www.cs.dartmouth.edu/site-content/internal/index.php" target="_self">Internal</a> | <a href="http://www.cs.dartmouth.edu/site-content/connector/index.php" target="_self">Connector</a></td>
+		</tr>
+		<tr>
+			<td class="bottomNavRowHead">People</td>
+			<td class="bottomNavLinks"><a href="http://www.cs.dartmouth.edu/site-content/tenure-track-faculty/index.php" target="_self">Tenure-Track Faculty</a> | <a href="http://www.cs.dartmouth.edu/site-content/faculty-other/index.php" target="_self">Other Faculty</a> | <a href="http://www.cs.dartmouth.edu/site-content/staff-administrative/index.php" target="_self">Administrative Staff</a> | <a href="http://www.cs.dartmouth.edu/site-content/staff-technical/index.php" target="_self">Technical Staff</a> | <a href="http://www.cs.dartmouth.edu/site-content/postdoctoral-researchers/index.php" target="_self">Postdoctoral Researchers</a> | <a href="http://www.cs.dartmouth.edu/site-content/graduate-students/index.php" target="_self">Graduate Students</a> | <a href="http://www.cs.dartmouth.edu/site-content/alumni-professors/index.php" target="_self">Alumni Professors</a> | <a href="http://myslu.stlawu.edu/~ltorrey/profiles/index.html" target="_self">Profiles of Dartmouth CS Alumni</a></td>
+		</tr>
+		<tr>
+			<td class="bottomNavRowHead">Research</td>
+			<td class="bottomNavLinks"><a href="http://www.cs.dartmouth.edu/site-content/news/index.php" target="_self">News</a> | <a href="http://www.cs.dartmouth.edu/~csrs/" target="_self">CSRS</a> | <a href="http://www.cs.dartmouth.edu/site-content/research-projects/index.php" target="_self">Research Labs and Projects</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/colloquium.php" target="_self">Colloquium</a> | <a href="http://www.cs.dartmouth.edu/site-content/books/index.php" target="_self">Books by Faculty</a> | <a href="http://www.cs.dartmouth.edu/site-content/reports/index.php" target="_self">Technical Reports</a></td>
+		</tr>
+		<tr>
+			<td class="bottomNavRowHead">Programs</td>
+			<td class="bottomNavLinks"><a href="http://www.cs.dartmouth.edu/site-content/site/a-major-redesign.php" target="_self">A Major Redesign</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/undergraduate-programs.php" target="_self">Undergraduate Programs</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/graduate-programs.php" target="_self">Graduate Programs</a> | <a href="http://www.cs.dartmouth.edu/site-content/graduate-courses/index.php" target="_self">Graduate Courses</a> | <a href="http://www.cs.dartmouth.edu/site-content/undergrad-courses/index.php" target="_self">Undergraduate Courses</a></td>
+		</tr>
+		<tr>
+			<td class="bottomNavRowHead">Admissions</td>
+			<td class="bottomNavLinks"><a href="http://www.dartmouth.edu/admissions/" target="_self">Undergraduate</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/ms-admissions.php" target="_self">M.S. Admissions</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/phd-admissions.php" target="_self">Ph.D. Admissions</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/md---phd-in-compbio.php" target="_self">M.D. - Ph.D. in CompBio</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/graduate-student-life.php" target="_self">Graduate Student Life</a></td>
+		</tr>
+	</table>
+
+		</td>
+	</tr>
+	<tr height="16">
+		<td width="838" height="16"><img src="http://www.cs.dartmouth.edu/images/t2-page-bg_11.gif" width="838" height="16" alt=""></td>
+	</tr>
+</table>
+<!-- end bottom navigation and search table -->
+
+<!-- copyright table -->
+<table width="858" border="0" cellpadding="0" cellspacing="0" align="center">
+	<tr>
+		<td class="pad5" width="838" style="padding-left:25px;"><span class="copyrightText">&copy; Copyright 2010, Dartmouth College Computer Science Department, All Rights Reserved</span></td>
+	</tr>
+</table>
+<!-- end copyright table -->
+
+<!-- pad the page bottom -->
+<div class="pad5"><div class="pad5"></div></div>
+<!-- end pad the page bottom -->
+	</body>
+</html>

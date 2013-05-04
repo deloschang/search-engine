@@ -1,0 +1,120 @@
+http://www.cs.dartmouth.edu/~dist
+3
+<!DOCTYPE HTML PUBLIC "-//Netscape Comm. Corp.//DTD HTML//EN">
+<html> <head>
+<title>DIST Project</title>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<img height=170 width=440 src=DIST_logo.png align=left>
+
+<br />
+<h2>Dartmouth Internet Security Testbed (DIST)</h2>
+
+DIST is an <a href="http://www.ists.dartmouth.edu">ISTS</a>-funded
+project, operated in cooperation with Kiewit Computing
+Services, that concerns itself with studying campus network usage patterns and
+with developing systems for automatically detecting malicious attempts
+to disrupt or degrade the network.
+To support these activities, DIST has been installing
+<em>wireless monitors</em> at various locations
+around the campus.
+<p>
+
+The DIST wireless monitors look a lot like the Kiewit <em>access
+points</em> that are deployed around the campus to support wireless
+Internet access at Dartmouth.  In fact, both the Kiewit access points
+and the DIST wireless monitors are Aruba AP70s, and they differ only in the
+way they are deployed.
+<p>
+
+One of the differences is physical:  the Kiewit access points have no
+external antennas (they transmit and receive through antennas embedded in
+their antenna flaps), while the DIST wireless monitors are deployed with
+twin blade antennas mounted at their sides.  A few of the DIST wireless
+monitors are mounted with their flaps closed.  
+Another difference, albeit an
+invisible one, lies in the software that is deployed on these devices.
+The Kiewit access points run proprietary Aruba software for managing
+communication on a wireless network; if you have a laptop computer or
+other wireless device and are within range of a Kiewit access point,
+you can associate with it and use it to access the Internet.  By
+contrast, the DIST wireless monitors run our own research software, which
+monitors wireless network traffic with the goal of detecting anomalies
+that suggest malicious activity.  The DIST wireless monitors play no direct
+role in supporting Internet communication, and your laptop cannot associate
+with them.
+<p>
+
+<table cellspacing="2" cellpadding="2" width="100%">
+ <tr>
+  <td align="center" width="33%">
+   <a href="AP_comparison/AP_comp-Pages/Image0.html">
+    <img height="320" alt="Hitchcock-5-3.JPG" width="240"
+        src="AP_comparison/AP_comp-Thumbnails/0.jpg">
+   </a>
+   <br>A Kiewit access point
+  </td>
+  <td align="center" width="33%">
+   <a href="AP_comparison/AP_comp-Pages/Image1.html">
+    <img height="320" alt="IMG_0342.JPG" width="240"
+        src="AP_comparison/AP_comp-Thumbnails/1.jpg">
+   </a>
+   <br>An open-flap DIST wireless monitor
+  </td>
+  <td align="center" width="33%">
+   <a href="AP_comparison/AP_comp-Pages/Image2.html">
+    <img height="320" alt="DIST-015.JPG" width="240"
+        src="AP_comparison/AP_comp-Thumbnails/2.jpg">
+   </a>
+   <br>A closed-flap DIST wireless monitor
+  </td>
+ </tr>
+</table>
+<p>
+
+Each DIST wireless monitor is deployed with a label that reads DIST-XXX,
+where XXX is a three-digit number.  These labels help the DIST project
+to identify individual DIST wireless monitors in case any problems or
+questions arise in connection with them.
+<p>
+
+The Dartmouth College Office of Public Affairs has issued a
+<a href="http://www.dartmouth.edu/~news/releases/2008/06/10.html">press release</a>
+about the DIST project.
+<p>
+
+See also the DIST <a href="privacy.html">privacy statement</a>
+and the DIST <a href="wireless-faq.html">Frequently Asked Questions</a>.
+<p>
+
+For more information, contact
+<ul>
+  <li> Bennet Vance, Technical point of contact,
+    <a href="mailto:bennet AT cs.dartmouth.edu">bennet AT cs.dartmouth.edu</a>,
+    <B>(603) 646-8721</B>,
+    or
+  <li> Prof. David Kotz, Principal investigator,
+    <a href="mailto:dfk AT cs.dartmouth.edu">dfk AT cs.dartmouth.edu</a>,
+    <B>(603) 646-1439</B>.
+</ul>
+<p>
+
+<HR>
+<SMALL>
+DIST is a research program in the
+<a href="http://www.ists.dartmouth.edu">
+Institute for Security Technology Studies </a>
+at Dartmouth College, supported by the U.S. Department of Homeland Security
+under Grant Award Number 2006-CS-001-000001. The views and conclusions
+resulting from DIST research are those of the authors and should not be
+interpreted as necessarily representing the official policies, either
+expressed or implied, of the U.S. Department of Homeland Security.
+<p>
+Sun Microsystems is a contributor to the DIST project.
+<HR>
+<!-- hhmts start -->
+Last modified: Thu Apr  9 16:53:57 EDT 2009
+<!-- hhmts end -->
+</SMALL>
+</body> </html>

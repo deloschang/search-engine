@@ -1,0 +1,86 @@
+http://www.cs.dartmouth.edu/~robotics/summercamp
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="camp.css" type="text/css" />
+</head>
+<body>
+
+
+<div id="container">
+<div id="sitetitle">Dartmouth summer robotics camp</div>
+<div id="sitesubtitle"> Computer Science department, Summer 2013</div>
+</div>
+
+<div id = "menubar">
+<ul>
+<li><a href="about.html">About</a>
+<!-- <li><a href="application-form.php">Application</a> -->
+</ul>
+</div>
+
+<div class="right_image">
+<img src="images/roboj.jpg">
+</div>
+
+
+<h1 id="no-summer-camp-this-year-2013">No summer camp this year (2013)</h1>
+<p><strong>We will NOT be offering the summer camp in 2013.</strong> Apologies to those who were excited about this camp this year -- we plan to be back next year.</p>
+<!--
+
+* [Applications](application-form.php) for the 2013 summer camp are now available.  Applications are due <b>April 31</b>.  Accepted students will be notified in early May.  
+-->
+
+<!--
+* **Application decisions have been e-mailed; all camps are full.**  If you have not heard from us, please contact us directly and we'd be happy to check the status of your application.  There were many more applicants than spots, and camp students were selected by lottery.  If you did not get a spot this year, we'd be happy to see your application again next year. 
+-->
+
+<!--
+## Directions to Sudikoff Lab ##
+
+The camp will be held in Sudikoff lab, which is the computer science department building on Dartmouth Campus.  To get to Sudikoff, turn onto College street from East Wheelock street.   (College street is the the road along the east side of the Dartmouth Green.)  Keep going straight on College street when the Green ends.  You'll pass the main library on your left, and then a white church.  Sudikoff is immediately after the church, on the corner of Maynard street.  The address is 9 Maynard; Google maps can give you more detailed directions if needed.
+
+Campers can be dropped off at the Sudikoff main lobby at the beginning of each day's session (either 9 am or 1 pm, depending on the camp), and can be picked up from the same place 3 hours later (12 pm or 4 pm).  There will be an informal 5-10 minute break halfway through each session; students are welcome to bring a small snack. 
+-->
+
+<h2 id="about-the-camp">About the camp</h2>
+<p>The Dartmouth summer robotics camp is a unique program for middle- to high-school age students involving Dartmouth College students and the community. <strong>Enrollments are determined by lottery</strong>. If you have already participated in a camp in a previous year, we request and recommend that you do not apply for a camp this year! Much of the material covered overlaps from year to year, so repeating a camp is of limited value to a student.</p>
+<p><strong>No prior experience in robotics or programming is required.</strong> However, the camp does involve some technical work requiring patience and some comfort with typing and computers. Students will learn real programming skills in a widely-used programming language.</p>
+<p>The camp is offered <strong>free of charge</strong> to local students, through the generous support of the <a href="http://www.cs.dartmouth.edu">Dartmouth Computer Science Department</a>, the <a href="http://www.dartmouth.edu/~neukom/">Neukom Institute for Computational Science</a>, the <a href="http://www.dartmouth.edu/~provost/">Dartmouth Office of the Provost</a>, and the <a href="http://www.cs.dartmouth.edu/~devin">Balkcom robotics lab</a>.</p>
+<!--
+
+## Schedule
+
+In all four camps, students will program robots to achieve challenging tasks, including navigating a mobile robot through a maze, and using a robot arm to draw or paint pictures.  
+
+* Camp 1a:  Middle school camp (6th-8th grades), July 8-12, 9 am - 12 pm.  Middle-school students will learn to program robots to navigate a maze and paint pictures.   
+
+* Camp 1b:  Middle school camp (6th-8th grades), July 8-12, 1 pm - 4 pm.  Same as camp 1a, but in the afternoon.
+
+* Camp 2:  Girls-only camp (6th-10th grades), July 15-19, 9 am - 12 pm.  The girls-only camp will offer girls a chance to program robots, with instruction from women faculty and students at Dartmouth.
+
+* Camp 3: Controlling robots (9th-12th grades), July 15-19, 1 pm - 4 pm.  High-school students will learn to control an industrial robot arm to assemble structures, and program mobile robots to navigate and map a building.
+-->
+
+<h2 id="contact">Contact</h2>
+<p>e-mail is by far the best way to reach us: robotcamp@cs.dartmouth.edu</p>
+<!--
+
+## Camp organizer
+
+This year's camp will be organized by [Devin Balkcom](http://www.cs.dartmouth.edu/~devin).  Balkcom graduated with a Ph.D. in robotics from [Carnegie Mellon University](http://www.ri.cmu.edu/) in 2004, where he built the first origami-folding robot.   Balkcom has been a professor at the [Dartmouth Computer Science Department](http://www.cs.dartmouth.edu) since 2004, and has taught sessions in the robotics camp since 2007.
+
+## Camp history
+
+The camp was founded by Suzanne Thompson in 2004, and was directed by Suzanne between 2004 and 2009.  Balkcom has directed the camp from 2009 to the present.  Several past years have also included collaborative camps in security and cryptography.
+
+-->
+
+</body>
+</html>

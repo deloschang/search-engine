@@ -1,0 +1,385 @@
+http://www.cs.dartmouth.edu/index.php
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Welcome to the Dartmouth Computer Science Department</title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<meta http-equiv="content-language" content="en">
+		<link rel="icon" href="http://www.cs.dartmouth.edu/favicon.ico" type="image/x-icon">
+		<meta name="description" content="With a long tradition of excellence dating back to the 1960's, Dartmouth's CS program has a world-class faculty on the cutting edge of computing and research.">
+		<meta name="keywords" content="dartmouth college computer science, dartmouth college, computer science, dartmouth computer science, dartmouth college cs, dartmouth cs, BASIC programming language, Sudikoff Laboratory, Sudikoff, Ph.D. program in Computer Science, M.S. program in Computer Science, undergraduate program in Computer Science">
+		<meta name="author" content="Dartmouth Computer Science">
+		<meta name="robots" content="all,index,follow">
+		<meta name="googlebot" content="all,index,follow">
+		<link href="http://www.cs.dartmouth.edu/css/support.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="http://www.cs.dartmouth.edu/css/site.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="http://www.cs.dartmouth.edu/css/dartmouth.css" rel="stylesheet" type="text/css" media="all" />
+		<script type="text/javascript" src="http://www.cs.dartmouth.edu/js/lib.js"></script>
+		<script type="text/javascript" src="http://www.cs.dartmouth.edu/js/topNavigation.js"></script>
+		<link href="http://www.cs.dartmouth.edu/css/baseline.type.css" rel="stylesheet" type="text/css" media="all" />
+		<script type="text/javascript" src="http://www.cs.dartmouth.edu/js/quickview.js"></script>
+		<script type="text/javascript">
+var imNavArr = [];
+imNavArr[0] = 'http://www.cs.dartmouth.edu/images/t2-mh_01_home.png';
+imNavArr[1] = 'http://www.cs.dartmouth.edu/images/t2-mh_02_people.png';
+imNavArr[2] = 'http://www.cs.dartmouth.edu/images/t2-mh_03_research.png';
+imNavArr[3] = 'http://www.cs.dartmouth.edu/images/t2-mh_04_programs.png';
+imNavArr[4] = 'http://www.cs.dartmouth.edu/images/t2-mh_05_admissions.png';
+
+function preloadNavImages() {
+	if (document.images) {
+		t2_mh_0_click = newImage("http://www.cs.dartmouth.edu/images/t2-mh_01_home-click.png");
+		t2_mh_0_click_left = newImage("http://www.cs.dartmouth.edu/images/t2-mh_02_people-click-left.png");
+
+		t2_mh_1_click = newImage("http://www.cs.dartmouth.edu/images/t2-mh_02_people-click.png");
+		t2_mh_1_click_left = newImage("http://www.cs.dartmouth.edu/images/t2-mh_03_research-click-left.png");
+
+		t2_mh_2_click = newImage("http://www.cs.dartmouth.edu/images/t2-mh_03_research-click.png");
+		t2_mh_2_click_left = newImage("http://www.cs.dartmouth.edu/images/t2-mh_04_programs-click-left.png");
+
+		t2_mh_3_click = newImage("http://www.cs.dartmouth.edu/images/t2-mh_04_programs-click.png");
+		t2_mh_3_click_left = newImage("http://www.cs.dartmouth.edu/images/t2-mh_05_admissions-click-left.png");
+
+		t2_mh_4_click = newImage("http://www.cs.dartmouth.edu/images/t2-mh_05_admissions-click.png");
+		t2_mh_4_click_right = newImage("http://www.cs.dartmouth.edu/images/t2-mh_04_programs-click-right.png");
+
+		preloadFlag = true;
+	}
+}
+
+function menuListener()
+	{
+	window.addEventListener('click',resetNav,false);
+	}
+
+addLoadEvent(preloadNavImages());
+addLoadEvent(menuListener());
+
+		</script>
+	</head>
+
+	<body id="pageBody">
+		<div id="helpdiv"><div id="helpdivcontent"></div></div>
+		<div id="formSubmissionDiv"><div id="formSubmissionDivContent"></div></div>
+<div id="quickview"><div id="quickviewclose"><a href="javascript:closeQuickView();">close</a></div><div id="quickviewcontent"></div></div>
+<a name="top"></a><!-- masthead and navigation table -->
+
+		<table width="838" border="0" cellpadding="0" cellspacing="0" align="center">
+			<tr>
+				<td>
+<div style="position:relative;">
+
+		<table width="838" height="44" border="0" cellpadding="0" cellspacing="0">
+			<tr height="44">
+				<td valign="bottom" width="237" height="99"><a href="http://www.cs.dartmouth.edu"><img src="http://www.cs.dartmouth.edu/images/t2-mh_01.png" width="237" height="99" border="0"></a></td>
+				<td valign="bottom" width="120" height="99"><a href="javascript:changeNavImages('t2_mh_0', 'http://www.cs.dartmouth.edu/images/t2-mh_01_home-click.png', 't2_mh_1', 'http://www.cs.dartmouth.edu/images/t2-mh_02_people-click-left.png');resetNavClock();"><img name="t2_mh_0" id="t2_mh_0_id" src="http://www.cs.dartmouth.edu/images/t2-mh_01_home.png" width="120" height="44" border="0" alt="Home"></a></td>
+				<td valign="bottom" width="120" height="99"><a href="javascript:changeNavImages('t2_mh_1', 'http://www.cs.dartmouth.edu/images/t2-mh_02_people-click.png', 't2_mh_2', 'http://www.cs.dartmouth.edu/images/t2-mh_03_research-click-left.png');resetNavClock();"><img name="t2_mh_1" id="t2_mh_1_id" src="http://www.cs.dartmouth.edu/images/t2-mh_02_people.png" width="120" height="44" border="0" alt="People"></a></td>
+				<td valign="bottom" width="120" height="99"><a href="javascript:changeNavImages('t2_mh_2', 'http://www.cs.dartmouth.edu/images/t2-mh_03_research-click.png', 't2_mh_3', 'http://www.cs.dartmouth.edu/images/t2-mh_04_programs-click-left.png');resetNavClock();"><img name="t2_mh_2" id="t2_mh_2_id" src="http://www.cs.dartmouth.edu/images/t2-mh_03_research.png" width="120" height="44" border="0" alt="Research"></a></td>
+				<td valign="bottom" width="120" height="99"><a href="javascript:changeNavImages('t2_mh_3', 'http://www.cs.dartmouth.edu/images/t2-mh_04_programs-click.png', 't2_mh_4', 'http://www.cs.dartmouth.edu/images/t2-mh_05_admissions-click-left.png');resetNavClock();"><img name="t2_mh_3" id="t2_mh_3_id" src="http://www.cs.dartmouth.edu/images/t2-mh_04_programs.png" width="120" height="44" border="0" alt="Programs"></a></td>
+				<td valign="bottom" width="120" height="99"><a href="javascript:changeNavImages('t2_mh_4', 'http://www.cs.dartmouth.edu/images/t2-mh_05_admissions-click.png', 't2_mh_3', 'http://www.cs.dartmouth.edu/images/t2-mh_04_programs-click-right.png');resetNavClock();"><img name="t2_mh_4" id="t2_mh_4_id" src="http://www.cs.dartmouth.edu/images/t2-mh_05_admissions.png" width="120" height="44" border="0" alt="Admissions"></a></td>
+				<td valign="bottom" width="1" height="99"><img src="http://www.cs.dartmouth.edu/images/spacer.gif" width="1" height="44"></td>
+			</tr>
+
+
+		</table>
+<div id="subnavwrap" style="position:absolute;top:99px;left:237px;width:599px;z-index:200;">
+<div class="topnavSubOverlay" id="div_t2_mh_0_sub" style="left:-2px;">
+
+<table width="241" border="0" cellpadding="0" cellspacing="0">
+	<tr height="12">
+		<td width="2" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_04.png" width="2" height="12" alt=""></td>
+		<td width="241" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_05.jpg" width="241" height="12" alt=""></td>
+		<td width="3" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_06.png" width="3" height="12" alt=""></td>
+	</tr>
+
+	<tr>
+		<td width="2" height="12" class="topnavSubOverlayLeft"></td>
+
+		<td class="topnavSubOverlayContent" onmouseover="resetNavClock();">
+<ul>
+<li><a href="http://www.cs.dartmouth.edu/" target="_self">Home</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/about-dartmouth-cs.php" target="_self">About</a></li><li><a href="http://www.dartmouth.edu" target="_blank">Dartmouth</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/jobs-in-dartmouth-cs.php" target="_self">Jobs</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/contact-dartmouth-computer-science.php" target="_self">Contact</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/internal/index.php" target="_self">Internal</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/connector/index.php" target="_self">Connector</a></li></ul>
+					</ul>
+				</td>
+		<td width="2" height="12" class="topnavSubOverlayRight"></td>
+	</tr>
+			<tr>
+			<tr height="19">
+		<td width="2" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_13.png" width="2" height="19" alt=""></td>
+		<td width="241" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_14.png" width="241" height="19" alt=""></td>
+		<td width="3" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_15.png" width="3" height="19" alt=""></td>
+	</tr>
+
+</table>
+
+</div>
+
+<div class="topnavSubOverlay" id="div_t2_mh_1_sub" style="left:118px;">
+
+<table width="241" border="0" cellpadding="0" cellspacing="0">
+	<tr height="12">
+		<td width="2" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_04.png" width="2" height="12" alt=""></td>
+		<td width="241" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_05.jpg" width="241" height="12" alt=""></td>
+		<td width="3" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_06.png" width="3" height="12" alt=""></td>
+	</tr>
+
+	<tr>
+		<td width="2" height="12" class="topnavSubOverlayLeft"></td>
+
+		<td class="topnavSubOverlayContent" onmouseover="resetNavClock();">
+<ul>
+<li><a href="http://www.cs.dartmouth.edu/site-content/tenure-track-faculty/index.php" target="_self">Tenure-Track Faculty</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/faculty-other/index.php" target="_self">Other Faculty</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/staff-administrative/index.php" target="_self">Administrative Staff</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/staff-technical/index.php" target="_self">Technical Staff</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/postdoctoral-researchers/index.php" target="_self">Postdoctoral Researchers</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/graduate-students/index.php" target="_self">Graduate Students</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/alumni-professors/index.php" target="_self">Alumni Professors</a></li><li><a href="http://myslu.stlawu.edu/~ltorrey/profiles/index.html" target="_self">Profiles of Dartmouth CS Alumni</a></li></ul>
+					</ul>
+				</td>
+		<td width="2" height="12" class="topnavSubOverlayRight"></td>
+	</tr>
+			<tr>
+			<tr height="19">
+		<td width="2" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_13.png" width="2" height="19" alt=""></td>
+		<td width="241" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_14.png" width="241" height="19" alt=""></td>
+		<td width="3" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_15.png" width="3" height="19" alt=""></td>
+	</tr>
+
+</table>
+
+</div>
+
+<div class="topnavSubOverlay" id="div_t2_mh_2_sub" style="left:238px;">
+
+<table width="241" border="0" cellpadding="0" cellspacing="0">
+	<tr height="12">
+		<td width="2" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_04.png" width="2" height="12" alt=""></td>
+		<td width="241" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_05.jpg" width="241" height="12" alt=""></td>
+		<td width="3" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_06.png" width="3" height="12" alt=""></td>
+	</tr>
+
+	<tr>
+		<td width="2" height="12" class="topnavSubOverlayLeft"></td>
+
+		<td class="topnavSubOverlayContent" onmouseover="resetNavClock();">
+<ul>
+<li><a href="http://www.cs.dartmouth.edu/site-content/news/index.php" target="_self">News</a></li><li><a href="http://www.cs.dartmouth.edu/~csrs/" target="_self">CSRS</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/research-projects/index.php" target="_self">Research Labs and Projects</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/colloquium.php" target="_self">Colloquium</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/books/index.php" target="_self">Books by Faculty</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/reports/index.php" target="_self">Technical Reports</a></li></ul>
+					</ul>
+				</td>
+		<td width="2" height="12" class="topnavSubOverlayRight"></td>
+	</tr>
+			<tr>
+			<tr height="19">
+		<td width="2" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_13.png" width="2" height="19" alt=""></td>
+		<td width="241" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_14.png" width="241" height="19" alt=""></td>
+		<td width="3" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_15.png" width="3" height="19" alt=""></td>
+	</tr>
+
+</table>
+
+</div>
+
+<div class="topnavSubOverlay" id="div_t2_mh_3_sub" style="left:358px;">
+
+<table width="241" border="0" cellpadding="0" cellspacing="0">
+	<tr height="12">
+		<td width="2" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_04.png" width="2" height="12" alt=""></td>
+		<td width="241" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_05.jpg" width="241" height="12" alt=""></td>
+		<td width="3" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_06.png" width="3" height="12" alt=""></td>
+	</tr>
+
+	<tr>
+		<td width="2" height="12" class="topnavSubOverlayLeft"></td>
+
+		<td class="topnavSubOverlayContent" onmouseover="resetNavClock();">
+<ul>
+<li><a href="http://www.cs.dartmouth.edu/site-content/site/a-major-redesign.php" target="_self">A Major Redesign</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/undergraduate-programs.php" target="_self">Undergraduate Programs</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/graduate-programs.php" target="_self">Graduate Programs</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/undergrad-courses/index.php" target="_self">Undergraduate Courses</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/graduate-courses/index.php" target="_self">Graduate Courses</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/upcoming-class-schedule.php" target="_self">Upcoming Class Schedule</a></li><li><a href="http://www.cs.dartmouth.edu/~robotics/summercamp/index.php/Main_Page" target="_self">Summer Robotics Camp</a></li></ul>
+					</ul>
+				</td>
+		<td width="2" height="12" class="topnavSubOverlayRight"></td>
+	</tr>
+			<tr>
+			<tr height="19">
+		<td width="2" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_13.png" width="2" height="19" alt=""></td>
+		<td width="241" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_14.png" width="241" height="19" alt=""></td>
+		<td width="3" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_15.png" width="3" height="19" alt=""></td>
+	</tr>
+
+</table>
+
+</div>
+
+<div class="topnavSubOverlay" id="div_t2_mh_4_sub" style="left:358px;">
+
+<table width="241" border="0" cellpadding="0" cellspacing="0">
+	<tr height="12">
+		<td width="2" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_04.png" width="2" height="12" alt=""></td>
+		<td width="241" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_05.jpg" width="241" height="12" alt=""></td>
+		<td width="3" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_06.png" width="3" height="12" alt=""></td>
+	</tr>
+
+	<tr>
+		<td width="2" height="12" class="topnavSubOverlayLeft"></td>
+
+		<td class="topnavSubOverlayContent" onmouseover="resetNavClock();">
+<ul>
+<li><a href="http://www.dartmouth.edu/admissions/" target="_self">Undergraduate Admissions</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/ms-admissions.php" target="_self">M.S. Admissions</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/phd-admissions.php" target="_self">Ph.D. Admissions</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/md---phd-in-compbio.php" target="_self">M.D. - Ph.D. in CompBio</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/graduate-student-life.php" target="_self">Graduate Student Life</a></li></ul>
+					</ul>
+				</td>
+		<td width="2" height="12" class="topnavSubOverlayRight"></td>
+	</tr>
+			<tr>
+			<tr height="19">
+		<td width="2" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_13.png" width="2" height="19" alt=""></td>
+		<td width="241" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_14.png" width="241" height="19" alt=""></td>
+		<td width="3" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_15.png" width="3" height="19" alt=""></td>
+	</tr>
+
+</table>
+
+</div>
+
+</div>
+				</td>
+			</tr>
+		</table>
+
+</div>
+
+
+<!-- end masthead and navigation table -->
+<table style="width:838px;height:200px;" border="0" cellspacing="0" cellpadding="0" align="center">
+	<tr>
+		<td valign="top">
+			<div id="showSlides">
+<div id="slideshowDiv_20" class="showSlide" style="z-index:1;left:0px;"><img src="http://www.cs.dartmouth.edu/cms_file/SYS_homepage/20/02_sudikoff_weave.png" /></div>			</div>
+		</td>
+	</tr>
+</table>
+
+<!-- content table -->
+<table width="858" border="0" cellpadding="0" cellspacing="0" align="center">
+	<tr height="329">
+		<td class="contentLeft" valign="top" width="10" height="329"></td>
+		<td valign="top" bgcolor="white" width="838" height="329" class="rightCol">
+<table style="width:838px;" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td valign="top" style="width:600px;">
+			<div class="pad5">
+<div class="pad5">
+<p>
+	<span style="font-size: 22px;"><span style="color: rgb(208, 49, 0);"><span style="font-family: times new roman,times,serif;">About Dartmouth Computer Science</span></span></span></p>
+<p>
+	<span class="Apple-style-span" style="white-space: normal;">Cutting-edge research, outstanding teaching, exceptional students, a collaborative atmosphere, and wonderful facilities, all located on a beautiful Ivy League campus&mdash;that&#39;s Dartmouth Computer Science. Please browse our website to discover what Dartmouth Computer Science has to offer.</span><br />
+	&nbsp;</p>
+<p>
+	<span style="font-family: 'times new roman', times, serif; color: rgb(208, 49, 0); font-size: 22px; ">Roth Family Distinguished Professorship position</span></p>
+<p>
+	The Department of Computer Science at Dartmouth College invites applications for the inaugural Roth Family Distinguished Professorship. We seek candidates with a strong academic or industry track record in the general area of Digital Arts...&nbsp;<a href="http://www.cs.dartmouth.edu/site-content/site/roth-family-distinguished-professorship-position.php">Read more</a><br />
+	&nbsp;</p>
+<p>
+	<span style="font-size:16px;"><span style="color: rgb(208, 49, 0); font-family: 'times new roman', times, serif;">Dartmouth seeks applications and nominations for the position of Director of the Institute for Security, Technology, and Society (<span data-scayt_word="ISTS" data-scaytid="1">ISTS</span>),&nbsp;</span></span><a href="http://www.cs.dartmouth.edu/cms_file/167/ISTSDirectorSearch.pdf">Read more...</a></p>
+<div>
+	&nbsp;</div>
+<hr />
+
+</div>
+		
+<div class="pad5">
+<div style="font-size: 22px;"><span style="color: rgb(208, 49, 0);"><span style="font-family: times new roman,times,serif;">Featured Research</span></span></div><p>
+	<img alt="digital image forensics" src="http://www.cs.dartmouth.edu/content/features_research/brad_cher.jpg" style="margin: 5px; float: left;" /></p>
+<p>
+	<a href="http://www.cs.dartmouth.edu/%7Efarid">Prof. Hany Farid</a></p>
+<p>
+	We no longer live in a world where seeing (or hearing) is believing. The technology that allows for digital media to be manipulated and distorted is developing at break-neck speeds. And at the same time, our understanding of the technological, ethical, and legal implications is lagging behind.</p>
+<p>
+	We are, therefore, developing mathematical and computational algorithms to detect tampering in digital media. To do so, we quantify statistical correlations that result from specific forms of digital tampering, and devise detection schemes to reveal these correlations.</p>
+<p>
+	<a href="http://www.cs.dartmouth.edu/farid/research/tampering.html"> Read more...</a></p>
+
+</div>
+		
+			</div>
+		</td>
+		<td valign="top" style="width:238px;">
+			<div class="pad5">
+<div class="rightColumnNewsHeader">Recent News</div>
+<div class="rightColumnNewsItem"><input type="hidden" name="" id="newsContent_211"  value="&amp;lt;img src=&amp;quot;http://www.cs.dartmouth.edu/images/itemDefaultImage.png&amp;quot; style=&amp;quot;float:left;margin:0 5px 5px 0;&amp;quot; /&amp;gt;&amp;lt;p&amp;gt;	&amp;lt;span style=&amp;quot;color: rgb(0, 0, 0); font-family: arial, sans-serif; font-size: 13px; line-height: 18px;&amp;quot;&amp;gt;The&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;span data-scayt_word=&amp;quot;Kemeny&amp;quot; data-scaytid=&amp;quot;1&amp;quot;&amp;gt;Kemeny&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(0, 0, 0); font-family: arial, sans-serif; font-size: 13px; line-height: 18px;&amp;quot;&amp;gt;&amp;amp;nbsp;Prize is intended to encourage novel uses of computing by undergraduate students at Dartmouth College. To that effect, the&amp;amp;nbsp;&amp;lt;/span&amp;gt;&amp;lt;span data-scayt_word=&amp;quot;Kemeny&amp;quot; data-scaytid=&amp;quot;2&amp;quot;&amp;gt;Kemeny&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;color: rgb(0, 0, 0); font-family: arial, sans-serif; font-size: 13px; line-height: 18px;&amp;quot;&amp;gt;&amp;amp;nbsp;Prize rewards students who produce original, creative, well-designed, and well-implemented computer applications. Cash prizes are awarded to the best entries, as judged by a panel of Computer Science faculty.&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;	Submission deadline: May 30, 2013&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;	&amp;lt;a href=&amp;quot;http://www.cs.dartmouth.edu/site-content/site/guidelines-for-the-kemeny-prize.php/&amp;quot;&amp;gt;See here&amp;lt;/a&amp;gt; for more information and rules.&amp;lt;/p&amp;gt;" ><a href="javascript:showQuickView('newsContent_211');">Kemeny Prize Competition - get paid for creative CS projects!</a></div><div class="rightColumnNewsItem"><input type="hidden" name="" id="newsContent_209"  value="&amp;lt;img src=&amp;quot;http://www.cs.dartmouth.edu/cms_file/SYS_news/209/COVER FINAL.jpg&amp;quot; style=&amp;quot;float:left;margin:0 5px 5px 0;&amp;quot; /&amp;gt;&amp;lt;p&amp;gt;	Tom &amp;lt;span data-scayt_word=&amp;quot;Cormen's&amp;quot; data-scaytid=&amp;quot;1&amp;quot;&amp;gt;Cormen&amp;amp;#39;s&amp;lt;/span&amp;gt; new book, &amp;lt;em&amp;gt;Algorithms Unlocked&amp;lt;/em&amp;gt;, has been published by &amp;lt;a href=&amp;quot;https://mitpress.mit.edu/books/algorithms-unlocked&amp;quot;&amp;gt;The MIT Press&amp;lt;/a&amp;gt;.&amp;amp;nbsp; It is the 10,&amp;lt;span data-scayt_word=&amp;quot;000th&amp;quot; data-scaytid=&amp;quot;5&amp;quot;&amp;gt;000th&amp;lt;/span&amp;gt; book title published by MIT Press.&amp;lt;/p&amp;gt;" ><a href="javascript:showQuickView('newsContent_209');"><i>Algorithms Unlocked</i> by Tom Cormen</a></div><div class="rightColumnNewsItem"><input type="hidden" name="" id="newsContent_208"  value="&amp;lt;img src=&amp;quot;http://www.cs.dartmouth.edu/cms_file/SYS_news/208/gev4.small.jpg&amp;quot; style=&amp;quot;float:left;margin:0 5px 5px 0;&amp;quot; /&amp;gt;&amp;lt;p&amp;gt;	Professor &amp;lt;a href=&amp;quot;http://www.cs.dartmouth.edu/~gevorg/&amp;quot;&amp;gt;&amp;lt;span data-scayt_word=&amp;quot;Gevorg&amp;quot; data-scaytid=&amp;quot;1&amp;quot;&amp;gt;Gevorg&amp;lt;/span&amp;gt; &amp;lt;span data-scayt_word=&amp;quot;Grigoryan&amp;quot; data-scaytid=&amp;quot;2&amp;quot;&amp;gt;Grigoryan&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; has been named a &amp;lt;a href=&amp;quot;http://now.dartmouth.edu/2013/03/professor-grigoryan-wins-sloan-research-fellowship/&amp;quot;&amp;gt;2013 Sloan Research Fellow&amp;lt;/a&amp;gt;.&amp;lt;/p&amp;gt;" ><a href="javascript:showQuickView('newsContent_208');">Gevorg Grigoryan named Sloan Research Fellow</a></div><div class="rightColumnNewsItem"><input type="hidden" name="" id="newsContent_207"  value="&amp;lt;img src=&amp;quot;http://www.cs.dartmouth.edu/cms_file/SYS_news/207/naclologo.bmp&amp;quot; style=&amp;quot;float:left;margin:0 5px 5px 0;&amp;quot; /&amp;gt;&amp;lt;p&amp;gt;	Dartmouth will be hosting a site for the North American Computational&amp;amp;nbsp;Linguistics Olympiad (&amp;lt;span data-scayt_word=&amp;quot;NACLO&amp;quot; data-scaytid=&amp;quot;1&amp;quot;&amp;gt;NACLO&amp;lt;/span&amp;gt;) on January 31, 2013. The &amp;lt;span data-scayt_word=&amp;quot;olympiad&amp;quot; data-scaytid=&amp;quot;2&amp;quot;&amp;gt;olympiad&amp;lt;/span&amp;gt; is a test consisting of language puzzles, conducted across the US and&amp;amp;nbsp;Canada for students in grades 6-12. Registration is free, and all&amp;amp;nbsp;students who enjoy logic, math, and/or language are encouraged to&amp;amp;nbsp;participate. An information session will be held in early January to&amp;amp;nbsp;discuss problem-solving strategies for the test, and to answer&amp;amp;nbsp;questions about studying linguistics, computer science, and&amp;amp;nbsp;computational linguistics in college. See &amp;lt;a href=&amp;quot;http://www.cs.dartmouth.edu/~naclo&amp;quot;&amp;gt;http://www.cs.dartmouth.edu/~&amp;lt;span data-scayt_word=&amp;quot;naclo&amp;quot; data-scaytid=&amp;quot;3&amp;quot;&amp;gt;naclo&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt; for more information.&amp;lt;/p&amp;gt;" ><a href="javascript:showQuickView('newsContent_207');">Computational linguistics olympiad for high school students in January</a></div><div class="rightColumnNewsItem"><input type="hidden" name="" id="newsContent_206"  value="&amp;lt;img src=&amp;quot;http://www.cs.dartmouth.edu/cms_file/SYS_news/206/GHC2012_small.jpg&amp;quot; style=&amp;quot;float:left;margin:0 5px 5px 0;&amp;quot; /&amp;gt;&amp;lt;p&amp;gt;	Dartmouth CS was very well represented at the &amp;lt;a href=&amp;quot;http://gracehopper.org/2012/&amp;quot;&amp;gt;2012 Grace Hopper Celebration of Women in Computing&amp;lt;/a&amp;gt;, with a contingent of 30 students!&amp;lt;/p&amp;gt;" ><a href="javascript:showQuickView('newsContent_206');">30 Dartmouth CS students attend the 2012 Grace Hopper Celebration of Women in Computing</a></div><div class="rightColumnNewsItem"><input type="hidden" name="" id="newsContent_205"  value="&amp;lt;img src=&amp;quot;http://www.cs.dartmouth.edu/cms_file/SYS_news/205/campbell.jpg&amp;quot; style=&amp;quot;float:left;margin:0 5px 5px 0;&amp;quot; /&amp;gt;&amp;lt;p&amp;gt;	&amp;lt;a href=&amp;quot;http://thedartmouth.com/2012/10/05/news/app&amp;quot;&amp;gt;Story on thedartmouth.com&amp;lt;/a&amp;gt;&amp;amp;nbsp;highlights an Android app recently developed in Dr. &amp;lt;span data-scayt_word=&amp;quot;Capbell's&amp;quot; data-scaytid=&amp;quot;1&amp;quot;&amp;gt;Capbell&amp;amp;#39;s&amp;lt;/span&amp;gt; lab that promotes and enables safe driving.&amp;lt;/p&amp;gt;" ><a href="javascript:showQuickView('newsContent_205');">Professor creates phone app for safer driving habits</a></div><div class="rightColumnNewsItem"><input type="hidden" name="" id="newsContent_204"  value="&amp;lt;img src=&amp;quot;http://www.cs.dartmouth.edu/cms_file/SYS_news/204/campbell.jpg&amp;quot; style=&amp;quot;float:left;margin:0 5px 5px 0;&amp;quot; /&amp;gt;&amp;lt;p&amp;gt;	&amp;lt;span data-scayt_word=&amp;quot;NewScientist&amp;quot; data-scaytid=&amp;quot;1&amp;quot;&amp;gt;NewScientist&amp;lt;/span&amp;gt; writes: &amp;amp;quot;YOU don&amp;amp;#39;t have to be rich to get the latest and best in advanced in-car gadgetry. A smartphone app gives any old rust bucket two key safety features normally only seen in luxury vehicles: a lane-departure warning and driver-fatigue alerts.&amp;amp;quot;&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;	&amp;lt;a href=&amp;quot;http://www.newscientist.com/article/dn22297-lanekeeping-app-makes-any-car-smarter.html&amp;quot;&amp;gt;Read more...&amp;lt;/a&amp;gt;&amp;lt;br /&amp;gt;	&amp;lt;a href=&amp;quot;http://now.dartmouth.edu/2012/09/dartmouth-smartphone-app-targets-driver-safety/&amp;quot;&amp;gt;&amp;lt;span data-scayt_word=&amp;quot;DartmouthNow&amp;quot; data-scaytid=&amp;quot;2&amp;quot;&amp;gt;DartmouthNow&amp;lt;/span&amp;gt; article&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;" ><a href="javascript:showQuickView('newsContent_204');">Dartmouth Smartphone App Targets Driver Safety</a></div><div class="rightColumnNewsItem" style="border-bottom:0px;text-align:right;"><a href="http://www.cs.dartmouth.edu/site-content/news/">More News</a></div>		
+			</div>
+		</td>
+	</tr>
+</table>
+		</td>
+		<td class="contentRight" valign="top" width="10" height="329"></td>
+	</tr>
+</table>
+<!-- end content table -->
+
+<!-- page divider table -->
+<table width="858" height="20" border="0" cellpadding="0" cellspacing="0" align="center">
+	<tr height="20">
+		<td width="10" height="20"><img src="http://www.cs.dartmouth.edu/images/t2-page-bg_04.png" width="10" height="20" alt=""></td>
+		<td width="838" height="20"><img src="http://www.cs.dartmouth.edu/images/t2-page-bg_05-rightcol238.jpg" width="838" height="20" alt=""></td>
+		<td width="10" height="20"><img src="http://www.cs.dartmouth.edu/images/t2-page-bg_06.png" width="10" height="20" alt=""></td>
+		</tr>
+</table>
+<!-- end page divider table -->
+<!-- bottom navigation and search table -->
+<table width="838" align="center" height="144" border="0" cellpadding="0" cellspacing="0" align="center">
+	<tr height="128">
+		<td class="pageBottom" width="838" height="128">
+							<table border="0" cellspacing="0" cellpadding="0" align="center" class="bottomNav">
+		<tr>
+			<td class="bottomNavRowHead">About</td>
+			<td class="bottomNavLinks"><a href="http://www.cs.dartmouth.edu/" target="_self">Home</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/about-dartmouth-cs.php" target="_self">About</a> | <a href="http://www.dartmouth.edu" target="_self">Dartmouth</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/jobs-in-dartmouth-cs.php" target="_self">Jobs</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/contact-dartmouth-computer-science.php" target="_self">Contact</a> | <a href="http://www.cs.dartmouth.edu/site-content/internal/index.php" target="_self">Internal</a> | <a href="http://www.cs.dartmouth.edu/site-content/connector/index.php" target="_self">Connector</a></td>
+		</tr>
+		<tr>
+			<td class="bottomNavRowHead">People</td>
+			<td class="bottomNavLinks"><a href="http://www.cs.dartmouth.edu/site-content/tenure-track-faculty/index.php" target="_self">Tenure-Track Faculty</a> | <a href="http://www.cs.dartmouth.edu/site-content/faculty-other/index.php" target="_self">Other Faculty</a> | <a href="http://www.cs.dartmouth.edu/site-content/staff-administrative/index.php" target="_self">Administrative Staff</a> | <a href="http://www.cs.dartmouth.edu/site-content/staff-technical/index.php" target="_self">Technical Staff</a> | <a href="http://www.cs.dartmouth.edu/site-content/postdoctoral-researchers/index.php" target="_self">Postdoctoral Researchers</a> | <a href="http://www.cs.dartmouth.edu/site-content/graduate-students/index.php" target="_self">Graduate Students</a> | <a href="http://www.cs.dartmouth.edu/site-content/alumni-professors/index.php" target="_self">Alumni Professors</a> | <a href="http://myslu.stlawu.edu/~ltorrey/profiles/index.html" target="_self">Profiles of Dartmouth CS Alumni</a></td>
+		</tr>
+		<tr>
+			<td class="bottomNavRowHead">Research</td>
+			<td class="bottomNavLinks"><a href="http://www.cs.dartmouth.edu/site-content/news/index.php" target="_self">News</a> | <a href="http://www.cs.dartmouth.edu/~csrs/" target="_self">CSRS</a> | <a href="http://www.cs.dartmouth.edu/site-content/research-projects/index.php" target="_self">Research Labs and Projects</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/colloquium.php" target="_self">Colloquium</a> | <a href="http://www.cs.dartmouth.edu/site-content/books/index.php" target="_self">Books by Faculty</a> | <a href="http://www.cs.dartmouth.edu/site-content/reports/index.php" target="_self">Technical Reports</a></td>
+		</tr>
+		<tr>
+			<td class="bottomNavRowHead">Programs</td>
+			<td class="bottomNavLinks"><a href="http://www.cs.dartmouth.edu/site-content/site/a-major-redesign.php" target="_self">A Major Redesign</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/undergraduate-programs.php" target="_self">Undergraduate Programs</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/graduate-programs.php" target="_self">Graduate Programs</a> | <a href="http://www.cs.dartmouth.edu/site-content/graduate-courses/index.php" target="_self">Graduate Courses</a> | <a href="http://www.cs.dartmouth.edu/site-content/undergrad-courses/index.php" target="_self">Undergraduate Courses</a></td>
+		</tr>
+		<tr>
+			<td class="bottomNavRowHead">Admissions</td>
+			<td class="bottomNavLinks"><a href="http://www.dartmouth.edu/admissions/" target="_self">Undergraduate</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/ms-admissions.php" target="_self">M.S. Admissions</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/phd-admissions.php" target="_self">Ph.D. Admissions</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/md---phd-in-compbio.php" target="_self">M.D. - Ph.D. in CompBio</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/graduate-student-life.php" target="_self">Graduate Student Life</a></td>
+		</tr>
+	</table>
+
+		</td>
+	</tr>
+	<tr height="16">
+		<td width="838" height="16"><img src="http://www.cs.dartmouth.edu/images/t2-page-bg_11.gif" width="838" height="16" alt=""></td>
+	</tr>
+</table>
+<!-- end bottom navigation and search table -->
+
+<!-- copyright table -->
+<table width="858" border="0" cellpadding="0" cellspacing="0" align="center">
+	<tr>
+		<td class="pad5" width="838" style="padding-left:25px;"><span class="copyrightText">&copy; Copyright 2010, Dartmouth College Computer Science Department, All Rights Reserved</span></td>
+	</tr>
+</table>
+<!-- end copyright table -->
+
+<!-- pad the page bottom -->
+<div class="pad5"><div class="pad5"></div></div>
+<!-- end pad the page bottom -->
+	</body>
+</html>
+y

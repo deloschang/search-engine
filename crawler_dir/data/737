@@ -1,0 +1,506 @@
+http://www.cs.dartmouth.edu/site-content/books/index.php
+1
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Dartmouth Computer Science | Books by Faculty</title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<meta http-equiv="content-language" content="en">
+		<link rel="icon" href="http://www.cs.dartmouth.edu/favicon.ico" type="image/x-icon">
+		<meta name="description" content="See books by Dartmouth CS Faculty.">
+		<meta name="keywords" content="dartmouth college computer science, dartmouth college, computer science, dartmouth computer science, dartmouth college cs, dartmouth cs, books by dartmouth faculty, books by dartmouth cs faculty, ">
+		<meta name="author" content="Dartmouth Computer Science">
+		<meta name="robots" content="all,index,follow">
+		<meta name="googlebot" content="all,index,follow">
+		<link href="http://www.cs.dartmouth.edu/css/support.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="http://www.cs.dartmouth.edu/css/site.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="http://www.cs.dartmouth.edu/css/dartmouth.css" rel="stylesheet" type="text/css" media="all" />
+		<script type="text/javascript" src="http://www.cs.dartmouth.edu/js/lib.js"></script>
+		<script type="text/javascript" src="http://www.cs.dartmouth.edu/js/topNavigation.js"></script>
+		<link href="http://www.cs.dartmouth.edu/css/baseline.type.css" rel="stylesheet" type="text/css" media="all" />
+		<script type="text/javascript" src="http://www.cs.dartmouth.edu/js/quickview.js"></script>
+		<script type="text/javascript">
+var imNavArr = [];
+imNavArr[0] = 'http://www.cs.dartmouth.edu/images/t2-mh_01_home.png';
+imNavArr[1] = 'http://www.cs.dartmouth.edu/images/t2-mh_02_people.png';
+imNavArr[2] = 'http://www.cs.dartmouth.edu/images/t2-mh_03_research.png';
+imNavArr[3] = 'http://www.cs.dartmouth.edu/images/t2-mh_04_programs.png';
+imNavArr[4] = 'http://www.cs.dartmouth.edu/images/t2-mh_05_admissions.png';
+
+function preloadNavImages() {
+	if (document.images) {
+		t2_mh_0_click = newImage("http://www.cs.dartmouth.edu/images/t2-mh_01_home-click.png");
+		t2_mh_0_click_left = newImage("http://www.cs.dartmouth.edu/images/t2-mh_02_people-click-left.png");
+
+		t2_mh_1_click = newImage("http://www.cs.dartmouth.edu/images/t2-mh_02_people-click.png");
+		t2_mh_1_click_left = newImage("http://www.cs.dartmouth.edu/images/t2-mh_03_research-click-left.png");
+
+		t2_mh_2_click = newImage("http://www.cs.dartmouth.edu/images/t2-mh_03_research-click.png");
+		t2_mh_2_click_left = newImage("http://www.cs.dartmouth.edu/images/t2-mh_04_programs-click-left.png");
+
+		t2_mh_3_click = newImage("http://www.cs.dartmouth.edu/images/t2-mh_04_programs-click.png");
+		t2_mh_3_click_left = newImage("http://www.cs.dartmouth.edu/images/t2-mh_05_admissions-click-left.png");
+
+		t2_mh_4_click = newImage("http://www.cs.dartmouth.edu/images/t2-mh_05_admissions-click.png");
+		t2_mh_4_click_right = newImage("http://www.cs.dartmouth.edu/images/t2-mh_04_programs-click-right.png");
+
+		preloadFlag = true;
+	}
+}
+
+function menuListener()
+	{
+	window.addEventListener('click',resetNav,false);
+	}
+
+addLoadEvent(preloadNavImages());
+addLoadEvent(menuListener());
+
+		</script>
+	</head>
+
+	<body id="pageBody">
+		<div id="helpdiv"><div id="helpdivcontent"></div></div>
+		<div id="formSubmissionDiv"><div id="formSubmissionDivContent"></div></div>
+<div id="quickview"><div id="quickviewclose"><a href="javascript:closeQuickView();">close</a></div><div id="quickviewcontent"></div></div>
+<a name="top"></a><!-- masthead and navigation table -->
+
+		<table width="838" border="0" cellpadding="0" cellspacing="0" align="center">
+			<tr>
+				<td>
+<div style="position:relative;">
+
+		<table width="838" height="44" border="0" cellpadding="0" cellspacing="0">
+			<tr height="44">
+				<td valign="bottom" width="237" height="99"><a href="http://www.cs.dartmouth.edu"><img src="http://www.cs.dartmouth.edu/images/t2-mh_01.png" width="237" height="99" border="0"></a></td>
+				<td valign="bottom" width="120" height="99"><a href="javascript:changeNavImages('t2_mh_0', 'http://www.cs.dartmouth.edu/images/t2-mh_01_home-click.png', 't2_mh_1', 'http://www.cs.dartmouth.edu/images/t2-mh_02_people-click-left.png');resetNavClock();"><img name="t2_mh_0" id="t2_mh_0_id" src="http://www.cs.dartmouth.edu/images/t2-mh_01_home.png" width="120" height="44" border="0" alt="Home"></a></td>
+				<td valign="bottom" width="120" height="99"><a href="javascript:changeNavImages('t2_mh_1', 'http://www.cs.dartmouth.edu/images/t2-mh_02_people-click.png', 't2_mh_2', 'http://www.cs.dartmouth.edu/images/t2-mh_03_research-click-left.png');resetNavClock();"><img name="t2_mh_1" id="t2_mh_1_id" src="http://www.cs.dartmouth.edu/images/t2-mh_02_people.png" width="120" height="44" border="0" alt="People"></a></td>
+				<td valign="bottom" width="120" height="99"><a href="javascript:changeNavImages('t2_mh_2', 'http://www.cs.dartmouth.edu/images/t2-mh_03_research-click.png', 't2_mh_3', 'http://www.cs.dartmouth.edu/images/t2-mh_04_programs-click-left.png');resetNavClock();"><img name="t2_mh_2" id="t2_mh_2_id" src="http://www.cs.dartmouth.edu/images/t2-mh_03_research.png" width="120" height="44" border="0" alt="Research"></a></td>
+				<td valign="bottom" width="120" height="99"><a href="javascript:changeNavImages('t2_mh_3', 'http://www.cs.dartmouth.edu/images/t2-mh_04_programs-click.png', 't2_mh_4', 'http://www.cs.dartmouth.edu/images/t2-mh_05_admissions-click-left.png');resetNavClock();"><img name="t2_mh_3" id="t2_mh_3_id" src="http://www.cs.dartmouth.edu/images/t2-mh_04_programs.png" width="120" height="44" border="0" alt="Programs"></a></td>
+				<td valign="bottom" width="120" height="99"><a href="javascript:changeNavImages('t2_mh_4', 'http://www.cs.dartmouth.edu/images/t2-mh_05_admissions-click.png', 't2_mh_3', 'http://www.cs.dartmouth.edu/images/t2-mh_04_programs-click-right.png');resetNavClock();"><img name="t2_mh_4" id="t2_mh_4_id" src="http://www.cs.dartmouth.edu/images/t2-mh_05_admissions.png" width="120" height="44" border="0" alt="Admissions"></a></td>
+				<td valign="bottom" width="1" height="99"><img src="http://www.cs.dartmouth.edu/images/spacer.gif" width="1" height="44"></td>
+			</tr>
+
+
+		</table>
+<div id="subnavwrap" style="position:absolute;top:99px;left:237px;width:599px;z-index:200;">
+<div class="topnavSubOverlay" id="div_t2_mh_0_sub" style="left:-2px;">
+
+<table width="241" border="0" cellpadding="0" cellspacing="0">
+	<tr height="12">
+		<td width="2" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_04.png" width="2" height="12" alt=""></td>
+		<td width="241" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_05.jpg" width="241" height="12" alt=""></td>
+		<td width="3" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_06.png" width="3" height="12" alt=""></td>
+	</tr>
+
+	<tr>
+		<td width="2" height="12" class="topnavSubOverlayLeft"></td>
+
+		<td class="topnavSubOverlayContent" onmouseover="resetNavClock();">
+<ul>
+<li><a href="http://www.cs.dartmouth.edu/" target="_self">Home</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/about-dartmouth-cs.php" target="_self">About</a></li><li><a href="http://www.dartmouth.edu" target="_blank">Dartmouth</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/jobs-in-dartmouth-cs.php" target="_self">Jobs</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/contact-dartmouth-computer-science.php" target="_self">Contact</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/internal/index.php" target="_self">Internal</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/connector/index.php" target="_self">Connector</a></li></ul>
+					</ul>
+				</td>
+		<td width="2" height="12" class="topnavSubOverlayRight"></td>
+	</tr>
+			<tr>
+			<tr height="19">
+		<td width="2" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_13.png" width="2" height="19" alt=""></td>
+		<td width="241" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_14.png" width="241" height="19" alt=""></td>
+		<td width="3" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_15.png" width="3" height="19" alt=""></td>
+	</tr>
+
+</table>
+
+</div>
+
+<div class="topnavSubOverlay" id="div_t2_mh_1_sub" style="left:118px;">
+
+<table width="241" border="0" cellpadding="0" cellspacing="0">
+	<tr height="12">
+		<td width="2" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_04.png" width="2" height="12" alt=""></td>
+		<td width="241" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_05.jpg" width="241" height="12" alt=""></td>
+		<td width="3" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_06.png" width="3" height="12" alt=""></td>
+	</tr>
+
+	<tr>
+		<td width="2" height="12" class="topnavSubOverlayLeft"></td>
+
+		<td class="topnavSubOverlayContent" onmouseover="resetNavClock();">
+<ul>
+<li><a href="http://www.cs.dartmouth.edu/site-content/tenure-track-faculty/index.php" target="_self">Tenure-Track Faculty</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/faculty-other/index.php" target="_self">Other Faculty</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/staff-administrative/index.php" target="_self">Administrative Staff</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/staff-technical/index.php" target="_self">Technical Staff</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/postdoctoral-researchers/index.php" target="_self">Postdoctoral Researchers</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/graduate-students/index.php" target="_self">Graduate Students</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/alumni-professors/index.php" target="_self">Alumni Professors</a></li><li><a href="http://myslu.stlawu.edu/~ltorrey/profiles/index.html" target="_self">Profiles of Dartmouth CS Alumni</a></li></ul>
+					</ul>
+				</td>
+		<td width="2" height="12" class="topnavSubOverlayRight"></td>
+	</tr>
+			<tr>
+			<tr height="19">
+		<td width="2" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_13.png" width="2" height="19" alt=""></td>
+		<td width="241" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_14.png" width="241" height="19" alt=""></td>
+		<td width="3" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_15.png" width="3" height="19" alt=""></td>
+	</tr>
+
+</table>
+
+</div>
+
+<div class="topnavSubOverlay" id="div_t2_mh_2_sub" style="left:238px;">
+
+<table width="241" border="0" cellpadding="0" cellspacing="0">
+	<tr height="12">
+		<td width="2" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_04.png" width="2" height="12" alt=""></td>
+		<td width="241" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_05.jpg" width="241" height="12" alt=""></td>
+		<td width="3" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_06.png" width="3" height="12" alt=""></td>
+	</tr>
+
+	<tr>
+		<td width="2" height="12" class="topnavSubOverlayLeft"></td>
+
+		<td class="topnavSubOverlayContent" onmouseover="resetNavClock();">
+<ul>
+<li><a href="http://www.cs.dartmouth.edu/site-content/news/index.php" target="_self">News</a></li><li><a href="http://www.cs.dartmouth.edu/~csrs/" target="_self">CSRS</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/research-projects/index.php" target="_self">Research Labs and Projects</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/colloquium.php" target="_self">Colloquium</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/books/index.php" target="_self">Books by Faculty</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/reports/index.php" target="_self">Technical Reports</a></li></ul>
+					</ul>
+				</td>
+		<td width="2" height="12" class="topnavSubOverlayRight"></td>
+	</tr>
+			<tr>
+			<tr height="19">
+		<td width="2" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_13.png" width="2" height="19" alt=""></td>
+		<td width="241" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_14.png" width="241" height="19" alt=""></td>
+		<td width="3" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_15.png" width="3" height="19" alt=""></td>
+	</tr>
+
+</table>
+
+</div>
+
+<div class="topnavSubOverlay" id="div_t2_mh_3_sub" style="left:358px;">
+
+<table width="241" border="0" cellpadding="0" cellspacing="0">
+	<tr height="12">
+		<td width="2" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_04.png" width="2" height="12" alt=""></td>
+		<td width="241" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_05.jpg" width="241" height="12" alt=""></td>
+		<td width="3" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_06.png" width="3" height="12" alt=""></td>
+	</tr>
+
+	<tr>
+		<td width="2" height="12" class="topnavSubOverlayLeft"></td>
+
+		<td class="topnavSubOverlayContent" onmouseover="resetNavClock();">
+<ul>
+<li><a href="http://www.cs.dartmouth.edu/site-content/site/a-major-redesign.php" target="_self">A Major Redesign</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/undergraduate-programs.php" target="_self">Undergraduate Programs</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/graduate-programs.php" target="_self">Graduate Programs</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/undergrad-courses/index.php" target="_self">Undergraduate Courses</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/graduate-courses/index.php" target="_self">Graduate Courses</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/upcoming-class-schedule.php" target="_self">Upcoming Class Schedule</a></li><li><a href="http://www.cs.dartmouth.edu/~robotics/summercamp/index.php/Main_Page" target="_self">Summer Robotics Camp</a></li></ul>
+					</ul>
+				</td>
+		<td width="2" height="12" class="topnavSubOverlayRight"></td>
+	</tr>
+			<tr>
+			<tr height="19">
+		<td width="2" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_13.png" width="2" height="19" alt=""></td>
+		<td width="241" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_14.png" width="241" height="19" alt=""></td>
+		<td width="3" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_15.png" width="3" height="19" alt=""></td>
+	</tr>
+
+</table>
+
+</div>
+
+<div class="topnavSubOverlay" id="div_t2_mh_4_sub" style="left:358px;">
+
+<table width="241" border="0" cellpadding="0" cellspacing="0">
+	<tr height="12">
+		<td width="2" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_04.png" width="2" height="12" alt=""></td>
+		<td width="241" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_05.jpg" width="241" height="12" alt=""></td>
+		<td width="3" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_06.png" width="3" height="12" alt=""></td>
+	</tr>
+
+	<tr>
+		<td width="2" height="12" class="topnavSubOverlayLeft"></td>
+
+		<td class="topnavSubOverlayContent" onmouseover="resetNavClock();">
+<ul>
+<li><a href="http://www.dartmouth.edu/admissions/" target="_self">Undergraduate Admissions</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/ms-admissions.php" target="_self">M.S. Admissions</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/phd-admissions.php" target="_self">Ph.D. Admissions</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/md---phd-in-compbio.php" target="_self">M.D. - Ph.D. in CompBio</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/graduate-student-life.php" target="_self">Graduate Student Life</a></li></ul>
+					</ul>
+				</td>
+		<td width="2" height="12" class="topnavSubOverlayRight"></td>
+	</tr>
+			<tr>
+			<tr height="19">
+		<td width="2" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_13.png" width="2" height="19" alt=""></td>
+		<td width="241" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_14.png" width="241" height="19" alt=""></td>
+		<td width="3" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_15.png" width="3" height="19" alt=""></td>
+	</tr>
+
+</table>
+
+</div>
+
+</div>
+				</td>
+			</tr>
+		</table>
+
+</div>
+
+
+<!-- end masthead and navigation table -->
+<!-- content table -->
+<table width="858" border="0" cellpadding="0" cellspacing="0" align="center">
+	<tr height="329">
+		<td class="contentLeft" valign="top" width="10" height="329"></td>
+		<td valign="top" bgcolor="white" width="838" height="329">
+<!-- begin page content -->
+<div style="padding:5px 10px 0px 10px;">
+<br />
+</div>
+<div style="padding:0px 10px 0px 10px;">
+<table border="0" cellspacing="0" cellpadding="0" style="width:100%;" class=""><tr>
+<td class="listOutput" style="text-align:right;width:15%;border-left:0px;border-bottom:1px dotted #013743;padding-right:10px;">
+<img src="http://www.cs.dartmouth.edu/cms_file/SYS_news/23/intro_to_algorithms_3.jpg" />
+</td>
+<td class="listOutput" style="border-bottom:1px dotted #013743;width:85%;">
+<div style="font-size:16px;">Introduction to Algorithms, Third Edition</div> <p>
+	<a href="http://www.cs.dartmouth.edu/%7Ethc/">Tom Cormen</a>, Charles Leiserson, Ronald Rivest, and Cliff Stein</p>
+<p>
+	Available from <a href="http://mitpress.mit.edu/algorithms/">MIT Press</a> &#124; ISBN: 978-0-262-03384-8</p>
+<p>
+	Some books on algorithms are rigorous but incomplete; others cover masses of material but lack rigor. Introduction to Algorithms uniquely combines rigor and comprehensiveness. The book covers a broad range of algorithms in depth, yet makes their design and analysis accessible to all levels of readers. Each chapter is relatively self-contained and can be used as a unit of study. The algorithms are described in English and in a pseudocode designed to be readable by anyone who has done a little programming. The explanations have been kept elementary without sacrificing depth of coverage or mathematical rigor.</p>
+<p>
+	The first edition became a widely used text in universities worldwide as well as the standard reference for professionals. The second edition featured new chapters on the role of algorithms, probabilistic analysis and randomized algorithms, and linear programming. The third edition has been revised and updated throughout. It includes two completely new chapters, on van Emde Boas trees and multithreaded algorithms, and substantial additions to the chapter on recurrences (now called &quot;Divide-and-Conquer&quot;). It features improved treatment of dynamic programming and greedy algorithms and a new notion of edge-based flow in the material on flow networks. Many new exercises and problems have been added for this edition.</p>
+
+</td>
+</tr>
+<tr>
+<td class="listOutput" style="text-align:right;width:15%;border-left:0px;border-bottom:1px dotted #013743;padding-right:10px;">
+<img src="http://www.cs.dartmouth.edu/cms_file/SYS_news/26/craft.png" />
+</td>
+<td class="listOutput" style="border-bottom:1px dotted #013743;width:85%;">
+<div style="font-size:16px;">The Craft of System Security</div> <p>
+	<a href="http://www.cs.dartmouth.edu/%7Esws/">Sean Smith</a> and John Marchesini</p>
+<p>
+	Available from <a href="http://www.mypearsonstore.com/bookstore/product.asp?isbn=0321434838&amp;rl=1"> Addison Wesley Professional</a> &#124; ISBN-10: 0-321-43483-8</p>
+<p>
+	Whether you&#39;re a security practitioner, developer, manager, or administrator, this book will give you the deep understanding necessary to meet today&#39;s security challenges--and anticipate tomorrow&#39;s. Unlike most books, <em>The Craft of System Security</em> doesn&#39;t just review the modern security practitioner&#39;s toolkit: It explains why each tool exists, and discusses how to use it to solve real problems.</p>
+</td>
+</tr>
+<tr>
+<td class="listOutput" style="text-align:right;width:15%;border-left:0px;border-bottom:1px dotted #013743;padding-right:10px;">
+<img src="http://www.cs.dartmouth.edu/cms_file/SYS_news/27/mind_benders.png" />
+</td>
+<td class="listOutput" style="border-bottom:1px dotted #013743;width:85%;">
+<div style="font-size:16px;">Mathematical Mind-Benders</div> <p>
+	<a href="http://www.math.dartmouth.edu/%7Epw/">Peter Winkler</a></p>
+<p>
+	Available from <a href="http://www.akpeters.com/product.asp?ProdCode=3363">A K Peters, Ltd.</a> &#124; ISBN: 1-56881-336-8</p>
+<p>
+	Peter Winkler&#39;s at it again. Following the enthusiastic reaction to <a href="http://www.akpeters.com/product.asp?ProdCode=2019">Mathematical Puzzles: A Connoisseur&#39;s Collection</a>, Peter has compiled a new collection of elegant mathematical puzzles to challenge and entertain the reader. The original puzzle connoisseur shares these puzzles, old and new, so that you can add them to your own library.</p>
+<p>
+	This book is for lovers of mathematics, lovers of puzzles, lovers of a challenge. Most of all it&#39;s for those who think that the world of mathematics is orderly, logical, and intuitive &ndash; and are ready to learn otherwise!</p>
+</td>
+</tr>
+<tr>
+<td class="listOutput" style="text-align:right;width:15%;border-left:0px;border-bottom:1px dotted #013743;padding-right:10px;">
+<img src="http://www.cs.dartmouth.edu/cms_file/SYS_news/28/discrete_mathematics.jpg" />
+</td>
+<td class="listOutput" style="border-bottom:1px dotted #013743;width:85%;">
+<div style="font-size:16px;">Discrete Mathematics for Computer Science</div> <p>
+	Kenneth P. Bogart, Clifford Stein, <a href="http://www.cs.dartmouth.edu/%7Escot">Robert L. Drysdale</a></p>
+<p>
+	Available from <a href="http://www.keycollege.com/catalog/titles/discrete_mathematics.html">Key College Publishing </a> &#124; ISBN: 1-930190-86-7</p>
+<p>
+	Discrete Mathematics for Computer Science covers most of the mathematical topics needed by computer scientists: basic combinatorics and graph theory, probability, logic and proof techniques (including proof by induction), recurrence relationships and their solution, and the number theory needed to understand the RSA encryption scheme. The examples are drawn from Computer Science. Probability is used to analyze hashing and the average run times for algorithms. Recurrence relations arise from the analysis of recursive algorithms. Trees (including binary search trees) are a focus of the graph theory, and their properties are often proved using induction.</p>
+</td>
+</tr>
+<tr>
+<td class="listOutput" style="text-align:right;width:15%;border-left:0px;border-bottom:1px dotted #013743;padding-right:10px;">
+<img src="http://www.cs.dartmouth.edu/cms_file/SYS_news/29/riemann.png" />
+</td>
+<td class="listOutput" style="border-bottom:1px dotted #013743;width:85%;">
+<div style="font-size:16px;">Stalking the Riemann Hypothesis: The Quest to Find the Hidden Law of Prime Numbers </div> <p>
+	<a href="http://www.cs.dartmouth.edu/%7Erockmore">Dan Rockmore</a></p>
+<p>
+	Available from <a href="http://www.randomhouse.com/catalog/display.pperl?isbn=9780375421365">Random House</a> &#124; ISBN: 978-0-375-42136-5</p>
+<p>
+	A non-technical account of the history of the Riemann Hypothesis, a 150 year-old unsolved math problem, whose solution gets to the heart of out understanding of the way in the which the prime numbers are distributed among the integers.</p>
+</td>
+</tr>
+<tr>
+<td class="listOutput" style="text-align:right;width:15%;border-left:0px;border-bottom:1px dotted #013743;padding-right:10px;">
+<img src="http://www.cs.dartmouth.edu/cms_file/SYS_news/30/tcp_cover.jpg" />
+</td>
+<td class="listOutput" style="border-bottom:1px dotted #013743;width:85%;">
+<div style="font-size:16px;">Trusted Computing Platforms: Design and Applications </div> <p>
+	<a href="http://www.cs.dartmouth.edu/%7Esws">Sean Smith</a></p>
+<p>
+	Available from <a href="http://www.springeronline.com/sgw/cda/frontpage/0,11855,4-102-22-36520721-0,00.html?changeHeader=true"> Springer</a> &#124; ISBN: 0387239162</p>
+<p>
+	How can one trust computation taking place at a remote site, particularly if a party at that site might have motivation to subvert this trust? In recent years, industrial efforts have advanced the notion of a &quot;trusted computing platform&quot; as a building block. Through a conspiracy of hardware and software magic, these platforms attempt to solve this remote trust problem, to preserve various critical properties against various types of adversaries. However, these current efforts are just points on a larger continuum, which ranges from earlier work on secure coprocessor design and applications, through TCPA/TCG, to recent academic developments. Without wading through stacks of theses and research literature, the general computer science reader cannot see this big picture.</p>
+<p>
+	Trusted Computing Platforms: Design and Applications fills this gap. Starting with early prototypes and proposed applications, this book surveys the longer history of amplifying small amounts of hardware security into broader system security---and reports real case study experience with security architecture and applications on multiple types of platforms. The author examines the theory, design, implementation of the IBM 4758 secure coprocessor platform and discusses real case study applications that exploit the unique capabilities of this platform. The author discusses how these foundations grow into newer industrial designs, and discusses alternate architectures and case studies of applications that this newer hardware can enable. The author closes with an examination of more recent cutting-edge experimental work in this area.</p>
+</td>
+</tr>
+<tr>
+<td class="listOutput" style="text-align:right;width:15%;border-left:0px;border-bottom:1px dotted #013743;padding-right:10px;">
+<img src="http://www.cs.dartmouth.edu/cms_file/SYS_news/31/topology_for_computing.png" />
+</td>
+<td class="listOutput" style="border-bottom:1px dotted #013743;width:85%;">
+<div style="font-size:16px;">Topology for Computing</div> <p>
+	<a href="http://www.cs.dartmouth.edu/%7Eafra">Afra Zomorodian</a></p>
+<p>
+	Available from <a href="http://www.cambridge.org/catalogue/catalogue.asp?isbn=0521836662">Cambridge University Press</a> &#124; ISBN: 0521836662</p>
+<p>
+	Written by a computer scientist for computer scientists, this book teaches topology from a computational point of view, and shows how to solve real problems that have topological aspects involving computers. Such problems arise in many areas, such as computer graphics, robotics, structural biology, and chemistry. The author starts from the basics of topology, assuming no prior exposure to the subject, and moves rapidly up to recent advances in the area, including topological persistence and hierarchical Morse complexes. Algorithms and data structures are presented when appropriate.</p>
+</td>
+</tr>
+<tr>
+<td class="listOutput" style="text-align:right;width:15%;border-left:0px;border-bottom:1px dotted #013743;padding-right:10px;">
+<img src="http://www.cs.dartmouth.edu/cms_file/SYS_news/32/mixed_models.png" />
+</td>
+<td class="listOutput" style="border-bottom:1px dotted #013743;width:85%;">
+<div style="font-size:16px;">Mixed Models: Theory and Applications</div> <p>
+	<a href="http://bio-epi.hitchcock.org/faculty/e_demidenko.html">Eugene Demidenko</a></p>
+<p>
+	Available from <a href="http://www.wiley.com/WileyCDA/WileyTitle/productCd-0471601616.html">Wiley</a> &#124; ISBN: 978-0-471-60161-6</p>
+<p>
+	This timely and state-of-the-art topic is covered comprehensively in this book. Providing a complete and in-depth mathematical coverage of the topic - linear, generalized linear, and nonlinear mixed models, along with diagnostics - the book has dual appeal as both a graduate-level text and a reference. Special attention is given to algorithms and their implementations and several appendices make the text self-contained.</p>
+</td>
+</tr>
+<tr>
+<td class="listOutput" style="text-align:right;width:15%;border-left:0px;border-bottom:1px dotted #013743;padding-right:10px;">
+<img src="http://www.cs.dartmouth.edu/cms_file/SYS_news/33/agent_systems.jpg" />
+</td>
+<td class="listOutput" style="border-bottom:1px dotted #013743;width:85%;">
+<div style="font-size:16px;">Agent Systems, Mobile Agents, and Applications</div> <p>
+	Friedemann Mattern and <a href="http://www.cs.dartmouth.edu/%7Edfk"> David Kotz</a>, Editors</p>
+<p>
+	Available from <a href="http://www.springer.com/west/home?SGWID=4-102-22-2039361-0&amp;changeHeader=true&amp;referer=www.springeronline.com&amp;SHORTCUT=www.springer.com/3-540-41052-X">Springer</a> &#124; <a href="http://www.springerlink.com/content/h7j0e4akkh8r/">Online Version</a> &#124; ISBN 978-3-540-41052-2</p>
+<p>
+	This book constitues the refereed proceedings of the Second International Symposium on Agent Systems and Applications and the Fourth International Symposium on Mobile Agents, ASA/MA 2000 held in Z&uuml;rich, Switzerland in September 2000. The 20 revised full papers presented were carefully reviewed and selected from 107 submissions. The papers are organized in topical sections on migration, security issues, systems and applications, mobile agent applications, applications of multi-agent systems, communication and mobility control, cooperation and interaction.</p>
+</td>
+</tr>
+<tr>
+<td class="listOutput" style="text-align:right;width:15%;border-left:0px;border-bottom:1px dotted #013743;padding-right:10px;">
+<img src="http://www.cs.dartmouth.edu/cms_file/SYS_news/34/voronoi_diagrams.jpg" />
+</td>
+<td class="listOutput" style="border-bottom:1px dotted #013743;width:85%;">
+<div style="font-size:16px;">Voronoi Diagrams and Proximity Problems</div> <p>
+	Matthew Dickerson and <a href="http://www.cs.dartmouth.edu/%7Escot">Scot Drysdale</a></p>
+<p>
+	Available from <a href="http://www.comap.com/product/?idx=179">COMAP</a></p>
+<p>
+	This book is part of COMAP&#39;s Geometry and its Applications series. Books in this series are designed to give high-school students a richer understanding of mathematical concepts at the heart of geometry and the ways that applications of geometry affect their lives. It introduces the Voronoi diagram and uses it to solve a series of proximity problems that arise in running a chain of pizza parlors (deciding which parlor is closest to the location where a pizza is to be delivered, deciding where to locate a new parlor that is farthest away from existing parlors, finding for each parlor which other parlor is nearest to it).</p>
+</td>
+</tr>
+<tr>
+<td class="listOutput" style="text-align:right;width:15%;border-left:0px;border-bottom:1px dotted #013743;padding-right:10px;">
+<img src="http://www.cs.dartmouth.edu/cms_file/SYS_news/210/COVER FINAL.jpg" />
+</td>
+<td class="listOutput" style="border-bottom:1px dotted #013743;width:85%;">
+<div style="font-size:16px;">Algorithms Unlocked</div> <p>
+	<a href="http://www.cs.dartmouth.edu/~thc/">Tom <span data-scayt_word="Cormen" data-scaytid="1">Cormen</span></a></p>
+<p>
+	Available from <a href="https://mitpress.mit.edu/books/algorithms-unlocked">MIT Press</a> &#124; ISBN 978-0-262-51880-2</p>
+<div class="pane-content">
+	<div class="field field-main-description">
+		<div class="field-items">
+			<div class="field-item odd">
+				<p>
+					Have you ever wondered how your GPS can find the fastest way to your destination, selecting one route from seemingly countless possibilities in mere seconds? How your credit card account number is protected when you make a purchase over the Internet? The answer is algorithms. And how do these mathematical formulations translate themselves into your GPS, your laptop, or your smart phone? This book offers an engagingly written guide to the basics of computer algorithms. In <i>Algorithms Unlocked</i>, Thomas <span data-scayt_word="Cormen" data-scaytid="2">Cormen</span>&mdash;coauthor of the leading college textbook on the subject&mdash;provides a general explanation, with limited mathematics, of how algorithms enable computers to solve problems.</p>
+				<p>
+					Readers will learn what computer algorithms are, how to describe them, and how to evaluate them. They will discover simple ways to search for information in a computer; methods for rearranging information in a computer into a prescribed order (&ldquo;sorting&rdquo;); how to solve basic problems that can be modeled in a computer with a mathematical structure called a &ldquo;graph&rdquo; (useful for modeling road networks, dependencies among tasks, and financial relationships); how to solve problems that ask questions about strings of characters such as DNA structures; the basic principles behind cryptography; fundamentals of data compression; and even that there are some problems that no one has figured out how to solve on a computer in a reasonable amount of time.</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+</td>
+</tr>
+	<tr>		<td class="listOutput" colspan="2"><table style="width:100%;" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td style="whitespace:no-wrap;">
+Displaying 11 results
+</td>
+<td style="text-align:right;whitespace:no-wrap;">
+<span style="color:#ccc;margin-right:10px;">Previous</span><span style="color:#ccc;margin-right:10px;">Top</span><span style="color:#ccc;margin-right:10px;">Next</span><span style="color:#ccc;margin-right:10px;">View All</span></td>
+</tr>
+</table>
+</td>	</tr></table></div>
+<!-- end page content -->
+		</td>
+		<td class="contentRight" valign="top" width="10" height="329"></td>
+	</tr>
+</table>
+<!-- end content table -->
+
+<!-- page divider table -->
+<table width="858" height="20" border="0" cellpadding="0" cellspacing="0" align="center">
+	<tr height="20">
+		<td width="10" height="20"><img src="http://www.cs.dartmouth.edu/images/t2-page-bg_04.png" width="10" height="20" alt=""></td>
+		<td width="838" height="20"><img src="http://www.cs.dartmouth.edu/images/t2-page-bg_05.jpg" width="838" height="20" alt=""></td>
+		<td width="10" height="20"><img src="http://www.cs.dartmouth.edu/images/t2-page-bg_06.png" width="10" height="20" alt=""></td>
+		</tr>
+</table>
+<!-- end page divider table -->
+<!-- bottom navigation and search table -->
+<table width="838" align="center" height="144" border="0" cellpadding="0" cellspacing="0" align="center">
+	<tr height="128">
+		<td class="pageBottom" width="838" height="128">
+							<table border="0" cellspacing="0" cellpadding="0" align="center" class="bottomNav">
+		<tr>
+			<td class="bottomNavRowHead">About</td>
+			<td class="bottomNavLinks"><a href="http://www.cs.dartmouth.edu/" target="_self">Home</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/about-dartmouth-cs.php" target="_self">About</a> | <a href="http://www.dartmouth.edu" target="_self">Dartmouth</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/jobs-in-dartmouth-cs.php" target="_self">Jobs</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/contact-dartmouth-computer-science.php" target="_self">Contact</a> | <a href="http://www.cs.dartmouth.edu/site-content/internal/index.php" target="_self">Internal</a> | <a href="http://www.cs.dartmouth.edu/site-content/connector/index.php" target="_self">Connector</a></td>
+		</tr>
+		<tr>
+			<td class="bottomNavRowHead">People</td>
+			<td class="bottomNavLinks"><a href="http://www.cs.dartmouth.edu/site-content/tenure-track-faculty/index.php" target="_self">Tenure-Track Faculty</a> | <a href="http://www.cs.dartmouth.edu/site-content/faculty-other/index.php" target="_self">Other Faculty</a> | <a href="http://www.cs.dartmouth.edu/site-content/staff-administrative/index.php" target="_self">Administrative Staff</a> | <a href="http://www.cs.dartmouth.edu/site-content/staff-technical/index.php" target="_self">Technical Staff</a> | <a href="http://www.cs.dartmouth.edu/site-content/postdoctoral-researchers/index.php" target="_self">Postdoctoral Researchers</a> | <a href="http://www.cs.dartmouth.edu/site-content/graduate-students/index.php" target="_self">Graduate Students</a> | <a href="http://www.cs.dartmouth.edu/site-content/alumni-professors/index.php" target="_self">Alumni Professors</a> | <a href="http://myslu.stlawu.edu/~ltorrey/profiles/index.html" target="_self">Profiles of Dartmouth CS Alumni</a></td>
+		</tr>
+		<tr>
+			<td class="bottomNavRowHead">Research</td>
+			<td class="bottomNavLinks"><a href="http://www.cs.dartmouth.edu/site-content/news/index.php" target="_self">News</a> | <a href="http://www.cs.dartmouth.edu/~csrs/" target="_self">CSRS</a> | <a href="http://www.cs.dartmouth.edu/site-content/research-projects/index.php" target="_self">Research Labs and Projects</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/colloquium.php" target="_self">Colloquium</a> | <a href="http://www.cs.dartmouth.edu/site-content/books/index.php" target="_self">Books by Faculty</a> | <a href="http://www.cs.dartmouth.edu/site-content/reports/index.php" target="_self">Technical Reports</a></td>
+		</tr>
+		<tr>
+			<td class="bottomNavRowHead">Programs</td>
+			<td class="bottomNavLinks"><a href="http://www.cs.dartmouth.edu/site-content/site/a-major-redesign.php" target="_self">A Major Redesign</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/undergraduate-programs.php" target="_self">Undergraduate Programs</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/graduate-programs.php" target="_self">Graduate Programs</a> | <a href="http://www.cs.dartmouth.edu/site-content/graduate-courses/index.php" target="_self">Graduate Courses</a> | <a href="http://www.cs.dartmouth.edu/site-content/undergrad-courses/index.php" target="_self">Undergraduate Courses</a></td>
+		</tr>
+		<tr>
+			<td class="bottomNavRowHead">Admissions</td>
+			<td class="bottomNavLinks"><a href="http://www.dartmouth.edu/admissions/" target="_self">Undergraduate</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/ms-admissions.php" target="_self">M.S. Admissions</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/phd-admissions.php" target="_self">Ph.D. Admissions</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/md---phd-in-compbio.php" target="_self">M.D. - Ph.D. in CompBio</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/graduate-student-life.php" target="_self">Graduate Student Life</a></td>
+		</tr>
+	</table>
+
+		</td>
+	</tr>
+	<tr height="16">
+		<td width="838" height="16"><img src="http://www.cs.dartmouth.edu/images/t2-page-bg_11.gif" width="838" height="16" alt=""></td>
+	</tr>
+</table>
+<!-- end bottom navigation and search table -->
+
+<!-- copyright table -->
+<table width="858" border="0" cellpadding="0" cellspacing="0" align="center">
+	<tr>
+		<td class="pad5" width="838" style="padding-left:25px;"><span class="copyrightText">&copy; Copyright 2010, Dartmouth College Computer Science Department, All Rights Reserved</span></td>
+	</tr>
+</table>
+<!-- end copyright table -->
+
+<!-- pad the page bottom -->
+<div class="pad5"><div class="pad5"></div></div>
+<!-- end pad the page bottom -->
+	</body>
+</html>
+h

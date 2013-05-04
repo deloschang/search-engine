@@ -1,0 +1,141 @@
+http://www.cs.dartmouth.edu/%7Epkilab
+2
+<html>
+<head>
+<title>Dartmouth PKI Lab</title>
+</head>
+<body>
+<table width=100%>
+<tr>
+<td align=center>
+<IMG ALIGN="center" SRC="http://www.cs.dartmouth.edu/images/Dtree.gif" ALT="">
+</td>
+<td align=left>
+<b>
+<big><big>
+
+Dartmouth PKI Lab<br>
+Research Team
+</big></big>
+</b>
+<td align=right>
+<i> www.cs.dartmouth.edu/~pkilab/index.shtml<br>
+
+Last modified: 09/16/02 08:30:47 AM
+</i>
+</td>
+</tr>
+</table>
+<hr>
+
+<p>
+
+<p>
+          
+
+Welcome to home page of the Dartmouth PKI Lab research team!
+<p>
+<a href="http://www.dartmouth.edu/~pkilab/"><b>Here</b></a> is
+our other home page, focusing on both the development and research
+tracks.
+
+<hr>
+
+<h2><a href="research/">Research Update</a></h2>
+
+<hr>
+
+<h2><a href="/~pki02/">1st Annual PKI Research Workshop</a></h2>
+<hr>
+
+<h2>Media, etc.</h2>
+
+<ul>
+<li> Alex's armored vault work is getting some press coverage:
+see this <a href="http://www.wired.com/news/privacy/0,1848,51917,00.html">
+article at Wired.</a>
+A couple of notes that didn't quite come out in that article:
+<ul>
+<li> the idea for our project arose out of discussions with the
+Michigan CITI packet vault team.  We are indebted to them (as the  
+paper makes clear.)
+<li> Our 4758 work does not use the CCA application
+which Mike Bond et al at Cambridge found holes in.
+</ul>
+<li> A <a href="/~pkilab/4758.shtml"><b>clarification</b></a>
+on the Cambridge attack.
+<li> <a href="http://www.thedartmouth.com/article.php?aid=200202010104"><b><i>The Dartmouth</i> article</b></a>
+<li> <a href="http://www.dartmouth.edu/~news/releases/jan02/pki.shtml"><b>Dartmouth press release</b></a>
+<li> <a href="prop.pdf"><b>Our Mellon project vision, from November 2001</b></a>
+<li> <a href="http://www.dartmouth.edu/~news/releases/oct00/PKI.html">
+<b>Dartmouth VOX Article</b></a>
+</ul>
+<p>
+<hr>
+
+<h2>Sponsors</h2>
+
+<ul>
+<li> The Mellon Foundation
+<li> <a href="http://www.internet2.edu/middleware/pkilabs/"><b>Internet2</b></a>
+<li> U.S. Department of Justice
+<li> National Science Foundation
+<li> IBM Research 
+</ul>
+
+<hr>
+
+<h2>Affiliations</h2>
+
+<ul>
+<li><a href="http://www.dartmouth.edu"><b>Dartmouth College</b></a>
+<li><a href="http://www.cs.dartmouth.edu"><b>Dartmouth Department of Computer Science</b></a>
+<li> <a href="http://www.dartmouth.edu/comp/"><b>Dartmouth Computing Services</b></a>
+<li><a href="http://www.ists.dartmouth.edu"><b>The Institute for Security Technology Studies (ISTS)</b></a>
+</ul>
+<p>
+
+<hr>
+
+
+
+<h2><a href="acapps.shtml">Academic Applications</a></h2>
+
+<hr>
+
+<h2>Physical Location</h2>
+
+4th Floor, Gerry Hall, on the campus of Dartmouth College,
+in Hanover, New Hampshire (but we can see Vermont from the lab).
+<p>
+<hr>
+
+
+
+<p>
+
+<hr>
+<table width=100%>
+<tr>
+<td align=center>
+<IMG ALIGN="center" SRC="http://www.cs.dartmouth.edu/icons/back.gif" ALT="">
+</td>
+<td align=left>
+<b>
+
+<a href="/">
+Back to Department of Computer Science Home Page</a>
+</b>
+</td>
+<td align=right>
+<i>Maintained by 
+<a href="http://www.cs.dartmouth.edu/~sws/">Sean Smith</a>,
+<a href="mailto:sws@cs.dartmouth.edu">sws@cs.dartmouth.edu</a>
+</i>
+</td>
+</tr>
+</table>
+</font>
+</body>
+</html>
+

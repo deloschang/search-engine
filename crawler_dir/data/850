@@ -1,0 +1,216 @@
+http://www.cs.dartmouth.edu/~ac/Teach/CS109-Spring11
+3
+<html><head>
+  <title>CS 109 (Spring 2011): Amit Chakrabarti</title>
+  <link rel="stylesheet" type="text/css" href="/~ac/main.css">
+  <style>
+    td {font-family:arial,sans-serif; font-size:smaller}
+    .bannertext {color: #ffffff; font-weight: bold}
+  </style>
+</head>
+
+<body>
+
+<table width=900px> <tr> <td>
+
+<table bgcolor=#aaccaa border=0 width=100%> <tr>
+  <td valign=bottom>
+    <h3>Computer Science 109 (Spring 2011)<br/><br/>
+    Theory of Computation
+    <div style="font-size: smaller"> Advanced Level</div>
+  </td>
+  <td align=right valign=top>
+    <img align=center src="http://www.cs.dartmouth.edu/images/Dtree.gif" 
+    alt="Dartmouth Logo"><br>
+    <a href="http://www.cs.dartmouth.edu">Computer Science</a><br/>
+    <a href="http://www.dartmouth.edu">Dartmouth College</a>
+  </td>
+</tr></table>
+
+<!-- ------------------------------------------------ -->
+
+<br/>
+
+<div style="font-size:larger">
+<b>Who:</b> Taught by <a href="http://www.cs.dartmouth.edu/~ac">Amit Chakrabarti</a> <br/>
+<b>When:</b> 2A hour, TTh 14:00-15:50, X-hr W 16:15-17:05 <br/>
+<b>Where:</b> Sudikoff 214 <br/>
+</div>
+
+<p> This course is designed as a follow-up to an introductory Theory of
+Computation course, such as <a
+href="http://www.cs.dartmouth.edu/~ac/Teach/CS39-Fall07">Dartmouth's CS
+39</a>.  <b>Students who have not yet taken such an introductory course
+are required to do so before registering for CS 109.</b>
+
+<p> In <a href="www.cs.dartmouth.edu/~ac/Teach/CS39-Fall07">CS39</a>, we
+learned that the Turing Machine is a powerful abstraction that helps us reason
+about computation. In this course, we shall continue from where CS39 left off,
+and delve deeper into the mysteries of the Turing Machine and study five key
+aspects of computation: time, space, nondeterminism, randomness and
+interaction. The goal is to understand the power of each of these. The
+course is structured into three major phases, as indicated in the following
+plan. </p>
+
+<!--<div style="color:red">PLEASE IGNORE THE DATES IN THE SCHEDULE BELOW.  They need to be fixed.</div> -->
+</p>
+
+<center> <table cellpadding=1>
+
+  <tr> <!-- Header -->
+  <td colspan=5 bgcolor=#ff8800> <div class=bannertext> Phase 1: Delving deeper into Nondeterminism, Time and Space </div> </td> </tr>
+
+  <tr class=oddrow>
+  <td align=right>1. </td> <td>Mar 29</td>  <td>Review of Turing Machines, Nondeterminism, DTIME, NTIME, P, NP</td>  <td>[Sip], Ch.3,4,5,7</td>  <td>&mdash;</td> </tr>
+			  
+  <tr class=evenrow>
+  <td align=right>2. </td> <td>Mar 31</td>  <td>Review of reductions and NP-completeness</td>  <td>[Sip], Ch.7</td>  <td><a href="Homework/hw01.pdf">Homework 1</a> (due Apr 6)</td> </tr>
+			  
+  <tr class=oddrow>
+  <td align=right>3. </td> <td>Apr  5</td>  <td>Space complexity; Savitch's Theorem; L, NL, NL-completeness</td>  <td>[Sip], Ch.8</td>  <td><a href="Homework/hw02.pdf">Homework 2</a> (due Apr 11)</td> </tr>
+			  
+  <tr class=evenrow>
+  <td align=right>4. </td> <td>Apr  7</td>  <td>Immerman-Szelepcsenyi Theorem (NL = coNL); PSPACE; TQBF</td>  <td>[Sip], Ch.8</td>  <td><a href="Homework/hw03.pdf">Homework 3</a> (due Apr 15)</td> </tr>
+			  
+  <tr class=oddrow>
+  <td align=right>5. </td> <td>Apr 12</td>  <td>Space and time hierarchy theorems, deterministic and nondeterministic</td>  <td>[Sip], Ch.8,9</td>  <td><a href="Homework/hw04.pdf">Homework 4</a> (due Apr 18)</td> </tr>
+			  
+  <tr class=evenrow>
+  <td align=right>6. </td> <td>Apr 14</td>  <td>Polynomial hierarchy (PH); Alternating TMs</td>  <td>[AB], Ch.5</td>  <td><a href="Homework/hw05.pdf">Homework 5</a> (due Apr 20)</td> </tr>
+			  
+  <tr class=oddrow>
+  <td align=right>7. </td> <td>Apr 19</td>  <td>Circuits; Non-uniformity; Shannon's Theorem; SIZE versus DTIME </td>  <td>[AB], Ch.6</td>  <td><a href="Homework/hw06.pdf">Homework 6</a> (due Apr 27)</td> </tr>
+
+  <tr class=evenrow>
+  <td align=right>8. </td> <td>Apr 21</td>  <td>Shannon's Theorem; Computation with advice; Karp-Lipton Theorem </td>  <td>[AB], Ch.6</td>  <td>&mdash;</td> </tr>
+
+  <tr> <!-- Header -->
+  <td colspan=5 bgcolor=#ff8800> <div class=bannertext> Phase 2: The Power of Randomness </div> </td> </tr>
+
+  <tr class=oddrow>
+  <td align=right>9. </td> <td>Apr 26</td>  <td>Randomized computation; Three examples; Schwartz-Zippel Lemma</td>  <td>[AB], Ch.7</td> <td><a href="Homework/hw07.pdf">Homework 7</a> (due May 2)</td> </tr>
+
+  <tr class=evenrow>
+  <td align=right>10. </td> <td>Apr 28</td>  <td>BPP; RP; ZPP; Error reduction by repetition; Chernoff bounds; Adleman's Theorem</td> <td>[AB], Ch.7</td>  <td><a href="Homework/hw08.pdf">Homework 8</a> (due May 4)</td> </tr>
+						
+  <tr class=oddrow>
+  <td align=right>11.</td> <td>May  3</td>  <td>Sipser-Gacs Theorem; Randomized reduction; Valiant-Vazirani Theorem</td>  <td>[AB], Ch.7,17</td>  <td>&mdash;</td> </tr>
+						
+  <tr class=evenrow>
+  <td align=right>12.</td> <td>May  5</td>  <td>Foundations of cryptography; one-way functions, pseudorandom generators</td> <td></td> <td><a href="Homework/hw09.pdf">Homework 9</a> (due May 11)</td> </tr>
+						
+  <tr class=oddrow>
+  <td align=right>13.</td> <td>May 10</td>  <td>Next-bit unpredictability and PRGs; Goldreich-Levin theorem</td> <td>[AB], Ch.9</td>  <td>&mdash;</td> </tr>
+						
+  <tr class=evenrow>
+  <td align=right>13A.</td> <td>May 11 (X-hr)</td>  <td>One-way permutations to PRGs</td>  <td>[AB], Ch.9</td> <td>&mdash;</td> </tr>
+						
+  <tr> <!-- Header -->
+  <td colspan=5 bgcolor=#ff8800> <div class=bannertext> Phase 3: The Power of Interaction </div> </tr>
+
+  <tr class=oddrow>
+  <td align=right>15.</td> <td>May 12</td>  <td>Interactive proofs (IP); Arthur-Merlin games (AM); Graph Non-Isomorphism</td>  <td>[AB], 9.3</td> <td><a href="Homework/hw10.pdf">Homework 10</a> (due May 18)</td> </tr>
+						
+  <tr class=evenrow>
+  <td align=right>16.</td> <td>May 17</td>  <td>Goldwasser-Sipser Protocol; GNI and NP-completeness</td>  <td>[Sip], Ch.9</td>  <td><a href="Homework/hw11.pdf">Homework 11</a> (due May 23)</td> </tr>
+						
+  <tr class=oddrow>
+  <td align=right>17.</td> <td>May 19</td>  <td>Arithmetization; LFKN Theorem; Shamir's Theorem (IP = PSPACE)</td> <td>[AB], Ch.8</td>  <td>&mdash;</td> </tr>
+			  
+  <tr class=evenrow>
+  <td align=right>18.</td> <td>May 24</td>  <td>Introduction to PCPs; PCP theorem; Applications</td>  <td>[Sip],
+  10.4</td>  <td><a href="Homework/hw12.pdf">Homework 12</a> (due Jun 1)</td> </tr>
+			  
+  <tr class=oddrow>
+  <td align=right>&ndash;&nbsp;</td> <td>May 26</td>  <td>(no lecture, Amit is out of town)</td>  <td>&nbsp;</td> <td></td> </tr>
+			  
+  <tr class=evenrow>
+  <td align=right>19.</td> <td>May 31</td>  <td>Hastad's 3-bit PCP; More applications</td>  <td>&nbsp;</td> <td></td> </tr>
+			  
+</table> </center>
+               
+<br/> <br/>
+
+<div style="font-size:larger">
+<b>Announcements</b>
+</div>
+  <ul>
+    <li> The final exam will be a take-home 24-hour time limited exam. You will have a period 
+    of about 6 days during which to do it, and you get to choose any contiguous 24-hour 
+    interval during which to work on the exam. Further details will be announced later, as 
+    necessary. </li>
+  </ul>
+
+<br/> 
+
+<div style="font-size:larger">
+<b>Textbooks and Such</b>
+</div>
+
+<p> There is no set textbook for the course, so it is vital to attend
+class. However, there are three reference books that cover just about
+everything we shall do in class, and I will be updating the schedule
+table above with appropriate references. These reference books are:
+<ul>
+  <li> <i>Introduction to the Theory of Computation (Second Edition)</i>. 
+  Michael Sipser. Referred to above as [Sip]. </li>
+  <li> <i>Computational Complexity</i>. Christos Papadimitriou. Referred
+  to above as [Pap]. </li>
+  <li> <i>Complexity Theory: A Modern Approach</i>. Sanjeev Arora and
+  Boaz Barak. Draft available <a
+  href="http://www.cs.princeton.edu/theory/complexity/">online</a>. 
+  Referred to above as [AB]. </li>
+</ul>
+
+<div style="font-size:larger">
+<b>Administrative Details</b>
+</div>
+
+<p> <b>Your goal</b> is to earn at least <b>30 points</b> over the
+course of the term, at least <b>6</b> of which must be earned from a
+final exam. There are two ways to earn points.
+
+<p> <b>Homework:</b> Starting Apr 8, there will be a short homework,
+consisting of approximately 2 problems, given out after every class.
+There will be a total of about 25 problems given out throughout the
+term. Each problem will be worth 2 points. <b>I strongly recommend that
+you solve each homework before the next class, as this will help in your
+understanding of the next class.</b> By "solve", I mean solve for
+yourself. You don't need to turn in everything, just turn in "enough" to
+make progress towards the 30-point goal. If you score over 24 points
+from your homeworks, the extra points will count towards extra credit.
+</p>
+
+<p> <b>Final exam:</b> This will be a take-home exam given out at the
+end of the course. The maximum possible score in the final exam
+<strike>will be 10 points</strike> is 12 points, so you will have to
+earn at least <strike>20</strike> 18 points from turning in homework
+solutions. </p>
+
+<p> <b>Working together</b> is allowed on homework problems (except when
+indicated otherwise), but not on the final exam. </p>
+
+<p> <b>Getting Help:</b> This term, Amit has office hours TBD.
+We may have a teaching assistant.
+Feel free to just drop in if we are around, or make
+an appointment if you want a specific time. </p>
+
+<br/>
+
+<p> Similar courses taught by others: <a
+href="http://www.cs.berkeley.edu/~luca/cs278-08/"> Luca Trevisan
+(Berkeley) </a>, <a
+href="http://www.cs.princeton.edu/courses/archive/fall04/cos522/">
+Sanjeev Arora (Princeton) </a> </p>
+
+<hr/>
+
+<p> Other courses taught by <a href="/~ac/Teach/">Amit Chakrabarti</a> </p>
+
+<p> <a href="/~ac">Home</a> </p>
+
+</td> </tr> </table>
+
+</body>
+</html>
+"

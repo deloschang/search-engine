@@ -1,0 +1,56 @@
+http://www.cs.dartmouth.edu/%7Ecbk/papers.php?abs=78
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<title>Chris Bailey-Kellogg | Papers </title>
+<link href="style/main.css" type="text/css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+<div id="page">
+
+<div id="header">
+<h2>Chris Bailey-Kellogg</h2>
+
+<div id="title">
+ Associate Professor, 
+  <a href="http://www.cs.dartmouth.edu/">CS</a>, 
+  <a href="http://www.dartmouth.edu/">Dartmouth</a>
+  
+</div>
+
+<div id="nav">
+  <span><a href="index.php"  >home</a></span>
+  <span><a href="lab.php"  >lab</a></span>
+  <span><a href="projects.php"  >projects</a></span>
+  <span><a href="classes.php"  >classes</a></span>
+  <span><a href="papers.php" class="navhere" >papers</a></span>
+  <span><a href="news.php"  >news</a></span>
+</div>
+</div>
+
+<div id="content">
+L. He, A.M. Friedman, and C. Bailey-Kellogg, "Algorithms for optimizing cross-overs in DNA shuffling", <i>BMC BIoinf.</i>, 2012, 13 Suppl 3:S3. <a href="http://www.biomedcentral.com/1471-2105/13/S3/S3/">[paper] </a><br class="clear" /><div id="abs"><p><b>BACKGROUND:</b>
+DNA shuffling generates combinatorial libraries of chimeric genes by stochastically recombining parent genes. The resulting libraries are subjected to large-scale genetic selection or screening to identify those chimeras with favorable properties (e.g., enhanced stability or enzymatic activity). While DNA shuffling has been applied quite successfully, it is limited by its homology-dependent, stochastic nature. Consequently, it is used only with parents of sufficient overall sequence identity, and provides no control over the resulting chimeric library.</p>
+<p><b>RESULTS:</b>
+This paper presents efficient methods to extend the scope of DNA shuffling to handle significantly more diverse parents and to generate more predictable, optimized libraries. Our CODNS (cross-over optimization for DNA shuffling) approach employs polynomial-time dynamic programming algorithms to select codons for the parental amino acids, allowing for zero or a fixed number of conservative substitutions. We first present efficient algorithms to optimize the local sequence identity or the nearest-neighbor approximation of the change in free energy upon annealing, objectives that were previously optimized by computationally-expensive integer programming methods. We then present efficient algorithms for more powerful objectives that seek to localize and enhance the frequency of recombination by producing "runs" of common nucleotides either overall or according to the sequence diversity of the resulting chimeras. We demonstrate the effectiveness of CODNS in choosing codons and allocating substitutions to promote recombination between parents targeted in earlier studies: two GAR transformylases (41% amino acid sequence identity), two very distantly related DNA polymerases, Pol X and beta (15%), and beta-lactamases of varying identity (26-47%).</p>
+<p><b>CONCLUSIONS:</b>
+Our methods provide the protein engineer with a new approach to DNA
+shuffling that supports substantially more diverse parents, is more
+deterministic, and generates more predictable and more diverse
+chimeric libraries.</p>
+</div><div id="absimg"><img src="img/pub/bmc12.png" alt="bmc12.png" /></div><br class="clear" /></div>
+
+<div id="footer"></div>
+
+</div>
+
+</body>
+</html>
+:

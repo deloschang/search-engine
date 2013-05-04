@@ -1,0 +1,114 @@
+http://www.cs.dartmouth.edu/%7Ecbk/mrf.php
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<title>Chris Bailey-Kellogg | Projects | Graphical models of proteins </title>
+<link href="style/main.css" type="text/css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+<div id="page">
+
+<div id="header">
+<h2>Chris Bailey-Kellogg</h2>
+
+<div id="title">
+ Associate Professor, 
+  <a href="http://www.cs.dartmouth.edu/">CS</a>, 
+  <a href="http://www.dartmouth.edu/">Dartmouth</a>
+  
+</div>
+
+<div id="nav">
+  <span><a href="index.php"  >home</a></span>
+  <span><a href="lab.php"  >lab</a></span>
+  <span><a href="projects.php" class="navhere" >projects</a></span>
+  <span><a href="classes.php"  >classes</a></span>
+  <span><a href="papers.php"  >papers</a></span>
+  <span><a href="news.php"  >news</a></span>
+</div>
+</div>
+
+<div id="content">
+
+<div id="projimg"><img src="img/proj/mrf.png" alt="Graphical model of proteins" /></div>
+
+<p>Protein sequences are constrained both at individual residues
+(conservation) and in relation to each other (covariation).  Selective
+pressures to maintain structure and function have constrained
+sequences over time and across species.  Constraints thus manifested
+in sequence-structure-function relationships can be inferred from the
+evolutionary record, along with information from available structural
+studies and functional assays.  Identified relationships can then be
+employed in all different `directions', e.g., to predict function from
+the sequence of a newly-discovered protein, discriminate predicted
+structures for a sequence according to functional tests, and design
+variant (homologous) protein sequences with related functions.</p>
+
+<p>We are developing approaches to learn and use probabilistic
+graphical models (aka Markov random fields) that capture significant
+conservation and coupling observable in a multiply-aligned set of
+sequences.  By incorporating structural information, our models can
+provide mechanistic explanations for observed constraints.  By
+incorporating functional class information, they can perform
+interpretable classification of new sequences, explaining decisions in
+terms of the underlying conservation and coupling constraints.  By
+incorporating information about interacting proteins, they can
+identify "cross-coupling" constraints and make explainable predictions
+about novel interactions.  Finally, the models can be used
+generatively, to design new sequences consistent with the modeled
+constraints, and thus predicted to be folded and functional.</p>
+
+<h4>Papers</h4>
+<ul>
+<li>K.S.M.T. Hossain, D. Patnaik, S. Laxman, P. Jain, C. Bailey-Kellogg, and N. Ramakrishnan, "Improved Multiple Sequence Alignments using Coupled Pattern Mining", <i>Proc. ACM-BCB</i>, 2012, to appear. <a href="papers.php?abs=79">[abstract] </a></li>
+
+<li>K.S.M.T. Hossain, C. Bailey-Kellogg, A.M. Friedman, M.J. Bradley, N. Baker, and N. Ramakrishnan, "Using physicochemical properties of amino acids to induce graphical models of residue couplings", <i>Proc. BioKDD</i>, 2011. <a href="papers.php?abs=70">[abstract] </a><a href="papers/biokdd11.pdf">[preprint] </a></li>
+
+<li>H. Kamisetty, A. Ramanathan, C. Bailey-Kellogg, and C.J. Langmead, "Accounting for conformational entropy in predicting binding free energies of
+protein-protein interactions", <i>Proteins</i>, 2011, 79:444-462. <a href="papers.php?abs=63">[abstract] </a><a href="http://dx.doi.org/10.1002/prot.22894">[paper] </a></li>
+
+<li>J. Thomas, N. Ramakrishnan, and C. Bailey-Kellogg, "Graphical models of protein-protein interaction specificity from correlated mutations and interaction data", <i>Proteins</i>, 2009, 76:911-929. <a href="papers.php?abs=54">[abstract] </a><a href="http://www3.interscience.wiley.com/cgi-bin/abstract/121675902/ABSTRACT">[paper] </a></li>
+
+<li>H. Kamisetty, B. Ghosh, C. Bailey-Kellogg, and C.J. Langmead, "Modeling and inference of sequence-structure specificity", <i>Proc. CSB</i>, 2009, 91-101. <a href="papers.php?abs=56">[abstract] </a><a href="papers/csb09a.pdf">[preprint] </a></li>
+
+<li>J. Thomas, N. Ramakrishnan, and C. Bailey-Kellogg, "Protein design
+by sampling an undirected graphical model of residue constraints", 
+<i>IEEE/ACM Transactions on Computational Biology and Bioinformatics</i>,
+in press.
+<a href="abs.php#tcbb09">abstract</a>.
+<a href="papers/tcbb09.pdf">preprint</a>.
+</li>
+
+<li>J. Thomas, N. Ramakrishnan, and C. Bailey-Kellogg, "Graphical
+models of residue coupling in protein families", <i>IEEE/ACM
+Transactions on Computational Biology and Bioinformatics</i>, 2008, 5:183-197.
+<a href="abs.php#tcbb08">abstract</a>.
+<a href="http://www2.computer.org/portal/web/csdl/doi/10.1109/TCBB.2007.70225">official version</a>.
+<a href="papers/tcbb08.pdf">preprint</a>.
+</li>
+
+<li>J. Thomas, N. Ramakrishnan, and C. Bailey-Kellogg, "Graphical
+models of residue coupling in protein families", Proc. BioKDD, 2005.
+<a href="abs.php#biokdd05">abstract</a>.
+<a href="papers/biokdd05.pdf">pdf</a>.  
+Copyright 2005, ACM.
+</li>
+
+</ul>
+
+</div>
+
+<div id="footer"></div>
+
+</div>
+
+</body>
+</html>
+s

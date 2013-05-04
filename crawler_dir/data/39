@@ -1,0 +1,143 @@
+http://www.cs.dartmouth.edu/~cbk
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<title>Chris Bailey-Kellogg  </title>
+<link href="style/main.css" type="text/css" rel="stylesheet" />
+
+<link rel="stylesheet" href="style/jquery.tooltip.css" />
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/jquery.bgiframe.js" type="text/javascript"></script>
+<script src="js/jquery.dimensions.js" type="text/javascript"></script>
+<script src="js/jquery.tooltip.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function() {
+    $('#lab img, #projects img').tooltip({ 
+      delay: 0, 
+      showURL: false, 
+      track: true, 
+      showBody: " - ",
+      });
+
+    $('#class').tooltip({
+      delay: 0, 
+      showURL: false, 
+      track: true, 
+      showBody: " - ",
+      extraClass: "classdesc", 
+      });
+
+    $('#papers img').tooltip({ 
+      delay: 0, 
+      showURL: false, 
+      track: true, 
+      showBody: " - ",
+      extraClass: "bibhighlight", 
+      });
+
+});
+</script></head>
+
+<body>
+
+<div id="page">
+
+<div id="header">
+<h2>Chris Bailey-Kellogg</h2>
+
+<div id="title">
+ Associate Professor, 
+  <a href="http://www.cs.dartmouth.edu/">CS</a>, 
+  <a href="http://www.dartmouth.edu/">Dartmouth</a>
+  
+</div>
+
+<div id="nav">
+  <span><a href="index.php" class="navhere" >home</a></span>
+  <span><a href="lab.php"  >lab</a></span>
+  <span><a href="projects.php"  >projects</a></span>
+  <span><a href="classes.php"  >classes</a></span>
+  <span><a href="papers.php"  >papers</a></span>
+  <span><a href="news.php"  >news</a></span>
+</div>
+</div>
+
+<div id="content">
+	
+<div class="homesec" id="lab">
+<h3>Current lab members</h3>
+<ul class="pix">
+<li><a href="http://www.cs.dartmouth.edu/~cbk/cbk.php"><img src="img/lab/cbk.jpg" alt="Chris Bailey-Kellogg" title="Chris Bailey-Kellogg - Associate Professor" /></a></li>
+<li><img src="img/lab/ickwon.jpg" alt="Ickwon Choi" title="Ickwon Choi - Postdoctoral researcher" /></li>
+<li><a href="http://www.cs.dartmouth.edu/~yoonjoo/"><img src="img/lab/yoonjoo.jpg" alt="Yoonjoo Choi" title="Yoonjoo Choi - Postdoctoral researcher" /></a></li>
+<li><a href="http://www.cs.dartmouth.edu/~luhe/"><img src="img/lab/lu.jpg" alt="Lu He" title="Lu He - PhD candidate" /></a></li>
+<li><a href="http://www.cs.dartmouth.edu/~dverma"><img src="img/lab/deep.jpg" alt="Deeptak Verma" title="Deeptak Verma - Postdoctoral researcher" /></a></li>
+</ul>
+</div>
+	
+<div class="homesec" id="projects">
+<h3>Highlighted projects</h3>
+<ul class="pix">
+<li><a href="deimmunization.php"><img src="img/proj/sm/blac.png" alt="deimmunization" title="Protein therapeutic deimmunization" /></a></li>
+<li><a href="antibodies.php"><img src="img/proj/sm/igg.png" alt="antibody effector functions" title="Antibody effector functions" /></a></li>
+<li><a href="cmi.php"><img src="img/proj/sm/ternary.png" alt="MHC:peptide:TCR" title="Cell-mediated immunity" /></a></li>
+<li><a href="mrf.php"><img src="img/proj/sm/mrf.png" alt="graphical models" title="Protein graphical models" /></a></li>
+<li><a href="recombination.php"><img src="img/proj/sm/recomb.png" alt="recombination" title="Protein recombination" /></a></li>
+<li><a href="oligomer.php"><img src="img/proj/sm/2hyn.jpg" alt="oligomer" title="Protein complexes" /></a></li>
+</ul>
+</div>
+	
+<div class="homesec" id="classes">
+<h3>Current/upcoming classes</h3>
+
+<table border="0">
+<tr>
+<th style="padding-right:4em">Winter 2013: <a href="http://www.cs.dartmouth.edu/~cs86/">Computational Structural Biology</a></th>
+<th>Spring 2013: <a href="classes/immuno/">Computational Immunology</a></th>
+</tr>
+<tr>
+<td><a href="http://www.cs.dartmouth.edu/~cs86/"><img src="img/class/cs86-186.png" class="classimg" alt="CS 86/186" title="CS 86/186 - Computational methods are helping provide an understanding of how the molecules of life function through their atomic-level structures, and how those structures and functions can be applied and controlled. This course will introduce the wide range of complex and fascinating challenges and approaches in computational structural biology, and will give hands-on experience applying and implementing some important methods."/></a></td>
+<td><a href="classes/immuno/"><img src="img/class/immuno.png" class="classimg" alt="CS 89/189" title="CS 90-/189 - This course will explore the intersection of computer science and immunology. We will see how to computationally design antibodies to recognize specific antigens, and how to model the antibodies that arise naturally in infection or due to vaccination. We will likewise study computational models of the immune recognition of 'foreign' proteins by T cells, and how to optimize vaccines and therapeutics to modulate that recognition. We will look at the integration of multiple types of data to determine how information propagates in an immune response, and how to rationally design more targeted vaccines based on such analyses."/></a></td>
+</tr>
+</table>
+
+</div>
+
+<p></p>
+
+<div class="homesec" id="papers">
+<h3>Recent papers</h3>
+
+<ul class="pix">
+<li><a href="papers.php?abs=85"><img src="img/pub/sm/jim12.png" alt="High-throughput, multiplexed IgG subclassing of antigen-specific antibodies from clinical samples" title="High-throughput, multiplexed IgG subclassing of antigen-specific antibodies from clinical samples - E.P. Brown, A.F. Licht, A.S. Dugast, I. Choi, C. Bailey-Kellogg, G. Alter, and M.E. Ackerman, J. Immunol. Methods, 2012" /></a></li> <li><a href="papers.php?abs=81"><img src="img/pub/sm/peds12.png" alt="Design and analysis of immune-evading enzymes for ADEPT therapy" title="Design and analysis of immune-evading enzymes for ADEPT therapy - D.C. Osipovitch, A.S. Parker, C.D. Makokha, J. Desrosiers, W.C. Kett, L. Moise, C. Bailey-Kellogg, and K.E. Griswold, Protein Eng. Des. Sel., 2012" /></a></li> <li><a href="papers.php?abs=80"><img src="img/pub/sm/iciw12.png" alt="Immunoinformatic Analysis of Chinese Hamster Ovary (CHO) Protein Contaminants in Therapeutic Protein Formulations" title="Immunoinformatic Analysis of Chinese Hamster Ovary (CHO) Protein Contaminants in Therapeutic Protein Formulations - A.H. Gutierrez, L. Moise, F. Terry, K. Dasilva, C. Bailey-Kellogg, W. Martin, and A.S. De Groot, Proc. ICIW, 2012" /></a></li> <li><a href="papers.php?abs=79"><img src="img/pub/sm/acmbcb12.png" alt="Improved Multiple Sequence Alignments using Coupled Pattern Mining" title="Improved Multiple Sequence Alignments using Coupled Pattern Mining - K.S.M.T. Hossain, D. Patnaik, S. Laxman, P. Jain, C. Bailey-Kellogg, and N. Ramakrishnan, Proc. ACM-BCB, 2012" /></a></li> <li><a href="papers.php?abs=78"><img src="img/pub/sm/bmc12.png" alt="Algorithms for optimizing cross-overs in DNA shuffling" title="Algorithms for optimizing cross-overs in DNA shuffling - L. He, A.M. Friedman, and C. Bailey-Kellogg, BMC BIoinf., 2012" /></a></li> <li><a href="papers.php?abs=77"><img src="img/pub/sm/bioinf12.png" alt="MMFPh: A Maximal Motif Finder for Phosphoproteomics Datasets" title="MMFPh: A Maximal Motif Finder for Phosphoproteomics Datasets - T. Wang, A.N. Kettenbach, S.A. Gerber, and C. Bailey-Kellogg, Bioinformatics, 2012" /></a></li> </ul>
+
+<p><a href="papers.php" class="more">[more...]</a></p>
+</div>
+
+<div class="homesec" id="news">
+<h3>News</h3>
+<table>
+<tr class="on"><td class="newsdate">Mar 13</td><td>Congratulations to artist-in-residence Yoonjoo for the <a href="http://onlinelibrary.wiley.com/doi/10.1002/jcc.23274/abstract"><i>J Comp Chem</i> cover article</a></td></tr><tr class="off"><td class="newsdate">Mar 13</td><td><a href="positions.php">Postdoctoral position</a> available in machine learning / computational immunology</td></tr></table>
+<p><a href="news.php" class="more">[more...]</a></p>
+</div>
+
+<div class="homesec" id="contact">
+<h3>Contact</h3>
+<p>cbk -at- cs -dot- dartmouth -dot- edu<br />
+Sudikoff Lab (Maynard &amp; College), room 250<br />
+603-646-3385</p>
+</div>
+
+</div>
+
+<div id="footer"></div>
+
+</div>
+
+</body>
+</html>
+=

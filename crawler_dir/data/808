@@ -1,0 +1,73 @@
+http://www.cs.dartmouth.edu/~mckeeman
+3
+<!DOCTYPE HTML PUBLIC 
+   "-//W3C//DTD HTML 4.0 Transitional //EN"
+   "http://www.w3.org/TR/REC-html40/loose.dtd">
+<!-- FILE:    index.html
+     PURPOSE: home page for McKeeman
+     MODS:    McKeeman - 2000.03.28 - revised for Spring 2000
+              McKeeman - 2002.03.25 - revised for Spring 2002
+              McKeeman - 2003.03.24 - revised for Spring 2003
+              McKeeman - 2004.03.28 - revised for Spring 2004
+              McKeeman - 2005.04.04 - revised for Spring 2005
+              McKeeman - 2007.03.19 - revised for Spring 2007
+              McKeeman - 2008.03.25 - revised for Spring 2008
+              McKeeman - 2009.03.23 - revised for Spring 2009
+              McKeeman - 2010.05.12 - revised for Spring 2010
+  -->
+
+<html>
+<head>
+<title>Bill McKeeman</title>
+</head>
+
+<body bgcolor="#FFF0D0">
+
+<!-- the following table head provides margins and textbook like appearance -->
+<table>
+<tr><td width=50></td><td width=600>
+
+<h2>Bill McKeeman's Home Page at Dartmouth</h2>
+
+<img src="Bill2005.jpg" height=150 width=130 ALT="Bill's Mugshot">
+
+<table>
+<tr>
+  <td><a href="cs48/index.html">COSC48</a></td>
+ </tr>
+
+<tr>
+  <td><a href="cs118/index.html">COSC118</a></td>
+</tr>
+
+<tr>
+<td><a href="funstuff.html">fun stuff</a></td>
+</tr>
+
+<tr>
+<td><a href="downloads.html">downloads</a></td>
+</tr>
+</table>
+
+<hr>
+
+<table>
+<tr><td>email:</td><td>McKeeman{at}cs{dot}dartmouth{dot}edu</td></tr>
+<tr><td>hinman:</td><td>6211</td></tr>
+<tr><td>office:</td><td>Sudikoff 216</td></tr>
+<tr><td>phone:</td><td>(603)646-1613</td></tr>
+<tr><td>bio:</td><td><a href = 
+  "http://www.mathworks.com/company/newsletters/news_notes/win03/developers.html">
+  (sort of...)
+  </a></td></tr>
+<tr><td>resume:</td><td><a href=resume.pdf>(really)</a></td></tr>
+<tr><td>Created:</td><td><i>March 28, 2000</i></td></tr>
+<tr><td>Last modified:</td><td><i>Jan 26, 2011</i></td></tr>
+</table>
+
+<!-- the following table end provides margins and textbook like appearance -->
+</td><td width=50></td></tr>
+</table>
+
+</body>
+</html>

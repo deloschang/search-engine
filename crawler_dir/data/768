@@ -1,0 +1,55 @@
+http://www.cs.dartmouth.edu/~epics/valleynet/index.html
+3
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>EPICS + Upper Valley Haven Partnership</title>
+<meta http-equiv=content-type content="text/html; charset=us-ascii">
+<link href="../style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+
+<p>
+<a href="http://www.cs.dartmouth.edu/~epics/"><img src="../epics_dart.gif" alt="EPICS" border=0 align="middle"></a>
+<font class=at>&nbsp;+&nbsp;</font>
+<a href="http://www.valley.net/"><img src="http://www.valley.net/images/corner.gif" alt="ValleyNet" border=0 align="middle"></a>
+</p>
+
+<table width="100%" border=0><tbody>
+<tr>
+<!-- navigation -->
+<td valign=top align=left width=100><br>
+<a href="../index.html" class=nav>home</a><br>
+<a href="../students.html" class=nav>students</a><br>
+<a href="../agencies.html" class=nav>agencies</a><br>
+</td>
+
+<!-- content -->
+<td valign=top>
+<div class=header align=center>Partnership Summary</div><br>
+
+<p><a href="http://www.valley.net/">ValleyNet</a> is a non-profit organization focused on providing community-based information resources to the Upper Valley. An EPICS team has created an <a href="http://uvwiki.org">Upper Valley Wiki</a>.</p>
+
+<p>Team members</p>
+<ul>
+<li><b>Spring 2010</b>: Loren Sands-Ramshaw</li>
+</ul>
+
+
+<p>&nbsp;</p>
+
+
+<!-- footer -->
+<tr><td colspan=2 height=20></td></tr>
+<tr><td class=hr colspan=2 height=2></td></tr>
+<tr><td class=footer colspan=2>
+<!-- hhmts start --> 
+Last modified: Fri Jan 11 16:03:29 EST 2008
+<!-- hhmts end -->
+</td></tr>
+
+</tbody></table>
+</body>
+</html>
+m

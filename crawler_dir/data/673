@@ -1,0 +1,57 @@
+http://www.cs.dartmouth.edu/%7Ecbk/antibodies.php
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<title>Chris Bailey-Kellogg | Projects | Antibody effector functions </title>
+<link href="style/main.css" type="text/css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+<div id="page">
+
+<div id="header">
+<h2>Chris Bailey-Kellogg</h2>
+
+<div id="title">
+ Associate Professor, 
+  <a href="http://www.cs.dartmouth.edu/">CS</a>, 
+  <a href="http://www.dartmouth.edu/">Dartmouth</a>
+  
+</div>
+
+<div id="nav">
+  <span><a href="index.php"  >home</a></span>
+  <span><a href="lab.php"  >lab</a></span>
+  <span><a href="projects.php" class="navhere" >projects</a></span>
+  <span><a href="classes.php"  >classes</a></span>
+  <span><a href="papers.php"  >papers</a></span>
+  <span><a href="news.php"  >news</a></span>
+</div>
+</div>
+
+<div id="content">
+
+<div id="projimg"><img src="img/proj/igg.png" alt="Antibody effector functions" /></div>
+
+<p>In collaboration with <a href="http://www.ackermanlab.org/">Margie Ackerman</a> (Dartmouth) and <a href="http://www.ragoninstitute.org/research_alter.html">Galit Alter</a> (Ragon Institute), we are developing new high-throughput methods for <a href="https://www.cavd.org/ProtectiveAbs/Pages/AckermanAlter.aspx">assessing antibody effector function</a>.  They are collecting clinical, functional, immunological, and proteomic data about antibodies in patient samples, and we are developing unsupervised and supervised learning methods to produce quantitative, predictive models of the relationships among the antibody features and their effector functions.  The particular focus is HIV, with a long-term goal of determining how vaccination can induce antibodies with an enhanced capacity to recruit the innate immune system to fight HIV.</p>
+
+<h4>Papers</h4>
+<ul>
+<li>E.P. Brown, A.F. Licht, A.S. Dugast, I. Choi, C. Bailey-Kellogg, G. Alter, and M.E. Ackerman, "High-throughput, multiplexed IgG subclassing of antigen-specific antibodies from clinical samples", <i>J. Immunol. Methods</i>, 2012, in press. <a href="papers.php?abs=85">[abstract] </a><a href="http://www.sciencedirect.com/science/article/pii/S002217591200289X">[paper] </a></li>
+</ul>
+
+</div>
+
+<div id="footer"></div>
+
+</div>
+
+</body>
+</html>
+

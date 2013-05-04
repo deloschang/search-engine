@@ -1,0 +1,569 @@
+http://www.cs.dartmouth.edu/~cs19/journal.html
+3
+<html>
+
+<head>
+<title>CS 30 2013W Daily Schedule</title>
+</head>
+
+<body bgcolor=#EEEEEE>
+
+<h1>
+CS 30 Day by Day
+</h1>
+
+<!--
+</em>
+<br>Last modified:&nbsp;
+<em>
+<script language="JavaScript">
+document.write(document.lastModified)
+</script>
+</em>
+-->
+
+<p>
+
+<a name="week1"><strong>Week 1</strong></a>
+<dl>
+  <dt> Monday, January 7
+  <dd> <a href="syllabus.html">Course Information</a> discussed.
+  <dd> Why discrete math? 
+  <dd> Overview of the course.
+  <dd> Analysis of the Towers of Hanoi problem.
+  <dd> Reading: none
+
+  <dt> Tuesday, January 8, X-hour
+  <dd> Propositional Logic
+  <dd> Reading: Rosen 1.1 and 1.2
+
+  <dt> Wednesday, January 9
+  <dd> Propositional equivalences
+  <dd> Predicates and Quantifiers
+  <dd> Reading: Rosen 1.3 and 1.4
+
+  <dt> Friday, January 11
+  <dd> Nested quantifiers
+  <dd> Reading: Rosen 1.5 
+  <dd> <a href="homework/hw1.pdf">Homework 1</a>
+</dl>
+
+<a name="week2"><strong>Week 2</strong></a>
+<dl>
+  <dt> Monday, January 14
+  <dd> More examples of nested quantifiers
+  <dd> Reading: Rosen 1.5 
+
+  <dt> Tuesday, January 15, X-hour
+  <dd> Inference Rules
+  <dd> Reading: Rosen 1.6
+
+  <dt> Wednesday, January 16
+  <dd> Proof techniques for proving "p implies q"
+  <dd> Reading: Rosen 1.7
+
+  <dt> Friday, January 18
+  <dd> More proofs
+  <dd> Reading: Rosen 1.7 
+  <dd> <a href="homework/hw2.pdf">Homework 2</a>
+</dl>
+
+<a name="week3"><strong>Week 3</strong></a>
+<dl>
+  <dt> Monday, January 21
+  <dd> MLK day: No class
+
+  <dt> Tuesday, January 22, X-hour
+  <dd> Proof by cases, existence proofs, some tiling proofs
+  <dd> Reading: Rosen 1.8
+
+  <dt> Wednesday, January 23
+  <dd> Sets
+  <dd> Reading: Rosen 2.1 and 2.2
+
+  <dt> Friday, January 25
+  <dd> Sets and relations
+  <dd> Reading: Rosen 2.2, 9.1, and 9.5 
+  <dd> <a href="homework/hw3.pdf">Homework 3</a>
+</dl>
+
+<a name="week4"><strong>Week 4</strong></a>
+<dl>
+  <dt> Monday, January 28
+  <dd> Functions: terminolofy, 1-to-1, onto, bijection
+  <dd> Reading: Rosen 2.3
+
+  <dt> Tuesday, January 29, X-hour
+  <dd> Inverse and composition of functions
+  <dd> Reading: Rosen 2.3
+
+  <dt> Wednesday, January 30
+  <dd> Countability: why Z and NxN are countable
+  <dd> Why reals are equinumerous with reals between 0 and 1
+  <dd> Reading: Class notes & Rosen 2.5
+
+  <dt> Friday, February 1
+  <dd> Induction
+  <dd> Reading: Rosen 5.1
+  <dd> <a href="homework/hw4.pdf">Homework 4</a>
+</dl>
+
+
+<a name="week5"><strong>Week 5</strong></a>
+<dl>
+  <dt> Monday, February 4
+  <dd> Strong induction
+  <dd> Reading: Rosen 5.2
+
+  <dt> Tuesday, February 5, X-hour
+  <dd> Multiple base cases
+  <dd> Review for tonight's <b>midterm exam</b>
+  <dd> Reading: Rosen 5.2
+
+  <dt> Wednesday, February 6
+  <dd> Inductive definitions
+  <dd> Counting: Product Rule, Sum Rule, and Division Rule
+  <dd> Reading: Rosen 5.3, 6.1 
+
+  <dt> Friday, February 8
+  <dd> <b>No class</b>, Winter Carnival
+  <dd> <a href="homework/hw5.pdf">Homework 5</a>
+</dl>
+
+<a name="week6"><strong>Week 6</strong></a>
+<dl>
+  <dt> Monday, February 11
+  <dd> Some counting problems
+  <dd> Permutations
+  <dd> Reading: Rosen 6.1 and 6.3
+
+  <dt> Tuesday, February 12, X-hour
+  <dd> Combinations and some example problems
+  <dd> Reading: Rosen 6.3
+
+  <dt> Wednesday, February 13
+  <dd> Binomial theorem
+  <dd> Cominatorial arguments to prove identities
+  <dd> Reading: Rosen 6.4 
+
+  <dt> Friday, February 15
+  <dd> Generalized Permutations and Combinations
+  <dd> Pigeonhole principle
+  <dd> Rosen 6.2 and 6.5
+  <dd> <a href="homework/hw6.pdf">Homework 6</a>
+</dl>
+
+<a name="week7"><strong>Week 7</strong></a>
+<dl>
+  <dt> Monday, February 18
+  <dd> Interesting applications of pigeonhole principle
+  <dd> Start of probability theory
+  <dd> Reading: Rosen 6.2 and 7.1
+
+  <dt> Tuesday, February 19, X-hour
+  <dd> Problems with uniform distribution
+  <dd> Reading: Rosen 7.1
+
+  <dt> Wednesday, February 20
+  <dd> Probability distribution, conditional probability, independence
+  <dd> Reading: Rosen 7.2 
+
+  <dt> Friday, February 22
+  <dd> Bernoulli trials
+  <dd> Bayes theorem
+  <dd> Random variables
+  <dd> Rosen 7.3 and 7.4
+  <dd> <a href="homework/hw7.pdf">Homework 7</a>
+</dl>
+
+<a name="week8"><strong>Week 8</strong></a>
+<dl>
+  <dt> Monday, February 25
+  <dd> Expected value and variance
+  <dd> Reading: Rosen 7.4
+
+  <dt> Tuesday, February 26, X-hour
+  <dd> Expected value and variance
+  <dd> Reading: Rosen 7.4
+
+  <dt> Wednesday, February 27
+  <dd> Variance calculations
+  <dd> Time complexity of algorithms
+  <dd> Motivation for asymptotic notation
+  <dd> Reading: Rosen 3.1
+
+  <dt> Friday, March 1
+  <dd> Big O, Big Omega, Big Theta: definitions, examples, proofs
+  <dd> Proof of log(n!) = Theta(n log n)
+  <dd> Rosen 3.2 and 3.3
+  <dd> <a href="homework/hw8.pdf">Homework 8</a>
+</dl>
+
+<a name="week9"><strong>Week 9</strong></a>
+<dl>
+  <dt> Monday, March 4
+  <dd> Little o, Little omega, arranging functions, complexity of nested loops
+  <dd> Graph theory
+  <dd> Reading: Class notes, Rosen 10.1-10.2 
+
+  <dt> Tuesday, March 5, X-hour
+  <dd> Graphs: defintions and observations (path, simple path, cycle, connectivity, subgraph, subgraph induced by a subset of
+  vertices, connected components, isomorphism, complete graph)
+  <dd> Reading: Class notes, Rosen 10.3-10.4
+
+  <dt> Wednesday, March 6
+  <dd> Trees and Tree theorem & proof of some parts
+  <dd> Reading: Class notes
+
+  <dt> Friday, March 8
+  <dd> Matching and Hall's theorem
+  <dd> Rosen 10.2 (pages 658-660)
+  <dd> <a href="homework/review-problems.pdf">Practice Problems</a>
+</dl>
+
+<a name="week10"><strong>Week 10</strong></a>
+<dl>
+  <dt> Sunday, March 10
+  <dd> <b>Review Session</b>: 10.00-11.30am, in LSC 200 (our regular classroom).  I will solve the practice problems.
+
+  <dt> Monday, March 11
+  <dd> <b>Final Exam</b>: 8.00-10.00am, in LSC 200 (our regular classroom)
+</dl>
+
+<!--
+<a name="week1"><strong>Week 1</strong></a>
+<dl>
+  <dt> Monday, Sept. 10
+  <dd> <a href="syllabus.html">Course Information</a> discussed.
+  <dd> Basic counting: Sum and Product Principles, Summing consecutive integers
+  <dd> Reading: SDB 1.1
+
+  <dt> Wednesday, Sept. 12
+  <dd> Counting Lists, Functions, Permutations, and Subsets
+  <dd> Reading: SDB 1.2
+  <dd> <a href="homework/hw1.pdf">Homework 1</a> given out, due Sept. 19 before the lecture begins.
+
+  <dt> Friday, Sept. 14
+  <dd> Binomial Coefficients, Binomial theorem, Identities
+       obtained from counting the same thing different ways
+  <dd> Reading: SDB 1.3
+</dl>
+
+<a name="week2"><strong>Week 2</strong></a>
+<dl>
+  <dt> Monday, Sept. 17
+  <dd> Relations, Equivalence Relations, and Orders
+  <dd> Reading: SDB 1.4
+
+  <dt> Tuesday, Sept. 18 (x-hour)
+  <dd> Using Equivalence Relations in Counting
+  <dd> Reading: SDB 1.5
+
+  <dt> Wednesday, Sept. 19
+  <dd> Cryptography and Number Theory
+  <dd> Reading: SDB 2.1
+  <dd> <a href="homework/hw2.pdf">Homework 2</a> given out, due Sept. 26 before the lecture begins.
+
+  <dt> Friday, Sept. 21
+  <dd> Inverses and Greatest Common Divisors
+  <dd> Reading: SDB 2.2
+
+</dl>
+
+<a name="week3"><strong>Week 3</strong></a>
+<dl>
+  <dt> Monday, Sept. 24 
+  <dd> The RSA Cryptosystem
+  <dd> Reading: SDB 2.3 
+
+  <dt> Tuesday, Sept. 25 (x-hour)
+  <dd> More on the RSA Crytosystem
+  <dd> Reading: SDB 2.4 
+
+  <dt> Wednesday, Sept. 26
+  <dd> Logic and Proof: Equivalence of Statements, Truth Tables, DeMorgan's Laws
+  <dd> Reading: SDB 3.1
+  <dd> <a href="homework/hw3.pdf">Homework 3</a> given out, due October 3 before the lecture begins.  
+
+  <dt> Friday, Sept. 28
+  <dd> Variables and Quantifiers, proof of quantified statements
+  <dd> Reading: SDB 3.2
+
+</dl>
+
+<a name="week4"><strong>Week 4</strong></a>
+<dl>
+  <dt> Monday, Oct. 1 
+  <dd> Rules of Inference for direct proofs, contrapositive, proof by contradiction
+  <dd> Reading: SDB 3.3
+
+  <dt> Wednesday, Oct. 3
+  <dd> More proof techniques.
+  <dd> the Pigeonhole Principle and related methods
+  <dd> <a href="homework/hw4.pdf">Homework 4</a> given out, 
+        due October 10 before the lecture begins.  
+  
+  <dt> Friday, Oct. 5
+  <dd> Proof by Induction
+  <dd> Reading: SDB 4.1
+</dl>
+
+<a name="week5"><strong>Week 5</strong></a>
+<dl>
+  <dt> Monday, Oct. 8
+  <dd> More Proof by Induction: Weak, Strong, Structural.  A recursive view.
+  <dt> Tuesday, Oct. 9
+  <dd> <b>Optional</b> exam review
+
+  <dt> Wednesday, Oct. 10
+  <dd> Recursion and Recurrence Relations 
+  <dd> <a href="homework/hw5.pdf">Homework 5</a> given out, due October 17 before the lecture begins.  
+  <dd> Reading: SDB 4.2
+
+  <dt> Thursday, Oct. 11 
+  <dd> <b>First Midterm 7-9 pm</b>
+
+  <dt> Friday, Oct. 12 
+  <dd> Growth Rates and Solutions to Recurrences; Recursion Trees
+  <dd> Reading: SDB 4.3
+</dl>
+
+<a name="week6"><strong>Week 6</strong></a>
+<dl>
+  <dt> Monday, Oct. 15
+  <dd> The Master Theorem
+  <dd> Reading: SDB 4.4
+
+  <dt> Wednesday, Oct. 17
+  <dd> Linear-time selection
+  <dd> <a href="homework/hw6.pdf">Homework 6</a> given out, due October 24 before the lecture begins.  
+  <dd> Reading: SDB 4.6
+
+  <dt> Friday, Oct. 19
+  <dd> Introduction to Probability
+  <dd> Reading: SDB 5.1
+</dl>
+
+<a name="week7"><strong>Week 7</strong></a>
+<dl>
+  <dt> Monday, Oct. 22
+  <dd> Probability of Unions and Intersections
+  <dd> Inclusion and Exclusion
+  <dd> Reading: SDB 5.2
+
+  <dt> Wednesday, Oct. 24
+  <dd> Conditional Probability
+  <dd> <a href="homework/hw7.pdf">Homework 7</a> given out, due October 31 before the lecture begins.  
+  <dd> Reading: SDB 5.3
+
+  <dt> Friday, Oct. 26
+  <dd> Random Variables, Linearity of Expectation, Indicator Random Variables
+  <dd> Reading: SBD 5.4
+</dl>
+
+
+<a name="week8"><strong>Week 8</strong></a>
+<dl>
+  <dt> Monday, Oct. 29
+  <dd> Bernoulli Trials
+  <dd> Determining expected number of trials until first success
+  <dd> Determining expected number of successes in n trials
+  <dd> Probability Calculations in Hashing
+  <dd> Reading: SDB 5.5
+
+  <dt> Tuesday, Oct. 30
+  <dd> <b>Optional</b> exam review
+
+  <dt> Wednesday, Oct. 31
+  <dd> Conditional Expectation and Algorithms
+  <dd> Reading: SDB 5.6
+  <dd> <a href="homework/hw8.pdf">Homework 8</a> given out, due November 7 before the lecture begins.  
+
+  <dt> Thursday, Nov. 1 
+  <dd> <b>Second Midterm Exam 7-9 pm</b>
+
+  <dt> Friday, Nov. 2
+  <dd> Independent random variables
+  <dd> Variance: examples and theorems
+  <dd> Reading: SDB 5.7
+</dl>
+
+<a name="week9"><strong>Week 9</strong></a>
+<dl>
+  <dt> Monday, November 5
+  <dd> Graphs
+  <dd> Reading: SDB 6.1
+  
+  <dt> Tuesday, November 6 (x-hour)
+  <dd> Spanning Trees and Rooted Trees
+  <dd> Reading: SDB 6.2
+
+  <dt> Wednesday, November 7
+  <dd> Eulerian and Hamiltonian Graphs
+  <dd> <a href="homework/hw9.pdf">Homework 9</a> given out, due November 12 before the lecture begins.  
+  <dd> Reading: SDB 6.3
+
+  <dt> Friday, November 9 <b>No Class</b>
+</dl>
+
+
+<a name="week10"><strong>Week 10</strong></a>
+<dl>
+  <dt> Monday, November 12
+  <dd> Graph Coloring and Planarity
+  <dd> Reading: SDB 6.5
+
+  <dt> Thursday, November 15
+  <dd> Exam Review 10-11:30; Location: 201 LSC
+
+  <dt> Sunday, November 18
+  <dd> <b>Final Exam: 3.00-5.00pm; Location: 008 Kemeny </b>
+</dl>
+
+-->
+
+<!--
+  <dt> <b> Lecture 4</b>, September 28, Wednesday 
+  <dd> Predicate Logic, Rosen 1.3, 1.4
+  <dd> <a href="handouts/logicaleq.pdf">Logical Equivalences Handout</a>
+  <dd> <a href="homework/hw1.pdf">Homework 1</a> given out, due October 5 at 10am.
+  <dt> <b> Lecture 5</b>, September 29, Thursday, X-hour 
+  <dd> Predicate Logic continued, Rosen 1.3, 1.4
+  <dt> <b> Lecture 6</b>, September 30, Friday 
+  <dd> Rules of inference, Rosen 1.5
+</dl>
+<a name="week3"><strong>Week 3</strong></a>
+<dl>
+  <dt> <b> Lecture 7</b>, October 3, Monday 
+  <dd> Rules of inference completed, Rosen 1.5
+  <dd> Discussion of logics: primitives, axioms, inference rules, theorems;
+  Euclid's Elements
+  <dt> <b> Lecture 8</b>, October 5, Wednesday 
+  <dd> Proof Methods, Rosen 1.6, 1.7
+  <dd> <a href="handouts/proof-methods.pdf">Proof Methods Handout</a>
+  <dd> <a href="homework/hw2.pdf">Homework 2</a> given out, due October 12 at 10am.
+  <dt> <b> Lecture 9</b>, October 6, Thursday, X-hour 
+  <dd> Proof methods continued, Rosen 1.3, 1.4
+  <dt> <b> Lecture 10</b>, October 7, Friday 
+  <dd> Sets, Rosen 2.1, 2.2
+  <dd> 
+</dl>
+
+<a name="week4"><strong>Week 4</strong></a>
+<dl>
+  <dt> <b> Lecture 11</b>, October 10, Monday 
+  <dd> Sets and Relations, Rosen 2.2 and 2.3
+  <dt> <b> Lecture 12</b>, October 12, Wednesday 
+  <dd> Relations, Function, Rosen 2.3, 2.4
+  <dd> <a href="homework/hw3.pdf">Homework 3</a> given out, due October 19 at 10am.
+  <dt> <b> Lecture 13</b>, October 13, Thursday, X-hour 
+  <dd> Functions, Rosen 2.4
+  <dt> <b> Lecture 14</b>, October 14, Friday 
+  <dd> Functions, Sequences, Induction, Rosen 4.1 and 4.2
+  <dd> <a href="handouts/induction.pdf">Induction handout</a>
+  <dd> 
+</dl>
+
+<a name="week5"><strong>Week 5</strong></a>
+<dl>
+  <dt> <b> Lecture 15</b>, October 17, Monday 
+  <dd> More on induction, strong induction: Rosen 4.2
+  <dt> <b> Lecture 16</b>, October 19, Wednesday 
+  <dd> One more example of strong induction and Counting: Rosen 5.1
+  <dd> <a href="homework/hw4.pdf">Homework 4</a> given out, due October 26 at 10am.
+
+  <dt> <b> Lecture 17</b>, October 20, Thursday, X-hour 
+  <dd> Counting: 5.3
+  <dd> Midterm 1, 6.00-8.00pm, Steele 006
+  <dt> <b> Lecture 18</b>, October 21, Friday 
+  <dd> Counting: 5.4
+</dl>
+
+<a name="week6"><strong>Week 6</strong></a>
+<dl>
+  <dt> <b> Lecture 19</b>, October 24, Monday 
+  <dd> Counting and Pigeon Hole principle: Rosen 5.5 and 5.2
+  <dt> <b> Lecture 20</b>, October 26, Wednesday 
+  <dd> One more example of Pigeon-Hole principle, Algorithms: Rosen 3.1
+  <dd> <a href="homework/hw5.pdf">Homework 5</a> given out, due November 2 at 10am.
+  <dt> <b> Lecture 21</b>, October 27, Thursday, X-hour 
+  <dd> Definition of big-Oh and examples: Rosen 3.2
+  <dt> <b> Lecture 22</b>, October 28, Friday 
+  <dd> more big-Oh examples, big-Omega and big-Theta: Rosen 3.2
+</dl>
+
+<a name="week7"><strong>Week 7</strong></a>
+<dl>
+  <dt> <b> Lecture 23</b>, October 31, Monday 
+  <dd> log(n!) = Theta(n log n) and analyzing algorithm complexity: Rosen 3.3
+  <dt> <b> Lecture 24</b>, November 2, Wednesday 
+  <dd> More on analyzing algorithm complexity; recursive algorithms; recurrence
+  relations: Rosen 3.3
+  <dd> <a href="homework/hw6.pdf">Homework 6</a> given out, due November 9 at 10am.
+  <dt> <b> Lecture 25</b>, November 3, Thursday, X-hour 
+  <dd> Analyzing MergeSort and QuickSort
+  <dt> <b> Lecture 26</b>, November 4, Friday 
+  <dd> Probability: Rosen 6.1
+</dl>
+
+<a name="week8"><strong>Week 8</strong></a>
+<dl>
+  <dt> <b> Lecture 27</b>, November 7, Monday 
+  <dd> Inclusion/Exclusion and Conditional Probability: Rosen 6.2
+  <dt> <b> Lecture 28</b>, November 9, Wednesday 
+  <dd> Random variables, Expectation: Rosen 6.2
+  <dd> <a href="homework/hw7.pdf">Homework 7</a> given out, due November 16 at 10am.
+  <dt> <b> Lecture 29</b>, November 10, Thursday, X-hour 
+  <dd> Linearity of Expectation: Rosen 6.2
+  <dd> Midterm 2, 6.00-8.00pm, in our regular classroom (LSC 201)
+  <dt> <b> Lecture 30</b>, November 11, Friday 
+  <dd> Bernoulli Trials, Binomial Distribution, Bayes Theorem: Rosen 6.2
+</dl>
+
+<a name="week9"><strong>Week 9</strong></a>
+<dl>
+  <dt> <b> Lecture 31</b>, November 14, Monday 
+  <dd> Generalized Bayes Theorem, Independent Random Variables, Variance
+  <dd> Rosen: 6.3, 6.4
+  <dt> <b> Lecture 32</b>, November 16, Wednesday 
+  <dd> Theorems on variance and Chebychev inequality: Rosen 6.4
+  <dd> <a href="homework/hw8.pdf">Homework 8</a> given out, due November 30 at
+  10am (<b>no late day permitted</b>).
+  <dt> <b> Lecture 33</b>, November 17, Thursday, X-hour 
+  <dd> Graphs: basic terminology, degree, handshaking theorem
+  <dd> Rosen 9.1
+  <dt> <b> Lecture 34</b>, November 18, Friday 
+  <dd> Special types of graphs, colorability, subgraph
+  <dd> Rosen 9.2
+</dl>
+
+
+<a name="week10"><strong>Week 10</strong></a>
+<dl>
+  <dt> <b> Lecture 35</b>, November 21, Monday 
+  <dd> Representing graphs and Graph isomorphism
+  <dd> Rosen 9.3
+</dl>
+
+<a name="week11"><strong>Week 11</strong></a>
+<dl>
+  <dt> <b> Lecture 36</b>, November 28, Monday 
+  <dd> Graph connectivity and Trees 
+  <dd> Rosen 9.4 and 10.1
+  <dt> <b> Lecture 37</b>, November 30, Wednesday 
+  <dd> Binary trees, inductive definition, and induction proofs: Rosen 10.1
+  <dt> <b> Review Session</b>, December 1, Thursday, 2.00-3.30pm at LSC 201 
+  <dd> <a href="homework/review-final.pdf">Review Problems</a> (try these before
+  review session)
+</dl>
+
+<a name="week11"><strong>Week 12</strong></a>
+<dl>
+  <dt> <b> Final Exam</b>, December 5, Monday 
+  <dd> 8.00-10.00am in 008 Kememy
+</dl>
+-->
+
+</BODY>
+
+</HTML>

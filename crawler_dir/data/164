@@ -1,0 +1,115 @@
+http://www.cs.dartmouth.edu/~dax
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 3.0 License
+
+Name       : Axiom
+Description: A two-column, fixed-width design with a bright color scheme.
+Version    : 1.0
+Released   : 20120729
+-->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<title>DAX v.2</title>
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="icon" href="favicon.ico" type="image/x-icon"> 
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="header">
+            <div id="logo">
+            	<a href="index.html"><img src="images/DAXLogo.jpg" /></a>
+            </div>
+				<div id="menu">
+					<ul>
+						<li class="first current_page_item"><a href="/~dax/index.html">Exhibition</a></li>
+						<li><a href="/~dax/screenings.html">Screenings</a></li>
+						<li><a href="/~dax/fablab.html">Fab Lab</a></li>
+						<li class="last"><a href="/~dax/makeathon.html">Make-A-Thon</a></li>
+					</ul>
+					<br class="clearfix" />
+				</div>
+			</div>
+			<div id="inner">
+            
+				<div id="splash">
+					<img src="images/banner.jpg" width="900" height="310" alt="DAX v.2" class="image" />
+				</div>
+				<div id="page">
+					<div id="content">
+						<div class="box">
+							<p align="center">A celebration of student digital art, DAX v.2 will feature a wide variety of work from across campus.</p>
+                            <p><h3>Schedule of Events</h3></p>
+                            <p class="hangingindent"><strong>Monday, May 6th</strong><br />
+                            	noon&#8211;11 pm - <strong>Fab Lab</strong> - <em>Hopkins Center Garage</em></p>
+                            <p class="hangingindent"><strong>Tuesday, May 7th</strong><br />
+                            	noon&#8211;11 pm - <strong>Fab Lab</strong> - <em>Hopkins Center Garage</em></p>
+                            <p class="hangingindent"><strong>Wednesday, May 8th</strong><br />
+                            	noon&#8211;11 pm - <strong>Fab Lab</strong> - <em>Hopkins Center Garage</em></p>
+                            <p class="hangingindent"><strong>Thursday, May 9th</strong><br />
+                            	7 pm&#8211;10 pm - <strong><font color="#FF8E00">Digital</font> <font color="#FFBC00">Arts</font> <font color="#74C2F4"> Exhibition</font></strong> - <em>Black Family Visual Arts Center</em><br />
+								7:30 pm&#8211;8:15 pm - <strong>Animation Screening</strong> - <em>Loew Auditorium</em><br />
+								9 pm&#8211;9:30 pm - <strong>Live Action Screening</strong> - <em>Loew Auditorium</em></p>
+                            <p class="hangingindent"><strong>Friday, May 10th</strong><br />
+                            	noon&#8211;11 pm - <strong>Fab Lab</strong> - <em>Hop Garage</em></p>
+                            <p class="hangingindent"><strong>Saturday, May 11th&#8211;Sunday, May 12th</strong><br />
+                            	11 am&#8211;11 am - <strong>Make-A-Thon</strong> - <em>Hopkins Center Garage</em></p>
+                            <p class="hangingindent"><strong>Sunday, May 12th</strong><br />
+                            	11 am&#8211;1 pm - <strong>Make-A-Thon Judging</strong> - <em>Hopkins Center Garage</em></p>
+                            <p><h3>Animation Trailer</h3></p>
+							<p align="center"><iframe width="800" height="450" src="http://www.youtube.com/embed/FEwnGJ_h6AU?rel=0" frameborder="0" allowfullscreen></iframe></p>
+							 <p><h3>Live Action Trailer</h3></p>
+							<p align="center"><iframe width="800" height="450" src="http://www.youtube.com/embed/EG78V_oQUV4?rel=0" frameborder="0" allowfullscreen></iframe></p>
+							<br class="clearfix" />
+                            
+						</div>
+						
+						<br class="clearfix" />
+					</div>
+				</div>
+			</div>
+			<div id="page-bottom">
+				<div id="page-bottom-content">
+					<h3>Contact Us</h3>
+					<p><font color="black">
+						Questions? Shoot us an email at dax@dartmouth.edu<br />
+                    <a href="/~digitalarts" style="color: black;">Digital Arts at Dartmouth</a><br />
+                    <a href="https://www.facebook.com/dartsmouth" style="color: black;">Our Facebook Page</a><br />
+                    <a href="/~dax/other_files/DAXPressRelease.pdf" style="color: black;">Press Release</a></p></font>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			&copy; 2013 Digital Arts at Dartmouth | Design by <a href="http://www.freecsstemplates.org/">FCT</a><br />
+            Banner backgrounds generated with programs by <a href="http://www.complexification.net/gallery/">Jared Tarbell</a>
+
+            <p>---<br />
+This program is presented by Digital Arts, Film & Media Studies, Digital Musics, Theater, Studio Art, Computer Science, Thayer, and Digital Humanities <br />
+and is generously supported by the Office of the President and the Office of the Provost as part of Dartmouth's Year of the Arts initiative.<br />
+Further support comes from the Neukom Institute and Microsoft.</p>
+<p><a href="http://arts.dartmouth.edu/"> <img src="images/YOAWeb.jpg" width="85" height="94" alt="Year of the Arts at Dartmouth" class="image" /></a> <br />
+<a href="http://www.dartmouth.edu/~neukom/"> <img src="images/NeukomLogo.jpg" width="85" height="21" alt="The Neukom Institute" class="image" /></a></p>
+
+		</div>
+	</body>
+</html>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-40349306-1', 'dartmouth.edu');
+  ga('send', 'pageview');
+
+</script>

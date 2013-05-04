@@ -1,0 +1,159 @@
+http://www.cs.dartmouth.edu/~hughes/research.html
+3
+<html>
+  <head>
+    <title>James M. Hughes / Dartmouth College / Department of Computer Science</title>
+    <link rel="stylesheet" type="text/css" href="include/style.css">
+    <script type="text/javascript" src="include/include.js"></script>
+  </head>
+
+  <body>
+    <!-- TOTAL CONTAINER DIV w/ SHADOWS -->
+    <div id="shadow-pane">
+      <!-- Actual content container -->
+      <div id="content-container">
+        <!-- title pane -->
+        <div id="title-pane">
+          <a href="index.html"><img id="panes-logo" src="images/panes_logo.png" border="0"></a>
+          <img id="name-logo" src="images/name.png" border="0">
+        </div>
+
+        <!-- nav pane -->
+        <div id="nav-pane">
+          <!-- nav pieces -->
+          <div id="nav-top-left"><img src="images/nav_top_left.png"></div>
+          <div id="nav-top-right"><img src="images/nav_top_right.png"></div>
+          <div id="nav-left"><img src="images/nav_left.png"></div>
+          <div id="about-link"><a href="about.html"><img src="images/about_link.png" 
+            onmouseover="this.src='images/about_hover.png'" onmouseout="this.src='images/about_link.png'" border="0"></a></div>
+          <div id="research-link"><a href="research.html"><img src="images/research_selected.png" border="0"></a></div>
+          <div id="p-and-s-link"><a href="software.html"><img src="images/p_and_s_link.png"
+            onmouseover="this.src='images/p_and_s_hover.png'" onmouseout="this.src='images/p_and_s_link.png'" border="0"></a></div>
+          <div id="music-link"><a href="music.html"><img src="images/music_link.png"
+            onmouseover="this.src='images/music_hover.png'" onmouseout="this.src='images/music_link.png'" border="0"></a></div>
+          <div id="nav-right"><img src="images/nav_right.png"></div>
+          <div id="nav-bottom"><img src="images/nav_bottom.png"></div>
+        </div>
+
+        <!-- content pane -->
+        <div id="content-pane">
+          <div id="content-box" style="height: auto;">
+          <!--<div id="content-box-small" style="float:right; margin-right: 30px;">-->
+            <div id="content-box-inner-left" style="float: none;">
+              <p id="content-header-left">Research</p>
+              <p>I have three primary research interests: <span id="stand-out">quantification and visualization of style</span>
+               (artistic, literary), <span id="stand-out">applied statistics</span>, and <span id="stand-out">network analysis.
+              </p>
+              <p>Below is my list of <a href="#pub">publications</a>.
+              </p>
+              <p>
+                You can find information on various projects I'm working on <a href="software.html">here</a>.
+              </p>
+              <p>
+                If you have a question about any of my research, please feel free to 
+                <a href="#" onclick="send_mail(); return false;">get in touch with me</a> and I would
+                be happy to discuss it with you.
+              </p>
+              <h3>View my <a href="http://houston.cs.dartmouth.edu/blog">research blog</a>.</h3>
+            </div>
+          </div>
+          <div id="content-box" style="height: auto; padding-bottom: 20px;">
+            <div id="content-box-inner">
+              <p id="content-header-left"><a name="pub"></a>Publications</p>
+              <p id="content-sub-header" style="margin-top: 10px;">Journal articles &amp; Conference papers</p>
+              <p id="content-sub-sub-header">2012</p>
+              <div id="pub">
+                James M. Hughes, Nicholas Foti, David C. Krakauer, and Daniel N. Rockmore.  &quot;Quantitative patterns of 
+                stylistic influence in the evolution of literature.&quot; <i>Proceedings of the National Academy of Sciences</i>,
+                <i>to appear</i>.
+              </div>
+              <div id="pub">
+                James M. Hughes, Dong Mao, Daniel N. Rockmore, Yang Wang, and Qiang Wu.  &quot;Empirical Mode 
+                Decomposition Analysis for
+                Visual Stylometry.&quot; <i>IEEE Transactions on Pattern Analysis and Machine Intelligence</i>, 2012.
+              </div>
+              <p id="content-sub-sub-header">2011</p>
+              <div id="pub">
+                Nicholas J. Foti, James M. Hughes, and Daniel N. Rockmore.  &quot;Nonparametric sparsification of
+                complex multiscale networks.&quot; <i>PLoS One</i>, 2011.<br>
+              </div>
+              <div id="pub">
+                James M. Hughes, Daniel J. Graham, C. Robert Jacobsen, and Daniel N. Rockmore. &quot;Comparing higher-order 
+                spatial statistics and perceptual judgements in the stylometric analysis of art.&quot; <i>Proc. of the 
+                European Signal Processing Conference</i>, 2011.<br>
+              </div>
+              <p id="content-sub-sub-header">2010</p>
+              <div id="pub">James M. Hughes, Daniel J. Graham, and Daniel N. Rockmore.  
+                &nbsp;&quot;Quantification of artistic style through sparse coding analysis in the drawings of 
+                Pieter Bruegel the Elder.&quot;  &nbsp;<i>Proceedings of the National Academy of Sciences</i>, 
+                2010.&nbsp;&nbsp;
+                <div id="pub" style="margin-top: 5px;">
+                <b>Media coverage:</b>
+                  <a href="http://news.bbc.co.uk/2/hi/technology/8440142.stm">BBC</a>,&nbsp;
+                  <a href="http://spectrum.ieee.org/computing/software/a-new-algorithm-to-attack-art-fraud" 
+                    id="pub-link">IEEE Spectrum</a>,&nbsp;
+<a href="http://www.sciencenews.org/view/generic/id/53831/title/Teaching_a_computer_to_spot_a_bogus_Bruegel">Science News</a>,&nbsp;
+<a href="http://www.dartmouth.edu/~news/releases/2010/01/07a.html">Dartmouth press release</a>,&nbsp;
+<a href="http://physicsworld.com/blog/2010/01/spotting_fake_paintings_with_s.html">Physics World</a>,&nbsp;
+<a href="http://arstechnica.com/science/news/2010/01/sparse-coding-technique-applied-to-art-authentication.ars">Ars Technica</a>,&nbsp;
+<a href="http://math.dartmouth.edu/~dgraham/dg/unionleader.pdf">NH Union Leader</a>,&nbsp;
+<a href="http://thedartmouth.com/2010/01/12/news/art_fraud">The Dartmouth</a>,&nbsp;
+<a href="http://www.vpr.net/news_detail/87023/">Vermont Public Radio</a>,&nbsp;
+<a href="http://www.nature.com/nature/journal/v463/n7284/full/4631027a.html">Nature News & Views</a>,&nbsp;
+<a href="http://www.npr.org/templates/story/story.php?storyId=123405424">NPR</a>
+                </div>
+              </div>
+
+              <div id="pub">
+                Hughes, J.M., Graham, D.J., and Rockmore, D.N.  &quot;Stylometrics of
+                artwork:  uses and limitations.&quot;  <i>Proc. SPIE:  Computer Vision and Image Analysis
+                of Art</i> <b>7531</b>, 2010.<br><br>
+              </div>
+
+            <p id="content-sub-header">Conference presentations</p>
+            <p id="content-sub-sub-header">2011</p>
+              <div id="pub">
+                Tomas Markevicius, Daniel N. Rockmore, Daniel J. Graham, and James M. Hughes.  &quot;<i>Esther at the Palace Gates</i>
+                and <i>The Triumph of Mordecai</i> at the National Gallery of Canada Reconsidered:  New Findings with IR Reflectography
+                and the New Method of Computational Stylometry Identifying Botticelli and Filippino Lippi Involvement in the c. 1475 
+                Cassoni Cycle Depicting the Story of Esther.&quot; <i>ART 2011: 10th International Conference on non-destructive investigations
+                and microanalysis for the diagnostics and conservation of cultural and environmental heritage</i>.  
+                April 2011, Florence, Italy. (<a href="http://houston.cs.dartmouth.edu/pub/Poster%20Botticelli%20final%2072dpi.pdf">Poster</a>)<br>
+              </div>
+            <p id="content-sub-sub-header">2010</p>
+            <div id="pub">
+                &quot;WriteLikeMe:  Exploring literary style using networks.&quot; <i>SciFoo 2010</i>.  2010, Google, Mountain View, CA.
+                (Based on work done with Nicholas J. Foti, David Krakauer, and Daniel N. Rockmore.)
+            </div>
+
+            <div id="pub">
+              &quot;Spatial approaches to digital stylometrics.&quot; <i>Third International Workshop on Image Processing in
+              Art Investigations</i>.  2010, Museum of Modern Art, New York, NY.  (Based on work done with Nicholas J. Foti,
+              Daniel J. Graham, and Daniel N. Rockmore.)
+            </div>
+            <p id="content-sub-sub-header">2009</p>
+            <div id="pub">
+              &quot;Quantification of artistic style through 
+              sparse coding analysis.&quot;  &nbsp;<i>Art &amp; Science:  exploring the limits of human perception</i>.  
+              &nbsp;2009, Benasque, Spain.  (Based on work done with Daniel J. Graham and Daniel N. Rockmore.)
+            </div>
+            </div>
+          </div>
+        </div>
+
+      <!-- Footer pane -->
+      <div id="footer">
+        <div id="footer-links">
+          <a href="about.html">about</a> | <a href="research.html">research</a> | 
+          <a href="software.html">projects & software</a> | <a href="music.html">music</a>
+        </div>
+        <div id="footer-text">
+          &copy;&nbsp;2010 James M. Hughes | <a href="#" onclick="send_mail(); return false;">Contact me</a>
+        </div>
+      </div>
+
+      </div> <!-- END CONTENT CONTAINER -->
+    </div> <!-- END SHADOW PANE -->
+    <div id="footer-shadow"></div>
+  </body>
+</html>

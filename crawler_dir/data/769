@@ -1,0 +1,89 @@
+http://www.cs.dartmouth.edu/~epics/students.html
+3
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Dartmouth EPICS / Students</title>
+<meta http-equiv=content-type content="text/html; charset=us-ascii">
+<link href="style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+
+<p>
+<a href="http://www.cs.dartmouth.edu/~epics/"><img src="epics_dart.gif" alt="EPICS" border=0 align="middle"></a>
+<font class=at>&nbsp;@&nbsp;</font>
+<a href="http://www.dartmouth.edu/"><img src="dart_seal.jpg" alt="Dartmouth" border=0 align="middle"></a>
+</p>
+
+<table width="100%" border=0><tbody>
+<tr>
+<!-- navigation -->
+<td valign=top align=left width=100><br>
+<a href="index.html" class=nav>home</a><br>
+<a href="students.html" class=nav>students</a><br>
+&nbsp;&nbsp;<a href="schedule.html" class=nav>schedule</a><br>
+&nbsp;&nbsp;<a href="grading.html" class=nav>grading</a><br>
+<a href="agencies.html" class=nav>agencies</a><br>
+</td>
+
+<!-- content -->
+<td valign=top>
+<div class=header align=center>Students</div><br>
+
+<p>EPICS provides students with the chance to participate in
+real-world, long-term software projects in partnership with community
+service agencies.  The CS department offers culminating experience
+credit for two terms of EPICS enrollment.  EPICS is a great
+opportunity for CS students, helping them gain and put to good use
+many valuable skills, both technical and non-technical.  Students are
+responsible for all aspects of a project, from planning to documenting
+to interacting with the customer.  They must learn and apply (and
+often, teach each other) the latest technical knowledge in order to
+solve real problems.  The work is done in the context of a group
+project with an involved customer for whom the project is
+important.</p>
+
+<p>Some quotes from course evals ("what advice would you give..."):</p>
+<ul>
+<li>Take this course -- it is a great culminating experience because it
+pulls together all your knowledge of the last 4 years.</li>
+<li>You need to be motivated because you are deciding what needs to get done.</li>
+<li>If you want a project course that will give you complete
+responsibility and control over a system, EPICS is a good fit.</li>
+<li>Take it twice.</li>
+<li>Heck, take it even if you're doing a thesis.</li>
+</ul>
+
+<p>Some general reasons for taking EPICS (in no particular order):</p>
+<ul>
+<li><b>Make a difference</b> in your community, meeting the needs of real customers who care about your project's success.</li>
+<li><b>Experience a project life-cycle end-to-end and back again</b>, through requirements, design, implementation, testing, and maintenance, and iterating as things grow and change.</li>
+<li><b>Work long-term with a group of your peers</b>, gaining the experience of really depending on, and being depended upon by, others.</li>
+<li><b>Develop leadership skills</b>, managing or helping manage part of a project, ensuring that objectives are met by proper planning, delegating, and follow-through.</li>
+<li><b>Interact with folks at a local agency</b>, and see how the partnership helps both of you.</li>
+<li><b>Learn to communicate</b> both written and orally, with the team or a subteam, new members, future teams, project partners, and outside reviewers.</li>
+<li><b>Be part of something bigger</b> -- a project whose size and scope extend beyond the participation of any one member.</li>
+<li><b>Direct your own curriculum</b>, identifying, focusing on, and contributing to aspects of a project most interesting to you.</li>
+<li><b>Make your resume buzzword-compliant</b>, learning and applying UML, JSP, PHP, HTML, SQL, ....</li>
+<li><b>Have fun</b> seeing pieces of the project puzzle come together, and getting to know others who are also doing this because it's fun and important.</li>
+</ul>
+
+<p>Descriptions are available for the basic <a
+href="schedule.html">term schedule</a> for each project, as well as
+the <a href="grading.html">grading criteria</a>.</p>
+
+<p>Please contact <a href="http://www.cs.dartmouth.edu/~sws/">Sean Smith</a> if you are interested or have any questions.</p>
+
+<!-- footer -->
+<tr><td colspan=2 height=20></td></tr>
+<tr><td class=hr colspan=2 height=2></td></tr>
+<tr><td class=footer colspan=2>
+<!-- hhmts start -->
+Last modified: Thu Sep 10 20:02:43 EDT 2009
+<!-- hhmts end -->
+</td></tr>
+
+</tbody></table>
+</body>
+</html>

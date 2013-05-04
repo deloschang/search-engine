@@ -1,0 +1,167 @@
+http://www.cs.dartmouth.edu/%7Ehong/papers.html
+3
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<title>Hong Lu's home page</title>
+
+<link href="index_files/style0.css" media="screen" rel="stylesheet" title="CSS" type="text/css">
+
+<style type="text/css">
+html, body {
+margin: 0px;
+padding: 0px;
+font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+h3,h1{
+padding: 0px;
+margin: 0px;
+margin-top: 5px;
+margin-bottom: 0px;
+}
+
+h2,h4{
+padding: 0px;
+margin: 0px;
+margin-top: 5px;
+margin-bottom: 5px;
+}
+
+
+</style>
+</head>
+<body>
+
+<table border="0" cellpadding="0" align = "center" cellspacing="0" height="100%" width="" bgcolor="#FFFFFF">
+<tbody>
+<tr valign="top">
+ <td bgcolor="#000000">
+   <img src="index_files/lh.png">
+ </td>
+
+ <td >
+   <table border="0" cellpadding="18" cellspacing="0" height="*" width="720">
+    <tbody>
+      <tr>
+	<td bgcolor="#FFFFFF">
+	   <h1>Hong Lu      卢　弘</h1>
+	   <h3>hong at cs dot dartmouth dot edu</h3><br>
+	   <div id="navigation">
+            <ul>
+              <li><a href="http://www.cs.dartmouth.edu/%7Ehong/index.html">Home</a></li>
+              <li><a href="http://www.cs.dartmouth.edu/%7Ehong/papers.html">Publications</a></li>
+              <li><a href="http://www.cs.dartmouth.edu/%7Ehong/hong.pdf">Resume</a></li>
+            </ul>
+           </div>
+        </td>
+	<td width="105">
+          <div valign="top" align="left">
+	        <img src="index_files/logo.jpg">
+	  </div></td>
+      </tr>
+      <tr cellpadding="5" cellspacing="5">
+	<td colspan="2" cellpadding="5" cellspacing="5" align="justify">
+	For a complete list of my publications, please refer to my <a href="http://scholar.google.com/citations?user=MWGBih0AAAAJ&hl=en">Google Scholar page</a>. <p>
+
+	
+	<h2>Book Chapter</h2>
+		Jun Yang, Hong Lu, Zhigang Liu and Péter Pál Boda, "Physical Activity Recognition with Mobile Phones: Challenges, Methods, and Applications", Multimedia Interaction and Intelligent User Interfaces Advances in Pattern Recognition, 2010, 185-213, DOI: 10.1007/978-1-84996-507-1_8 <a href='http://www.springerlink.com/content/r112207655317129/'>[download]</a>
+	<p>
+
+
+	  <h2>Selected Publications</h2>		
+<h4>2012</h4>		
+Hong Lu, Mashfiqui Rabbi, Gokul T. Chittaranjan, Denise Frauendorfer, Marianne Schmid Mast, Andrew T. Campbell, Daniel 
+Gatica-Perez, Tanzeem Choudhury, StressSense: Detecting Stress in Unconstrained Acoustic Environments using Smartphones,
+ACM UbiComp 2012<a href='http://cs.dartmouth.edu/~hong/slides/StressSense.pdf'>[slides]</a>
+<p>
+Xiaochao Yang, Chuang-Wen You, Hong Lu, Mu Lin, Nicholas D. Lane, and Andrew T. Campbell,  The Visage Face Interpretation Engine for Mobile Phone Applications, Fourth International Conference on Mobile Computing, Applications and Service (MobiCase),  October 2012. <b>[Best Paper Award]</b>
+<p>
+Mu Lin, Nicholas D. Lane, Mashfiqui Mohammod, Xiaochao Yang, Hong Lu, Giuseppe Cardone, Shahid Ali, Afsaneh Doryab,
+Ethan Berke, Andrew T. Campbell, Tanzeem Choudhury, BeWell+: Multi-dimensional Wellbeing Monitoring with Community-guided 
+User Feedback and Energy Optimization, Wireless Health 2012
+
+<p>
+<p>	
+<h4>2011</h4>
+
+
+Hong Lu, A.J. Brush, Bodhi Priyantha, Amy Karlson, Jie Liu, Energy Efficient Unobtrusive Speaker Identification on Mobile Phones. Proc. of the Ninth International Conference on Pervasive Computing(Pervasive 2011), San Francisco, California, June 12-15, 2011.  <b>[Best Paper Nominee]</b><a href='http://cs.dartmouth.edu/~hong/slides/SpeakerSense.pdf'>[slides]</a>
+<p>
+Nicholas D. Lane, Ye Xu , Hong Lu , Shaohan Hu, Tanzeem Choudhury  and Andrew T. Campbell, Enabling Large-scale Human Activity Inference on Smartphones using Community Similarity Networks (CSN), 13th International Conference on Ubiquitous Computing (Ubicomp 2011), Sept. 2011. <b>[Best Paper Nominee]</b>
+<p>
+Nicholas Lane, Ye Xu, Hong Lu, Shane Eisenman, Tanzeem Choudhury, Andrew Campbell, Cooperative Communities (CoCo): Exploiting Social Networks for Large-scale Modeling of Human Behavior, IEEE Pervasive Computing, Special Issue on Large-Scale Opportunistic Sensing, 2011
+<p>
+Nicholas D. Lane, Tanzeem Choudhury, Andrew Campbell, Mashfiqui Mohammod, Mu Lin, Xiaochao Yang, Afsaneh Doryab, Hong Lu, Shahid Ali and Ethan Berke, BeWell: A Smartphone Application to Monitor, Model and Promote Wellbeing, (Pervasive Health 2011), 5th International ICST Conference on Pervasive Computing Technologies for Healthcare,  Dublin, 23-26 May 2011
+	
+<p>
+<p>		
+<h4>2010</h4>	
+Hong Lu, Jun Yang, Zhigang Liu, Nicholas D. Lane, Tanzeem Choudhury, Andrew T. Camp- bell, The Jigsaw Continuous Sensing Engine for Mobile Phone Applications. Proc.of 8th ACM Conference on Embedded Networked Sensor Systems (SenSys 2010), Zurich, Switzerland - November 3-5, 2010. <a href='http://cs.dartmouth.edu/~hong/slides/sensys2010.pdf'>[slides]</a>
+<p>
+
+Hong Lu, Nicholas D. Lane, Shane B. Eisenman, Andrew T. Campbell, Bubble-Sensing: Binding Sensing Tasks to the Physical World, Journal of Pervasive and Mobile Computing,  6 (1), pg. 58-71February 2010, 
+<p>
+
+Andrew T. Campbell, Tanzeem Choudhury, Shaohan Hu, Hong Lu, Matthew K. Mukerjee, Mashqui Rabbi, and Rajeev D. S. Raizada, NeuroPhone: Brain-Mobile Phone Interface using a Wireless EEG Headset. To appear in Proc. of The Second ACM SIGCOMM Workshop on Networking, Systems, and Applications on Mobile Handhelds (MobiHeld’10), New Delhi, India, August 30, 2010.
+<p>
+
+Daniel Peebles, Hong Lu, Nicholas D. Lane, Tanzeem Choudhury, Andrew Campbell, Community-Guided Learning: Exploiting Mobile Sensor Users to Model Human Behavior. To appear in Proc. of 24th AAAI Conference on Artificial Intelligence (AAAI ’10), Atlanta, Georgia, USA, July 1115, 2010.	
+<p>
+
+Nic Lane, Emiliano Miluzzo, Hong Lu, Daniel Peebles, Tanzeem Choudhury, and Andrew Campbell. A Survey of Mobile Phone Sensing. Appears in IEEE Communications, September 2010. 
+<p>
+	
+Gahng-Seop Ahn, Mirco Musolesi, Hong Lu, Reza Olfati-Saber and Andrew Campbell, MetroTrack: Predictive Tracking of Mobile Events using Mobile Phones,  6th IEEE International Conference on Distributed Computing in Sensor Systems (DCOSS '10), Santa Barbara, California, USA, June 21-23, 2010
+<p>
+		
+<p>
+<p>		
+<h4>2009</h4>
+
+Hong Lu, Wei Pan, Nicholas D. Lane, Tanzeem Choudhury, Andrew T. Campbell, "SoundSense: Scalable Sound Sensing for People-Centric Applications on Mobile Phones", in Proc. of  MobiSys 2009. <a href='http://cs.dartmouth.edu/~hong/slides/soundsense_mobisys09.pdf'>[slides]</a>
+<p>
+
+<p>
+<p>		  
+<h4>2008</h4>
+
+Hong Lu, Nicholas D. Lane, Shane B. Eisenman, Andrew T. Campbell, "Bubble-Sensing: A New Paradigm for Binding a Sensing Task to the Physical World using Mobile Phones ", Proc. of International Workshop on Mobile Devices and Urban Sensing, St. Louis, April 21, 2008.
+<p>
+	  
+Emiliano Miluzzo, Nicholas D. Lane, Kristof Fodor, Ronald Peterson, Hong Lu, Mirco Musolesi, Shane B. Eisenman, Xiao Zheng, Andrew T. Campbell, "Sensing Meets Mobile Social Networks: The Design, Implementation and Evaluation of the CenceMe Application", To appear in In Proc. of Seventh ACM Conference on Embedded Network Sensor Systems (Sensys 2008), Raleigh, NC, Nov.5 - Nov.7, 2008 
+<p>
+	  
+Emiliano Miluzzo, James M. H. Oakley, Hong Lu, Nicholas D. Lane, Ronald A. Peterson, Andrew T. Campbell, "Evaluating the iPhone as a Mobile Platform for People-Centric Sensing Applications", Proc. of Intl Workshop on Urban, Community, and Social Applications of Networked Sensing Systems (UrbanSense08). Raleigh, NC, USA, Nov.4, 2008.
+<p>
+	  
+Andrew T. Campbell, Shane B. Eisenman, Nicholas D. Lane, Emiliano Miluzzo, Ronald A. Peterson, Hong Lu, Xiao Zheng, Mirco Musolesi, Kristof Fodor, Gahng-Seop Ahn, "People Power - The Rise of People-Centric Sensing", IEEE Internet Computing Special Issue on Mesh Networks, 2008. 
+<p>
+
+Nicholas D. Lane, Hong Lu, Shane B. Eiseman and Andrew T. Campbell, "Cooperative Techniques Supporting Sensor-based People-centric Inferencing", in Proc. of Pervasive 2008, Sydney, Australia, May 19-22, 2008.
+<p>
+
+<p>
+<p>		  
+<h4>2007</h4>
+
+Nicholas D. Lane, Hong Lu and Andrew T. Campbell, "Ambient Beacon Localization: Using Sensed Characteristics of the Physical World to Localize Mobile Sensors", In Proc. of Fourth IEEE Workshop on Embedded Networked Sensors (EmNets 2007), 25-26 June, 2007 Cork, Ireland.
+<p>
+
+<p>
+<p>	
+<h4>2005</h4>
+
+Hong Lu, Xuemei Sun, Changming Ren, "EWCA: An Enhanced Weighted Clustering Algorithm for Mobile Ad Hoc Networks", In Proc. of ICWN 2005, Las Vegas, Nevada, USA, June 27-30, 2005.
+
+
+<br><br>
+<p>
+ </td>
+		</tr>
+		</tbody></table>
+	</td>
+</tr>
+</tbody></table>
+</body></html>

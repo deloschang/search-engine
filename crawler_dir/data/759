@@ -1,0 +1,56 @@
+http://www.cs.dartmouth.edu/~wbc/clr.html
+3
+<html>
+<head>
+<title>Thisngs to look for</title>
+</head>
+
+<body>
+<h2>things to check when tom can't run dvips</h2>
+on his textbook and other stuff with the same latex setup..
+<ul>
+<li>NEW - I changed tom's *.fd files to only have lower
+case font names in them.  Then I edited 
+/usr/share/texmf/dvips/config/config.ps and added 
+<pre>
+p +/usr/share/texmf/fonts/map/dvips/tetex/mt-plus.map
+</pre> which points to a new map file with the map file for teh y+y fonts in it.
+Now it seems that psfonts.map is no longer included, and the
+program <code>updmap</code> is no longer included.
+
+<li>check /usr/share/texmf/dvips/config/psfonts.map<br>
+&nbsp;&nbsp;look for <pre>
+RMTMI  RMTMI &lt;RMTMI.pfb
+MTSYN  MTSYN &lt;MTSYN.pfb
+RMTMIB RMTMIB &lt;RMTMIB.pfb
+MTEX   MTEX &lt;MTEX.pfb
+MTMS   MTMS &lt;MTMS.pfb 
+MTSYB  MTSYB &lt;MTSYB.pfb
+</pre>
+Usually this is enough to fix things.  The times fonts seem to come with
+RedHat linux nowadays.
+<li>running /usr/share/texmf/dvips/config/updmap will make a new psfonts.map<br>
+&nbsp;&nbsp;this will overwrite what was done above
+
+<li>edit /usr/share/texmf/dvips/config/config.ps<br>
+&nbsp;&nbsp;uncomment the lines for Type1 as specified
+
+<li>check /usr/share/texmf/ls-R<br>
+&nbsp;&nbsp;first cd to /usr/share/texmf, then<br>
+&nbsp;&nbsp;run /usr/bin/mktexlsr<br>
+&nbsp;&nbsp;this is necessary if fonts are added
+
+<li> fonts are in..<br>
+&nbsp;&nbsp;/usr/share/texmf/fonts/tfm/MathTimes/ (tfm)<br>
+&nbsp;&nbsp;/usr/share/texmf/fonts/tfm/MathTimesPlus/ (tfm)<br>
+&nbsp;&nbsp;/usr/share/texmf/fonts/type1/MathTime/ (pfb)<br>
+&nbsp;&nbsp;/usr/share/texmf/dvips/pfb/MathTime/ (pfb)<br>
+&nbsp;&nbsp;not sure which of last two is read..  looks like <br>
+&nbsp;&nbsp;/usr/share/texmf/fonts/type1/MathTime<br><br>
+&nbsp;&nbsp;/usr/share/texmf/fonts/vf/MathTime<br>
+&nbsp;&nbsp;/usr/share/texmf/fonts/vf/MathTimePlus<br>
+
+</ul>
+</body>
+</html>
+

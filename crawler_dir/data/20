@@ -1,0 +1,166 @@
+http://www.cs.dartmouth.edu/~cs106/diary.php
+3
+<html><head>
+  <title>CS 106 (Fall 2010): Amit Chakrabarti</title>
+  <link rel="stylesheet" type="text/css" href="cs106.css">
+</head>
+
+<body>
+
+<h2>CS 106 Course Diary</h2>
+
+<table width="750px"> <tr> <td>
+<p> The table below gives a summary of the day-by-day happenings in the
+lectures for CS 106. The textbook is organized into "lectures", which we
+can think of as chapters. Textbook sections are shown below as "1", "2",
+etc. when we refer to an entire chapter and "5.1", "6.2", etc. when we
+mean a specific section within a chapter. </p>
+</td></tr></table>
+
+<br/>
+<br/>
+
+<table class="schedule"> <tr class="heading">
+  <td valign=top colspan=2><p class=hdr> Lecture #<br/> and Date </p></td>
+  <td><p class=hdr> Topics Covered in<br/> This Lecture </p></td>
+  <td><p class=hdr> Corresponding<br/> Textbook Sections </p></td>
+  <td><p class=hdr> Homework,<br/> etc. </p></td>
+</tr><tr class="oddrow">  <td class="lecnum"> 1.   </td>
+  <td class="date">   Thu Sep 23 </td>
+  <td class="norm">Recap of basic linear algebra; linear independence; rank; null spaces </td>
+  <td class="secs">   1 </td>
+  <td class="hw">     <a href="Homework/hw01.pdf">HW1</a> out </td></tr><tr class="evnrow">  <td class="lecnum"> 2.   </td>
+  <td class="date">   Fri Sep 24 </td>
+  <td class="norm">Further review: inner products; vector norms; induced matrix norms </td>
+  <td class="secs">   2, 3 </td>
+  <td class="hw">      </td></tr><tr class="oddrow">  <td class="lecnum"> 3.   </td>
+  <td class="date">   Mon Sep 27 </td>
+  <td class="norm">A bit about eigenvalues; singular value decomposition </td>
+  <td class="secs">   4 </td>
+  <td class="hw">      </td></tr><tr class="evnrow">  <td class="lecnum"> 4.   </td>
+  <td class="date">   Wed Sep 29 </td>
+  <td class="norm">Relating SVD to rank and eigenvalues; low-rank approximation </td>
+  <td class="secs">   5 </td>
+  <td class="hw">     HW1 in; <a href="Homework/hw02.pdf">HW2</a> out </td></tr><tr class="oddrow">  <td class="lecnum"> 5.   </td>
+  <td class="date">   Fri Oct 01 </td>
+  <td class="norm">Projectors; Gram-Schmidt; QR factorization </td>
+  <td class="secs">   6, 7 </td>
+  <td class="hw">      </td></tr><tr class="evnrow">  <td class="lecnum"> 6.   </td>
+  <td class="date">   Mon Oct 04 </td>
+  <td class="norm">Modified Gram-Schmidt; more on QR </td>
+  <td class="secs">   7, 8 </td>
+  <td class="hw">      </td></tr><tr class="oddrow">  <td class="lecnum"> 7.   </td>
+  <td class="date">   Wed Oct 06 </td>
+  <td class="norm">Householder triangularization; solving linear systems; least squares </td>
+  <td class="secs">   10, 11 </td>
+  <td class="hw">     HW2 in; <a href="Homework/hw03.pdf">HW3</a> out </td></tr><tr class="evnrow">  <td class="lecnum"> 8.   </td>
+  <td class="date">   Thu Oct 07 </td>
+  <td class="norm">Flops and operation count; complexity analysis of MGS and Householder </td>
+  <td class="secs">   (spread out) </td>
+  <td class="hw">      </td></tr><tr class="oddrow">  <td class="lecnum"> 9.   </td>
+  <td class="date">   Fri Oct 08 </td>
+  <td class="norm">Condition numbers; definitions and examples </td>
+  <td class="secs">   12 </td>
+  <td class="hw">      </td></tr><tr class="evnrow">  <td class="lecnum"> 10.   </td>
+  <td class="date">   Mon Oct 11 </td>
+  <td class="norm">Floating point arithmetic and roundoff </td>
+  <td class="secs">   13 </td>
+  <td class="hw">      </td></tr><tr class="oddrow">  <td class="lecnum"> 11.   </td>
+  <td class="date">   Wed Oct 13 </td>
+  <td class="norm">Stability; backward stability; analysis of inner product computation </td>
+  <td class="secs">   14, 15 </td>
+  <td class="hw">     HW3 in; <a href="Homework/hw04.pdf">HW4</a> out </td></tr><tr class="evnrow">  <td class="lecnum"> 12.   </td>
+  <td class="date">   Fri Oct 15 </td>
+  <td class="norm">More on stability; stability of Householder and of back-substitution </td>
+  <td class="secs">   16, 17 </td>
+  <td class="hw">      </td></tr><tr class="oddrow">  <td class="lecnum"> 13.   </td>
+  <td class="date">   Mon Oct 18 </td>
+  <td class="norm">Conditioning of least-squares problems: perturbing <i>b</i> </td>
+  <td class="secs">   18 </td>
+  <td class="hw">      </td></tr><tr class="evnrow">  <td class="lecnum"> 14.   </td>
+  <td class="date">   Wed Oct 20 </td>
+  <td class="norm">Conditioning of least-squares: perturbing <i>A</i> </td>
+  <td class="secs">   18 </td>
+  <td class="hw">     HW4 in; <a href="Homework/hw05.pdf">HW5</a> out </td></tr><tr class="oddrow">  <td class="lecnum"> 15.   </td>
+  <td class="date">   Fri Oct 22 </td>
+  <td class="norm">(No class; Amit is out of town) </td>
+  <td class="secs">    </td>
+  <td class="hw">      </td></tr><tr class="evnrow">  <td class="lecnum"> 16.   </td>
+  <td class="date">   Mon Oct 25 </td>
+  <td class="norm">(No class; Amit is out of town) </td>
+  <td class="secs">    </td>
+  <td class="hw">      </td></tr><tr class="oddrow">  <td class="lecnum"> 17.   </td>
+  <td class="date">   Wed Oct 27 </td>
+  <td class="norm">Gaussian elimination; LU factorization </td>
+  <td class="secs">   20 </td>
+  <td class="hw">     HW5 in </td></tr><tr class="evnrow">  <td class="blank"> </td>
+  <td class="date"> Thu Oct 28 </td>
+  <td class="exam" colspan=3> Mid-term exam </td></tr><tr class="oddrow">  <td class="lecnum"> 18.   </td>
+  <td class="date">   Fri Oct 29 </td>
+  <td class="norm">Partial and full pivoting; stability issues </td>
+  <td class="secs">   21, 22 </td>
+  <td class="hw">     <a href="Homework/hw06.pdf">HW6</a> out </td></tr><tr class="evnrow">  <td class="lecnum"> 19.   </td>
+  <td class="date">   Mon Nov 01 </td>
+  <td class="norm">Positive definite matrices; Cholesky factorization </td>
+  <td class="secs">   23 </td>
+  <td class="hw">      </td></tr><tr class="oddrow">  <td class="lecnum"> 20.   </td>
+  <td class="date">   Wed Nov 03 </td>
+  <td class="norm">Eigenvalues; non-existence of an exact &quot;algebraic&quot; algorithm </td>
+  <td class="secs">   24, 25 </td>
+  <td class="hw">      </td></tr><tr class="evnrow">  <td class="lecnum"> 21.   </td>
+  <td class="date">   Fri Nov 05 </td>
+  <td class="norm">Hessenberg form; Rayleigh quotients; power iteration </td>
+  <td class="secs">   26, 27 </td>
+  <td class="hw">     HW6 in; <a href="Homework/hw07.pdf">HW7</a> out </td></tr><tr class="oddrow">  <td class="lecnum"> 22.   </td>
+  <td class="date">   Mon Nov 08 </td>
+  <td class="norm">Converge of Rayleigh quotient iteration; QR algorithm </td>
+  <td class="secs">   28 </td>
+  <td class="hw">      </td></tr><tr class="evnrow">  <td class="lecnum"> 23.   </td>
+  <td class="date">   Wed Nov 10 </td>
+  <td class="norm">QR with shifts </td>
+  <td class="secs">   29 </td>
+  <td class="hw">      </td></tr><tr class="oddrow">  <td class="lecnum"> 24.   </td>
+  <td class="date">   Thu Nov 11 </td>
+  <td class="norm">Analysis of QR with shifts </td>
+  <td class="secs">   29 </td>
+  <td class="hw">      </td></tr><tr class="evnrow">  <td class="lecnum"> 25.   </td>
+  <td class="date">   Fri Nov 12 </td>
+  <td class="norm">Jacobi algorithm; Bisection method; SVD computation </td>
+  <td class="secs">   30, 31 </td>
+  <td class="hw">     HW7 in; <a href="Homework/hw08.pdf">HW8</a> out </td></tr><tr class="oddrow">  <td class="lecnum"> 26.   </td>
+  <td class="date">   Mon Nov 15 </td>
+  <td class="norm">Arnoldi iteration </td>
+  <td class="secs">   33, 34 </td>
+  <td class="hw">      </td></tr><tr class="evnrow">  <td class="lecnum"> 27.   </td>
+  <td class="date">   Wed Nov 17 </td>
+  <td class="norm">GMRES </td>
+  <td class="secs">   35 </td>
+  <td class="hw">      </td></tr><tr class="oddrow">  <td class="lecnum"> 28.   </td>
+  <td class="date">   Fri Nov 19 </td>
+  <td class="norm">Lanczos and conjugate gradient iterations </td>
+  <td class="secs">   36 </td>
+  <td class="hw">     HW8 in; <a href="Homework/hw09.pdf">HW9</a> out </td></tr><tr class="evnrow">  <td class="lecnum"> 29.   </td>
+  <td class="date">   Mon Nov 22 </td>
+  <td class="norm">Analysis of CG </td>
+  <td class="secs">   38 </td>
+  <td class="hw">      </td></tr><tr class="oddrow">  <td class="lecnum"> 30.   </td>
+  <td class="date">   Wed Nov 24 </td>
+  <td class="norm">(Thanksgiving break) </td>
+  <td class="secs">    </td>
+  <td class="hw">      </td></tr><tr class="evnrow">  <td class="lecnum"> 31.   </td>
+  <td class="date">   Fri Nov 26 </td>
+  <td class="norm">(Thanksgiving break) </td>
+  <td class="secs">    </td>
+  <td class="hw">      </td></tr><tr class="oddrow">  <td class="lecnum"> 32.   </td>
+  <td class="date">   Mon Nov 29 </td>
+  <td class="norm">More CG analysis; convergence theorems </td>
+  <td class="secs">   38 </td>
+  <td class="hw">     HW9 in </td></tr><tr class="evnrow">  <td class="lecnum"> 33.   </td>
+  <td class="date">   Wed Dec 01 </td>
+  <td class="norm">Survey of other methods: CGN, BCG, preconditioning </td>
+  <td class="secs">   39, 40 </td>
+  <td class="hw">      </td></tr><tr class="oddrow">  <td class="blank"> </td>
+  <td class="date"> Wed Dec 08 </td>
+  <td class="exam" colspan=3> Final exam due </td></tr></table>
+</body></html>
+.

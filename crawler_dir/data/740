@@ -1,0 +1,3302 @@
+http://www.cs.dartmouth.edu/~rockmore/Publications.html
+3
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns:css="http://macVmlSchemaUri" xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta name=Title content="Selected Publications ">
+<meta name=Keywords content="">
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 2008">
+<meta name=Originator content="Microsoft Word 2008">
+<link rel=File-List href="Publications_files/filelist.xml">
+<link rel=Edit-Time-Data href="Publications_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Selected Publications </title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Dan Rockmore</o:Author>
+  <o:Template>Normal.dotm</o:Template>
+  <o:LastAuthor>Dan Rockmore</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>89</o:TotalTime>
+  <o:Created>2011-03-11T11:39:00Z</o:Created>
+  <o:LastSaved>2011-03-11T11:39:00Z</o:LastSaved>
+  <o:Pages>3</o:Pages>
+  <o:Words>2442</o:Words>
+  <o:Characters>13922</o:Characters>
+  <o:Company>Dartmouth College</o:Company>
+  <o:Lines>116</o:Lines>
+  <o:Paragraphs>27</o:Paragraphs>
+  <o:CharactersWithSpaces>17097</o:CharactersWithSpaces>
+  <o:Version>12.0</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>150</w:Zoom>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:SplitPgBreakAndParaMark/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="276">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--h1
+	{mso-bidi-font-size:10pt;}
+h4
+	{mso-bidi-font-size:10pt;}
+span.HEADING1CHAR
+	{mso-bidi-font-size:16pt;
+	mso-style-locked:yes;}
+span.HEADING4CHAR
+	{mso-bidi-font-size:10pt;
+	mso-style-locked:yes;}
+
+ /* Font Definitions */
+@font-face
+	{font-family:Arial;
+	panose-1:2 11 6 4 2 2 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:"Courier New";
+	panose-1:2 7 3 9 2 2 5 2 4 4;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:Times;
+	panose-1:2 0 5 0 0 0 0 0 0 0;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Times;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Times;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:24.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Times;
+	mso-hansi-font-family:Times;}
+h4
+	{mso-style-link:"Heading 4 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-outline-level:4;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Times;
+	mso-hansi-font-family:Times;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Times;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Times;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Times;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Times;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Times;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Times;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Times;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Times;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-locked:yes;
+	mso-style-link:"Heading 1";
+	mso-ansi-font-size:16.0pt;
+	font-family:Calibri;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#345A8A;
+	font-weight:bold;}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	mso-style-locked:yes;
+	mso-style-link:"Heading 4";
+	mso-ansi-font-size:10.0pt;
+	font-family:Calibri;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#4F81BD;
+	font-weight:bold;
+	font-style:italic;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:96029241;
+	mso-list-template-ids:1074320232;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1
+	{mso-list-id:213465895;
+	mso-list-template-ids:-395413788;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2
+	{mso-list-id:322709239;
+	mso-list-template-ids:549353210;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l2:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3
+	{mso-list-id:366105126;
+	mso-list-template-ids:-2101548676;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l3:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4
+	{mso-list-id:394933072;
+	mso-list-template-ids:1589280004;}
+@list l4:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l4:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5
+	{mso-list-id:402292004;
+	mso-list-template-ids:1062534498;}
+@list l5:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l5:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l6
+	{mso-list-id:421921950;
+	mso-list-template-ids:-1788179162;}
+@list l6:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l6:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l6:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l6:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l6:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l6:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l6:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l6:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l6:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l7
+	{mso-list-id:611398673;
+	mso-list-template-ids:1112411860;}
+@list l7:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l7:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l7:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l7:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l7:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l7:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l7:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l7:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l7:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l8
+	{mso-list-id:670453169;
+	mso-list-template-ids:-2093828914;}
+@list l8:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l8:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l8:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l8:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l8:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l8:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l8:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l8:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l8:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l9
+	{mso-list-id:674504439;
+	mso-list-template-ids:1640007308;}
+@list l9:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l9:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l9:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l9:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l9:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l9:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l9:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l9:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l9:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l10
+	{mso-list-id:793669139;
+	mso-list-template-ids:608868160;}
+@list l10:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l10:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l10:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l10:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l10:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l10:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l10:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l10:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l10:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l11
+	{mso-list-id:1064793841;
+	mso-list-template-ids:-1245938192;}
+@list l11:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l11:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";}
+@list l11:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l11:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l11:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l11:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l11:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l11:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l11:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l12
+	{mso-list-id:1103384693;
+	mso-list-template-ids:-538951410;}
+@list l12:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l12:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l12:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l12:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l12:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l12:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l12:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l12:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l12:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l13
+	{mso-list-id:1207567291;
+	mso-list-template-ids:-1271130978;}
+@list l13:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l13:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l13:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l13:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l13:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l13:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l13:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l13:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l13:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l14
+	{mso-list-id:1390497492;
+	mso-list-template-ids:-734469324;}
+@list l14:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l14:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l14:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l14:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l14:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l14:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l14:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l14:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l14:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l15
+	{mso-list-id:1524130101;
+	mso-list-template-ids:-655590610;}
+@list l15:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l15:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l15:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l15:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l15:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l15:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l15:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l15:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l15:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l16
+	{mso-list-id:1595020047;
+	mso-list-template-ids:-1050525712;}
+@list l16:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l16:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l16:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l16:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l16:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l16:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l16:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l16:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l16:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l17
+	{mso-list-id:1759324994;
+	mso-list-template-ids:1691257508;}
+@list l17:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l17:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l17:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l17:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l17:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l17:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l17:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l17:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l17:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l18
+	{mso-list-id:1823497314;
+	mso-list-template-ids:-1496165886;}
+@list l18:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l18:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l18:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l18:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l18:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l18:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l18:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l18:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l18:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l19
+	{mso-list-id:1876502695;
+	mso-list-template-ids:1871743280;}
+@list l19:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l19:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l19:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l19:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l19:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l19:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l19:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l19:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l19:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l20
+	{mso-list-id:1878004808;
+	mso-list-template-ids:-2035785764;}
+@list l20:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l20:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l20:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l20:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l20:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l20:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l20:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l20:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l20:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l21
+	{mso-list-id:1894922740;
+	mso-list-template-ids:638775726;}
+@list l21:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l21:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l21:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l21:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l21:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l21:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l21:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l21:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l21:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l22
+	{mso-list-id:1896044203;
+	mso-list-template-ids:1395404296;}
+@list l22:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l22:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l22:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l22:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l22:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l22:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l22:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l22:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l22:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor=white lang=EN-US link=blue vlink=blue style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h1>Publications </h1>
+
+
+<h1 align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</h1>
+
+
+<h1><span style="mso-spacerun: yes">&nbsp;</span><u><span><span
+style='font-size:16.0pt'>Books</span></span></u><span><span style='font-size:
+16.0pt'>: <o:p></o:p></span></h1>
+
+</span>
+
+<h1><span><span style='font-size:16.0pt'><o:p>&nbsp;</o:p></span></h1>
+
+</span>
+
+<h1 style='margin-left:.5in'><i style='mso-bidi-font-style:normal;mso-bidi-font-style:
+normal'><span><span style='font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+font-weight:normal'>Stalking the Riemann Hypothesis,</span></span></i><span><span
+style='font-size:12.0pt;mso-bidi-font-family:"Times New Roman"'> </span></span><span><span
+style='font-size:12.0pt;mso-bidi-font-family:"Times New Roman";font-weight:
+normal'>Random House/Pantheon, <span class=GramE>April,</span> 2005.<o:p></o:p></span></h1>
+
+</span>
+
+<p class=MsoNormal style='margin-left:.5in;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><i style='mso-bidi-font-style:normal;mso-bidi-font-style:
+normal'><span><span style='font-size:12.0pt;mso-bidi-font-family:"Times New Roman"'>Stalking
+the Riemann Hypothesis</span></span></i><span><span style='font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman"'>, (paperback) Pantheon Press, 2006, 304
+pages, ISBN: 037542136X<o:p></o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='margin-left:.5in;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><span><span style='font-size:12.0pt;mso-bidi-font-family:
+"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='margin-left:.5in;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><i style='mso-bidi-font-style:normal;mso-bidi-font-style:
+normal'><span><span style='font-size:12.0pt;mso-bidi-font-family:"Times New Roman"'>Modern
+Signal Processing</span></span></i><span><span style='font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman"'> (w<span class=GramE>./</span> D. Healy
+- editors), Cambridge University Press, 2004.<o:p></o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='margin-left:.5in;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><span><span style='font-size:12.0pt;mso-bidi-font-family:
+"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='margin-left:.5in;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><i style='mso-bidi-font-style:normal;mso-bidi-font-style:
+normal'><span><span style='font-size:12.0pt;mso-bidi-font-family:"Times New Roman"'>Music
+and Computers: A Theoretical and Historical Approach </span></span></i><span><span
+style='font-size:12.0pt;mso-bidi-font-family:"Times New Roman"'>(w/P. Burk, L. <span
+class=SpellE>Polansky</span>, d. <span class=SpellE>repetto</span>, and<o:p></o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='margin-left:.5in;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><span><span class=GramE><span style='font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman"'>M. Roberts), Key College Publishing,
+2004.</span></span><span style='font-size:12.0pt;mso-bidi-font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='margin-left:.5in;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><span><span style='font-size:12.0pt;mso-bidi-font-family:
+"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='margin-left:.5in;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><i style='mso-bidi-font-style:normal;mso-bidi-font-style:
+normal'><span><span style='font-size:12.0pt;mso-bidi-font-family:"Times New Roman"'>Cyclic
+Renormalization and <span class=SpellE>Automorphism</span> Groups of Rooted
+Trees </span></span></i><span><span style='font-size:12.0pt;mso-bidi-font-family:
+"Times New Roman"'>(w/H. Bass, M. V. <span class=SpellE>Espinar</span>, and C.<o:p></o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='margin-left:.5in;mso-pagination:none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><span class=SpellE><span
+class=GramE><span style='font-size:12.0pt;mso-bidi-font-family:"Times New Roman"'>Tresser</span></span></span><span
+class=GramE><span style='font-size:12.0pt;mso-bidi-font-family:"Times New Roman"'>),
+Lecture Notes in Mathematics, Volume 1621, Springer-<span class=SpellE>Verlag</span>,
+NY 1996.</span></span></span><span><span style='font-size:12.0pt;mso-bidi-font-family:
+Helvetica;color:black'><o:p></o:p></span></p>
+
+</span>
+
+<p class=MsoListParagraph style='mso-pagination:none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><span style='font-size:
+12.0pt;mso-bidi-font-family:Helvetica;color:black'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='mso-pagination:none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><b style='mso-bidi-font-weight:
+normal;mso-bidi-font-weight:normal'><u><span><span style='font-size:16.0pt;
+mso-bidi-font-family:Helvetica;color:black'>Film Projects:<o:p></o:p></span></u></b></p>
+
+</span>
+
+<p class=MsoNormal style='margin-left:.5in;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><span class=GramE><i style='mso-bidi-font-style:normal;
+mso-bidi-font-style:normal'><span><span style='font-size:12.0pt;mso-bidi-font-family:
+"Times New Roman"'>From Mind to Machine - The Discovery of Artificial
+Intelligence</span></span></i><span style='font-size:12.0pt;mso-bidi-font-family:
+"Times New Roman"'><span> (with W. Conquest and B. Drake), 2007.</span></span><span
+style='font-size:12.0pt;mso-bidi-font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='margin-left:.5in;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><span><span style='font-size:12.0pt;mso-bidi-font-family:
+"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='margin-left:.5in;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><i style='mso-bidi-font-style:normal;mso-bidi-font-style:
+normal'><span><span style='font-size:12.0pt;mso-bidi-font-family:"Times New Roman"'>The
+Math Life</span></span></i><span><span style='font-size:12.0pt;mso-bidi-font-family:
+"Times New Roman"'> (with W. Conquest and B. Drake), a <span class=GramE>51
+minute</span> documentary about the people, process, and problems of modern
+mathematics. Distributed by Films for the Humanities and Sciences
+(www.films.com) and (as of 3/10/03) to appear on at least 55% (and at most 90%)
+of the Public Television marketplace.<o:p></o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='margin-left:.5in;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><span><span style='font-size:12.0pt;mso-bidi-font-family:
+"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='margin-left:.5in;mso-pagination:none;mso-layout-grid-align:
+none;text-autospace:none'><i style='mso-bidi-font-style:normal;mso-bidi-font-style:
+normal'><span><span style='font-size:12.0pt;mso-bidi-font-family:"Times New Roman"'>Mathematics
+Illuminated</span></span></i><span><span style='font-size:12.0pt;mso-bidi-font-family:
+"Times New Roman"'> (host, lead content advisor, a 13 part series on
+mathematics, funded by the Annenberg Foundation, produced by Oregon Public
+Broadcasting)<o:p></o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='mso-pagination:none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><b style='mso-bidi-font-weight:
+normal;mso-bidi-font-weight:normal'><u><span><span style='font-size:16.0pt;
+mso-bidi-font-family:Helvetica;color:black'><o:p><span style='text-decoration:
+ none'>&nbsp;</span></o:p></span></u></b></p>
+
+</span>
+
+<p class=MsoNormal style='mso-pagination:none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><b style='mso-bidi-font-weight:
+normal;mso-bidi-font-weight:normal'><u><span><span style='font-size:16.0pt;
+mso-bidi-font-family:Helvetica;color:black'>Journal/Conference Publications:<o:p></o:p></span></u></b></p>
+
+<p class=MsoNormal style='mso-pagination:none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><b style='mso-bidi-font-weight:
+normal'><u><span style='font-size:16.0pt;mso-bidi-font-family:Helvetica;
+color:black'><o:p><span style='text-decoration:none'>&nbsp;</span></o:p></span></u></b></p>
+
+</span>
+
+<p class=MsoListParagraph style='mso-pagination:none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><span style='font-size:
+12.0pt;mso-bidi-font-family:Helvetica;color:black'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;
+margin-left:.5in;mso-para-margin-top:.01gd;mso-para-margin-right:0in;
+mso-para-margin-bottom:.01gd;mso-para-margin-left:.5in;text-indent:-.25in;
+mso-pagination:none;mso-list:l13 level1 lfo1;tab-stops:28.0pt list .5in left 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><![if !supportLists]><span
+style='mso-bidi-font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;color:black'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>Using
+Hierarchical Change Mining to Manage Network Security Policy Evolution (w/G.
+Weaver, N. <span class=SpellE>Foti</span>, S. <span class=SpellE>Bratus</span>,
+and S. Smith), The Workshop on Hot Topics in Management of Internet, Cloud, and
+Enterprise Networks and Services (Hot-ICE '11), (2011)<span class=GramE>,<span
+style="mso-spacerun: yes">&nbsp; </span>in</span> press.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;
+margin-left:.5in;mso-para-margin-top:.01gd;mso-para-margin-right:0in;
+mso-para-margin-bottom:.01gd;mso-para-margin-left:.5in;mso-pagination:none;
+tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span style='font-size:12.0pt;
+mso-bidi-font-family:Helvetica;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;
+margin-left:.5in;mso-para-margin-top:.01gd;mso-para-margin-right:0in;
+mso-para-margin-bottom:.01gd;mso-para-margin-left:.5in;text-indent:-.25in;
+mso-pagination:none;mso-list:l13 level1 lfo1;tab-stops:28.0pt list .5in left 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]><span
+style='mso-bidi-font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;color:black'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>Nonparametric
+<span class=SpellE>sparsification</span> of complex <span class=SpellE>multiscale</span>
+networks (w<span class=GramE>./</span>N. <span class=SpellE>Foti</span> and James
+M. Hughes), <span class=SpellE><i style='mso-bidi-font-style:normal;mso-bidi-font-style:
+normal'>PLoS</i></span><i style='mso-bidi-font-style:normal'> ONE</i>, </span></span><b
+style='mso-bidi-font-weight:normal;mso-bidi-font-weight:normal'><span
+style='font-size:12.0pt;mso-bidi-font-family:Verdana'>6</span></b><span
+style='font-size:12.0pt;mso-bidi-font-family:Verdana'>(2): e16431. <span
+class=GramE>doi:10.1371</span>/journal.pone.0016431</span><span><span
+style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'> (2011)<o:p></o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;
+margin-left:0in;mso-para-margin-top:.01gd;mso-para-margin-right:0in;mso-para-margin-bottom:
+.01gd;mso-para-margin-left:0in;mso-pagination:none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><span style='font-size:
+12.0pt;mso-bidi-font-family:Helvetica;color:black'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;
+margin-left:.5in;mso-para-margin-top:.01gd;mso-para-margin-right:0in;
+mso-para-margin-bottom:.01gd;mso-para-margin-left:.5in;text-indent:-.25in;
+mso-pagination:none;mso-list:l13 level1 lfo1;tab-stops:28.0pt list .5in left 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><![if !supportLists]><span
+style='mso-bidi-font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;color:black'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>Intelligent
+data analysis of intelligent systems, (w<span class=GramE>./</span>D. C. <span
+class=SpellE>Krakauer</span>, J. C. Flack, S. <span class=SpellE>Dedeo</span>,
+and D. Farmer, <i style='mso-bidi-font-style:normal;mso-bidi-font-style:normal'>Advances
+in Intelligent Data Analysis IX</i> 6065:8-17(2010).<o:p></o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='mso-pagination:none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><span style='font-size:
+12.0pt;mso-bidi-font-family:Helvetica;color:black'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<p class=MsoListParagraph style='text-indent:-.25in;mso-pagination:none;
+mso-list:l13 level1 lfo1;tab-stops:28.0pt list .5in left 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><![if !supportLists]><span
+style='mso-bidi-font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;color:black'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>Improved
+IBD detection using incomplete <span class=SpellE>haplotype</span> information
+(w<span class=GramE>./</span>G. Genovese, G. <span class=SpellE>Leibon</span>,
+and <span class=SpellE>M.Pollak</span>), <i style='mso-bidi-font-style:normal;
+mso-bidi-font-style:normal'>BMC Genetics</i>, <b style='mso-bidi-font-weight:
+normal;mso-bidi-font-weight:normal'>11</b>:58 (2010).<o:p></o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='mso-pagination:none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><span style='font-size:
+12.0pt;mso-bidi-font-family:Helvetica;color:black'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<p class=MsoListParagraph style='text-indent:-.25in;mso-pagination:none;
+mso-list:l13 level1 lfo1;tab-stops:28.0pt list .5in left 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><![if !supportLists]><span
+style='mso-bidi-font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;color:black'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>The
+packet-switching brain (w<span class=GramE>./</span>D. Graham), <i
+style='mso-bidi-font-style:normal;mso-bidi-font-style:normal'>J. of Cognitive
+Neuroscience</i>, Early Access Posted Online March 29, 2010. (<span
+class=GramE>doi:10.1162</span>/jocn.2010.21477).<o:p></o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='mso-pagination:none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><span style='font-size:
+12.0pt;mso-bidi-font-family:Helvetica;color:black'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<p class=MsoListParagraph style='text-indent:-.25in;mso-pagination:none;
+mso-list:l13 level1 lfo1;tab-stops:28.0pt list .5in left 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><![if !supportLists]><span
+style='mso-bidi-font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;color:black'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>Preference
+for artwork: Similarity, statistics, and selling price (w. D. Graham, J. <span
+class=SpellE>Friedenberg</span>, and C. <span class=SpellE>McCandless</span>),
+in Proc. SPIE: Human Vision and Electronic Imaging 7527 (2010).<o:p></o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='mso-pagination:none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><span style='font-size:
+12.0pt;mso-bidi-font-family:Helvetica;color:black'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<p class=MsoListParagraph style='text-indent:-.25in;mso-pagination:none;
+mso-list:l13 level1 lfo1;tab-stops:28.0pt list .5in left 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><![if !supportLists]><span
+style='mso-bidi-font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;color:black'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+class=SpellE><span style='font-size:12.0pt;mso-bidi-font-family:Helvetica;
+color:black'>Stylometrics</span></span><span style='font-size:12.0pt;
+mso-bidi-font-family:Helvetica;color:black'> of artwork: Uses and limitations
+(w<span class=GramE>./</span>D. Graham and J. M. Hughes), Proc. SPIE: Computer
+Vision and Image Analysis of Art 7531 (2010).<o:p></o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='margin-left:.25in;mso-pagination:none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><span style='font-size:
+12.0pt;mso-bidi-font-family:Helvetica;color:black'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<p class=MsoListParagraph style='text-indent:-.25in;mso-pagination:none;
+mso-list:l13 level1 lfo1;tab-stops:28.0pt list .5in left 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><![if !supportLists]><span
+style='mso-bidi-font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;color:black'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+class=SpellE><span style='font-size:12.0pt;mso-bidi-font-family:Helvetica;
+color:black'>Deblurring</span></span><span style='font-size:12.0pt;mso-bidi-font-family:
+Helvetica;color:black'> of <span class=SpellE>motionally</span> averaged images
+with applications to single-particle <span class=SpellE>cryo</span>-electron
+microscopy, (w<span class=GramE>./</span>G. <span class=SpellE>Chirikjian</span>,
+W. Park, and D. Madden), <span class=SpellE>arXiv</span>: 0710.0690, <i
+style='mso-bidi-font-style:normal;mso-bidi-font-style:normal'>Inverse Problems</i>,
+<b style='mso-bidi-font-weight:normal;mso-bidi-font-weight:normal'>26</b>,
+Number 3, March 2010 <span class=SpellE>doi</span>:
+10.1088/0266-5611/26/3/035002.<o:p></o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='mso-pagination:none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><span style='font-size:
+12.0pt;mso-bidi-font-family:Helvetica;color:black'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<p class=MsoListParagraph style='text-indent:-.25in;mso-pagination:none;
+mso-list:l13 level1 lfo1;tab-stops:28.0pt list .5in left 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><![if !supportLists]><span
+style='mso-bidi-font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;color:black'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>Quantification
+of artistic style through sparse coding analysis in the drawings of Pieter <span
+class=SpellE>Bruegel</span> the Elder (w<span class=GramE>./</span>J. Hughes
+and D. Graham), <i style='mso-bidi-font-style:normal;mso-bidi-font-style:normal'>Proceedings
+of the National Academy of Sciences USA</i>, vol. <b style='mso-bidi-font-weight:
+normal;mso-bidi-font-weight:normal'>107</b>, no. 4, pp. 1279–1283, 2010.<o:p></o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='mso-pagination:none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><span style='font-size:
+12.0pt;mso-bidi-font-family:Helvetica;color:black'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<p class=MsoListParagraph style='text-indent:-.25in;mso-pagination:none;
+mso-list:l13 level1 lfo1;tab-stops:28.0pt list .5in left 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><![if !supportLists]><span
+style='mso-bidi-font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;color:black'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>Fast
+Fourier transforms for the rook <span class=SpellE>monoid</span>, (w<span
+class=GramE>./</span>M. <span class=SpellE>Malandro</span>) <i
+style='mso-bidi-font-style:normal;mso-bidi-font-style:normal'>Transactions of
+the AMS</i>, <b style='mso-bidi-font-weight:normal;mso-bidi-font-weight:normal'>362</b>(2)
+pp. 1009 – 1045, (2010).<o:p></o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='mso-pagination:none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><span style='font-size:
+12.0pt;mso-bidi-font-family:Helvetica;color:black'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<p class=MsoListParagraph style='text-indent:-.25in;mso-pagination:none;
+mso-list:l13 level1 lfo1;tab-stops:28.0pt list .5in left 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><![if !supportLists]><span
+style='mso-bidi-font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;color:black'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>Accurate
+image rotation using <span class=SpellE>Hermite</span> expansions (w<span
+class=GramE>./</span>G. <span class=SpellE>Chirikjian</span>, W. Park, and G. <span
+class=SpellE>Leibon</span>), <i style='mso-bidi-font-style:normal;mso-bidi-font-style:
+normal'>IEEE Transactions on Image Processing</i>, <b style='mso-bidi-font-weight:
+normal;mso-bidi-font-weight:normal'>18</b>(9) pp. 1988–2003, (2009).<o:p></o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='mso-pagination:none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><span style='font-size:
+12.0pt;mso-bidi-font-family:Helvetica;color:black'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<p class=MsoListParagraph style='text-indent:-.25in;mso-pagination:none;
+mso-list:l13 level1 lfo1;tab-stops:28.0pt list .5in left 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><![if !supportLists]><span
+style='mso-bidi-font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;color:black'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>Mapping the
+similarity space of paintings: Is there a role for image statistics? (w<span
+class=GramE>./</span>D. J. Graham, J. N., <span class=SpellE>Friedenberg</span>,
+and D. J. Field,), <i style='mso-bidi-font-style:normal;mso-bidi-font-style:
+normal'>Visual Cognition</i>, July 15, 2009, DOI: 10.1080/13506280902934454.<o:p></o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='mso-pagination:none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><span style='font-size:
+12.0pt;mso-bidi-font-family:Helvetica;color:black'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<p class=MsoListParagraph style='text-indent:-.25in;mso-pagination:none;
+mso-list:l13 level1 lfo1;tab-stops:28.0pt list .5in left 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><![if !supportLists]><span
+style='mso-bidi-font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;color:black'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>A
+mathematical model for optimal tuning systems (w<span class=GramE>./</span>L. <span
+class=SpellE>Polansky</span>, M.K. Johnson, D. <span class=SpellE>Repetto</span>
+and W. Pan), <i style='mso-bidi-font-style:normal;mso-bidi-font-style:normal'>Perspectives
+in New Music</i>, <b style='mso-bidi-font-weight:normal;mso-bidi-font-weight:
+normal'>47(</b>1), p. 69–110, 2009.<o:p></o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='mso-pagination:none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><span style='font-size:
+12.0pt;mso-bidi-font-family:Helvetica;color:black'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<p class=MsoListParagraph style='text-indent:-.25in;mso-pagination:none;
+mso-list:l13 level1 lfo1;tab-stops:28.0pt list .5in left 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><![if !supportLists]><span
+style='mso-bidi-font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;color:black'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>Spectral
+analysis for <span class=SpellE>phylogenetic</span> trees (w<span class=GramE>./</span>P.
+Rinker), NIPS (2009), Workshop on Ranked Data. <o:p></o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='mso-pagination:none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><span style='font-size:
+12.0pt;mso-bidi-font-family:Helvetica;color:black'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<p class=MsoListParagraph style='text-indent:-.25in;mso-pagination:none;
+mso-list:l13 level1 lfo1;tab-stops:28.0pt list .5in left 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><![if !supportLists]><span
+style='mso-bidi-font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;color:black'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>Intensity
+statistics of artwork: connections to human visual perception (w<span
+class=GramE>./</span> D. J. Graham, J. N. <span class=SpellE>Friedenberg</span>,
+and D. J. Field), SPIE, 2009. Proc. SPIE. 7240.<o:p></o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;
+margin-left:0in;mso-para-margin-top:.01gd;mso-para-margin-right:0in;mso-para-margin-bottom:
+.01gd;mso-para-margin-left:0in;mso-pagination:none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><span style='font-size:
+12.0pt;mso-bidi-font-family:Helvetica;color:black'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;
+margin-left:.5in;mso-para-margin-top:.01gd;mso-para-margin-right:0in;
+mso-para-margin-bottom:.01gd;mso-para-margin-left:.5in;text-indent:-.25in;
+mso-pagination:none;mso-list:l13 level1 lfo1;tab-stops:28.0pt list .5in left 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><![if !supportLists]><span
+style='mso-bidi-font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;color:black'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>Topological
+structures in the equities market, (w<span class=GramE>./</span>G. <span
+class=SpellE>Leibon</span>, S. <span class=SpellE>Pauls</span>, R. <span
+class=SpellE>Savell</span>), <i style='mso-bidi-font-style:normal;mso-bidi-font-style:
+normal'>PNAS</i>, <b style='mso-bidi-font-weight:normal;mso-bidi-font-weight:
+normal'>105</b>(52):20589-94, 2008.<o:p></o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='mso-pagination:none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><span style='font-size:
+12.0pt;mso-bidi-font-family:Helvetica;color:black'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<p class=MsoListParagraph style='text-indent:-.25in;mso-pagination:none;
+mso-list:l13 level1 lfo1;tab-stops:28.0pt list .5in left 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><![if !supportLists]><span
+style='mso-bidi-font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;color:black'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>A fast <span
+class=SpellE>Hermite</span> transform, (w<span class=GramE>./</span>G. <span
+class=SpellE>Leibon</span>, R. <span class=SpellE>Taintor</span>, G. <span
+class=SpellE>Chirikjian</span>, and W. Park), <i style='mso-bidi-font-style:
+normal;mso-bidi-font-style:normal'>Theoretical Computer Science</i>, <b
+style='mso-bidi-font-weight:normal;mso-bidi-font-weight:normal'>409</b>(2):
+211-228 (2008).<o:p></o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;
+margin-left:0in;mso-para-margin-top:.01gd;mso-para-margin-right:0in;mso-para-margin-bottom:
+.01gd;mso-para-margin-left:0in;mso-pagination:none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><span style='font-size:
+12.0pt;mso-bidi-font-family:Helvetica;color:black'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;
+margin-left:.5in;mso-para-margin-top:.01gd;mso-para-margin-right:0in;
+mso-para-margin-bottom:.01gd;mso-para-margin-left:.5in;text-indent:-.25in;
+mso-pagination:none;mso-list:l13 level1 lfo1;tab-stops:28.0pt list .5in left 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><![if !supportLists]><span
+style='mso-bidi-font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;color:black'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>Evolution
+of community structure in the world trade web, (w<span class=GramE>./</span>I. <span
+class=SpellE>Tzekina</span> and K. <span class=SpellE>Danthi</span>), <i
+style='mso-bidi-font-style:normal;mso-bidi-font-style:normal'>European J. Phys.
+B</i>, <b style='mso-bidi-font-weight:normal;mso-bidi-font-weight:normal'>63</b>,
+541-545 (2008) DOI: 10.1140/epjb/e2008-00181-2<o:p></o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;
+margin-left:0in;mso-para-margin-top:.01gd;mso-para-margin-right:0in;mso-para-margin-bottom:
+.01gd;mso-para-margin-left:0in;mso-pagination:none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><span style='font-size:
+12.0pt;mso-bidi-font-family:Helvetica;color:black'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;
+margin-left:.5in;mso-para-margin-top:.01gd;mso-para-margin-right:0in;
+mso-para-margin-bottom:.01gd;mso-para-margin-left:.5in;text-indent:-.25in;
+mso-pagination:none;mso-list:l13 level1 lfo1;tab-stops:28.0pt list .5in left 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><![if !supportLists]><span
+style='mso-bidi-font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;color:black'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>A SNP
+Streak Model for the Identification of Genetic Regions Identical-by-descent, (w<span
+class=GramE>./</span>G. <span class=SpellE>Leibon</span> and <span
+class=SpellE>M.Pollak</span>), <i style='mso-bidi-font-style:normal;mso-bidi-font-style:
+normal'>Statistical Applications in Genetics and Molecular Biology,</i> <b
+style='mso-bidi-font-weight:normal;mso-bidi-font-weight:normal'>7</b>(1),
+Article 16 (2008). (Available at: <a
+href="http://www.bepress.com/sagmb/vol7/iss1/art16">http://www.bepress.com/sagmb/vol7/iss1/art16</a>)<o:p></o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;
+margin-left:0in;mso-para-margin-top:.01gd;mso-para-margin-right:0in;mso-para-margin-bottom:
+.01gd;mso-para-margin-left:0in;mso-pagination:none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><span style='font-size:
+12.0pt;mso-bidi-font-family:Helvetica;color:black'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;
+margin-left:.5in;mso-para-margin-top:.01gd;mso-para-margin-right:0in;
+mso-para-margin-bottom:.01gd;mso-para-margin-left:.5in;text-indent:-.25in;
+mso-pagination:none;mso-list:l13 level1 lfo1;tab-stops:28.0pt list .5in left 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><![if !supportLists]><span
+style='mso-bidi-font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;color:black'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+class=SpellE><span style='font-size:12.0pt;mso-bidi-font-family:Helvetica;
+color:black'>FFTs</span></span><span style='font-size:12.0pt;mso-bidi-font-family:
+Helvetica;color:black'> on the Rotation Group (w<span class=GramE>./</span>P. <span
+class=SpellE>Kostelec</span>), <i style='mso-bidi-font-style:normal;mso-bidi-font-style:
+normal'>Journal of Fourier Analysis and Applications</i>, <b style='mso-bidi-font-weight:
+normal;mso-bidi-font-weight:normal'>14</b>(2) 145– 179, (2008).<o:p></o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='mso-pagination:none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><span style='font-size:
+12.0pt;mso-bidi-font-family:Helvetica;color:black'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<p class=MsoListParagraph style='text-indent:-.25in;mso-pagination:none;
+mso-list:l13 level1 lfo1;tab-stops:28.0pt list .5in left 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><![if !supportLists]><span
+style='mso-bidi-font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;color:black'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+class=SpellE><span style='font-size:12.0pt;mso-bidi-font-family:Helvetica;
+color:black'>Multifractal</span></span><span style='font-size:12.0pt;
+mso-bidi-font-family:Helvetica;color:black'> analysis for Jackson Pollock (w<span
+class=GramE>./</span>J. <span class=SpellE>Coddington</span>, J. Elton, and Y.
+Wang), SPIE 2008, Paper 6810-13.<o:p></o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;
+margin-left:0in;mso-para-margin-top:.01gd;mso-para-margin-right:0in;mso-para-margin-bottom:
+.01gd;mso-para-margin-left:0in;mso-pagination:none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><span style='font-size:
+12.0pt;mso-bidi-font-family:Helvetica;color:black'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;
+margin-left:.5in;mso-para-margin-top:.01gd;mso-para-margin-right:0in;
+mso-para-margin-bottom:.01gd;mso-para-margin-left:.5in;text-indent:-.25in;
+mso-pagination:none;mso-list:l13 level1 lfo1;tab-stops:28.0pt list .5in left 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><![if !supportLists]><span
+style='mso-bidi-font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;color:black'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>The Power
+of Strong Fourier Sampling: Quantum Algorithms for Affine Groups and Hidden
+Shifts (w<span class=GramE>./</span>C. Moore, A. Russell, and L. Schulman), <i
+style='mso-bidi-font-style:normal;mso-bidi-font-style:normal'>SIAM J. Computing</i>,
+<b style='mso-bidi-font-weight:normal;mso-bidi-font-weight:normal'>37</b>,
+938–958 (2007)<o:p></o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;
+margin-left:0in;mso-para-margin-top:.01gd;mso-para-margin-right:0in;mso-para-margin-bottom:
+.01gd;mso-para-margin-left:0in;mso-pagination:none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><span style='font-size:
+12.0pt;mso-bidi-font-family:Helvetica;color:black'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;
+margin-left:.5in;mso-para-margin-top:.01gd;mso-para-margin-right:0in;
+mso-para-margin-bottom:.01gd;mso-para-margin-left:.5in;text-indent:-.25in;
+mso-pagination:none;mso-list:l13 level1 lfo1;tab-stops:28.0pt list .5in left 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><![if !supportLists]><span
+style='mso-bidi-font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;color:black'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>Steps
+toward Digital Authentication (w<span class=GramE>./</span>G. <span
+class=SpellE>Leibon</span>), in <span class=SpellE><i style='mso-bidi-font-style:
+normal;mso-bidi-font-style:normal'>Matematica</i></span><i style='mso-bidi-font-style:
+normal'> e <span class=SpellE>cultura</span>, 2007</i>, <span class=SpellE>MIchele</span>
+Emmer (ed.), Springer-<span class=SpellE>Verlag</span>.<o:p></o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='mso-pagination:none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><span style='font-size:
+12.0pt;mso-bidi-font-family:Helvetica;color:black'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<p class=MsoListParagraph style='text-indent:-.25in;mso-pagination:none;
+mso-list:l13 level1 lfo1;tab-stops:28.0pt list .5in left 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><![if !supportLists]><span
+style='mso-bidi-font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;color:black'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>A Fast <span
+class=SpellE>Hermite</span> Transform with Applications to Protein Structure
+Determination (w<span class=GramE>./</span>G. <span class=SpellE>Leibon</span>
+and G. <span class=SpellE>Chirikjian</span>), Proceedings of 2007 International
+Workshop on Symbolic-Numeric Computation, ACM, 117–124 (2007).<o:p></o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;
+margin-left:0in;mso-para-margin-top:.01gd;mso-para-margin-right:0in;mso-para-margin-bottom:
+.01gd;mso-para-margin-left:0in;mso-pagination:none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><span style='font-size:
+12.0pt;mso-bidi-font-family:Helvetica;color:black'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;
+margin-left:.5in;mso-para-margin-top:.01gd;mso-para-margin-right:0in;
+mso-para-margin-bottom:.01gd;mso-para-margin-left:.5in;text-indent:-.25in;
+mso-pagination:none;mso-list:l13 level1 lfo1;tab-stops:28.0pt list .5in left 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><![if !supportLists]><span
+style='mso-bidi-font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;color:black'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>Generic
+Quantum Fourier Transforms (w<span class=GramE>./</span>C. Moore and A.
+Russell), <i style='mso-bidi-font-style:normal;mso-bidi-font-style:normal'>ACM
+Transactions on Algorithms</i>, 2(4), pp. 707–723, 2006.<o:p></o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='mso-pagination:none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><span style='font-size:
+12.0pt;mso-bidi-font-family:Helvetica;color:black'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<p class=MsoListParagraph style='text-indent:-.25in;mso-pagination:none;
+mso-list:l11 level1 lfo2;tab-stops:28.0pt list .5in left 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><![if !supportLists]><span
+style='mso-bidi-font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;color:black'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>Stochastic
+Analysis of Geometric Image Processing Using B-<span class=SpellE>Splines</span>,
+(w<span class=GramE>./</span> G. Rohde, D. Healy, C. Bernstein, A. <span
+class=SpellE>Aldroubi</span>), Proceedings of 2006 IEEE International
+Conference on Acoustics, Speech, and Signal Processing, pp. 1017-1020, 2006.<o:p></o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='mso-pagination:none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><span style='font-size:
+12.0pt;mso-bidi-font-family:Helvetica;color:black'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<p class=MsoListParagraph style='text-indent:-.25in;mso-pagination:none;
+mso-list:l13 level1 lfo1;tab-stops:28.0pt list .5in left 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><![if !supportLists]><span
+style='mso-bidi-font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;color:black'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>A Digital
+Technique for Authentication in the Digital Arts (w<span class=GramE>./</span>S.
+<span class=SpellE>Lyu</span> and H. <span class=SpellE>Farid</span>), <i
+style='mso-bidi-font-style:normal;mso-bidi-font-style:normal'>International
+Foundation for Art Research Journal</i>, spring, 2006.<o:p></o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='margin-left:.25in;mso-pagination:none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><span style='font-size:
+12.0pt;mso-bidi-font-family:Helvetica;color:black'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<p class=MsoListParagraph style='text-indent:-.25in;mso-pagination:none;
+mso-list:l13 level1 lfo1;tab-stops:28.0pt list .5in left 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><![if !supportLists]><span
+style='mso-bidi-font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;color:black'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>Wavelet
+Analysis for Authentication,” (w<span class=GramE>./</span>S. <span
+class=SpellE>Lyu</span> and H. <span class=SpellE>Farid</span>), <span
+class=SpellE>Art+Math</span> = X, Conference on the interface of Art and
+Mathematics, CU, Boulder, June 2005<o:p></o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;
+margin-left:0in;mso-para-margin-top:.01gd;mso-para-margin-right:0in;mso-para-margin-bottom:
+.01gd;mso-para-margin-left:0in;mso-pagination:none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><span style='font-size:
+12.0pt;mso-bidi-font-family:Helvetica;color:black'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;
+margin-left:.5in;mso-para-margin-top:.01gd;mso-para-margin-right:0in;
+mso-para-margin-bottom:.01gd;mso-para-margin-left:.5in;text-indent:-.25in;
+mso-pagination:none;mso-list:l13 level1 lfo1;tab-stops:28.0pt list .5in left 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><![if !supportLists]><span
+style='mso-bidi-font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;color:black'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>A Digital
+Technique for Art Authentication (w<span class=GramE>./</span>S. <span
+class=SpellE>Lyu</span> and H. <span class=SpellE>Farid</span>),<i
+style='mso-bidi-font-style:normal;mso-bidi-font-style:normal'> PNAS</i>, vol. <b
+style='mso-bidi-font-weight:normal;mso-bidi-font-weight:normal'>101</b> (49),
+pp. 17006-17010 (2004).<o:p></o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;
+margin-left:0in;mso-para-margin-top:.01gd;mso-para-margin-right:0in;mso-para-margin-bottom:
+.01gd;mso-para-margin-left:0in;mso-pagination:none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><span style='font-size:
+12.0pt;mso-bidi-font-family:Helvetica;color:black'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;
+margin-left:.5in;mso-para-margin-top:.01gd;mso-para-margin-right:0in;
+mso-para-margin-bottom:.01gd;mso-para-margin-left:.5in;text-indent:-.25in;
+mso-pagination:none;mso-list:l13 level1 lfo1;tab-stops:28.0pt list .5in left 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><![if !supportLists]><span
+style='mso-bidi-font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;color:black'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>Rooted
+trees and iterated wreath products of cyclic groups (with R. <span
+class=SpellE>Orellana</span> and D. Rockmore), <i style='mso-bidi-font-style:
+normal;mso-bidi-font-style:normal'>Adv. in Appl. Math<span class=GramE>.,</span></i>
+<b style='mso-bidi-font-weight:normal;mso-bidi-font-weight:normal'>33</b>(3)
+(2004), 531-547.<o:p></o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='mso-pagination:none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><span style='font-size:
+12.0pt;mso-bidi-font-family:Helvetica;color:black'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<p class=MsoListParagraph style='text-indent:-.25in;mso-pagination:none;
+mso-list:l13 level1 lfo1;tab-stops:28.0pt list .5in left 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><![if !supportLists]><span
+style='mso-bidi-font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;color:black'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>Sharing <span
+class=SpellE>Neuroimaging</span> Studies of Human Cognition, (w<span
+class=GramE>./</span> J. D. Van Horn, S. T. Grafton, and M. S. <span
+class=SpellE>Gazzaniga</span>), Nature Neuroscience, 7, (2004), 473–481.<o:p></o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='mso-pagination:none;tab-stops:28.0pt 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><span style='font-size:
+12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<p class=MsoListParagraph style='text-indent:-.25in;mso-pagination:none;
+mso-list:l13 level1 lfo1;tab-stops:28.0pt list .5in left 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><![if !supportLists]><span
+style='mso-bidi-font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;color:black'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-size:12.0pt'>Computing <span class=SpellE>isotypic</span>
+projections with the <span class=SpellE>Lanczos</span> iteration (w<span
+class=GramE>./</span> D. <span class=SpellE>Maslen</span> and M. <span
+class=SpellE>Orrison</span>) <em><span style='font-family:Times'>SIAM J. Matrix
+Analysis and <span class=SpellE>Appplications</span> </span></em><a
+href="lanczos-siam.pdf">PDF version</a> <b style='mso-bidi-font-weight:normal;
+mso-bidi-font-weight:normal'>25 </b>(3), 784--803, (2004). </span></span><span><span
+style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'><o:p></o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='margin-left:.5in'><span><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l7 level1 lfo3;tab-stops:list .5in'><span><span
+     style='font-size:12.0pt'>R. Foote, G. <span class=SpellE>Mirchandani</span>,
+     and D. Rockmore, &quot;Two-dimensional wreath product transforms&quot; <a
+     href="2d-wp.pdf">PDF version</a> <em><span style='font-family:Times'>J.
+     Symbolic Computation </span></em><b style='mso-bidi-font-weight:normal;
+     mso-bidi-font-weight:normal'>37 </b>(2) pp. 187--207, (2004). <o:p></o:p></span></li>
+</ul>
+
+</span>
+
+<p class=MsoNormal style='margin-left:.5in'><span><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l16 level1 lfo4;tab-stops:list .5in'><span><span
+     style='font-size:12.0pt'>Towards Safe and Effective High-Order Legendre
+     Transforms with Applications to <span class=SpellE>FFTs</span> for the
+     2-sphere (w/ D. M. Healy, Jr. and P. <span class=SpellE>Kostelec</span>) <a
+     href="adv-comp-math.pdf">PDF version</a> <em><span style='font-family:
+     Times'>Advances in Computational Mathematics</span></em> <b
+     style='mso-bidi-font-weight:normal;mso-bidi-font-weight:normal'>21 </b>(1-2):
+     59-105, July 2004<o:p></o:p></span></li>
+ </span>
+ <li class=MsoNormal style='mso-list:l16 level1 lfo4;tab-stops:list .5in'><span><span
+     style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></li>
+ </span>
+ <li class=MsoNormal style='mso-list:l16 level1 lfo4;tab-stops:list .5in'><span><span
+     style='font-size:12.0pt'>Generic Quantum <span class=SpellE>FFTs</span>&quot;
+     <a href="qfftcamera.pdf">PDF version</a> (w/ C. <span class=GramE>Moore<span
+     style="mso-spacerun: yes">&nbsp; </span>and</span> A. Russell) </span></span><span><span
+     style='font-size:12.0pt;mso-bidi-font-family:"Times New Roman"'>Proceedings
+     of ACM-SIAM Symposium On Discrete</span></span><span><span
+     style='font-size:12.0pt'><o:p></o:p></span></li>
+</ul>
+
+</span>
+
+<p class=MsoNormal style='margin-left:.5in'><span><span style='font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman"'>Algorithms. <span class=GramE>2004, pp.
+771-780.</span></span></span><span><span style='font-size:12.0pt'><o:p></o:p></span></p>
+
+</span>
+
+<p class=MsoNormal><span><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l16 level1 lfo4;tab-stops:list .5in'><span><span
+     style='font-size:12.0pt'>The Hidden Subgroup Problem in Affine Groups:
+     Basis Selection in Fourier Sampling (w/ C. Moore, A. Russell, and L.
+     Schulman)<span class=GramE>,<span style="mso-spacerun: yes">&nbsp; </span></span><a
+     href="last-affine.pdf">PDF version</a> </span></span><span><span
+     style='font-size:12.0pt;mso-bidi-font-family:"Times New Roman"'>Proceedings
+     of ACM-SIAM Symposium On Discrete Algorithms. 2004, pp.</span></span><span><span
+     style='font-size:12.0pt'> </span></span><span><span style='font-size:12.0pt;
+     mso-bidi-font-family:"Times New Roman"'>1106--1115.</span></span><span><span
+     style='font-size:12.0pt'><o:p></o:p></span></li>
+</ul>
+
+</span>
+
+<p class=MsoNormal style='margin-left:.5in'><span><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l16 level1 lfo4;tab-stops:list .5in'><span><span
+     style='font-size:12.0pt'>Recent Progress and Applications in Group <span
+     class=SpellE>FFTs</span>, <a href="nato-1.pdf">PDF version</a> In </span></span><i
+     style='mso-bidi-font-style:normal;mso-bidi-font-style:normal'><span
+     style='font-size:12.0pt;mso-bidi-font-family:Verdana'>Advanced Study Institute
+     on Computational <span class=SpellE>Noncommutative</span> Algebra and
+     Applications,</span></i><em><span><span style='font-size:12.0pt;
+     font-family:Times'> </span></span><span></em><em><span style='font-size:
+     12.0pt;font-family:Times;font-style:normal'>J. Byrnes, ed.,</span></span><span></em><em><span
+     style='font-size:12.0pt;font-family:Times'> </span></span></em><span><span
+     class=SpellE><span style='font-size:12.0pt;mso-bidi-font-family:"Times New Roman"'>Kluwer</span></span><span
+     style='font-size:12.0pt;mso-bidi-font-family:"Times New Roman"'> Acad. Pub<span
+     class=GramE>.,</span> Netherlands, (2004) pp. 227--254.</span></span><span><span
+     style='font-size:12.0pt'><o:p></o:p></span></li>
+</ul>
+
+</span>
+
+<p class=MsoNormal style='margin-left:.5in'><span><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l5 level1 lfo5;tab-stops:list .5in'><span><span
+     class=SpellE><span style='font-size:12.0pt'>FFTs</span></span><span
+     style='font-size:12.0pt'> for the 2-Sphere-Improvements and Variations (w/
+     D. M. Healy, Jr., P. <span class=SpellE>Kostelec</span>, and S. Moore) <a
+     href="jfaaS2official.pdf">PDF version</a> <em><span style='font-family:
+     Times'>Journal of Fourier Analysis and Applications </span></em><b
+     style='mso-bidi-font-weight:normal;mso-bidi-font-weight:normal'>9 </b>4:
+     341--385, July 2003 <o:p></o:p></span></li>
+</ul>
+
+</span>
+
+<p class=MsoNormal><span><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l15 level1 lfo6;tab-stops:list .5in'><span><span
+     class=SpellE><span style='font-size:12.0pt'>Eigenvalues</span></span><span
+     style='font-size:12.0pt'> <span class=SpellE>spacings</span> for quantized
+     cat maps (w/A. <span class=SpellE>Gamburd</span> and J. Lafferty)<span
+     class=GramE>,<span style="mso-spacerun: yes">&nbsp; </span><span
+     style="mso-spacerun: yes">&nbsp;</span><i style='mso-bidi-font-style:normal;
+     mso-bidi-font-style:normal'>J</i></span><i style='mso-bidi-font-style:
+     normal'>. Phys A</i>, </span></span><b style='mso-bidi-font-weight:normal;
+     mso-bidi-font-weight:normal'><span><span style='font-size:12.0pt;
+     mso-bidi-font-family:Helvetica;color:black'>36 </span></span></b><span><span
+     style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>(2003),
+     no. 12, 3487–3499</span></span><span><span style='font-size:12.0pt'>. <o:p></o:p></span></li>
+</ul>
+
+</span>
+
+<p class=MsoNormal style='margin-left:.5in'><span><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l19 level1 lfo7;tab-stops:list .5in'><span><span
+     style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>Recent
+     Progress and Applications of Group <span class=SpellE>FFTs</span>, 36th <span
+     class=SpellE>Asilomar</span> Conference on Signals and Systems, IEEE
+     Publications, <span class=GramE>January,</span> 2003. </span></span><span><span
+     style='font-size:12.0pt'><o:p></o:p></span></li>
+</ul>
+
+</span>
+
+<p class=MsoNormal><span><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l3 level1 lfo8;tab-stops:list .5in'><span><span
+     style='font-size:12.0pt'>Landscapes on spaces of trees (w/ O. <span
+     class=SpellE>Bastert</span>, P. <span class=SpellE>Stadler</span>, and G. <span
+     class=SpellE>Tinhofer</span>,) <i style='mso-bidi-font-style:normal;
+     mso-bidi-font-style:normal'>Appl. Math. <span class=SpellE>Comput</span></i><span
+     class=GramE>.,</span><span style="mso-spacerun: yes">&nbsp; </span><span
+     style="mso-spacerun: yes">&nbsp;</span><b style='mso-bidi-font-weight:
+     normal;mso-bidi-font-weight:normal'>131</b> (2002), no. 2-3, 439--459. <o:p></o:p></span></li>
+</ul>
+
+</span>
+
+<p class=MsoNormal style='margin-left:.5in'><span><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l18 level1 lfo9;tab-stops:list .5in'><span><span
+     style='font-size:12.0pt'>Fast Fourier transforms for fitness landscapes
+     (w/ W. <span class=SpellE>Hordijk</span>, P. <span class=SpellE>Kostelec</span>,
+     and P. <span class=SpellE>Stadler</span>), <i style='mso-bidi-font-style:
+     normal;mso-bidi-font-style:normal'>Applied and Computational Harmonic
+     Analysis</i>, <b style='mso-bidi-font-weight:normal;mso-bidi-font-weight:
+     normal'>12</b> No. 1, Jan 2002, pp. 57-76. <o:p></o:p></span></li>
+</ul>
+
+</span>
+
+<p class=MsoNormal style='margin-left:.5in'><span><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l18 level1 lfo9;tab-stops:list .5in'><span><span
+     style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>Description
+     of an interactive, sound making online computer music tutorial web book, <i
+     style='mso-bidi-font-style:normal;mso-bidi-font-style:normal'>International
+     Conference Music and Computers</i> 2002 Short Paper/Demo, Voices of Nature
+     Conference, <span class=SpellE>Goeborg</span> (w<span class=GramE>./</span>P.
+     Burk, L. <span class=SpellE>Polansky</span>, d. <span class=SpellE>repetto</span>,
+     M. Roberts)</span></span><span><span style='font-size:12.0pt'><o:p></o:p></span></li>
+</ul>
+
+</span>
+
+<p class=MsoNormal><span><span style='font-size:12.0pt;mso-bidi-font-family:
+"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l18 level1 lfo9;tab-stops:list .5in'><span><span
+     style='font-size:12.0pt;mso-bidi-font-family:"Times New Roman"'>The
+     Cooley-<span class=SpellE>Tukey</span> FFT and group theory (with D. <span
+     class=SpellE>Maslen</span>) <i style='mso-bidi-font-style:normal;
+     mso-bidi-font-style:normal'>Notices Amer. Math</i>. Soc. <b
+     style='mso-bidi-font-weight:normal;mso-bidi-font-weight:normal'>48</b>
+     (10), 2001, pp. 1151 –1160.</span></span><span><span style='font-size:
+     12.0pt'><o:p></o:p></span></li>
+</ul>
+
+</span>
+
+<p class=MsoNormal><span><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l18 level1 lfo9;tab-stops:list .5in'><span><span
+     style='font-size:12.0pt'>Nonlinear approximation theory on finite groups
+     (w/ K<span class=GramE>.-</span>L. <span class=SpellE>Kueh</span>, T.
+     Olson, and K.-S. Tan,)<span style="mso-spacerun: yes">&nbsp; </span><a
+     href="nla.pdf">PDF version</a> <a href="nla.ps">Postscript version</a> </span></span><i
+     style='mso-bidi-font-style:normal;mso-bidi-font-style:normal'><span><span
+     style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>J.
+     Fourier Analysis and Appl., </span></span></i><b style='mso-bidi-font-weight:
+     normal;mso-bidi-font-weight:normal'><span><span style='font-size:12.0pt;
+     mso-bidi-font-family:Helvetica;color:black'>7</span></span></b><span><span
+     style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'> No.
+     3, 2001, pp. 257–281</span></span><span><span style='font-size:12.0pt'><o:p></o:p></span></li>
+</ul>
+
+</span>
+
+<p class=MsoNormal style='margin-left:.5in'><span><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l18 level1 lfo9;tab-stops:list .5in'><span><span
+     style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>Lesion
+     Size Estimation Using Warped Registration of Interval Images, (w<span
+     class=GramE>./</span>J.B. Weaver, S. <span class=SpellE>Periaswamy</span>,
+     H. <span class=SpellE>Farid</span>, D.N. Rockmore, C.J. <span
+     class=SpellE>Kasales</span>, W. Black, D.M. Healy, Jr.), <i
+     style='mso-bidi-font-style:normal;mso-bidi-font-style:normal'>Proceedings
+     of the Society of Magnetic Resonance</i>, Glasgow, UK, April, 2001, p. 795</span></span><span><span
+     style='font-size:12.0pt'><o:p></o:p></span></li>
+</ul>
+
+</span>
+
+<p class=MsoNormal><span><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l18 level1 lfo9;tab-stops:list .5in'><span
+     class=GramE><span style='font-size:12.0pt;mso-bidi-font-family:Arial'>The </span><span
+     style='font-size:12.0pt;mso-bidi-font-family:"Times New Roman"'><span><span
+     style="mso-spacerun: yes">&nbsp;</span>Functional</span></span><span
+     style='font-size:12.0pt;mso-bidi-font-family:"Times New Roman"'> Magnetic
+     Resonance Imaging Data Center (</span></span><span class=SpellE><span
+     style='font-size:12.0pt;mso-bidi-font-family:Arial'>fMRIDC</span></span><span
+     style='font-size:12.0pt;mso-bidi-font-family:Arial'>): The Challenges and
+     rewards of large-scale <span class=SpellE>databasing</span> of <span
+     class=SpellE>neuroimaging</span> studies (w/ J. Van Horn, J. <span
+     class=SpellE>Grethe</span>, P. <span class=SpellE>Kostelec</span>, J.
+     Woodward, J.B., J. <span class=SpellE>Aslam</span>, D. <span class=SpellE>Rus</span>,
+     and<span style="mso-spacerun: yes">&nbsp; </span>M. S.<span
+     style="mso-spacerun: yes">&nbsp; </span><span class=SpellE>Gazzaniga</span>),
+     <i style='mso-bidi-font-style:normal;mso-bidi-font-style:normal'>Philosophical
+     Transactions of the Royal Society</i>, </span><b style='mso-bidi-font-weight:
+     normal;mso-bidi-font-weight:normal'><span><span style='font-size:12.0pt;
+     mso-bidi-font-family:"Times New Roman"'>356</span></span></b><span><span
+     style='font-size:12.0pt;mso-bidi-font-family:"Times New Roman"'> No. 1412</span></span><span
+     style='font-size:12.0pt;mso-bidi-font-family:Arial'> (2001).</span><span><span
+     style='font-size:12.0pt'><o:p></o:p></span></li>
+</ul>
+
+</span>
+
+<p class=MsoNormal style='margin-left:.5in'><span><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l14 level1 lfo10;tab-stops:list .5in'><span><span
+     style='font-size:12.0pt'>The FFT - An algorithm the whole family can use <a
+     href="cse-fft.pdf">PDF version</a> <a href="cse-fft.ps">Postscript version</a>
+     <em><span style='font-family:Times'>Computing in Science &amp;
+     Engineering, </span></em><em><span style='font-family:Times;font-style:
+     normal'>January/February 2000, <b style='mso-bidi-font-weight:normal;
+     mso-bidi-font-weight:normal'>2</b>, Number 1, pp. 60--64.</span></em></span><em><span
+     style='font-family:Times;font-style:normal'><o:p></o:p></span></em></li>
+</ul>
+
+</span>
+
+<p class=MsoNormal style='margin-left:.5in'><em><span><span style='font-size:
+12.0pt;font-family:Times'><span style="mso-spacerun: yes">&nbsp;</span></span></span></em><span><o:p></o:p></p>
+
+</span>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l21 level1 lfo11;tab-stops:list .5in'><span><span
+     style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>A
+     wreath product group approach to signal and image processing: Part II –
+     convolutions, correlations, and applications</span></span><span
+     style='font-size:9.5pt;font-family:Helvetica;mso-bidi-font-family:Helvetica;
+     color:black'> </span><span><span style='font-size:12.0pt'>(w/ R. Foote, G.
+     <span class=SpellE>Mirchandani</span>, D. Healy and T. <span class=GramE>Olson
+     )</span>,, <em><span style='font-family:Times'>IEEE Trans. in Signal
+     Processing, </span></em><em><b style='mso-bidi-font-weight:normal;
+     mso-bidi-font-weight:normal'><span style='font-family:Times;font-style:
+     normal'>48</span></b></em><em><span style='font-family:Times;font-style:
+     normal'>(3), 2000, pp. 749--767</span></em><em><span style='font-family:
+     Times'>.</span></em> <o:p></o:p></span></li>
+</ul>
+
+</span>
+
+<p class=MsoNormal><span><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l4 level1 lfo12;tab-stops:list .5in'><span><span
+     style='font-size:12.0pt'><a href="part1.ps.gz">&quot;A wreath product
+     group approach to signal and image processing: Part I -- <span
+     class=SpellE>multiresolution</span> analysis &quot;</a> (w/ R. Foote, G. <span
+     class=SpellE>Mirchandani</span>, D. Healy and T. <span class=GramE>Olson )</span>,
+     <em><span style='font-family:Times'>IEEE Trans. in Signal Processing, </span></em><em><span
+     style='font-family:Times;font-style:normal'><span style="mso-spacerun:
+     yes">&nbsp;</span><span style="mso-spacerun: yes">&nbsp;</span><b
+     style='mso-bidi-font-weight:normal;mso-bidi-font-weight:normal'>48</b>(1),
+     2000, pp. 102--132</span></em><i style='mso-bidi-font-style:normal;
+     mso-bidi-font-style:normal'> <o:p></o:p></i></span></li>
+</ul>
+
+</span>
+
+<p class=MsoNormal style='margin-left:.5in'><span><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<p class=MsoNormal style='margin-left:.5in'><span><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l20 level1 lfo13;tab-stops:list .5in'><span><span
+     style='font-size:12.0pt'><a href="duco.ps">&quot;Double <span
+     class=SpellE>coset</span> decompositions and computational harmonic
+     analysis on groups,&quot;</a> (w/D. <span class=SpellE>Maslen</span>), <em><span
+     style='font-family:Times'>J. Fourier Analysis and Applications,</span></em><em><span
+     style='font-family:Times;font-style:normal'> <b style='mso-bidi-font-weight:
+     normal;mso-bidi-font-weight:normal'>6</b>(4), 2000</span></em>, pp.
+     349—388<o:p></o:p></span></li>
+</ul>
+
+</span>
+
+<p class=MsoNormal><span><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<p class=MsoListParagraph style='text-indent:-.25in;mso-list:l20 level1 lfo13;
+tab-stops:list .5in'><span><![if !supportLists]><span style='mso-bidi-font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span class=SpellE><span style='font-size:12.0pt;
+mso-bidi-font-family:Helvetica;color:black'>FFTs</span></span><span
+style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'> for tensor
+and vector harmonics on the 2-sphere (with D. Healy, D. <span class=SpellE>Maslen</span>
+and P. <span class=SpellE>Kostelec</span>), <i style='mso-bidi-font-style:normal;
+mso-bidi-font-style:normal'>J. Computational Physics</i>, <b style='mso-bidi-font-weight:
+normal;mso-bidi-font-weight:normal'>162</b>, 2000, pp. 514–535.</span></span><span><span
+style='font-size:12.0pt'><o:p></o:p></span></p>
+
+</span>
+
+<p class=MsoNormal><span><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l20 level1 lfo13;tab-stops:list .5in'><span><span
+     style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>A
+     National Data Center for the Storage and Retrieval of <span class=SpellE>Neuroimaging</span>
+     Data (w<span class=GramE>./</span>J. <span class=SpellE>Aslam</span>, D. <span
+     class=SpellE>Rus</span>, P. <span class=SpellE>Kostelec</span>, J. <span
+     class=SpellE>Grethe</span>, R. <span class=SpellE>Fendrich</span>, S.
+     Grafton, and M. <span class=SpellE>Gazzaniga</span>. Society for
+     Neuroscience Abstracts, <b style='mso-bidi-font-weight:normal;mso-bidi-font-weight:
+     normal'>26</b>(2)<span class=GramE>:2235</span>, 2000</span></span><span><span
+     style='font-size:12.0pt'><o:p></o:p></span></li>
+</ul>
+
+</span>
+
+<p class=MsoNormal><span><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l20 level1 lfo13;tab-stops:list .5in'><span><span
+     style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>Codes
+     and iterative decoding on algebraic expander graphs (w<span class=GramE>./</span>J.
+     Lafferty) <i style='mso-bidi-font-style:normal;mso-bidi-font-style:normal'>ISITA
+     2000</i>.</span></span><span><span style='font-size:12.0pt'><o:p></o:p></span></li>
+</ul>
+
+</span>
+
+<p class=MsoNormal style='margin-left:.5in'><span><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l20 level1 lfo13;tab-stops:list .5in'><span><span
+     style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>Differential
+     Affine Motion Estimation for Medical Image Registration (w<span
+     class=GramE>./</span>S. <span class=SpellE>Periaswamy</span>, J. Weaver,
+     D. Healy, P. <span class=SpellE>Kostelec</span> and H. <span class=SpellE>Farid</span>),
+     presented at SPIE 2000, August 2000.</span></span><span><span
+     style='font-size:12.0pt'><o:p></o:p></span></li>
+</ul>
+
+</span>
+
+<p class=MsoNormal style='margin-left:.5in'><span><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l20 level1 lfo13;tab-stops:list .5in'><span><span
+     style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>A
+     rhomboidal local cosine transform (w/D. Healy and D. Warner), presented at
+     SPIE 2000, August 2000. </span><span style='font-size:12.0pt'><o:p></o:p></span></li>
+</ul>
+
+</span>
+
+<p class=MsoNormal><span><span style='font-size:12.0pt;mso-bidi-font-family:
+Helvetica;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l20 level1 lfo13;tab-stops:list .5in'><span
+     style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>Wreath
+     Product Cyclic Group-Based Convolution: A New Class of <span class=SpellE>Noncommutative</span>
+     Filters (w/G. Mir- <span class=SpellE>chandani</span>, R. Foote, D. Healy
+     and T. Olson) ICASSP 2000, Istanbul, Turkey</span></span><span><span
+     style='font-size:12.0pt'><o:p></o:p></span></li>
+</ul>
+
+</span>
+
+<p class=MsoNormal><span><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<p class=MsoListParagraph style='text-indent:-.25in;mso-list:l20 level1 lfo13;
+tab-stops:list .5in'><span><![if !supportLists]><span style='mso-bidi-font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:12.0pt;mso-bidi-font-family:
+Helvetica;color:black'>A Combinatorial Description of the Spectrum of the <span
+class=SpellE>Tsetlin</span> Library and its Generalization to <span
+class=SpellE>Hyperplane</span> Arrangements (w/P. <span class=SpellE>Bidigare</span>,
+P. Hanlon), <i style='mso-bidi-font-style:normal;mso-bidi-font-style:normal'>Duke
+J. Math<span class=GramE>.,</span></i> <b style='mso-bidi-font-weight:normal;
+mso-bidi-font-weight:normal'>99</b>(1), 1999, pp. 135–174.</span></span><span><span
+style='font-size:12.0pt'><o:p></o:p></span></p>
+
+</span>
+
+<p class=MsoNormalCxSpFirst style='margin-left:.5in;mso-add-space:auto'><span><span
+style='font-size:12.0pt;mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l20 level1 lfo13;tab-stops:list .5in'><span><span
+     style='font-size:12.0pt'><a href="funcfld.ps">&quot;Deciding Finiteness
+     for Matrix Groups over Function Fields&quot;</a> (w/K<span class=GramE>.-</span>S.
+     Tan, R. <span class=SpellE>Beals</span>)<em><span style='font-family:Times'>,
+     </span></span></em></span><i style='mso-bidi-font-style:normal;mso-bidi-font-style:
+     normal'><span><span style='font-size:12.0pt;mso-bidi-font-family:Helvetica;
+     color:black'>Israel J. Math.</span></span></i><span><span
+     style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'> <b
+     style='mso-bidi-font-weight:normal;mso-bidi-font-weight:normal'>109</b>,
+     1999, pp. 93–116.</span></span><span><span style='font-size:12.0pt'><o:p></o:p></span></li>
+</ul>
+
+</span>
+
+<p class=MsoNormal style='margin-left:.5in'><em><span><span style='font-family:
+Times;font-style:normal'><o:p>&nbsp;</o:p></span></em></p>
+
+</span>
+
+<p class=MsoListParagraph style='text-indent:-.25in;mso-list:l20 level1 lfo13;
+tab-stops:list .5in'><span><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:12.0pt;mso-bidi-font-family:
+Helvetica;color:black'>Level <span class=SpellE>spacings</span> for <span
+class=SpellE>Cayley</span> graphs (with J. Lafferty), in <i style='mso-bidi-font-style:
+normal;mso-bidi-font-style:normal'>Emerging Applications of Number Theory</i>,
+D. <span class=SpellE>Hejhal</span> (ed.), Institute for Mathematics and its
+Applications, Volume 109, 1999, pp. 373–386.</span></span><span><o:p></o:p></p>
+
+</span>
+
+<p class=MsoNormal style='margin-left:.5in'><span><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l1 level1 lfo14;tab-stops:list .5in'><span><span
+     style='font-size:12.0pt'><a href="app-fft.ps.gz">&quot;Some applications
+     of generalized <span class=SpellE>FFTs</span>&quot;</a> <em><span
+     style='font-family:Times'>in Proceedings of the DIMACS Workshop on Groups
+     and Computation, June 7-10, 1995 <span class=GramE>eds</span>. L.
+     Finkelstein and W. Kantor, (1997) 329--369. </span></em></span><em><span
+     style='font-family:Times;font-style:normal'><o:p></o:p></span></em></li>
+</ul>
+
+</span>
+
+<p class=MsoNormal style='margin-left:.5in'><span><o:p>&nbsp;</o:p></p>
+
+</span>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l12 level1 lfo15;tab-stops:list .5in'><span><span
+     style='font-size:12.0pt'><a href="dimacs-0.ps">&quot;Generalized <span
+     class=SpellE>FFTs</span> -- A survey of some recent results&quot;</a>
+     (w/D. <span class=SpellE>Maslen</span>) <em><span style='font-family:Times'>Proceedings
+     of the DIMACS Workshop on Groups and Computation, June 7-10, 1995 <span
+     class=GramE>eds</span>. L. Finkelstein and W. Kantor, (1997) 183--237. </span></em></span><em><span
+     style='font-family:Times;font-style:normal'><o:p></o:p></span></em></li>
+</ul>
+
+</span>
+
+<p class=MsoNormal style='margin-left:.5in'><span><o:p>&nbsp;</o:p></p>
+
+</span>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l2 level1 lfo16;tab-stops:list .5in'><span><span
+     style='font-size:12.0pt'><a href="sov-i.ps">&quot;Separation of Variables
+     and the Computation of Fourier Transforms on Finite Groups, I&quot;</a>
+     (w/D. <span class=SpellE>Maslen</span>) <em><span style='font-family:Times'>Journal
+     of the American Math Society, </span></em><em><b style='mso-bidi-font-weight:
+     normal;mso-bidi-font-weight:normal'><span style='font-family:Times;
+     font-style:normal'>1 (</span></b></em><em><span style='font-family:Times;
+     font-style:normal'>10) (1997) 169--214.</span></em><i style='mso-bidi-font-style:
+     normal;mso-bidi-font-style:normal'> </i><o:p></o:p></span></li>
+</ul>
+
+</span>
+
+<p class=MsoNormal style='margin-left:.5in'><span><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l17 level1 lfo17;tab-stops:list .5in'><span><span
+     style='font-size:12.0pt'><a href="24012.ps.gz">&quot;Fast Polynomial
+     Transforms with Applications to Data Analysis for Distance Transitive
+     Graphs&quot;</a> (w/ J. Driscoll and D. Healy) <em><span style='font-family:
+     Times'>SIAM J. Comp. </span></em><em><b style='mso-bidi-font-weight:normal;
+     mso-bidi-font-weight:normal'><span style='font-family:Times;font-style:
+     normal'>26,</span></b></em><em><span style='font-family:Times'> </span></em><em><span
+     style='font-family:Times;font-style:normal'>(1997), pp. 1066--1099.</span></em></span><em><span
+     style='font-family:Times;font-style:normal'><o:p></o:p></span></em></li>
+</ul>
+
+</span>
+
+<p class=MsoNormal style='margin-left:.5in'><em><span><span style='font-size:
+12.0pt;font-family:Times;font-style:normal'><o:p>&nbsp;</o:p></span></em></p>
+
+</span>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l17 level1 lfo17;tab-stops:list .5in'><span><span
+     style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>The
+     *-product in kneading theory (w/ K. <span class=SpellE>Brucks</span>, R. <span
+     class=SpellE>Galeeva</span>, P. <span class=SpellE>Mumbre</span>, and C. <span
+     class=SpellE>Tresser</span>), <span class=SpellE><i style='mso-bidi-font-style:
+     normal;mso-bidi-font-style:normal'>Fundamenta</i></span><i
+     style='mso-bidi-font-style:normal'> Math</i>. <b style='mso-bidi-font-weight:
+     normal;mso-bidi-font-weight:normal'>152</b>, 1997, pp. 189–209.</span></span><span><o:p></o:p></li>
+</ul>
+
+</span>
+
+<p class=MsoNormal><span><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l17 level1 lfo17;tab-stops:list .5in'><span><span
+     style='font-size:12.0pt'>J. Lafferty and D. Rockmore, <a href="stec.ps">&quot;Spectral
+     Techniques for Expander Codes&quot;</a><span class=GramE> <em><span
+     style='font-family:Times'>,</span></em></span><em><span style='font-family:
+     Times'> 1997 STOC</span></em>, pp. 160—167.<o:p></o:p></span></li>
+</ul>
+
+</span>
+
+<p class=MsoNormal><span><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l19 level1 lfo7;tab-stops:list .5in'><span><span
+     style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>A
+     Smooth Non-Rectangular Time-Frequency Segmentation of <span class=GramE>L</span><sup><span>2</span></sup><span>(</span>R</span><sup><span>2</span></sup><span>)
+     (w/D. Warner and D. Healy), <span style="mso-spacerun: yes">&nbsp;</span><i
+     style='mso-bidi-font-style:normal;mso-bidi-font-style:normal'>ICIP </i>’97
+     </span></span><span><span style='font-size:12.0pt'><o:p></o:p></span></li>
+</ul>
+
+</span>
+
+<p class=MsoNormal style='margin-left:.5in'><span><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l17 level1 lfo17;tab-stops:list .5in'><span><span
+     style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>Spectral
+     Techniques for Expander Codes and Generalized Cyclic Codes (with J.
+     Lafferty) in <i style='mso-bidi-font-style:normal;mso-bidi-font-style:
+     normal'>ISIT 97</i> </span></span><span><span style='font-size:12.0pt'><o:p></o:p></span></li>
+</ul>
+
+</span>
+
+<p class=MsoNormal style='margin-left:.5in'><span><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<p class=MsoListParagraph style='text-indent:-.25in;mso-list:l17 level1 lfo17;
+tab-stops:list .5in'><span><![if !supportLists]><span style='mso-bidi-font-size:
+12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:12.0pt;mso-bidi-font-family:
+Helvetica;color:black'>An FFT for the 2-sphere and applications (w/ D. Healy
+and S. Moore), in <i style='mso-bidi-font-style:normal;mso-bidi-font-style:
+normal'>ICASSP 96</i> </span></span><b style='mso-bidi-font-weight:normal;
+mso-bidi-font-weight:normal'><span><span style='font-size:12.0pt'><o:p></o:p></span></b></p>
+
+</span>
+
+<p class=MsoNormalCxSpFirst style='margin-left:.5in;mso-add-space:auto'><b
+style='mso-bidi-font-weight:normal;mso-bidi-font-weight:normal'><span><span
+style='font-size:12.0pt;mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></b></p>
+
+</span>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormalCxSpMiddle style='mso-list:l17 level1 lfo17;tab-stops:list .5in'><span
+     style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'><span>Wreath
+     Products for Image Processing (w/D. Healy and T. Olson) in <i
+     style='mso-bidi-font-style:normal;mso-bidi-font-style:normal'>ICASSP 96</i>
+     </span></span><b style='mso-bidi-font-weight:normal;mso-bidi-font-weight:
+     normal'><span><span style='font-size:12.0pt;mso-bidi-font-family:"Times New Roman"'><o:p></o:p></span></b></li>
+</ul>
+
+</span>
+
+<p class=MsoNormalCxSpMiddle style='margin-left:.5in;mso-add-space:auto;
+tab-stops:list .5in'><b style='mso-bidi-font-weight:normal;mso-bidi-font-weight:
+normal'><span><span style='font-size:12.0pt;mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></b></p>
+
+</span>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormalCxSpMiddle style='mso-list:l17 level1 lfo17;tab-stops:list .5in'><span
+     style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'><span>An
+     FFT for the 2-sphere and imaging applications (with D. Healy and S. Moore)
+     in <i style='mso-bidi-font-style:normal;mso-bidi-font-style:normal'>IMDSP96</i></span></span><b
+     style='mso-bidi-font-weight:normal;mso-bidi-font-weight:normal'><span><span
+     style='font-size:12.0pt;mso-bidi-font-family:"Times New Roman"'><o:p></o:p></span></b></li>
+</ul>
+
+</span>
+
+<p class=MsoNormal style='margin-left:.5in'><span><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l9 level1 lfo18;tab-stops:list .5in'><span><span
+     style='font-size:12.0pt'><span style="mso-spacerun: yes">&nbsp;</span><a
+     href="nwr0.ps">&quot;Fast Fourier Transforms for Wreath Products&quot;</a><em><span
+     style='font-family:Times'>, J. Applied and Computational Harmonic
+     Analysis, 2, (1995) 279--292.</span></em> <o:p></o:p></span></li>
+</ul>
+
+</span>
+
+<p class=MsoNormal style='margin-left:.5in'><span><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l0 level1 lfo19;tab-stops:list .5in'><span><span
+     style='font-size:12.0pt'><a href="newjohn.ps">&quot;Numerical
+     Investigation of the Spectrum for Certain Families of <span class=SpellE>Cayley</span>
+     Graphs&quot;</a> (w/ J. Lafferty) <em><span style='font-family:Times'>DIMACS
+     Series in Disc. Math. <span class=GramE>and</span> <span class=SpellE>Theor</span>.
+     Comp. Sci., Volume 10, J. Friedman, ed., (1993), 63-73. (Note: the
+     postscript is WITHOUT the figures. We are happy to provide <span
+     class=GramE>reprints which</span> contain them.)</span></em> <o:p></o:p></span></li>
+</ul>
+
+</span>
+
+<p class=MsoNormal style='margin-left:.5in'><span><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l10 level1 lfo20;tab-stops:list .5in'><span><span
+     style='font-size:12.0pt'><span style="mso-spacerun: yes">&nbsp;</span><a
+     href="flgnz.ps">&quot;A Note on the Order of Finite Subgroups of <span
+     class=GramE>GL(</span><span class=SpellE>n,Z</span>)&quot;</a> (w/ K.-S.
+     Tan)<em><span style='font-family:Times'>, Arch. <span class=SpellE>der</span>
+     Math., <span class=SpellE>Vol</span> 64, 283-288 (1995) </span></em></span><em><span
+     style='font-family:Times;font-style:normal'><o:p></o:p></span></em></li>
+</ul>
+
+</span>
+
+<p class=MsoNormal style='margin-left:.5in'><em><span><span style='font-family:
+Times;font-style:normal'><o:p>&nbsp;</o:p></span></em></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l10 level1 lfo20;tab-stops:list .5in'><em><span
+     style='font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Times;
+     font-style:normal'>Adapted diameters and the efficient computation of
+     Fourier transforms on finite groups (w/D. <span class=SpellE>Maslen</span>),
+     </span></em><em><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+     font-family:Times'>Proceedings of 1995 ACM-SIAM Symposium on Discrete
+     Algorithms</span></em><em><span style='font-size:12.0pt;mso-bidi-font-size:
+     10.0pt;font-family:Times;font-style:normal'>, pp. 253--262.<o:p></o:p></span></em></li>
+</ul>
+
+<p class=MsoNormal style='margin-left:.5in'><em><span style='font-size:12.0pt;
+font-family:Times;font-style:normal'><o:p>&nbsp;</o:p></span></em></p>
+
+</span>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l10 level1 lfo20;tab-stops:list .5in'><span><span
+     style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>Fast
+     Fourier inversion for finite groups. <i style='mso-bidi-font-style:normal;
+     mso-bidi-font-style:normal'>J. <span class=GramE>of</span> Assoc. of Comp.
+     Mach</i>., <b style='mso-bidi-font-weight:normal;mso-bidi-font-weight:
+     normal'>41</b>(1) (1994) 31-66.</span></span><span><o:p></o:p></li>
+</ul>
+
+</span>
+
+<p class=MsoNormal style='margin-left:.5in'><span><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l8 level1 lfo21;tab-stops:list .5in'><span><span
+     style='font-size:12.0pt'><a href="dimpaper.ps">&quot;Efficient Computation
+     of <span class=SpellE>Isotypic</span> Projections for the Symmetric
+     Group&quot;</a> (w/P. <span class=SpellE>Diaconis</span>)<em><span
+     style='font-family:Times'>, DIMACS Series in Disc. Math. <span
+     class=GramE>and</span> <span class=SpellE>Theor</span>. Comp. Sci., Volume
+     11, L. Finkelstein and W. Kantor (eds.), (1993), 87-104.</span></em> <o:p></o:p></span></li>
+</ul>
+
+</span>
+
+<p class=MsoNormal style='margin-left:.5in'><em><span><span style='font-family:
+Times;font-style:normal'><o:p>&nbsp;</o:p></span></em></p>
+
+</span>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l10 level1 lfo20;tab-stops:list .5in'><span><span
+     style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>Deciding
+     finiteness of matrix groups in deterministic polynomial time (w/L. <span
+     class=SpellE>Babai</span> and R. <span class=SpellE>Beals</span>). <i
+     style='mso-bidi-font-style:normal;mso-bidi-font-style:normal'>Proc. of
+     1993 ISSAC</i>, 117-126.</span></span><span><o:p></o:p></li>
+</ul>
+
+</span>
+
+<p class=MsoNormal style='margin-left:.5in'><span><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l10 level1 lfo20;tab-stops:list .5in'><span><span
+     style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>Symmetry
+     stabilization for fast discrete monomial transforms and polynomial
+     evaluation. (<span class=GramE>w</span>/S. Moore and D. Healy). <i
+     style='mso-bidi-font-style:normal;mso-bidi-font-style:normal'>Lin. Alg.
+     and Appl.,</i> <b style='mso-bidi-font-weight:normal;mso-bidi-font-weight:
+     normal'>192</b> (1993) 249-299.</span></span><em><span><span
+     style='font-family:Times;font-style:normal'><o:p></o:p></span></em></li>
+</ul>
+
+</span>
+
+<p class=MsoNormal><em><span><span style='font-size:12.0pt;font-family:Times;
+font-style:normal'><o:p>&nbsp;</o:p></span></em></p>
+
+</span>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l22 level1 lfo22;tab-stops:list .5in'><span><span
+     style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>Renormalization
+     for the n-torus. (<span class=GramE>w</span>/V. <span class=SpellE>Baladi</span>,
+     N. <span class=SpellE>Tongring</span>, and C. <span class=SpellE>Tresser</span>).
+     <i style='mso-bidi-font-style:normal;mso-bidi-font-style:normal'>Nonlinearity</i>,
+     <b style='mso-bidi-font-weight:normal;mso-bidi-font-weight:normal'>5 </b>(1992),
+     1111-1136.</span></span><span><o:p></o:p></li>
+</ul>
+
+</span>
+
+<p class=MsoNormal><span><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l22 level1 lfo22;tab-stops:list .5in'><span><span
+     style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>Computation
+     of L-series for elliptic curves over function fields, (w/ K<span
+     class=GramE>.-</span>S. Tan), <span class=SpellE><i style='mso-bidi-font-style:
+     normal;mso-bidi-font-style:normal'>Crelle’s</i></span><i style='mso-bidi-font-style:
+     normal'> Jour.,</i> <b style='mso-bidi-font-weight:normal;mso-bidi-font-weight:
+     normal'>424 </b>(1992), 107-135.</span></span><span><span
+     style='font-size:12.0pt'><o:p></o:p></span></li>
+</ul>
+
+</span>
+
+<p class=MsoNormal style='margin-left:.5in'><span><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l22 level1 lfo22;tab-stops:list .5in'><span><span
+     style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>Even
+     n-colorings of the integers, flows on the n-torus, continued fractions and
+     renormalization. (<span class=GramE>w</span>/R. Siegel, N. <span
+     class=SpellE>Tongring</span>, and C. <span class=SpellE>Tresser</span>) <i
+     style='mso-bidi-font-style:normal;mso-bidi-font-style:normal'>Chaos</i>, 1
+     (1991), 25-30.</span></span><span><span style='font-size:12.0pt'><o:p></o:p></span></li>
+</ul>
+
+</span>
+
+<p class=MsoNormal><span><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l22 level1 lfo22;tab-stops:list .5in'><span><span
+     style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>Efficient
+     computation of Fourier transforms on finite groups, (w/P. <span
+     class=SpellE>Diaconis</span>), <i style='mso-bidi-font-style:normal;
+     mso-bidi-font-style:normal'>Journal of the American Mathematical Society</i>,
+     <b style='mso-bidi-font-weight:normal;mso-bidi-font-weight:normal'>3 </b>(1990),
+     297-332</span></span><span><span style='font-size:12.0pt'><o:p></o:p></span></li>
+</ul>
+
+</span>
+
+<p class=MsoNormal style='margin-left:.5in'><span><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l22 level1 lfo22;tab-stops:list .5in'><span><span
+     style='font-size:12.0pt'><a href="abf1.ps">&quot;Fast Fourier Analysis for
+     <span class=SpellE>Abelian</span> Group Extensions&quot;</a><span
+     class=GramE> <em><span style='font-family:Times'>,</span></em></span><em><span
+     style='font-family:Times'> Adv. in Appl. Math., <span class=SpellE>Vol</span>
+     11, 164-204 (1990) </span></em></span><em><span style='font-family:Times;
+     font-style:normal'><o:p></o:p></span></em></li>
+</ul>
+
+</span>
+
+<p class=MsoNormal style='margin-left:.5in'><span><o:p>&nbsp;</o:p></p>
+
+</span>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l19 level1 lfo7;tab-stops:list .5in'><span><span
+     style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>Computation
+     of Fourier transforms on the symmetric group, Proceedings of 1989
+     Conference on Computers</span></span><span><span style='font-size:12.0pt'>
+     </span></span><span><span style='font-size:12.0pt;mso-bidi-font-family:
+     Helvetica;color:black'>and Mathematics, Springer-<span class=SpellE>Verlag</span>,
+     NY, 1989, 156-165.</span></span><em><span><span style='font-family:Times;
+     font-style:normal'><o:p></o:p></span></em></li>
+</ul>
+
+</span>
+
+<p class=MsoNormal><span><o:p>&nbsp;</o:p></p>
+
+</span>
+
+<p class=MsoNormal><em><b style='mso-bidi-font-weight:normal;mso-bidi-font-weight:
+normal'><span><span style='font-size:14.0pt;font-family:Times;font-style:normal'><o:p>&nbsp;</o:p></span></b></em></p>
+
+</span>
+
+<p class=MsoNormal><em><b style='mso-bidi-font-weight:normal;mso-bidi-font-weight:
+normal'><span><span style='font-size:14.0pt;font-family:Times;font-style:normal'>Preprints/Papers
+in Revision<o:p></o:p></span></b></em></p>
+
+</span>
+
+<p class=MsoListParagraph style='text-indent:-.25in;mso-pagination:none;
+mso-list:l19 level1 lfo7;tab-stops:28.0pt list .5in left 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><![if !supportLists]><span
+style='mso-bidi-font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;color:black'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>Stability
+of the world trade network over time: an extinction analysis (w/ N. <span
+class=SpellE>Foti</span>, and S. <span class=SpellE>Pauls</span>), in revision.<o:p></o:p></span></p>
+
+</span>
+
+<p class=MsoNormalCxSpFirst style='margin-left:.5in;mso-add-space:auto;
+text-indent:-.25in;mso-pagination:none;mso-list:l19 level1 lfo7;tab-stops:28.0pt list .5in left 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><![if !supportLists]><span
+style='mso-bidi-font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;color:black'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>Partition
+decoupling for multi-gene analysis of gene expression profiling data (w/R.
+Braun, G. <span class=SpellE>Leibon</span>, and Scott <span class=SpellE>Pauls</span>),
+in revision.<o:p></o:p></span></p>
+
+</span>
+
+<p class=MsoNormalCxSpMiddle style='margin-left:.5in;mso-add-space:auto;
+text-indent:-.25in;mso-pagination:none;mso-list:l19 level1 lfo7;tab-stops:28.0pt list .5in left 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><![if !supportLists]><span
+style='mso-bidi-font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;color:black'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>Partition decomposition
+for roll call data (w/M. Herron, G. <span class=SpellE>Leibon</span>, S. <span
+class=SpellE>Pauls</span>, and R. <span class=SpellE>Savell</span>), in
+revision.<o:p></o:p></span></p>
+
+</span>
+
+<p class=MsoNormalCxSpMiddle style='margin-left:.5in;mso-add-space:auto;
+text-indent:-.25in;mso-pagination:none;mso-list:l19 level1 lfo7;tab-stops:28.0pt list .5in left 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><![if !supportLists]><span
+style='mso-bidi-font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;color:black'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>Robustness
+and contagion in the international financial network (w/T. <span class=SpellE>Dette</span>
+and S. <span class=SpellE>Pauls</span>), in revision<o:p></o:p></span></p>
+
+</span>
+
+<p class=MsoNormalCxSpMiddle style='margin-left:.5in;mso-add-space:auto;
+text-indent:-.25in;mso-pagination:none;mso-list:l19 level1 lfo7;tab-stops:28.0pt list .5in left 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><![if !supportLists]><span
+style='mso-bidi-font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;color:black'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>A simple
+computational method for the identification of disease- associated loci in
+complex pedigrees” (w<span class=GramE>./</span>M. <span class=SpellE>Pollak</span>
+and G. <span class=SpellE>Leibon</span>),, arXiv:0710.5625.<o:p></o:p></span></p>
+
+</span>
+
+<p class=MsoNormalCxSpMiddle style='margin-left:.5in;mso-add-space:auto;
+text-indent:-.25in;mso-pagination:none;mso-list:l19 level1 lfo7;tab-stops:28.0pt list .5in left 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><![if !supportLists]><span
+style='mso-bidi-font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;color:black'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-size:12.0pt;mso-bidi-font-family:"Times New Roman"'>Data Mining and
+Network Analysis in the Life and Social Sciences: Potential Opportunities for
+the <span class=SpellE>DoD</span> and National Security, in IDA Paper P-3704,
+Defense Science Study Group 2000-2001 Papers 1-11,</span></span><span><span
+style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'><o:p></o:p></span></p>
+
+</span>
+
+<p class=MsoNormalCxSpMiddle style='margin-left:.5in;mso-add-space:auto;
+text-indent:-.25in;mso-pagination:none;mso-list:l19 level1 lfo7;tab-stops:28.0pt list .5in left 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><![if !supportLists]><span
+style='mso-bidi-font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;color:black'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-size:12.0pt;mso-bidi-font-family:"Times New Roman"'>December 2002.</span></span><span><span
+style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'><o:p></o:p></span></p>
+
+</span>
+
+<p class=MsoNormalCxSpMiddle style='margin-left:.5in;mso-add-space:auto;
+text-indent:-.25in;mso-pagination:none;mso-list:l19 level1 lfo7;tab-stops:28.0pt list .5in left 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><![if !supportLists]><span
+style='mso-bidi-font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;color:black'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>Ruffles and
+the turning point algebra (with P. Doyle), number to be assigned.<o:p></o:p></span></p>
+
+</span>
+
+<p class=MsoNormalCxSpMiddle style='margin-left:.5in;mso-add-space:auto;
+text-indent:-.25in;mso-pagination:none;mso-list:l19 level1 lfo7;tab-stops:28.0pt list .5in left 56.0pt 84.0pt 112.0pt 140.0pt 168.0pt 196.0pt 224.0pt 3.5in 280.0pt 308.0pt 336.0pt;
+mso-layout-grid-align:none;text-autospace:none'><span><![if !supportLists]><em><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol;font-style:normal'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span></span></em><![endif]><span
+style='font-size:12.0pt;mso-bidi-font-family:Helvetica;color:black'>Computation
+of Fourier transforms on the symmetric group, Proceedings of 1989 Conference on
+Computers</span></span><span><span style='font-size:12.0pt;mso-bidi-font-family:
+"Times New Roman"'> </span></span><span><span style='font-size:12.0pt;
+mso-bidi-font-family:Helvetica;color:black'>and Mathematics, Springer-<span
+class=SpellE>Verlag</span>, NY, 1989, 156-165.</span><em><span
+style='font-family:Times;font-style:normal'><o:p></o:p></span></em></p>
+
+</span>
+
+<p class=MsoNormal><em><b style='mso-bidi-font-weight:normal;mso-bidi-font-weight:
+normal'><span><span style='font-size:14.0pt;font-family:Times;font-style:normal'><o:p>&nbsp;</o:p></span></b></em></p>
+
+</span>
+
+<p class=MsoNormal><span><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+</span>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal;mso-bidi-font-weight:
+normal'><span><span style='font-size:14.0pt'>Expository Work<o:p></o:p></span></b></p>
+
+</span>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal;mso-bidi-font-weight:
+normal'><span><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+</span>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l6 level1 lfo23;tab-stops:list .5in'><span><span
+     style='font-size:12.0pt'>D. Rockmore, &quot;Are you my
+     Mother...Tongue?&quot; <a href="new-lang-evo.pdf">PDF version</a> <em><span
+     style='font-family:Times'>SFI Bulletin, to appear</span></em> <o:p></o:p></span></li>
+ </span>
+ <li class=MsoNormal style='mso-list:l6 level1 lfo23;tab-stops:list .5in'><span><span
+     style='font-size:12.0pt'>D. Rockmore, &quot;Network Research: Thinking
+     about the web requires a web of thinking&quot; <a
+     href="SFI-Networks-Final.pdf">PDF version</a> <em><span style='font-family:
+     Times'>For SFI End of year report, Spring 2003</span></em> <o:p></o:p></span></li>
+ </span>
+ <li class=MsoNormal style='mso-list:l6 level1 lfo23;tab-stops:list .5in'><span><span
+     style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></li>
+ </span>
+ <li class=MsoNormal style='mso-list:l6 level1 lfo23;tab-stops:list .5in'><span><span
+     style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></li>
+</ul>
+
+</span>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal;mso-bidi-font-weight:
+normal'><span><span style='font-size:12.0pt'><o:p>&nbsp;</o:p></span></b></p>
+
+</span>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+
+<h4><a href="http://coos.dartmouth.edu/~zhu/faculty/faculty.html">Back to
+Faculty List</a> </h4>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Cambria;
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Cambria;
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin'><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

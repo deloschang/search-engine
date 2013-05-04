@@ -1,0 +1,1797 @@
+http://www.cs.dartmouth.edu/news.php
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<title>Dartmouth Computer Science:  News</title>
+	<style type="text/css" media="all">@import url(dartmouthcs.css);</style>		
+	
+<body id="home">
+
+
+
+<div id="header">
+
+	<h1>Dartmouth Computer Science</h1>
+		
+<!-- Google CSE Search Box Begins  -->
+<form action="http://www.google.com/cse" id="searchbox_001920968608620340798:tkrx06hp9rs">
+  <input type="hidden" name="cx" value="001920968608620340798:tkrx06hp9rs" />
+  <input type="text" name="q" size="25" />
+  <input type="submit" name="sa" value="Search" />
+</form>
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=searchbox_001920968608620340798%3Atkrx06hp9rs"></script>
+<!-- Google CSE Search Box Ends -->
+
+<!--
+	<form action="http://search.dartmouth.edu/query.html" method="get" name="seek">
+
+	<div>
+	<input type="hidden" name="qp" value="+url:http://www.cs.dartmouth.edu/"  />
+	<input type="hidden" name="qs" value="" /><input type="hidden"  name="qc" value="" />
+	<input type="hidden" name="ws" value="0" /><input type="hidden" name="qm" value="0" />
+	<input type="hidden" name="st" value="1" /><input type="hidden"  name="nh" value="10" />
+	<input type="hidden" name="lk" value="1" /><input type="hidden" name="rf" value="0" />
+	<input type="hidden" name="oq" value="" /><input type="hidden"  name="rq" value="0" />
+	<input type="text" id="search_dept" name="qt" value="" size="10"  maxlength="100" />&nbsp;
+	<input 	class="button" type="submit"  name="search" value="Search" />  
+	</div>
+
+	</form>
+-->	
+	
+	
+<!--		
+	<form method="get" action="http://www.htmldog.com/search/">
+		<div>
+		<input type="hidden" name="sp-a" value="sp1002e60e" />
+		<input type="hidden" name="sp-f" value="UTF-8" />
+		<label for="morombe">Search: </label>
+		<input type="text" name="sp-q" id="morombe" />
+		<input type="submit" value="Search" class="button" />
+		</div>
+	</form>
+-->	
+	
+</div>
+
+
+
+<div id="primaryNav">
+
+<ul>
+	<li>General
+		<ul>
+		<li> <a href="http://www.cs.dartmouth.edu/index.php">Home</a></li>
+		<li> <a href="http://www.cs.dartmouth.edu/about.php">About</a></li>
+		<!--li> <a href="http://www.cs.dartmouth.edu/calendar.php">Calendar</a></li-->
+		<li> <a href="http://www.cs.dartmouth.edu/news.php">News</a></li>
+		<li> <a href="http://www.cs.dartmouth.edu/people.php">People</a></li>
+		<li> <a href="http://www.cs.dartmouth.edu/jobs.php">Jobs</a></li>
+		<li> <a href="http://www.cs.dartmouth.edu/contact.php">Contact</a></li>
+		<li> <a href="http://www.cs.dartmouth.edu/internal/">Internal</a>
+		</ul>	
+	</li>
+
+	<li>Research
+	<ul>
+		<li><a href="http://www.cs.dartmouth.edu/research.php">Labs and Projects</a></li>
+		<li><a href="http://www.cs.dartmouth.edu/seminar.php">Colloquium</a></li> 
+		<li><a href="http://www.cs.dartmouth.edu/books.php">Books by Faculty</a></li>
+		<li><a href="http://www.cs.dartmouth.edu/reports">Technical Reports</a></li>
+	</ul>
+	</li>
+	
+	<li>Education
+	<ul>
+		<li><a href="http://www.cs.dartmouth.edu/ug.php">Undergraduate Programs</a></li>
+		<li><a href="http://www.cs.dartmouth.edu/gr.php">Graduate Programs</a></li>
+		<li><a href="http://www.cs.dartmouth.edu/ug_courses.php">Undergraduate Courses</a></li>
+		<li><a href="http://www.cs.dartmouth.edu/gr_courses.php">Graduate Courses</a></li> 
+		<li><a href="http://www.cs.dartmouth.edu/~robotics/summercamp">Summer Robotics Camp</a></li>	
+
+	</ul></li>
+
+	<li>Admissions
+		<ul>
+		<li> <a href="http://www.dartmouth.edu/apply">Undergraduate</a></li>
+		<li> <a href="http://www.cs.dartmouth.edu/admit_ms.php">M.S. Admissions</a></li>
+		<li> <a href="http://www.cs.dartmouth.edu/admit_phd.php">Ph.D. Admissions</a></li>
+		<li> <a href="http://www.cs.dartmouth.edu/~mdphd">M.D.-Ph.D. in CompBio</a></li>
+		<li> <a href="http://www.cs.dartmouth.edu/gr_life.php">Graduate Student Life</a></li>
+		</ul>
+	<ul>
+
+	</ul></li>
+	
+</ul>
+
+</div>
+	
+
+
+<div id="section">
+	
+	<div id="content">
+
+	<h1>News</h1>
+		<TABLE cellpadding=0 cellspacing=2>
+
+       <TR valign = "middle">
+	<TD> <img src =
+	   "content/faculty_images/jayanti.png" width = "85">
+	</td>
+	<TD>
+	(6/25/10)
+<a href="http://www.cs.dartmouth.edu/~prasad/">Prof. Prasad Jayanti</a> was recently named the James Frank Family Professor. 
+	</td>
+	</tr>
+	
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/news_images/kbailey.jpg" width = "85">
+	</td>
+	<TD>
+	(5/25/10)
+	CS major Katelin Bailey won 1st place in the 
+    <a href="http://www.dartmouth.edu/~wisp/wetterhahn/sigmaxi.html">
+    Sigma Xi Christopher Reed competition</a>
+    at the <a href = "http://www.dartmouth.edu/~wisp/wetterhahn/">
+    Wetterhahn Science Poster Symposium</a>.
+	</td>
+	</tr>
+	
+       <TR valign = "middle">
+	<TD> <img src =
+	   "content/faculty_images/kotz.png" width = "85">
+	</td>
+	<TD>
+	(5/7/10)
+<a href="http://www.cs.dartmouth.edu/~dfk/">Prof. David Kotz</a> and 
+<a href="http://www.dartmouth.edu/~socy/faculty/anthony.html">
+Prof. Denise Anthony</a> are part of a new research endeavor funded by the
+U.S. Department of Health and Human Services (HHS) focused on security and
+privacy in healthcare. The 12-institution consortium, led by the University
+of Illinois at Urbana-Champaign, is one of four projects funded by HHS as
+part of a $60 million initiative called Strategic Healthcare Information
+Technology Advanced Research Projects (SHARP). Dartmouth will participate in
+the SHARPS group focused on security.
+	<a href="http://www.dartmouth.edu/~news/releases/2010/05/07.html"> 
+	Read more here. </a>
+	</td>
+	</tr>
+	
+
+</TABLE>
+
+
+
+	  
+
+<TABLE cellpadding=0 cellspacing=2>
+
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/news_images/beast.jpg" width = "85">
+	</td>
+	<TD>
+	(5/7/10)
+	The Daily Beast Recognizes Dartmouth as a Top Producer of Tech Talent.
+	<a href="http://speakingof.dartmouth.edu/issues/051310/tech.html"> 
+	Read more here. </a>
+	</td>
+	</tr>
+	
+         <TR valign = "middle">
+	<TD> <img src =
+	   "content/faculty_images/farid.png" width = "85">
+	</td>
+	<TD>
+	(4/27/10)
+	<a href="http://www.cs.dartmouth.edu/~farid/"> 
+	Prof. Hany Farid </a> was awarded a 2010 Excellence in Science and Technology from the University at Albany.
+	<a href="http://www.albany.edu/news/release_9384.php"> 
+	Read more here. </a>
+	</td>
+	</tr>
+	
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/faculty_images/torresani.png" width = "85">
+	</td>
+	<TD>
+	(3/24/10)
+	<a href="http://www.cs.dartmouth.edu/~lorenzo/"> 
+	Prof. Lorenzo Torresani </a> wins an NSF CAREER award.
+	</td>
+	</tr>
+		
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/faculty_images/smith.png" width = "85">
+	</td>
+	<TD>
+	(01/26/10 - update)
+	<a href="http://www.cs.dartmouth.edu/~sws/"> 
+	Prof. Sean Smith </a> and his group will be playing a major role in an initiative
+	to secure the power grid.
+	Read more 
+	<a href="http://www.iti.illinois.edu/news/press-releases/us-departments-energy-and-homeland-security-establish-major-resilient-smart-grid"> 
+	here </a> 
+	and 
+	<a href="http://www.dartmouth.edu/~news/releases/2010/01/26.html"> 
+	here
+	</a>
+	.
+	</td>
+	</tr>
+	
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/faculty_images/farid.png" width = "85">
+	</td>
+	<TD>
+	(12/21/09)
+	<a href="http://www.cs.dartmouth.edu/~farid/"> 
+	Prof. Hany Farid </a> helps in halting the spread of child pornography.
+	<a href="http://www.dartmouth.edu/~news/releases/2009/12/16.html"> 
+	Read more here. </a>
+	</td>
+	</tr>
+	
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/faculty_images/cormen.png" width = "85">
+	</td>
+	<TD>
+	(11/09/09)
+	<a href="http://www.cs.dartmouth.edu/~thc/"> 
+	Prof. Tom Cormen </a> has been designated an ACM Distinguished Educator.
+	<a href="http://awards.acm.org/homepage.cfm?awd=157"> 
+	Read more here. </a>
+	</td>
+	</tr>
+	
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/faculty_images/farid.png" width = "85">
+	</td>
+	<TD>
+	(11/08/09)
+	<a href="http://www.cs.dartmouth.edu/~farid/"> 
+	Prof. Hany Farid </a> finds that iconic Oswald photo was not faked.
+	<a href="http://www.dartmouth.edu/~news/releases/2009/11/05.html"> 
+	Read more here. </a>
+	</td>
+	</tr>
+
+         <TR valign = "middle">
+	<TD> <img src =
+	   "content/faculty_images/choudhury.png" width = "85">
+	</td>
+	<TD>
+	(11/08/09) 
+	<a href="http://www.cs.dartmouth.edu/~tanzeem/"> 
+	Prof. Tanzeem Choudhury </a> has been named a TEDIndia Fellow for 2009.
+	<a href="http://www.dartmouth.edu/~vox/0910/11/kudos.html"> 
+	Read more here. </a>
+	</td>
+	</tr>
+	
+       <TR valign = "middle">
+	<TD> <img src =
+	   "content/faculty_images/kotz.png" width = "85">
+	</td>
+	<TD>
+	(08/05/09) 
+	Dartmouth has received a $3 million grant from the National Science 
+	Foundation for research to develop secure and trustworthy computing systems 
+	for healthcare settings. 
+	<a href="http://www.dartmouth.edu/~news/releases/2009/08/05.html"> 
+	Read more here. </a>
+	</td>
+	</tr>
+	
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/faculty_images/chakrabarti.png" width = "85">
+	</td>
+	<TD>
+	(07/10/09) 
+	<a href = "http://www.cs.dartmouth.edu/~ac/">
+	Prof. Amit Chakrabarti</a> was selected as the 2009 recipient of the 
+	Karen E. Wetterhahn Memorial Award for Distinguished Creative or 
+	Scholarly Achievement.
+	</td>
+	</tr>
+	
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/news_images/kemeny.png" width = "85">
+	</td>
+	<TD>
+	(06/10/09) 
+	We are pleased to
+	announce the winners of the 
+	<a href = "http://www.cs.dartmouth.edu/newsinfo/kemeny/">41st
+	  Annual John G. Kemeny Computing Prize for Excellence in 
+	Undergraduate Computing</a>.  
+	</td>
+	</tr>
+	
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/faculty_images/torresani.png" width = "85">
+	</td>
+	<TD>
+	(05/28/09) 
+	<a href =
+	"http://www.cs.dartmouth.edu/~lorenzo/">Prof. Lorenzo 
+	Torresani</a> has received an <em>Outstanding Faculty Reviewer
+	Award</em> from the <a href =
+	"http://cvpr2009.wordpress.com/">IEEE Computer Society
+	Conference on Computer Vision and Pattern Recognition (CVPR)</a>,
+	2009.  
+	</td>
+	</tr> 
+
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/faculty_images/chakrabarti.png" width = "85">
+	</td>
+	<TD>
+	(07/10/09) 
+	<a href = "http://www.cs.dartmouth.edu/~ac/">
+	Prof. Amit Chakrabarti</a> was selected as the 2009 recipient of the 
+	Karen E. Wetterhahn Memorial Award for Distinguished Creative or 
+	Scholarly Achievement.
+	</td>
+	</tr>
+
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/news_images/kemeny.png" width = "85">
+	</td>
+	<TD>
+	(05/26/09) The competition for the 
+	<a href = "http://www.cs.dartmouth.edu/newsinfo/kemeny/">41st
+	Annual John G. Kemeny Computing Prize</a> for Dartmouth
+	undergraduates is now open.
+	The Kemeny prize awards innovative uses of computing and is open
+	to all majors.  All entries must be submitted by 
+	<em>Noon Monday June 3, 2009</em>.  
+	Good luck!
+	</td>
+	</tr>
+
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/colloquium_images/johnson.png">
+	</td>
+	<TD>
+	(05/26/09) Our last 
+	<a href = "seminar.php">Colloquium</a>
+	of the year features our very own
+	<a href =
+	"http://www.mit.edu/~kimo/">Kimo Johnson</a>
+	from 
+	<a href =
+	"http://www.mit.edu/">MIT</a> and
+	<a href = "http://www.adobe.com/technology/">Adobe Advanced
+	  Technology Labs</a>.  
+	His talk is titled 
+	<em>Improving faked images:  a year out of grad school, I've
+	turned to the dark side</em>.  
+	The colloquium is on Wednesday in 
+	<a href = "calendar.php">Moore B03 at 4:30
+	  PM</a> following the Weekly Tea at 4 PM.
+	</td>
+	</tr>
+
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/colloquium_images/picard.png">
+	</td>
+	<TD>
+	(05/18/09) This week's 
+	<a href = "seminar.php">Colloquium</a>
+	features 
+	<a href =
+	"http://web.media.mit.edu/~picard/">Prof. Rosalind Picard</a>
+	of 
+	<a href =
+	"http://web.media.mit.edu/">The MIT Media Lab</a>.
+	She will be speaking on 
+	<em>Emotional Intelligence Technology and Autism</em>.   
+	The colloquium is on Wednesday in 
+	<a href = "calendar.php">Moore B03 at 4:30
+	  PM</a> following the Weekly Tea at 4 PM.
+	This talk is jointly sponsored with 
+	<a href =
+	"http://leopard.dartmouth.edu/groups/digitalhumanities/">Digital
+	Humanities</a> at Dartmouth.  
+	</td>
+	</tr>  
+
+  <TR valign = "middle">
+    <TD> <img src =
+	      "content/faculty_images/kotz.png">
+    </td>
+    <TD>
+      (05/13/09) 
+      <a href =
+	 "http://www.cs.dartmouth.edu/~dfk/">
+	Prof. David Kotz</a> has been appointed as the new 
+      <a href = "http://www.dartmouth.edu/~dof/sciences.html">Associate Dean for
+      the Sciences</a>.  
+      He will begin his four-year term on August 1, 2009.  
+    </td>
+  </tr>
+
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/colloquium_images/isbister.png">
+	</td>
+	<TD>
+	(05/11/09) This week's 
+	<a href = "seminar.php">Colloquium</a>
+	features 
+	<a href =
+	"http://www.katherineinterface.com/">Prof. Katherine
+	Isbister</a>
+	of 
+	<a href =
+	"http://www.poly.edu/cse/index.php">Polytechnic Institute of
+	New York University</a>.
+	Her talk is titled 
+	<em>Touchy Feely Games: Broadening Designers' Social and
+	Emotional Palette</em>.   
+	The colloquium is on Wednesday in 
+	<a href = "calendar.php">Moore B03 at 4:30
+	  PM</a> following the Weekly Tea at 4 PM.
+	This talk is jointly sponsored with 
+	<a href =
+	"http://leopard.dartmouth.edu/groups/digitalhumanities/">Digital
+	Humanities</a> at Dartmouth.  
+	</td>
+	</tr>
+
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/news_images/sinclair.png">
+	</td>
+	<TD>
+	(05/05/09) PhD candidate 
+	<a href = "http://www.cs.dartmouth.edu/~sinclair/">Sara
+	  "Scout" Sinclair</a> has been awarded a 2009 Google
+	<a href =
+	"http://googleforstudents.blogspot.com/2009/04/announcing-2009-us-anita-borg-scholars.html">Anita
+	Borg Scholarship</a>.  
+	Scout is a member of the 
+	<a href = "http://www.dartmouth.edu/~pkilab/">Dartmouth PKI/Trust
+	Lab</a> under the direction of <a href = "~sws">Prof. Sean Smith</a>.
+	The lab focuses on developing use of Public Key Infrastructure
+	in Academic computing.
+	</tr>
+
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/colloquium_images/cybenko.png">
+	</td>
+	<TD>
+	(05/04/09) This week's 
+	<a href = "seminar.php">Colloquium</a>
+	features 
+	<a href =
+	"http://actcomm.dartmouth.edu/gvc/">Prof. George
+	Cybenko</a>
+	of 
+	<a href =
+	"http://engineering.dartmouth.edu/index.html">Thayer School
+	of Engineering</a>.
+	His talk is titled 
+	<em>Learning Behaviors:  The next big (computational)
+	thing?</em>  
+	The colloquium is on Wednesday in 
+	<a href = "calendar.php">Moore B03 at 4:30
+	  PM</a> following the Weekly Tea at 4 PM.
+	</td>
+	</tr>
+
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/colloquium_images/vonahn.png">
+	</td>
+	<TD>
+	(04/27/09) This week's 
+	<a href = "seminar.php">Colloquium</a>
+	features 
+	<a href =
+	"http://www.cs.cmu.edu/~biglou/">Prof. Luis von Ahn</a>
+	of 
+	<a href = "http://www.cs.cmu.edu/">Carnegie Mellon University</a>.
+	He will be speaking on 
+	<em>Human Computation</em>.
+	The colloquium is on Wednesday in 
+	<a href = "calendar.php">Moore B03 at 4:30
+	  PM</a> following the Weekly Tea at 4 PM.
+	This talk is jointly sponsored with 
+	<a href =
+	"http://leopard.dartmouth.edu/groups/digitalhumanities/">Digital
+	Humanities</a> at Dartmouth.  
+	</td>
+	</tr>
+
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/colloquium_images/mitchell.png">
+	</td>
+	<TD>
+	(04/20/09) This week's 
+	<a href = "seminar.php">Colloquium</a>
+	features 
+	<a href = "http://www.cs.cmu.edu/~tom/">Prof. Tom
+	  Mitchell</a>, Chair of the <a href =
+	  "http://www.cald.cs.cmu.edu/">Machine Learning
+	  Department</a> of 
+	  <a href = "http://www.cs.cmu.edu/">Carnegie Mellon</a>.  
+	  He will be speaking on 
+	  <em>
+	    Brains, Meaning and Corpus Statistics
+	  </em>
+	  on <b>Thursday</b> in Moore B03 at 4:30 PM
+	  following Weekly Tea at 4 PM.
+	  This talk is jointly sponsored with the 
+	  <a href ="http://dbic.dartmouth.edu/wiki/index.php/Main_Page">
+	    Center for Cognitive Neuroscience</a> at Dartmouth.
+	  Please note the special date for this colloquium.
+	</td>
+	</tr>
+
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/news_images/kapoor.png">
+	</td>
+	<TD>
+	(04/09/09) <a href = "http://research.microsoft.com/en-us/um/people/akapoor/">Ashish
+	Kapoor</a> of <a href =
+	"http://research.microsoft.com/en-us/">Microsoft Research</a>
+	is visiting us tomorrow.
+        He will be speaking on 
+        <em>Complementary Computing for Visual Tasks: Meshing Computer Vision
+with Human Visual Processing</em> tomorrow, April 10, in Moore 302 at 
+	10:30 AM.
+	</td>
+	</tr>
+
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/colloquium_images/fleet.png">
+	</td>
+	<TD>
+	(04/06/09) This week's 
+	<a href = "seminar.php">Colloquium</a>
+	features 
+	<a href =
+	"http://www.cs.toronto.edu/~fleet/">Prof. David J. Fleet</a>
+	of 
+	<a href = "http://www.cs.toronto.edu/">University of Toronto</a>.
+	He will be speaking on 
+	<em>Model-Based Human Pose Tracking</em>.
+	The colloquium is on Wednesday in 
+	<a href = "calendar.php">Moore B03 at 4:30
+	  PM</a> following the Weekly Tea at 4 PM.
+	</td>
+	</tr>
+
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/faculty_images/zomorodian.png" width = "85">
+	<TD>
+	(04/03/09) 
+	<a href = "http://www.cs.dartmouth.edu/~afra">Prof. Afra
+	   Zomorodian</a> has received a 
+	<a href =
+	"http://nsf.gov/awardsearch/showAward.do?AwardNumber=0845716">
+	  Faculty Early Career Development 
+	  Award (CAREER)</a> from the 
+	<a href = "http://nsf.gov">National Science Foundation (NSF)</a>.
+	</TR>
+
+	<TR valign = "middle">
+	<TD> <img src =
+	   "content/news_images/dartmouthhall.png">
+	</td>
+	<TD>
+	(04/02/09) Tomorrow is the department's Open House for newly
+	admitted graduate students.  The 
+	<a href = "content/open_house_schedule_09.pdf">schedule</a> includes a special
+	colloquium at 3:30 PM in Moore B03, Friday Beers and Pizza at
+	5 PM, and Bowling at 6:30 PM.  
+	</td>
+	</tr>
+
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/faculty_images/choudhury.png" width = "85">
+	<TD>
+	(04/02/09) 
+	<a href = "http://www.cs.dartmouth.edu/~tanzeem">Prof. Tanzeem
+	   Choudhury</a> was featured in an 
+	<a href =
+	"http://nsf.gov/discoveries/disc_summ.jsp?cntn_id=114494">interview</a> 
+	at the 
+	<a href = "http://nsf.gov">National Science Foundation</a> on
+	the occasion of National Women's History Month.
+	</TR>
+
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/colloquium_images/kurose.png">
+	</td>
+	<TD>
+	(03/30/09) Our first 
+	<a href = "seminar.php">Colloquium</a>
+	this quarter features 
+	<a href =
+	"http://gaia.cs.umass.edu/kurose/">Prof. Jim Kurose</a>
+	of 
+	<a href = "http://www.cs.umass.edu/">University of
+	Massachusetts, Amherst</a>.
+	He will be speaking on 
+	<em>Collaborative Adaptive Sensing of the Atmosphere:
+	  Challenges in End-to-End Sensor Networking</em>.
+	The colloquium is on Wednesday in 
+	<a href = "calendar.php">Moore B03 at 4:30
+	  PM</a> following the Weekly Tea at 4 PM.
+	</td>
+	</tr>
+
+</TABLE>
+
+<!-- Winter 2009 News -->
+<h2 class="break">Winter 2009</h2>	
+<TABLE cellpadding=0 cellspacing=2>
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/faculty_images/choudhury.png" width = "85">
+	<TD>
+	(03/04/09) 
+	<a href = "http://www.cs.dartmouth.edu/~tanzeem">Prof. Tanzeem
+	   Choudhury</a> has received a 
+	<a href =
+	"http://nsf.gov/awardsearch/showAward.do?AwardNumber=0845683">
+	  Faculty Early Career Development 
+	  Award (CAREER)</a> from the 
+	<a href = "http://nsf.gov">National Science Foundation (NSF)</a>.
+	</TR>
+
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/colloquium_images/bentley.png">
+	</td>
+	<TD>
+	(03/02/09) This week's 
+	<a href = "seminar.php">Colloquium</a>
+	features 
+	<a href =
+	"http://www.motorola.com/content.jsp?globalObjectId=6721-9277">Frank
+	Bentley</a>, Senior Research Engineer at the 
+	<a href =
+	"http://www.motorola.com/content.jsp?globalObjectId=6584-11664">Motorola
+	Applied Research and Technology Center</a>.  
+	He will be speaking on 
+	<em>Ambient Mobile Micro-coordination: Putting Presence and People in the Loop</em>.  
+	The colloquium is on Wednesday in 
+	<a href = "calendar.php">Silsby 028 at 4:30
+	  PM</a> following the Weekly Tea at 4 PM.
+	</td>
+	</tr>
+
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/colloquium_images/toma.png">
+	</td>
+	<TD>
+	(02/23/09) This week's 
+	<a href = "seminar.php">Colloquium</a>
+	features 
+	<a href =
+	"http://www.bowdoin.edu/~ltoma/">Prof. Laura Toma</a>
+	of 
+	<a href = "http://www.bowdoin.edu/">Bowdoin College</a>.
+	She will be speaking on 
+	<em>I/O-Efficient Indexes for Fat Triangulations and
+	Low-Density Planar Subdivisions</em>.  
+	The colloquium is on Wednesday in 
+	<a href = "calendar.php">Silsby 028 at 4:30
+	  PM</a> following the Weekly Tea at 4 PM.
+	</td>
+	</tr>
+
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/faculty_images/pellacini.png" width = "85">
+	<TD>
+	(02/18/08) 
+	<a href = "http://www.cs.dartmouth.edu/~fabio">Prof. Fabio
+	   Pellacini</a> has received a <em>Sloan Research
+	   Fellowship</em> from the
+	<a href = "http://www.sloan.org/fellowships">Alfred P. Sloan
+	  Foundation</a>.
+	</TR>
+
+        <TR valign = "middle">
+	<TD> 
+	  <img src =
+	       "content/news_images/dartmouthhall.png">
+	</td>
+	<TD>
+	(02/18/09) Due to weather, Prof. Tom Mitchell's talk is
+	canceled this week and is postponed until April 23.
+	</td>
+	</tr>
+</TABLE>
+
+<TABLE cellpadding=0 cellspacing=2>
+        <TR valign = "middle">
+	<TD> <img src =
+		  "content/colloquium_images/rusinkiewicz.png">
+	</td>
+	<TD> <img src =
+		  "content/colloquium_images/mitchell.png">
+	</td>
+	<TD>
+	(02/16/09) This week we have two 
+	<a href = "seminar.php">Colloquia</a>:
+	<ul>
+	  <li> 
+	    <a href = "http://www.cs.princeton.edu/~smr/">Prof. Szymon Rusinkiewicz</a>
+	of 
+	<a href = "http://www.cs.princeton.edu/">Princeton
+	University</a> will be speaking on 
+	<em>
+	  A System for High-Volume Acquisition and Matching of Fresco
+	  Fragments:  Reassembling Theran Wall Paintings
+	</em>
+	on Wednesday in <a href = "calendar.php">Silsby 028 at 4:30
+	  PM</a> following the Weekly Tea at 4 PM.
+	<li> <a href = "http://www.cs.cmu.edu/~tom/">Prof. Tom
+	  Mitchell</a>, Chair of the <a href =
+	  "http://www.cald.cs.cmu.edu/">Machine Learning
+	  Department</a> of 
+	  <a href = "http://www.cs.cmu.edu/">Carnegie Mellon</a> will
+	  be speaking on 
+	  <em>
+	    Brains, Meaning and Corpus Statistics
+	  </em>
+	  on Thursday in Moore Filene Auditorium at 4:30 PM
+	  following Tea at 4 PM.
+	  This talk is jointly sponsored with the 
+	  <a href ="http://dbic.dartmouth.edu/wiki/index.php/Main_Page">
+	    Center for Cognitive Neuroscience</a> at Dartmouth.
+	  </ul>
+	<b>Note:  This talk has been canceled.</b>
+	</td>
+	</tr>
+</TABLE>
+
+<TABLE cellpadding=0 cellspacing=2>
+
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/colloquium_images/fox.png">
+	</td>
+	<TD>
+	(02/09/09) This week's 
+	<a href = "seminar.php">Colloquium</a>
+	features 
+	<a href =
+	"http://www.cs.washington.edu/homes/fox/">Prof. Dieter Fox</a>
+	of 
+	<a href = "http://www.cs.washington.edu/">University of Washington</a>.
+	He will be speaking on 
+	<em>Toward High-level Reasoning for Autonomous Systems.
+	</em>
+	The colloquium is on Wednesday in 
+	<a href = "calendar.php">Silsby 028 at 4:30
+	  PM</a> following the Weekly Tea at 4 PM.
+	</td>
+	</tr>
+
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/colloquium_images/ganesan.png">
+	</td>
+	<TD>
+	(02/02/09) This week's 
+	<a href = "seminar.php">Colloquium</a>
+	features 
+	<a href =
+	"http://www.cs.umass.edu/~dganesan/">Prof. Deepak Ganesan</a>
+	of 
+	<a href = "http://www.cs.umass.edu/">University of
+	Massachusetts, Amherst</a>.
+	He will be speaking on 
+	<em>Towards a Storage-centric Sensor Network Architecture.
+	</em>
+	The colloquium is on Wednesday in 
+	<a href = "calendar.php">Silsby 028 at 4:30
+	  PM</a> following the Weekly Tea at 4 PM.
+	</td>
+	</tr>
+
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/colloquium_images/lazar.png">
+	</td>
+	<TD>
+	(01/26/09) This week's 
+	<a href = "seminar.php">Colloquium</a>
+	features 
+	<a href =
+	"http://www.ee.columbia.edu/~aurel/">Prof. Aurel Lazar</a>
+	of 
+	<a href = "http://www.ee.columbia.edu/">Columbia University</a>.
+	He will be speaking on 
+	<em>
+	  Invariant Representations of Visual Streams in the Spike
+	  Domain.  
+	</em>
+	The colloquium is on Wednesday in 
+	<a href = "calendar.php">Silsby 028 at 4:30
+	  PM</a> following the Weekly Tea at 4 PM.
+	</td>
+	</tr>
+
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/colloquium_images/casey.png">
+	</td>
+	<TD>
+	(01/19/09) This week's 
+	<a href = "seminar.php">Colloquium</a>
+	features 
+	<a href =
+	"http://eamusic.dartmouth.edu/~mcasey/">Prof. Michael
+	Casey</a>, director of the 
+	<a href = "http://eamusic.dartmouth.edu/">Graduate Program in
+	Digital Musics</a>.
+	He will be speaking on 
+	<em>
+	  The Problem with Music: Modeling Distance Distributions of
+	  Large Music Collections
+	</em>
+	The colloquium is on Wednesday in 
+	<a href = "calendar.php">Silsby 028 at 4:30
+	  PM</a> following the Weekly Tea at 4 PM.
+	Please note the change in location for this week.  
+	</td>
+	</tr>
+
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/news_images/elsener.png" width = "85">
+	</td>
+	<TD>
+	(01/14/09) 
+	The department has implemented the
+	College's first paperless office.
+	Initiated by department administrator Joseph Elsener, a
+	digital document management system will replace paper-based
+	recording and filing.
+	<a href =
+	"http://thedartmouth.com/2009/01/08/news/briefs/">Read
+	more</a>.	
+	</td>
+	</tr>
+
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/colloquium_images/haxby.png">
+	</td>
+	<TD>
+	(01/12/09) Our first 
+	<a href = "seminar.php">Colloquium</a>
+	this quarter features 
+	<a href =
+	"http://dfd.dartmouth.edu/directory/show/427">Prof. James Haxby</a>
+	from the 
+	<a href = "http://www.dartmouth.edu/~psych/">Department of
+	Psychological and Brain Sciences</a>.	
+	He will be speaking on 
+	<em>
+	  Characterizing local neural representation as a multidimensional similarity space
+	</em>
+	The colloquium is on Wednesdays in 
+	<a href = "calendar.php">Moore Filene Auditorium at 4:30
+	  PM</a> following the Weekly Tea at 4 PM.
+	</td>
+	</tr>
+
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/faculty_images/torresani.png" width = "85">
+	</td>
+	<TD>
+	(01/08/09) 
+	<a href =
+	"http://www.cs.dartmouth.edu/~lorenzo/">Lorenzo 
+	Torresani</a> has joined our department as an Assistant Professor.
+	His research interests include computer vision, machine
+	learning, and computer animation.
+	</td>
+	</tr> 
+
+       <TR valign = "middle">
+	<TD> <img src =
+	   "content/faculty_images/farid.png">
+	</td>
+	<TD>
+	  (01/07/09) 
+	  <a href = "http://www.cs.dartmouth.edu/~farid">Prof. Hany Farid</a>,
+	  Associate Chair of the department, has been appointed
+	  the <a href = "http://www.dartmouth.edu/~vox/0809/1020/farid.html">
+	    William H. Neukom 1964 Distinguished Professor of
+	    Computational Science</a>.
+	</td>
+	</tr>
+
+</TABLE>
+
+<!-- Fall 2008 News -->
+<h2 class="break">Fall 2008</h2>	
+<TABLE cellpadding=0 cellspacing=2>
+
+	<TR valign = "middle">
+	<TD> <img src =
+	   "content/news_images/dartmouthhall.png">
+	</td>
+	<TD>
+	(12/03/08) 
+	Dartmouth College has approved the department's new restructured
+	<a href = "gr.php">Masters Program</a>.
+	The new two-track program is designed to allow 
+	PhD candidates in other departments to pursue a concurrent
+	Masters degree in computer science and encourage Dartmouth 
+	undergraduates to remain at Dartmouth for an MS degree.
+	The <a href = "content/revised-orc-masters.txt">revised ORC
+	text</a> details the requirements for the degree.
+	</td>
+	</tr>
+
+	<TR valign = "middle">
+	<TD> <img src =
+	   "content/colloquium_images/tetali.png">
+	</td>
+	<TD>
+	(12/01/08) 
+	This week's 
+	<a href = "seminar.php">Colloquium</a>
+	features 
+	<a href =
+	"http://www.math.gatech.edu/~tetali/">Prof. Prasad Tetali</a>
+	from the 
+	<a href = "http://www.cc.gatech.edu/">Georgia Tech</a>.	
+	He will be speaking on 
+	<em>
+	  Correlation Decay and Deterministic Approximation Algorithms.
+	</em>
+	The colloquium is on Wednesdays in 
+	<a href = "calendar.php">Moore Filene Auditorium at 4:30
+	  PM</a> following the Weekly Tea at 4 PM.
+	</td>
+	</tr>
+
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/faculty_images/zomorodian.png">
+	<TD>
+	(12/01/08) 
+	<a href = "http://www.cs.dartmouth.edu/~afra">Prof. Afra
+	   Zomorodian </a> has received a <a href =
+	   "http://www.dartmouth.edu/~dof/facresearch/internal/fellow.html">Junior
+	   Faculty Fellowship</a> from Dartmouth.  
+	</TR>
+
+	<TR valign = "middle">
+	<TD> <img src =
+	   "content/colloquium_images/pollack.png">
+	</td>
+	<TD>
+	(11/17/08) 
+	This week's 
+	<a href = "seminar.php">Colloquium</a>
+	features 
+	<a href =
+	"http://www.eecs.umich.edu/~pollackm/">Prof. Martha Pollack</a>
+	from the 
+	<a href = "http://www.eecs.umich.edu/">University of Michigan</a>.	
+	She will be speaking on 
+	<em>
+	   Intelligent Assistive Technology:  The Present and the
+	   Future. 
+	</em>
+	The colloquium is on Wednesdays in 
+	<a href = "calendar.php">Moore Filene Auditorium at 4:30
+	  PM</a> following the Weekly Tea at 4 PM.
+	</td>
+	</tr>
+
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/faculty_images/kotz.png">
+	</td>
+	<TD>
+	(11/13/08) 
+	<a href =
+	   "http://www.cs.dartmouth.edu/~dfk/">
+	  Prof. David Kotz</a> has been elevated to 
+	<a href =
+	"http://www.ieee.org/web/membership/fellows/index.html">IEEE
+	Fellow</a>, 
+	<a href = "http://www.ieee.org/">IEEE</a>'s
+	most prestigious honor, with
+	the following citation:
+	<TABLE cell padding = 0 cellspacing =2>
+	  <TR valign = "middle">
+	    <TD>&nbsp</td><td>
+	      <em>for contributions to parallel and distributed systems
+	      and wireless networks</em></td>
+	    </tr>
+	  </table>
+	IEEE is a leading 
+	professional association for the advancement of technology.
+	The IEEE name was originally an acronym for the 
+	<a href = "http://www.ieee.org/web/aboutus/home/index.html">Institute
+	of Electrical and Electronics Engineers, Inc.</a>, but its
+	focus now has expanded into many related fields, such as computer science.
+	</td>
+	</tr>
+
+	<TR valign = "middle">
+	<TD> <img src =
+	   "content/colloquium_images/hartline.png">
+	</td>
+	<TD>
+	(11/10/08) 
+	This week's 
+	<a href = "seminar.php">Colloquium</a>
+	features 
+	<a href =
+	"http://www.ece.northwestern.edu/~hartline/">Prof. Jason Hartline</a>
+	from 
+	<a href = "http://www.eecs.northwestern.edu/">Northwestern University</a>.	
+	He will be speaking on 
+	<em>
+	  Economics in Internet Design.  
+	</em>
+	The colloquium is on Wednesdays in 
+	<a href = "calendar.php">Moore Filene Auditorium at 4:30
+	  PM</a> following the Weekly Tea at 4 PM.
+	</td>
+	</tr>
+
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/colloquium_images/ghrist.png">
+	</td>
+	<TD>
+	(11/03/08) 
+	This week's 
+	<a href = "seminar.php">Colloquium</a>
+	features 
+	<a href =
+	"http://www.math.uiuc.edu/~ghrist/">Prof. Robert Ghrist</a>
+	from the
+	<a href = "http://www.math.upenn.edu/">University of Pennsylvania</a>.	
+	He will be speaking on an 
+	<em>
+	  Euler Calculus for Sensor Networks.  
+	</em>
+	The colloquium is on Wednesdays in 
+	<a href = "calendar.php">Moore Filene Auditorium at 4:30
+	  PM</a> following the Weekly Tea at 4 PM.
+	</td>
+	</tr>
+
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/colloquium_images/bongard.png">
+	</td>
+	<TD>
+	(10/27/08) 
+	This week's 
+	<a href = "seminar.php">Colloquium</a>
+	features 
+	<a href =
+	"http://www.cs.uvm.edu/~jbongard/">Prof. Josh Bongard</a>
+	from 
+	<a href = "http://www.uvm.edu/~cems/cs/">the University of Vermont</a>.	
+	He will be speaking on 
+	<em>
+	  Investigations at the Interface of Morphology, Evolution and 
+	  Cognition.
+	</em>
+	The colloquium is on Wednesdays in 
+	<a href = "calendar.php">Moore Filene Auditorium at 4:30
+	  PM</a> following the Weekly Tea at 4 PM.
+	</td>
+	</tr>
+
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/colloquium_images/spielman.png">
+	</td>
+	<TD>
+	(10/20/08) 
+	This week's 
+	<a href = "seminar.php">Colloquium</a>
+	features 
+	<a href =
+	"http://cs-www.cs.yale.edu/homes/spielman/">Prof. Daniel A. Spielman</a>
+	from 
+	<a href = "http://www.cs.yale.edu/">Yale University</a>.	
+	He will be speaking on 
+	<em>
+	  Graph approximation and local clustering, 
+	  with applications to the solution of diagonally-dominant systems 
+	  of linear equations.</em>  
+	The colloquium is on Wednesdays in 
+	<a href = "calendar.php">Moore Filene Auditorium at 4:30
+	  PM</a> following the Weekly Tea at 4 PM.
+	</td>
+	</tr>
+
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/faculty_images/farid.png">
+	</td>
+	<TD>
+	  (10/16/08) 
+	  <a href = "http://www.cs.dartmouth.edu/~farid">Prof. Hany Farid</a>,
+	  Associate Chair of the department, 
+	  has been appointed Director of the 
+	  <a href = "http://www.dartmouth.edu/~neukom/">Neukom
+	  Institute for Computational Science</a> at Dartmouth.
+	</td>
+	</tr>
+
+       <TR valign = "middle">
+	<TD> <img src =
+	   "content/colloquium_images/indyk.png">
+	</td>
+	<TD>
+	(10/13/08) 
+	This week's 
+	<a href = "seminar.php">Colloquium</a>
+	features 
+	<a href =
+	"http://people.csail.mit.edu/indyk/">Prof. Piotr Indyk</a>
+	from 
+	<a href = "http://theory.csail.mit.edu/">MIT</a>.	
+	He will be speaking on 
+	<em>
+	  Sparse Recovery Using Sparse Random Matrices
+	</em>.  
+	The colloquium is on Wednesdays in 
+	<a href = "calendar.php">Moore Filene Auditorium at 4:30
+	  PM</a> following the Weekly Tea at 4 PM.
+	</td>
+	</tr>
+
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/colloquium_images/dey.png">
+	</td>
+	<TD>
+	(10/06/08) 
+	This week's 
+	<a href = "seminar.php">Colloquium</a>
+	features 
+	<a href =
+	"http://www.cse.ohio-state.edu/~tamaldey/">Prof. Tamal Dey</a>
+	from 
+	<a href = "http://www.cse.ohio-state.edu/">The Ohio State
+	University</a>.	He will be speaking on <em>Delaunay Mesh
+	Generation for Piecewise Smooth Domains</em>.  
+	The colloquium is on Wednesdays in 
+	<a href = "calendar.php">Moore Filene Auditorium at 4:30
+	  PM</a> following the Weekly Tea at 4 PM.
+	</td>
+	</tr>
+</table>
+
+<TABLE cellpadding=0 cellspacing=2>
+        <TR valign = "middle">
+	<TD> <img src =
+		  "content/news_images/ranganath-kondapally.png">
+	</td>
+	<TD> <img src =
+		  "content/news_images/wei-pan.png">
+	</td>
+	<TD>
+	(10/03/08) 
+	Ph.D. students
+	<a href =
+	"http://www.cs.dartmouth.edu/~rangak/">Ranganath Kondapally</a>
+	and 
+	<a href =
+	"http://www.cs.dartmouth.edu/~pway/">Wei Pan</a>
+	were given this year's 
+	<em>Outstanding Teaching Assistant Award</em>.
+	Ranganath was the TA for 
+	<a href =
+	"http://www.cs.dartmouth.edu/~afra/courses/cs19-winter08/">Discrete
+	Mathematics (COSC 19)</a> and
+	<a href = "http://www.cs.dartmouth.edu/~cs25/">Algorithms
+	(COSC 25)</a> last winter and spring, respectively.  
+	Wei was the TA for 
+	<a href =
+	"http://www.cs.dartmouth.edu/~campbell/cs23/">Software Design
+	and Implementation (COSC 23)</a> both terms.
+	The award includes a cash prize of $400 per person.  
+	Congratulations to both!
+	</td>
+	</tr>
+</TABLE>
+
+<TABLE cellpadding=0 cellspacing=2>
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/colloquium_images/kobourov.png">
+	</td>
+	<TD>
+	(09/29/08) 
+	This week's 
+	<a href = "seminar.php">Colloquium</a>
+	features 
+	<a href = "http://www.cs.arizona.edu/~kobourov/">Prof. Stephen
+	G. Kobourov</a>
+	from 
+	<a href = "http://www.research.att.com/">AT&T Research
+	Labs</a>.
+	He will be speaking on <em>Simultaneous Graph
+	Embeddings</em>.  
+	The colloquium is on Wednesday in 
+	<a href = "calendar.php">Moore Filene Auditorium at 4:30 PM</a> following
+	the Weekly Tea.
+	</td>
+	</tr>
+
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/news_images/csrs.png">
+	</td>
+	<TD>
+	(09/19/08) 
+	The department's annual
+	<a href = "http://www.cs.dartmouth.edu/~csrs/">Computer
+	Science Research Symposium</a> is Saturday, September 27,
+	from 9 AM to 5 PM in 
+	<a href =
+	"http://www.cs.dartmouth.edu/~csrs/faq.html#whenandwhere">Rockefeller
+	Center Room 003</a>.
+	CSRS is an exhibition of the research being conducted 
+	in our department and is open to all.
+	</td>
+	</tr>
+</table>
+<h2 class="break">Summer 2008</h2>	
+<TABLE cellpadding=0 cellspacing=2> 
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/faculty_images/choudhury.png" width = "85">
+	</td>
+	<TD>
+
+	(08/19/08) 
+	<a href =
+	"http://www.cs.dartmouth.edu/~tanzeem/">Prof. Tanzeem
+	Choudhury</a>
+	has been named a 
+	<a href =
+	"http://www.technologyreview.com/TR35/Profile.aspx?Cand=T&TRID=696">2008 Young Innovator Under 35</a> by 	
+	<a href = "http://www.technologyreview.com/">Technology Review</a> 
+	magazine.  
+	She is recognized for her research in developing computational 
+	techniques for understanding human activities and interactions.
+	</td>
+	</tr>
+
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/faculty_images/farid.png">
+	</td>
+	<TD>
+	(08/15/08) 
+	<a href = "http://www.cs.dartmouth.edu/~farid">Prof. Hany Farid</a>,
+	Associate Chair of the department, is profiled on PBS's
+	<a href = "http://www.pbs.org/wgbh/nova/sciencenow/">NOVA
+	scienceNOW</a> on digital image forgery.
+	The 
+	<a href =
+	"http://www.pbs.org/wgbh/nova/sciencenow/0301/03.html">program's
+	website</a> includes the broadcast segment, a profile on
+	Prof. Farid, his answers to viewers's questions as well as an
+        image forgery quiz.  
+	</td>
+	</tr>
+
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/news_images/cacm-winkler.png">
+	</td>
+	<TD>
+	(08/11/08) 
+	Starting this month, 
+	<a href = "http://math.dartmouth.edu/~pw/">Prof. Peter Winkler</a> 
+	will be featuring his puzzles in <em>Puzzled</em>, the new puzzle
+	column in the 
+	<a href = "http://cacm.acm.org/communications">Communications of
+	  the ACM</a>.  
+	Each column will present two puzzles with known solutions and
+	one open problem.  
+	The inaugural column in the current issue focuses on 
+	<a href =
+	"http://portal.acm.org/citation.cfm?id=1378704.1378726&coll=portal&dl=ACM&idx=J79&part=magazine&WantType=Magazines&title=Communications&CFID=11223344&CFTOKEN=44332211">Delightful Graph Theory</a>.
+	</td>
+	</tr>
+
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/news_images/igor-robots.png">
+	</td>
+	<TD>
+	(08/05/08) 
+	Ph.D. candidate 
+	<a href = "http://www.cs.dartmouth.edu/~igorpapa/">Igor
+	Paprotny</a>, 
+	<a href =
+	"http://engineering.dartmouth.edu/microeng/levey.html">Prof. Chris
+	Levey</a> of <a href = "http://engineering.dartmouth.edu/">Thayer
+	School of Engineering</a> and 
+	<a href = "http://www.cs.duke.edu/brd/">Prof. Bruce Donald</a> of 
+	Duke University have created the first untethered
+	multi-microrobotic system.
+	The microrobots have dimensions in microns (micrometers) and
+	are independently controlled to assemble structures.
+	Igor is defending his dissertation this 
+	<a href =
+	"http://www.google.com/calendar/event?eid=MGxmbXBtN2VsdDA1cm1kOTY5czQ2dGE5NTAgZGFydG1vdXRoY3NAbQ&ctz=America/New_York">Thursday</a>.
+	Watch the microrobots 
+	<a href = "http://www.cs.dartmouth.edu/reports/TR2008-631/">waltz</a>
+	to the Blue Danube!
+	</td>
+	</tr>
+
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/news_images/epics-dog.png">
+	</td>
+	<TD>
+	(07/12/08) 
+	A group of students in the department's two term course, 
+	<a href = "http://www.cs.dartmouth.edu/~epics/">Engineering
+	Projects in Community Service (EPICS)</a>,
+	are designing an online system for reporting and returning lost
+	pets for the 
+	<a href = "http://www.uvhs.org/">Upper Valley Humane
+	Society</a>.  
+	<a href =
+	"http://www.dartmouth.edu/~vox/0809/0623/epics.html">Read
+	more</a>.
+	</td>
+	</tr>
+
+</table>
+<h2 class="break">Spring 2008</h2>	
+<TABLE cellpadding=0 cellspacing=2>
+
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/news_images/christman-speech.png" width = "85">
+	</td>
+	<TD>
+	(06/09/08) 
+	Nick Christman `08, a senior 
+	majoring in computer science and 
+	mathematics, was a 
+	<a href =
+	   "http://thedartmouth.com/2008/06/09/news/valedictorians/">valedictorian</a>
+	   this year and 
+	<a href =
+	"http://www.dartmouth.edu/~news/releases/2008/06/08b.html">spoke
+	at Commencement</a>.
+	Nick completed a high honors 
+	<a href = "http://www.cs.dartmouth.edu/reports/abstracts/TR2008-618/">thesis</a> under the direction of 
+	<a href = "http://www.cs.dartmouth.edu/~prasad/">Prof. Prasad
+	Jayanti</a>, the department Chair.
+	He also maintained a 4.0 GPA, started in all 18 soccer games this
+	season, and won an NCAA postgraduate scholarship.
+	<a href =
+	"http://media.dartmouth.edu/~pubs/commence08-christman.mp3">Listen
+	to Nick's Valedictory Address</a>.
+	</td>
+	</tr>
+
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/news_images/kemeny.png" width = "85">
+	</td>
+	<TD>
+	(06/09/08) 
+	We are pleased to
+	announce the winners of the 
+	<a href = "http://www.cs.dartmouth.edu/newsinfo/kemeny/">40th
+	  Annual John G. Kemeny Computing Prize for Excellence in 
+	Undergraduate Computing</a>.  
+	</td>
+	</tr>
+
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/news_images/rss.png">
+	</td>
+	<TD>
+	(05/28/08) 
+	The Department's 
+	<a href = "http://www.cs.dartmouth.edu/reports/">Technical
+	Reports</a> are now available via an 
+	<a href = "http://www.cs.dartmouth.edu/reports/feed.xml">RSS
+	Feed</a>, thanks to <a href =
+	"http://www.cs.dartmouth.edu/~dfk">Prof. David Kotz</a>.
+	</td>
+	</tr>
+
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/news_images/kemeny.png" width = "85">
+	</td>
+	<TD>
+	(05/19/08) The competition for the 
+	<a href = "http://www.cs.dartmouth.edu/newsinfo/kemeny/">40th
+	Annual John G. Kemeny Computing Prize</a> for Dartmouth
+	undergraduates is now open.
+	The Kemeny prize awards innovative uses of computing and is open
+	to all majors.  All entries must be submitted by 
+	<em>Noon Monday June 2, 2008</em>.  
+	Good luck!
+	</td>
+	</tr>
+
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/faculty_images/smith.png" width = "85">
+	<TD>
+	(05/12/08) 
+	<a href = "http://www.cs.dartmouth.edu/~sws">Prof. Sean
+	   Smith</a>'s project on the good samaritans' impact
+	   on wikipedia was chosen as one of the 
+	<a href = "http://www.networkworld.com/community/node/27057">25
+	leading-edge IT research projects</a>
+	by 
+	<a href = "http://www.networkworld.com">Networkworld</a> magazine.
+	</TR>
+
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/news_images/greenlite.png" width = "85">
+	</td>
+	<TD>
+	(04/28/08) 
+	<a href = "http://www.cs.dartmouth.edu/~lorie">Prof. Lorie
+	   Loeb</a>, 
+	System Administrator
+	<a href = "http://www.cs.dartmouth.edu/~tim/">Tim Tregubov</a>, 
+	and CS majors Amanda Lobel `09, Evan Tice `09, Gemma
+	Ross `08, along with undergraduates from across the campus have 
+	initiated project 
+	<a href = "http://greenlite.dartmouth.edu/">Green Lite
+	Dartmouth</a>, which aims to educate students on energy usage
+	through real-time feedback on displays in the McLaughlin Cluster
+	residence halls.  
+	<a href =
+	"http://www.dartmouth.edu/~news/releases/2008/04/17.html">Read
+	more</a>.
+	</td>
+	</tr>
+
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/news_images/christman.png" width = "85">
+	</td>
+	<TD>
+	(04/11/08) 
+	Nick Christman `08, a senior 
+	majoring in computer science and 
+	mathematics, has been awarded an NCAA Postgraduate
+	Scholarship.
+	While maintaining a 4.00 GPA, Nick started in all 18 soccer games
+	during this season.  
+	<a href =
+	   "http://dartmouthsports.com//ViewArticle.dbml?DB_OEM_ID=11600&ATCLID=1437281">Read
+	  More</a>.  
+	</td>
+	</tr>
+
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/faculty_images/kotz.png" width = "85">
+	</td>
+	<TD>
+	(04/07/08) 
+	<a href =
+	   "http://www.cs.dartmouth.edu/~dfk/">
+	  Prof. David Kotz</a> 
+	has been selected as a 
+	<a href = "http://www.cies.org/us_scholars/">Fullbright
+	Scholar</a>
+	to India.
+	He will spend the 2008-2009 academic year at the 
+	<a href = "http://www.iisc.ernet.in/">Indian Institute of
+	  Science in Bangalore</a> with a research focus on the 
+	measurement and modeling of wireless networks.
+	To facilitate this collaboration, Dartmouth has awarded 
+	Prof. Kotz a 
+	<a href =
+	"http://www.dartmouth.edu/~dof/facresearch/internal/fellow.html">
+	  Senior Faculty Grant</a>.
+	</td>
+	</tr>
+
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/faculty_images/choudhury.png" width = "85">
+	</td>
+	<TD>
+	(03/30/08) 
+	<a href =
+	"http://seattle.intel-research.net/people/tanzeem/">Tanzeem
+	Choudhury</a> is joining our department as an Assistant Professor
+	starting on April 1, 2008.  
+	Her research focus is on machine learning and machine sensing of 
+	human and group behavior.
+	</td>
+	</tr>
+
+</table>
+<h2 class="break">Winter 2008</h2>	
+<TABLE cellpadding=0 cellspacing=2>
+
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/news_images/garcia.png" width = "85">
+	</td>
+	<TD>
+	(03/11/08) 
+	<a href = "http://www.cs.dartmouth.edu/~campbell/">Prof. Andrew
+	  Campbell</a>'s course on 
+	<a href = "http://www.cs.dartmouth.edu/%7Ecampbell/cs23/">Software
+	Design and Implementation (COSC 23)</a> culimnated in 
+	final team projects, programming embedded linux robots, shown on
+	the left.
+	The final <em>Demo or Die! Day</em> included a remote-controlled robot
+        tressure hunt, as well as a final race.
+        <a href = "http://www.cs.dartmouth.edu/~pway/cs23/robot/">See more
+        pictures</a>.
+	</td>
+	</tr>
+
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/news_images/oscar.png" width = "85">
+	<TD>
+	(02/20/08) 
+	<a href = "http://math.dartmouth.edu/~pw/">Prof. Peter Winkler</a>
+	co-organized the <a href =
+	   "http://www.math.dartmouth.edu/~puzzles/">Mechanical Puzzles
+	   Day</a> at Dartmouth.
+	   Katelin Bailey `10, a computer science major,
+	   and Profs. 
+	   <a href = "http://www.cs.dartmouth.edu/~scot/">Scot Drysdale</a>
+	    and 
+	   <a href = "http://www.cs.dartmouth.edu/~afra">Afra 
+	   Zomorodian</a> 
+	   were among the many attendees, playing with
+	   puzzles such as <a href =
+	   "http://www.bitsandpieces.com/%5EOutlet+Store%5EOn+Sale+Brainteasers/07-W7871.html">Oscar's
+	   Maze</a> on the left.  
+	   <a href = "http://www.vnews.com/02202008/4650563.htm">Read more</a>.
+	</TR>
+
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/faculty_images/pellacini.png" width = "85">
+	<TD>
+	(01/30/08) 
+	<a href = "http://www.cs.dartmouth.edu/~fabio">Prof. Fabio
+	   Pellacini</a> has received a <em>Faculty Early Career Development 
+	   Award (CAREER)</em> from the National Science Foundation (NSF).
+	   <a href = "http://www.dartmouth.edu/~news/releases/2008/01/28a.html
+">Read more.</a>
+	</TR>
+
+        <TR valign = "middle">
+	<TD> <img src =
+	   "content/faculty_images/smith.png" width = "85">
+	<TD>
+	(01/07/08) 
+	<a href = "http://www.cs.dartmouth.edu/~sws">Prof. Sean
+	   Smith</a> and John Marchesini, an alumnus of our Ph.D. program,
+	   have published a new book on the craft of system security.
+	   <a href =
+	   "http://www.cs.dartmouth.edu/books.php">Read more.</a>
+	</TR>
+
+	<TR valign = "middle">
+	<TD> <img src =
+	   "content/faculty_images/zomorodian.png" width = "85">
+	<TD>
+	(01/01/08) 
+	The January issue of the
+	<a href = "http://www.ams.org/bull">Bulletin
+	   of the American Mathematical Society</a> includes the article 
+	   <em>Barcodes:  The persistent topology of data</em>, which
+	   surveys the work of 
+	   <a href = "http://www.cs.dartmouth.edu/~afra">Prof. Afra
+	   Zomorodian</a> and collaborators in computational topology.
+	   <a href = "http://www.ams.org/bull/2008-45-01/home.html">Read
+	   more.</a>
+	</TR>
+
+	<TR valign = "middle">
+	<TD> <img src =
+	   "content/faculty_images/farid.png" width = "85">
+	<TD>
+	(12/21/07) 
+	<a href = "http://www.cs.dartmouth.edu/~farid">Prof. Hany Farid</a>,
+	Associate Chair of the department, was interviewed on
+	<em>MSNBC's The Today Show</em>.  
+	<a href = "http://www.cs.dartmouth.edu/farid/press/todayshow07.html">
+	See the interview</a>.
+	</TR>
+
+</table>
+<h2 class="break">Fall 2007</h2>	
+<TABLE cellpadding=0 cellspacing=2>
+
+	<TR valign = "middle">
+	<TD> <img src =
+	   "content/faculty_images/smith.png" width = "85">
+	<TD>
+	(10/19/07) 
+	<a href = "http://www.cs.dartmouth.edu/~sws">Prof. Sean
+	   Smith</a>, in collaboration with Tim Williamson `05 and 
+	   <a href =
+	   "http://www.dartmouth.edu/~socy/faculty/anthony.html">Prof.
+	   Denise Anthony</a> from the Dartmouth 
+	   <a href = "http://www.dartmouth.edu/~socy/">Sociology
+	   Department</a>, has shown
+	   in a study that anonymous contributers to 
+	   <a href = "http://wikipedia.org/">Wikipedia</a> are as reliable
+	   as registered contributers.  
+
+	   <a href =
+	   "http://www.sciam.com/article.cfm?articleID=B9CB44D9-0807-DCEF-D35BA51C831A1CF6&chanID=sa003">Read more</a>.
+	</TR>
+
+ 	<TR valign = "middle">
+	<TD> <img src =
+	   "content/faculty_images/loeb.png" width = "85">
+	<TD>
+	(10/02/07) 
+	<a href = "http://www.cs.dartmouth.edu/~lorie">Prof. Lorie
+	   Loeb</a> and Rachel Forman `09 merged 
+           <a href = "http://www.merce.org/">Merce Cunningham</a>'s 
+	   choreography with digital 
+	   animation through the use of motion-capture technology.  
+	   <a href = "http://www.dartmouth.edu/~news/releases/2007/10/04.html">Read more</a>.
+	</TR>
+
+	<TR valign = "middle">
+	<TD> <img src =
+	   "content/faculty_images/farid.png" width = "85">
+	<TD>
+	(10/02/07) 
+	<a href = "http://www.cs.dartmouth.edu/~farid">Prof. Hany Farid</a>,
+	Associate Chair of the department, is featured in the 
+	<em>New York Times</em>.
+	   "Don't ever send me a photograph of yourself.  I'll do the most
+	   terrible things to it."  
+	<a href = "http://www.nytimes.com/2007/10/02/science/02conv.html">Read
+	more</a>.
+	</TR>
+
+	<TR valign = "middle">
+	<TD align = "center"> <strong>BlitzMail</strong>
+	<TD>
+	(09/28/07)
+	Computing Services plans to roll out a new version of 
+	<a href =
+	"http://www.dartmouth.edu/comp/support/library/software/email/blitzmail/">BlitzMail</a> 
+	for Mac computers, an update that will feature encrypted messaging 
+	for the first
+	time, developed by computer science doctoral candidate 
+	<a href = "http://www.cs.dartmouth.edu/~cmasone/">Chris Masone</a> `02.
+<a href = "http://thedartmouth.com/2007/09/28/news/blitz/">Read more</a>.
+
+        <TR><TD>&nbsp;</TD></TR>
+
+	<TR valign = "middle">
+	<TD width = 85 align = "center"> <strong>CSRS '07</strong>
+	<TD>
+	(09/18/07) 
+	The 2007 Dartmouth Computer Science research symposium will 
+	feature talks and posters by graduate students and faculty 
+	from the department, and will be held on September 22.  
+	<a href="http://www.cs.dartmouth.edu/~csrs">Read more.</a>
+	</TR>
+
+	<TR valign = "middle">
+	<TD> <img src =
+	   "content/news_images/dartmouthhall.png" width = "85">
+	<TD>
+	(09/11/07) 
+	A team of Dartmouth students, advised by 
+	<a href = "http://www.cs.dartmouth.edu/~lorie">Prof. Lorie Loeb</a>, 
+	has won <a href = "http://contest.sketchup.com/entry.php">
+	Google's Campus 3D Contest</a> by building a virtual
+	Dartmouth.
+	<a href="http://www.dartmouth.edu/~news/releases/2007/07/11.html">
+	Read more.</a>
+	</TR>
+
+	<TR valign = "middle">
+	<TD> <img src =
+	   "content/faculty_images/cbk.png" width = "85">
+	<TD>
+	(06/25/07) 
+	<a href = "~cbk">Prof. Chris Bailey-Kellogg</a> was awarded the
+	<em>Karen E. Wetterhahn Memorial Award for Distinguished
+	Creative or Scholarly Achievement</em> for innovative studies in 
+	computational biology and qualitative reasoning.
+	<a href="http://www.dartmouth.edu/~vox/0708/0625/faculty.html">
+	Read more.</a>
+	</TR>
+
+	<TD> <img src =
+	   "content/faculty_images/loeb.png" width = "85">
+	<TD>
+	(06/25/07) 
+	<a href = "~cbk">Prof. Lorie Loeb</a> was awarded the
+	<em>Dean of Faculty Teaching Award for Visiting and Adjunct
+	   Faculty</em>.  
+	<a href="http://www.dartmouth.edu/~vox/0708/0625/faculty.html">
+	Read more.</a>
+	</TR>
+
+	<TD align = "center"><strong>Kemeny Prize</strong>
+	<TD>
+	(06/15/07) 
+	The <em>John G. Kemeny Computing Prize</em> for innovative
+	computing projects by Dartmouth undergraduates has been 
+	awarded for 2007.  
+	<a href="http://www.cs.dartmouth.edu/newsinfo/kemeny/">
+	Read more.</a>
+	</TR>
+
+</TABLE>
+	</div>
+	
+	
+	<div id="goToTop" class="sNav"><p><a href="#content">^ Top</a></p></div>
+
+</div>
+
+
+
+
+
+<div id="footer"><p>&copy; <a href="http://www.cs.dartmouth.edu/">Dartmouth College Computer Science Department</a> 2009 </p></div>
+
+
+</body>
+
+</html>

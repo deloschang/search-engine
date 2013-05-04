@@ -1,0 +1,155 @@
+http://www.cs.dartmouth.edu/%7Ehong/index.html
+3
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<title>Hong Lu's home page</title>
+
+<link href="index_files/style0.css" media="screen" rel="stylesheet" title="CSS" type="text/css">
+
+<style type="text/css">
+html, body {
+margin: 0px;
+padding: 0px;
+font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+h3,h1 {
+padding: 0px;
+margin: 0px;
+margin-top: 5px;
+margin-bottom: 0px;
+}
+
+h2{
+padding: 0px;
+margin: 0px;
+margin-top: 5px;
+margin-bottom: 0px;
+}
+
+
+</style>
+</head>
+<body>
+
+<table border="0" cellpadding="0" align = "center" cellspacing="0" height="100%" width="" bgcolor="#FFFFFF">
+<tbody>
+<tr valign="top">
+ <td bgcolor="#000000">
+   <img src="index_files/lh.png">
+ </td>
+
+ <td >
+   <table border="0" cellpadding="18" cellspacing="0" height="*" width="720">
+    <tbody>
+      <tr>
+	<td bgcolor="#FFFFFF">
+	   <h1>Hong Lu      卢　弘</h1>
+	   <h3>hong at cs dot dartmouth dot edu</h3><br>
+	   <div id="navigation">
+            <ul>
+              <li><a href="http://www.cs.dartmouth.edu/%7Ehong/index.html">Home</a></li>
+              <li><a href="http://www.cs.dartmouth.edu/%7Ehong/papers.html">Publications</a></li>
+              <li><a href="http://www.cs.dartmouth.edu/%7Ehong/hong.pdf">Resume</a></li>
+            </ul>
+           </div>
+        </td>
+	<td width="105">
+          <div valign="top" align="left">
+	        <img src="index_files/logo.jpg">
+	  </div></td>
+      </tr>
+      <tr cellpadding="5" cellspacing="5">
+	<td colspan="2" cellpadding="5" cellspacing="5" align="justify">
+<h2>What's New</h2>
+ <p>
+<li> I joined <a href="http://www.intel.com/content/www/us/en/research/intel-research.html" target="_blank">Intel Labs</a> as a research scientist. </li>
+	
+<li> My Google Scholar page is up <a href="http://scholar.google.com/citations?user=MWGBih0AAAAJ&hl=en" target="_blank">here</a>.  </li>
+	  <p>
+     <h2>About me</h2>
+	  <p>
+	I am a research scientist at <a href="http://www.intel.com/content/www/us/en/research/intel-research.html" target="_blank">Intel Labs</a>.	
+	I received my Ph.D. degree from the <a href="http://www.cs.dartmouth.edu/" target="_blank">Department of Computer Science</a> at <a href="http://www.dartmouth.edu/" target="_blank">Dartmouth College</a>. My Ph.D. advisors are <a href="http://www.cs.dartmouth.edu/%7Ecampbell">Prof. Andrew T. Campbell</a> and <a href="http://www.cs.dartmouth.edu/~tanzeem/">Prof. Tanzeem Choudhury</a>. As part of my doctoral work, I created the <a href="http://www.technologyreview.com/communications/22907/?a=f">SoundSense</a> system, which is the first ubiquitous sound classification system for smart phones. My work on SoundSense, Jigsaw, and StressSense laid the foundation of the mobile health monitoring application, <a href="http://www.fastcoexist.com/1678760/get-some-therapy-from-an-app-that-reads-your-feelings-through-your-voice">BeWell</a>. I hold bachelor and master degrees in Computer Science from <a href="http://www.tju.edu.cn/english/">Tianjin University</a>, Tianjin, China.
+<!--
+	<br>
+	<br>
+	I spent a summer (June. - Sept. 2010) at Microsoft Research(MSR), Redmond,  working on an energy efficient continuous speaker identification system for smart phones. Prior to MSR, I interned twice (June. - Sept. and Oct. - Dec. 2009) at Nokia Research Center, Palo Alto, working on human activity recognition and mobile sensing framework for smart phones.  The outcomes of these internships are summarized in my Sensys 2010 and Pervasive 2011 <a href="http://www.cs.dartmouth.edu/%7Ehong/papers.html">papers</a>, respectively.  
+	<br>
+-->
+	<p>
+	I have been TPC member of <a href="http://www.sensornet.cn/ieeemass2013/">10th IEEE International Conference on Mobile Ad-hoc and Sensor Systems (IEEE MASS 2013)</a>, <a href="http://research.nokia.com/page/12000">Nokia Mobile Data Challenge (MDC)</a>, and the <a href="http://sites.google.com/site/mobisense2011/home">MobiSense 2011</a>.
+    <p>			
+	<h2>My Research</h2>
+	  <p>
+	   Area: mobile phone sensing, mobile ubiquitous computing, context awareness, social computing, and wireless sensor network.
+	  <p>
+	  I am an experimental computer scientist working on people-centric sensing systems and applications. I work on developing machine learning techniques and mobile systems that can reason about human activities, social interactions and context in everyday environments. My recent research focuses on developing mobile inference system for smart phones, which allow the phone to observe, understand, and extract human behavioral information from sensor data collected from individual users or crowdsourced from social networks. I built prototype mobile applications based on a variety of mobile platforms (e.g., Apple iPhone, Nokia N95/N900, Google Android). I have experience across various domains of mobile sensing systems including: embedded sensors, system architecture, power management, big data analysis, mobile social computing, and human behavior inference. Results from my research have been published in a number of top conferences including MobiSys, Ubicomp, Pervasive, Sensys, and AAAI.
+<p>
+My <a href="http://scholar.google.com/citations?user=MWGBih0AAAAJ&hl=en">h-index</a> is 14 according to <a href="http://scholar.google.com/citations?user=MWGBih0AAAAJ&hl=en">Google Scholar</a>. <p>
+<p>
+	
+<h2>Press & News</h2> 
+	
+	<p>
+		
+	&nbsp<img style="height: 32px;" alt="NewScientistLogo" src="images/new_scientist.jpg"  align="middle"> StressSense is featured in the New Scientist, <a href="http://www.newscientist.com/article/mg21528775.400-smartphone-that-feels-your-strain.html">Smartphone
+	                that feels your strain</a>, August 2012. 
+	
+		<p>
+	
+&nbsp<img style="border: 0px solid;" src="images/atlantic.png" align="middle" height="41" width="110"> StressSense and Bewell are covered by Atlantic Cities article, <a href="http://www.theatlanticcities.com/technology/2012/08/3-apps-stressed-out-urbanite/2985/">3
+			                Next-Gen Apps for the Stressed-Out Urbanite Cities</a>, August 2012.
+	
+	<p>
+	&nbsp<img style="width: 50px;" alt="ACMlogo" src="images/acm.gif"  align="middle"> <a href="http://phys.org/news/2012-08-voice-stress-software.html">Voice-Stress
+	                Software Is Put to the Test</a>, on <a href="http://phys.org/news/2012-08-voice-stress-software.html">PhysOrg</a>
+	              and <a href="http://technews.acm.org/archives.cfm?fo=2012-08-aug/aug-27-2012.html#602180">ACM Tech</a>, August 2012.
+	
+	<p>
+	&nbsp<img style="height: 30px;" alt="NYTLogo" src="images/nytlogo152.gif" align="middle"> &nbsp the NYTimes Magazine article on <a href="http://www.nytimes.com/interactive/2012/01/01/magazine/the-yelp-review.html?ref=magazine">The
+				                Little Voice in Your Head</a>
+				              January 2012<br>
+	
+		<p>
+	&nbsp<img style="height: 50px;" alt="CoExisitLogo" src="images/CoExistLogo.jpg" align="middle"> Fast Company's Co.Exist reports our work on mobile phone stress detection and Bewell app:&nbsp;<span style="text-decoration: underline;"></span><a href="http://www.fastcoexist.com/1678760/get-some-therapy-from-an-app-that-reads-your-feelings-through-your-voice">Get
+	                Some Therapy From An App That Reads Your Feelings Through Your
+	                Voice</a>, November 2011.
+	<p>
+	&nbsp<img style="width: 47px; height: 47px;" alt="" src="images/cbssun.jpg" align="middle"> NeuroPhone is featured as part of the cover story on <a href="http://www.cbsnews.com/stories/2011/10/09/sunday/main20117796.shtml?tag=contentBody;cbsCarousel">The next step in bionics</a>, CBS News Sunday Morning, October 2011.
+	<P>
+	
+&nbsp<img style="height: 30px;" alt="NYTimeslLogo" src="images/nytlogo152.gif"  align="middle"> &nbsp NeuroPhone is featured as part of the NYTimes Magazine
+		              article on</span> <a href="http://www.nytimes.com/2011/09/18/magazine/the-cyborg-in-us-all.html?_r=1&pagewanted=all">The Cyborg in us all</a>, September 2011.
+	<p>
+	&nbsp<img style="width: 50px;" alt="ACMlogo" src="images/acm.gif"  align="middle"> <a href="http://technews.acm.org/archives.cfm?fo=2010-12-dec/dec-01-2010.html">Smartphone app monitors your every move</a>, ACM TechNews, December 2010.
+	<p> 
+		
+&nbsp<img style="width: 100px; height: 32px;" alt="" src="images/engadget.jpeg"  align="middle"> <a href="http://www.engadget.com/2010/11/27/nokia-toys-with-context-aware-smartphone-settings-switch-jigsaw/">Nokia toys with context-aware smartphone settings switch, Jigsaw provides better context for apps like this</a>, Engadget front page story, Nov 2010.
+		<p>		
+&nbsp<img style="height: 32px;" alt="NewScientistLogo" src="images/new_scientist.jpg"  align="middle">
+	 Jigsaw continous sensing engine covered by New Scientist, <a href="http://www.newscientist.com/article/mg20827885.300-smartphone-app-monitors-your-every-move.html">Smartphone
+	app monitors your everymove</a>, Nov 2010.
+
+	<p> 
+&nbsp<img style="width: 120px; height: 32px;" alt="" src="images/tr.png" align="middle"> Write-up about NeuroPhone project: <a href="http://www.technologyreview.com/blog/editors/24993/">Mobile Phone Mind Control</a>, MIT Technology Review, April 2010
+
+	  <p>
+&nbsp<img style="height: 39px;" alt="siglogo" src="images/siglogo.gif"  align="middle"> SoundSense featured on <a href="http://www.sigmobile.org/about/report2009.html">SIGMOBILE Annual Report 2009</a>, 2009.
+
+	  <p>
+&nbsp<img style="height: 39px;" alt="Slashdotlogo" src="images/slashdot.jpg"  align="middle"> SoundSense featured on slashdot front page,  <a href="http://mobile.slashdot.org/story/09/07/10/1835252/Cell-Phones-That-Learn-the-Sounds-of-Your-Life?art_pos=1">Cell Phones That Learn the Sounds of Your Life</a>, July 2009.
+	<p>
+&nbsp<img style="width: 120px; height: 32px;" alt="" src="images/tr.png" align="middle"> SoundSense featured on MIT Technology Review,
+<a href="http://www.technologyreview.com/communications/22907/?a=f">Cell phones that listen and learn</a>, June 2009.	
+<br>
+<br>
+ </td>
+		</tr>
+		</tbody></table>
+	</td>
+</tr>
+</tbody></table>
+</body></html>
+2

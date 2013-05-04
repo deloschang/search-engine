@@ -1,0 +1,47 @@
+http://www.cs.dartmouth.edu/~ashok/index.html
+3
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Ashok Chandrashekar</title>
+  <meta name="description" content="A brief account of my work at Dartmouth" />
+  <meta name="keywords" content="Computer vision, Object recognition, unsupervised learning, machine learning" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="clouds">
+        <div id="clouds_text">
+          <h1><a href="index.html">Ashok Chandrashekar</a></h1>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <li class="selected"><a href="index.html">Home</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="cv.html">curriculum vitae</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div class="sidebar">
+      <img src="images/ach.jpg" width="160" alt="photo"> 
+      </div>
+      <div id="content"> 
+      <p> I am a Ph.D candidate in the <a href="http://www.cs.dartmouth.edu">computer science department</a> at Dartmouth. My advisor is <a href="http://www.dartmouth.edu/~psych/people/faculty/granger.html">Prof. Richard Granger</a>. I am broadly interested in the challenges of large scale data driven learning. My area of focus has been computer vision applications of statistical and biological models of learning. In particular, I have developed techniques for learning object semantics from very large unlabeled image and video collections. The methods have been designed to be massively parallel inorder to take advantage of large computer clusters and advanced parallel architectures.</p>
+      </div>
+    </div>
+    <div id="content_footer"></div>
+    <div id="content_footer"></div>
+     <div id="footer">
+     <a href="http://www.dartmouth.edu/~rhg/">Brain Engineering Lab</a> |  <a href="http://www.cs.dartmouth.edu">Dartmouth Computer Science</a>
+    </div>
+  </div>
+</body>
+</html>

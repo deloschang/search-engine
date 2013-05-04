@@ -1,0 +1,62 @@
+http://www.cs.dartmouth.edu/%7Ecbk/positions.php
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<title>Chris Bailey-Kellogg | Positions </title>
+<link href="style/main.css" type="text/css" rel="stylesheet" />
+
+<meta name="description" content="Postdoc position in computational protein design / computational immunology" /><meta name="keywords" content="postdoc, postdoctoral research, protein design, computational immunology, immunoinformatics, computational biology, structural bioinformatics, combinatorial optimization, machine learning, protein structure" /></head>
+
+<body>
+
+<div id="page">
+
+<div id="header">
+<h2>Chris Bailey-Kellogg</h2>
+
+<div id="title">
+ Associate Professor, 
+  <a href="http://www.cs.dartmouth.edu/">CS</a>, 
+  <a href="http://www.dartmouth.edu/">Dartmouth</a>
+  
+</div>
+
+<div id="nav">
+  <span><a href="index.php"  >home</a></span>
+  <span><a href="lab.php" class="navhere" >lab</a></span>
+  <span><a href="projects.php"  >projects</a></span>
+  <span><a href="classes.php"  >classes</a></span>
+  <span><a href="papers.php"  >papers</a></span>
+  <span><a href="news.php"  >news</a></span>
+</div>
+</div>
+
+<div id="content">
+	
+<h3>Postdoc position in machine learning / computational immunology</h3>
+
+<div style="float:right;margin-left:10px">
+<img src="img/proj/sm/igg.png" alt="antibody" />
+</div>
+
+<p><b>March 2013</b>. In collaboration with <a href="http://ackermanlab.org/">Margie Ackerman</a>, we are seeking a postdoc to help develop and apply machine learning methods that will uncover and model patterns relating features and functional properties of antibodies.  Antibodies represent the correlate of protection for most vaccines and are the fastest growing class of new drugs.  We have a novel high-throughput array platform that provides unprecedented data characterizing the antibody response to vaccination or infection.  This project will provide opportunities to analyze such data, to develop predictive models that will be used in vaccine development, and to optimize experiments to assess and improve the models.</p>
+
+<p>The focus of this position is the development and application of computational methods; thus a strong background in machine learning / statistical data analysis is key  Experience in computational biology and/or immunology would be helpful, but is otherwise a benefit for you from this postdoctoral training.</p>
+
+<p>Please email me (cbk -at- cs.dartmouth.edu) your CV, statement of research background and interests, and contact information for 2-3 references.</p>
+
+</div>
+
+<div id="footer"></div>
+
+</div>
+
+</body>
+</html>
+
+
+C

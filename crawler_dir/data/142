@@ -1,0 +1,1030 @@
+http://www.cs.dartmouth.edu/~cs5/syllabus.html
+3
+<html> <head>
+<title>CS 5 Spring 2011 Syllabus</title>
+</head>
+
+<body bgcolor=#ffffff>
+<h1><a href="/~cs5/">CS 5 Spring 2011</a><br>
+Syllabus</h1>
+
+[<a href="#instructor">Instructor</a>] [<a href="#tas">Teaching
+Assistants</a>] [<a href="#secldrs">Section Leaders</a>] [<a
+href="#coursedesc">Course Description</a>] [<a
+href="#coursegoals">Course Goals</a>] [<a
+href="#learningobjs">Learning Objectives</a>] [<a
+href="#prereqs">Prerequisites</a>] [<a href="#lectures">Lectures</a>]
+[<a href="#sections">Recitation Sections</a>] [<a
+href="#labs">Labs</a>] [<a href="#text">Textbook</a>] [<a
+href="#software">Software</a>] [<a href="#web">The Web</a>] [<a
+href="#blitz">Blitzmail</a>] [<a href="#help">Help</a>] [<a
+href="#material">Material That Will Be Turned In</a>] [<a
+href="#hwpolicy">Homework Policy</a>] [<a
+href="#assigngrading">Assignment Grading</a>] [<a
+href="#quizzes">Quizzes</a>] [<a href="#exams">Exams</a>] [<a
+href="#grading">Grading</a>] [<a href="#extracredit">Extra Credit</a>]
+[<a href="#disabilities">Disabilities</a>] [<a href="#honor">Honor
+Principle</a>] [<a href="#advice">Advice</a>]
+
+<hr>
+
+<h2><a name="instructor">Instructor</a></h2>
+
+<a href="/~thc/">Tom Cormen</a><br>
+Office: 204 Sudikoff Laboratory<br>
+Email: <a
+href="mailto:tom.cormen@dartmouth.edu">tom.cormen@dartmouth.edu</a> or
+<a href="mailto:thc@cs.dartmouth.edu">thc@cs.dartmouth.edu</a><br>
+Telephone: 646-2417
+
+<p>
+
+<a name="officehrs"></a>Office hours (March 29 through May 31), in 204
+Sudikoff.
+<ul>
+  <li> Monday, 11:00 am&ndash;12:00 noon
+  <li> Tuesday, 4:00&ndash;6:00 pm
+  <li> Thursday, 10:00&ndash;11:30 am
+</ul>
+and by appointment.
+
+<p>
+
+Additionally, any time my door is open and I'm not talking to anyone,
+feel free to knock and come in.  I try very hard to be available to
+students.  I am sometimes around on campus during evenings and
+weekends; call or Blitz to verify that I'm around.
+
+<hr>
+
+<h2><a name="tas">Teaching Assistants</a></h2>
+
+<ul>
+  <li> <a href="http://www.cs.dartmouth.edu/~priya">Priya Natarajan</a><br>
+       205 Sudikoff Laboratory<br>
+       <a href="mailto:priya@cs.dartmouth.edu">priya@cs.dartmouth.edu</a>
+
+  <li> <a href="http://www.cs.dartmouth.edu/~ye">Ye Xu</a><br>
+       111 Sudikoff Laboratory<br>
+       Office hours: Monday 3:30&ndash;5:30 pm<br>
+       <a href="mailto:ye@cs.dartmouth.edu">ye@cs.dartmouth.edu</a>
+
+</ul>
+
+<hr>
+
+<h2><a name="secldrs">Section Leaders</a></h2>
+
+<ul>
+  <li> Sehwan Ahn &rsquo;12
+  <li> Darren Cheng &rsquo;11
+  <li> Michael Diamond &rsquo;11
+  <li> Michelle Earhart &rsquo;12
+  <li> Emily Freebairn &rsquo;12
+  <li> Shloka Kini &rsquo;13
+  <li> Jason Laster &rsquo;11
+  <li> Lauren Litscher &rsquo;12
+  <li> Zachary Marois &rsquo;12
+  <li> Melissa Queen &rsquo;13
+</ul>
+
+<hr>
+
+<h2><a name="coursedesc">Course Description</a></h2>
+
+CS 5 is the header course for the Computer Science major and minor,
+and it is one option as the header course for the Digital Arts and
+Computational Methods minors.  It can also substitute for Engineering
+Sciences 20 in the Engineering major.
+
+<p>
+
+
+CS 5 fulfills the TLA distributive requirement, so you get both your
+Technology or Applied Science (TAS) credit and your lab credit.
+Pretty sweet!
+
+<hr>
+
+<h2><a name="coursegoals">Course Goals</a></h2>
+
+You might think that this course is about computer programming.  True,
+you will do a lot of programming.  But that is <em>not</em> what this
+course is about.
+
+<p>
+
+Some day you will be a leader, a decision maker.  As computer
+technology becomes more prevalent and pervasive in society, decision
+makers increasingly need to understand not just how to use the
+technology, but also the principles behind it.  In this course, you
+will begin to learn about the principles behind computer technology.
+You'll start to understand why computers do the things they do.
+
+<p>
+
+More broadly, in CS 5 you'll learn to think about problems the way a
+computer scientist thinks.  This skill is valuable in any
+field&mdash;yes, even in the humanities.
+
+<hr>
+
+<h2><a name="learningobjs">Learning Objectives</a></h2>
+
+In this course, you will (if you're doing it right) learn the
+following:
+<ul>
+  <li> How to write <em>good</em> Java code that is
+       <ul>
+	 <li> nicely designed and broken into modules, and
+	 <li> well documented.
+       </ul>
+
+  <li> Recursion.
+
+  <li> Basics of object-oriented programming. 
+
+  <li> Abstraction (hiding details).
+
+  <li> Computational complexity.
+
+  <li> Dynamic data structures.
+
+  <li> Simple graphics.
+
+  <li> GUI (Graphical User Interface) design.
+
+  <li> Basics of parallel computing.
+
+  <li> The idea that many problems can be solved in a variety of
+       ways, and that the way you solve it can have a profound effect
+       on how clear and understandable your code is, or on how fast
+       your program runs.
+
+</ul>
+
+<hr>
+
+<h2><a name="prereqs">Prerequisites</a></h2>
+
+This course has two prerequisites:
+<ol>
+  <li> You have to know how to read web pages.
+  <li> You have to know how to receive and send email.
+</ol>
+
+In addition, we'll be using a small amount of math.  Do you know what
+it means to square a number?  (Yes, of course you recall that it means
+to multiply the number by itself.)  Do you know what a logarithm is?
+Don't worry about it if you don't remember logarithms, or even if they
+make you uncomfortable.  The way we use them in this course, you'll
+understand them.
+
+<hr>
+
+<h2><a name="lectures">Lectures</a></h2>
+
+Lectures are in 008 Kemeny in the 2 hour: MWF, 1:45-2:50, x-hour
+Thursday 1:00-1:50.
+
+<h4>x-hours</h4>
+
+<strong>You must keep x-hours available for this course.</strong> We
+will use the x-hour <em>every</em> week during this term.  (Sorry
+about that, but it allows us to keep the pace for this course
+reasonable.)  We'll use x-hours for lectures (and you are as
+responsible for material covered in x-hours as you are for material
+covered during regular lecture hours), review sessions, and in-class
+quizzes.  The <a href="schedule.html">course schedule</a> page will
+tell you what we're using the x-hour for in each week.
+
+<h4>Questions</h4>
+
+I like it when you ask questions in lecture.  I really do.  I
+understand that it can be intimidating to raise your hand for a
+question in a large lecture, but please do not hesitate to ask
+questions.  Don't worry about what anyone thinks of you for asking
+questions.  I'll think more of you if you understand the material, and
+if you need to ask questions, that's fine.  And don't worry about what
+the other students might think.  It is likely that if you have a
+question, then at least one other student&mdash;and possibly many
+more&mdash;has the same question.  You're doing the other students a
+favor by asking!
+
+<p>
+
+If you still are reluctant to ask a question in lecture, even after
+all the encouragement in the last paragraph, feel free to write it
+down and ask me, a TA, or a section leader after class, by blitz, in
+<a href="#officehrs">office hours</a>, or in <a href="#labhrs">lab
+hours</a>.  We want to help you!!
+
+<p>
+
+Occasionally, I might elect to answer a question later or after
+lecture.  That will usually be because the answer to the question is
+tangential to the material we're covering, or simply because I am
+pressed for time.  But please feel free to ask; I'll let you know
+nicely if I cannot answer the question then and there.
+
+<h4>Laptops and phones</h4>
+
+If you bring a mobile phone, please make sure that it does not audibly
+ring during lecture.  If it does, then I will have you hand the phone
+to me, and I will answer it for you.  You do not want that to occur.
+
+<p>
+
+Although you are not required to bring your computer to class, I
+realize that you might find it useful to read the programs or lecture
+notes on your laptop during lecture.  I'm OK with you doing so.  But I
+am <em>not</em> OK with you using your laptop for Blitzmail, Facebook,
+Twitter, etc. during lecture.  If you are that bored during class, you
+are welcome to leave; in fact I would prefer that you leave, so that
+your online activities do not distract those around you.
+
+<hr>
+
+<h2><a name="sections">Recitation Sections</a></h2>
+
+<strong>You must attend a one-hour recitation section each
+week.</strong> Attendance is mandatory; section leaders will actually
+take attendance!  The recitation section schedule will be determined
+by the end of the day on Friday, March 31, and your section
+assignment will be on the Recitation Sections page by then.  This page
+will be accessible only through the <a
+href="http://www.dartmouth.edu/~blackboard/">Blackboard site</a>.  You
+are responsible for checking this page and attending your recitation
+section starting on April 6, 7, or 8.
+
+<p>
+
+You need to download the <a href="Section%20times.doc">Section Time
+Availability Form</a>, fill it out, and email it to me by 3:30 pm on
+Friday, April 1.  If you say you are available during a one-hour slot,
+I expect you to honor this commitment.  Please take this expectation
+into account as you make other commitments on and off campus this
+term.
+
+<p>
+
+We recognize that occasionally (which means "not on a regular basis"),
+you might not be able to attend the recitation section to which you
+have been assigned.  In that event, please find another section to
+attend that week.  Make sure that your regular section leader knows
+that you'll be attending another section, and make sure you get
+permission <em>in advance</em> from the section leader whose section
+you'll be visiting.
+
+<hr>
+
+<h2><a name="labs">Labs</a></h2>
+
+Room 003 in Sudikoff has a number of iMacs that are available for your
+use.  They run OS X version 10.6 (Snow Leopard).
+
+<p>
+
+003 Sudikoff is locked at all times, but if you're registered for CS
+5, you should be able to get in with your Dartmouth ID.  Likewise,
+Sudikoff is locked after 6:00 pm, but if you're registered for CS 5,
+you should be able to get in with your Dartmouth ID.  The second floor
+of Sudikoff also requires card access after 6:00 pm, and again, your
+Dartmouth ID should get you in, if you're registered for CS 5.
+
+<p>
+
+Note that there are several restrictions that come with access to 003
+Sudikoff.  Among them are that you are not to lend your Dartmouth ID
+to anyone else in order to allow them into the building or labs.
+Also, <em>you must not bring food into the lab.</em> There are tables
+in the hallway outside the lab for you to eat at.  Food in the labs
+can make the keyboards darned unpleasant to use, and it can even
+render machines unusable.
+
+<p>
+
+<a name="labhrs"></a>There will be course staff members in the labs to
+help you during the following hours:
+<ul>
+  <li> Sunday, 7:30&ndash;10:30 pm, staffed by Shloka, Sehwan, and Darren.
+  <li> Monday, 7:30&ndash;10:30 pm, staffed by Lauren, Melissa, and Priya.
+  <li> Tuesday, 7:30&ndash;10:30 pm, staffed by Emily, Michael, Jason, Zach, and Ye.
+</ul>
+
+<p>
+
+You may find it useful to do some of the assignments right in the lab.
+Many of the problems that will stump you and waste your time if you
+are working alone can be cleared up in moments by the course staff.
+Then again, you might not find it useful to work in the lab, depending
+on how many of your fellow students are competing with you for
+machines.  Of course, you can bring your own laptop with you, and then
+you're competing only for seats.
+
+<p>
+
+In addition, whenever a short assignment is due on Friday, we will
+post a course staff member during the hours
+<ul>
+  <li> Thursday, 7:30&ndash;10:30 pm, staffed by Michelle.
+</ul>
+
+<p>
+
+Later in this page, we refer to some homework assignments as "lab
+assignments."  You may work on lab assignments wherever you like.  You
+need not work on them in the labs.
+
+<hr>
+
+<h2><a name="text">Textbook</a></h2>
+
+The course text is John Lewis and William Loftus, <i>Java Software
+Solutions: Foundations of Program Design, Sixth Edition</i>.  This
+book contains much of the basic information about Java.  We will often
+use class time to elaborate, clarify, and expand on topics that are
+discussed in the text.
+
+<p>
+
+Please note that we are using the <strong>sixth edition</strong> of
+the Lewis and Loftus text.  If someone offers to sell you a Lewis and
+Loftus book that is a previous edition&mdash;even at a deep
+discount&mdash;you should decline their kind offer.
+
+<p>
+
+I checked at the two local bookstores on March 25.  Wheelock Books had
+quite a few used copies of Lewis and Loftus, but I did not see the
+price.  The Dartmouth Bookstore was selling only e-books, for $50.85.
+
+<p>
+
+I have put all examples from the text on <a href="examples.html">our
+own web site</a> (and there's a link on the top-level page of the CS 5
+web site).
+
+<p>
+
+The <a href="schedule.html">course schedule</a> page will tell you the
+reading for each lecture.  Some of the assignments will
+<em>remind</em> you what to read, but the ultimate authority on what
+to read for each lecture is the syllabus page.
+
+<p>
+
+The Lewis and Loftus text is recommended, rather than required.
+That's because in past course evaluations, several students commented
+that they found the lecture notes I publish online to be wholly
+sufficient and that they wished they had not purchased the textbook.
+The text contains material that we do not cover in lecture, but that
+you should know.  That's why I recommend purchasing the textbook.
+
+<hr>
+
+<h2><a name="software">Software</a></h2>
+
+We will be using Eclipse 3.6.2 for Java.  This software is a free
+Integrated Development Environment (IDE) that runs on both Windows and
+Mac OS X.
+
+<p>
+
+Unfortunately for Windows users (and, yes, we know that many Dartmouth
+students have opted for Windows), the Mac will be the "primary"
+machine supported.  The CS undergraduate lab for this course contains
+only iMacs.  I use a MacBook Pro.  Some of the course staff have
+experience with Windows, however, so you may find it a good idea to
+ask them your Windows-specific questions.  Because I don't run
+Windows, I will be unable to help you with Windows-specific problems.
+Indeed, one great asset of our TAs and some of our section leaders is
+that they can help you with Windows issues.
+
+<p>
+
+Note that you can always Blitz your program to yourself.  So even if
+you normally run Windows but you want to work on an iMac in the lab,
+you'll be able to work on your own code.
+
+<hr>
+
+<h2><a name="web">The Web</a></h2>
+
+All documents, class examples, lab assignments, short assignments, and
+sample solutions related to the course will be on the web.  You can
+get at them through the course <a
+href="http://www.dartmouth.edu/~blackboard/">Blackboard site</a>, or
+you can dial direct and go to <a
+href="http://www.cs.dartmouth.edu/~cs5/">http://www.cs.dartmouth.edu/~cs5/</a>.
+Presumably you know how to find the web pages, since you're reading
+this one.  The first short assignment tells you how to find the CS 5
+information on the web.
+
+<hr>
+
+<h2><a name="blitz">Blitzmail</a></h2>
+
+I will assume that you know how to use electronic mail, such as
+Blitzmail.  I will send various kinds of information by way of
+electronic mail addresses, and I will respond to questions from you
+sent by Blitz.  Please check your Blitzmail frequently, and before
+working on an assignment, check whether I have made any changes.
+
+<p>
+
+I will assume that when I send out a Blitz to the class, you will read
+it.
+
+<hr>
+
+<h2><a name="help">Help</a></h2>
+
+There are many ways for you to get help.  You can visit me during <a
+href="#officehrs">office hours</a>, you can go to 003 Sudikoff when
+course staff is there, or you can make an appointment with me, your
+section leader, or a TA.  You should also feel free to ask for help by
+Blitzmail.  You can Blitz a specific person, including me.  For a
+faster response, you can get an answer from the first member of the
+course staff (again including me) to read your message by Blitzing to
+<a
+href="mailto:cs5help@cs.dartmouth.edu">cs5help@cs.dartmouth.edu</a>;
+this account is a mailing list consisting of me, the TAs, and all
+section leaders.  (Note that you have to put <u>cs.</u> after the
+<u>@</u> in the address.)  We will try to respond as soon as possible.
+
+<p>
+
+If you visit me or any of the course staff for help with a program
+that you are writing, make sure that you can get to an electronic copy
+of your program.  That way, we can try to compile and run it.  It's
+nice to have a listing, but we cannot compile and run a listing.
+
+<p>
+
+When you Blitz a program to one of us, you just need to add your
+program as an enclosure to your Blitz, along with additional
+information as to what problems you have observed.  Make sure you send
+your program as an enclosure; <em>do not copy and paste your program
+into the message</em>.
+
+<p>
+
+The Tutor Clearinghouse is another source of help.  They will have
+private, one-on-one tutors available for this class.  The tutors are
+recruited on the basis that they have done well in the subject, and
+they are trained by the Academic Skills Center.  If you are on
+financial aid, the College will pay for three hours a week of
+tutoring.  To get a tutor, go to 301 Collis and fill out an
+application.
+
+<hr>
+
+<h2><a name="material">Material That Will Be Turned In</a></h2>
+
+On many Mondays, Wednesdays, and Fridays, one of two types of
+assignment will be due.  The <a href="hw-requirements.html">Homework
+Requirements</a> page explains what quality is expected of homework
+that you submit.
+
+<dl>
+  <dt> Short assignments
+
+  <dd> These will be relatively brief exercises that will be turned in
+       at the very next class.  They usually will consist of one or
+       two short programs that help you understand the concept being
+       discussed.  They will be turned in via the CS 5 HW HAND IN
+       boxes in the lobby outside 008 Kemeny.  You will hand in only
+       hardcopy for short assignments.  (We might ask you to turn in
+       one short assignment electronically, so that we can test a new
+       way of using electronic dropboxes in Blackboard.)  The short
+       assignments will be graded and returned to the CS 5 HW RETURNED
+       boxes.  Most of the short assignments will be earlier in the
+       course.
+
+       <p>
+
+  <dt> Lab assignments
+  <dd> During the term, there will be six longer lab assignments.
+       These will be handed out on Wednesdays and will be due one week
+       later.
+
+       <p>
+
+       Note that although we refer to the longer assignments as "lab
+       assignments," you may work on them wherever you like.  You need not
+       work on them in the labs.
+       
+       <p>
+
+       Because CS 5 contains substantial lab assignments, it satisfies
+       the laboratory distributive requirement (i.e., it's a TLA).
+       
+</dl>
+
+<hr>
+
+<h2><a name="hwpolicy">Homework Policy</a></h2>
+
+Your assignments will be graded by your section leader.
+
+<p>
+
+For each assignment, you must place your hardcopy materials in a large
+envelope (8.5 x 11 inches), with your name and your section leader's
+name appearing conspicously on the outside of the envelope.  (You can
+omit your section leader's name for Short Assignments 1 and 2, since
+you won't know who your section leader is at the time you hand them
+in.)  Your name should appear as well on each program listing, output,
+and any other written material that you submit.  If you cannot get a
+large envelope, see Professor Cormen or a TA, and we will get you one.
+But do so <em>in advance</em>.  We do <em>not</em> bring envelopes to
+class.
+
+<p>
+
+The <strong>short assignments</strong> are to be turned in at the next
+class time (see the lateness policy below) with whatever materials are
+needed to show that you can, and have, done the assignments.  This
+will be a bit more informal since the exercises will be much shorter.
+Normally, you will turn in hard copy of program listings and runs, or
+a separate sheet of paper on which you have given written responses to
+questions posed.  All such materials should be placed in a large
+envelope and turned in at class time on the due date.  You must turn
+them in on time so that your section leader can check them and arrange
+for help in cases where you need it.  If you get only partial credit
+on a short assignment, you may resubmit it one time, provided that you
+resubmit an assignment within two days of when you got it back (or if
+you get it back on a Friday, you must resubmit by the next Monday.)
+You may resubmit up to six short assignments of your choosing.
+
+<p>
+
+When you resubmit a short assignment, we ask that you do a couple of
+things as a courtesy to your grader.  First, please make it clear that
+it is a resubmission.  Second, please include your original submission
+along with the resubmission, so that your grader can see your
+progress.
+
+<p>
+
+We will ask you to be more formal when submitting your work on the
+<strong>lab assignments</strong>.  When you turn in your lab
+assignments, you should include hardcopy listings, output, and any
+other required written materials.  All such materials should be placed
+in a large envelope and turned in at class time on the due date.
+Place your lab assignments, packaged as noted, in the CS 5 HW HAND IN
+boxes.
+
+<p>
+
+For the lab assignments, you will also turn in the programs
+electronically.  Each lab assignment will tell you how to submit your
+programs electronically.  Your section leader will run your programs,
+if necessary, as she or he reads your printed listings and runs.
+
+<p>
+
+Please note that you will submit electronically <em>only</em> the lab
+assignments.  You will hand in only hardcopy for your short
+assignments.  (With the possible exception of the short assignment
+that we might ask you to submit electronically.)
+
+<hr>
+
+<h2><a name="assigngrading">Assignment Grading</a></h2>
+
+<strong>Short assignments will be graded on a scale of
+0&ndash;2.</strong> Your section leader will allow you to resubmit if
+you get a 1, but not if you get a 0.  In the past, we allowed
+resubmits for 0s.  Several students abused the system, repeatedly
+submitting nothing of substance and then resubmitting later.  By
+allowing resubmission only if you get a 1, we encourage you to put in
+an honest effort on the short assignments.
+
+<p>
+
+<strong>Short assignments are due at the start of class on the day
+they are due.  (They will be collected a few minutes after the class
+starts.)  We will not accept short assignments handed in late.  If you
+do not hand in a short assignment on time, you will get a score of 0
+for that assignment and you may not resubmit.</strong> Solutions to
+short assignments will be posted on on the web right after the class
+in which they are due.  <em>Yes, you may refer to the posted solution
+when preparing a resubmission.</em>
+
+<p>
+
+<strong>Each of the six lab assignments is scored on a basis of 40
+points.</strong> The electronic version and the envelope with your
+hardcopy will be due at the start of class on the due date.  Solutions
+will be posted on the web at 5:00 pm the next day.
+
+<p>
+
+By the start of class, we mean 1:45 pm <em>sharp</em>.  <strong>If you
+submit your assignment after 1:45 pm (i.e., 1:46 pm or later) on the
+due date but by 5:00 pm the next day, there is an automatic 16-point
+deduction.</strong> That is, we will determine what your score would
+have been had you submitted your assignment on time and then subtract
+16.  (If the resulting score turns out to be negative, we will just
+score it as a 0.)  If you don't submit your assignment by 5:00 pm the
+next day, you will get a 0.
+
+<p>
+
+It might happen that you submit your program electronically on time
+but cannot get the printout ready by the start of class.  If this
+happens and you hand in the printout by 5:00 pm on the day that the
+assignment is due, we will deduct only 1 point.  If you hand it in by
+5:00 pm the next day (still having submitted the electronic version on
+time), the deduction is 2 points.  If you don't hand in the printout
+at all, the deduction is 5 points.  To hand in the printout of your
+lab assignment late, you must submit it to your section leader; we
+won't see it in time if you leave it in the boxes outside 008 Kemeny.
+If you submit the electronic version late, we will not take a further
+deduction for a late or missing printout.
+
+<p>
+
+There are two ways that you can get an exemption from this lateness
+policy.  First, if something happens beyond your control that prevents
+you from doing your assignment on time, then we can excuse a late
+assignment.  Second, you may be able to arrange <strong>in
+advance</strong> to submit your assignment late.  You will need a
+Darned Good Reason to do so.  Note that you need to ask <strong>in
+advance</strong>.  The day the assignment is due does not count as "in
+advance."  <strong>Only Professor Cormen is authorized to excuse late
+assignments.</strong>
+
+<p>
+
+Yes, this lateness policy is harsh.  Why?  Because in the past, those
+who have fallen behind have had a devil of a time catching up.  So we
+are trying to prevent you from falling behind.  Yes, 40% off for a lab
+assignment handed in at 1:46 pm sucks.  In the past, students have
+complained that they could have handed in something substandard on
+time and gotten more points than if they had handed in something
+really good a little late.  Unfortunately, the Real World works this
+way as well.  Imagine showing the World's Best Software&hellip;a week after
+the trade show.  <strong>It is up to you to plan your time carefully
+and get your work in on time!</strong>
+
+<p>
+
+Short assignments and lab assignments will be returned after grading
+to the boxes labeled CS 5 HW RETURNED.
+
+<hr>
+
+<h2><a name="quizzes">Quizzes</a></h2>
+
+We will have three in-class quizzes, during x-hours on the following
+dates:
+<ul>
+  <li> Thursday, April 14,
+  <li> Thursday, May 5,
+  <li> Thursday, May 26.
+</ul>
+
+<hr>
+
+<h2><a name="exams">Exams</a></h2>
+
+<ul>
+  <li> Exam 1: Thursday, April 21, 6:00&ndash;9:00 pm, in Filene Auditorium.
+  <li> Exam 2: Thursday, May 12, 6:00&ndash;9:00 pm, in Filene Auditorium.
+</ul>
+
+The exams are designed to take less than the three hours allocated,
+but I don't want you to feel time pressure.
+
+<ul>
+  <li> Final examination: Friday, June 3, 3:00&ndash;6:00 pm, location
+       TBA.
+</ul>
+
+<p>
+
+Prior to each exam, I will post a web page to help you review.  There
+will also be review sessions during the x-hours the days of the first
+two exams.  We will also hold a review session during reading period,
+on June 2, 10:00 am to 12:00 noon, in 008 Kemeny.
+
+<hr>
+
+<h2><a name="grading">Grading</a></h2>
+
+<ul>
+  <li> Short assignments: 15%
+  <li> Lab assignments: 45%
+  <li> Quizzes: 10%
+  <li> Exams: 30%
+</ul>
+
+<p>
+
+Your final grade will be based on the percentage of all available
+points that you receive.  To give you an idea of how percentages might
+translate into letter grades, here is the correspondence from the
+Fall 2009 term.  <strong>I do not claim that the grade cutoffs for
+this term will be the same.  These cutoffs are merely to give you an
+idea of how I have graded in the past.</strong> (Really.  Do not use
+the cutoffs below as <em>this term's</em> cutoffs.)
+
+<ul>
+  <li> A: 95&ndash;100
+  <li> A-: 92&ndash;95
+  <li> B+: 89&ndash;92
+  <li> B: 85&ndash;89
+  <li> B-: 80&ndash;85
+  <li> C+: 78&ndash;80
+  <li> C: 73&ndash;78
+  <li> C-: 70&ndash;73
+  <li> D: 55&ndash;70
+  <li> E: 0&ndash;55
+</ul>
+
+<hr>
+
+<h2><a name="extracredit">Extra Credit</a></h2>
+
+Some of the assignments may suggest extra credit work.  Extra credit
+in this course will be tallied separately from regular scores.  If you
+end up on a borderline between two grades at the end of the course (or
+are being considered for a citation), extra credit will count in your
+favor.  Failure to do extra credit will never be counted against you,
+however.  You should do extra credit work if you find it interesting
+and think that it might teach you something.  It never pays to skimp
+on the regular assignments or reading in order to do extra credit
+problems.
+
+<p>
+
+One corollary of the way in which we count extra credit is that if you
+get a 30 on a lab assignment and also 5 points of extra credit, that
+is <em>not</em> the same as getting a 35 with no extra credit.  The
+latter is better.
+
+<hr>
+
+<h2><a name="disabilities">Disabilities</a></h2>
+
+I encourage students with disabilities, including "invisible"
+disabilities such as chronic diseases and learning disabilities, to
+discuss with me after class or during my <a href="#officehrs">office
+hours</a> appropriate accommodations that might be helpful to you.
+
+<p>
+
+Students with disabilities enrolled in this course and who may need
+disability-related classroom accommodations are encouraged to make an
+appointment to see me before the end of the second week of the term.
+All discussions will remain confidential, although the Student
+Accessibility Services office may be consulted to discuss appropriate
+implementation of any accommodation requested.
+
+<hr>
+
+<h2><a name="honor">Honor Principle</a></h2>
+
+On exams, all work must be your own.  You may work on short
+assignments individually or in groups.  <strong>Programs that you turn
+in, however, should be created, typed, documented, and output
+generated, yourself.</strong> Similarly for the lab assignments, you
+may consult freely with instructors and classmates during the phase of
+designing solutions, but you should then work individually when
+creating your programs&mdash;typing, documenting, and generating
+output.  During the debugging stage you may discuss your problems with
+others in the class, but you should not copy code to "fix" bugs.
+<strong>To do otherwise is a violation of the Academic Honor
+Principle.  If you work with a classmate on any assignment, you should
+tell us who you worked with in a comment at the beginning of your
+program.</strong>
+
+<p>
+
+You should attribute the proper source in any code that you submit
+that you did not write yourself.  This includes code that you take
+from outside references&mdash;for example a book other than the course
+text.  And it even includes code that you take from class examples,
+the course text, or the assignments.  (I agree that may be tedious to
+attribute the source in code that we have given you, but we want you
+to be in the habit of attributing your sources.  I co-chaired the
+committee that wrote <a
+href="http://www.dartmouth.edu/~writing/sources/"><i>Sources and
+Citation at Dartmouth College</i></a>.)
+
+<p>
+
+If you resubmit a short assignment and use code from the published
+solution, you <em>should</em> attribute that.  Note also that proper
+respect for copyright laws as it applies to printed and software
+products is part of the <em>Computing Code of Ethics</em>.
+
+<p>
+
+Whenever we ask you to turn in sample runs of your program, the runs
+you turn in must be the result of actually running your program.
+<strong>It is a violation of the Academic Honor Principle to falsely
+represent a printout as being output from your program.</strong> If
+you change your program, make sure to generate output from <strong>the
+version of the program that you hand in.</strong> It's amazing how a
+seemingly minor change to the code can cause a big change to the
+output of a program.  Also, make sure that when you are running a
+program, that it is <em>your</em> program; it is easier than you might
+think on a public Mac to run a program that someone else had left on
+the machine.
+
+<p>
+
+In the past, we have had a few incidents in which students turned in
+output that did not come from the program handed in.  In each case, it
+turned out that the student had made a foolish mistake (in not
+rerunning the program or handing in an old version of the program or
+the output) and had not intended to misrepresent the work.  Yet it
+caused many an uncomfortable moment for the student and also for the
+student's section leader and for me as well.  So please&mdash;pretty
+please with sugar on top&mdash;endeavor to verify that you're handing
+in output that comes from the very program you're handing in.
+
+<p>
+
+It is not easy to come up with good homework problems that help you
+learn a concept, are interesting, and require an appropriate amount of
+work.  Over the years we have developed and refined a number of
+homework problems, and I plan to reuse some of them for this class.
+You should <strong>not</strong> look at any solutions to homeworks
+assigned in previous terms, including sample solutions, or solutions
+written by other students.
+
+<p>
+
+We have had some uncomfortable situations occur in the past, and I
+want to make it clear what the policy is.  Two students, Alice and
+Ralph, discuss an assignment and design their code together.  That is
+fine.  But then they decide that since their programs would be so
+similar, they might as well have Alice type in the code, have Ralph
+make his own copy of the file containing the code, and then have Ralph
+make his own minor changes.  <strong>This is a violation of the
+Academic Honor Principle.</strong> Although you may discuss and design
+with others, the code you hand in must be entirely your own.
+
+<p>
+
+Here's another situation that occurred.  Trixie and Ed start working
+independently on a program.  Trixie finishes and has a working
+version.  Ed has trouble with his.  Trixie helps Ed debug.  That is
+fine.  But then Trixie realizes that Ed has a section of code that is
+all wrong and the program she wrote has just the right code for that
+section.  She shows Ed her program.  Or worse, she gives Ed an
+electronic copy of her program so that he can just paste in the
+correct code.  <strong>Either action is a violation of the Academic
+Honor Principle.</strong>
+
+<p>
+
+I realize that it can be hard to decide when you might be violating
+the Academic Honor Principle when we let you collaborate to a limited
+extent.  Here is a good rule of thumb.  If you are talking in normal
+English (or Chinese or German or some other natural language) you are
+probably OK.  If you find yourself talking in Java code, you have
+crossed the line.  So saying, "Your program runs forever because you
+have the wrong condition in the while loop" is OK.  But saying,
+"Change <code>while (x == 0)</code> to <code>while (x >= 0)</code>" is
+not.
+
+<p>
+
+If you have any question about whether what you're doing is
+within the Academic Honor Principle, do not hesitate to check with me.
+If it's late and you can't find me, you're better off erring on the
+side of caution.
+
+<p>
+
+Most violations of the Academic Honor Principle come down to
+<strong>failure to cite work that is not yours</strong>.  If you copy
+any portion of your program from your friend Elvira and represent it
+as your work, then you either intended to deceive or were careless
+about citing.  Either case is a violation of the Academic Honor
+Principle.  If you copy your entire program from Elvira but include on
+the printout, "This code was copied in its entirety from Elvira," then
+you cited properly, though you didn't actually do the work.  In this
+latter case, I would not report a violation of the Academic Honor
+Principle, though your grade on the assignment would be 0.  But that
+would be <em>far</em> preferable to a COS hearing.
+
+<p>
+
+The same goes for code that you find in some other book or on the
+Internet.  You are in violation of the Academic Honor Principle if you
+fail to attribute your sources.
+
+<p>
+
+You don't need to cite if you wrote the code yourself.  You don't need
+to cite just because you're using a construct you saw elsewhere.  For
+example, you need not cite for using
+<code>System.out.println(something)</code>, even though it was in the
+class examples.  That would be like citing "printing press" in an
+essay!  Nor do you have to cite just because you use a for-loop, even
+though you saw a for-loop in a class example.  It's when you lift
+several lines of code from elsewhere that you need to cite.
+
+<p>
+
+To cite, include in a comment&mdash;near the top of your file is
+fine&mdash;stating where you got the code from:
+<xmp>
+// Based on Fact6.java in the March 30 lecture.
+</xmp>
+or
+<xmp>
+// Based on the Addition.java program on page 62 of Lewis and Loftus.
+</xmp>
+
+<p>
+
+Please do not cheat.  Cheaters&mdash;whether or not they are
+caught&mdash;bring dishonor upon themselves and upon everyone else at
+Dartmouth.  To do that, for just a few lousy points in a course, is
+[insert your favorite strong adjective meaning "stupid" here].
+Furthermore, if you cannot solve the short assignments and lab
+assignments on your own, then you will be nailed on the quizzes and
+exams.
+
+<p>
+
+I have served on the COS, and I have seen what happens to students who
+are caught cheating: they are sent on the "Parkhurst FSP."  I have
+brought several Academic Honor Principle cases to the COS, and I
+deeply dislike having to do so.  Please don't make me.
+
+<h3>Special note for when you work on a computer that anyone else
+might use</h3>
+
+If you are working on a computer that is not yours&mdash;especially a
+Mac in 003 Sudikoff&mdash;or that someone else in the course might
+use, you should be very careful to remove your code from the computer
+when you are all done.  You should probably Blitz your code to
+yourself before you remove the code.
+
+<p>
+
+Why do we tell you to do this?  Because if you leave your code on a
+computer, and someone else can see it, then they can copy it and hand
+it in.  If that happens, then we have a bad situation involving you
+(the copy-ee) and the other person (the copy-er), and it's
+difficult&mdash;if not impossible&mdash;to tell who was the copy-ee
+and who was the copy-er.  By removing your code from the computer when
+you're done, you can avoid getting yourself into that situation.
+
+<p>
+
+To remove your code, you'll want to delete it from the Eclipse
+workspace.  And you'll also want to move any other copies on the
+computer to the Trash (or the Recycling Bin) and empty it.
+
+<hr>
+
+<h2><a name="advice">Advice</a></h2>
+
+Read the material I ask you to read, and follow the instructions.
+Many students have wasted a lot of their valuable time, and their
+grades have suffered, <em>simply because they did not follow
+directions</em>.  <strong>Start all assignments early.</strong> With
+few exceptions, at the time you receive an assignment, you'll know
+everything you need to do it.  There is no reason to procrastinate.
+
+<p>
+
+At the same time, do not be afraid to get help.  The purpose of this
+course is not to waste your time.  If you are spinning and not making
+progress on a problem, please see me, a TA, or a section leader.  We
+can point you in the right direction without giving away the store.
+
+<hr>
+
+<h2>Three final pieces of advice</h2>
+
+<ol>
+  <li> Don't fall behind in this course.
+  <li> <em>Don't fall behind in this course.</em>
+  <li> <big><strong><em>DON'T FALL BEHIND IN THIS
+       COURSE.</em></strong></big>
+
+</ol>
+
+<p>
+
+The material in CS 5 builds on itself, and the pace is fast.  As
+a result, it's easy to fall behind in this course, and if you do it's
+very difficult to recover.
+
+<hr>
+<address><a href="http://www.cs.dartmouth.edu/~thc/">Thomas H. Cormen &lt;thc@cs.dartmouth.edu&gt;</a></address>
+<!-- hhmts start -->
+Last modified: Tue Apr 12 13:18:15 2011
+<!-- hhmts end -->
+</body> </html>

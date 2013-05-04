@@ -1,0 +1,78 @@
+http://www.cs.dartmouth.edu/~epics/high-horses/index.html
+3
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>EPICS + High Horses Partnership</title>
+<meta http-equiv=content-type content="text/html; charset=us-ascii">
+<link href="../style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+
+<p>
+<a href="http://www.cs.dartmouth.edu/~epics/"><img src="../epics_dart.gif" alt="EPICS" border=0 align="middle"></a>
+<font class=at>&nbsp;+&nbsp;</font>
+<a href="http://www.highhorses.org/"><img src="hh.jpg" alt="High Horses" border=0 align="middle"></a>
+</p>
+
+<table width="100%" border=0><tbody>
+<tr>
+<!-- navigation -->
+<td valign=top align=left width=100><br>
+<a href="../index.html" class=nav>home</a><br>
+<a href="../students.html" class=nav>students</a><br>
+<a href="../agencies.html" class=nav>agencies</a><br>
+</td>
+
+<!-- content -->
+<td valign=top>
+<div class=header align=center>Partnership Summary</div><br>
+
+<p><a href="http://www.highhorses.org/">High Horses</a> is a
+nationally certified therapeutic riding program, serving riders with
+disabilities such as autism, cerebral palsy, developmental delay, and
+emotional challenges.  By involving their body and mind, riders gain
+increased self esteem, confidence, posture, balance, coordination, and
+so forth.  High Horses is partnering with Dartmouth EPICS in order to
+improve their ability to match riders, horses, volunteers, and
+professionals.  The EPICS software will take into account factors such
+as needs, abilities, specialties, preferences, and timing constraints,
+in order to determine riding schedules.</p>
+
+<p>A series of sessions at the <a
+href="http://www.gracehopper.org/">2006 Grace Hopper Celebration of
+Women in Computing</a> featured the High Horses partnership.  A video
+interview with Executive Director Liz Claud (<a
+href="hh.mov">quicktime</a> or <a href="hh.wmv">windows media</a>)
+engaged participants in brainstorming about computing solutions to
+community problems.  Please contact <a
+href="http://www.cs.dartmouth.edu/~cbk/">Chris Bailey-Kellogg</a>
+regarding any further uses of the video.</p>
+
+<p>Team members</p>
+<ul>
+<li><b>Fall 2006</b>: John Paul Lewicke, Jason Reeves</li>
+<li><b>Winter 2007</b>: Lucius Alexander, Nathan Chung, David
+Fullerton, Chris Moss, Lee Winikor</li>
+<li><b>Spring 2007</b>: Lucius Alexander, David Fullerton, Chris Moss,
+Lee Winikor</li>
+<li><b>Fall 2007</b>: Gabriel Mahoney, Senate Taka</li>
+<li><b>Winter 2008</b>: Gabriel Mahoney, David MacKenzie</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<img src="schedule.jpg" alt="Schedule screenshot" border="0" align="middle"><br>
+
+<!-- footer -->
+<tr><td colspan=2 height=20></td></tr>
+<tr><td class=hr colspan=2 height=2></td></tr>
+<tr><td class=footer colspan=2>
+<!-- hhmts start --> Last modified: Tue Nov 27 14:42:54 EST 2007 <!-- hhmts end -->
+</td></tr>
+
+</tbody></table>
+</body>
+</html>
+w

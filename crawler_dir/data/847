@@ -1,0 +1,423 @@
+http://www.cs.dartmouth.edu/site-content/site/colloquium.php
+1
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Dartmouth Computer Science | Colloquium</title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<meta http-equiv="content-language" content="en">
+		<link rel="icon" href="http://www.cs.dartmouth.edu/favicon.ico" type="image/x-icon">
+		<meta name="description" content="Dartmouth Computer Science Colloquium Schedule">
+		<meta name="keywords" content="dartmouth college computer science, dartmouth college, computer science, dartmouth computer science, dartmouth college cs, dartmouth cs, BASIC programming language, Sudikoff Laboratory, Sudikoff, Ph.D. program in Computer Science, M.S. program in Computer Science, undergraduate program in Computer Science">
+		<meta name="author" content="Dartmouth Computer Science">
+		<meta name="robots" content="all,index,follow">
+		<meta name="googlebot" content="all,index,follow">
+		<link href="http://www.cs.dartmouth.edu/css/support.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="http://www.cs.dartmouth.edu/css/site.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="http://www.cs.dartmouth.edu/css/dartmouth.css" rel="stylesheet" type="text/css" media="all" />
+		<script type="text/javascript" src="http://www.cs.dartmouth.edu/js/lib.js"></script>
+		<script type="text/javascript" src="http://www.cs.dartmouth.edu/js/topNavigation.js"></script>
+		<link href="http://www.cs.dartmouth.edu/css/baseline.type.css" rel="stylesheet" type="text/css" media="all" />
+		<script type="text/javascript" src="http://www.cs.dartmouth.edu/js/quickview.js"></script>
+		<script type="text/javascript">
+var imNavArr = [];
+imNavArr[0] = 'http://www.cs.dartmouth.edu/images/t2-mh_01_home.png';
+imNavArr[1] = 'http://www.cs.dartmouth.edu/images/t2-mh_02_people.png';
+imNavArr[2] = 'http://www.cs.dartmouth.edu/images/t2-mh_03_research.png';
+imNavArr[3] = 'http://www.cs.dartmouth.edu/images/t2-mh_04_programs.png';
+imNavArr[4] = 'http://www.cs.dartmouth.edu/images/t2-mh_05_admissions.png';
+
+function preloadNavImages() {
+	if (document.images) {
+		t2_mh_0_click = newImage("http://www.cs.dartmouth.edu/images/t2-mh_01_home-click.png");
+		t2_mh_0_click_left = newImage("http://www.cs.dartmouth.edu/images/t2-mh_02_people-click-left.png");
+
+		t2_mh_1_click = newImage("http://www.cs.dartmouth.edu/images/t2-mh_02_people-click.png");
+		t2_mh_1_click_left = newImage("http://www.cs.dartmouth.edu/images/t2-mh_03_research-click-left.png");
+
+		t2_mh_2_click = newImage("http://www.cs.dartmouth.edu/images/t2-mh_03_research-click.png");
+		t2_mh_2_click_left = newImage("http://www.cs.dartmouth.edu/images/t2-mh_04_programs-click-left.png");
+
+		t2_mh_3_click = newImage("http://www.cs.dartmouth.edu/images/t2-mh_04_programs-click.png");
+		t2_mh_3_click_left = newImage("http://www.cs.dartmouth.edu/images/t2-mh_05_admissions-click-left.png");
+
+		t2_mh_4_click = newImage("http://www.cs.dartmouth.edu/images/t2-mh_05_admissions-click.png");
+		t2_mh_4_click_right = newImage("http://www.cs.dartmouth.edu/images/t2-mh_04_programs-click-right.png");
+
+		preloadFlag = true;
+	}
+}
+
+function menuListener()
+	{
+	window.addEventListener('click',resetNav,false);
+	}
+
+addLoadEvent(preloadNavImages());
+addLoadEvent(menuListener());
+
+		</script>
+	</head>
+
+	<body id="pageBody">
+		<div id="helpdiv"><div id="helpdivcontent"></div></div>
+		<div id="formSubmissionDiv"><div id="formSubmissionDivContent"></div></div>
+<div id="quickview"><div id="quickviewclose"><a href="javascript:closeQuickView();">close</a></div><div id="quickviewcontent"></div></div>
+<a name="top"></a><!-- masthead and navigation table -->
+
+		<table width="838" border="0" cellpadding="0" cellspacing="0" align="center">
+			<tr>
+				<td>
+<div style="position:relative;">
+
+		<table width="838" height="44" border="0" cellpadding="0" cellspacing="0">
+			<tr height="44">
+				<td valign="bottom" width="237" height="99"><a href="http://www.cs.dartmouth.edu"><img src="http://www.cs.dartmouth.edu/images/t2-mh_01.png" width="237" height="99" border="0"></a></td>
+				<td valign="bottom" width="120" height="99"><a href="javascript:changeNavImages('t2_mh_0', 'http://www.cs.dartmouth.edu/images/t2-mh_01_home-click.png', 't2_mh_1', 'http://www.cs.dartmouth.edu/images/t2-mh_02_people-click-left.png');resetNavClock();"><img name="t2_mh_0" id="t2_mh_0_id" src="http://www.cs.dartmouth.edu/images/t2-mh_01_home.png" width="120" height="44" border="0" alt="Home"></a></td>
+				<td valign="bottom" width="120" height="99"><a href="javascript:changeNavImages('t2_mh_1', 'http://www.cs.dartmouth.edu/images/t2-mh_02_people-click.png', 't2_mh_2', 'http://www.cs.dartmouth.edu/images/t2-mh_03_research-click-left.png');resetNavClock();"><img name="t2_mh_1" id="t2_mh_1_id" src="http://www.cs.dartmouth.edu/images/t2-mh_02_people.png" width="120" height="44" border="0" alt="People"></a></td>
+				<td valign="bottom" width="120" height="99"><a href="javascript:changeNavImages('t2_mh_2', 'http://www.cs.dartmouth.edu/images/t2-mh_03_research-click.png', 't2_mh_3', 'http://www.cs.dartmouth.edu/images/t2-mh_04_programs-click-left.png');resetNavClock();"><img name="t2_mh_2" id="t2_mh_2_id" src="http://www.cs.dartmouth.edu/images/t2-mh_03_research.png" width="120" height="44" border="0" alt="Research"></a></td>
+				<td valign="bottom" width="120" height="99"><a href="javascript:changeNavImages('t2_mh_3', 'http://www.cs.dartmouth.edu/images/t2-mh_04_programs-click.png', 't2_mh_4', 'http://www.cs.dartmouth.edu/images/t2-mh_05_admissions-click-left.png');resetNavClock();"><img name="t2_mh_3" id="t2_mh_3_id" src="http://www.cs.dartmouth.edu/images/t2-mh_04_programs.png" width="120" height="44" border="0" alt="Programs"></a></td>
+				<td valign="bottom" width="120" height="99"><a href="javascript:changeNavImages('t2_mh_4', 'http://www.cs.dartmouth.edu/images/t2-mh_05_admissions-click.png', 't2_mh_3', 'http://www.cs.dartmouth.edu/images/t2-mh_04_programs-click-right.png');resetNavClock();"><img name="t2_mh_4" id="t2_mh_4_id" src="http://www.cs.dartmouth.edu/images/t2-mh_05_admissions.png" width="120" height="44" border="0" alt="Admissions"></a></td>
+				<td valign="bottom" width="1" height="99"><img src="http://www.cs.dartmouth.edu/images/spacer.gif" width="1" height="44"></td>
+			</tr>
+
+
+		</table>
+<div id="subnavwrap" style="position:absolute;top:99px;left:237px;width:599px;z-index:200;">
+<div class="topnavSubOverlay" id="div_t2_mh_0_sub" style="left:-2px;">
+
+<table width="241" border="0" cellpadding="0" cellspacing="0">
+	<tr height="12">
+		<td width="2" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_04.png" width="2" height="12" alt=""></td>
+		<td width="241" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_05.jpg" width="241" height="12" alt=""></td>
+		<td width="3" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_06.png" width="3" height="12" alt=""></td>
+	</tr>
+
+	<tr>
+		<td width="2" height="12" class="topnavSubOverlayLeft"></td>
+
+		<td class="topnavSubOverlayContent" onmouseover="resetNavClock();">
+<ul>
+<li><a href="http://www.cs.dartmouth.edu/" target="_self">Home</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/about-dartmouth-cs.php" target="_self">About</a></li><li><a href="http://www.dartmouth.edu" target="_blank">Dartmouth</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/jobs-in-dartmouth-cs.php" target="_self">Jobs</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/contact-dartmouth-computer-science.php" target="_self">Contact</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/internal/index.php" target="_self">Internal</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/connector/index.php" target="_self">Connector</a></li></ul>
+					</ul>
+				</td>
+		<td width="2" height="12" class="topnavSubOverlayRight"></td>
+	</tr>
+			<tr>
+			<tr height="19">
+		<td width="2" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_13.png" width="2" height="19" alt=""></td>
+		<td width="241" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_14.png" width="241" height="19" alt=""></td>
+		<td width="3" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_15.png" width="3" height="19" alt=""></td>
+	</tr>
+
+</table>
+
+</div>
+
+<div class="topnavSubOverlay" id="div_t2_mh_1_sub" style="left:118px;">
+
+<table width="241" border="0" cellpadding="0" cellspacing="0">
+	<tr height="12">
+		<td width="2" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_04.png" width="2" height="12" alt=""></td>
+		<td width="241" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_05.jpg" width="241" height="12" alt=""></td>
+		<td width="3" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_06.png" width="3" height="12" alt=""></td>
+	</tr>
+
+	<tr>
+		<td width="2" height="12" class="topnavSubOverlayLeft"></td>
+
+		<td class="topnavSubOverlayContent" onmouseover="resetNavClock();">
+<ul>
+<li><a href="http://www.cs.dartmouth.edu/site-content/tenure-track-faculty/index.php" target="_self">Tenure-Track Faculty</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/faculty-other/index.php" target="_self">Other Faculty</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/staff-administrative/index.php" target="_self">Administrative Staff</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/staff-technical/index.php" target="_self">Technical Staff</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/postdoctoral-researchers/index.php" target="_self">Postdoctoral Researchers</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/graduate-students/index.php" target="_self">Graduate Students</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/alumni-professors/index.php" target="_self">Alumni Professors</a></li><li><a href="http://myslu.stlawu.edu/~ltorrey/profiles/index.html" target="_self">Profiles of Dartmouth CS Alumni</a></li></ul>
+					</ul>
+				</td>
+		<td width="2" height="12" class="topnavSubOverlayRight"></td>
+	</tr>
+			<tr>
+			<tr height="19">
+		<td width="2" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_13.png" width="2" height="19" alt=""></td>
+		<td width="241" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_14.png" width="241" height="19" alt=""></td>
+		<td width="3" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_15.png" width="3" height="19" alt=""></td>
+	</tr>
+
+</table>
+
+</div>
+
+<div class="topnavSubOverlay" id="div_t2_mh_2_sub" style="left:238px;">
+
+<table width="241" border="0" cellpadding="0" cellspacing="0">
+	<tr height="12">
+		<td width="2" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_04.png" width="2" height="12" alt=""></td>
+		<td width="241" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_05.jpg" width="241" height="12" alt=""></td>
+		<td width="3" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_06.png" width="3" height="12" alt=""></td>
+	</tr>
+
+	<tr>
+		<td width="2" height="12" class="topnavSubOverlayLeft"></td>
+
+		<td class="topnavSubOverlayContent" onmouseover="resetNavClock();">
+<ul>
+<li><a href="http://www.cs.dartmouth.edu/site-content/news/index.php" target="_self">News</a></li><li><a href="http://www.cs.dartmouth.edu/~csrs/" target="_self">CSRS</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/research-projects/index.php" target="_self">Research Labs and Projects</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/colloquium.php" target="_self">Colloquium</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/books/index.php" target="_self">Books by Faculty</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/reports/index.php" target="_self">Technical Reports</a></li></ul>
+					</ul>
+				</td>
+		<td width="2" height="12" class="topnavSubOverlayRight"></td>
+	</tr>
+			<tr>
+			<tr height="19">
+		<td width="2" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_13.png" width="2" height="19" alt=""></td>
+		<td width="241" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_14.png" width="241" height="19" alt=""></td>
+		<td width="3" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_15.png" width="3" height="19" alt=""></td>
+	</tr>
+
+</table>
+
+</div>
+
+<div class="topnavSubOverlay" id="div_t2_mh_3_sub" style="left:358px;">
+
+<table width="241" border="0" cellpadding="0" cellspacing="0">
+	<tr height="12">
+		<td width="2" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_04.png" width="2" height="12" alt=""></td>
+		<td width="241" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_05.jpg" width="241" height="12" alt=""></td>
+		<td width="3" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_06.png" width="3" height="12" alt=""></td>
+	</tr>
+
+	<tr>
+		<td width="2" height="12" class="topnavSubOverlayLeft"></td>
+
+		<td class="topnavSubOverlayContent" onmouseover="resetNavClock();">
+<ul>
+<li><a href="http://www.cs.dartmouth.edu/site-content/site/a-major-redesign.php" target="_self">A Major Redesign</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/undergraduate-programs.php" target="_self">Undergraduate Programs</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/graduate-programs.php" target="_self">Graduate Programs</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/undergrad-courses/index.php" target="_self">Undergraduate Courses</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/graduate-courses/index.php" target="_self">Graduate Courses</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/upcoming-class-schedule.php" target="_self">Upcoming Class Schedule</a></li><li><a href="http://www.cs.dartmouth.edu/~robotics/summercamp/index.php/Main_Page" target="_self">Summer Robotics Camp</a></li></ul>
+					</ul>
+				</td>
+		<td width="2" height="12" class="topnavSubOverlayRight"></td>
+	</tr>
+			<tr>
+			<tr height="19">
+		<td width="2" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_13.png" width="2" height="19" alt=""></td>
+		<td width="241" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_14.png" width="241" height="19" alt=""></td>
+		<td width="3" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_15.png" width="3" height="19" alt=""></td>
+	</tr>
+
+</table>
+
+</div>
+
+<div class="topnavSubOverlay" id="div_t2_mh_4_sub" style="left:358px;">
+
+<table width="241" border="0" cellpadding="0" cellspacing="0">
+	<tr height="12">
+		<td width="2" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_04.png" width="2" height="12" alt=""></td>
+		<td width="241" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_05.jpg" width="241" height="12" alt=""></td>
+		<td width="3" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_06.png" width="3" height="12" alt=""></td>
+	</tr>
+
+	<tr>
+		<td width="2" height="12" class="topnavSubOverlayLeft"></td>
+
+		<td class="topnavSubOverlayContent" onmouseover="resetNavClock();">
+<ul>
+<li><a href="http://www.dartmouth.edu/admissions/" target="_self">Undergraduate Admissions</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/ms-admissions.php" target="_self">M.S. Admissions</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/phd-admissions.php" target="_self">Ph.D. Admissions</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/md---phd-in-compbio.php" target="_self">M.D. - Ph.D. in CompBio</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/graduate-student-life.php" target="_self">Graduate Student Life</a></li></ul>
+					</ul>
+				</td>
+		<td width="2" height="12" class="topnavSubOverlayRight"></td>
+	</tr>
+			<tr>
+			<tr height="19">
+		<td width="2" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_13.png" width="2" height="19" alt=""></td>
+		<td width="241" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_14.png" width="241" height="19" alt=""></td>
+		<td width="3" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_15.png" width="3" height="19" alt=""></td>
+	</tr>
+
+</table>
+
+</div>
+
+</div>
+				</td>
+			</tr>
+		</table>
+
+</div>
+
+
+<!-- end masthead and navigation table -->
+<!-- content table -->
+<table width="858" border="0" cellpadding="0" cellspacing="0" align="center">
+	<tr height="329">
+		<td class="contentLeft" valign="top" width="10" height="329"></td>
+		<td valign="top" bgcolor="white" width="838" height="329">
+<!-- begin page content -->
+<div style="padding:5px 10px 0px 10px;">
+<h1>
+	2012&ndash;2013&nbsp; Dartmouth Computer Science Colloquium Schedule</h1>
+<p>
+	All colloquia take place on Wednesday at 4:15 in <strong>006 Steele</strong> unless otherwise noted.</p>
+<hr />
+<h2>
+	September 19:<br />
+	<span data-scayt_word="Amarendra" data-scaytid="1">Amarendra</span> K. Das, Dartmouth College, <span data-scayt_word="Geisel" data-scaytid="2">Geisel</span> School of Medicine</h2>
+<h3>
+	Incorporating Semantic Similarity into Machine Learning Approaches for Biomedical Data</h3>
+<p>
+	Biomedical researchers are inundated with vast amounts of digital information, ranging from electronic medical records to genomic experiments.&nbsp; There is a need for machine learning approaches that can assist in discovering and making sense of patterns within such complex data sets.&nbsp; Semantic similarity measures, based on <span data-scayt_word="ontologies" data-scaytid="3">ontologies</span> or concept hierarchies, quantify the relatedness of concepts within complex data sets, and can be used computationally in cluster analysis and information retrieval.<br />
+	<br />
+	In this talk, I discuss the use of semantic similarity in handling two informatics challenges: (1) finding distinct patterns of care in a longitudinal clinical database of treatment events, and (2) finding published articles, or snippets within the publications, that match encoded definitions of disease categories.&nbsp; Our research indicates that incorporating background domain knowledge into machine learning approaches improves the relevance of the results.</p>
+<hr />
+<h2>
+	October 17:<br />
+	Olga <span data-scayt_word="Zhaxybayeva" data-scaytid="4">Zhaxybayeva</span>, Dartmouth College, Department of Biological Sciences</h2>
+<h3>
+	Genomic Insights into Microbial Evolution</h3>
+<p>
+	Over the past two decades genomic data has revolutionized biology, and microbiology in particular.&nbsp; It revealed how little we know about enormous microbial diversity and about microbes&rsquo; incredible abilities to adapt to various environments.&nbsp; Genomes represent historical records of past evolutionary events that lead to such adaptations. In my presentation, I will introduce the field of comparative <span data-scayt_word="genomics" data-scaytid="5">genomics</span>, discuss some of its recent advances, and highlight the challenges of biological research in the post-genomic era.</p>
+<p>
+	<strong>Bio:</strong><br />
+	Olga <span data-scayt_word="Zhaxybayeva" data-scaytid="6">Zhaxybayeva</span> received B.S. in Applied Mathematics from <span data-scayt_word="Kazakh" data-scaytid="8">Kazakh</span> State University (<span data-scayt_word="Almaty" data-scaytid="9">Almaty</span>, Kazakhstan) and Ph.D. in Genetics from University of Connecticut (<span data-scayt_word="Storrs" data-scaytid="10">Storrs</span>, CT). After postdoctoral training at Dalhousie University (Halifax, NS), she joined Dartmouth as a faculty member in July 2012.&nbsp; Her research interests include evolution of microbial populations, origin and early evolution of life, and development of algorithms for <span data-scayt_word="analyses" data-scaytid="11">analyses</span> of genomic and <span data-scayt_word="metagenomic" data-scaytid="12">metagenomic</span> data. For more information, visit her laboratory web page at <a href="http://www.dartmouth.edu/~ecglab/">http://www.dartmouth.edu/~<span data-scayt_word="ecglab" data-scaytid="13">ecglab</span>/</a>.</p>
+<hr />
+<h2>
+	October 24:<br />
+	Daniel <span data-scayt_word="Scharstein" data-scaytid="14">Scharstein</span>, Middlebury College</h2>
+<h3>
+	Benchmarking Stereo Vision and Optical Flow Algorithms</h3>
+<p>
+	Stereo vision and optical flow methods attempt to measure scene depth and motion by matching and tracking pixels across images.&nbsp; To evaluate the performance of such methods, we need &quot;ground truth&quot; -- the true depth or true object motion.&nbsp; In this talk I will describe different techniques for creating image datasets with ground truth, including structured lighting, laser and CT scanners, and hidden fluorescent texture.&nbsp; The Middlebury datasets, created in collaboration with undergraduates, are now well-established benchmarks in computer vision, and I will discuss both benefits and potential pitfalls of such benchmarks.&nbsp; I will also briefly touch on how data with ground truth can aid in developing new algorithms.</p>
+<p>
+	<strong>Bio:</strong><br />
+	Daniel <span data-scayt_word="Scharstein" data-scaytid="15">Scharstein</span>, Professor of Computer Science at Middlebury College in Vermont, studied Computer Science at the <span data-scayt_word="Universitaet" data-scaytid="17">Universitaet</span> <span data-scayt_word="Karlsruhe" data-scaytid="18">Karlsruhe</span>, Germany, and received his PhD from Cornell University in 1997.&nbsp; His research interests include computer vision, image-based rendering, and robotics.&nbsp; He maintains several online computer vision benchmarks at <a href="http://vision.middlebury.edu">http://vision.middlebury.edu</a>.</p>
+<hr />
+<h2>
+	October 31:<br />
+	Nick Gillian, MIT Media Lab</h2>
+<h3>
+	Rapid Learning: Novel Machine Learning Algorithms and Tools for Rapid Gestural-Interaction Design, Prototyping and User Customization</h3>
+<p>
+	The growth of increasingly accessible sensing devices combined with affordable computational-processing power suggests exciting new opportunities for developers, professional designers and performance artists alike to integrate novel interactive systems into their software applications, prototypes and performances.&nbsp; Although these new sensing devices greatly simplify the task of capturing a user&rsquo;s movements, recognizing a specific-sensor signal as a user&rsquo;s explicit-control gesture is still far-from trivial.&nbsp; In this talk I will describe how a number of novel machine-learning algorithms can be used to rapidly learn and recognize a user&rsquo;s gestures from a small number of user-supplied training examples.&nbsp; I will show how designers can use these algorithms to rapidly prototype gestural-interactions, as well as allowing users to customize their own gestural interactions.&nbsp; Furthermore, I will present several new software tools that are being developed at the Media Lab to allow a more diverse group of users to integrate gesture recognition and machine learning into their own software, installations, and musical instruments.<br />
+	<br />
+	<strong>Bio:</strong><br />
+	Nick is currently a postdoctoral affiliate in the Responsive Environments research group at the MIT Media Lab.&nbsp; Nick&rsquo;s research focuses on the design and development of machine-learning algorithms and software tools that can be used for real-time gesture recognition.&nbsp; Nick is particularly interested in designing new machine-learning algorithms that can be rapidly trained with just a few training examples of the gestures a user wants the system to recognize.&nbsp; Nick is also developing new software and <span data-scayt_word="toolkits" data-scaytid="19">toolkits</span> that enable a more diverse group of people to integrate gesture recognition and machine learning into their own interfaces, art installations, and musical instruments.&nbsp; More information about Nick can be found at his website: <a href="http://www.nickgillian.com">www.nickgillian.com</a></p>
+<hr />
+<h2>
+	November 7:<br />
+	<span data-scayt_word="Krister" data-scaytid="20">Krister</span> Swenson, <span data-scayt_word="Université" data-scaytid="21">Universit&eacute;</span> de <span data-scayt_word="Montréal" data-scaytid="22">Montr&eacute;al</span></h2>
+<h3>
+	Computational Approaches for Inferring Homology Relationships for Whole Genomes from Many Species</h3>
+<p>
+	The first step in most multi-gene studies is to infer the evolutionary relationships between the genes in question.&nbsp; The fundamental question is whether two genes are evolutionarily related through a <span data-scayt_word="speciation" data-scaytid="26">speciation</span> or a duplication event.&nbsp; With the high cost of lab experiments and a general uncertainty about the relationship between function and evolutionary descent, these relationships are usually inferred on a large scale through computational means using gene sequence information. In this talk we prove that under certain reasonable conditions, the classical method of reconciling a gene tree with a species tree (introduced in 1979) can never infer the true duplication and loss history for a set of homologous genes, and offer foundational work towards a remedy.&nbsp; We then present a new method, and a related approximation algorithm, for inferring recently duplicated genes, using the whole genomes of a set of related species. We strive to make this talk accessible and stimulating for computer scientists, biologist, and mathematicians alike.</p>
+<p>
+	<strong>Bio:</strong><br />
+	A native of the Dartmouth area, <span data-scayt_word="Krister" data-scaytid="23">Krister</span> owes his interest in computer science to the course CS 5 (now CS 1), which he attended as a high school student at Lebanon High.&nbsp; He is currently a postdoctoral fellow at the <span data-scayt_word="Université" data-scaytid="24">Universit&eacute;</span> de <span data-scayt_word="Montréal" data-scaytid="25">Montr&eacute;al</span> and McGill.&nbsp; He was awarded CS graduate student of the year at the University of New Mexico.&nbsp; In 2010, his dissertation was elected as one of the top seven over all disciplines at the <span data-scayt_word="École" data-scaytid="30">&Eacute;cole</span> <span data-scayt_word="Polytechnique" data-scaytid="31">Polytechnique</span> <span data-scayt_word="Fédérale" data-scaytid="32">F&eacute;d&eacute;rale</span> de Lausanne. Recently, his paper received the &quot;best paper&quot; award at the highly competitive <span data-scayt_word="RECOMB" data-scaytid="33">RECOMB</span> 2012 in Barcelona.</p>
+<hr />
+<h2>
+	November 14:<br />
+	Patricia <span data-scayt_word="Hannaway" data-scaytid="34">Hannaway</span>, Dartmouth College</h2>
+<h3>
+	<strong>Bridging Technology and Art in the Entertainment, Feature Film Industry<br />
+	<br />
+	The Pipeline and Technical Aspects of Bringing a Computer Feature to the Screen and Facial System Models for Expression</strong></h3>
+<p>
+	Computer Graphics filmmaking is a collaborate effort between creativity, artistic expression and technological programming.&nbsp; Today, films are created from scratch with computer technology, stored on servers, output to digital format, animated with digital programming and software, and merged with &ldquo;live action&rdquo; film plates to create the stunning, visual effects we take for granted.&nbsp; Who are the folks that make this magic happen?&nbsp; What kind of a pipeline is involved to produce such a product? What set of skills are required?&nbsp; How is proprietary programming and R&amp;D a part of this process?&nbsp; And why is it essential that artists know some programming and engineers study design and <span data-scayt_word="aesthetics" data-scaytid="35">aesthetics</span>?</p>
+<p>
+	<strong>Bio:</strong><br />
+	A native of Massachusetts, Patricia grew up in <span data-scayt_word="Marblehead" data-scaytid="36">Marblehead</span> and is currently a Visiting Professor in Computer Science at Dartmouth College in Digital Arts.&nbsp; A twenty year veteran of the CG feature film industry, she holds a BA from Smith College, an MFA from the School of Visual Arts in Computer Graphics and an MFA from the New York Academy of Art.&nbsp; Upon graduating, she was hired by Disney Feature Animation and applied her artistic skills to computer technology, working on such films as: &ldquo;Toy Story&rdquo;, &ldquo;Pocahontas&rdquo;, &ldquo;Mulan&rdquo; and &ldquo;Hercules&rdquo;.&nbsp; Additionally, she worked at <span data-scayt_word="Dreamworks" data-scaytid="37">Dreamworks</span> and <span data-scayt_word="ILM" data-scaytid="38">ILM</span> on such films as: &ldquo;Shrek&rdquo;, <span data-scayt_word="“Antz”" data-scaytid="39">&ldquo;Antz&rdquo;</span> and &ldquo;Star Wars&rdquo;.&nbsp; She was the Senior Animator at <span data-scayt_word="WETA" data-scaytid="40">WETA</span> Digital for the character of &ldquo;Gollum&rdquo; in the &ldquo;Lord of the Rings: The Two Towers&rdquo;, being an instrumental contributor in developing the facial system for the character.&nbsp; She was a Visiting Professor at Stanford University and is currently doing film development with <span data-scayt_word="Aardman" data-scaytid="41">Aardman</span> Animations in Bristol, UK.&nbsp; Also a painter, she recently completed a commissioned piece for the City of Palo Alto dealing with &ldquo;Green Technology&rdquo; and has a studio in Palo Alto, CA.</p>
+<hr />
+<h2>
+	January 23:<br />
+	Jeff <span data-scayt_word="Dagle" data-scaytid="42">Dagle</span>, Pacific Northwest National Lab</h2>
+<h3>
+	Maintaining Grid Resilience with the Adoption of Smart Grid Technologies</h3>
+<p>
+	The interconnected electric power grid was recently recognized by the National Academy of Engineering as the greatest engineering achievement of twentieth century.&nbsp; It has achieved high levels of reliability through the rigorous application of robust engineering principles relating to implementing resilient design practices.&nbsp; For example, wide-area communications are often limited to supervisory control functions that supplement localized closed-loop control systems organized in a hierarchical scheme.&nbsp; This enables some global optimization by changing local set-points without introducing too much dependency on these wide area communications.&nbsp; Industry trends now underway envision increased deployment of smart grid technologies, including wide-area monitoring, protection and control.&nbsp; While these technologies are intended to provide additional functionality and reliability, there nevertheless remains a concern that the unintended consequences of <span data-scayt_word="unenvisioned" data-scaytid="43">unenvisioned</span> event scenarios could result in a more brittle infrastructure as a result.&nbsp; Particularly as it relates to cyber security, new single points of failure could be introduced that might have far-reaching consequences.&nbsp; The solution is maintaining careful consideration to implementing engineering design principles that enforce resilience into the architecture of the system at all levels.&nbsp; This presentation will provide perspectives of resiliency as it relates to electric power systems.&nbsp; The concept of resilience in the context of electric power systems will be defined and discussed, the impact of new technologies will be considered, different failure scenarios will be analyzed, and mitigation strategies will be recommended.</p>
+<p>
+	<strong>Bio:</strong><br />
+	Jeffrey E. <span data-scayt_word="Dagle" data-scaytid="44">Dagle</span> has worked at the Pacific Northwest National Laboratory, operated by <span data-scayt_word="Battelle" data-scaytid="50">Battelle</span> for the U.S. Department of Energy (DOE), since 1989 and currently manages several projects in the areas of transmission reliability and security, including the North American <span data-scayt_word="SynchroPhasor" data-scaytid="51">SynchroPhasor</span> Initiative (<span data-scayt_word="NASPI" data-scaytid="52">NASPI</span>) and cyber security reviews for the DOE Smart Grid Investment Grants and Smart Grid Demonstration Projects associated with the American Recovery and Reinvestment Act of 2009.&nbsp; He is a Senior Member of the Institute of Electrical and Electronics Engineers (IEEE), a member of the International Society of Automation (ISA) and National Society of Professional Engineers (<span data-scayt_word="NSPE" data-scaytid="53">NSPE</span>), and is a licensed Professional Engineer in the State of Washington. He received the 2001 Tri-City Engineer of the Year award by the Washington Society of Professional Engineers, led the data requests and management task for the U.S.-Canada Power System Outage Task Force investigation of the August 14, 2003 blackout, supported the DOE Infrastructure Security and Energy Restoration Division with on-site assessments in New Orleans following Hurricane Katrina in fall 2005, and is the recipient of two patents, a Federal Laboratory Consortium (<span data-scayt_word="FLC" data-scaytid="54">FLC</span>) Award in 2007, and an R&amp;D 100 Award in 2008 for the Grid Friendly&trade; Appliance Controller technology. Mr. <span data-scayt_word="Dagle" data-scaytid="45">Dagle</span> was a member of a National Infrastructure Advisory Council (<span data-scayt_word="NIAC" data-scaytid="55">NIAC</span>) study group formed in 2010 to establish critical infrastructure resilience goals.&nbsp; He received B.S. and M.S. degrees in Electrical Engineering from Washington State University in 1989 and 1994, respectively.</p>
+<hr />
+<h2>
+	Colloquium archive:</h2>
+<ul>
+	<li>
+		<a href="http://www.cs.dartmouth.edu/site-content/site/colloquium-2011-2012.php">2011-2012 schedule</a><br />
+		&nbsp;</li>
+</ul>
+
+</div>
+<!-- end page content -->
+		</td>
+		<td class="contentRight" valign="top" width="10" height="329"></td>
+	</tr>
+</table>
+<!-- end content table -->
+
+<!-- page divider table -->
+<table width="858" height="20" border="0" cellpadding="0" cellspacing="0" align="center">
+	<tr height="20">
+		<td width="10" height="20"><img src="http://www.cs.dartmouth.edu/images/t2-page-bg_04.png" width="10" height="20" alt=""></td>
+		<td width="838" height="20"><img src="http://www.cs.dartmouth.edu/images/t2-page-bg_05.jpg" width="838" height="20" alt=""></td>
+		<td width="10" height="20"><img src="http://www.cs.dartmouth.edu/images/t2-page-bg_06.png" width="10" height="20" alt=""></td>
+		</tr>
+</table>
+<!-- end page divider table -->
+<!-- bottom navigation and search table -->
+<table width="838" align="center" height="144" border="0" cellpadding="0" cellspacing="0" align="center">
+	<tr height="128">
+		<td class="pageBottom" width="838" height="128">
+							<table border="0" cellspacing="0" cellpadding="0" align="center" class="bottomNav">
+		<tr>
+			<td class="bottomNavRowHead">About</td>
+			<td class="bottomNavLinks"><a href="http://www.cs.dartmouth.edu/" target="_self">Home</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/about-dartmouth-cs.php" target="_self">About</a> | <a href="http://www.dartmouth.edu" target="_self">Dartmouth</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/jobs-in-dartmouth-cs.php" target="_self">Jobs</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/contact-dartmouth-computer-science.php" target="_self">Contact</a> | <a href="http://www.cs.dartmouth.edu/site-content/internal/index.php" target="_self">Internal</a> | <a href="http://www.cs.dartmouth.edu/site-content/connector/index.php" target="_self">Connector</a></td>
+		</tr>
+		<tr>
+			<td class="bottomNavRowHead">People</td>
+			<td class="bottomNavLinks"><a href="http://www.cs.dartmouth.edu/site-content/tenure-track-faculty/index.php" target="_self">Tenure-Track Faculty</a> | <a href="http://www.cs.dartmouth.edu/site-content/faculty-other/index.php" target="_self">Other Faculty</a> | <a href="http://www.cs.dartmouth.edu/site-content/staff-administrative/index.php" target="_self">Administrative Staff</a> | <a href="http://www.cs.dartmouth.edu/site-content/staff-technical/index.php" target="_self">Technical Staff</a> | <a href="http://www.cs.dartmouth.edu/site-content/postdoctoral-researchers/index.php" target="_self">Postdoctoral Researchers</a> | <a href="http://www.cs.dartmouth.edu/site-content/graduate-students/index.php" target="_self">Graduate Students</a> | <a href="http://www.cs.dartmouth.edu/site-content/alumni-professors/index.php" target="_self">Alumni Professors</a> | <a href="http://myslu.stlawu.edu/~ltorrey/profiles/index.html" target="_self">Profiles of Dartmouth CS Alumni</a></td>
+		</tr>
+		<tr>
+			<td class="bottomNavRowHead">Research</td>
+			<td class="bottomNavLinks"><a href="http://www.cs.dartmouth.edu/site-content/news/index.php" target="_self">News</a> | <a href="http://www.cs.dartmouth.edu/~csrs/" target="_self">CSRS</a> | <a href="http://www.cs.dartmouth.edu/site-content/research-projects/index.php" target="_self">Research Labs and Projects</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/colloquium.php" target="_self">Colloquium</a> | <a href="http://www.cs.dartmouth.edu/site-content/books/index.php" target="_self">Books by Faculty</a> | <a href="http://www.cs.dartmouth.edu/site-content/reports/index.php" target="_self">Technical Reports</a></td>
+		</tr>
+		<tr>
+			<td class="bottomNavRowHead">Programs</td>
+			<td class="bottomNavLinks"><a href="http://www.cs.dartmouth.edu/site-content/site/a-major-redesign.php" target="_self">A Major Redesign</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/undergraduate-programs.php" target="_self">Undergraduate Programs</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/graduate-programs.php" target="_self">Graduate Programs</a> | <a href="http://www.cs.dartmouth.edu/site-content/graduate-courses/index.php" target="_self">Graduate Courses</a> | <a href="http://www.cs.dartmouth.edu/site-content/undergrad-courses/index.php" target="_self">Undergraduate Courses</a></td>
+		</tr>
+		<tr>
+			<td class="bottomNavRowHead">Admissions</td>
+			<td class="bottomNavLinks"><a href="http://www.dartmouth.edu/admissions/" target="_self">Undergraduate</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/ms-admissions.php" target="_self">M.S. Admissions</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/phd-admissions.php" target="_self">Ph.D. Admissions</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/md---phd-in-compbio.php" target="_self">M.D. - Ph.D. in CompBio</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/graduate-student-life.php" target="_self">Graduate Student Life</a></td>
+		</tr>
+	</table>
+
+		</td>
+	</tr>
+	<tr height="16">
+		<td width="838" height="16"><img src="http://www.cs.dartmouth.edu/images/t2-page-bg_11.gif" width="838" height="16" alt=""></td>
+	</tr>
+</table>
+<!-- end bottom navigation and search table -->
+
+<!-- copyright table -->
+<table width="858" border="0" cellpadding="0" cellspacing="0" align="center">
+	<tr>
+		<td class="pad5" width="838" style="padding-left:25px;"><span class="copyrightText">&copy; Copyright 2010, Dartmouth College Computer Science Department, All Rights Reserved</span></td>
+	</tr>
+</table>
+<!-- end copyright table -->
+
+<!-- pad the page bottom -->
+<div class="pad5"><div class="pad5"></div></div>
+<!-- end pad the page bottom -->
+	</body>
+</html>

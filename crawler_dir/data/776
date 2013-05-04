@@ -1,0 +1,62 @@
+http://www.cs.dartmouth.edu/~epics/haven/index.html
+3
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>EPICS + Upper Valley Haven Partnership</title>
+<meta http-equiv=content-type content="text/html; charset=us-ascii">
+<link href="../style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+
+<p>
+<a href="http://www.cs.dartmouth.edu/~epics/"><img src="../epics_dart.gif" alt="EPICS" border=0 align="middle"></a>
+<font class=at>&nbsp;+&nbsp;</font>
+<a href="http://www.uppervalleyhaven.org/"><img src="haven.png" alt="Upper Valley Haven" border=0 align="middle"></a>
+</p>
+
+<table width="100%" border=0><tbody>
+<tr>
+<!-- navigation -->
+<td valign=top align=left width=100><br>
+<a href="../index.html" class=nav>home</a><br>
+<a href="../students.html" class=nav>students</a><br>
+<a href="../agencies.html" class=nav>agencies</a><br>
+</td>
+
+<!-- content -->
+<td valign=top>
+<div class=header align=center>Partnership Summary</div><br>
+
+<p>The <a href="http://www.uppervalleyhaven.org/">Upper Valley Haven</a> is a shelter for homeless families (and an adult shelter is being constructed). It also provides food and various other services to those in need. In 2008 it provided over 1700 families with food and 34 families with shelter.</p>
+
+<p>There are two ongoing projects:</p>
+<ul>
+<li><b>Data</b>: Creating a new version of the interface to their Microsoft Access database, which they use to track food donations.</li>
+<li><b>IT</b>: Helping the Haven in an Information Technology capacity, for instance administering their Windows 2003 Small Business Server (their domain and mail server), securing their computer network, and setting up new computers.</li>
+</ul>
+
+<p>Team members</p>
+<ul>
+<li><b>Fall 2009</b>: David Gusella (Data), Loren Sands-Ramshaw (IT)</li>
+<li><b>Spring 2010</b>: Loren Sands-Ramshaw (IT)</li>
+</ul>
+
+
+<p>&nbsp;</p>
+
+
+<!-- footer -->
+<tr><td colspan=2 height=20></td></tr>
+<tr><td class=hr colspan=2 height=2></td></tr>
+<tr><td class=footer colspan=2>
+<!-- hhmts start --> 
+Last modified: Fri Jan 11 16:03:29 EST 2008
+<!-- hhmts end -->
+</td></tr>
+
+</tbody></table>
+</body>
+</html>
+p

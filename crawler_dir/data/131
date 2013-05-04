@@ -1,0 +1,680 @@
+http://www.cs.dartmouth.edu/site-content/site/undergraduate-faq.php#majorcard
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Dartmouth Computer Science | Undergraduate FAQ</title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<meta http-equiv="content-language" content="en">
+		<link rel="icon" href="http://www.cs.dartmouth.edu/favicon.ico" type="image/x-icon">
+		<meta name="description" content="Frequently asked questions regarding the computer science program at Dartmouth.">
+		<meta name="keywords" content="dartmouth college computer science, dartmouth college, computer science, dartmouth computer science, dartmouth college cs, dartmouth cs, BASIC programming language, Sudikoff Laboratory, Sudikoff, Ph.D. program in Computer Science, M.S. program in Computer Science, undergraduate program in Computer Science">
+		<meta name="author" content="Dartmouth Computer Science">
+		<meta name="robots" content="all,index,follow">
+		<meta name="googlebot" content="all,index,follow">
+		<link href="http://www.cs.dartmouth.edu/css/support.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="http://www.cs.dartmouth.edu/css/site.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="http://www.cs.dartmouth.edu/css/dartmouth.css" rel="stylesheet" type="text/css" media="all" />
+		<script type="text/javascript" src="http://www.cs.dartmouth.edu/js/lib.js"></script>
+		<script type="text/javascript" src="http://www.cs.dartmouth.edu/js/topNavigation.js"></script>
+		<link href="http://www.cs.dartmouth.edu/css/baseline.type.css" rel="stylesheet" type="text/css" media="all" />
+		<script type="text/javascript" src="http://www.cs.dartmouth.edu/js/quickview.js"></script>
+		<script type="text/javascript">
+var imNavArr = [];
+imNavArr[0] = 'http://www.cs.dartmouth.edu/images/t2-mh_01_home.png';
+imNavArr[1] = 'http://www.cs.dartmouth.edu/images/t2-mh_02_people.png';
+imNavArr[2] = 'http://www.cs.dartmouth.edu/images/t2-mh_03_research.png';
+imNavArr[3] = 'http://www.cs.dartmouth.edu/images/t2-mh_04_programs.png';
+imNavArr[4] = 'http://www.cs.dartmouth.edu/images/t2-mh_05_admissions.png';
+
+function preloadNavImages() {
+	if (document.images) {
+		t2_mh_0_click = newImage("http://www.cs.dartmouth.edu/images/t2-mh_01_home-click.png");
+		t2_mh_0_click_left = newImage("http://www.cs.dartmouth.edu/images/t2-mh_02_people-click-left.png");
+
+		t2_mh_1_click = newImage("http://www.cs.dartmouth.edu/images/t2-mh_02_people-click.png");
+		t2_mh_1_click_left = newImage("http://www.cs.dartmouth.edu/images/t2-mh_03_research-click-left.png");
+
+		t2_mh_2_click = newImage("http://www.cs.dartmouth.edu/images/t2-mh_03_research-click.png");
+		t2_mh_2_click_left = newImage("http://www.cs.dartmouth.edu/images/t2-mh_04_programs-click-left.png");
+
+		t2_mh_3_click = newImage("http://www.cs.dartmouth.edu/images/t2-mh_04_programs-click.png");
+		t2_mh_3_click_left = newImage("http://www.cs.dartmouth.edu/images/t2-mh_05_admissions-click-left.png");
+
+		t2_mh_4_click = newImage("http://www.cs.dartmouth.edu/images/t2-mh_05_admissions-click.png");
+		t2_mh_4_click_right = newImage("http://www.cs.dartmouth.edu/images/t2-mh_04_programs-click-right.png");
+
+		preloadFlag = true;
+	}
+}
+
+function menuListener()
+	{
+	window.addEventListener('click',resetNav,false);
+	}
+
+addLoadEvent(preloadNavImages());
+addLoadEvent(menuListener());
+
+		</script>
+	</head>
+
+	<body id="pageBody">
+		<div id="helpdiv"><div id="helpdivcontent"></div></div>
+		<div id="formSubmissionDiv"><div id="formSubmissionDivContent"></div></div>
+<div id="quickview"><div id="quickviewclose"><a href="javascript:closeQuickView();">close</a></div><div id="quickviewcontent"></div></div>
+<a name="top"></a><!-- masthead and navigation table -->
+
+		<table width="838" border="0" cellpadding="0" cellspacing="0" align="center">
+			<tr>
+				<td>
+<div style="position:relative;">
+
+		<table width="838" height="44" border="0" cellpadding="0" cellspacing="0">
+			<tr height="44">
+				<td valign="bottom" width="237" height="99"><a href="http://www.cs.dartmouth.edu"><img src="http://www.cs.dartmouth.edu/images/t2-mh_01.png" width="237" height="99" border="0"></a></td>
+				<td valign="bottom" width="120" height="99"><a href="javascript:changeNavImages('t2_mh_0', 'http://www.cs.dartmouth.edu/images/t2-mh_01_home-click.png', 't2_mh_1', 'http://www.cs.dartmouth.edu/images/t2-mh_02_people-click-left.png');resetNavClock();"><img name="t2_mh_0" id="t2_mh_0_id" src="http://www.cs.dartmouth.edu/images/t2-mh_01_home.png" width="120" height="44" border="0" alt="Home"></a></td>
+				<td valign="bottom" width="120" height="99"><a href="javascript:changeNavImages('t2_mh_1', 'http://www.cs.dartmouth.edu/images/t2-mh_02_people-click.png', 't2_mh_2', 'http://www.cs.dartmouth.edu/images/t2-mh_03_research-click-left.png');resetNavClock();"><img name="t2_mh_1" id="t2_mh_1_id" src="http://www.cs.dartmouth.edu/images/t2-mh_02_people.png" width="120" height="44" border="0" alt="People"></a></td>
+				<td valign="bottom" width="120" height="99"><a href="javascript:changeNavImages('t2_mh_2', 'http://www.cs.dartmouth.edu/images/t2-mh_03_research-click.png', 't2_mh_3', 'http://www.cs.dartmouth.edu/images/t2-mh_04_programs-click-left.png');resetNavClock();"><img name="t2_mh_2" id="t2_mh_2_id" src="http://www.cs.dartmouth.edu/images/t2-mh_03_research.png" width="120" height="44" border="0" alt="Research"></a></td>
+				<td valign="bottom" width="120" height="99"><a href="javascript:changeNavImages('t2_mh_3', 'http://www.cs.dartmouth.edu/images/t2-mh_04_programs-click.png', 't2_mh_4', 'http://www.cs.dartmouth.edu/images/t2-mh_05_admissions-click-left.png');resetNavClock();"><img name="t2_mh_3" id="t2_mh_3_id" src="http://www.cs.dartmouth.edu/images/t2-mh_04_programs.png" width="120" height="44" border="0" alt="Programs"></a></td>
+				<td valign="bottom" width="120" height="99"><a href="javascript:changeNavImages('t2_mh_4', 'http://www.cs.dartmouth.edu/images/t2-mh_05_admissions-click.png', 't2_mh_3', 'http://www.cs.dartmouth.edu/images/t2-mh_04_programs-click-right.png');resetNavClock();"><img name="t2_mh_4" id="t2_mh_4_id" src="http://www.cs.dartmouth.edu/images/t2-mh_05_admissions.png" width="120" height="44" border="0" alt="Admissions"></a></td>
+				<td valign="bottom" width="1" height="99"><img src="http://www.cs.dartmouth.edu/images/spacer.gif" width="1" height="44"></td>
+			</tr>
+
+
+		</table>
+<div id="subnavwrap" style="position:absolute;top:99px;left:237px;width:599px;z-index:200;">
+<div class="topnavSubOverlay" id="div_t2_mh_0_sub" style="left:-2px;">
+
+<table width="241" border="0" cellpadding="0" cellspacing="0">
+	<tr height="12">
+		<td width="2" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_04.png" width="2" height="12" alt=""></td>
+		<td width="241" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_05.jpg" width="241" height="12" alt=""></td>
+		<td width="3" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_06.png" width="3" height="12" alt=""></td>
+	</tr>
+
+	<tr>
+		<td width="2" height="12" class="topnavSubOverlayLeft"></td>
+
+		<td class="topnavSubOverlayContent" onmouseover="resetNavClock();">
+<ul>
+<li><a href="http://www.cs.dartmouth.edu/" target="_self">Home</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/about-dartmouth-cs.php" target="_self">About</a></li><li><a href="http://www.dartmouth.edu" target="_blank">Dartmouth</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/jobs-in-dartmouth-cs.php" target="_self">Jobs</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/contact-dartmouth-computer-science.php" target="_self">Contact</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/internal/index.php" target="_self">Internal</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/connector/index.php" target="_self">Connector</a></li></ul>
+					</ul>
+				</td>
+		<td width="2" height="12" class="topnavSubOverlayRight"></td>
+	</tr>
+			<tr>
+			<tr height="19">
+		<td width="2" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_13.png" width="2" height="19" alt=""></td>
+		<td width="241" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_14.png" width="241" height="19" alt=""></td>
+		<td width="3" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_15.png" width="3" height="19" alt=""></td>
+	</tr>
+
+</table>
+
+</div>
+
+<div class="topnavSubOverlay" id="div_t2_mh_1_sub" style="left:118px;">
+
+<table width="241" border="0" cellpadding="0" cellspacing="0">
+	<tr height="12">
+		<td width="2" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_04.png" width="2" height="12" alt=""></td>
+		<td width="241" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_05.jpg" width="241" height="12" alt=""></td>
+		<td width="3" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_06.png" width="3" height="12" alt=""></td>
+	</tr>
+
+	<tr>
+		<td width="2" height="12" class="topnavSubOverlayLeft"></td>
+
+		<td class="topnavSubOverlayContent" onmouseover="resetNavClock();">
+<ul>
+<li><a href="http://www.cs.dartmouth.edu/site-content/tenure-track-faculty/index.php" target="_self">Tenure-Track Faculty</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/faculty-other/index.php" target="_self">Other Faculty</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/staff-administrative/index.php" target="_self">Administrative Staff</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/staff-technical/index.php" target="_self">Technical Staff</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/postdoctoral-researchers/index.php" target="_self">Postdoctoral Researchers</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/graduate-students/index.php" target="_self">Graduate Students</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/alumni-professors/index.php" target="_self">Alumni Professors</a></li><li><a href="http://myslu.stlawu.edu/~ltorrey/profiles/index.html" target="_self">Profiles of Dartmouth CS Alumni</a></li></ul>
+					</ul>
+				</td>
+		<td width="2" height="12" class="topnavSubOverlayRight"></td>
+	</tr>
+			<tr>
+			<tr height="19">
+		<td width="2" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_13.png" width="2" height="19" alt=""></td>
+		<td width="241" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_14.png" width="241" height="19" alt=""></td>
+		<td width="3" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_15.png" width="3" height="19" alt=""></td>
+	</tr>
+
+</table>
+
+</div>
+
+<div class="topnavSubOverlay" id="div_t2_mh_2_sub" style="left:238px;">
+
+<table width="241" border="0" cellpadding="0" cellspacing="0">
+	<tr height="12">
+		<td width="2" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_04.png" width="2" height="12" alt=""></td>
+		<td width="241" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_05.jpg" width="241" height="12" alt=""></td>
+		<td width="3" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_06.png" width="3" height="12" alt=""></td>
+	</tr>
+
+	<tr>
+		<td width="2" height="12" class="topnavSubOverlayLeft"></td>
+
+		<td class="topnavSubOverlayContent" onmouseover="resetNavClock();">
+<ul>
+<li><a href="http://www.cs.dartmouth.edu/site-content/news/index.php" target="_self">News</a></li><li><a href="http://www.cs.dartmouth.edu/~csrs/" target="_self">CSRS</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/research-projects/index.php" target="_self">Research Labs and Projects</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/colloquium.php" target="_self">Colloquium</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/books/index.php" target="_self">Books by Faculty</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/reports/index.php" target="_self">Technical Reports</a></li></ul>
+					</ul>
+				</td>
+		<td width="2" height="12" class="topnavSubOverlayRight"></td>
+	</tr>
+			<tr>
+			<tr height="19">
+		<td width="2" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_13.png" width="2" height="19" alt=""></td>
+		<td width="241" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_14.png" width="241" height="19" alt=""></td>
+		<td width="3" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_15.png" width="3" height="19" alt=""></td>
+	</tr>
+
+</table>
+
+</div>
+
+<div class="topnavSubOverlay" id="div_t2_mh_3_sub" style="left:358px;">
+
+<table width="241" border="0" cellpadding="0" cellspacing="0">
+	<tr height="12">
+		<td width="2" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_04.png" width="2" height="12" alt=""></td>
+		<td width="241" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_05.jpg" width="241" height="12" alt=""></td>
+		<td width="3" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_06.png" width="3" height="12" alt=""></td>
+	</tr>
+
+	<tr>
+		<td width="2" height="12" class="topnavSubOverlayLeft"></td>
+
+		<td class="topnavSubOverlayContent" onmouseover="resetNavClock();">
+<ul>
+<li><a href="http://www.cs.dartmouth.edu/site-content/site/a-major-redesign.php" target="_self">A Major Redesign</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/undergraduate-programs.php" target="_self">Undergraduate Programs</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/graduate-programs.php" target="_self">Graduate Programs</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/undergrad-courses/index.php" target="_self">Undergraduate Courses</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/graduate-courses/index.php" target="_self">Graduate Courses</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/upcoming-class-schedule.php" target="_self">Upcoming Class Schedule</a></li><li><a href="http://www.cs.dartmouth.edu/~robotics/summercamp/index.php/Main_Page" target="_self">Summer Robotics Camp</a></li></ul>
+					</ul>
+				</td>
+		<td width="2" height="12" class="topnavSubOverlayRight"></td>
+	</tr>
+			<tr>
+			<tr height="19">
+		<td width="2" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_13.png" width="2" height="19" alt=""></td>
+		<td width="241" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_14.png" width="241" height="19" alt=""></td>
+		<td width="3" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_15.png" width="3" height="19" alt=""></td>
+	</tr>
+
+</table>
+
+</div>
+
+<div class="topnavSubOverlay" id="div_t2_mh_4_sub" style="left:358px;">
+
+<table width="241" border="0" cellpadding="0" cellspacing="0">
+	<tr height="12">
+		<td width="2" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_04.png" width="2" height="12" alt=""></td>
+		<td width="241" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_05.jpg" width="241" height="12" alt=""></td>
+		<td width="3" height="12"><img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_06.png" width="3" height="12" alt=""></td>
+	</tr>
+
+	<tr>
+		<td width="2" height="12" class="topnavSubOverlayLeft"></td>
+
+		<td class="topnavSubOverlayContent" onmouseover="resetNavClock();">
+<ul>
+<li><a href="http://www.dartmouth.edu/admissions/" target="_self">Undergraduate Admissions</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/ms-admissions.php" target="_self">M.S. Admissions</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/phd-admissions.php" target="_self">Ph.D. Admissions</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/md---phd-in-compbio.php" target="_self">M.D. - Ph.D. in CompBio</a></li><li><a href="http://www.cs.dartmouth.edu/site-content/site/graduate-student-life.php" target="_self">Graduate Student Life</a></li></ul>
+					</ul>
+				</td>
+		<td width="2" height="12" class="topnavSubOverlayRight"></td>
+	</tr>
+			<tr>
+			<tr height="19">
+		<td width="2" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_13.png" width="2" height="19" alt=""></td>
+		<td width="241" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_14.png" width="241" height="19" alt=""></td>
+		<td width="3" height="19">
+			<img src="http://www.cs.dartmouth.edu/images/t2-nav-over2_15.png" width="3" height="19" alt=""></td>
+	</tr>
+
+</table>
+
+</div>
+
+</div>
+				</td>
+			</tr>
+		</table>
+
+</div>
+
+
+<!-- end masthead and navigation table -->
+<!-- content table -->
+<table width="858" border="0" cellpadding="0" cellspacing="0" align="center">
+	<tr height="329">
+		<td class="contentLeft" valign="top" width="10" height="329"></td>
+		<td valign="top" bgcolor="white" width="838" height="329">
+<!-- begin page content -->
+<div style="padding:5px 10px 0px 10px;">
+<p>
+	<span style="font-size: 22px;">Introductory Course Frequently Asked Questions</span></p>
+<ul>
+	<li>
+		<a href="#CS4">What course should I take if I&#39;m really just interested in learning a little about computers, not majoring in computer science?</a></li>
+	<li>
+		<a href="#CS5">What course should I take if I want to learn about computer programming, and I might want to be a computer-science major or minor?</a></li>
+	<li>
+		<a href="#CS14">What course should I take if I want to learn about computer programming, and I think that I want to be an engineering major?</a></li>
+	<li>
+		<a href="#AP">What course should I take if I already have AP credit for computer science, and I want to do more?</a></li>
+	<li>
+		<a href="#placement">What should I do if I know a lot of computer science, but I have not passed the AP exam?</a></li>
+	<li>
+		<a href="#5-14-diff">Does it matter whether I take CS 5 or ENGS 20?</a></li>
+	<li>
+		<a href="#sequences">What sequences of courses are possible?</a></li>
+	<li>
+		<a href="#late">Will I be at a disadvantage in completing a CS major if I take CS 5 in the spring of my first year? How about in sophomore fall?</a></li>
+	<li>
+		<a href="#mac-vs-PC">If I want to major or minor in computer science, does it matter whether I purchase a Mac or PC?</a></li>
+</ul>
+<p>
+	<span style="font-size: 22px;">Becoming a CS Major, Modified Major, or Minor FAQ </span></p>
+<ul>
+	<li>
+		<a href="#howbecome">How do I become a CS major, modified major, or minor?</a></li>
+	<li>
+		<a href="#advisor">Who is the CS Undergraduate Advisor?</a></li>
+	<li>
+		<a href="#majorcard">How do I fill out a major card for a regular CS major?</a></li>
+	<li>
+		<a href="#primary">How do I fill out a major card for a modified major with CS as the primary part?</a></li>
+	<li>
+		<a href="#secondary">How do I fill out a major card for a modified major with CS as the secondary part?</a></li>
+	<li>
+		<a href="#minorcard">How do I fill out a minor card for a CS, Digital Arts, or Operations Research minor?</a></li>
+	<li>
+		<a href="#handin">Where do I hand in my cards once they&#39;re signed?</a></li>
+	<li>
+		<a href="#double">What do I have to do differently if I&#39;m a double or triple major?</a></li>
+	<li>
+		<a href="#thesis">How do I sign up for a CS honors thesis?</a></li>
+	<li>
+		<a href="#whatelse">What else goes along with being a CS major, modified major, or minor?</a></li>
+</ul>
+<p>
+	<span style="font-size: 16px;"><a name="CS4"></a>What course should I take if I&#39;m really just interested in learning a little about computers, not majoring in computer science?</span></p>
+<p>
+	You probably want to take CS 4. This popular course provides an overview of computing and computer science, including such topics as the history of computers, computer applications, introductory concepts in digital electronics and computer architecture, computer languages, theory of computation, artificial intelligence, and the impact that computers have had on society and are likely to have in the future. Students are introduced to computing through appropriate high-level software, such as spreadsheets, hypertext, and the Internet. For example, in recent offerings, students designed their own World-Wide-Web home pages using HTML and JavaScript. Interested students are welcome to continue with CS 5.</p>
+<p>
+	CS 4 has no prerequisites.</p>
+<hr />
+<p>
+	<span style="font-size: 16px;"><a name="CS5"></a>What course should I take if I want to learn about computer programming, and I might want to be a computer-science major or minor?</span></p>
+<p>
+	Then CS 5 is for you. This course provides an introduction to the fundamental concepts and techniques of computer science. Students learn to solve problems by writing programs in an object-oriented language (Java). CS 5 covers problem decomposition, recursion, simple graphics, objects, abstraction, and arrays. We emphasize good programming style throughout the course. CS 5 also studies basic algorithms (including searching and sorting algorithms) and data structures (including linked lists) in some detail, and it introduces algorithmic analysis.</p>
+<p>
+	CS 5 has no prerequisites.</p>
+<hr />
+<p>
+	<span style="font-size: 16px;"><a name="CS14"></a>What course should I take if I want to learn about computer programming, and I think that I want to be an engineering major?</span></p>
+<p>
+	The course ENGS 20 used to be cross-listed as CS 14, and it used to cover the same conceptual material as CS 5. This is no longer the case. CS 5 can be used as a prerequisite course in place of ENGS 20 for engineering courses, but ENGS 20 will <em>not</em> substitute for CS 5 as a prerequisite for CS courses. If you are considering taking Computer Science courses you should take CS 5 instead of ENGS 20.</p>
+<p>
+	ENGS 20 prerequisites are Math 3 and prior or concurrent enrollment in Math 8.</p>
+<hr />
+<p>
+	<span style="font-size: 16px;"><a name="AP"></a>What course should I take if I already have AP credit for computer science, and I want to do more?</span></p>
+<p>
+	If you took the Computer Science AB exam and received a score of 4 or 5, then you are qualified to skip CS 5 and go directly into our second course, CS 8. This course covers more advanced programming and problem solving concepts.</p>
+<hr />
+<p>
+	<span style="font-size: 16px;"><a name="placement"></a>What should I do if I know a lot of computer science, but I have not passed the AP exam?</span></p>
+<p>
+	A departmental placement exam is given shortly before the start of the fall term. If you pass this exam, you will get credit for CS 5 and be treated as though you had passed the AP exam.</p>
+<hr />
+<p>
+	<span style="font-size: 16px;"><a name="5-14-diff"></a>Does it matter whether I take CS 5 or ENGS 20?</span></p>
+<p>
+	Yes, it matters. CS 5 can substitute for ENGS 20 as an Engineering prerequisite, but ENGS 20 can no longer substitute for CS 5 as a CS prerequisite. Therefore if you are considering taking any Computer Science coureses which have CS 5 as a prerequisite, then you should take CS 5 rather than ENGS 20.</p>
+<hr />
+<p>
+	<span style="font-size: 16px;"><a name="sequences"></a>What sequences of courses are possible?</span></p>
+<p>
+	<img alt="CS Prereq Structure" src="http://www.cs.dartmouth.edu/cms_file/48/csprereqs.png" /></p>
+<p>
+	This figure shows the dependencies among the requirements for the CS major. Note that in addition, 19 is a recommended prereq for many (most) upper-level courses.</p>
+<hr style="clear: left;" />
+<p>
+	<span style="font-size: 16px;"><a name="late"></a>Will I be at a disadvantage in completing a CS major if I take CS 5 in the spring of my first year? How about in sophomore fall?</span></p>
+<p>
+	Many CS majors take CS 5 in the spring of their first year. No problem.</p>
+<p>
+	In fact, some CS majors take CS 5 in their sophomore fall. And they can still complete the major in high style. For example, a &#39;99 took CS 5 in her sophomore fall, and she ended up being one of the best majors we&#39;ve seen. She did an excellent honors thesis (part of which was published in the best parallel computing conference), and she went directly from Dartmouth into the computer science Ph.D. program at MIT. So even sophomore year is by no means too late to embark on a CS major.</p>
+<p>
+	Note, however, that if you are planning a double major with computer science as one of your majors, then you might have some scheduling problems if you put off CS 5 too long.</p>
+<hr />
+<p>
+	<span style="font-size: 16px;"><a name="mac-vs-PC"></a>If I want to major or minor in computer science, does it matter whether I purchase a Mac or PC?</span></p>
+<p>
+	The only computer science course for which it makes a difference is CS 5. In theory, the software we use runs equally well on a Mac or PC. In practice, this is close to accurate. There are slight differences, but which is better is somewhat a matter of taste. One reason for favoring a Mac is that the instructional laboratory for CS 5 contains Macs and the instructors for the course usually use Macs for their classroom demonstrations. But students use both Macs and PCs quite successfully in these courses.</p>
+<hr />
+<p>
+	<span style="font-size: 16px;"><a name="howbecome"></a>How do I become a CS major, modified major, or minor?</span></p>
+<p>
+	You need to fill out major or minor cards, get them signed by the CS Undergraduate Advisor, and hand them in to the appropriate offices. You can get blank cards from the Registrar&#39;s office or from the CS Undergraduate Advisor.</p>
+<hr />
+<p>
+	<span style="font-size: 16px;"><a name="advisor"></a>Who is the CS Undergraduate Advisor?</span></p>
+<p>
+	The CS Undergraduate Advisor is <a href="http://www.cs.dartmouth.edu/~robotics/">Devin Balkcom</a> in 211 Sudikoff.</p>
+<hr />
+<p>
+	<span style="font-size: 16px;"><a name="majorcard"></a>How do I fill out a major card for a regular CS major?</span></p>
+<p>
+	You will need to fill out three copies of the major card, and bring all three to the CS Undergraduate Advisor to be signed. Here are tips on filling out your major card correctly:</p>
+<ul>
+	<li>
+		We&#39;ll assume that you can fill out the top line (<tt>ID#</tt>, <tt>LAST NAME</tt>, <tt>FIRST NAME</tt>, <tt>INIT</tt>, <tt>CLASS</tt>, <tt>HINMAN BOX</tt>) correctly.
+		<p>
+			&nbsp;</p>
+	</li>
+	<li>
+		For <tt>MAJOR</tt>, write <i>Computer Science</i>. You can leave <tt>DEPT/PROG</tt> blank.
+		<p>
+			&nbsp;</p>
+	</li>
+	<li>
+		For <tt>TYPE OF MAJOR</tt>, check <tt>STANDARD</tt>.
+		<p>
+			&nbsp;</p>
+	</li>
+	<li>
+		If you&#39;re not doing a double (or triple) major, check <tt>SINGLE</tt>. Otherwise, check <tt>DOUBLE</tt>.
+		<p>
+			&nbsp;</p>
+	</li>
+	<li>
+		Under <tt>PREREQUISITES</tt>, list CS 5 (indicate &quot;credit&quot; if you have AP credit or got credit and placement from the departmental exam), CS 8, and CS or MATH 19. This will be the <strong>only</strong> place on the major card that you list these courses.
+		<p>
+			&nbsp;</p>
+	</li>
+	<li>
+		The grid of year x term is where you will enter the courses that constitute the major. You will write only 9 courses in this grid, these being the 9 that constitute your major. <strong>Do <i>not</i> put any of the prerequisites for the major in the grid.</strong> You can <a href="http://www.dartmouth.edu/%7Ereg/courses/desc/cosc-req.html">look up in the ORC</a> the course requirements. If you sign up for two terms of CS 97 or CS 98, put both terms on your major card (giving you a total of 10 terms of major courses).
+		<p>
+			When you fill in the grid, bear in mind that the academic year actually begins with summer term. What we all refer to as &quot;sophomore summer&quot; is actually <strong>junior</strong> summer.</p>
+		<p>
+			&nbsp;</p>
+	</li>
+	<li>
+		Under <tt>IDENTIFY CULMINATING EXPERIENCE</tt>, write <i>CS 97</i> or <i>CS 98</i>, whichever is appropriate.
+		<p>
+			&nbsp;</p>
+	</li>
+	<li>
+		There are check boxes on the back. You&#39;ll need to check at least one box.</li>
+</ul>
+<hr />
+<p>
+	<span style="font-size: 16px;"><a name="primary"></a>How do I fill out a major card for a modified major with CS as the primary part?</span></p>
+<p>
+	You will need to fill out three copies of the major card, and bring all three to the CS Undergraduate Advisor to be signed. It&#39;s a good idea to fill in and bring a fourth copy, so that you can give one to the department of the secondary part of your modified major. Here are tips on filling out your major card correctly:</p>
+<ul>
+	<li>
+		We&#39;ll assume that you can fill out the top line (<tt>ID#</tt>, <tt>LAST NAME</tt>, <tt>FIRST NAME</tt>, <tt>INIT</tt>, <tt>CLASS</tt>, <tt>HINMAN BOX</tt>) correctly.
+		<p>
+			&nbsp;</p>
+	</li>
+	<li>
+		If the secondary part consists of courses drawn from just one other department, then for <tt>MAJOR</tt>, write <i>Computer Science modified with X</i>, where <i>X</i> is the secondary part. If the secondary part consists of courses drawn from multiple departments, write <i>Computer Science modified</i>. In either case, you can leave <tt>DEPT/PROG</tt> blank.
+		<p>
+			&nbsp;</p>
+	</li>
+	<li>
+		For <tt>TYPE OF MAJOR</tt>, check <tt>MODIFIED</tt>. If the secondary part consists of courses drawn from just one other department, check <tt>A</tt>. Otherwise, check <tt>B</tt>.
+		<p>
+			&nbsp;</p>
+	</li>
+	<li>
+		If you&#39;re not doing a double (or triple) major, check <tt>SINGLE</tt>. Otherwise, check <tt>DOUBLE</tt>.
+		<p>
+			&nbsp;</p>
+	</li>
+	<li>
+		Under <tt>PREREQUISITES</tt>, list CS 5 (indicate &quot;credit&quot; if you have AP credit or got credit and placement from the departmental exam), CS 8, and CS or MATH 19. This will be the <strong>only</strong> place on the major card that you list these courses.
+		<p>
+			If there are prerequisites for the secondary part of your modified major, list them here as well.</p>
+		<p>
+			&nbsp;</p>
+	</li>
+	<li>
+		The grid of year x term is where you will enter the courses that constitute the major. <strong>Do <i>not</i> put any of the prerequisites for the major in the grid.</strong> You can <a href="http://www.dartmouth.edu/%7Ereg/courses/desc/cosc-req.html">look up in the ORC</a> the course requirements. If you sign up for two terms of CS 97 or CS 98, put both terms on your major card.
+		<p>
+			When you fill in the grid, bear in mind that the academic year actually begins with summer term. What we all refer to as &quot;sophomore summer&quot; is actually <strong>junior</strong> summer.</p>
+		<p>
+			&nbsp;</p>
+	</li>
+	<li>
+		Under <tt>IDENTIFY CULMINATING EXPERIENCE</tt>, write <i>CS 97</i> or <i>CS 98</i>, whichever is appropriate.
+		<p>
+			&nbsp;</p>
+	</li>
+	<li>
+		There are check boxes on the back. You&#39;ll need to check at least one box.
+		<p>
+			&nbsp;</p>
+	</li>
+	<li>
+		Unless the secondary part of your major is engineering or digital arts, you need to write a short justification for your modified major, demonstrating that it forms one coherent academic plan.
+		<p>
+			&nbsp;</p>
+	</li>
+	<li>
+		If the secondary part consists of courses drawn from just one other department, you will need to get an authorized signature from that department in addition to the signature of the CS Undergraduate Advisor. If the secondary part consists of courses drawn from multiple departments, then you need only the CS Undergraduate Advisor&#39;s signature.</li>
+</ul>
+<hr />
+<p>
+	<span style="font-size: 16px;"><a name="secondary"></a>How do I fill out a major card for a modified major with CS as the secondary part?</span></p>
+<p>
+	You will need to fill out three copies of the major card, and bring all three to the CS Undergraduate Advisor to be signed. It&#39;s a good idea to fill in and bring a fourth copy, so that you can give one to the CS Department. Here are tips on filling out your major card correctly:</p>
+<ul>
+	<li>
+		We&#39;ll assume that you can fill out the top line (<tt>ID#</tt>, <tt>LAST NAME</tt>, <tt>FIRST NAME</tt>, <tt>INIT</tt>, <tt>CLASS</tt>, <tt>HINMAN BOX</tt>) correctly.
+		<p>
+			&nbsp;</p>
+	</li>
+	<li>
+		For <tt>MAJOR</tt>, write <i>X modified with Computer Science</i>, where <i>X</i> is the primary part. What you write in <tt>DEPT/PROG</tt> depends on the primary part of your major.
+		<p>
+			&nbsp;</p>
+	</li>
+	<li>
+		For <tt>TYPE OF MAJOR</tt>, check <tt>MODIFIED</tt> and <tt>A</tt>.
+		<p>
+			&nbsp;</p>
+	</li>
+	<li>
+		If you&#39;re not doing a double (or triple) major, check <tt>SINGLE</tt>. Otherwise, check <tt>DOUBLE</tt>.
+		<p>
+			&nbsp;</p>
+	</li>
+	<li>
+		Under <tt>PREREQUISITES</tt>, list CS 5 (indicate &quot;credit&quot; if you have AP credit or got credit and placement from the departmental exam), CS 8, and CS or MATH 19. This will be the <strong>only</strong> place on the major card that you list these courses.
+		<p>
+			List the prerequisities for the primary part of your major here as well.</p>
+		<p>
+			&nbsp;</p>
+	</li>
+	<li>
+		The grid of year x term is where you will enter the courses that constitute the major. <strong>Do <i>not</i> put any of the prerequisites for the major in the grid.</strong>
+		<p>
+			Normally, when CS is the secondary part, the CS courses are CS 23, 25, 37, and one other CS course. You <strong>must</strong> include at least two of CS 23, 25, and 37. The exception is if your major will be Engineering modified with CS, also known as Computer Engineering. You will need to look up the requirements for the Computer Engineering major in the ORC; they are rather complicated.</p>
+		<p>
+			When you fill in the grid, bear in mind that the academic year actually begins with summer term. What we all refer to as &quot;sophomore summer&quot; is actually <strong>junior</strong> summer.</p>
+		<p>
+			&nbsp;</p>
+	</li>
+	<li>
+		There are check boxes on the back. You&#39;ll need to check at least one box.
+		<p>
+			&nbsp;</p>
+	</li>
+	<li>
+		Unless the primary part of your major is engineering, you need to write a short justification for your modified major, demonstrating that it forms one coherent academic plan. (No justification is needed for a Computer Engineering major.)
+		<p>
+			&nbsp;</p>
+	</li>
+	<li>
+		You will need to get an authorized signature from the department of the primary part of your modified major in addition to the signature of the CS Undergraduate Advisor.</li>
+</ul>
+<hr />
+<p>
+	<span style="font-size: 16px;"><a name="minorcard"></a>How do I fill out a minor card for a CS, Digital Arts, or Operations Research minor?</span></p>
+<p>
+	You will need to fill out three copies of the minor card, and bring all three to the CS Undergraduate Advisor to be signed. Here are tips on filling out your minor card correctly:</p>
+<ul>
+	<li>
+		We&#39;ll assume that you can fill out the top line (<tt>SOC.SEC.#</tt>, <tt>LAST NAME</tt>, <tt>FIRST NAME</tt>, <tt>INIT</tt>, <tt>CLASS</tt>, <tt>HB</tt>) correctly.
+		<p>
+			&nbsp;</p>
+	</li>
+	<li>
+		For <tt>TITLE OF MINOR</tt>, write either <i>Computer Science</i>, <i>Digital Arts</i>, or <i>Operations Research</i>. For <tt>DEPT</tt>, write <i>CS</i>.
+		<p>
+			&nbsp;</p>
+	</li>
+	<li>
+		List all the courses for the minor on the lines given for that purpose. Make sure that you write a <i>P</i> next to each prerequisite course. For a Computer Science minor, the prerequisites are CS 5, CS 8, and CS 19. For a Digital Arts minor, one of CS 2, CS 4, or CS 5 serves as a prerequisite. For an Operations Research minor, the prerequisites are Math 3, Math 8, Math 13, and CS 19.
+		<p>
+			The Computer Science minor consists of CS 23, 25, 37; any one of CS 39, 48, 58, 68, 78, 85; and one other CS course numbered from 33 to 38 or from 43 to 88.</p>
+		<p>
+			The Digital Arts minor consists of CS 22, 32, and 42; one of Film Studies 31, Film Studies 35, Film Studies 38, Studio Art 16, Studio Art 29, Theater 30; and one other course from the following list: Film Studies 31, Film Studies 35, Film Studies 38, Studio Art 16, Studio Art 29, Theater 30, CS 12, CS 42, CS 82, Psychology 21.</p>
+		<p>
+			The Operations Research minor consists of CS 25; Math 16, 20, 22; and one of Math 38, Math 88, or CS 85.</p>
+		<p>
+			&nbsp;</p>
+	</li>
+	<li>
+		There are check boxes on the back. You&#39;ll need to check one box.</li>
+</ul>
+<hr />
+<p>
+	<span style="font-size: 16px;"><a name="handin"></a>Where do I hand in my cards once they&#39;re signed?</span></p>
+<p>
+	You will keep one signed card. It&#39;s always a good idea to have on record that the bureaucracy has signed off on your plan.</p>
+<p>
+	You will give one signed card to the Registrar&#39;s office.</p>
+<p>
+	If you&#39;re a CS major, a modified major with CS as the primary part, or a CS minor, you will give one signed card to Kelly Clark in the main CS office.</p>
+<p>
+	If you are a modified major with CS as the secondary part, give either an original card (your fourth card) or a copy to Kelly Clark in the main CS office. (If you don&#39;t have a fourth card, you can give Kelly an original card, and she&#39;ll make a copy.)</p>
+<p>
+	You will <strong>not</strong> give a signed card to the CS Undergraduate Advisor.</p>
+<p>
+	If you are doing a modified major, you&#39;ll need to get a card or a copy to the other department. (But if you&#39;re a modified major with CS as the primary part and the secondary part is drawn from multiple departments, you don&#39;t need to give any other department a copy of your card.)</p>
+<hr />
+<p>
+	<span style="font-size: 16px;"><a name="double"></a>What do I have to do differently if I&#39;m a double or triple major?</span></p>
+<p>
+	If you&#39;re a double or triple major, check <tt>DOUBLE</tt> on your major card.</p>
+<p>
+	You&#39;ll also need to fill out a &quot;Double Major Request Form&quot; or &quot;Triple Major Request Form.&quot; You can get Double Major Request Forms from the Registrar&#39;s office or from the CS Undergraduate Advisor. You&#39;ll have to go to the Registrar&#39;s office for a Triple Major Request Form.</p>
+<p>
+	You may not use the same course as part of two different majors, or as part of one major and one minor. You may, however, use the same course as part of one major and a prerequisite for a different major or minor. For example, if you&#39;re majoring in math and also either majoring or minoring in CS, you may use CS 5 for the math major and as a prerequisite for CS.</p>
+<hr />
+<p>
+	<span style="font-size: 16px;"><a name="thesis"></a>How do I sign up for a CS honors thesis?</span></p>
+<p>
+	You will use CS 97 as your culminating experience. Write <i>CS 97</i> under <tt>IDENTIFY CULMINATING EXPERIENCE</tt>. You will also write <i>CS 97</i> in either one or two terms of the grid. (If you sign up for two terms of CS 97, they count as just one course from the point of view of your needing 9 courses for the major.)</p>
+<p>
+	We recommend that you sign up for two terms of CS 97, so that you have allocated enough time to do a good job. You <em>do</em> want to do a good job on your thesis, don&#39;t you?</p>
+<p>
+	We also recommend that, if you can, you should sign up for CS 97 in your senior fall and winter terms. That way, if you&#39;re not quite done at the end of two terms of thesis work, you have spring term to finish up.</p>
+<p>
+	If you are a CS major, or a modified major with CS as the primary part, then your advisor must be a member or adjunct in the CS Department. Members and adjuncts are listed in the Computer Science section of the ORC. Occasionally, a modified major will want to do a thesis that is really a thesis in the secondary part. (For example, we had a CS-modified-with-physics major whose thesis was more about physics than about CS.) Please try to keep your thesis primarily about CS. It will be much easier for you to find an advisor in the CS Department if you do.</p>
+<p>
+	Click <a href="http://www.cs.dartmouth.edu/site-content/site/undergraduate-honors.php">here</a> for more information on the CS Honors Program. Note that to be eligible to write an honors thesis, you need a B average in the major and a B average in the College.</p>
+<hr />
+<p>
+	<span style="font-size: 16px;"><a name="whatelse"></a>What else goes along with being a CS major, modified major, or minor?</span></p>
+<p>
+	Once you become a CS major, modified major, or minor, you&#39;ll have expanded access privileges for Sudikoff Laboratory. You&#39;ll be able to get into both the first-floor and second-floor hallways after hours, and you&#39;ll have access to the labs in 001, 003, and 005.</p>
+<p>
+	Once we have your major card on file, we will try very hard to schedule CS course times so that you can complete your major. If, for example, your major card indicates that you will be taking CS 58 and Math 20 in the same term, we will try to schedule CS 58 in a time slot that does not conflict with Math 20&#39;s time slot. We cannot give an iron-clad guarantee that conflicts will never occur, but we have a good track record in avoiding them. Your part of this deal is that when your vision of how to complete the CS major changes, you should update your major card so that we have an accurate picture of your course plans.</p>
+<p>
+	We also suggest that CS majors, modified majors, and minors monitor the Computer Science Majors Blitzmail bulletins.</p>
+
+</div>
+<!-- end page content -->
+		</td>
+		<td class="contentRight" valign="top" width="10" height="329"></td>
+	</tr>
+</table>
+<!-- end content table -->
+
+<!-- page divider table -->
+<table width="858" height="20" border="0" cellpadding="0" cellspacing="0" align="center">
+	<tr height="20">
+		<td width="10" height="20"><img src="http://www.cs.dartmouth.edu/images/t2-page-bg_04.png" width="10" height="20" alt=""></td>
+		<td width="838" height="20"><img src="http://www.cs.dartmouth.edu/images/t2-page-bg_05.jpg" width="838" height="20" alt=""></td>
+		<td width="10" height="20"><img src="http://www.cs.dartmouth.edu/images/t2-page-bg_06.png" width="10" height="20" alt=""></td>
+		</tr>
+</table>
+<!-- end page divider table -->
+<!-- bottom navigation and search table -->
+<table width="838" align="center" height="144" border="0" cellpadding="0" cellspacing="0" align="center">
+	<tr height="128">
+		<td class="pageBottom" width="838" height="128">
+							<table border="0" cellspacing="0" cellpadding="0" align="center" class="bottomNav">
+		<tr>
+			<td class="bottomNavRowHead">About</td>
+			<td class="bottomNavLinks"><a href="http://www.cs.dartmouth.edu/" target="_self">Home</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/about-dartmouth-cs.php" target="_self">About</a> | <a href="http://www.dartmouth.edu" target="_self">Dartmouth</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/jobs-in-dartmouth-cs.php" target="_self">Jobs</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/contact-dartmouth-computer-science.php" target="_self">Contact</a> | <a href="http://www.cs.dartmouth.edu/site-content/internal/index.php" target="_self">Internal</a> | <a href="http://www.cs.dartmouth.edu/site-content/connector/index.php" target="_self">Connector</a></td>
+		</tr>
+		<tr>
+			<td class="bottomNavRowHead">People</td>
+			<td class="bottomNavLinks"><a href="http://www.cs.dartmouth.edu/site-content/tenure-track-faculty/index.php" target="_self">Tenure-Track Faculty</a> | <a href="http://www.cs.dartmouth.edu/site-content/faculty-other/index.php" target="_self">Other Faculty</a> | <a href="http://www.cs.dartmouth.edu/site-content/staff-administrative/index.php" target="_self">Administrative Staff</a> | <a href="http://www.cs.dartmouth.edu/site-content/staff-technical/index.php" target="_self">Technical Staff</a> | <a href="http://www.cs.dartmouth.edu/site-content/postdoctoral-researchers/index.php" target="_self">Postdoctoral Researchers</a> | <a href="http://www.cs.dartmouth.edu/site-content/graduate-students/index.php" target="_self">Graduate Students</a> | <a href="http://www.cs.dartmouth.edu/site-content/alumni-professors/index.php" target="_self">Alumni Professors</a> | <a href="http://myslu.stlawu.edu/~ltorrey/profiles/index.html" target="_self">Profiles of Dartmouth CS Alumni</a></td>
+		</tr>
+		<tr>
+			<td class="bottomNavRowHead">Research</td>
+			<td class="bottomNavLinks"><a href="http://www.cs.dartmouth.edu/site-content/news/index.php" target="_self">News</a> | <a href="http://www.cs.dartmouth.edu/~csrs/" target="_self">CSRS</a> | <a href="http://www.cs.dartmouth.edu/site-content/research-projects/index.php" target="_self">Research Labs and Projects</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/colloquium.php" target="_self">Colloquium</a> | <a href="http://www.cs.dartmouth.edu/site-content/books/index.php" target="_self">Books by Faculty</a> | <a href="http://www.cs.dartmouth.edu/site-content/reports/index.php" target="_self">Technical Reports</a></td>
+		</tr>
+		<tr>
+			<td class="bottomNavRowHead">Programs</td>
+			<td class="bottomNavLinks"><a href="http://www.cs.dartmouth.edu/site-content/site/a-major-redesign.php" target="_self">A Major Redesign</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/undergraduate-programs.php" target="_self">Undergraduate Programs</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/graduate-programs.php" target="_self">Graduate Programs</a> | <a href="http://www.cs.dartmouth.edu/site-content/graduate-courses/index.php" target="_self">Graduate Courses</a> | <a href="http://www.cs.dartmouth.edu/site-content/undergrad-courses/index.php" target="_self">Undergraduate Courses</a></td>
+		</tr>
+		<tr>
+			<td class="bottomNavRowHead">Admissions</td>
+			<td class="bottomNavLinks"><a href="http://www.dartmouth.edu/admissions/" target="_self">Undergraduate</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/ms-admissions.php" target="_self">M.S. Admissions</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/phd-admissions.php" target="_self">Ph.D. Admissions</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/md---phd-in-compbio.php" target="_self">M.D. - Ph.D. in CompBio</a> | <a href="http://www.cs.dartmouth.edu/site-content/site/graduate-student-life.php" target="_self">Graduate Student Life</a></td>
+		</tr>
+	</table>
+
+		</td>
+	</tr>
+	<tr height="16">
+		<td width="838" height="16"><img src="http://www.cs.dartmouth.edu/images/t2-page-bg_11.gif" width="838" height="16" alt=""></td>
+	</tr>
+</table>
+<!-- end bottom navigation and search table -->
+
+<!-- copyright table -->
+<table width="858" border="0" cellpadding="0" cellspacing="0" align="center">
+	<tr>
+		<td class="pad5" width="838" style="padding-left:25px;"><span class="copyrightText">&copy; Copyright 2010, Dartmouth College Computer Science Department, All Rights Reserved</span></td>
+	</tr>
+</table>
+<!-- end copyright table -->
+
+<!-- pad the page bottom -->
+<div class="pad5"><div class="pad5"></div></div>
+<!-- end pad the page bottom -->
+	</body>
+</html>

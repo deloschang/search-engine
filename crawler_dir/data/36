@@ -1,0 +1,290 @@
+http://www.cs.dartmouth.edu/~cs19/syllabus.html
+3
+<html> <head>
+<title>Computer Science 30, Winter 2013 Syllabus</title>
+</head>
+
+<body bgcolor=#ffffff>
+<h1>CS 30 Winter 2013 Syllabus </h1>
+
+<h2>Course Equivalence</h2>
+
+CS 30 is cross-listed as ENGS 66, and is equivalent to MATH 19.
+
+<h2>Instructor</h2>
+
+<a href="/~scot/">Prasad Jayanti</a><br>
+Office: 224 Sudikoff Laboratory<br>
+Office hours: 3:00-4:00pm Wednesdays & 2.00-4.00pm Thursdays <br>
+Email: <a href="mailto:prasad@cs.dartmouth.edu">prasad@cs.dartmouth.edu</a> <br>
+
+<h2>Graduate Teaching Assistant</h2> 
+Sagar Kale</br>
+Lab hours (in 115 Sudikoff): 4.00-5.00pm Tuesdays & 7.00-8.00pm on Wednesdays and Thursdays <br>
+Email: <a href="mailto: Sagar.S.Kale.GR@dartmouth.edu">Sagar Kale</a>
+
+<h2>Undergraduate Grader/Tutors</h2>
+Sucharita Jayanti & Yi-Jie Wang
+
+<!--
+<h2>Lab Hours</h2> 
+<ul>
+<li>Sunday: 8-10 pm, 115 Sudikoff </li>
+<li>Monday: 8-10 pm, 115 Sudikoff </li>
+<li>Tuesday: 8-10 pm, 115 Sudikoff </li>
+</ul>
+-->
+
+<!--
+<h2>Email to Course Staff</h2>
+<p>
+Email sent to <a href="mailto: cs30-F12@cs.dartmouth.edu">cs30-F12@cs.dartmouth.edu</a> will 
+reach the entire course staff (instructor, TA, undergrad grader/tutors).  If you
+have a question that you think any of us could answer send it to this address.
+-->
+
+
+<h2>Course Description </h2>
+	<p>
+    Computer science focuses on solving problems with a computer.  
+    Given a problem, we like to know <em>is it solvable?</em>
+    If it is, <em>how?</em>
+    Once we have a method, we ask <em>does it work correctly?</em>
+    If so, <em>how long does it take?</em>  
+    When we have measured that, we ask <em>but can we do it faster?</em>
+  </p>
+  <p>
+    To answer these questions, we need to know what these words mean:
+    What does it mean to be <em>solvable</em>?  
+    How can we prove that, anyway?  
+    What is a <em>method</em>, and how do we measure how <em>long</em> something takes?  
+    We need to know <em>discrete mathematics</em>.  
+  </p>
+
+  <p>
+    One purpose of this course is for you to become comfortable
+    with mathematical thinking and writing
+    clean, logical, proofs.  
+    You will also learn about probability, combinatorics (counting), some 
+    graph theory, enough number theory to understand how RSA Public Key encryption works,
+    and similar mathematical topics that are important for 
+    students who want to understand computer science.
+    <!-- Throughout, we maintain a computational view by
+    illustrating abstract notions with concrete real-world examples. -->
+  </p>
+
+<h2>
+Prerequisite</h2>
+<p>
+CS 1, ENGS 20, or placement through either AP or local placement exam.
+
+<h2>Text</h2>
+Discrete Mathematics and its Applications, Seventh Edition, by Kenneth H. Rosen
+ISBN: 978-0-07-338309-5
+
+<h2>Topics Covered</h2>
+<ul>
+<li> Logic and Proof </li>
+<li> Induction </li>
+<li> Graphs and Trees </li>
+<li> Sets, Functions, Relations </li>
+<li> Counting </li>
+<li> Public key encrytion (RSA) and the number theory underlying it
+<li> Recurrence relations and solving them via the Master Theorem
+<li> Asymptotics </li>
+<li> Discrete Probability </li>
+<li> Hashing </li>
+</ul>
+
+<h2>Lectures</h2>
+
+Lectures are in Life Sciences Center 200 in the 11 hour: MWF, 11:15-12:20.
+X-hour is Tuesday 12:00-12:50pm.
+
+<h2>X-hours</h2>
+<p>
+I expect to use all x-hours.
+Please make sure that you have no other engagements during X-hours.
+
+<h2>Keeping up</h2>
+Avoid falling behind in this class.   If  things are not making sense, please come
+to office hours to get help.  Topics build on one another, so don't
+think that you can get behind and catch up later.  You will find that the next
+topic may not make sense.
+
+<h2>Homework</h2>
+
+There will be weekly homework assignments.  They usually go out on
+a Friday and are due in class one week later; the first homework will be
+assigned on Friday, January 11.  
+A few points about the homework assignments:
+
+<dl>
+<dt><b>General Advice</b> </dt>
+<dd>
+Start early.
+Difficult problems are not typically solved in one sitting.  
+Start early and let the ideas come to you over the course of a few days.
+
+Use good mathematical notation to be rigorous and concise.
+</dd>
+
+<dt><b>Study Groups</b></dt>
+<dd>
+Some problems could be difficult and it might be helpful to discuss them with
+others.  Feel free to form study groups.  The idea, however, is for
+<em>everyone</em> to understand the problems and experience
+working through the solutions.  So you should not simply "give"
+a solution to another classmate.  In particular, each student
+should write up his or her own homework solutions and should
+not read or copy the solutions of others.
+For each problem, if you worked on that problem with anyone,
+you should write down their names at the start of the solution to that problem.
+If you receive help from the professor or the TA, be sure to acknowledge their names also.
+</dd>
+
+<dt><b>Work on your own before talking to others</b> </dt>
+<dd>
+Although, as I said above, you can work with others on the homework problems,
+you will learn the most by first trying out each problem on your own.
+Make as much progress as possible on your own before you meet with your
+study group.  If you get used to working with others and
+often don't come up with the solutions on your own,
+you may do okay in the homework component of your grade,
+but you will suffer in the exams where you are entirely on your own.
+</dd>
+
+<li><strong>Extra Credit problems:</strong>
+<dd>
+In some homeworks, I might assign extra credit problems.  I will keep track of
+extra credit points separately from regular points, and at the end of the term I 
+will use them to resolve borderline grades.
+If your grade is on the border and you have done substantial amount of extra credit and have done it well,
+then and only then will the extra credit points be of help with respect to the grade.
+I therefore encourage you to work on challenge problems
+only after you have solved the regular problems as well as you possibly can,
+and if you enjoy the additional challenge.  You cannot "make up" for missing
+regular homework by doing extra credit.
+</dd>
+
+<dt><b>Homework Lateness Policy</b></dt>
+<dd>
+Homework is due at the <i>beginning of class </i> on the announced due date (usually Wednesday).
+Late homework has an immediate 20% penalty (unless there is a valid excuse which,
+which if possible you should discuss with me at least two days in advance),
+and 10% penalty per calendar day after that.
+I will not accept a homework after the next homework is due, or after the final.
+In this course, if you don't do your homework on time, you will soon find yourself overwhelmed, 
+so please be regular with your work.
+</dd>
+
+<!--
+You may submit any homework, except the last one, one 
+      <em>class day</em> late for a 10% penalty.  A class day is the
+      next day we have a lecture.  Generally, this means that you may 
+      submit a homework by Friday 10 am.  After that, you have an 
+      automatic zero.
+</dd>
+
+<dt><b>Late Days</b></dt>
+<dd>
+      You get two free late days, meaning that you will not get the
+      10% penalty on the first two homeoworks you turn late.  
+      Of course, you may not use both late days at the same time, given the late
+      policy, and you may not use one for the last homework.  
+      The late days are for special occasions, such as when you are
+      sick, overworked, have too many midterms, and so on.
+Use them wisely:  You will not get any more!
+</dd>
+</dl>
+-->
+
+
+<h2>Exams</h2>
+There will be two midterm exams and a final exam; all are closed-book, in-class exams.
+<ul>
+<li> First midterm: 7:00-9:00pm Tuesday, February 5; Location: LSC 200 (our regular classroom) </li>
+<li> Second midterm: 7:00:9:00pm Tuesday, February 26; Location: LSC 200 (our regular classroom) </li>
+<li> Final Exam: 8.00-10.00am Monday, March 11; Location : LSC 200 (our regular classroom)</li>
+</ul>
+
+<h2>Review Session</h2>
+Before the final exam, we will have a review session 10:00-11:30am Sunday,
+March 10; Location: LSC 200 (our regular classroom)
+
+<h2>Grading</h2>
+<ul>
+<li> Homework: 40%
+<li> Midterm 1: 20%
+<li> Midterm 2: 20%
+<li> Final: 20%
+</ul>
+
+<!--
+<h2>Homework/Exam Regrade</h2>
+Your work is normally graded by the graduate TA and the grader.
+If you have any questions on how a particular problem is graded, you should see Ye during his office hours and explain the concern.
+He will keep your homework/exam, consult with the appropriate grader, and then get back to you.
+If you have any grading questions, you must see Ye within a week after your homework/exam is returned.
+Regrading won't be done if you approach him later.
+-->
+
+<h2>Honor Code</h2>
+<strong>All work submitted for credit must be your own.</strong>
+You may discuss the homework problems with your classmates, the
+TAs, or Professor Jayanti,  but you must write up your own
+solutions.  For each problem, you must indicate who else you worked
+with or got any help from, small or big.  Even if you worked with the same people on the entire
+assignment, be sure to write their names at the start of the solution of each problem.
+Any written sources used (apart from the text, your notes and any
+homework solutions that I distribute) must also be
+acknowledged; however, <em>you may not consult any
+solutions on the internet or from previous years' assignments, whether they are student- or faculty-generated.</em>
+
+<p>
+
+The rules are different for the exams.
+The exams are closed book and you may not discuss the problems with anyone.
+
+<p>
+You should consult a copy of Dartmouth's <a href="http://www.dartmouth.edu/~writing/sources/">Sources and Citations</a>.
+
+<p>
+<a href="http://www.dartmouth.edu/~reg/regulations/undergrad/acad-honor.html">Dartmouth's Academic Honor Principle</a> 
+applies to this course.
+Please be sure to read it.
+
+<p>
+Please ask me if you have any questions about the honor code as it
+applies to CS 30.  Better safe than sorry!
+
+<h2>Disabilities</h2>
+
+Students with disabilities enrolled in this course and who may
+need disability-related accommodations are encouraged to make an appointment
+to see me on or before Friday, January 18.
+All discussions will remain confidential, although the
+Student Accessibility Services office may be consulted
+to discuss appropriate implementation of any accommodation requested.
+
+<h2>Religious Observances</h2>
+
+Some students may wish to take part in religious observances that occur during
+this acdemic term.  If you have a religious observance that conflicts with
+your participation in the course, please meet with me
+on or before Friday, January 18 to discuss appropriate accommodations.
+
+<hr>
+<p>
+
+<a href="/~cs30/">Back to CS 30 home page</a>
+
+<hr>
+<address><a href="http://www.cs.dartmouth.edu/~prasad/">Prasad Jayanti
+&lt;prasad@cs.dartmouth.edu&gt;</a></address>
+<!-- hhmts start -->
+Last modified: Sunday, January 6, 2013
+<!-- hhmts end -->
+</body> </html>
+
+,

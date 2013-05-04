@@ -1,0 +1,65 @@
+http://www.cs.dartmouth.edu/~cs5
+2
+<html> <head>
+<title>Computer Science 5, Spring 2011</title>
+</head>
+
+<body bgcolor=#ffffff>
+
+<center>
+<img src="CS5-Banner.gif" alt="CS Banner">
+</center>
+
+<center>
+<h1>Spring 2011</h1>
+
+<h2>Introduction to Computer Science</h2>
+<h2><a href="http://www.cs.dartmouth.edu/~thc/">Tom Cormen</a></h2>
+</center>
+
+<h2><a href="schedule.html">Schedule and Lecture Notes</a></h2>
+
+<h2><a href="syllabus.html">Syllabus</a></h2>
+
+<h2><a href="mailto:cs5help@cs.dartmouth.edu">Get Help</a></h2>
+
+<h2><a href="short-assignments.html">Short Assignments</a></h2>
+
+<h2><a href="exams/final-review.html">Final Exam Information</a></h2>
+
+<!-- <h2><a href="quizzes/quiz2-info.html">Quiz 2 Information</a></h2> -->
+
+<!-- <h2><a href="Questionnaire.doc">Questionnaire</a></h2> -->
+
+<!-- <h2><a href="Section%20times.doc">Section Times</a></h2> -->
+
+<h2><a href="lab-assignments.html">Lab Assignments</a></h2>
+
+<h2><a href="hw-requirements.html">Homework Requirements</a></h2>
+
+<h2><a href="examples.html">Textbook Examples</a></h2>
+
+<h2>Textbook Errata</h2>
+<ul>
+  <li> <a href="errata1printing.pdf">PDF of errata</a>
+  <li> <a href="first_printing_update.pdf">PDF of some corrected pages</a>
+</ul>
+
+<h2>Installing Eclipse 3.6.2</h2>
+<ul>
+  <li> <a href="install/eclipse-osx/index.html">On Mac OS X</a>
+  <li> <a href="install/eclipse-win/index.html">On Windows</a>
+</ul>
+
+<h2><a href="Appendix_M.pdf">Appendix M</a>: a PDF from a previous
+edition of the textbook, listing methods of commonly used classes</h2>
+
+<h2><a href="http://download.oracle.com/javase/6/docs/api">All Classes
+Available in Java 6</a> (on the Oracle website)</h2>
+
+<hr>
+<address><a href="http://www.cs.dartmouth.edu/~thc/">Thomas H. Cormen &lt;thc@cs.dartmouth.edu&gt;</a></address>
+<!-- hhmts start -->
+Last modified: Sun May 29 22:55:08 2011
+<!-- hhmts end -->
+</body> </html>

@@ -1,0 +1,14 @@
+http://www.cs.dartmouth.edu/~wbc/makeinf_mf_on_fc5.html
+3
+
+
+<head><title>
+</title>Making mf run on fc5</head>
+</body>
+<ul>
+<li> this assumes that you have /usr/share/texmf/metafont/config/mf.ini
+hanging around somewhere..
+<li>mf -ini /usr/share/texmf/metafont/config/mf.ini (as root)
+<li>this means you can use \mode:=mf
+</ul>
+</body>

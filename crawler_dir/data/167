@@ -1,0 +1,286 @@
+http://www.cs.dartmouth.edu/~cs5/schedule.html
+3
+<html> <head>
+<title>Computer Science 5, Spring 2011 Schedule</title>
+</head>
+
+<body bgcolor=#ffffff>
+<h1><a href="/~cs5/">CS 5 Spring 2011</a><br>
+Schedule</h1>
+
+<strong>Schedule subject to change with minimal notice.</strong>
+
+<p>
+
+All readings are from Lewis and Loftus.
+
+<p>
+
+[<a href="#week1">Week 1</a>]
+[<a href="#week2">Week 2</a>]
+[<a href="#week3">Week 3</a>]
+[<a href="#week4">Week 4</a>]
+[<a href="#week5">Week 5</a>]
+[<a href="#week6">Week 6</a>]
+[<a href="#week7">Week 7</a>]
+[<a href="#week8">Week 8</a>]
+[<a href="#week9">Week 9</a>]
+[<a href="#week10">Week 10</a>]
+
+<p>
+
+<hr>
+
+<p>
+
+<a name="week1"><strong>Week 1</strong></a>
+
+<dl>
+  <dt> <a href="lectures/0328/0328.html">Monday, March 28</a>:
+  <dd> Why study Computer Science?  Administrivia.  What makes a good
+       program?
+
+  <dt> <a href="lectures/0330/0330.html">Wednesday, March 30</a>:
+  <dd> What makes a good program, continued.  Simple types and values.<br>
+       Reading: Chapter 1, Sections 2.1&ndash;2.3.
+       
+  <dt> <a href="lectures/0331/0331.html">Thursday, March 31</a> (x-hour):
+  <dd> Simple types and values, variables, operators.<br>
+       Reading: 2.1&ndash;2.5.
+
+  <dt> <a href="lectures/0401/0401.html">Friday, April 1</a>:
+  <dd> Scanner class.  References and objects.  Using builtin classes:
+       DecimalFormat.<br>
+       Reading: 2.6, 3.1, 3.6.
+</dl>
+
+<hr>
+
+<p>
+
+<a name="week2"><strong>Week 2</strong></a>
+
+<dl>
+  <dt> <a href="lectures/0404/0404.html">Monday, April 4</a>:
+  <dd> Using builtin classes: String, Math, Random.
+       <br>
+       Reading: 2.5, 3.2&ndash;3.5, 3.7.
+
+  <dt> <a href="lectures/0406/0406.html">Wednesday, April 6</a>:
+  <dd> More on operators.  Enumerated types.  Flow of control: if-else
+       statements, loops.<br>
+       Reading: 5.2&ndash;5.5, 5.7&ndash;5.8.
+
+  <dt> <a href="lectures/0407/0407.html">Thursday, April 7</a> (x-hour):
+  <dd> Boolean expressions.  Nested loops.  Introduction to writing
+       classes.<br>
+       Reading: 5.1, 4.1&ndash;4.5.
+
+  <dt> <a href="lectures/0408/0408.html">Friday, April 8</a>:
+  <dd> More on writing classes.  Return values from methods.<br>
+       Reading: 6.7&ndash;6.8.
+</dl>
+ 
+<hr>
+
+<p>
+
+<a name="week3"><strong>Week 3</strong></a>
+
+<dl>
+  <dt> Monday, April 11:
+  <dd> <em>No class.</em>
+       
+  <dt> <a href="lectures/0413/0413.html">Wednesday, April 13</a>:
+  <dd> Problem decomposition.<br>
+       Reading: 6.1&ndash;6.2, 6.4.<br>
+       <em>Lab #1 out.</em>
+
+  <dt> Thursday, April 14 (x-hour):
+  <dd> <em>In-class quiz.</em>
+
+  <dt> <a href="lectures/0415/0415.html">Friday, April 15</a>:
+  <dd> Method call mechanisms.  Garbage collection.
+</dl>
+
+<hr>
+
+<p>
+
+<a name="week4"><strong>Week 4</strong></a>
+
+<dl>
+  <dt> <a href="lectures/0418/0418.html">Monday, April 18</a>:
+  <dd> Scope of names.  Static methods and static variables.
+       Wrapper classes and autoboxing.<br>
+       Reading: 3.8, 6.3.
+
+  <dt> <a href="lectures/0420/0420.html">Wednesday, April 20</a>:
+  <dd> Debugging and testing.  Graphical applets.<br>
+       Reading: 2.7&ndash;2.9, 6.9.<br>
+       <em>Lab #1 due.</em>
+
+  <dt> Thursday, April 21 (x-hour):
+  <dd> <em>Open review session.</em><br>
+       <em>Exam at 6:00 PM in Filene Auditorium.</em>
+       
+  <dt> <a href="lectures/0422/0422.html">Friday, April 22</a>:
+  <dd> Objects and applets.  Interfaces.<br>
+       Reading: 6.5, 7.9.
+
+</dl>
+
+<hr>
+
+<p>
+
+<a name="week5"><strong>Week 5</strong></a>
+
+<dl>
+  <dt> <a href="lectures/0425/0425.html">Monday, April 25</a>:
+  <dd> Events and listeners.  Manual animations.
+       Animations with timers.<br>
+       Reading: 8.8.
+
+  <dt> <a href="lectures/0427/0427.html">Wednesday, April 27</a>:
+  <dd> Arrays.  Arrays of objects.  Objects containing arrays.<br>
+       Reading: 7.1&ndash;7.3.<br>
+       <em>Lab #2 out.</em>
+
+  <dt> <a href="lectures/0428/0428.html">Thursday, April 28</a> (x-hour):
+  <dd> Arrays, continued.  Multidimensional arrays.
+       ArrayList class.  Generic types.<br>
+       Reading: 7.6&ndash;7.8.
+       
+  <dt> <a href="lectures/0429/0429.html">Friday, April 29</a>:
+  <dd> Graphics using arrays.  Inheritance. <br>
+       Reading: 8.1&ndash;8.3, 8.5.
+</dl>
+
+<hr>
+
+<p>
+
+<a name="week6"><strong>Week 6</strong></a>
+
+<dl>
+  <dt> <a href="lectures/0502/0502.html">Monday, May 2</a>:
+  <dd> Inheritance, polymorphism, dynamic binding, and graphics.<br>
+       Reading: 8.4, 8.7, 9.1&ndash;9.3, 9.7.
+
+  <dt> <a href="lectures/0504/0504.html">Wednesday, May 4</a>:
+  <dd> Object class.  GUI components.<br>
+       Reading: 3.9&ndash;3.10, 4.7&ndash;4.9, 5.10&ndash;5.11.<br>
+       <em>Lab #2 due.  Lab #3 out.</em>
+
+  <dt> Thursday, May 5 (x-hour):
+  <dd> <em>In-class quiz.</em>
+       
+  <dt> <a href="lectures/0506/0506.html">Friday, May 6</a>:
+  <dd> Recursion. <br>
+       Reading: 11.1&ndash;11.3.
+
+</dl>
+
+<hr>
+
+<p>
+
+<a name="week7"><strong>Week 7</strong></a>
+
+<dl>
+       
+  <dt> <a href="lectures/0509/0509.html">Monday, May 9</a>:
+  <dd> More recursion.
+       Swing: containers, components, and layout managers.<br>
+       Reading: 11.4, 6.11&ndash;6.13, 8.6.
+       
+  <dt> <a href="lectures/0511/0511.html">Wednesday, May 11</a>:
+  <dd> Interval bisection.  Case study: Amortizing a loan.<br>
+       <em>Lab #3 due.  Lab #4 out.</em>
+
+  <dt> Thursday, May 12 (x-hour):
+  <dd> <em>Open review session.</em><br>
+       <em>Exam at 6:00 PM in Filene Auditorium.</em>
+
+  <dt> <a href="lectures/0513/0513.html">Friday, May 13</a>:
+  <dd> Searching: linear search, binary search.<br>
+       Reading: 9.5.
+
+</dl>
+
+<hr>
+
+<p>
+
+<a name="week8"><strong>Week 8</strong></a>
+
+<dl>
+  <dt> <a href="lectures/0516/0516.html">Monday, May 16</a>:
+  <dd> Orders of growth.  Sorting: selection sort.
+
+  <dt> <a href="lectures/0518/0518.html">Wednesday, May 18</a>:
+  <dd> Sorting: insertion sort, merge sort.<br>
+       Reading: 9.4.<br>
+       <em>Lab #4 due.  Lab #5 out.</em>
+
+  <dt> <a href="lectures/0519/0519.html">Thursday, May 19</a> (x-hour):
+  <dd> Sorting: merge sort, quicksort.
+       
+  <dt> Friday, May 20:
+  <dd> <em>No class: Green Key Weekend.</em>
+
+</dl>
+
+<hr>
+
+<p>
+
+<a name="week9"><strong>Week 9</strong></a>
+
+<dl>
+  <dt> <a href="lectures/0523/0523.html">Monday, May 23</a>:
+  <dd> Sorting: heapsort.  Priority queues.
+
+  <dt> <a href="lectures/0525/0525.html">Wednesday, May 25</a>:
+  <dd> Data structures: doubly linked lists.<br>
+       <em>Lab #5 due.  Lab #6 out.</em>
+
+  <dt> <a href="lectures/0526/0526.html">Thursday, May 26</a> (x-hour):
+  <dd> Data structures: singly linked lists.  Iterators.<br>
+       Reading: 12.1&ndash;12.2 (skim; we'll use a different structure).
+
+  <dt> <a href="lectures/0527/0527.html">Friday, May 27</a>:
+  <dd> Parallel computing.
+
+</dl>
+
+<hr>
+
+<p>
+
+<a name="week10"><strong>Week 10</strong></a>
+
+<dl>
+  <dt> Monday, May 30:
+  <dd> <em>No class: Memorial Day.</em>
+
+  <dt> <a href="lectures/0601/0601.html">Wednesday, June 1</a>:
+  <dd> Parallel computing.<br>
+       <em>Lab #6 due.</em>
+
+  <dt> Thursday, June 2:
+  <dd> <em>Exam review session, 10:00 am to 12:00 noon, 008 Kemeny.</em>
+
+  <dt> Friday, June 3:
+  <dd> <em>Final exam 3:00&ndash;6:00 PM, 008 Kemeny.</em>
+
+</dl>
+
+<hr>
+<address><a href="http://www.cs.dartmouth.edu/~thc/">Thomas H. Cormen &lt;thc@cs
+.dartmouth.edu&gt;</a></address>
+<!-- hhmts start -->
+Last modified: Mon May 30 22:45:57 2011
+<!-- hhmts end -->
+</body> </html>

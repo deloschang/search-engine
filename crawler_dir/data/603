@@ -1,0 +1,319 @@
+http://www.cs.dartmouth.edu/~cs5/examples.html
+3
+<html> <head>
+<title>Java Software Solutions: Examples</title>
+</head>
+
+<body bgcolor=#ffffff>
+<h1>Java Software Solutions: Examples</h1>
+
+Clicking on a link for a .java file will show you the source code for
+that file.
+
+<p>
+
+Clicking on a link for an .html file will attempt to run that
+applet.<br> <strong>Warning:</strong> Most of the applets fail to run
+correctly in a web browser.
+
+<p>
+
+<hr>
+
+<h3>Chapter 1</h3>
+
+<ul>
+  <li> <a href="examples/chap01/Lincoln.java">Lincoln.java</a>
+  <li> <a href="examples/chap01/Lincoln2.java">Lincoln2.java</a>
+  <li> <a href="examples/chap01/Lincoln3.java">Lincoln3.java</a>
+</ul>
+
+<hr>
+
+<h3>Chapter 2</h3>
+
+<ul>
+  <li> <a href="examples/chap02/Addition.java">Addition.java</a>
+  <li> <a href="examples/chap02/Countdown.java">Countdown.java</a>
+  <li> <a href="examples/chap02/Echo.java">Echo.java</a>
+  <li> <a href="examples/chap02/Einstein.html">Einstein.html</a>
+  <li> <a href="examples/chap02/Einstein.java">Einstein.java</a>
+  <li> <a href="examples/chap02/Facts.java">Facts.java</a>
+  <li> <a href="examples/chap02/GasMileage.java">GasMileage.java</a>
+  <li> <a href="examples/chap02/Geometry.java">Geometry.java</a>
+  <li> <a href="examples/chap02/PianoKeys.java">PianoKeys.java</a>
+  <li> <a href="examples/chap02/Roses.java">Roses.java</a>
+  <li> <a href="examples/chap02/Snowman.html">Snowman.html</a>
+  <li> <a href="examples/chap02/Snowman.java">Snowman.java</a>
+  <li> <a href="examples/chap02/TempConverter.java">TempConverter.java</a>
+</ul>
+
+<hr>
+
+<h3>Chapter 3</h3>
+
+<ul>
+  <li> <a href="examples/chap03/Authority.java">Authority.java</a>
+  <li> <a href="examples/chap03/CircleStats.java">CircleStats.java</a>
+  <li> <a href="examples/chap03/devil.gif">devil.gif</a>
+  <li> <a href="examples/chap03/IceCream.java">IceCream.java</a>
+  <li> <a href="examples/chap03/LabelDemo.java">LabelDemo.java</a>
+  <li> <a href="examples/chap03/NestedPanels.java">NestedPanels.java</a>
+  <li> <a href="examples/chap03/Purchase.java">Purchase.java</a>
+  <li> <a href="examples/chap03/Quadratic.java">Quadratic.java</a>
+  <li> <a href="examples/chap03/RandomNumbers.java">RandomNumbers.java</a>
+  <li> <a href="examples/chap03/StringMutation.java">StringMutation.java</a>
+</ul>
+
+<hr>
+
+<h3>Chapter 4</h3>
+
+<ul>
+  <li> <a href="examples/chap04/Account.java">Account.java</a>
+  <li> <a href="examples/chap04/Circle.java">Circle.java</a>
+  <li> <a href="examples/chap04/Die.java">Die.java</a>
+  <li> <a href="examples/chap04/Fahrenheit.java">Fahrenheit.java</a>
+  <li> <a href="examples/chap04/FahrenheitPanel.java">FahrenheitPanel.java</a>
+  <li> <a href="examples/chap04/PushCounter.java">PushCounter.java</a>
+  <li> <a href="examples/chap04/PushCounterPanel.java">PushCounterPanel.java</a>
+  <li> <a href="examples/chap04/RollingDice.java">RollingDice.java</a>
+  <li> <a href="examples/chap04/SmilingFace.java">SmilingFace.java</a>
+  <li> <a href="examples/chap04/SmilingFacePanel.java">SmilingFacePanel.java</a>
+  <li> <a href="examples/chap04/Splat.java">Splat.java</a>
+  <li> <a href="examples/chap04/SplatPanel.java">SplatPanel.java</a>
+  <li> <a href="examples/chap04/Transactions.java">Transactions.java</a>
+</ul>
+
+<hr>
+
+<h3>Chapter 5</h3>
+
+<ul>
+  <li> <a href="examples/chap05/Age.java">Age.java</a>
+  <li> <a href="examples/chap05/Average.java">Average.java</a>
+  <li> <a href="examples/chap05/Boxes.java">Boxes.java</a>
+  <li> <a href="examples/chap05/BoxesPanel.java">BoxesPanel.java</a>
+  <li> <a href="examples/chap05/Bullseye.java">Bullseye.java</a>
+  <li> <a href="examples/chap05/BullseyePanel.java">BullseyePanel.java</a>
+  <li> <a href="examples/chap05/Coin.java">Coin.java</a>
+  <li> <a href="examples/chap05/CoinFlip.java">CoinFlip.java</a>
+  <li> <a href="examples/chap05/EvenOdd.java">EvenOdd.java</a>
+  <li> <a href="examples/chap05/GradeReport.java">GradeReport.java</a>
+  <li> <a href="examples/chap05/Guessing.java">Guessing.java</a>
+  <li> <a href="examples/chap05/LeftRight.java">LeftRight.java</a>
+  <li> <a href="examples/chap05/LeftRightPanel.java">LeftRightPanel.java</a>
+  <li> <a href="examples/chap05/MinOfThree.java">MinOfThree.java</a>
+  <li> <a href="examples/chap05/Multiples.java">Multiples.java</a>
+  <li> <a href="examples/chap05/PalindromeTester.java">PalindromeTester.java</a>
+  <li> <a href="examples/chap05/QuoteOptions.java">QuoteOptions.java</a>
+  <li> <a href="examples/chap05/QuoteOptionsPanel.java">QuoteOptionsPanel.java</a>
+  <li> <a href="examples/chap05/ReverseNumber.java">ReverseNumber.java</a>
+  <li> <a href="examples/chap05/Stars.java">Stars.java</a>
+  <li> <a href="examples/chap05/StyleOptions.java">StyleOptions.java</a>
+  <li> <a href="examples/chap05/StyleOptionsPanel.java">StyleOptionsPanel.java</a>
+  <li> <a href="examples/chap05/URLDissector.java">URLDissector.java</a>
+  <li> <a href="examples/chap05/urls.inp">urls.inp</a>
+  <li> <a href="examples/chap05/Wages.java">Wages.java</a>
+  <li> <a href="examples/chap05/WinPercentage.java">WinPercentage.java</a>
+</ul>
+
+<hr>
+
+<h3>Chapter 6</h3>
+
+<ul>
+  <li> <a href="examples/chap06/Address.java">Address.java</a>
+  <li> <a href="examples/chap06/BorderDemo.java">BorderDemo.java</a>
+  <li> <a href="examples/chap06/BorderPanel.java">BorderPanel.java</a>
+  <li> <a href="examples/chap06/BoxPanel.java">BoxPanel.java</a>
+  <li> <a href="examples/chap06/Complexity.java">Complexity.java</a>
+  <li> <a href="examples/chap06/FlowPanel.java">FlowPanel.java</a>
+  <li> <a href="examples/chap06/GridPanel.java">GridPanel.java</a>
+  <li> <a href="examples/chap06/IntroPanel.java">IntroPanel.java</a>
+  <li> <a href="examples/chap06/LayoutDemo.java">LayoutDemo.java</a>
+  <li> <a href="examples/chap06/MiniQuiz.java">MiniQuiz.java</a>
+  <li> <a href="examples/chap06/Num.java">Num.java</a>
+  <li> <a href="examples/chap06/ParameterModifier.java">ParameterModifier.java</a>
+  <li> <a href="examples/chap06/ParameterTester.java">ParameterTester.java</a>
+  <li> <a href="examples/chap06/PigLatin.java">PigLatin.java</a>
+  <li> <a href="examples/chap06/PigLatinTranslator.java">PigLatinTranslator.java</a>
+  <li> <a href="examples/chap06/Question.java">Question.java</a>
+  <li> <a href="examples/chap06/RationalNumber.java">RationalNumber.java</a>
+  <li> <a href="examples/chap06/RationalTester.java">RationalTester.java</a>
+  <li> <a href="examples/chap06/Season.java">Season.java</a>
+  <li> <a href="examples/chap06/SeasonTester.java">SeasonTester.java</a>
+  <li> <a href="examples/chap06/SloganCounter.java">SloganCounter.java</a>
+  <li> <a href="examples/chap06/Slogan.java">Slogan.java</a>
+  <li> <a href="examples/chap06/Student.java">Student.java</a>
+  <li> <a href="examples/chap06/StudentBody.java">StudentBody.java</a>
+</ul>
+
+<hr>
+
+<h3>Chapter 7</h3>
+
+<ul>
+  <li> <a href="examples/chap07/arrowDown.gif">arrowDown.gif</a>
+  <li> <a href="examples/chap07/arrowLeft.gif">arrowLeft.gif</a>
+  <li> <a href="examples/chap07/arrowRight.gif">arrowRight.gif</a>
+  <li> <a href="examples/chap07/arrowUp.gif">arrowUp.gif</a>
+  <li> <a href="examples/chap07/BasicArray.java">BasicArray.java</a>
+  <li> <a href="examples/chap07/Beatles.java">Beatles.java</a>
+  <li> <a href="examples/chap07/CD.java">CD.java</a>
+  <li> <a href="examples/chap07/CDCollection.java">CDCollection.java</a>
+  <li> <a href="examples/chap07/Direction.java">Direction.java</a>
+  <li> <a href="examples/chap07/DirectionPanel.java">DirectionPanel.java</a>
+  <li> <a href="examples/chap07/Dots.java">Dots.java</a>
+  <li> <a href="examples/chap07/DotsPanel.java">DotsPanel.java</a>
+  <li> <a href="examples/chap07/Family.java">Family.java</a>
+  <li> <a href="examples/chap07/Grade.java">Grade.java</a>
+  <li> <a href="examples/chap07/GradeRange.java">GradeRange.java</a>
+  <li> <a href="examples/chap07/LetterCount.java">LetterCount.java</a>
+  <li> <a href="examples/chap07/NameTag.java">NameTag.java</a>
+  <li> <a href="examples/chap07/Primes.java">Primes.java</a>
+  <li> <a href="examples/chap07/ReverseOrder.java">ReverseOrder.java</a>
+  <li> <a href="examples/chap07/Rocket.java">Rocket.java</a>
+  <li> <a href="examples/chap07/RocketPanel.java">RocketPanel.java</a>
+  <li> <a href="examples/chap07/RubberLines.java">RubberLines.java</a>
+  <li> <a href="examples/chap07/RubberLinesPanel.java">RubberLinesPanel.java</a>
+  <li> <a href="examples/chap07/SodaSurvey.java">SodaSurvey.java</a>
+  <li> <a href="examples/chap07/Tunes.java">Tunes.java</a>
+  <li> <a href="examples/chap07/TwoDArray.java">TwoDArray.java</a>
+  <li> <a href="examples/chap07/VariableParameters.java">VariableParameters.java</a>
+</ul>
+
+<hr>
+
+<h3>Chapter 8</h3>
+
+<ul>
+  <li> <a href="examples/chap08/Advice.java">Advice.java</a>
+  <li> <a href="examples/chap08/Book.java">Book.java</a>
+  <li> <a href="examples/chap08/Book2.java">Book2.java</a>
+  <li> <a href="examples/chap08/Dictionary.java">Dictionary.java</a>
+  <li> <a href="examples/chap08/Dictionary2.java">Dictionary2.java</a>
+  <li> <a href="examples/chap08/FoodAnalyzer.java">FoodAnalyzer.java</a>
+  <li> <a href="examples/chap08/FoodItem.java">FoodItem.java</a>
+  <li> <a href="examples/chap08/happyFace.gif">happyFace.gif</a>
+  <li> <a href="examples/chap08/Messages.java">Messages.java</a>
+  <li> <a href="examples/chap08/OffCenter.java">OffCenter.java</a>
+  <li> <a href="examples/chap08/OffCenterPanel.java">OffCenterPanel.java</a>
+  <li> <a href="examples/chap08/Pizza.java">Pizza.java</a>
+  <li> <a href="examples/chap08/Rebound.java">Rebound.java</a>
+  <li> <a href="examples/chap08/ReboundPanel.java">ReboundPanel.java</a>
+  <li> <a href="examples/chap08/Thought.java">Thought.java</a>
+  <li> <a href="examples/chap08/Words.java">Words.java</a>
+  <li> <a href="examples/chap08/Words2.java">Words2.java</a>
+</ul>
+
+<hr>
+
+<h3>Chapter 9</h3>
+
+<ul>
+  <li> <a href="examples/chap09/aquarius.dat">aquarius.dat</a>
+  <li> <a href="examples/chap09/Contact.java">Contact.java</a>
+  <li> <a href="examples/chap09/DisplayColor.java">DisplayColor.java</a>
+  <li> <a href="examples/chap09/DisplayFile.java">DisplayFile.java</a>
+  <li> <a href="examples/chap09/Employee.java">Employee.java</a>
+  <li> <a href="examples/chap09/Executive.java">Executive.java</a>
+  <li> <a href="examples/chap09/Firm.java">Firm.java</a>
+  <li> <a href="examples/chap09/Hourly.java">Hourly.java</a>
+  <li> <a href="examples/chap09/PhoneList.java">PhoneList.java</a>
+  <li> <a href="examples/chap09/PhoneList2.java">PhoneList2.java</a>
+  <li> <a href="examples/chap09/Searching.java">Searching.java</a>
+  <li> <a href="examples/chap09/SlideColor.java">SlideColor.java</a>
+  <li> <a href="examples/chap09/SlideColorPanel.java">SlideColorPanel.java</a>
+  <li> <a href="examples/chap09/Sorting.java">Sorting.java</a>
+  <li> <a href="examples/chap09/Staff.java">Staff.java</a>
+  <li> <a href="examples/chap09/StaffMember.java">StaffMember.java</a>
+  <li> <a href="examples/chap09/Volunteer.java">Volunteer.java</a>
+</ul>
+
+<hr>
+
+<h3>Chapter 10</h3>
+
+<ul>
+  <li> <a href="examples/chap10/circuit.gif">circuit.gif</a>
+  <li> <a href="examples/chap10/classical.wav">classical.wav</a>
+  <li> <a href="examples/chap10/CreatingExceptions.java">CreatingExceptions.java</a>
+  <li> <a href="examples/chap10/duke.gif">duke.gif</a>
+  <li> <a href="examples/chap10/eightiesJam.wav">eightiesJam.wav</a>
+  <li> <a href="examples/chap10/ExceptionScope.java">ExceptionScope.java</a>
+  <li> <a href="examples/chap10/hammock.gif">hammock.gif</a>
+  <li> <a href="examples/chap10/hitchcock.wav">hitchcock.wav</a>
+  <li> <a href="examples/chap10/jeopardy.au">jeopardy.au</a>
+  <li> <a href="examples/chap10/JukeBox.java">JukeBox.java</a>
+  <li> <a href="examples/chap10/JukeBoxControls.java">JukeBoxControls.java</a>
+  <li> <a href="examples/chap10/justin.jpg">justin.jpg</a>
+  <li> <a href="examples/chap10/kayla.jpg">kayla.jpg</a>
+  <li> <a href="examples/chap10/LightBulbControls.java">LightBulbControls.java</a>
+  <li> <a href="examples/chap10/LightBulb.java">LightBulb.java</a>
+  <li> <a href="examples/chap10/lightBulbOff.gif">lightBulbOff.gif</a>
+  <li> <a href="examples/chap10/lightBulbOn.gif">lightBulbOn.gif</a>
+  <li> <a href="examples/chap10/LightBulbPanel.java">LightBulbPanel.java</a>
+  <li> <a href="examples/chap10/ListPanel.java">ListPanel.java</a>
+  <li> <a href="examples/chap10/newAgeRythm.wav">newAgeRythm.wav</a>
+  <li> <a href="examples/chap10/OutOfRangeException.java">OutOfRangeException.java</a>
+  <li> <a href="examples/chap10/PickImage.java">PickImage.java</a>
+  <li> <a href="examples/chap10/play.gif">play.gif</a>
+  <li> <a href="examples/chap10/ProductCodes.java">ProductCodes.java</a>
+  <li> <a href="examples/chap10/Propagation.java">Propagation.java</a>
+  <li> <a href="examples/chap10/septa.jpg">septa.jpg</a>
+  <li> <a href="examples/chap10/stop.gif">stop.gif</a>
+  <li> <a href="examples/chap10/test.dat">test.dat</a>
+  <li> <a href="examples/chap10/TestData.java">TestData.java</a>
+  <li> <a href="examples/chap10/tiger.jpg">tiger.jpg</a>
+  <li> <a href="examples/chap10/toucan.gif">toucan.gif</a>
+  <li> <a href="examples/chap10/TransitMap.java">TransitMap.java</a>
+  <li> <a href="examples/chap10/westernBeat.wav">westernBeat.wav</a>
+  <li> <a href="examples/chap10/worldmap.gif">worldmap.gif</a>
+  <li> <a href="examples/chap10/Zero.java">Zero.java</a>
+</ul>
+
+<hr>
+
+<h3>Chapter 11</h3>
+
+<ul>
+  <li> <a href="examples/chap11/decrease.gif">decrease.gif</a>
+  <li> <a href="examples/chap11/decreasePressed.gif">decreasePressed.gif</a>
+  <li> <a href="examples/chap11/everest.gif">everest.gif</a>
+  <li> <a href="examples/chap11/goat.gif">goat.gif</a>
+  <li> <a href="examples/chap11/increase.gif">increase.gif</a>
+  <li> <a href="examples/chap11/increasePressed.gif">increasePressed.gif</a>
+  <li> <a href="examples/chap11/KochPanel.java">KochPanel.java</a>
+  <li> <a href="examples/chap11/KochSnowflake.html">KochSnowflake.html</a>
+  <li> <a href="examples/chap11/KochSnowflake.java">KochSnowflake.java</a>
+  <li> <a href="examples/chap11/Maze.java">Maze.java</a>
+  <li> <a href="examples/chap11/MazeSearch.java">MazeSearch.java</a>
+  <li> <a href="examples/chap11/SolveTowers.java">SolveTowers.java</a>
+  <li> <a href="examples/chap11/TiledPictures.html">TiledPictures.html</a>
+  <li> <a href="examples/chap11/TiledPictures.java">TiledPictures.java</a>
+  <li> <a href="examples/chap11/TowersOfHanoi.java">TowersOfHanoi.java</a>
+  <li> <a href="examples/chap11/world.gif">world.gif</a>
+</ul>
+
+<hr>
+
+<h3>Chapter 12</h3>
+
+<ul>
+  <li> <a href="examples/chap12/Decode.java">Decode.java</a>
+  <li> <a href="examples/chap12/Magazine.java">Magazine.java</a>
+  <li> <a href="examples/chap12/MagazineList.java">MagazineList.java</a>
+  <li> <a href="examples/chap12/MagazineRack.java">MagazineRack.java</a>
+</ul>
+
+<hr>
+
+<a href="/~cs5/">Back to CS 5 home page</a>
+
+<hr>
+<address><a href="http://www.cs.dartmouth.edu/~thc/">Thomas H. Cormen &lt;thc@cs.dartmouth.edu&gt;</a></address>
+<!-- hhmts start -->
+Last modified: Mon Sep 14 10:29:58 2009
+<!-- hhmts end -->
+</body> </html>

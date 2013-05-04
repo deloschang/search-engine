@@ -1,0 +1,96 @@
+http://www.cs.dartmouth.edu/%7Ecbk/projects.php
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<title>Chris Bailey-Kellogg | Projects </title>
+<link href="style/main.css" type="text/css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+<div id="page">
+
+<div id="header">
+<h2>Chris Bailey-Kellogg</h2>
+
+<div id="title">
+ Associate Professor, 
+  <a href="http://www.cs.dartmouth.edu/">CS</a>, 
+  <a href="http://www.dartmouth.edu/">Dartmouth</a>
+  
+</div>
+
+<div id="nav">
+  <span><a href="index.php"  >home</a></span>
+  <span><a href="lab.php"  >lab</a></span>
+  <span><a href="projects.php" class="navhere" >projects</a></span>
+  <span><a href="classes.php"  >classes</a></span>
+  <span><a href="papers.php"  >papers</a></span>
+  <span><a href="news.php"  >news</a></span>
+</div>
+</div>
+
+<div id="content">
+	
+<ul class="pix">
+<li><a href="deimmunization.php"><img src="img/proj/sm/blac.png" alt="deimmunization" title="Protein therapeutic deimmunization" /></a></li>
+<li><a href="antibodies.php"><img src="img/proj/sm/igg.png" alt="antibody effector functions" title="Antibody effector functions" /></a></li>
+<li><a href="cmi.php"><img src="img/proj/sm/ternary.png" alt="MHC:peptide:TCR" title="Cell-mediated immunity" /></a></li>
+<li><a href="mrf.php"><img src="img/proj/sm/mrf.png" alt="graphical models" title="Protein graphical models" /></a></li>
+<li><a href="recombination.php"><img src="img/proj/sm/recomb.png" alt="recombination" title="Protein recombination" /></a></li>
+<li><a href="oligomer.php"><img src="img/proj/sm/2hyn.jpg" alt="oligomer" title="Protein complexes" /></a></li>
+</ul>
+
+<p>In general, my lab's research focuses on integrated
+computational-experimental approaches to the structural and functional
+understanding of and control over the molecular machinery of the cell.
+We are developing algorithms and systems to automatically plan
+experiments, predict outcomes, interpret data, revise models, and so
+forth.  The figures point to pages with high-level descriptions
+of some of our current projects.</p>
+
+<p>This work is funded in part by the following:</p>
+<ul>
+<li>An NIH R21: "Computationally optimized anti-staphylococcal biotherapeutics", collaborative with Karl Griswold (Dartmouth Engineering) and Annie De Groot (Institute for Immunology and Informatics), 2012-2014.</li>
+<li>A subcontract from Partners Healthcare System for the Gates Foundation Collaboration for AIDS Vaccine Discovery "High-throughput technology for assessing antibody effector function", PIs: Margie Ackerman (Dartmouth Engineering) and Galit Alter (Ragon Institute), 2011-2014.</li>
+<li>An NIH R01: "Functional deimmunization of therapeutic proteins", collaborative with Karl Griswold (Dartmouth Engineering), 2011-2015.</li>
+<li>An NSF III grant "Analysis of multi-dimensional protein design spaces with Pareto optimization of experimental designs", collaborative with Alan Friedman (Purdue), 2010-2013.</li>
+<li>An NSF CCF grant "Algorithmic problems in protein structure studies", collaborative with Gopal Pandurangan (NTU Singapore), 2009-2012.</li>
+<li>An NSF III grant "Integration, prediction, and generation of
+  mixed mode information using graphical models, with applications to
+  protein-protein interactions", collaborative with Naren Ramakrishnan (Va. Tech),
+  Chris Langmead (CMU), and Alan Friedman (Purdue), 2009-2012.</li>
+</ul>
+
+<p>We gratefully acknowledge previous support from the following:</p>
+<ul>
+<li>A Comp-X grant from the Neukom Institute, to C. Bailey-Kellogg and K. Griswold (Engineering, Dartmouth), 2009-2010.</li>
+<li>An Alfred P. Sloan Research Fellowship, to C. Bailey-Kellogg, 2005-2009.</li>
+<li>An NSF SEIII grant: "Integration of multimodal
+experiments for protein structure", to C. Bailey-Kellogg, B.A. Craig
+(Statistics, Purdue) and A.M. Friedman (Biological Sciences,
+Purdue), 2004-2008.</li> 
+<li>An NSF CAREER award: "Sparse spatial reasoning for
+high-throughput protein structure determination", to C. Bailey-Kellogg, 2003-2008.</li>
+<li>An award from the Showalter Foundation: "Distribution functions of
+standard free energies of protein-protein association", to
+C. Bailey-Kellogg and M. Laskowski (Chemistry, Purdue), 2003-2004.</li>
+<li>A grant from Purdue's Computing Research Institute, through the
+PRF-SIRG program: "Multimodal discrimination of protein fold", 
+to C. Bailey-Kellogg and A. Friedman (Biological Sciences, Purdue), 2003-2004.</li>
+</ul>
+
+</div>
+
+<div id="footer"></div>
+
+</div>
+
+</body>
+</html>
+

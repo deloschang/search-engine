@@ -1,0 +1,106 @@
+http://www.cs.dartmouth.edu/~epics/agencies.html
+3
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Dartmouth EPICS / Agencies</title>
+<meta http-equiv=content-type content="text/html; charset=us-ascii">
+<link href="style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+
+<p>
+<a href="http://www.cs.dartmouth.edu/~epics/"><img src="epics_dart.gif" alt="EPICS" border=0 align="middle"></a>
+<font class=at>&nbsp;@&nbsp;</font>
+<a href="http://www.dartmouth.edu/"><img src="dart_seal.jpg" alt="Dartmouth" border=0 align="middle"></a>
+</p>
+
+<table width="100%" border=0><tbody>
+<tr>
+<!-- navigation -->
+<td valign=top align=left width=100><br>
+<a href="index.html" class=nav>home</a><br>
+<a href="students.html" class=nav>students</a><br>
+<a href="agencies.html" class=nav>agencies</a><br>
+&nbsp;&nbsp; <a href="valleynet/index.html" class=nav>valleynet</a><br>
+&nbsp;&nbsp; <a href="vitalcomm/index.html" class=nav>vital communities</a><br>
+&nbsp;&nbsp; <a href="haven/index.html" class=nav>haven</a><br>
+&nbsp;&nbsp; <a href="uvbep/index.html" class=nav>uvbep</a><br>
+&nbsp;&nbsp; <a href="uvta/index.html" class=nav>trails alliance</a><br>
+&nbsp;&nbsp; <a href="uvhs/index.html" class=nav>uvhs</a><br>
+&nbsp;&nbsp; <a href="gnhc/index.html" class=nav>good neighbor</a><br>
+&nbsp;&nbsp; <a href="high-horses/index.html" class=nav>high horses</a><br>
+&nbsp;&nbsp; <a href="davids-house/index.html" class=nav>david's house</a><br>
+&nbsp;&nbsp; <a href="montshire/index.html" class=nav>montshire</a><br>
+&nbsp;&nbsp; <a href="nccc/index.html" class=nav>nccc</a><br>
+&nbsp;&nbsp; <a href="uvhfh/index.html" class=nav>uvhfh</a><br>
+</td>
+
+
+
+<!-- content -->
+<td valign=top>
+<div class=header align=center>Agencies</div><br>
+
+<h3><a name="overview">Overview</a></h3>
+
+<p>The Dartmouth EPICS program seeks to establish mutually-beneficial
+partnerships between community agencies and Dartmouth students.
+Multi-term teams of upper-level students will partner with agencies to
+work on significant projects that require computer science and
+software engineering skills.</p>
+
+<p>Dartmouth EPICS program is following the model established at
+Purdue University (<a href="http://epics.ecn.purdue.edu">EPICS web
+site</a>), which has fielded many successful projects over the past
+decade.  Each EPICS project is a partnership between an agency and a
+team of students.  A common theme is the need for custom software, and
+the potential for such software to significantly help the agency in
+its mission.</p>
+
+<p>A project is simultaneously an educational enterprise and an effort
+to produce an effective product.  As such, the students and the
+organization engage each other throughout the process.  Key aspects of
+a project include the following:</p>
+<ul>
+<li><i>Analysis and design</i>: determine the agency's needs and possible
+approaches to addressing them.</li>
+<li><i>Implementation and integration</i>: roll out software in stages, using
+feedback from the agency to guide subsequent stages.</li>
+<li><i>Continuity</i>: carry information across terms in order to maintain,
+support, and expand the software.</li>
+</ul>
+
+<h3><a name="overview">Partnerships</a></h3>
+
+<ul>
+<li>Beginning Spring 2010: <a href="valleynet/index.html">ValleyNet</a></li>
+<li>Beginning Winter 2010: <a href="vitalcomm/index.html">Vital Communities</a></li>
+<li>Beginning Fall 2009: <a href="haven/index.html">Upper Valley Haven</a></li>
+<li>Beginning Spring 2008: <a href="uvbep/index.html">Upper Valley Business Education Partnership</a></li>
+<li>Beginning Winter 2008: <a href="uvta/index.html">Upper Valley Trails Alliance</a></li>
+<li>Beginning Winter 2008: <a href="uvhs/index.html">Upper Valley Humane Society</a></li>
+<li>Beginning Winter 2007: <a href="gnhc/index.html">Good Neighbor Health Clinic</a></li>
+<li>Beginning Fall 2006: <a href="high-horses/index.html">High Horses</a></li>
+<li>Beginning Spring 2006: <a href="davids-house/index.html">David's House</a></li>
+<li>Beginning Fall 2005: <a href="montshire/index.html">Montshire Museum</a></li>
+<li>Beginning Spring 2006: <a href="nccc/index.html">Norris Cotton Cancer Center</a></li>
+<li>Beginning Winter 2006: <a href="uvhfh/index.html">Upper Valley Habitat for Humanity</a></li>
+</ul>
+
+<p>We are always interested in learning about potential projects.
+Please contact <a href="http://www.cs.dartmouth.edu/~sws/">Sean Smith</a> if you are interested or have any questions.</p>
+
+<!-- footer -->
+<tr><td colspan=2 height=20></td></tr>
+<tr><td class=hr colspan=2 height=2></td></tr>
+<tr><td class=footer colspan=2>
+<!-- hhmts start -->
+Last modified: 12/4/09
+<!-- hhmts end -->
+</td></tr>
+
+</tbody></table>
+</body>
+</html>

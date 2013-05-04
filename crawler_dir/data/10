@@ -1,0 +1,684 @@
+http://www.cs.dartmouth.edu/research.php
+2
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>Dartmouth Computer Science:  Research</title>
+	<style type="text/css" media="all">@import url(dartmouthcs.css);</style>		
+	
+<body id="home">
+
+
+
+<div id="header">
+
+	<h1>Dartmouth Computer Science</h1>
+		
+<!-- Google CSE Search Box Begins  -->
+<form action="http://www.google.com/cse" id="searchbox_001920968608620340798:tkrx06hp9rs">
+  <input type="hidden" name="cx" value="001920968608620340798:tkrx06hp9rs" />
+  <input type="text" name="q" size="25" />
+  <input type="submit" name="sa" value="Search" />
+</form>
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=searchbox_001920968608620340798%3Atkrx06hp9rs"></script>
+<!-- Google CSE Search Box Ends -->
+
+<!--
+	<form action="http://search.dartmouth.edu/query.html" method="get" name="seek">
+
+	<div>
+	<input type="hidden" name="qp" value="+url:http://www.cs.dartmouth.edu/"  />
+	<input type="hidden" name="qs" value="" /><input type="hidden"  name="qc" value="" />
+	<input type="hidden" name="ws" value="0" /><input type="hidden" name="qm" value="0" />
+	<input type="hidden" name="st" value="1" /><input type="hidden"  name="nh" value="10" />
+	<input type="hidden" name="lk" value="1" /><input type="hidden" name="rf" value="0" />
+	<input type="hidden" name="oq" value="" /><input type="hidden"  name="rq" value="0" />
+	<input type="text" id="search_dept" name="qt" value="" size="10"  maxlength="100" />&nbsp;
+	<input 	class="button" type="submit"  name="search" value="Search" />  
+	</div>
+
+	</form>
+-->	
+	
+	
+<!--		
+	<form method="get" action="http://www.htmldog.com/search/">
+		<div>
+		<input type="hidden" name="sp-a" value="sp1002e60e" />
+		<input type="hidden" name="sp-f" value="UTF-8" />
+		<label for="morombe">Search: </label>
+		<input type="text" name="sp-q" id="morombe" />
+		<input type="submit" value="Search" class="button" />
+		</div>
+	</form>
+-->	
+	
+</div>
+
+
+
+<div id="primaryNav">
+
+<ul>
+	<li>General
+		<ul>
+		<li> <a href="http://www.cs.dartmouth.edu/index.php">Home</a></li>
+		<li> <a href="http://www.cs.dartmouth.edu/about.php">About</a></li>
+		<!--li> <a href="http://www.cs.dartmouth.edu/calendar.php">Calendar</a></li-->
+		<li> <a href="http://www.cs.dartmouth.edu/news.php">News</a></li>
+		<li> <a href="http://www.cs.dartmouth.edu/people.php">People</a></li>
+		<li> <a href="http://www.cs.dartmouth.edu/jobs.php">Jobs</a></li>
+		<li> <a href="http://www.cs.dartmouth.edu/contact.php">Contact</a></li>
+		<li> <a href="http://www.cs.dartmouth.edu/internal/">Internal</a>
+		</ul>	
+	</li>
+
+	<li>Research
+	<ul>
+		<li><a href="http://www.cs.dartmouth.edu/research.php">Labs and Projects</a></li>
+		<li><a href="http://www.cs.dartmouth.edu/seminar.php">Colloquium</a></li> 
+		<li><a href="http://www.cs.dartmouth.edu/books.php">Books by Faculty</a></li>
+		<li><a href="http://www.cs.dartmouth.edu/reports">Technical Reports</a></li>
+	</ul>
+	</li>
+	
+	<li>Education
+	<ul>
+		<li><a href="http://www.cs.dartmouth.edu/ug.php">Undergraduate Programs</a></li>
+		<li><a href="http://www.cs.dartmouth.edu/gr.php">Graduate Programs</a></li>
+		<li><a href="http://www.cs.dartmouth.edu/ug_courses.php">Undergraduate Courses</a></li>
+		<li><a href="http://www.cs.dartmouth.edu/gr_courses.php">Graduate Courses</a></li> 
+		<li><a href="http://www.cs.dartmouth.edu/~robotics/summercamp">Summer Robotics Camp</a></li>	
+
+	</ul></li>
+
+	<li>Admissions
+		<ul>
+		<li> <a href="http://www.dartmouth.edu/apply">Undergraduate</a></li>
+		<li> <a href="http://www.cs.dartmouth.edu/admit_ms.php">M.S. Admissions</a></li>
+		<li> <a href="http://www.cs.dartmouth.edu/admit_phd.php">Ph.D. Admissions</a></li>
+		<li> <a href="http://www.cs.dartmouth.edu/~mdphd">M.D.-Ph.D. in CompBio</a></li>
+		<li> <a href="http://www.cs.dartmouth.edu/gr_life.php">Graduate Student Life</a></li>
+		</ul>
+	<ul>
+
+	</ul></li>
+	
+</ul>
+
+</div>
+	
+
+
+<div id="section">
+	
+	<div id="content">
+
+		<h1>Research Labs</h1>
+<p>
+<ul>
+        <li> <a href = "http://www.cs.dartmouth.edu/~csrs/">Annual
+        Research Symposium</a>
+	<li> <a href="http://www.cs.dartmouth.edu/~theory">Theory and Algorithms</a>
+	<li> <a href="http://sensorlab.cs.dartmouth.edu">Sensor Networks Group </a>
+	<li> <a href="http://www.cs.dartmouth.edu/~farid/group.html">Image Science Group</a>
+	<li> <a href="http://www.cs.dartmouth.edu/~robotics/">Robotics Lab</a>
+	<li> <a href="http://www.cs.dartmouth.edu/~pkilab/">PKI Lab</a>
+	<li> <a href="http://www.ists.dartmouth.edu/">ISTS:  Institute for Security, Technology and Society</a>
+        <li> <a href = "http://www.dartmouth.edu/~neukom">The Neukom
+	Institute for Computational Science</a>
+	<li> <a href="http://crawdad.cs.dartmouth.edu/">CRAWDAD Wireless Data Archive</a>
+	<li> <a href="http://cmc.cs.dartmouth.edu/">Center for Mobile Computing</a>
+</ul>
+
+<p>
+<p>
+
+<h1>Research Projects</h1>
+<p>
+<h2 class = "break">Multimodal Protein Structure</h2>
+
+
+<img src="content/features_research/tfa-models.jpg"
+     alt="multimodal protein structure" />
+
+
+<p>
+<a href="~cbk">Prof. Chris Bailey-Kellogg</a>
+
+<p>How is oxygen carried around in blood, how are invaders recognized
+by cells, and how is food digested?  <a
+href="http://www.rcsb.org/pdb/molecules/molecule_list.html">Answers</a>
+to these and other questions about the molecular machinery of the cell
+(and potentially how to modify
+it) center on analysis of three-dimensional protein structures.
+We are embedding computation as a core component of structural
+studies, planning experiments to maximize the information gained,
+interpreting the results so as to characterize remaining uncertainty,
+and iterating.  For example, reasoning by analogy to other proteins,
+we can predict possible models for a new protein (see figure).  Then
+we can analyze their differences (e.g., distances between landmarks,
+overall envelopes, surface vs. core locations) and optimize
+experimental probes for these differences, employing "multimodal" sets
+of probes to overcome the noise and sparsity characteristics of any
+individual experimental type.</p>
+
+
+<p>
+<a href="http://www.cs.dartmouth.edu/~cbk">
+Read more...</a>
+<h2 class="break">Family-Based Protein Design</h2>
+
+
+<img src="content/features_research/1cho.jpg"
+     alt="family-based protein design" />
+
+
+<p>
+<a href="~cbk">Prof. Chris Bailey-Kellogg</a>
+
+<p>Family reunions can be very interesting.  Proteins have relatives
+(across organisms and even within the same organism) that are similar,
+but also different in significant ways.  For example, shown in the
+figure are one serine protease (blue; function is to chop up other
+proteins) and one of its inhibitors (red; function is to block the
+chopping mechanism, as shown).  Different proteases recognize
+different places to chop, while different inhibitors have different
+degrees of inhibition for different proteases.  We are developing
+techniques to learn from nature's exploration of these families --
+generalizing common features of observed family members and
+characterizing their differences, and relating these to experimental
+observations about their functions.  This enables us to optimize our
+own new variants with desired functions (e.g., particularly strong and
+protease-specific inhibitors).</p>
+
+
+<p>
+<a href="http://www.cs.dartmouth.edu/~cbk">
+Read more...</a>
+<h2 class="break">Robotic Origami Folding</h2>
+
+<img src="content/features_research/origami.jpg"
+     alt="a robot folding origami" />
+
+
+<p> <a href="~robotics">Prof. Devin Balkcom</a>
+
+
+<p>
+
+Thin materials like sheet metal, paper, and cardboard are lightweight, inexpensive, and can be stored and shipped in bulk.  Folding allows the construction of semi-rigid 3-D structures, including fast-food containers, paper bags, and file cabinets.  Folding can also allow a single large surface or chain to be stored in a small volume; motivating examples include car airbags, space-telescope mirrors, and proteins.  Finally, folding allows reconfiguration, without the need for disassembly and reassembly.  
+
+<p>
+We have built the first origami-folding robot (left), capable of folding a paper hat, paper airplane, and paper cup.  We have also analyzed more complicated folding techniques; work with Erik and Martin Demaine questions whether ordinary paper shopping bags can be  <a href="http://www.maa.org/mathland/mathtrek_07_25_05.html">mathematically folded</a>.  
+
+<p>
+<a href="http://www.cs.dartmouth.edu/~robotics/">
+Read more...</a>
+<h2 class="break">Exact Optimal Trajectories for Robots</h2>
+
+<img src="content/features_research/omni.jpg"
+     alt="Exact optimal trajectories" />
+
+
+<p> <a href="~robotics">Prof. Devin Balkcom</a>
+
+
+<p>
+
+
+Robot control algorithms, like computer algorithms, allocate  resources to accomplish tasks; resources include time, energy, degrees of freedom, steps of computation, and precision.  A fundamental problem is to determine the minimum resources required -- the physical complexity of of the task.  The optimal trajectories provide insight into the capabilities of a mechanism, independent of compromises introduced by particular planning or control techniques.  
+
+<p>
+The exact optimal trajectories were previously known for two vehicles:  the Dubins car, and the Reeds-Shepp car.  We have discovered the optimal trajectories for a third vehicle; the common differential-drive (wheelchair-like) robot, and work on two more vehicles is nearing completion. 
+
+<p>
+<a href="http://www.cs.dartmouth.edu/~robotics">
+Read more...</a>
+<h2 class="break">Wireless Sensor Networks</h2>
+
+
+<img src="/content/features_research/sensors.jpg"
+     alt="wireless sensor networks" />
+
+<p> <a href="/~campbell">Prof. Andrew Campbell</a>
+
+<p>
+The next big thing in networking, and arguably one of the most fascinating and coolest technologies
+to hit the scene since the Internet, is wireless sensor networks. These tiny, low-cost wireless
+devices embed on-board sensing, are fully programmable, and can spontaneously form large sensor webs
+with thousands of distributed sensor devices. The potential of this fast-emerging field seems huge.
+
+<p>
+The <a href="http://sensorlab.cs.dartmouth.edu/">Sensor Networks Group</a> 
+is focused on <a href="http://metrosense.cs.dartmouth.edu/">people-centric sensing</a> through the development 
+of new networking protocols to make mobile sensor networks robust, scale-free, and flexible to program - in essence, to make these new networks useable for the future deployment of emerging people-centric sensing applications.
+<p>
+<a href="http://sensorlab.cs.dartmouth.edu">Read more... </a>
+
+</hr>
+
+<p>
+<h2 class="break">Approximate Nearest Neighbour Searching</h2>
+
+<img src="content/features_research/subballs.jpg"
+     alt="Schematic" />
+
+
+<p> <a href="~ac">Prof. Amit Chakrabarti</a>
+
+<p> Nearest neighbour searching is one of those basic and fascinating
+theoretical problems in computer science that has a host of applications
+in problems from very diverse fields. The problem is widely believed to
+be intractable in high dimensions, but good approximation algorithms
+were discovered in the late 1990s.  </p>
+
+<p> Our research considers the approximate nearest neighbour search
+(ANNS) problem on the d-dimensional Hamming cube. Building on techniques
+of information complexity and communication complexity from an earlier
+research project of ours, we prove the <em>first unrestricted lower
+bound</em> for this problem. We also improve previous algorithms for
+this problem, ending up with <em>matching upper and lower bounds</em> on
+the number of randomised queries required to solve ANNS.  </p>
+
+<p> Shown in the figure is a schematic of the reduction bridging
+communication complexity and ANNS, a key step in our proof. </p>
+
+<p> <a href="http://www.cs.dartmouth.edu/~ac">Read more...</a> </p>
+<h2 class = "break">Inferring Social Networks Automatically using Sensor Data</h2>
+
+
+<img src="content/features_research/tc_isnasd.png"
+     alt="FG pipeline" />
+
+
+<p>
+<a href="~tanzeem">Prof. Tanzeem Choudhury</a>
+
+<p>
+
+The structure and dynamics of social networks are of critical importance to
+many social phenomena, ranging from organizational efficiency to the spread
+of knowledge and disease. However, advances in modeling the <em>dynamics</em> of
+social networks has been limited due to the lack of rich temporal data. By
+developing new machine learning methods that can infer the structure and
+dynamics of social networks from mobile sensor data, we are investigating
+ways to unobtrusively study social interactions and networks over extended
+periods of time. A deeper understanding of people's interactions will have
+significant impacts, not only on the social science research literature,
+but also enable the development of socially aware ubiquitous computing
+systems that are cognizant of and responsive to users' engagement with
+their social environment.
+<h2 class = "break">Learning Human Behavior from Multi-modal Sensor Data</h2>
+
+
+<img src="content/features_research/tc_lhbmsd.png"
+     alt="FG pipeline" />
+
+
+<p>
+<a href="~tanzeem">Prof. Tanzeem Choudhury</a>
+
+<p>
+
+Systems that can capture and recognize human behaviors in unconstrained
+real world settings have the potential to dramatically impact research in
+smart environments, novel user interfaces, surveillance, and health care.
+For these systems to be practical in the "real world" (i.e., outside of
+research labs), they need to detect a variety of activities that are
+performed routinely in many different manners, under many different
+environmental conditions, and across many different individuals. We are
+developing machine learning techniques for feature selection,
+semi-supervised, and unsupervised learning in structured models, which can
+handle the complexities of real world data, are computationally tractable,
+and minimize the effort required from humans to train activity recognition
+systems
+<h2 class = "break">FG </h2>
+
+
+<img src="content/features_research/cormen-pipelines.jpg"
+     alt="FG pipeline" />
+
+
+<p>
+<a href="~thc">Prof. Tom Cormen</a>
+
+<p>
+
+High-performance computing with disk-resident data?  Although that
+might seem like an oxymoron, we are developing a software environment,
+<a href="http://www.cs.dartmouth.edu/FG/">FG</a>, to enable it.
+
+<p>
+
+FG is for asynchronous programs that run on clusters and fit into a
+pipeline framework.  Each pipeline stage corresponds to a function
+that operates on a buffer.  Multiple buffers traverse the pipeline and
+correspond to blocks in the memory hiearchy.  Stages run
+asynchronously (via threads) in order to make it easy to overlap their
+operations (computation, communication, and I/O).
+
+<p>
+
+Using FG, we have developed programs that can sort well in excess of
+100 gigbytes of data.  (Image, left, shows Tom's whiteboard covered with deep thoughts about pipelines.)<h2 class="break">Brain Engineering</h2>
+  
+<img src="http://www.dartmouth.edu/~rhg/images/BrainWrap2.jpg" 
+    alt="BrainEngineering"  height=100 width=140>
+    
+
+<p>
+<a href="http://www.BrainEngineering.org/">Prof. Richard Granger</a>
+<p>
+Our brains are the most complex objects known to man.  We cannot yet explain how our brains recognize, learn, plan, or use language.  Yet these tasks are so natural for us they seem effortless.  Through extensive interdisciplinary collaborations, the Brain Engineering Laboratory combines research from neuroscience, computer science, and cognitive science to advance our understanding of how brains operate.  We aim to understand brain circuits sufficiently well to be able to imitate their function.  We have extensive publications in this interdisciplinary field, as well as a range of applications that have been developed for medical and commercial uses.  
+<p>
+<a href="http://www.BrainEngineering.org">   Read more...</a>
+ 
+<h2 class="break">Price and Allocation Algorithms for Markets and Networks</h2>
+
+
+<img src="content/features_research/lkf-markets.png"
+     alt="Price Allocation Algorithms" />
+
+<p> <a href="~lkf">Prof. Lisa Fleischer</a>
+
+
+<p>
+We seek a better understanding of the behavior of
+decentralized systems such as markets 
+and traffic networks, through the study of effective 
+resource allocation and price determination for these systems.
+
+<h4>Markets:</h4>
+Why might markets tend toward and remain near equilibrium
+prices?  We assume that a collection
+of more or less simple procedures 
+underlie the actions of participants in the actual economy.  
+We aim to explain why price changes in market economies might work 
+effectively by showing simple distributed algorithms
+that cause prices to converge quickly toward equilibrium values.
+The goal of this work is to better understand price adjustment
+mechanisms that operate independently on each price yet achieve 
+a coordinated outcome.  
+
+<h4>Network Traffic:</h4>
+Individual network users may have an adverse impact on network 
+performance, by acting in their own interests instead
+of the aggregate interest.  We study 
+equilibria of routing games to understand possible
+outcomes of selfish routing decisions; and we anayze 
+methods such as taxation, rerouting, network design and policy 
+to try and control this.
+
+<p>
+<a href="http://www.cs.dartmouth.edu/~lkf">
+Read more...</a>
+
+<h2 class="break">Digital Image Forensics</h2>
+
+
+<img src="content/features_research/brad_cher.jpg"
+     alt="digital image forensics" />
+
+<p> <a href="~farid">Prof. Hany Farid</a>
+
+
+<p>
+
+We no longer live in a world where seeing (or hearing) is
+believing.  The technology that allows for digital media to be
+manipulated and distorted is developing at break-neck speeds.  And at
+the same time, our understanding of the technological, ethical, and
+legal implications is lagging behind.
+
+<p>
+
+We are, therefore, developing mathematical and computational
+algorithms to detect tampering in digital media.  To do so, we
+quantify statistical correlations that result from specific forms of
+digital tampering, and devise detection schemes to reveal these
+correlations.
+
+<p>
+
+<a href="http://www.cs.dartmouth.edu/farid/research/tampering.html">
+Read more...</a>
+
+<h2 class="break">Reconstructing Ancient Egyptian Tombs</h2>
+
+<img src="content/features_research/inherkhau.jpg"
+     alt="reconstructing tombs" />
+
+<p> <a href="~farid">Prof. Hany Farid</a>
+
+<p>
+
+It is ironic that the Ancient Egyptian tombs, once sealed, were not
+intended to be seen by outsiders. Yet the highly valued and often
+reproduced tomb decorations have had a profound influence on art and
+have contributed significantly to our understanding of the Ancient
+Egyptian culture. 
+
+<p>
+
+We describe how recent advances in computational and digital
+technology can add a new perspective to these marvels of antiquity. Of
+particular interest to us has been the development of a technique for
+the digital reconstruction of tombs, allowing for the creation of
+undistorted panoramic views of tomb interiors that are simply
+unattainable with traditional imaging methods.
+
+<p>
+
+<a href="http://www.cs.dartmouth.edu/farid/egypt/reconstruction.html">
+Read more...</a>
+<h2 class="break">Security through measurement for wireless LANs</h2>
+
+<img src="content/features_research/dhs.jpg"
+     alt="DHS logo" />
+
+<p> 
+<a href = "~dfk">Prof. David Kotz</a>, 
+<a href = "~campbell">Prof. Andrew Campbell</a>
+
+<p>
+
+With the rise of Voice over wireless LAN (VoWLAN), any complete WiFi security solution must address denial of service attacks, such as kicking off other clients, consuming excessive bandwidth, or spoofing access points, to the detriment of legitimate clients. Even an authorized client may be able to sufficiently disrupt service quality to make the network ineffective for legitimate clients.
+
+<p>
+
+We take a three-point, MAP (Measure, Analyze, Protect) approach to develop an integrated and extensible framework to address existing and future attacks on WiFi networks. Specifically, we focus our efforts on an integrated set of new components that allow a WiFi network operator to measure and analyze WiFi and VoWLAN activity, and in real-time to identify and defend against MAC- and IP-layer attacks on that infrastructure. Our plan includes three overlapping phases: research, prototype development, and deployment on Dartmouth's campus-wide wireless network; the third phase is an option.
+
+<p>
+
+<a href="http://www.cs.dartmouth.edu/~map/">Read more...</a>
+<h2 class="break">Understanding PLACE (Privacy in Location-Aware Computing Environments) </h2>
+
+<p> 
+<a href = "~dfk">Prof. David Kotz</a>, 
+<a href = "~campbell">Prof. Andrew Campbell</a>
+
+<img src="content/features_research/privacy.jpg"
+     alt="privacy " />
+
+<p>
+
+Digital technology plays an increasing role in everyday life, and this trend is only accelerating. Consider daily life five years from now, in 2010: we will each be surrounded by far more digital devices, mediating far more activities in our work, home, and play; the boundary between cyberspace and physical space will fade as sensors and actuators allow computers to be aware of, and control, the physical environment; and the devices in our life become increasingly (and often invisibly) interconnected with each other and with the Internet. Today, typical home users struggle to maintain the security of their home computer, and have difficulty managing their privacy online. Tomorrow, these challenges may become unimaginably complex. This 18-month project studies, and begins to address, the security and privacy challenges involved in developing this world of Digital Living in 2010.
+<h2 class = "break">Green Lite Dartmouth</h2>
+
+
+<img src="content/features_research/bear-small.png"
+     alt="Green Lite Dartmouth" />
+
+
+<p>
+<a href="~lorie">Prof. Lorie Loeb</a>
+
+<p>
+
+Information visualization, real-time energy data retrieval and  
+analysis, animation, social and behavioral sciences, environmental  
+science, statistical analysis, game technology and computation all  
+come together to encourage resource conservation at Dartmouth and  
+beyond. We ask the fundamental question: how can complex information  
+about energy use be displayed in ways that encourage people to change  
+their behavior?  
+<a href = "http://greenlite.dartmouth.edu">Green Lite Dartmouth</a>
+visualizes complex, real-time energy data in simple, meaningful and 
+dynamic ways.  When electric use (plug load and lighting), for
+example, is low, the polar bear in the display is  
+happy and playful. As electric use goes up, the polar bear becomes  
+more distressed and his well-being is endangered.
+<h2 class="break">Interactive Algorithms for Appearance Design</h2>
+
+<img src="content/features_research/shadowUI02.jpg"
+     alt="UI for shadow manipulation" />
+
+<p> <a href="~fabio">Prof. Fabio Pellacini</a>
+
+
+<p>
+The use of synthetic images has become an integral part of engineering,
+science, design, fine art, entertainment,  and other disciplines.
+While advances in software algorithms and hardware
+architectures have made synthetic images more readily available, the human
+labor and technical expertise required to create models suitable for image
+synthesis remains its major limiting factor.
+</p>
+
+<p>
+To address this issue, we are devloping <em>interactive and artist-friendly</em> algorithms for appearance design. This research led to various theoretical results and practical applications in the areas of interactive realistic rendering, artist-friendly user interfaces and visual perception.
+</p>
+
+<p>
+<a href="http://www.cs.dartmouth.edu/~fabio/">Read more...</a>
+</p>
+<h2 class="break">Towards Effective PKI</h2>
+
+<img src="content/features_research/pki.jpg"
+     alt="public key infrastructure" />
+
+
+<p> <a href="~sws">Prof. Sean Smith</a>
+
+<p>
+
+
+In a distributed world,
+how can a stakeholder verify the identity
+(or other relevant properties) of a remote party?
+
+<p>
+
+In the emerging information infrastructure,
+multiple parties spanning multiple organizations have
+various opinions about what they might trust, in what contexts.
+To be effective,
+the underlying mechanics for transmitting and expressing assertions 
+about these parties
+needs to be able to provide the right parameters to accommodate this 
+multiplicity of views.
+<p>
+
+Because it can enable secure communications between parties who do not share a secret
+beforehand, 
+public key cryptography is a natural and perhaps unique building block.
+Achieving this vision in
+the real world, however, requires 
+<i>public key infrastructure (PKI)</i>.  In our lab, we are exploring a number avenues to make PKI effective in the real world.
+
+<p>
+
+
+
+<p>
+
+<a href="http://www.cs.dartmouth.edu/~sws/research/pki/">
+Read more...</a>
+
+<h2 class = "break">Trusted Hardware</h2>
+
+<img src="content/features_research/thw.jpg"
+     alt="hardware-based TTPs" />
+
+
+<p> <a href="~sws">Prof. Sean Smith</a>
+
+
+<p>
+
+
+A <i>trusted third party (TTP)</i> can make it easier to solve multi-party security
+problems.  However, using a TTP in a design has been akin 
+to invoking magic or fairies: tools not possible in the real world.
+
+<p>
+
+However, in the last decade,  techniques have emerged
+that can provide foundations for TTPs based in hardware.
+In our lab, we are exploring ways of building effective 
+trustworthy platforms founded on these techniques
+and using these platforms for hardware-based TTPs
+in real-world applications.
+<p>
+
+<a href="http://www.cs.dartmouth.edu/~sws/research/thw/">
+Read more...</a>
+
+<h2 class="break">MCMC and the Theory of Computing</h2>
+
+
+<img src="content/features_research/mcmc.jpg"
+     alt="Widom-Rowlenson model" />
+
+
+<p>
+<a href="http://www.math.dartmouth.edu/~pw/">Prof. Peter Winkler</a>
+
+<p>
+
+The basic problem in the Theory of Computing is do determine what kinds of problems can be efficiently solved by computer; in other words, what can algorithms do or not do.
+
+
+<p>
+
+In the 70's, theorists uncovered a wide range of "hard" decision and computation problems which are all intractable --- except in the (unlikely) event that they were all tractable!  Since then, exciting new techniques involving probabilistically checkable proofs have established that many quantities are as hard to approximate as they are to compute exactly.
+
+
+<p>
+
+
+Ironically, however, at about the same time theorists discovered a powerful mathematical tool which has greatly expanded the range of quantities which we <i> can </i> approximate efficiently.  Included are volumes of high-dimensional objects, partition functions in statistical physics, the permanent of a matrix, the number of linear extensions of an ordered set, generation of contingency tables (used by actuaries to compute insurance rates) and many more. The method, called MCMC (Markov chain Monte Carlo), entails randomly sampling the objects being counted by starting with a non-random object and moving to a random neighboring object.
+
+
+<p>
+
+The mathematical crux of this method is proving "rapid mixing", i.e., showing that the process reaches a random object in sufficiently short time.  Practically every branch of mathematics has contributed to the delightful variety of ways that have been devised to show rapid mixing in its many guises.
+
+
+<p>
+
+Shown in the picture is a configuration of the Widom-Rowlinson (WR) model of statistical physics, generated by MCMC.  The WR model simulates two gases (here, with red and green molecules), under the constraint that differing molecules may not occupy adjacent points on a grid.
+
+<p>
+<a href="http://www.math.dartmouth.edu/~pw">
+Read more...</a>
+
+	</div>
+	
+	
+	<div id="goToTop" class="sNav"><p><a href="#content">^ Top</a></p></div>
+
+</div>
+
+
+
+
+
+<div id="footer"><p>&copy; <a href="http://www.cs.dartmouth.edu/">Dartmouth College Computer Science Department</a> 2009 </p></div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+http://www.cs.dartmouth.edu/~hughes/music.html
+3
+<html>
+  <head>
+    <title>James M. Hughes / Dartmouth College / Department of Computer Science</title>
+    <link rel="stylesheet" type="text/css" href="include/style.css">
+    <script type="text/javascript" src="include/include.js"></script>
+  </head>
+
+  <body>
+    <!-- TOTAL CONTAINER DIV w/ SHADOWS -->
+    <div id="shadow-pane">
+      <!-- Actual content container -->
+      <div id="content-container">
+        <!-- title pane -->
+        <div id="title-pane">
+          <a href="index.html"><img id="panes-logo" src="images/panes_logo.png" border="0"></a>
+          <img id="name-logo" src="images/name.png" border="0">
+        </div>
+
+        <!-- nav pane -->
+        <div id="nav-pane">
+          <!-- nav pieces -->
+          <div id="nav-top-left"><img src="images/nav_top_left.png"></div>
+          <div id="nav-top-right"><img src="images/nav_top_right.png"></div>
+          <div id="nav-left"><img src="images/nav_left.png"></div>
+          <div id="about-link"><a href="about.html"><img src="images/about_link.png" 
+            onmouseover="this.src='images/about_hover.png'" onmouseout="this.src='images/about_link.png'" border="0"></a>
+          </div>
+          <div id="research-link"><a href="research.html"><img src="images/research_link.png" 
+            onmouseover="this.src='images/research_hover.png'" onmouseout="this.src='images/research_link.png'" border="0"></a></div>
+          <div id="p-and-s-link"><a href="software.html"><img src="images/p_and_s_link.png"
+            onmouseover="this.src='images/p_and_s_hover.png'" onmouseout="this.src='images/p_and_s_link.png'" border="0"></a></div>
+          <div id="music-link"><a href="music.html"><img src="images/music_selected.png" border="0"></a></div>
+          <div id="nav-right"><img src="images/nav_right.png"></div>
+          <div id="nav-bottom"><img src="images/nav_bottom.png"></div>
+        </div>
+
+        <!-- content pane -->
+        <div id="content-pane">
+          <div id="content-box" style="height: 150px;">
+            <p id="content-header" style="margin-left: auto; margin-right: auto; margin-top: 45px; width: 225px;">Coming soon</p>
+          </div>
+        </div>
+
+      <!-- Footer pane -->
+      <div id="footer">
+        <div id="footer-links">
+          <a href="about.html">about</a> | <a href="research.html">research</a> | 
+          <a href="software.html">projects & software</a> | <a href="music.html">music</a>
+        </div>
+        <div id="footer-text">
+          &copy;&nbsp;2010 James M. Hughes | <a href="#" onclick="send_mail(); return false;">Contact me</a>
+        </div>
+      </div><!-- end footer pane -->
+
+      </div> <!-- END CONTENT CONTAINER -->
+    </div> <!-- END SHADOW PANE -->
+  </body>
+</html>
+t

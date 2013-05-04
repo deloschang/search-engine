@@ -1,0 +1,95 @@
+http://www.cs.dartmouth.edu/~erickee
+2
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><style type="text/css">
+<!--
+body {
+	background-color: #868686;
+	background-image: url(blackbg.gif);
+}
+body,td,th {
+	color: #E1D0B4;
+}
+a:link {
+	color: #E5B26A;
+	text-decoration: none;
+}
+.style1 {font-family: Georgia, "Times New Roman", Times, serif}
+.style2 {
+	color: #E4C28D;
+	font-style: italic;
+}
+a:visited {
+	color: #E5B26A;
+	text-decoration: none;
+}
+a:hover {
+	color: #FFC674;
+	text-decoration: underline;
+}
+a:active {
+	color: #EAE0D2;
+	text-decoration: none;
+}
+.style3 {color: #E5B26A}
+-->
+</style>
+<body>
+<p>&nbsp;</p>
+<table width="75%" height="259" border="1" align="center" cellpadding="4" bordercolor="#3f3f3f" background="graybg.gif">
+  <tr background="graybg.gif">
+    <td valign="top" bordercolor="#000000">&nbsp;</td>
+    <td valign="top" bordercolor="#000000"><h1><b><img src="_DSC0713b.jpg" width="220" height="708" align="middle"></b></h1>    </td> 
+    <!-- <td valign="top" bordercolor="#000000"><h1><b><img src="_DSC0713.jpg" width="220" height="680" align="middle"></b></h1>    </td> -->
+    <!-- <td valign="top" bordercolor="#000000"><h1><b><img src="eric2.jpg" width="400" align="middle"></b></h1>    </td> -->
+    <td valign="top"><h1><em><dfn>e     &nbsp;r &nbsp;i&nbsp; c&nbsp;  &nbsp; &nbsp;k&nbsp; e&nbsp; e</dfn></em></h1>
+      <div align="left">
+        <p class="style1">I have recently completed my PhD with professor <a href="http://www.cs.dartmouth.edu/farid/">Hany Farid</a> in the <a href=http://www.cs.dartmouth.edu>Computer Science Department</a> at <a href="http://www.dartmouth.edu">Dartmouth College</a>.&nbsp;&nbsp;My forthcoming dissertation is in the field of photo forensics.&nbsp;&nbsp;In July I will join professor <a href="http://www.cs.columbia.edu/~nayar/">Shree Nayar</a> in the <a href="http://www.cs.columbia.edu/CAVE/">CAVE lab</a> at <a href="http://www.cs.columbia.edu">Columbia</a> as a postdoctoral researcher.  </p>
+        <p class="style1"> My research interests include: photo forensics, computational imaging, computer vision, and computer graphics. </p>
+        <p class="style1"> If you would like to contact me, you may do so at: <span class="style2">erickee AT cs dot dartmouth dot edu</span></p>
+      </div>
+      <h2><dfn><br>
+          <em><a href="publications.html">p u b l i c a t i o n s</a>&nbsp;&nbsp;&nbsp;</em></dfn></h2>
+	  <p>
+	    <a href="publications.html#tog13">Exposing Photo Manipulation with Inconsistent Shadows</a>,&nbsp; E. Kee, J. O'Brien, H. Farid<br>
+	    &nbsp;&nbsp;Transactions on Graphics / SIGGRAPH, 2013<br>&nbsp;<br>
+
+	    <a href="publications.html#pnas11">A Perceptual Metric for Photo Retouching</a>,&nbsp; E. Kee, H. Farid<br>
+	    &nbsp;&nbsp;Proceedings of the National Academy of Sciences, 2011<br>&nbsp;<br>
+
+	    <a href="publications.html#tifs11">Digital Image Authentication from JPEG Headers</a>, E. Kee, M. K. Johnson, H. Farid<br>
+	    &nbsp;&nbsp;IEEE Transactions on Information Forensics and Security, 2011<br>&nbsp;<br>
+
+	    <a href="publications.html#iccp11">Modeling and Removing Spatially-Varying Optical Blur</a>, E. Kee, S. Paris, S. Chen, J. Wang<br>
+            &nbsp;&nbsp;IEEE International Conference on Computational Photography, 2011<br>  &nbsp;<br>
+
+	    <a href="publications.html#wifs10">Exposing Digital Forgeries from 3-D Lighting Environments</a>, E. Kee, H. Farid<br>
+	    &nbsp;&nbsp;IEEE International Workshop on Information Forensics and Security, 2010<br>  &nbsp;<br>
+	  
+	    <a href="publications.html#spie10">Digital Image Authentication from Thumbnails</a>, E. Kee, H. Farid<br>
+            &nbsp;&nbsp;SPIE Symposium on Electronic Imaging, San Jose, CA, 2010<br>  &nbsp;<br>
+
+	    <a href="publications.html#tr09">Detecting Photographic Composites of Famous People</a>, E. Kee, H. Farid<br> 
+            &nbsp;&nbsp;Technical Report, TR2009-656, Dartmouth College, Computer Science<br>  &nbsp;<br>
+
+	    <span class="style3"><a href="publications.html#neuro10">A novel approach for semi-automated segmentation of MS lesions on FLAIR imaging: Reliability and clinical correlates</a></span>, Wishart, H., Kee, E.R., Ford, J.C., MacDonald, J.W.,  Aney, S., LoVerde S. <br> 
+            &nbsp; Annual Meeting of the International Neuropsychological Society, Acapulco, Mexico, February 3-6, 2010<br>  &nbsp;<br>
+	  
+	    <a href="publications.html#acm08">Printer Profiling for Forensics and Ballistics</a>, E. Kee, H. Farid<br> 
+            &nbsp;&nbsp;ACM Multimedia and Security Workshop, Oxford, UK, 2008   </td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

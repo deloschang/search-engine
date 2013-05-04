@@ -1,0 +1,500 @@
+http://www.cs.dartmouth.edu/%7Ethc/papers.html
+3
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<HTML>
+<HEAD>
+<TITLE>Cormen Papers</TITLE>
+
+</HEAD>
+<BODY TEXT="#000068" LINK="#060FDF" VLINK="#060FDF" ALINK="#DC24C5" BGCOLOR="#FFFFFF">
+
+<H2>Publications by Thomas H. Cormen</H2>
+
+<EM>You can search <a href="/reports/">here</a> for my Dartmouth
+technical reports.</EM><P>
+
+<HR SIZE=4><P>
+
+<h3>Books and Book Chapters</h3>
+
+<IMG SRC="images/yellowsq.gif" ALT="*" WIDTH=9 HEIGHT=9 ALIGN=TOP>
+Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford
+Stein.<br> <i>Introduction to Algorithms</i>, Third edition.<br> The
+MIT Press, 2009. Translations: French (Dunod, 2010), Italian
+(McGraw-Hill/Italy, 2010), German (Oldenbourg Wissenschaftsverlag, in
+progress), Polish (Wydawnictwo Naukowe PWN Sp&oacute;lka Akcyjna, in
+progress).
+
+<p>
+
+<IMG SRC="images/yellowsq.gif" ALT="*" WIDTH=9 HEIGHT=9 ALIGN=TOP>
+Thomas H. Cormen.<br> <i>Instructor's Manual to Accompany Introduction
+to Algorithms, Third edition</i>.<br> The MIT Press, 2009. Available
+as a password-protected PDF file from the MIT Press.
+
+<p>
+
+<IMG SRC="images/yellowsq.gif" ALT="*" WIDTH=9 HEIGHT=9 ALIGN=TOP>
+Thomas H. Cormen and Elena Riccio Davidson.<br>
+Using FG to Reduce the Effect of Latency in Parallel Programs Running
+on Clusters.<br>
+To appear in Sanguthevar Rajasekaran and John Reif, editors, <i>CRC
+Handbook of Parallel Computing: Models, Algorithms and
+Applications</i>, CRC Press.
+
+<p>
+
+<IMG SRC="images/yellowsq.gif" ALT="*" WIDTH=9 HEIGHT=9 ALIGN=TOP>
+Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford
+Stein.<br> <i>Introduction to Algorithms</i>, Second edition.<br> The
+MIT Press and McGraw-Hill, 2001.  Translations: Portuguese (Editora
+Campus, 2002), French (Dunod, 2002), Hungarian (Scolar Informatika,
+2003), Polish (Wydawnictwa Naukowo-Techniczne, 2004), Korean (Hanbit
+Media, 2005), German (Oldenbourg Wissenschaftsverlag, 2005), Russian
+(Williams Publishing, 2005), Chinese complex character (Unalis
+Corporation, Taipei, in progress), Greek (Crete University Press, in
+progress), Italian (McGraw-Hill Publishing Group Italia, in progress),
+Chinese simplified character (China Machine Press, in progress),
+Japanese (Kindai Kagaku Sha, in progress).
+
+<p>
+
+<IMG SRC="images/yellowsq.gif" ALT="*" WIDTH=9 HEIGHT=9 ALIGN=TOP>
+Thomas H. Cormen, Clara Lee, and Erica Lin.<br>
+Instructor's Manual to Accompany <i>Introduction to Algorithms</i>,
+Second Edition.<br>
+The MIT Press and McGraw-Hill, 2002.
+
+<p>
+
+<IMG SRC="images/yellowsq.gif" ALT="*" WIDTH=9 HEIGHT=9 ALIGN=TOP>
+Thomas H. Cormen, Charles E. Leiserson, and Ronald L. Rivest.<br>
+
+<i>Introduction to Algorithms</i>.<br>
+
+The MIT Press and McGraw-Hill, 1990.  Winner of 1990 Professional and
+Scholarly Publishing Award in Computer Science and Data Processing,
+Association of American Publishers.  Translations: Translations:
+French (Dunod, 1994), Italian (Jackson Libri, 1994), Hebrew (Open
+University, 1995), Japanese (Kindai Kagaku Sha, 1996), Hungarian
+(M&#X171;szaki K&#246;nyvkiad&#243;, 1997), Polish (Wydawnictwa
+Naukowo-Techniczne, 1997), Russian (Moscow Center for Continuing
+Mathematics Education, 1999), Romanian (Computer Libris Agora, 2000).
+
+<p>
+
+<IMG SRC="images/yellowsq.gif" ALT="*" WIDTH=9 HEIGHT=9 ALIGN=TOP>
+Thomas H. Cormen.<br>
+
+<a href="papers/fft-swarz.ps.gz">Determining an Out-of-Core FFT
+Decomposition Strategy for Parallel Disks by Dynamic
+Programming</a>.<br>
+
+In Michael T. Heath, Abhiram Ranade, and Robert S. Schreiber, editors,
+<i>Algorithms for Parallel Processing</i>, Volume 105 of IMA Volumes
+in Mathematics and its Applications, pp. 307-320.<br> Springer-Verlag,
+1999.<br> Also available as Dartmouth College Computer Science
+Technical Report PCS-TR97-322, July 1997.
+
+<p>
+
+<IMG SRC="images/yellowsq.gif" ALT="*" WIDTH=9 HEIGHT=9 ALIGN=TOP>
+Thomas H. Cormen.<br>
+
+Algorithmic Complexity.<br>
+
+Section 16.4 in Kenneth H. Rosen, editor, <i>CRC Handbook
+of Discrete and Combinatorial Mathematics</i>.<br>
+CRC Press, 2000.
+
+<h3>Articles in Refereed Journals</h3>
+
+<p>
+
+<IMG SRC="images/yellowsq.gif" ALT="*" WIDTH=9 HEIGHT=9 ALIGN=TOP>
+Geeta Chaudhry and Thomas H. Cormen.<br>
+<a href="papers/slabpose.pdf">Slabpose Columnsort: A New Oblivious
+Algorithm for Out-of-Core Sorting on Distributed-Memory Clusters</a>.<br>
+<i>Algorithmica</i>, 45:3, July 2006, pp. 483-508.
+
+<p>
+
+<IMG SRC="images/yellowsq.gif" ALT="*" WIDTH=9 HEIGHT=9 ALIGN=TOP>
+Thomas H. Cormen and James C. Clippinger.<br>
+
+<a href="papers/bmmc-mpi.ps.gz">Performing BMMC Permutations Efficiently 
+on Distributed-Memory Multiprocessors with MPI</a>.<br>
+
+<i>Algorithmica</i> 24:3/4, July/August 1999, pp. 349-370.
+
+<p>
+
+<IMG SRC="images/yellowsq.gif" ALT="*" WIDTH=9 HEIGHT=9 ALIGN=TOP>
+Thomas H. Cormen and David M. Nicol.<br>
+
+<a href="papers/fft-uniprocessor.ps.gz">Performing Out-of-Core FFTs on
+Parallel Disk Systems</a>.<br>
+
+<i>Parallel Computing</i>, 24:1, January 1998, pp. 5-20.  Also
+available as Dartmouth College Computer Science Technical Report
+PCS-TR96-294, August 1996, revised September 1996, and ICASE Report
+96-70, December 1996.
+
+<p>
+
+<IMG SRC="images/yellowsq.gif" ALT="*" WIDTH=9 HEIGHT=9 ALIGN=TOP>
+Thomas H. Cormen, Thomas Sundquist, and Leonard F. Wisniewski.<br>
+
+<a href="papers/BMMC-final-sicomp.ps.gz">Asymptotically Tight Bounds
+for Performing BMMC Permutations on Parallel Disk Systems</a>.<br>
+
+<i>SIAM Journal on Computing</i>, 28:1, pp. 105-136.
+
+<p>
+
+<IMG SRC="images/yellowsq.gif" ALT="*" WIDTH=9 HEIGHT=9 ALIGN=TOP>
+Thomas H. Cormen and Kristin Bruhl.<br>
+
+<a href="papers/clever.ps.gz">Don't Be Too Clever: Routing BMMC
+Permutations on the MasPar MP-2</a>.<br>
+
+<i>Theory of Computing Systems</i>, 31, pp. 251-278.
+
+<p>
+
+<IMG SRC="images/yellowsq.gif" ALT="*" WIDTH=9 HEIGHT=9 ALIGN=TOP>
+Thomas H. Cormen and Melissa Hirschl.<br>
+
+<a href="papers/evaluating-PDM.ps.gz">Early Experiences in Evaluating
+the Parallel Disk Model with the ViC* Implementation</a>.<br>
+
+<i>Parallel Computing</i>, 23(4-5), June 1997, pp. 571-600.
+
+<p>
+
+<IMG SRC="images/yellowsq.gif" ALT="*" WIDTH=9 HEIGHT=9 ALIGN=TOP>
+Thomas H. Cormen.<br>
+
+Fast Permuting on Disk Arrays.<br>
+
+<i>Journal of Parallel and Distributed Computing</i>, 17(1-2), January
+and February 1993, pp. 41-57.
+
+<p>
+
+<IMG SRC="images/yellowsq.gif" ALT="*" WIDTH=9 HEIGHT=9 ALIGN=TOP>
+Thomas H. Cormen and Charles E. Leiserson.<br>
+
+<a href="papers/hype.ps.gz">A Hyperconcentrator Switch for Routing
+Bit-Serial Messages</a>.<br>
+
+<i>Journal of Parallel and Distributed Computing</i>, 10:3, November
+1990, pp. 193-204.
+
+<h3>Invited Journal Articles</h3>
+
+<IMG SRC="images/yellowsq.gif" ALT="*" WIDTH=9 HEIGHT=9 ALIGN=TOP>
+Thomas H. Cormen and David M. Nicol.<br>
+
+<a href="papers/PER.ps.gz">Out-of-Core FFTs with Parallel
+Disks</a>.<br>
+
+ACM SIGMETRICS <i>Performance Evaluation Review</i>, 25:3, December
+1997, pp. 3-12.
+
+<p>
+
+<IMG SRC="images/yellowsq.gif" ALT="*" WIDTH=9 HEIGHT=9 ALIGN=TOP>
+Thomas H. Cormen and Michael T. Goodrich.<br>
+
+<a
+href="http://www.acm.org/pubs/citations/journals/surveys/1996-28-4es/a208-cormen/">A
+Bridging Model for Parallel Computation, Communication, and
+I/O</a>.<br>
+
+<i>ACM Computing Surveys</i>, 28A(4), December 1996.
+
+<h3>Articles in Refereed Conferences</h3>
+
+<IMG SRC="images/yellowsq.gif" ALT="*" WIDTH=9 HEIGHT=9 ALIGN=TOP>
+Priya Natarajan, Thomas H. Cormen, and Elena Riccio Strange.<br> <a
+href="papers/MTAAP2010_final.pdf">Out-of-Core Distribution Sort in the
+FG Programming Environment</a>.<br> Workshop on Multithreaded
+Architectures and Applications (MTAAP 2010), April 2010.
+
+<p>
+
+<IMG SRC="images/yellowsq.gif" ALT="*" WIDTH=9 HEIGHT=9 ALIGN=TOP>
+Geeta Chaudhry and Thomas H. Cormen.<br>
+<a href="papers/dsort.pdf">Oblivious vs.
+Distribution-based Sorting: An Experimental Evaluation</a>.<br>
+13th Annual European Symposium on Algorithms (ESA 2005), October 2005.
+LNCS 3669, pp. 317-328, Springer, 2005.
+
+<p>
+
+<IMG SRC="images/yellowsq.gif" ALT="*" WIDTH=9 HEIGHT=9 ALIGN=TOP>
+Elena Riccio Davidson and Thomas H. Cormen<br>
+<a href="papers/FG-ipdps-final.ps">Building on a Framework: Using FG
+for More Flexibility and Improved Performance in Parallel Programs</a>.<br>
+19th IEEE International Parallel and Distributed
+Processing Symposium (IPDPS 2005), April 2005.
+
+<p>
+
+<IMG SRC="images/yellowsq.gif" ALT="*" WIDTH=9 HEIGHT=9 ALIGN=TOP>
+Elena Riccio Davidson and Thomas H. Cormen<br>
+<a href="papers/fg-pphec-final.ps">The FG
+Programming Environment: Reducing Source Code Size for Parallel
+Programs Running on Clusters</a>.<br>
+Second Workshop on Productivity and
+Performance in High-End Computing (P-PHEC 2005), February 2005,
+pp. 27-34.
+
+<p>
+
+<IMG SRC="images/yellowsq.gif" ALT="*" WIDTH=9 HEIGHT=9 ALIGN=TOP>
+Thomas H. Cormen and Elena Riccio Davidson.<br>
+<a href="papers/PDCS04.pdf">FG: A
+Framework Generator for Hiding Latency in Parallel Programs Running on
+Clusters</a>.<br>
+17th International Conference on Parallel and Distributed Computing
+Systems (PDCS 2004).
+
+<p>
+
+<IMG SRC="images/yellowsq.gif" ALT="*" WIDTH=9 HEIGHT=9 ALIGN=TOP>
+Thomas H. Cormen, Elena Riccio Davidson, and Siddhartha
+Chatterjee.<br>
+<a href="papers/fg-whitepaper.ps">Asynchronous Buffered Computation Design and
+Engineering Framework Generator (ABCDEFG)</a>.<br>
+White paper at High-End Computing Revitalization Task Force Workshop,
+June 2003.
+
+<p>
+
+<IMG SRC="images/yellowsq.gif" ALT="*" WIDTH=9 HEIGHT=9 ALIGN=TOP>
+Geeta Chaudhry and Thomas H. Cormen.<br>
+<a href="papers/ALENEX02.ps.gz">Getting More From Out-of-Core
+Columnsort</a>.<br>
+4th Workshop on Algorithm Engineering and Experiments (ALENEX 02),
+January 2002.  LNCS 2409, pp. 143-154, Springer-Verlag, 2002.
+
+<p>
+
+<IMG SRC="images/yellowsq.gif" ALT="*" WIDTH=9 HEIGHT=9 ALIGN=TOP>
+Geeta Chaudhry, Thomas H. Cormen, and Leonard F. Wisniewski.<br> <a
+href="papers/SPAA2001-final.ps.gz">Columnsort Lives!  An Efficient
+Out-of-Core Sorting Program.</a><br>
+
+Thirteenth Annual ACM Symposium on Parallel Algorithms
+and Architectures, July 2001, pp. 169-178
+
+<p>
+
+<IMG SRC="images/yellowsq.gif" ALT="*" WIDTH=9 HEIGHT=9 ALIGN=TOP>
+Lauren M. Baptist and Thomas H. Cormen.<br>
+
+<a href="papers/fft-multidimensional.ps.gz">Multidimensional,
+Multiprocessor, Out-of-Core FFTs with Distributed Memory and Parallel
+Disks</a>.<br>
+
+Eleventh Annual ACM Symposium on Parallel Algorithms and
+Architectures, June 1999, pp. 242-250
+
+<p>
+
+<IMG SRC="images/yellowsq.gif" ALT="*" WIDTH=9 HEIGHT=9 ALIGN=TOP>
+Alex Colvin and Thomas H. Cormen.<br>
+
+<a href="/reports/abstracts/TR97-323/">ViC*: A Compiler for
+Virtual-Memory C*</a>.<br>
+
+Extended abstract in Third International Workshop on High-Level
+Parallel Programming Models and Supportive Environments (HIPS '98),
+March 1998, pp. 23-33.  Full paper available as Dartmouth College
+Computer Science Technical Report PCS-TR97-323, November 1997.
+
+<p>
+
+<IMG SRC="images/yellowsq.gif" ALT="*" WIDTH=9 HEIGHT=9 ALIGN=TOP>
+Thomas H. Cormen, Jake Wegmann, and David M. Nicol.<br>
+
+<a href="papers/fft-multiprocessor.ps.gz">Multiprocessor Out-of-Core FFTs
+with Distributed Memory and Parallel Disks</a>.<br>
+
+Fifth Workshop on I/O in Parallel and Distributed Systems (IOPADS
+'97), November 1997, pp. 68-78.
+
+<p>
+
+<IMG SRC="images/yellowsq.gif" ALT="*" WIDTH=9 HEIGHT=9 ALIGN=TOP>
+Leonard F. Wisniewski, Thomas H. Cormen, and Thomas Sundquist.<br>
+
+<a href="papers/edn-maspar.ps.gz">Performing BMMC Permutations in Two
+Passes Through the Expanded Delta Network and MasPar MP-2</a>.<br>
+
+6th Symposium on the Frontiers of Massively Parallel Computation,
+October 1996, pp. 282-289
+
+<p>
+
+<IMG SRC="images/yellowsq.gif" ALT="*" WIDTH=9 HEIGHT=9 ALIGN=TOP>
+Thomas H. Cormen and Kristin Bruhl.<br>
+
+Don't Be Too Clever: Routing BMMC Permutations on the MasPar MP-2.<br>
+
+7th Annual ACM Symposium on Parallel Algorithms and Architectures,
+July 1995, pp. 288-297.
+
+<p>
+
+<IMG SRC="images/yellowsq.gif" ALT="*" WIDTH=9 HEIGHT=9 ALIGN=TOP>
+Thomas H. Cormen and Leonard F. Wisniewski.<br>
+
+Asymptotically Tight Bounds for Performing BMMC Permutations on
+Parallel Disk Systems.<br>
+
+5th Annual ACM Symposium on Parallel Algorithms and Architectures,
+June 1993, pp. 130-139.
+
+<p>
+
+<IMG SRC="images/yellowsq.gif" ALT="*" WIDTH=9 HEIGHT=9 ALIGN=TOP>
+Thomas H. Cormen and David Kotz.<br>
+
+<a href="/reports/abstracts/TR93-188/">Integrating Theory and Practice
+in Parallel File Systems</a>.<br>
+
+DAGS '93 Symposium, June 1993, pp. 64-74.  Also available as Dartmouth
+College Computer Science Technical Report PCS-TR93-188, revised
+September 1994.
+
+<p>
+
+<IMG SRC="images/yellowsq.gif" ALT="*" WIDTH=9 HEIGHT=9 ALIGN=TOP>
+Lars E. Bader and Thomas H. Cormen.<br>
+
+Virtual Memory for Data-Parallel Computing.<br>
+
+1992 MIT Student Workshop on VLSI and Parallel Systems, July 1992,
+pp. 3-1 to 3-2.
+
+<p>
+
+<IMG SRC="images/yellowsq.gif" ALT="*" WIDTH=9 HEIGHT=9 ALIGN=TOP>
+Thomas H. Cormen.<br>
+
+Fast Permuting on Disk Arrays.<br>
+
+1992 Brown/MIT VLSI Conference, March 1992, pp. 58-76.
+
+<p>
+
+<IMG SRC="images/yellowsq.gif" ALT="*" WIDTH=9 HEIGHT=9 ALIGN=TOP>
+Thomas H. Cormen.<br>
+
+<a href="papers/partial.ps.gz">Efficient Multichip Partial
+Concentrator Switches</a>.<br>
+
+1987 International Conference on Parallel Processing, August 1987,
+pp. 525-532.  Also MIT Technical Memo MIT/LCS/TM-322.
+
+<p>
+
+<IMG SRC="images/yellowsq.gif" ALT="*" WIDTH=9 HEIGHT=9 ALIGN=TOP>
+Thomas H. Cormen and Charles E. Leiserson.<br>
+
+A Hyperconcentrator Switch for Routing Bit-Serial Messages.<br>
+
+1986 International Conference on Parallel Processing, August 1986,
+pp. 721-728.
+
+<h3>Unrefereed Articles</h3>
+
+<IMG SRC="images/yellowsq.gif" ALT="*" WIDTH=9 HEIGHT=9
+ALIGN=TOP> Thomas H. Cormen, Priya Natarajan, and Elena Riccio
+Davidson.<br> <a
+href="http://www.cs.dartmouth.edu/reports/abstracts/TR2007-596/">When
+One Pipeline Is Not Enough</a>. Dartmouth College Computer Science
+Technical Report TR2007-596, June 2007.
+
+<p>
+
+<IMG SRC="images/yellowsq.gif" ALT="*" WIDTH=9 HEIGHT=9 ALIGN=TOP>
+Thomas H. Cormen and Elena Riccio Davidson.<br> <a
+href="http://www.cs.dartmouth.edu/~laney/fg/fg_tutorial.pdf">Asynchronous
+Buffered Computation Design and Engineering Framework Generator
+(ABCDEFG) Tutorial and Reference, Version 1.4.</a>
+
+<p>
+
+<IMG SRC="images/yellowsq.gif" ALT="*" WIDTH=9 HEIGHT=9 ALIGN=TOP>
+Geeta Chaudhry and Thomas H. Cormen.<br>
+
+<a
+href="http://www.cs.dartmouth.edu/reports/abstracts/TR2003-444/">Stupid
+Columnsort Tricks</a>.<br>
+
+Dartmouth College Computer Science Technical Report TR2003-444, April
+2003.
+
+<p>
+
+<IMG SRC="images/yellowsq.gif" ALT="*" WIDTH=9 HEIGHT=9 ALIGN=TOP>
+Geeta Chaudhry, Elizabeth A. Hamon, and Thomas H. Cormen.<br>
+
+<a
+href="http://www.cs.dartmouth.edu/reports/abstracts/TR2003-445/">Relaxing
+the Problem-Size Bound for Out-of-Core Columnsort</a>.<br>
+
+SPAA 2003 Revue, June 2003.  Also Dartmouth College
+Computer Science Technical Report TR2003-445, April 2003.
+
+<p>
+
+<IMG SRC="images/yellowsq.gif" ALT="*" WIDTH=9 HEIGHT=9 ALIGN=TOP>
+
+Thomas H. Cormen, Sumit Chawla, Preston Crow, Melissa Hirschl, Roberto
+Hoyle, Keith D. Kotay, Rolf H. Nelson, Nils Nieuwejaar, Scott
+M. Silver, Michael B. Taylor, and Rajiv Wickremesinghe.<br>
+
+<a href="/reports/abstracts/TR95-250/">DartCVL: The Dartmouth C Vector
+Library</a>.<br>
+
+Dartmouth College Computer Science Technical Report PCS-TR95-250,
+January 1995.
+
+<p>
+
+<IMG SRC="images/yellowsq.gif" ALT="*" WIDTH=9 HEIGHT=9 ALIGN=TOP>
+Thomas H. Cormen and Alex Colvin.<br>
+
+<a href="/reports/abstracts/TR94-243/">ViC*: A Preprocessor for
+Virtual-Memory C*</a>.<br>
+
+Dartmouth College Computer Science Technical Report PCS-TR94-243,
+November 1994.
+
+<p>
+
+<IMG SRC="images/yellowsq.gif" ALT="*" WIDTH=9 HEIGHT=9 ALIGN=TOP>
+Thomas H. Cormen.<br>
+
+<a href="/reports/abstracts/TR93-194/">Vector Layout in Virtual-Memory
+Systems for Data Parallel Computing</a>.<br>
+
+Dartmouth College Computer Science Technical Report PCS-TR93-194,
+August 1993.
+
+<h3><a href="thesis.html">Ph.D. thesis</a></h3>
+
+<P><HR SIZE=4>
+<H4> 
+<IMG ALIGN="MIDDLE" SRC="images/Dtree.gif" WIDTH=34 HEIGHT=39> 
+<A HREF="/">Back to Dartmouth CS Home Page</A> 
+</H4>
+
+</BODY>
+</HTML>
+a

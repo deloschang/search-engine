@@ -1,0 +1,174 @@
+http://www.cs.dartmouth.edu/about.php
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>Dartmouth Computer Science</title>
+	<style type="text/css" media="all">@import url(dartmouthcs.css);</style>		
+	
+<body id="home">
+
+
+
+<div id="header">
+
+	<h1>Dartmouth Computer Science</h1>
+		
+<!-- Google CSE Search Box Begins  -->
+<form action="http://www.google.com/cse" id="searchbox_001920968608620340798:tkrx06hp9rs">
+  <input type="hidden" name="cx" value="001920968608620340798:tkrx06hp9rs" />
+  <input type="text" name="q" size="25" />
+  <input type="submit" name="sa" value="Search" />
+</form>
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=searchbox_001920968608620340798%3Atkrx06hp9rs"></script>
+<!-- Google CSE Search Box Ends -->
+
+<!--
+	<form action="http://search.dartmouth.edu/query.html" method="get" name="seek">
+
+	<div>
+	<input type="hidden" name="qp" value="+url:http://www.cs.dartmouth.edu/"  />
+	<input type="hidden" name="qs" value="" /><input type="hidden"  name="qc" value="" />
+	<input type="hidden" name="ws" value="0" /><input type="hidden" name="qm" value="0" />
+	<input type="hidden" name="st" value="1" /><input type="hidden"  name="nh" value="10" />
+	<input type="hidden" name="lk" value="1" /><input type="hidden" name="rf" value="0" />
+	<input type="hidden" name="oq" value="" /><input type="hidden"  name="rq" value="0" />
+	<input type="text" id="search_dept" name="qt" value="" size="10"  maxlength="100" />&nbsp;
+	<input 	class="button" type="submit"  name="search" value="Search" />  
+	</div>
+
+	</form>
+-->	
+	
+	
+<!--		
+	<form method="get" action="http://www.htmldog.com/search/">
+		<div>
+		<input type="hidden" name="sp-a" value="sp1002e60e" />
+		<input type="hidden" name="sp-f" value="UTF-8" />
+		<label for="morombe">Search: </label>
+		<input type="text" name="sp-q" id="morombe" />
+		<input type="submit" value="Search" class="button" />
+		</div>
+	</form>
+-->	
+	
+</div>
+
+
+
+<div id="primaryNav">
+
+<ul>
+	<li>General
+		<ul>
+		<li> <a href="http://www.cs.dartmouth.edu/index.php">Home</a></li>
+		<li> <a href="http://www.cs.dartmouth.edu/about.php">About</a></li>
+		<!--li> <a href="http://www.cs.dartmouth.edu/calendar.php">Calendar</a></li-->
+		<li> <a href="http://www.cs.dartmouth.edu/news.php">News</a></li>
+		<li> <a href="http://www.cs.dartmouth.edu/people.php">People</a></li>
+		<li> <a href="http://www.cs.dartmouth.edu/jobs.php">Jobs</a></li>
+		<li> <a href="http://www.cs.dartmouth.edu/contact.php">Contact</a></li>
+		<li> <a href="http://www.cs.dartmouth.edu/internal/">Internal</a>
+		</ul>	
+	</li>
+
+	<li>Research
+	<ul>
+		<li><a href="http://www.cs.dartmouth.edu/research.php">Labs and Projects</a></li>
+		<li><a href="http://www.cs.dartmouth.edu/seminar.php">Colloquium</a></li> 
+		<li><a href="http://www.cs.dartmouth.edu/books.php">Books by Faculty</a></li>
+		<li><a href="http://www.cs.dartmouth.edu/reports">Technical Reports</a></li>
+	</ul>
+	</li>
+	
+	<li>Education
+	<ul>
+		<li><a href="http://www.cs.dartmouth.edu/ug.php">Undergraduate Programs</a></li>
+		<li><a href="http://www.cs.dartmouth.edu/gr.php">Graduate Programs</a></li>
+		<li><a href="http://www.cs.dartmouth.edu/ug_courses.php">Undergraduate Courses</a></li>
+		<li><a href="http://www.cs.dartmouth.edu/gr_courses.php">Graduate Courses</a></li> 
+		<li><a href="http://www.cs.dartmouth.edu/~robotics/summercamp">Summer Robotics Camp</a></li>	
+
+	</ul></li>
+
+	<li>Admissions
+		<ul>
+		<li> <a href="http://www.dartmouth.edu/apply">Undergraduate</a></li>
+		<li> <a href="http://www.cs.dartmouth.edu/admit_ms.php">M.S. Admissions</a></li>
+		<li> <a href="http://www.cs.dartmouth.edu/admit_phd.php">Ph.D. Admissions</a></li>
+		<li> <a href="http://www.cs.dartmouth.edu/~mdphd">M.D.-Ph.D. in CompBio</a></li>
+		<li> <a href="http://www.cs.dartmouth.edu/gr_life.php">Graduate Student Life</a></li>
+		</ul>
+	<ul>
+
+	</ul></li>
+	
+</ul>
+
+</div>
+	
+
+
+<div id="section">
+	
+	<div id="content">
+
+	<h1>About the Department</h1>
+
+		
+<img src=images/deptphoto_small.jpg border=1 align=left></img> 
+
+<p>
+	Dartmouth College's long tradition of excellence in computing began in the early 1960's, when John Kemeny and Thomas Kurtz, two members of the Dartmouth Mathematics department, developed the BASIC programming language, a tool that made computing simple and easy for unsophisticated users. Dartmouth also pioneered the use of the time-sharing operating system, thus providing interactive access to a large number of users.
+
+<p>
+
+Today, Computer Science is a separate department, housed in a modern building with excellent computing and research, and high-quality office space for faculty and graduate students. Our faculty are known worldwide for their excellence in research. Our Ph.D. students are the recipients of numerous prestigious graduate fellowships. The faculty and the students are engaged in several funded research projects, and publish their work in top conferences and journals. 
+<h2 class="break">Sudikoff Laboratory</h2>	
+
+<p> Financed through the generosity of Dartmouth alumni Jeffrey Sudikoff '77 and Peter Kiewit '22, the Sudikoff Laboratory for Computer Science was designed and constructed expressly to provide modern facilities for instruction and research in computer science at Dartmouth. The building is actually a total renovation of an existing hospital building.
+Construction in this mode allowed architects Kliment and Halsband to devote the project resources to meeting the particular and unusual needs of instruction and research using computers. The almost 18,000 square feet of usable space is beautifully arranged so that the offices of faculty and graduate students are intermingled, faculty offices are congenial to meeting with students, and computer laboratories are accessible to students on a 24-hour basis.
+
+<h2 class="break"> History of Computer Science at Dartmouth College</h2>	
+
+<p>Dartmouth College has a long tradition of excellence in computing. In the early 1960s, Dartmouth became one of the first institutions to make computers easily available to every student and faculty member, using a two-pronged approach that was revolutionary for the time. First, Dartmouth pioneered the use of the time-sharing operating system, thus providing interactive access to a large number of users. Second, two members of the Mathematics Department, John Kemeny and Thomas Kurtz, developed the BASIC programming language, a tool that made computing simple and easy for unsophisticated users.
+
+<p>The College nurtured the idea of "computers for everyone" throughout the 60s and 70s, led by the Mathematics Department and the Kiewit Computation Center. Mathematics courses included demonstrations by computer and occasional programming assignments. Every undergraduate was required to know enough to be able to log on to the time-sharing system and write some simple programs.
+
+<p>The growth of Computer Science, that is to say the study of the ideas underlying computation, was informal at first. Dartmouth granted a Ph.D. for a dissertation about programming language implementation in 1968, through the Mathematics Department. Throughout the early 1970s, the College introduced basic undergraduate courses in programming and data structures, compilers, data bases, and operating systems, taught by the Mathematics Department, and in digital logic and hardware design, taught by the Thayer School of Engineering. Graduate students could write computer science dissertations in both these academic organizations.
+<p>By 1977, undergraduates could major in mathematics with "concentration in computer science." In 1979, Dartmouth created the undergraduate major in Computer Science, to be administered by the Mathematics Department.
+
+<p>Dartmouth entered the 1980s with a healthy undergraduate computer science major in the Mathematics Department and hardware opportunities in the Thayer School of Engineering. There were occasional advanced seminars given by faculty from the Mathematics Department and the Thayer School. There was Ph.D. granting authority in Mathematics and the Thayer School, but there was no formal graduate program devoted to computer science.
+
+<p>
+  
+  From 1980 to 1988, the Computer & Information Science program (later
+  Computer & Information Systems (CIS)) granted 120 M.S. degrees. The
+  program combined studies in information systems and business, and was
+  independent of any department.
+  The CIS alumni maintain a <a href = "http://cis-alumni.org/">website</a>
+  for their community.  
+  
+<p>
+In 1983, recognizing the growing importance and influence of the computer scientists on its faculty, the Mathematics Department changed its name to the Department of Mathematics and Computer Science. Two years later, the Ph.D. program in Computer Science was approved by the Trustees of Dartmouth College and admitted its first students in the Fall term of 1986. In 1993, the computer science faculty moved to the wonderful new Sudikoff Laboratory for Computer Science, and in 1994, an independent Department of Computer Science was established. The new department is assuming administrative responsibility for the Ph.D. Program.
+
+
+	</div>
+	
+	
+	<div id="goToTop" class="sNav"><p><a href="#content">^ Top</a></p></div>
+
+</div>
+
+
+
+
+
+<div id="footer"><p>&copy; <a href="http://www.cs.dartmouth.edu/">Dartmouth College Computer Science Department</a> 2009 </p></div>
+
+
+</body>
+
+</html>

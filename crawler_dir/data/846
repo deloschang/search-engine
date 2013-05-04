@@ -1,0 +1,154 @@
+http://www.cs.dartmouth.edu/~afra/personal.html
+3
+<html>
+<head>
+<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+<title>About Afra</title>
+<link rel="stylesheet" href="./style.css" type="text/css">
+</head>
+
+<body bgcolor=#ffffff >
+
+<hr align=center noshade>
+
+<table cellspacing=0 cellpadding=0 border=0>
+<tr valign= top>
+
+<!-- ----- Left-hand side navbar ----- -->
+<td align=right>
+<font size="+1" align=right>
+afra<br>
+zomorodian<br>
+<br>
+</font>
+<a href="./">home</a><br>
+<b>personal</b><br>
+<a href="book.html">book</a><br>
+<a href="papers.html">papers</a><br>
+<a href="teaching.html">teaching</a><br>
+<a href="goodies.html">goodies</a><br>
+<br><br>
+</td>
+
+<!-- ----- Interior left margin ----- -->
+<td width=25>&nbsp;</td> 
+
+<!-- ----- Eye candy ---- -->
+<td>
+
+<table cellspacing=0 cellpadding=0 border=0>
+<tr>
+<td>
+<img src="images/yosemite.jpg" width = 100</a>
+<td>
+<tr>
+<td align=center>
+<font size = "-2">
+<a href = "http://afra.smugmug.com/gallery/256240/1/10056565">
+<i>Yosemite Falls</i></a>
+</font>
+</td>
+</tr>
+</table>
+
+<!-- ----- Interior right margin ----- -->
+<td width=25>&nbsp;</td> 
+
+<!-- ----- Main body ----- -->
+
+<td>
+<!-- <b><a href="cv.pdf">curriculum vitae</a> <img src = "images/new.gif"></b>
+(updated 02/05)
+<br>
+<br>
+-->
+<b>current position</b>
+<p>
+I am currently with the 
+<a href = "http://www.deshaw.com">The D. E. Shaw Group</a>.  
+<p>
+
+<b>previous positions</b>
+<p>
+From Fall 2006 until the end of 2011, I was an Assistant Professor in
+the 
+<a href = "http://www.cs.dartmouth.edu">Department of Computer Science</a>
+at 
+<a href = "http://www.dartmouth.edu/">Dartmouth College</a>.  
+I continued as an Adjunct Assistant Professor until June 2012.  
+During the Fall of 2006, I was also a Research Professor at
+<a href = "http://www.msri.org">MSRI</a>, where
+I was part of the program titled 
+<a href =
+"http://www.msri.org/calendar/programs/ProgramInfo/243/show_program">
+Computational Applications of Algebraic Topology</a>.
+<p>
+From January 2004 to June 2006, I was a Post-Doctoral Fellow in 
+<a href = "http://biox.stanford.edu/">Bio-X</a> and the 
+<a href = "http://www.cs.stanford.edu">Department of Computer Science</a>
+at
+<a href = "http://www.stanford.edu">Stanford University</a>.
+I was in two groups:
+the <a href = "http://geometry.stanford.edu/member/guibas">Leonidas Guibas Laboratory</a>
+and
+<a href = "http://math.stanford.edu/comptop/">TMSCSCS</a>.  
+<p>
+From July through December 2003, I was
+away from Stanford, traveling
+in five countries.
+During that time, I was a guest researcher</a> at the
+<a href = "http://www.mpi-sb.mpg.de/">Max-Planck-Institut f&uuml;r Informatik</a> in 
+<a href = "http://www.saarbruecken.de">Saarbr&uuml;cken</a>, 
+Germany, for about five months, where I worked with
+<a href = "http://www.mpi-sb.mpg.de/~kettner/">Lutz Kettner</a>.
+<p>
+From October 2001 through June 2003, I was a Post-Doctoral Fellow
+at Stanford.
+<p>
+<b>academic background</b>
+<p>
+I completed my Ph.D. in October 2001 from the 
+<a href = "http://www.cs.uiuc.edu">Department of Computer Science</a>
+at
+<a href = "http://www.uiuc.edu">University of Illinois at
+Urbana-Champaign</a>.  
+I was a <em>Visiting Scholar</em> in the 
+<a href = "http://www.cs.duke.edu">Department of Computer Science</a>
+at
+<a href = "http://www.duke.edu">Duke University</a> from 1999 to 2001
+during my graduate work.
+<br>
+<br>
+Previously, I received my B.S. in Computer Science from the 
+<a href = "http://www.cs.stanford.edu">Department of Computer Science</a>
+at
+<a href = "http://www.stanford.edu">Stanford University</a> in 1996.  I did
+some research on color acquisition and automatic shape acquisition (part of
+the <a href = "http://graphics.stanford.edu/projects/faxing/">3D Fax
+Project</a>) in the 
+<a href = "http://graphics.stanford.edu">Stanford Computer Graphics
+Laboratory</a> as an undergraduate.
+<br>
+<br>
+
+I graduated from 
+
+<a href = "http://www.iusd.org/uhs/">University High School</a>
+
+in Irvine, California, in 1992, but I first spent three years in
+<em>Rolling Hills High School</em>, which merged with Palos Verdes and
+Miraleste High Schools to form
+
+<a href = "http://www.pvphs.com">Palos Verdes 
+Peninsula High School</a>
+
+in 1991.  My family then moved to 
+<a href = "http://www.irvinecompany.com">Irvine</a>.
+
+<!-- ----- Right-hand margin ----- -->
+<td width=25>&nbsp;</td>
+</tr>
+</table>
+<hr align=center noshade>
+</body>
+t

@@ -1,0 +1,99 @@
+http://www.cs.dartmouth.edu/%7Ecbk/deimmunization.php
+3
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<title>Chris Bailey-Kellogg | Projects | Deimmunization </title>
+<link href="style/main.css" type="text/css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+<div id="page">
+
+<div id="header">
+<h2>Chris Bailey-Kellogg</h2>
+
+<div id="title">
+ Associate Professor, 
+  <a href="http://www.cs.dartmouth.edu/">CS</a>, 
+  <a href="http://www.dartmouth.edu/">Dartmouth</a>
+  
+</div>
+
+<div id="nav">
+  <span><a href="index.php"  >home</a></span>
+  <span><a href="lab.php"  >lab</a></span>
+  <span><a href="projects.php" class="navhere" >projects</a></span>
+  <span><a href="classes.php"  >classes</a></span>
+  <span><a href="papers.php"  >papers</a></span>
+  <span><a href="news.php"  >news</a></span>
+</div>
+</div>
+
+<div id="content">
+
+<div id="projimg"><img src="img/proj/blac.png" alt="Deimmunization" /></div>
+
+<p>In collaboration with
+	<a href="http://engineering.dartmouth.edu/griswold/">Karl Griswold</a> (engineering, Dartmouth), we are developing and experimentally applying a suite of general
+methods integrating computation and experiment in order to produce
+immunotolerant variants of therapeutic proteins, in which
+immunogenicity is reduced while therapeutic activity is maintained.
+The majority of therapeutic proteins elicit an anti-biotherapeutic
+immune response (aBIR) in human patients, driving the
+search for strategies to detect, assess, and ameliorate potentially
+deleterious immune responses.
+Our approach promises not only to improve the state of the art in
+humanization of antibodies, but also to open new doors to humanization
+of enzymes.</p>
+
+<p>In our DP<sup>2</sup> (Dynamic Programming for Deimmunizing Proteins)
+		approach, we
+establish as our primary optimization objective reduction of
+immunogenicity, according to predicted T-cell epitopes within the
+sequence.  In order to also address the complementary/competing concern of
+maintaining stability and activity, we identify for each residue position those
+mutations that are deemed acceptable according to sequence and/or
+structure-based analyses.  A dynamic programming approach then finds
+globally optimal and near-optimal sets of these acceptable mutations
+that minimize the occurrence of predicted epitopes.</p>
+
+<p>In our IP<sup>2</sup> (Integer Programming for Immunogenic Proteins)
+		 approach, we extend the objective to account for residue interactions, e.g., based on pairwise covariation analysis from a set of homologs.  Thus we seek to delete immunogenic
+  T-cell epitopes, as evaluated by a 9-mer potential, while
+  simultaneously maintaining important residues and residue
+  interactions, as evaluated by one- and two-body potentials.
+An integer programming approach finds sets of mutations optimizing a specified trade-off between these objectives.</p>
+
+<h4>Software</h4>
+
+<ul>
+  <li><a href="http://www.cs.dartmouth.edu/~cbk/deimm/dpdp/">DP<sup>2</sup> demo</a></li>
+  <li><a href="http://www.cs.dartmouth.edu/~cbk/deimm/ipip/">IP<sup>2</sup> demo</a></li>
+  <li><a href="http://www.cs.dartmouth.edu/~cbk/pepfr/">PEPFR</a> contains an improved version of IP<sup>2</sup>, mapping the whole Pareto frontier of epitope score vs. sequence potential (1- and 2-body).</li>
+  <li><a name="methods"></a>We have available upon request a set of pre- and post-processing scripts for setting up the potentials, evaluating and plotting epitopes, etc.</li>
+</ul>
+
+<h4>Papers</h4>
+<ul>
+    <li>D.C. Osipovitch, A.S. Parker, C.D. Makokha, J. Desrosiers, W.C. Kett, L. Moise, C. Bailey-Kellogg, and K.E. Griswold, "Design and analysis of immune-evading enzymes for ADEPT therapy", <i>Protein Eng. Des. Sel.</i>, 2012, 25:613-624. <a href="papers.php?abs=81">[abstract] </a><a href="http://peds.oxfordjournals.org/content/25/10/613.long">[paper] </a></li>
+    <li>A.S. Parker, K.E. Griswold, and C. Bailey-Kellogg, "Structure-guided deimmunization of therapeutic proteins", <i>Proc. RECOMB</i>, 2012, 184-198. <a href="papers.php?abs=74">[abstract] </a><a href="papers/recomb12a.pdf">[preprint] </a></li>
+    <li>L. He, A.M. Friedman, and C. Bailey-Kellogg, "A divide-and-conquer approach to determine the Pareto frontier for optimization of protein engineering experiments'", <i>Proteins</i>, 2012, 80:790-806. <a href="papers.php?abs=73">[abstract] </a><a href="http://dx.doi.org/10.1002/prot.23237">[paper] </a></li>
+		<li>A.S. Parker, K.E. Griswold, and C. Bailey-Kellogg, "Optimization of therapeutic proteins to delete T-cell epitopes while maintaining beneficial residue interactions", <i>J. Bioinf. Comp. Biol.</i>, 2011, 9:207-229. <a href="papers.php?abs=65">[abstract] </a><a href="http://dx.doi.org/10.1142/S0219720011005471">[paper]</a><br/>
+    (Originally presented at <i>Comp. Syst. Bioinf.</i> 2010.)</li>
+		<li>A.S. Parker, W. Zheng, K.E. Griswold, and C. Bailey-Kellogg, "Optimization algorithms for functional deimmunization of therapeutic proteins", <i>BMC Bioinf.</i>, 2010, 11:180. <a href="papers.php?abs=57">[abstract] </a><a href="http://www.biomedcentral.com/1471-2105/11/180/abstract">[paper] </a></li>
+</ul>
+
+</div>
+
+<div id="footer"></div>
+
+</div>
+
+</body>
+</html>

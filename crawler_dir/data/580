@@ -1,0 +1,195 @@
+http://www.cs.dartmouth.edu/reports
+3
+<html>
+<head>
+ <title>Dartmouth Computer Science Technical Reports</title>
+ <link rel="alternate" type="application/rss+xml" title="Dartmouth Computer Science Technical Reports" href="feed.xml"/>
+</head>
+<body bgcolor=#FFFFFF>
+<!-- Include file for abstracts/*.shtml, abstracts/*/*.shtml and authors/*.shtml -->
+<!-- See also footer.htmlf -->
+<!-- I use absolute pathnames here because this file is used from several directories. -->
+<table border=0 rules=none>
+<col width=85><col width=100%><col width=85>
+<tr valign=center  bgcolor=#003300 border=0>
+ <td>
+   <a href=/><img src=/reports/Dartmouth2.png alt="Dartmouth logo"
+   width=82 height=91 border=0></a>
+ </td>
+ <td>
+   <font color=#ffffff size=+3>
+     Dartmouth College Computer Science<br>
+     Technical Report series
+   </font>
+ </td>
+ <td>
+  <a href="/"><font color=#ffffff>CS&nbsp;home</font></a><br>
+  <a href="/reports"><font color=#ffffff>TR&nbsp;home</font></a><br>
+  <a href="/reports/#search"><font color=#ffffff>TR&nbsp;search</font></a>
+  <a href="/reports/updates.html"><font color=#ffffff>TR&nbsp;listserv</font></a>
+ </td>
+</tr>
+<tr>
+  <td align=right> By author:
+  </td>
+  <td colspan=2>
+    <a href="/reports/authors/index.shtml#A">A</a>
+    <a href="/reports/authors/index.shtml#B">B</a>
+    <a href="/reports/authors/index.shtml#C">C</a>
+    <a href="/reports/authors/index.shtml#D">D</a>
+    <a href="/reports/authors/index.shtml#E">E</a>
+    <a href="/reports/authors/index.shtml#F">F</a>
+    <a href="/reports/authors/index.shtml#G">G</a>
+    <a href="/reports/authors/index.shtml#H">H</a>
+    <a href="/reports/authors/index.shtml#I">I</a>
+    <a href="/reports/authors/index.shtml#J">J</a>
+    <a href="/reports/authors/index.shtml#K">K</a>
+    <a href="/reports/authors/index.shtml#L">L</a>
+    <a href="/reports/authors/index.shtml#M">M</a>
+    <a href="/reports/authors/index.shtml#N">N</a>
+    <a href="/reports/authors/index.shtml#O">O</a>
+    <a href="/reports/authors/index.shtml#P">P</a>
+    <a href="/reports/authors/index.shtml#Q">Q</a>
+    <a href="/reports/authors/index.shtml#R">R</a>
+    <a href="/reports/authors/index.shtml#S">S</a>
+    <a href="/reports/authors/index.shtml#T">T</a>
+    <a href="/reports/authors/index.shtml#U">U</a>
+    <a href="/reports/authors/index.shtml#V">V</a>
+    <a href="/reports/authors/index.shtml#W">W</a>
+    <a href="/reports/authors/index.shtml#X">X</a>
+    <a href="/reports/authors/index.shtml#Y">Y</a>
+    <a href="/reports/authors/index.shtml#Z">Z</a>
+   </td>
+</tr>
+<tr>
+  <td align=right> By number: 
+  </td>
+  <td colspan=2>
+    <font size=-1>
+      <a href="/reports/abstracts/2013.shtml">2013</a>,
+      <a href="/reports/abstracts/2012.shtml">2012</a>,
+      <a href="/reports/abstracts/2011.shtml">2011</a>,
+      <a href="/reports/abstracts/2010.shtml">2010</a>,
+      <a href="/reports/abstracts/2009.shtml">2009</a>,
+      <a href="/reports/abstracts/2008.shtml">2008</a>,
+      <a href="/reports/abstracts/2007.shtml">2007</a>,
+      <a href="/reports/abstracts/2006.shtml">2006</a>,
+      <a href="/reports/abstracts/2005.shtml">2005</a>,
+      <a href="/reports/abstracts/2004.shtml">2004</a>,
+      <a href="/reports/abstracts/2003.shtml">2003</a>,
+      <a href="/reports/abstracts/2002.shtml">2002</a>,
+      <a href="/reports/abstracts/2001.shtml">2001</a>,
+      <a href="/reports/abstracts/2000.shtml">2000</a>,
+      <a href="/reports/abstracts/1999.shtml">1999</a>,
+      <a href="/reports/abstracts/1998.shtml">1998</a>,
+      <a href="/reports/abstracts/1997.shtml">1997</a>,
+      <a href="/reports/abstracts/1996.shtml">1996</a>,
+      <a href="/reports/abstracts/1995.shtml">1995</a>,
+      <a href="/reports/abstracts/1994.shtml">1994</a>,
+      <a href="/reports/abstracts/1993.shtml">1993</a>,
+      <a href="/reports/abstracts/1992.shtml">1992</a>,
+      <a href="/reports/abstracts/1991.shtml">1991</a>,
+      <a href="/reports/abstracts/1990.shtml">1990</a>,
+      <a href="/reports/abstracts/1989.shtml">1989</a>,
+      <a href="/reports/abstracts/1988.shtml">1988</a>,
+      <a href="/reports/abstracts/1987.shtml">1987</a>,
+      <a href="/reports/abstracts/1986.shtml">1986</a>
+    </font>
+  </td>
+</tr>
+</table>
+<hr>
+<!-- <table bgcolor=#lightyellow width=100%><tr><td> set the page background color -->
+
+
+<h3><a name=recent>Recent reports:</h3>
+<!-- Do not modify this file; it was created automatically
+     by /u/apache/TRdata/make-recents
+     on Tue Mar 26 21:30:45 EDT 2013
+-->
+<UL>
+ <li> March 2013:
+      <a href=/reports/abstracts/TR2013-728/><em>Security-Policy Analysis with eXtended Unix Tools</em></a>
+ <li> January 2013:
+      <a href=/reports/abstracts/TR2013-726/><em>MEXSVMs: Mid-level Features for Scalable Action Recognition</em></a>
+ <li> July 2012:
+      <a href=/reports/abstracts/TR2012-725/><em>Privacy-Preserving Screen Capture: Closing the Loop for Medical Informatics Usability</em></a>
+ <li> May 2012:
+      <a href=/reports/abstracts/TR2012-723/><em>Asymptotic Statistics of Nodal Domains of Quantum Chaotic Billiards in the Semiclassical Limit</em></a>
+ <li> May 2012:
+      <a href=/reports/abstracts/TR2012-722/><em>MeshGit: Diffing and Merging Polygonal Meshes</em></a>
+</UL>
+
+<hr>
+
+<h3><a name=all>Complete bibliography of all reports:
+  <a href="index.ascii">ASCII</a>,
+  <a href="index.bib">BIB</a> (RFC1357),
+  <a href="index.bibtex">BibTeX</a>,
+  <a href="index.refer">refer</a>
+</h3>
+
+<font size=-1>
+<em>A note about TR numbers:</em>
+ the <a href="format.html">format of our technical report numbers</a>
+ changed on January 1st, 2000.
+</font>
+
+<hr>
+<h3><a name=search>Search:
+<form action="http://www.cs.dartmouth.edu/reports/search.shtml"
+id="cse-search-box">
+ <div>
+   <input type="hidden" name="cx"
+   value="017180522165740084141:v1wbqwoih_k" />
+   <input type="hidden" name="cof" value="FORID:10" />
+   <input type="hidden" name="ie" value="UTF-8" />
+   <input name="as_q" type="hidden" value="more:comp_sci_reports" /> 
+   <input type="text" name="q" size="31" />
+   <input type="submit" name="sa" value="Search" />
+ </div>
+</form>
+<script type="text/javascript"
+src="http://www.google.com/cse/brand?form=cse-search-box&lang=en&sitesearch=true"></script>
+</h3>
+This search is based on periodic crawling of the collection,
+and may not include the latest reports.
+<p>
+
+<hr>
+<h3>To add a new report</h3>
+(For internal use only)<br>
+Ask a professor to request a TR number for you as follows:<br>
+<pre>
+  /u/apache/TRdata/tr-request your.email.address
+</pre>
+
+<!-- Include file for abstracts/*.html and authors/*.html -->
+<!-- See also header.htmlf -->
+<!-- I use absolute pathnames here because this file is used from several directories. -->
+<!-- </td></tr></table> -->
+<hr>
+
+<p><a href=/reports/updates.html>Notify me about new tech reports</a>.
+<a href=/reports/feed.xml><img src=/reports/rss.gif><a></p>
+<p><a href=/reports/index.shtml#search>Search the technical reports</a>.</p>
+<p>To receive paper copy of a report, by mail, 
+send your address and the TR number to <tt>reports</tt> AT <tt>cs.dartmouth.edu</tt>
+
+<hr>
+
+<p><font size=-1><b>Copyright notice</b>:	
+The documents contained in this server are included by the
+contributing authors as a means to ensure timely dissemination of
+scholarly and technical work on a non-commercial basis.  Copyright and
+all rights therein are maintained by the authors or by other copyright
+holders, notwithstanding that they have offered their works here
+electronically.  It is understood that all persons copying this
+information will adhere to the terms and constraints invoked by each
+author's copyright.  These works may not be reposted without the
+explicit permission of the copyright holder.
+</font></p> 
+<p><font size=-1><em>Technical reports collection maintained by David Kotz</em>.
+
+</BODY>
+</HTML>

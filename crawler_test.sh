@@ -73,10 +73,10 @@ testCmd[j]="./crawler www.google.com ./data/ 1"
 let j++
 
 # correct input 
-testName[j]="$j. testing correct input arguments for depth 0"
-testExpected[j]="No errors expected. Should not go past depth 0."
-testCmd[j]="./crawler www.cs.dartmouth.edu ./data/ 0"
-let j++
+#testName[j]="$j. testing correct input arguments for depth 0"
+#testExpected[j]="No errors expected. Should not go past depth 0."
+#testCmd[j]="./crawler www.cs.dartmouth.edu ./data/ 0"
+#let j++
 
 # correct input 
 #testName[j]="$j. testing correct input arguments for depth 1"
@@ -91,10 +91,10 @@ let j++
 #let j++
 
 # correct input 
-#testName[j]="$j. testing correct input arguments for depth 3"
-#testExpected[j]="No errors expected. Should not go past depth 3."
-#testCmd[j]="./crawler www.cs.dartmouth.edu ./data/ 3"
-#let j++
+testName[j]="$j. testing correct input arguments for depth 3"
+testExpected[j]="No errors expected. Should not go past depth 3."
+testCmd[j]="./crawler www.cs.dartmouth.edu ./data/ 3"
+let j++
 
 iterate=0
 while (($iterate < $j)); do
@@ -102,22 +102,23 @@ while (($iterate < $j)); do
   echo ""
 
   # test to STDOUT for easy viewing
-  echo ${testName[iterate]}  
-  echo ${testExpected[iterate]} 
-  ${testCmd[iterate]}
+  #echo ${testName[iterate]}  
+  #echo ${testExpected[iterate]} 
+  #${testCmd[iterate]}
 
 
   ## send test result to the log
-  #echo ${testName[iterate]} >> "$crawler_testlog"
-  #echo ${testExpected[iterate]} >> "$crawler_testlog"
-  #echo -n "Output -->" >> "$crawler_testlog"
-  #{ ${testCmd[iterate]} >> "$crawler_testlog";} 2>/dev/null # suppress
+  echo ${testName[iterate]} >> "$crawler_testlog"
+  echo ${testExpected[iterate]} >> "$crawler_testlog"
+  echo -n "Output -->" >> "$crawler_testlog"
+   ${testCmd[iterate]} >> "$crawler_testlog"
   
   # increment and test next
   let iterate++
 done
 
-echo "\n\n Done testing. Cleaning up \n\n"
+echo ""
+echo "Done testing. Cleaning up"
 
 # cleanup
 make clean

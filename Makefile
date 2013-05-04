@@ -20,7 +20,7 @@ debug: $(SRCS)
 	gdb --args crawler www.cs.dartmouth.edu ./data/ 1
 valgrind: $(OBJS)
 	$(CC) $(CFLAGS) -o $(EXEC) $(OBJS)
-	valgrind --tool=memcheck --leak-check=yes ./crawler www.cs.dartmouth.edu ./data 1
+	valgrind --tool=memcheck --leak-check=yes ./crawler www.cs.dartmouth.edu ./data 2
 
 clean:
 	rm -f *~
@@ -31,6 +31,7 @@ clean:
 	rm -f *.html.*
 	rm -f core.*
 
+# to clean both log and crawled data files
 cleanlog:
 	rm -f *log.*
 	cd ./data/ && rm -f *

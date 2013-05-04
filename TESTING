@@ -7,3 +7,6 @@ TESTING FILE
 3. Invalid Directory
 4. Unwritable Directory
 5. Invalid URL
+6. Restricted URL (not of URL_PREFIX in header file)
+7. Duplicate URLs to be crawled
+8. Not normalized URL (e.g. .pdf)

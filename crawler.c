@@ -2,7 +2,8 @@
 
 FILE: crawler.c
 
-Description:
+Description: a crawler that takes in a seed URL, parses the pages and extracts other URLs.
+Can search a number of depths and saves these html files into the target directory folder
 
 Inputs: ./crawler [SEED URL] [TARGET DIRECTORY WHERE TO PUT THE DATA] [MAX CRAWLING DEPTH]
 
@@ -72,7 +73,6 @@ void validateArgs(int argc, char* argv[]){
   int writableResult = 0;
   char testURL[MAX_URL_LENGTH + 10]; // max URL length and space for the "wget -q"
   char *writableTest = NULL; // dynamically allocate to prevent overflow
-  char command[100] = "if [ -w ";
 
   // check for correct number of parameters first
   if (argc != 4){
@@ -102,6 +102,9 @@ void validateArgs(int argc, char* argv[]){
 
   // Validate that directory is writable
   // Allocate memory to prevent overflow
+
+  // dangerous
+  /*char command[100] = "if [ -w ";*/
   /*strcat(command, argv[2]);*/
   /*strcat(command, " ] ; then exit 0 ; else exit 1 ; fi");*/
   /*writableResult = system(command);*/
@@ -161,12 +164,6 @@ char* getPage(char* url, int current_depth, char* target_directory){
   FILE* tempStore;
   FILE* fileSave;
   char dirWithCounter[MAX_URL_LENGTH + 100];
-
-
-  /*printf("\n [Crawler] Crawling %s \n", url);*/
-  /*char command[100] = "wget -O temp ";*/
-  /*strcat(command, url);*/
-  /*wgetResult = system(command);*/
 
   // allocate space to avoid overflow
   size_t len1 = strlen("wget -O temp "), len2 = strlen(url);
@@ -257,7 +254,12 @@ char* getPage(char* url, int current_depth, char* target_directory){
 
   // Remove the file
   printf("\n Removing file");
-  /*system("rm -f temp");*/
+  int removeTemp = system("rm -f temp");
+
+  // Make sure exit status for the command is OK
+  if (removeTemp != 0){
+    fprintf(stderr, "Error in removing temporary file");
+  }
 
   // return the pointer to the buffer
   return fileBuffer;
@@ -526,6 +528,7 @@ void cleanup(){
       testcount++;
     }
 
+    // return to beginning of the next hash slot
     testcount = 0;
 
   }
@@ -676,7 +679,7 @@ int main(int argc, char* argv[]) {
 
     // You must include a sleep delay before crawling the next page 
     // See note below for reason.
-    /*sleep(INTERVAL_PER_FETCH);*/
+    sleep(INTERVAL_PER_FETCH);
   }
 
 

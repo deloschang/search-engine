@@ -679,7 +679,7 @@ int main(int argc, char* argv[]) {
 
     // You must include a sleep delay before crawling the next page 
     // See note below for reason.
-    sleep(INTERVAL_PER_FETCH);
+    /*sleep(INTERVAL_PER_FETCH);*/
   }
 
 

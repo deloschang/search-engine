@@ -1,0 +1,12 @@
+TESTING FILE 
+=================
+* See crawler_test.sh for battery of tests
+
+1. Sufficient Arguments
+2. Max depth too high / too low
+3. Invalid Directory
+4. Unwritable Directory
+5. Invalid URL
+6. Restricted URL (not of URL_PREFIX in header file)
+7. Duplicate URLs to be crawled
+8. Not normalized URL (e.g. .pdf)

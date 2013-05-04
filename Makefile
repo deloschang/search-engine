@@ -18,6 +18,10 @@ debug: $(SRCS)
 	$(CC) $(CFLAGS) -g -ggdb -c $(SRCS)
 	$(CC) $(CFLAGS) -g -ggdb -o $(EXEC) $(OBJS)
 	gdb --args crawler www.cs.dartmouth.edu ./data/ 1
+valgrind: $(OBJS)
+	$(CC) $(CFLAGS) -o $(EXEC) $(OBJS)
+	valgrind --tool=memcheck --leak-check=yes ./crawler www.cs.dartmouth.edu ./data 1
+
 clean:
 	rm -f *~
 	rm -f *#

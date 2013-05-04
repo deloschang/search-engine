@@ -102,19 +102,19 @@ void validateArgs(int argc, char* argv[]){
 
   // Validate that directory is writable
   // Allocate memory to prevent overflow
-  strcat(command, argv[2]);
-  strcat(command, " ] ; then exit 0 ; else exit 1 ; fi");
-  writableResult = system(command);
+  /*strcat(command, argv[2]);*/
+  /*strcat(command, " ] ; then exit 0 ; else exit 1 ; fi");*/
+  /*writableResult = system(command);*/
 
-  /*size_t len1 = strlen("if [ -w "), len2 = strlen(argv[2]), len3 = strlen(" ] ; then exit 0 ; else exit 1 ; fi");*/
-  /*writableTest = (char*) malloc(len1 + len2 + len3 + 1);*/
+  size_t len1 = strlen("if [ -w "), len2 = strlen(argv[2]), len3 = strlen(" ] ; then exit 0 ; else exit 1 ; fi");
+  writableTest = (char*) malloc(len1 + len2 + len3 + 1);
 
-  /*memcpy(writableTest, "if [ -w ", len1);*/
-  /*memcpy(writableTest+len1, argv[2], len2);*/
-  /*memcpy(writableTest+len2, " ] ; then exit 0 ; else exit 1 ; fi", len3+1);*/
+  memcpy(writableTest, "if [ -w ", len1);
+  memcpy(writableTest+len1, argv[2], len2);
+  memcpy(writableTest+len2, " ] ; then exit 0 ; else exit 1 ; fi", len3+1);
 
-  /*writableResult = system(writableTest);*/
-  /*free(writableTest);*/
+  writableResult = system(writableTest);
+  free(writableTest);
 
   if ( writableResult != 0){
     fprintf(stderr, "Error: The dir argument %s was not writable.  Please enter writable and valid directory. \n", argv[2]);
@@ -155,29 +155,29 @@ int initLists(){
 // a file within the target directory along with the URL and current_depth
 // prepended to it
 char* getPage(char* url, int current_depth, char* target_directory){
-  /*char* wgetCmd;*/
+  char* wgetCmd;
   int wgetResult;
   int i = 0; 
   FILE* tempStore;
   FILE* fileSave;
   char dirWithCounter[MAX_URL_LENGTH + 100];
 
-  char command[100] = "wget -O temp ";
-  strcat(command, url);
 
   /*printf("\n [Crawler] Crawling %s \n", url);*/
+  /*char command[100] = "wget -O temp ";*/
+  /*strcat(command, url);*/
+  /*wgetResult = system(command);*/
 
-  /*// allocate space to avoid overflow*/
-  /*size_t len1 = strlen("wget -O temp "), len2 = strlen(url);*/
-  /*wgetCmd = (char*) malloc(len1 + len2 + 1);*/
+  // allocate space to avoid overflow
+  size_t len1 = strlen("wget -O temp "), len2 = strlen(url);
+  wgetCmd = (char*) malloc(len1 + len2 + 1);
 
-  /*memcpy(wgetCmd, "wget -O temp ", len1);*/
-  /*memcpy(wgetCmd + len1, url, len2 + 1);*/
+  memcpy(wgetCmd, "wget -O temp ", len1);
+  memcpy(wgetCmd + len1, url, len2 + 1);
 
-  /*wgetResult = system(wgetCmd);*/
-  /*free(wgetCmd);*/
+  wgetResult = system(wgetCmd);
+  free(wgetCmd);
 
-  wgetResult = system(command);
 
   // check if wget was successful
   do {
@@ -201,7 +201,6 @@ char* getPage(char* url, int current_depth, char* target_directory){
   // Open the temp stored file from the successful wget
   char* fileBuffer = NULL; // prepare for storage
 
-  printf("opening the temp file\n");
   tempStore = fopen("temp", "r");
 
   // Make sure temp exists first
@@ -210,7 +209,6 @@ char* getPage(char* url, int current_depth, char* target_directory){
     return NULL;
   }
 
-  printf("seeking\n");
   if (fseek(tempStore, 0L, SEEK_END) == 0){
     long tempFileSize = ftell(tempStore);
     if (tempFileSize == -1){
@@ -219,8 +217,6 @@ char* getPage(char* url, int current_depth, char* target_directory){
     }
 
     // Allocate buffer to that size
-    printf("file Buffer\n");
-
     // Length of buffer should be the same of output of wget + 1
     fileBuffer = malloc(sizeof(char) * (tempFileSize + 2) ); // +1 for terminal byte
 
@@ -228,7 +224,6 @@ char* getPage(char* url, int current_depth, char* target_directory){
     rewind(tempStore);
 
     // Read file to buffer
-    printf("Read file to buffer\n ");
     size_t readResult = fread(fileBuffer, sizeof(char), tempFileSize, tempStore);
 
     if (readResult == 0){
@@ -240,17 +235,14 @@ char* getPage(char* url, int current_depth, char* target_directory){
     }
   }
 
-  printf("closing\n");
   fclose(tempStore);
 
 
   // increment the file counter for writing
   fileCounter++;
 
-  printf("Writing target path");
   sprintf(dirWithCounter, "%s/%d", target_directory, fileCounter);
 
-  printf("FileSave\n");
   fileSave = fopen(dirWithCounter, "w");
 
   if (fileSave == NULL){
@@ -259,11 +251,8 @@ char* getPage(char* url, int current_depth, char* target_directory){
   }
 
   // Commit the buffer to file
-  printf("Commit to buffer\n");
-  printf("Saving file");
   fprintf(fileSave, "%s\n%d\n%s", url, current_depth, fileBuffer);
 
-  printf("\n Closing file");
   fclose(fileSave);
 
   // Remove the file
@@ -290,24 +279,31 @@ char **extractURLs(char* html_buffer, char* current){
     // Update the return position based on the URL found in the buffer
     retPosition = GetNextURL(html_buffer, current, result_buffer, retPosition);
 
+    // early short circuit
+    if (retPosition == -1){
+      break;
+    }
+
     // Validate that URL in result_buffer matches prefix
     // Normalize the URL (i.e. check for specific ext and strip)
-    if ((!strncmp(result_buffer, URL_PREFIX, strlen(URL_PREFIX)))
-        && NormalizeURL(result_buffer) == 1){
+    if (!strncmp(result_buffer, URL_PREFIX, strlen(URL_PREFIX))){
+      if (NormalizeURL(result_buffer) == 1){
+        // initialize space in url list for the URL
+        url_list[j] = malloc(MAX_URL_LENGTH);
+        MALLOC_CHECK(url_list[j]);
+        BZERO(url_list[j], MAX_URL_LENGTH);
+        strncpy(url_list[j], result_buffer, strlen(result_buffer));
 
-      // initialize space in url list for the URL
-      url_list[j] = malloc(MAX_URL_LENGTH);
-      MALLOC_CHECK(url_list[j]);
-      BZERO(url_list[j], MAX_URL_LENGTH);
-      strncpy(url_list[j], result_buffer, strlen(result_buffer));
-
-      // Report the found link
-      printf("[crawler]:Parser find link:%s \n", url_list[j]);
-      j++;
+        // Report the found link
+        printf("[crawler]:Parser find link:%s \n", url_list[j]);
+        j++;
+      } else {
+        fprintf(stderr, "[crawler]:URL %s is not normalized (e.g. pdf's are invalid to crawl). Skipping. \n", result_buffer);
+      }
     } else {
       // Either the normalization of the URL was not successful, or the crawler is
       // trying to crawl a non URL PREFIX website (check crawler.h)
-      fprintf(stderr, "Please only crawl Dartmouth websites, not %s. Example:cs.dartmouth.edu. Skipping. \n", result_buffer);
+      fprintf(stderr, "[crawler]:URL %s was restricted - configure URL_PREFIX in header file. Skipping. \n", result_buffer);
     }
 
     // Grab next URL so clear the buffer
@@ -439,23 +435,16 @@ void updateListLinkToBeVisited(char *url_list[ ], int depth){
 
 // marks the url as visited
 void setURLasVisited(char* url){
-  // Careful with URL -- make sure it is normalized
-  printf("In URL as Visited\n");
-  /*NormalizeURL(url);*/
-
   // grab the DNODE by the hash first
-  printf("Hashing the URL\n");
   int urlHash = hash1(url) % MAX_HASH_SLOT;
   DNODE* target = dict->hash[urlHash];
 
   // loop until find the URL
-  printf("Done hasing\n");
   while (target){
     if (!strcmp(target->key, url)){
-      printf("Match found. Set visited to 1. \n");
+      printf("[crawler]:Identical URL %s found. Skipping. \n", url);
       // found it
       ((URLNODE *)target->data)->visited = 1; // set to visited
-      printf("Done setting visit");
       break;
     }
 
@@ -465,7 +454,6 @@ void setURLasVisited(char* url){
       exit(1);
     }
 
-    printf("No match found. Next target.\n");
     target = target->next;
   }
 }
@@ -652,20 +640,17 @@ int main(int argc, char* argv[]) {
   // (8) Main processing loop of crawler. While there are URL to visit and the depth is not 
   // exceeded keep processing the URLs.
   while ( (URLToBeVisited = getAddressFromTheLinksToBeVisited(&current_depth)) != NULL){
-    printf("\n Current Depth is %d \n", current_depth);
-
     // Get the next URL to be visited from the DNODE list (first one not visited from start)
     if (current_depth > specified_max_depth) {
       // For URLs that are over max_depth, we just set them to visited
       // and continue on
-      printf("Exceeds specified depth of %d \n", specified_max_depth);
+      /*printf("[crawler]: URL %s exceeds specified depth of %d \n", URLToBeVisited, specified_max_depth);*/
       setURLasVisited(URLToBeVisited); 
       continue;
     }
 
     // Get HTML into a string and return as page, 
     /*also save a file (1..N) with correct format (URL, depth, HTML) */
-    printf("Getting page\n");
     page = getPage(URLToBeVisited, current_depth, target_directory);
     if (page == NULL){
       printf("Panic: Cannot crawl URL: %s. \n Marking as visited and continuing \n", URLToBeVisited);
@@ -676,7 +661,6 @@ int main(int argc, char* argv[]) {
     // extract URLs from this page  
     URLList = extractURLs(page, URLToBeVisited);
 
-    printf("Trying to free page\n");
     free(page); // done with page so release
 
     // load into hash table
@@ -688,7 +672,6 @@ int main(int argc, char* argv[]) {
     setURLasVisited(URLToBeVisited);
 
     // clean up the url list
-    printf("Trying to free URL list\n");
     freeURLList(URLList);
 
     // You must include a sleep delay before crawling the next page 
@@ -696,9 +679,9 @@ int main(int argc, char* argv[]) {
     /*sleep(INTERVAL_PER_FETCH);*/
   }
 
-  printf("WOOOO DONEEEE CLEANUP TIME*(********\n\n\n");
 
   // cleanup
+  printf("[crawler]:Done crawling. Cleaning up\n");
   cleanup();
 
   // print stats

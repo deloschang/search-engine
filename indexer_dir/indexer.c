@@ -34,6 +34,7 @@ written to the result file in the format of:
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <unistd.h>
+#include <ctype.h>
 
 #define BZERO(n,m)  memset(n, 0, m)
 
@@ -193,11 +194,18 @@ int getNextWordFromHTMLDocument(char* loadedDocument, char* word, int position){
 
       // make sure it is at least 2 characters long
       if (validLength > 1){
+        // stop recording the words 
         char* endRecord = &(loadedDocument[position + 1]);
 
+        // take what is between endRecord and startRecord and place
+        // into grabWords
         char grabWords[(endRecord - startRecord) + 1];
         BZERO(grabWords, (endRecord - startRecord) + 1);
         strncpy(grabWords, startRecord, (endRecord - startRecord));
+
+        // grabWords now contains the segment of words between tags
+
+        // sanitize this segment by removing apostrophes
 
         printf("%s \n", grabWords);
         // do something
@@ -218,7 +226,7 @@ int getNextWordFromHTMLDocument(char* loadedDocument, char* word, int position){
 
 }
 
-// Strips the buffer of newlines
+// Strips the buffer of non-letters
 void sanitize(char* loadedDocument){
   char* temp;
   char* clear;
@@ -227,24 +235,37 @@ void sanitize(char* loadedDocument){
   temp = malloc(sizeof(char) * strlen(loadedDocument) + 1); 
   BZERO(temp, (strlen(loadedDocument) + 1)); // to be safe
 
-  // use this as replacement
+  // Initialize a clear that is 1 character long.
+  // We will put all valid letters into this and then transfer it
+  // into the temp buffer
   clear = malloc(1);
   BZERO(clear, 1);
 
-  // loop through document
+  // loop through document until end
   for (int i = 0; loadedDocument[i]; i++){
 
     // only copy into buffer if it is valid character
-    if (loadedDocument[i] > 31){
+    // >31 is valid letters according to the ASCII chart
+    // 39 is an apostrophe, sanitize these
+    if (loadedDocument[i] > 31 && loadedDocument[i] != 39){
+
+      // if letters, convert them from upper case to lower case
+      if (loadedDocument[i] >= 'A' && loadedDocument[i] <= 'Z'){
+        loadedDocument[i] = 'a' + loadedDocument[i] - 'A';
+      } 
+
       // put that character into the clearzone
       sprintf(clear, "%c", loadedDocument[i]);
-      // put it into temp
+
+      // append it to temp
       strcat(temp, clear);
     }
   }
 
   // replace original with sanitized version
   strcpy(loadedDocument, temp);
+  
+  // clean up
   free(temp);
   free(clear);
 }

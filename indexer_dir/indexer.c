@@ -34,7 +34,6 @@ written to the result file in the format of:
 #include <sys/stat.h>
 #include <unistd.h>
 
-
 // this function prints generic usage information 
 void printUsage(){
     printf("Normal Usage: ./indexer [TARGET DIRECTORY] [RESULTS FILENAME]\n");
@@ -80,6 +79,7 @@ void validateArgs(int argc, char* argv[]){
 
   free(readableTest);
 
+  // check the exit status
   if ( readableResult != 0){
     fprintf(stderr, "Error: The dir argument %s was not readable. \
     Please enter readable and valid directory. \n", argv[1]);
@@ -87,14 +87,24 @@ void validateArgs(int argc, char* argv[]){
 
     exit(1);
   }
-
 }
 
 int main(int argc, char* argv[]){
+  char* targetDir;
+  int numOfFiles;
 
-  // Input command processing logic
-  //(1) Command line processing on arguments
+  // (1) Validate the parameters
   validateArgs(argc, argv);
+
+  // (2) Grab number of files in target dir to loop through
+  targetDir = argv[1]; // set the directory
+  numOfFiles = dirScan(targetDir); 
+  if (numOfFiles == NULL){
+    fprintf("Error finding files in specified directory: %s", targetDir);
+  }
+
+
+  printf("%d number of files", numOfFiles);
 
   printf("DONESIES\n");
   return 0;

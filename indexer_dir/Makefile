@@ -1,5 +1,7 @@
 CC = gcc
 CFLAGS = -Wall -pedantic -std=c99
+CFLAGS1 = -Wall 
+
 EXEC = indexer
 LDFLAGS = 
 TEST = ./BATS.sh
@@ -8,8 +10,10 @@ TEST = ./BATS.sh
 #OBJS = crawler.o hash.o html.o
 #SRCS = crawler.c hash.c html.c crawler.h hash.h html.h
 
-OBJS = indexer.o
+OBJS = indexer.o file.o
+
 SRCS = indexer.c 
+CFLAGS1SRCS = file.c # need diff flags
 
 # Commands start with TAB not spaces
 $(EXEC): $(OBJS)
@@ -17,6 +21,7 @@ $(EXEC): $(OBJS)
 	$(TEST) # test the indexer once made
 $(OBJS): $(SRCS)
 	$(CC) $(CFLAGS) -c $(SRCS)
+	$(CC) $(CFLAGS1) -c $(CFLAGS1SRCS)
 debug: $(SRCS)
 	$(CC) $(CFLAGS) -g -ggdb -c $(SRCS)
 	$(CC) $(CFLAGS) -g -ggdb -o $(EXEC) $(OBJS)

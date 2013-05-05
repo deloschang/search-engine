@@ -181,22 +181,30 @@ int getNextWordFromHTMLDocument(char* loadedDocument, char* word, int position){
     // if the tagFlag is 0 and has reached this point, 
     // then we must have encountered the '>' and moved 1 position after it
     else if ( tagFlag == 0 && recordFlag){
+      int validLength = 0;
       // start recording the words
       char* startRecord = &(loadedDocument[position]);
 
       // keep going until the closing tag is next
       while ((loadedDocument[position + 1] != '<' && (loadedDocument[position + 1] != '\0')) ){
         position++;
+        validLength++;
       }
 
-      char* endRecord = &(loadedDocument[position + 1]);
+      // make sure it is at least 2 characters long
+      if (validLength > 1){
+        char* endRecord = &(loadedDocument[position + 1]);
 
-      char grabWords[(endRecord - startRecord) + 1];
-      BZERO(grabWords, (endRecord - startRecord) + 1);
-      strncpy(grabWords, startRecord, (endRecord - startRecord));
+        char grabWords[(endRecord - startRecord) + 1];
+        BZERO(grabWords, (endRecord - startRecord) + 1);
+        strncpy(grabWords, startRecord, (endRecord - startRecord));
 
+        printf("%s \n", grabWords);
+        // do something
+      }
+
+      // stop recording because next characters will be a tag
       recordFlag = 0;
-      printf("%s \n", grabWords);
 
     } else {
       position++;
@@ -208,6 +216,37 @@ int getNextWordFromHTMLDocument(char* loadedDocument, char* word, int position){
 
   return -1;
 
+}
+
+// Strips the buffer of newlines
+void sanitize(char* loadedDocument){
+  char* temp;
+  char* clear;
+
+  // set aside buffer for the document
+  temp = malloc(sizeof(char) * strlen(loadedDocument) + 1); 
+  BZERO(temp, (strlen(loadedDocument) + 1)); // to be safe
+
+  // use this as replacement
+  clear = malloc(1);
+  BZERO(clear, 1);
+
+  // loop through document
+  for (int i = 0; loadedDocument[i]; i++){
+
+    // only copy into buffer if it is valid character
+    if (loadedDocument[i] > 31){
+      // put that character into the clearzone
+      sprintf(clear, "%c", loadedDocument[i]);
+      // put it into temp
+      strcat(temp, clear);
+    }
+  }
+
+  // replace original with sanitized version
+  strcpy(loadedDocument, temp);
+  free(temp);
+  free(clear);
 }
 
 // Builds an index from the files in the directory
@@ -235,6 +274,8 @@ void buildIndexFromDir(char* dir, int numOfFiles){
 
     // Load the document from the filepath
     loadedDocument = loadDocument(writable);
+    sanitize(loadedDocument);
+
     free(writable);
 
     // Loop through and index the words

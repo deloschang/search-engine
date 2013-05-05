@@ -103,6 +103,7 @@ char* loadDocument(char* filepath){
   fp = fopen(filepath, "r");
 
   // If unable to find file, skip.
+  // Could be problem of skipped files i.e. (1, 3, 4, 5)
   if (fp == NULL){
     fprintf(stderr, "Could not read file %s. Aborting. \n", filepath);
     exit(1);
@@ -146,7 +147,8 @@ void buildIndexFromDir(char* dir, int numOfFiles){
   char* loadedDocument;
 
   // Loop through each of the files 
-  for (int i = 1; i < numOfFiles + 1; i++){
+  printf("%d", numOfFiles);
+  for (int i = 1; i < numOfFiles; i++){
     char converted_i[1001];
 
     // cut off if more than 1000 digits
@@ -166,10 +168,19 @@ void buildIndexFromDir(char* dir, int numOfFiles){
     free(writable);
 
     // Loop through and index the words
+
+    // Got the HTML page
     printf("%s\n", loadedDocument);
+
+    /*documentId = getDocumentId(d);*/
+    /*currentPosition = 0;*/
+    /*while (currentPosition = getNextWordFromHTMLDocument(loadedDocument, word, position))*/
+    /*updateIndex(index, word, documentId);*/
 
     free(loadedDocument);
   }
+
+  /*saveIndexToFile(index);*/
 
 }
 

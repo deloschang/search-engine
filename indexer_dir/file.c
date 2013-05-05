@@ -18,13 +18,13 @@
 ------------
 
 uses scandir function to retrieve the number of files
-excluding '.' or '..' or '.git' (only numbers)
+
+excluding '.' or '..' or '.git' (only numbers) and non-files (e.g. directories)
 
 */
 
 int dirScan(char *dir) {
   struct dirent **namelist;
-  struct stat checkFile;
 
   int n;
   int saveN;
@@ -47,10 +47,28 @@ int dirScan(char *dir) {
     saveN = n;
     while(n--) {
       // filter only for numbers and files
-      if ( (checkNum = strtol(namelist[n]->d_name, NULL, 10)) && 
-        stat( namelist[n]->d_name, &checkFile ) != 0){
+      if ( (checkNum = strtol(namelist[n]->d_name, NULL, 10)) ){
+        struct stat st;
 
-        // is a valid file (number and file)
+        // Construct the filepath
+        char* readableTest;
+
+        size_t string1 = strlen(dir); 
+        size_t string2 = strlen("/");
+        size_t string3 = strlen(namelist[n]->d_name);
+
+        // Allocate space for teh filepath
+        readableTest = (char*) malloc(string1 + string2 + string3 + 1);
+        sprintf(readableTest, "%s/%s", dir, namelist[n]->d_name);
+
+        stat( readableTest, &st);
+        free(readableTest);
+
+        ////// FILTER FOR FILES ONLY ////////
+        if (S_ISDIR(st.st_mode)){
+          notNum++;
+        }
+
         continue;
 
       } else {

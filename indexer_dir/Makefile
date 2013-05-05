@@ -28,9 +28,9 @@ debug: $(SRCS)
 	$(CC) $(CFLAGS) -g -ggdb -o $(EXEC) $(OBJS)
 	gdb --args indexer ../crawler_dir/data/ index.dat
 
-#valgrind: $(OBJS)
-	#$(CC) $(CFLAGS) -o $(EXEC) $(OBJS)
-	#valgrind --tool=memcheck --leak-check=yes ./crawler www.cs.dartmouth.edu ./data 2
+valgrind: $(OBJS)
+	$(CC) $(CFLAGS) -o $(EXEC) $(OBJS)
+	valgrind --tool=memcheck --leak-check=full --track-origins=yes ./indexer ../crawler_dir/data index.dat
 
 clean:
 	rm -f *~

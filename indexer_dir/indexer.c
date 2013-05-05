@@ -36,7 +36,10 @@ written to the result file in the format of:
 #include <unistd.h>
 #include <ctype.h>
 
-#define BZERO(n,m)  memset(n, 0, m)
+#include "indexer.h"
+
+// create the index
+INVERTED_INDEX* index = NULL;
 
 
 // this function prints generic usage information 
@@ -145,6 +148,19 @@ char* loadDocument(char* filepath){
 
 /****
 
+*updateIndex*
+------------
+
+Updates the inverted index by hashing the word 
+
+*/
+void updateIndex(INVERTED_INDEX* index, char* word, int documentId){
+  /*printf (" reached ** %s\n", word);*/
+
+}
+
+/****
+
 *getNextWordFromHTMLDocument*
 ------------
 
@@ -152,7 +168,8 @@ Grabs the next word from HTML Document and returns the position of the word.
 This is used by a bigger loop to continuously index the HTML page
 
 */
-int getNextWordFromHTMLDocument(char* loadedDocument, char* word, int position){
+int getNextWordFromHTMLDocument(char* loadedDocument, char* word, int position, 
+INVERTED_INDEX* index, int documentId){
   int tagFlag = 0;
   int recordFlag = 1;
   char character;
@@ -211,12 +228,15 @@ int getNextWordFromHTMLDocument(char* loadedDocument, char* word, int position){
 
           // make sure the word is at least 3 characters long
           if ( strlen(word) > 2){
-            printf ("** %s\n", word);
-            // do something
 
+            // update the index with this word
+            updateIndex(index, word, documentId);
           }
+
+          // get the next word
           word = strtok(NULL, " "); // uses null pointer
         }
+        return(position + 1);
 
       }
 
@@ -226,14 +246,12 @@ int getNextWordFromHTMLDocument(char* loadedDocument, char* word, int position){
     } else {
       position++;
     }
-
-    /*printf("Nothing, moving on \n");*/
-
   }
 
   return -1;
 
 }
+
 
 // Strips the buffer of non-letters
 void sanitize(char* loadedDocument){
@@ -316,8 +334,7 @@ void sanitize(char* loadedDocument){
 }
 
 // Builds an index from the files in the directory
-/*void buildIndexFromDir(char* dir, int numOfFiles, INVERTED_INDEX* index){*/
-void buildIndexFromDir(char* dir, int numOfFiles){
+void buildIndexFromDir(char* dir, int numOfFiles, INVERTED_INDEX* index){
   char* writable;
   char* loadedDocument;
   int currentPosition;
@@ -350,13 +367,15 @@ void buildIndexFromDir(char* dir, int numOfFiles){
     /*printf("%s\n", loadedDocument);*/
 
     /*documentId = getDocumentId(d);*/
+    int documentId = i;
 
     char* word = NULL;
     currentPosition = 0;
-    while ( (currentPosition = getNextWordFromHTMLDocument(loadedDocument, word, currentPosition)) != -1){
-      printf("currentPos %d \n", currentPosition);
-      /*[>updateIndex(index, word, documentId);<]*/
-    }
+
+    // Updating the index is done within the getNextWordFromHTMLDocument function
+    while ( (currentPosition = getNextWordFromHTMLDocument(
+      loadedDocument, word, currentPosition, index, documentId)) != -1){ }
+
     free(loadedDocument);
   }
 
@@ -364,6 +383,20 @@ void buildIndexFromDir(char* dir, int numOfFiles){
 
 }
 
+
+int initStructures(){
+  // create the index structure
+  index = (INVERTED_INDEX*)malloc(sizeof(INVERTED_INDEX));
+  MALLOC_CHECK(index);
+  index->start = index->end = NULL;
+  BZERO(index, sizeof(INVERTED_INDEX));
+
+  if (index == NULL){
+    return 0;
+  }
+
+  return 1;
+}
 
 int main(int argc, char* argv[]){
   char* targetDir;
@@ -376,9 +409,15 @@ int main(int argc, char* argv[]){
   targetDir = argv[1]; // set the directory
   numOfFiles = dirScan(targetDir); 
 
-  // (3) Loop through files to build index
-  /*buildIndexFromDir(targetDir, numOfFiles, index);*/
-  buildIndexFromDir(targetDir, numOfFiles);
+  // (3) Initialize the inverted index
+  if (initStructures() == 0){
+    fprintf(stderr, "Could not initialize data structures. Exiting");
+    exit(1);
+  }
 
+  // (4) Loop through files to build index
+  buildIndexFromDir(targetDir, numOfFiles, index);
+
+  free(index);
   return 0;
 }

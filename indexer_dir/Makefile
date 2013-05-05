@@ -12,7 +12,7 @@ TEST = ./BATS.sh
 
 OBJS = indexer.o file.o
 
-SRCS = indexer.c 
+SRCS = indexer.c indexer.h
 CFLAGS1SRCS = file.c # need diff flags
 
 # Commands start with TAB not spaces

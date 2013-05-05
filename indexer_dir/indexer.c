@@ -35,6 +35,8 @@ written to the result file in the format of:
 #include <sys/stat.h>
 #include <unistd.h>
 
+#define BZERO(n,m)  memset(n, 0, m)
+
 
 // this function prints generic usage information 
 void printUsage(){
@@ -140,14 +142,82 @@ char* loadDocument(char* filepath){
   return html;
 }
 
+/****
+
+*getNextWordFromHTMLDocument*
+------------
+
+Grabs the next word from HTML Document and returns the position of the word.
+This is used by a bigger loop to continuously index the HTML page
+
+*/
+int getNextWordFromHTMLDocument(char* loadedDocument, char* word, int position){
+  int tagFlag = 0;
+  int recordFlag = 1;
+  char character;
+
+  while ( loadedDocument[position] != 0) {
+    character = loadedDocument[position];
+    if ( character == '<' ){
+      // if recordFlag is set, stop the recording
+      if (recordFlag){
+        recordFlag = 0;
+      }
+
+      tagFlag = 1;
+      position++; // keep moving along the HTML (skipping the tag)
+
+    } else if ( character == '>'){
+      tagFlag = 0;
+      position++;
+
+      // start recording at this position; set the recordFlag
+      // must be opening tag
+      if (!recordFlag){
+        recordFlag = 1;
+      }
+    } 
+
+    // if the tagFlag is 0 and has reached this point, 
+    // then we must have encountered the '>' and moved 1 position after it
+    else if ( tagFlag == 0 && recordFlag){
+      // start recording the words
+      char* startRecord = &(loadedDocument[position]);
+
+      // keep going until the closing tag is next
+      while ((loadedDocument[position + 1] != '<' && (loadedDocument[position + 1] != '\0')) ){
+        position++;
+      }
+
+      char* endRecord = &(loadedDocument[position + 1]);
+
+      char grabWords[(endRecord - startRecord) + 1];
+      BZERO(grabWords, (endRecord - startRecord) + 1);
+      strncpy(grabWords, startRecord, (endRecord - startRecord));
+
+      recordFlag = 0;
+      printf("%s \n", grabWords);
+
+    } else {
+      position++;
+    }
+
+    /*printf("Nothing, moving on \n");*/
+
+  }
+
+  return -1;
+
+}
+
 // Builds an index from the files in the directory
 /*void buildIndexFromDir(char* dir, int numOfFiles, INVERTED_INDEX* index){*/
 void buildIndexFromDir(char* dir, int numOfFiles){
   char* writable;
   char* loadedDocument;
+  int currentPosition;
 
   // Loop through each of the files 
-  printf("%d", numOfFiles);
   for (int i = 1; i < numOfFiles; i++){
     char converted_i[1001];
 
@@ -173,10 +243,13 @@ void buildIndexFromDir(char* dir, int numOfFiles){
     /*printf("%s\n", loadedDocument);*/
 
     /*documentId = getDocumentId(d);*/
-    /*currentPosition = 0;*/
-    /*while (currentPosition = getNextWordFromHTMLDocument(loadedDocument, word, position))*/
-    /*updateIndex(index, word, documentId);*/
 
+    char* word = NULL;
+    currentPosition = 0;
+    while ( (currentPosition = getNextWordFromHTMLDocument(loadedDocument, word, currentPosition)) != -1){
+      printf("currentPos %d \n", currentPosition);
+      /*[>updateIndex(index, word, documentId);<]*/
+    }
     free(loadedDocument);
   }
 

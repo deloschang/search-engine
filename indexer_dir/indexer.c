@@ -205,10 +205,19 @@ int getNextWordFromHTMLDocument(char* loadedDocument, char* word, int position){
 
         // grabWords now contains the segment of words between tags
 
-        // sanitize this segment by removing apostrophes
+        // split by space to get words
+        word = strtok(grabWords, " ");
+        while (word != NULL){
 
-        printf("%s \n", grabWords);
-        // do something
+          // make sure the word is at least 3 characters long
+          if ( strlen(word) > 2){
+            printf ("** %s\n", word);
+            // do something
+
+          }
+          word = strtok(NULL, " "); // uses null pointer
+        }
+
       }
 
       // stop recording because next characters will be a tag
@@ -244,10 +253,46 @@ void sanitize(char* loadedDocument){
   // loop through document until end
   for (int i = 0; loadedDocument[i]; i++){
 
-    // only copy into buffer if it is valid character
-    // >31 is valid letters according to the ASCII chart
+    // only copy into buffer if it is valid by the following parameters
+
+    // any letter or space 
+    // any number
+
+    // 32 is space
     // 39 is an apostrophe, sanitize these
-    if (loadedDocument[i] > 31 && loadedDocument[i] != 39){
+    if (loadedDocument[i] > 13){
+    /*if (loadedDocument[i] > 31){*/
+    /*if (loadedDocument[i] > 44 || loadedDocument[i] == 32 || loadedDocument[i] == '&'){*/
+
+      // filter apostrophe and periods and commas and quotes
+      if (loadedDocument[i] == 39 || loadedDocument[i] == ',' 
+        || loadedDocument[i] == '.'
+        || loadedDocument[i] == '"'){
+        continue;
+      }
+      
+      // filter out '!' '#' '$' etc
+      if ((loadedDocument[i] >= 33 && loadedDocument[i] <=44) && 
+        (loadedDocument[i] != '&')){
+        continue;
+      }
+
+      // filter characters like ':' ';' '@' '?' etc.
+      // make sure '<' and '>' pass through 
+      if (loadedDocument[i] >= 59 && loadedDocument[i] <= 64
+        && loadedDocument[i] != 60 && loadedDocument[i] != 62){
+        continue;
+      }
+      
+      // filter characters like '[' '\' '^' '_'
+      if (loadedDocument[i] >= 91 && loadedDocument[i] <= 96){
+        continue;
+      }
+
+      // filter characters like '{' '|' '~'
+      if (loadedDocument[i] >= 123 && loadedDocument[i] <= 127){
+        continue;
+      }
 
       // if letters, convert them from upper case to lower case
       if (loadedDocument[i] >= 'A' && loadedDocument[i] <= 'Z'){

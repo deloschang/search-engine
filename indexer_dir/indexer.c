@@ -96,17 +96,61 @@ void validateArgs(int argc, char* argv[]){
   }
 }
 
+char* loadDocument(char* filepath){
+  FILE* fp;
+  char* html = NULL;
+
+  fp = fopen(filepath, "r");
+
+  // If unable to find file, skip.
+  if (fp == NULL){
+    fprintf(stderr, "Could not read file %s. Aborting. \n", filepath);
+    exit(1);
+  }
+
+  // Read from the file and put it in a buffer
+  if (fseek(fp, 0L, SEEK_END) == 0){
+    long tempFileSize = ftell(fp);
+    if (tempFileSize == -1){
+      fprintf(stderr, "Error: file size not valid \n");
+      exit(1);
+    }
+
+    // Allocate buffer to that size
+    // Length of buffer should be the same of output of wget + 1
+    html = malloc(sizeof(char) * (tempFileSize + 2) ); // +1 for terminal byte
+
+    // Rewind to top in preparation for reading
+    rewind(fp);
+
+    // Read file to buffer
+    size_t readResult = fread(html, sizeof(char), tempFileSize, fp);
+
+    if (readResult == 0){
+      fprintf(stderr, "Error reading the file into buffer. Aborting. \n");
+      exit(1);
+    } else {
+      readResult++;
+      html[readResult] = '\0'; // add terminal byte
+    }
+  }
+  
+  fclose(fp);
+  return html;
+}
+
 // Builds an index from the files in the directory
 /*void buildIndexFromDir(char* dir, int numOfFiles, INVERTED_INDEX* index){*/
 void buildIndexFromDir(char* dir, int numOfFiles){
   char* writable;
+  char* loadedDocument;
 
   // Loop through each of the files 
   for (int i = 1; i < numOfFiles + 1; i++){
-    char converted_i[15];
+    char converted_i[1001];
 
-    // cut off if more than 15 digits
-    snprintf(converted_i, 15, "%d", i);
+    // cut off if more than 1000 digits
+    snprintf(converted_i, 1000, "%d", i);
 
     size_t string1 = strlen(dir); 
     size_t string2 = strlen("/");
@@ -117,7 +161,14 @@ void buildIndexFromDir(char* dir, int numOfFiles){
     // Construct the filepath
     sprintf(writable, "%s/%s", dir, converted_i);
 
+    // Load the document from the filepath
+    loadedDocument = loadDocument(writable);
     free(writable);
+
+    // Loop through and index the words
+    printf("%s\n", loadedDocument);
+
+    free(loadedDocument);
   }
 
 }

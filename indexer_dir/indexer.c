@@ -29,11 +29,73 @@ written to the result file in the format of:
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <unistd.h>
 
+
+// this function prints generic usage information 
+void printUsage(){
+    printf("Normal Usage: ./indexer [TARGET DIRECTORY] [RESULTS FILENAME]\n");
+    printf("Testing Usage: ./indexer [TARGET DIRECTORY] [RESULTS FILENAME] [RESULTS FILENAME] [REWRITTEN FILENAME]\n");
+}
+
+// this function will validate the arguments passed
+void validateArgs(int argc, char* argv[]){
+  // struct for checking whether directory exists
+  struct stat s;
+
+  // test URL with default correct exit status
+  int readableResult = 0;
+  char* readableTest = NULL; // dynamically allocate to prevent overflow
+
+  // check for correct number of parameters first
+  if ( (argc != 3) && (argc != 5) ){
+    fprintf(stderr, "Error: insufficient arguments. 3 required or 5 (testing), you provided %d \n", argc);
+    printUsage();
+
+    exit(1);
+  }
+
+  // Validate that directory exists
+  if ( stat(argv[1], &s) != 0){
+    fprintf(stderr, "Error: The dir argument %s was not found.  Please \
+    enter a readable and valid directory. \n", argv[1]);
+    printUsage();
+
+    exit(1);
+  }
+
+  // Validate that directory is readable
+  // Allocate memory to prevent overflow
+  size_t len1 = strlen("if [[ -r "), len2 = strlen(argv[1]), len3 = strlen(" ]]; then exit 0; else exit 1; fi");
+  readableTest = (char*) malloc(len1 + len2 + len3 + 1);
+
+  memcpy(readableTest, "if [[ -r ", len1);
+  memcpy(readableTest+len1, argv[1], len2);
+  strcat(readableTest, " ]]; then exit 0; else exit 1; fi");
+
+  readableResult = system(readableTest);
+
+  free(readableTest);
+
+  if ( readableResult != 0){
+    fprintf(stderr, "Error: The dir argument %s was not readable. \
+    Please enter readable and valid directory. \n", argv[1]);
+    printUsage();
+
+    exit(1);
+  }
+
+}
 
 int main(int argc, char* argv[]){
 
-  printf("Hello world.");
+  // Input command processing logic
+  //(1) Command line processing on arguments
+  validateArgs(argc, argv);
 
+  printf("DONESIES\n");
   return 0;
 }

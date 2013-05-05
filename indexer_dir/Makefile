@@ -2,7 +2,7 @@ CC = gcc
 CFLAGS = -Wall -pedantic -std=c99
 EXEC = indexer
 LDFLAGS = 
-#TEST = ./crawler_test.sh
+TEST = ./BATS.sh
 
 # my project details
 #OBJS = crawler.o hash.o html.o
@@ -14,13 +14,14 @@ SRCS = indexer.c
 # Commands start with TAB not spaces
 $(EXEC): $(OBJS)
 	$(CC) $(CFLAGS) -o $(EXEC) $(OBJS)
-	#$(TEST) # test the indexer once made
+	$(TEST) # test the indexer once made
 $(OBJS): $(SRCS)
 	$(CC) $(CFLAGS) -c $(SRCS)
 debug: $(SRCS)
 	$(CC) $(CFLAGS) -g -ggdb -c $(SRCS)
 	$(CC) $(CFLAGS) -g -ggdb -o $(EXEC) $(OBJS)
 	gdb --args indexer ../crawler_dir/data/ index.dat
+
 #valgrind: $(OBJS)
 	#$(CC) $(CFLAGS) -o $(EXEC) $(OBJS)
 	#valgrind --tool=memcheck --leak-check=yes ./crawler www.cs.dartmouth.edu ./data 2
@@ -32,5 +33,8 @@ clean:
 	rm -f *.o
 	rm -f *.gch
 	rm -f core.*
+
+cleanlog:
+	rm *log.*
 
 

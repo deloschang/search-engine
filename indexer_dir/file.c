@@ -57,21 +57,24 @@ int dirScan(char *dir) {
         size_t string2 = strlen("/");
         size_t string3 = strlen(namelist[n]->d_name);
 
-        // Allocate space for teh filepath
+        // Allocate space for the filepath
         readableTest = (char*) malloc(string1 + string2 + string3 + 1);
         sprintf(readableTest, "%s/%s", dir, namelist[n]->d_name);
 
-        stat( readableTest, &st);
-        free(readableTest);
-
         ////// FILTER FOR FILES ONLY ////////
-        if (S_ISDIR(st.st_mode)){
-          notNum++;
+        if ( stat(readableTest, &st) == 0){
+          if (S_ISDIR(st.st_mode)){
+            // not a file, don't count
+            notNum++;
+          }
+        } else {
+          fprintf(stderr, "File at %s does not exist! \n", readableTest);
         }
 
-        continue;
+        free(readableTest);
 
       } else {
+        // not in correct number format, don't count
         notNum++;
       }
       free(namelist[n]);

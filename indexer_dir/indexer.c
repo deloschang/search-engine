@@ -170,7 +170,7 @@ void buildIndexFromDir(char* dir, int numOfFiles){
     // Loop through and index the words
 
     // Got the HTML page
-    printf("%s\n", loadedDocument);
+    /*printf("%s\n", loadedDocument);*/
 
     /*documentId = getDocumentId(d);*/
     /*currentPosition = 0;*/
@@ -200,7 +200,5 @@ int main(int argc, char* argv[]){
   /*buildIndexFromDir(targetDir, numOfFiles, index);*/
   buildIndexFromDir(targetDir, numOfFiles);
 
-
-  printf("DONESIES\n");
   return 0;
 }

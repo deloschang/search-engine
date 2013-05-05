@@ -1,15 +1,11 @@
 README FILE
 ================
 
-* Makefile *
-  - make cleanlog will clean both log and crawled data files
+The indexer will iterate through all the files (directories filtered
+out)in the target directory that are positive non-zero ints (from the crawler). So:
 
-* Miscellaneous *
-  - Temp files are removed after they are created at end of function.
-  - Crawler will print out statistics on how many pages it crawled and how many pages it could not crawl
-  - If the seed URL cannot be crawled, the program aborts.
-  - If non-seed URLs cannot be crawled, they are tried twice (instead of 20 times) and then skipped.
+FILES:
+ - 1 --> OK
+ - .. --> NOT ITERATED
+ - .git --> NOT ITERATED
 
-* Debugging *
-  - Use make valgrind to check for memory leaks
-  - crawler_test.sh is a script that automatically tests different basic parameters (sanity check)

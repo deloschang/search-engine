@@ -30,9 +30,11 @@ written to the result file in the format of:
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <unistd.h>
+
 
 // this function prints generic usage information 
 void printUsage(){
@@ -71,6 +73,11 @@ void validateArgs(int argc, char* argv[]){
   size_t len1 = strlen("if [[ -r "), len2 = strlen(argv[1]), len3 = strlen(" ]]; then exit 0; else exit 1; fi");
   readableTest = (char*) malloc(len1 + len2 + len3 + 1);
 
+  if (readableTest == NULL){
+    fprintf(stderr, "Out of memory! \n ");
+    exit(1);
+  }
+
   memcpy(readableTest, "if [[ -r ", len1);
   memcpy(readableTest+len1, argv[1], len2);
   strcat(readableTest, " ]]; then exit 0; else exit 1; fi");
@@ -89,6 +96,33 @@ void validateArgs(int argc, char* argv[]){
   }
 }
 
+// Builds an index from the files in the directory
+/*void buildIndexFromDir(char* dir, int numOfFiles, INVERTED_INDEX* index){*/
+void buildIndexFromDir(char* dir, int numOfFiles){
+  char* writable;
+
+  // Loop through each of the files 
+  for (int i = 1; i < numOfFiles + 1; i++){
+    char converted_i[15];
+
+    // cut off if more than 15 digits
+    snprintf(converted_i, 15, "%d", i);
+
+    size_t string1 = strlen(dir); 
+    size_t string2 = strlen("/");
+    size_t string3 = strlen(converted_i);
+
+    writable = (char*) malloc(string1 + string2 + string3 + 1);
+
+    // Construct the filepath
+    sprintf(writable, "%s/%s", dir, converted_i);
+
+    free(writable);
+  }
+
+}
+
+
 int main(int argc, char* argv[]){
   char* targetDir;
   int numOfFiles;
@@ -99,12 +133,11 @@ int main(int argc, char* argv[]){
   // (2) Grab number of files in target dir to loop through
   targetDir = argv[1]; // set the directory
   numOfFiles = dirScan(targetDir); 
-  if (numOfFiles == NULL){
-    fprintf("Error finding files in specified directory: %s", targetDir);
-  }
 
+  // (3) Loop through files to build index
+  /*buildIndexFromDir(targetDir, numOfFiles, index);*/
+  buildIndexFromDir(targetDir, numOfFiles);
 
-  printf("%d number of files", numOfFiles);
 
   printf("DONESIES\n");
   return 0;

@@ -19,11 +19,12 @@ CFLAGS1SRCS = file.c # need diff flags
 $(EXEC): $(OBJS)
 	$(CC) $(CFLAGS) -o $(EXEC) $(OBJS)
 	$(TEST) # test the indexer once made
-$(OBJS): $(SRCS)
+$(OBJS): $(SRCS) $(CFLAGS1SRCS)
 	$(CC) $(CFLAGS) -c $(SRCS)
 	$(CC) $(CFLAGS1) -c $(CFLAGS1SRCS)
 debug: $(SRCS)
 	$(CC) $(CFLAGS) -g -ggdb -c $(SRCS)
+	$(CC) $(CFLAGS1) -c $(CFLAGS1SRCS)
 	$(CC) $(CFLAGS) -g -ggdb -o $(EXEC) $(OBJS)
 	gdb --args indexer ../crawler_dir/data/ index.dat
 

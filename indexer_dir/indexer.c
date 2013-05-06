@@ -53,6 +53,7 @@ void printUsage(){
 void validateArgs(int argc, char* argv[]){
   // struct for checking whether directory exists
   struct stat s;
+  struct stat checkDest;
 
   // test URL with default correct exit status
   int readableResult = 0;
@@ -73,6 +74,11 @@ void validateArgs(int argc, char* argv[]){
     printUsage();
 
     exit(1);
+  }
+
+  // Warn user that the destination file will be overwritten
+  if ( stat(argv[2], &checkDest) != 0){
+    fprintf(stderr, "Warning: The file %s already exists and will be overwritten", argv[2]);
   }
 
   // Validate that directory is readable
@@ -212,7 +218,6 @@ int updateIndex(INVERTED_INDEX* index, char* word, int documentId){
     // occupied, move down the list checking for identical WordNode
     WordNode* checkWordNode = index->hash[wordHash];
 
-    printf("Collision \n");
 
     WordNode* matchedWordNode;
     WordNode* endWordNode = NULL;
@@ -252,7 +257,6 @@ int updateIndex(INVERTED_INDEX* index, char* word, int documentId){
     if (matchedWordNode != NULL){
       // WordNode already exists
       // see if document Node exists
-      printf("Word exists! See if doc Node exists \n");
 
       // grab first of the document nodes
       DocumentNode* matchDocNode = matchedWordNode->page;
@@ -260,7 +264,6 @@ int updateIndex(INVERTED_INDEX* index, char* word, int documentId){
 
       while (matchDocNode != NULL){
         if ( (matchDocNode->next == NULL) ){
-          printf("Document does not already exists!\n");
 
           // end of the doc node listing
           endDocNode = matchDocNode;
@@ -291,7 +294,6 @@ int updateIndex(INVERTED_INDEX* index, char* word, int documentId){
         matchDocNode = matchDocNode->next;
         // check if the matched Doc Node has the same document ID
         if (matchDocNode->document_id == documentId){
-          printf("Document does already exist!\n");
           // this is the correct document to increase page frequency
           matchDocNode->page_word_frequency++;
           break;
@@ -299,8 +301,6 @@ int updateIndex(INVERTED_INDEX* index, char* word, int documentId){
       }
     } else {
       // WordNode doesn't exist, create new
-      printf("Word doesn't exist yet in list \n");
-
       ////// IDIOM //////
       WordNode* wordNode = (WordNode*)malloc(sizeof(WordNode));
       if (wordNode == NULL){
@@ -572,7 +572,7 @@ void buildIndexFromDir(char* dir, int numOfFiles, INVERTED_INDEX* index){
       }
 
     free(loadedDocument);
-    printf("----Done, next document \n-----");
+    printf("----Done, next document \n");
   }
 
 
@@ -595,12 +595,64 @@ int initStructures(){
 
 // saves the inverted index into a file
 // returns 1 if successful, 0 if not
-int saveIndexToFile(index){
+int saveIndexToFile(INVERTED_INDEX* index, char* targetFile){
+  WordNode* startWordNode;
+  DocumentNode* startPage;
+  FILE* fp;
 
+  int count;
+
+  // open the targeted file
+  fp = fopen(targetFile, "w");
+
+  if (fp == NULL){
+    fprintf(stderr, "Error writing to the file %s", targetFile);
+  }
+
+  // loop through every possible hash slot 
+  for(int i=0; i < MAX_NUMBER_OF_SLOTS; i++){
+    // loop through every word in the list
+    for ( startWordNode = index->hash[i]; startWordNode != NULL; startWordNode=startWordNode->next){
+
+      count = 0;
+      // count the number of documents
+      for (startPage = (DocumentNode*) startWordNode->page; 
+        startPage != NULL; startPage = startPage->next){
+
+        count++;
+      }
+
+      /*fprintf(fp, "%s %d ", (char*) startWordNode->word, count);*/
+      fprintf(fp, "%s %d ", startWordNode->word, count);
+
+      // rest are docID and number of occurrences
+      // loop again
+      for (startPage = startWordNode->page; startPage != NULL; startPage=startPage->next){
+        // keep adding the doc identifier and the page freq until no more
+        fprintf(fp, "%d %d ", startPage->document_id, startPage->page_word_frequency);
+      }
+      fprintf(fp, "\n");
+    }
+  }
+
+  // sort the outputted list with a command
+
+  size_t string1 = "sort -o ";
+  size_t string2 = strlen(targetFile);
+  char* sortCommand = (char*) malloc(string1 + string2 + string2 + 1);
+
+  sprintf(sortCommand, "%s%s %s", "sort -o ", targetFile, targetFile); 
+  system(sortCommand);
+
+
+  // writing is done; free resources
+  fclose(fp);
+  return 1;
 }
 
 int main(int argc, char* argv[]){
   char* targetDir;
+  char* targetFile;
   int numOfFiles;
 
   // (1) Validate the parameters
@@ -608,6 +660,7 @@ int main(int argc, char* argv[]){
 
   // (2) Grab number of files in target dir to loop through
   targetDir = argv[1]; // set the directory
+  targetFile = argv[2]; // set the new file to be written to 
   numOfFiles = dirScan(targetDir); 
 
   // (3) Initialize the inverted index
@@ -621,11 +674,15 @@ int main(int argc, char* argv[]){
   LOG("Index finished building");
 
   // (5) Save the index to a file
-  int saveResult = saveIndexToFile(index);
+  int saveResult = saveIndexToFile(index, targetFile);
   if (saveResult != 1){
     fprintf(stderr, "Could not save index to file! \n");
     exit(1);
+  } else {
+    LOG("Writing index to file finished");
   }
+
+  // clean up here
 
   // free all the DocNodes and WordNodes
   free(index);

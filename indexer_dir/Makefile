@@ -41,6 +41,7 @@ clean:
 	rm -f core.*
 
 cleanlog:
-	rm *log.*
+	rm -f *log.*
+	rm -f index.dat
 
 

@@ -62,11 +62,17 @@ let j++
 #testCmd[j]="./indexer ../crawler_dir/data index.dat"
 #let j++
 
+# test nonexistent file input for 5 parameters
+testName[j]="$j. testing nonexistent file arguments for filename index.dat (5 parameters)"
+testExpected[j]="Error: Nonexistent file"
+testCmd[j]="./indexer ../crawler_dir/data/ nonexistent1242.dat index.dat index_new.dat"
+let j++
+
 # correct input for 5 parameters
-#testName[j]="$j. testing correct input arguments for filename index.dat (5 parameters)"
-#testExpected[j]="No errors expected."
-#testCmd[j]="./indexer ../crawler_dir/data/ index.dat index.dat index_new.dat"
-#let j++
+testName[j]="$j. testing correct input arguments for filename index.dat (5 parameters)"
+testExpected[j]="No errors expected (or warning that file will be overwritten)"
+testCmd[j]="./indexer ../crawler_dir/data/ index.dat index.dat index_new.dat"
+let j++
 
 
 iterate=0

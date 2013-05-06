@@ -37,6 +37,7 @@ written to the result file in the format of:
 #include <ctype.h>
 
 #include "indexer.h"
+#include "hash.h"
 
 // create the index
 INVERTED_INDEX* index = NULL;
@@ -151,12 +152,58 @@ char* loadDocument(char* filepath){
 *updateIndex*
 ------------
 
-Updates the inverted index by hashing the word 
+Updates the inverted index by hashing the word and storing it in a 
+WordNode with accompanying DocumentNodes
+
+returns 1 if successful
+returns 0 if false
 
 */
-void updateIndex(INVERTED_INDEX* index, char* word, int documentId){
-  /*printf (" reached ** %s\n", word);*/
+int updateIndex(INVERTED_INDEX* index, char* word, int documentId){
+  // hash first
+  int wordHash = hash1(word) % MAX_NUMBER_OF_SLOTS;
 
+  // check if hash slot occupied first?
+  if (index->hash[wordHash] != NULL){
+    // create Document node first
+    DocumentNode* docNode = (DocumentNode*)malloc(sizeof(DocumentNode*));
+    
+    if (docNode == NULL){
+      fprintf(stderr, "Out of memory for indexing! Aborting. \n");
+      return 0;
+    }
+
+    MALLOC_CHECK(docNode);
+    BZERO(docNode, sizeof(DocumentNode*));
+    docNode->next = NULL; // first in hash slot, no connections yet
+    docNode->document_id = documentID;
+    docNode->page_word_frequency = ;
+
+    // create Word Node of word and document node first
+    WordNode* wordNode = (WordNode*)malloc(sizeof(WordNode*));
+    if (wordNode == NULL){
+      fprintf(stderr, "Out of memory for indexing! Aborting. \n");
+      return 0;
+    }
+
+    MALLOC_CHECK(wordNode);
+    BZERO(wordNode, sizeof(wordNode));
+    wordNode->start = wordNode->end = NULL; // first in hash slot, no connections
+    wordNode->word = word;
+    wordNode->page = docNode; // pointer to 1st element of page list
+
+
+    return 1;
+  } else {
+    // occupied, move down the list checking for identical WordNode
+
+  }
+
+
+
+  // do indexing here
+  /*printf (" reached ** %s\n", word);*/
+  return 1;
 }
 
 /****
@@ -230,14 +277,19 @@ INVERTED_INDEX* index, int documentId){
           if ( strlen(word) > 2){
 
             // update the index with this word
-            updateIndex(index, word, documentId);
+            int result = updateIndex(index, word, documentId);
+
+            // check if index update was successful
+            if (result != 1){
+              fprintf(stderr, "Could not successfully index %s", word);
+
+            }
           }
 
           // get the next word
           word = strtok(NULL, " "); // uses null pointer
         }
         return(position + 1);
-
       }
 
       // stop recording because next characters will be a tag

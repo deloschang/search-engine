@@ -10,9 +10,9 @@ TEST = ./BATS.sh
 #OBJS = crawler.o hash.o html.o
 #SRCS = crawler.c hash.c html.c crawler.h hash.h html.h
 
-OBJS = indexer.o file.o
+OBJS = indexer.o hash.o file.o 
 
-SRCS = indexer.c indexer.h
+SRCS = indexer.c hash.c indexer.h hash.h
 CFLAGS1SRCS = file.c # need diff flags
 
 # Commands start with TAB not spaces

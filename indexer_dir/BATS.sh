@@ -81,10 +81,10 @@ while (($iterate < $j)); do
 
 
   ## send test result to the log
-  echo ${testName[iterate]} >> "$indexer_testlog"
-  echo ${testExpected[iterate]} >> "$indexer_testlog"
-  echo -n "Output -->" >> "$indexer_testlog"
-  ${testCmd[iterate]} >> "$indexer_testlog" 2>&1
+  #echo ${testName[iterate]} >> "$indexer_testlog"
+  #echo ${testExpected[iterate]} >> "$indexer_testlog"
+  #echo -n "Output -->" >> "$indexer_testlog"
+  #${testCmd[iterate]} >> "$indexer_testlog" 2>&1
   
   # increment and test next
   let iterate++

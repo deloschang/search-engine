@@ -1,6 +1,9 @@
 README FILE
 ================
 
+0. Entering in 5 parameters enters DEBUG mode which will (1) index the
+   files normally and (2) reload it back into memory and output it again 
+   
 1. The indexer will iterate through all the files (directories filtered
 out)in the target directory that are positive non-zero ints (from the crawler). So:
 
@@ -30,3 +33,4 @@ practical based on the crawler.
   
 5. The reload file for the 5 parameter DEBUG mode will overwrite files
    (with warning)
+

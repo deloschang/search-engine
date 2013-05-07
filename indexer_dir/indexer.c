@@ -108,7 +108,27 @@ void validateArgs(int argc, char* argv[]){
 
     exit(1);
   }
+
+
 }
+
+// For the debug mode, this validates the parameters
+void validateDebugArgs(char* loadFile, char* writeReload){
+  struct stat checkLoadFile;
+  struct stat checkWriteReload;
+  // Validate that loadFile exists
+  if ( stat(loadFile, &checkLoadFile) != 0){
+    fprintf(stderr, "Error: The target file argument %s was not found \n", loadFile);
+    printUsage();
+    exit(1);
+  }
+
+  // warn user that the writeReload will be overwritten
+  if ( stat(writeReload, &checkWriteReload) == 0){
+    fprintf(stderr, "Warning: The target file argument %s will be overwritten \n", writeReload);
+  }
+}
+
 
 char* loadDocument(char* filepath){
   FILE* fp;
@@ -453,26 +473,17 @@ void sanitize(char* loadedDocument){
   temp = malloc(sizeof(char) * strlen(loadedDocument) + 1); 
   BZERO(temp, (strlen(loadedDocument) + 1)); // to be safe
 
-  // Initialize a clear that is 1 character long.
+  // Initialize a clear 
   // We will put all valid letters into this and then transfer it
   // into the temp buffer
-  clear = malloc(1);
-  BZERO(clear, 1);
+  clear = malloc(sizeof(char) + 1);
+  BZERO(clear, sizeof(char));
 
   // loop through document until end
   for (int i = 0; loadedDocument[i]; i++){
 
     // only copy into buffer if it is valid by the following parameters
-
-    // any letter or space 
-    // any number
-
-    // 32 is space
-    // 39 is an apostrophe, sanitize these
     if (loadedDocument[i] > 13){
-    /*if (loadedDocument[i] > 31){*/
-    /*if (loadedDocument[i] > 44 || loadedDocument[i] == 32 || loadedDocument[i] == '&'){*/
-
       // filter apostrophe and periods and commas and quotes
       if (loadedDocument[i] == 39 || loadedDocument[i] == ',' 
         || loadedDocument[i] == '.'
@@ -670,7 +681,6 @@ void cleanupIndex(INVERTED_INDEX* index){
   DocumentNode* startPage;
   DocumentNode* toFreedom;
 
-
   // loop through each hash slot
   for(int i=0; i < MAX_NUMBER_OF_SLOTS; i++){
 
@@ -680,7 +690,8 @@ void cleanupIndex(INVERTED_INDEX* index){
 
       toWordFreedom = startWordNode;
 
-      // for each WordNode, loop through each of the DocNodes
+      // for each wordNode, loop through each of the DocNodes
+      startPage = startWordNode->page;
       while (startPage != NULL){
         toFreedom = startPage;
         startPage = startPage->next;
@@ -698,10 +709,7 @@ void cleanupIndex(INVERTED_INDEX* index){
       if (toWordFreedom != NULL){
         free(toWordFreedom);
       }
-
-
     }
-
   }
 
   free(index);
@@ -882,21 +890,7 @@ int reconstructIndex(char* word, int documentId, int page_word_frequency){
 
 // "reloads" the index data structure from the file 
 int reloadIndexFromFile(char* loadFile, char* writeReload){
-  struct stat checkLoadFile;
-  struct stat checkWriteReload;
   FILE* fp;
-
-  // Validate that loadFile exists
-  if ( stat(loadFile, &checkLoadFile) != 0){
-    fprintf(stderr, "Error: The target file argument %s was not found \n", loadFile);
-    printUsage();
-    return 0;
-  }
-
-  // warn user that the writeReload will be overwritten
-  if ( stat(writeReload, &checkWriteReload) == 0){
-    fprintf(stderr, "Warning: The target file argument %s will be overwritten \n", writeReload);
-  }
 
   fp = fopen(loadFile, "r");
   if (fp == NULL){
@@ -930,7 +924,7 @@ int reloadIndexFromFile(char* loadFile, char* writeReload){
       // takes the first word from the line
       char* docNode;
       char* wordNode = strtok(buffer, " ");
-      char* numberOfDocs = strtok(NULL, " ");
+      strtok(NULL, " ");
 
       while ((docNode = strtok(NULL, " ")) != NULL){
         char* page_word_frequency = strtok(NULL, " ");
@@ -966,7 +960,6 @@ int main(int argc, char* argv[]){
   validateArgs(argc, argv);
 
   // NORMAL CREATE-INDEX MODE
-  if ( argc == 3){
     // (2) Grab number of files in target dir to loop through
     targetDir = argv[1]; // set the directory
     targetFile = argv[2]; // set the new file to be written to 
@@ -993,9 +986,11 @@ int main(int argc, char* argv[]){
 
     // clean up here
     cleanupIndex(index);
-  }
 
   // DEBUG MODE: reloading the index file
+  if ( (argc == 5) ){
+    validateDebugArgs(argv[3], argv[4]);
+  }
   if ( argc == 5){
     char* loadFile = argv[3];
     char* writeReload = argv[4];
@@ -1015,10 +1010,10 @@ int main(int argc, char* argv[]){
     }
 
     // clean up here;
+    LOG("Cleaning up");
     cleanupIndex(indexReload);
 
-    // run a script to test the integrity of the reloaded file
-
+    // BATS.sh will test the integrity of the reloaded index.
   }
   return 0;
 }

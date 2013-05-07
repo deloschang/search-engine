@@ -62,16 +62,12 @@ let j++
 #testCmd[j]="./indexer ../crawler_dir/data index.dat"
 #let j++
 
-# test nonexistent file input for 5 parameters
-testName[j]="$j. testing nonexistent file arguments for filename index.dat (5 parameters)"
-testExpected[j]="Error: Nonexistent file"
-testCmd[j]="./indexer ../crawler_dir/data/ nonexistent1242.dat nonexistent1242.dat index_new.dat"
-let j++
-
 # correct input for 5 parameters
+INDEX_FILE="index.dat"
+NEW_INDEX_FILE="index_new.dat"
 testName[j]="$j. testing correct input arguments for filename index.dat (5 parameters)"
 testExpected[j]="No errors expected (or warning that file will be overwritten)"
-testCmd[j]="./indexer ../crawler_dir/data/ index.dat index.dat index_new.dat"
+testCmd[j]="./indexer ../crawler_dir/data/ $INDEX_FILE $INDEX_FILE $NEW_INDEX_FILE"
 let j++
 
 
@@ -92,6 +88,29 @@ while (($iterate < $j)); do
   #echo -n "Output -->" >> "$indexer_testlog"
   #${testCmd[iterate]} >> "$indexer_testlog" 2>&1
   
+  # checks if the index file and reloaded index file are the same
+
+  if [[ -e "$INDEX_FILE" && -e "$NEW_INDEX_FILE" ]]; then
+    echo "Indexes have been built, read and rewritten correctly!"
+
+    # make sure sorting is the same
+    sort -o $INDEX_FILE $INDEX_FILE
+    sort -o $NEW_INDEX_FILE $NEW_INDEX_FILE
+
+    diff $INDEX_FILE $NEW_INDEX_FILE
+
+    # check the integrity of the files
+    if [ $? -eq 0 ]; then
+      echo "Index storage passed test!"
+    else
+      echo "Index storage didn't pass test!"
+    fi
+
+    debugFlag=0;
+  else
+    echo "Index files $INDEX_FILE and $NEW_INDEX_FILE do not exist. Not testing."
+  fi
+
   # increment and test next
   let iterate++
 done
@@ -101,3 +120,5 @@ echo "Done testing. Cleaning up"
 
 # cleanup
 make clean
+
+exit 0

@@ -14,3 +14,7 @@ overwritten)
 9. File in the target LOADING FILE does not exist  (4th argument)
 10. File in the target RELOAD WRITING FILE does not exist  (5th argument)
 11. filename with trailing slash and no trailing slash
+12. Testing the diff between the original index file and a reloaded
+index file (in the BATS.sh) 
+13. Not enough memory to malloc
+14. Invalid files open (invalid file pointer)

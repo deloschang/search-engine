@@ -7,12 +7,9 @@ LDFLAGS =
 TEST = ./BATS.sh
 
 # my project details
-#OBJS = crawler.o hash.o html.o
-#SRCS = crawler.c hash.c html.c crawler.h hash.h html.h
-
 OBJS = indexer.o hash.o file.o 
 
-SRCS = indexer.c hash.c indexer.h hash.h
+SRCS = indexer.c hash.c indexer.h hash.h file.h
 CFLAGS1SRCS = file.c # need diff flags
 
 # Commands start with TAB not spaces
@@ -44,7 +41,6 @@ clean:
 	rm -f *.o
 	rm -f *.gch
 	rm -f core.*
-	rm ./indexer
 
 cleanlog:
 	rm -f *log.*

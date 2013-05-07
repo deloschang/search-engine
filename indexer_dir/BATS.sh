@@ -70,21 +70,13 @@ while (($iterate < $j)); do
   echo ""
 
   # test to STDOUT for easy viewing
-  echo ${testName[iterate]}  
-  echo ${testExpected[iterate]} 
-  ${testCmd[iterate]}
+  echo ${testName[iterate]} 2>&1 | tee -a "$indexer_testlog" 
+  echo ${testExpected[iterate]} 2>&1 | tee -a "$indexer_testlog"
+  ${testCmd[iterate]} 2>&1 | tee -a "$indexer_testlog"
 
-
-  ## send test result to the log
-  #echo ${testName[iterate]} >> "$indexer_testlog"
-  #echo ${testExpected[iterate]} >> "$indexer_testlog"
-  #echo -n "Output -->" >> "$indexer_testlog"
-  #${testCmd[iterate]} >> "$indexer_testlog" 2>&1
-  
   # checks if the index file and reloaded index file are the same
-
   if [[ -e "$INDEX_FILE" && -e "$NEW_INDEX_FILE" ]]; then
-    echo "Indexes have been built, read and rewritten correctly!"
+    echo "Indexes have been built, read and rewritten correctly!" | tee -a "$indexer_testlog"
 
     # make sure sorting is the same
     sort -o $INDEX_FILE $INDEX_FILE
@@ -94,9 +86,9 @@ while (($iterate < $j)); do
 
     # check the integrity of the files
     if [ $? -eq 0 ]; then
-      echo "Index storage passed test!"
+      echo "Index storage passed test!" | tee -a "$indexer_testlog"
     else
-      echo "Index storage didn't pass test!"
+      echo "Index storage didn't pass test!" | tee -a "$indexer_testlog"
     fi
 
     debugFlag=0;

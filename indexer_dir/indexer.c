@@ -38,6 +38,7 @@ written to the result file in the format of:
 
 #include "indexer.h"
 #include "hash.h"
+#include "file.h"
 
 // create the index
 INVERTED_INDEX* index = NULL;
@@ -98,16 +99,16 @@ void validateArgs(int argc, char* argv[]){
 
   readableResult = system(readableTest);
 
-  free(readableTest);
-
   // check the exit status
   if ( readableResult != 0){
     fprintf(stderr, "Error: The dir argument %s was not readable. \
     Please enter readable and valid directory. \n", argv[1]);
     printUsage();
 
+    free(readableTest);
     exit(1);
   }
+  free(readableTest);
 
 
 }
@@ -687,8 +688,15 @@ int saveIndexToFile(INVERTED_INDEX* index, char* targetFile){
   char* sortCommand = (char*) malloc(string1 + string2 + string2 + 2); // last byte
 
   sprintf(sortCommand, "%s%s %s", "sort -o ", targetFile, targetFile); 
-  system(sortCommand);
+  int result = system(sortCommand);
 
+  // check the exit status
+  if ( result != 0){
+    fprintf(stderr, "Error: Could not sort the file %s. \n", targetFile);
+
+    free(sortCommand);
+    exit(1);
+  }
   free(sortCommand);
 
   return 1;
@@ -1015,10 +1023,8 @@ int main(int argc, char* argv[]){
     cleanupIndex(index);
 
   // DEBUG MODE: reloading the index file
-  if ( (argc == 5) ){
-    validateDebugArgs(argv[3], argv[4]);
-  }
   if ( argc == 5){
+    validateDebugArgs(argv[3], argv[4]);
     LOG("Testing index");
 
     char* loadFile = argv[3];

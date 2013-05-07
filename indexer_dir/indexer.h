@@ -80,6 +80,7 @@ char* loadDocument(char* filepath);
 // it will retrieve everything between a set of tags, including javascript. The word
 // retrieved from this function is passed to updateIndex to be updated
 int getNextWordFromHTMLDocument(char* loadedDocument, char* word, int position, 
+INVERTED_INDEX* index, int documentId);
 
 // updateIndex: given a word and document ID, this function will hash the word and 
 // if there are other WordNodes in that slot, it will check if the WordNode for this 

@@ -51,18 +51,11 @@ readable.  Please enter readable and valid directory."
 testCmd[j]="./indexer ./unreadable/ index.dat"
 let j++
 
-
 # correct input for 3 parameters
-#testName[j]="$j. testing correct input arguments for filename index.dat (3 parameters)"
-#testExpected[j]="No errors expected."
-#testCmd[j]="./indexer ../crawler_dir/data/ index.dat"
-#let j++
-
-# correct input for 3 parameters (DIFFERENT URL without trailing slash)
-#testName[j]="$j. testing correct input arguments for filename index.dat (3 parameters)"
-#testExpected[j]="No errors expected."
-#testCmd[j]="./indexer ../crawler_dir/data index.dat"
-#let j++
+testName[j]="$j. testing correct input arguments for filename index.dat (3 parameters)"
+testExpected[j]="No errors expected."
+testCmd[j]="./indexer ../crawler_dir/data/ index.dat"
+let j++
 
 # correct input for 5 parameters
 testName[j]="$j. testing correct input arguments for filename index.dat (5 parameters)"

@@ -9,3 +9,8 @@ TESTING FILE
 5. 5 parameter input
 6. Directory type in the "target directory" parameter input (e.g. 999 as a dir)
 7. File in the "target directory" parameter that is not in correct format (e.g. abc as a file)
+8. File in the "target directory" already exists (warning to be
+overwritten)
+9. File in the target LOADING FILE does not exist  (4th argument)
+10. File in the target RELOAD WRITING FILE does not exist  (5th argument)
+11. filename with trailing slash and no trailing slash

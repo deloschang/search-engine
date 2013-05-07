@@ -11,9 +11,6 @@
 
 // DEFINES
 
-
-
-
 // Make the hash large 
 // This will minimize collisions 
 #define MAX_NUMBER_OF_SLOTS 10000
@@ -64,43 +61,74 @@ typedef struct _INVERTED_INDEX {
   WordNode *hash[MAX_NUMBER_OF_SLOTS];  // hash slot
 } INVERTED_INDEX;
   
-// function PROTOTYPES used by crawler.c You have to code them.
+// function PROTOTYPES used by indexer.c 
 
-// getPage: Assumption: if you are dowloading the file it must be unique. 
-// Two cases. First its the SEED URL so its unique. Second, wget only gets a page 
-// once a URL is determined to be unique. Get the HTML file saved in TEMP 
-// and read it into a string that is returned by getPage. Store TEMP
-// to a file 1..N after writing the URL and depth on the first and second 
-// lines respectively.
+// validateArgs: validates all the arguments are valid (e.g. directory exists)
+void validateArgs(int argc, char* argv[]);
 
-char *getPage(char* url, int depth,  char* path);
 
-// extractURL: Given a string of the HTML page, parse it (you have the code 
-// for this GetNextURL) and store all the URLs in the url_list (defined above).
-// NULL pointer represents end of list (no more URLs). Return the url_list
+// validateDebugArgs: validates all the arguments for debugging are valid (e.g. file exists)
+void validateDebugArgs(char* loadFile, char* writeReload);
 
-char **extractURLs(char* html_buffer, char* current);
+// loadDocument: loads the file into a buffer. This allows the indexer to go through
+// each of the files and store all the HTML in memory using malloc. This will be
+// sanitized and processed later by the indexer
+char* loadDocument(char* filepath);
 
-// setURLasVisited: Mark the URL as visited in the URLNODE structure.
 
-void setURLasVisited(char* url);
+// grabNextWordFromHTMLDocument: uses the loadedDocument buffer to parse for the words
+// it will retrieve everything between a set of tags, including javascript. The word
+// retrieved from this function is passed to updateIndex to be updated
+int getNextWordFromHTMLDocument(char* loadedDocument, char* word, int position, 
 
-// updateListLinkToBeVisited: Heavy lifting function. Could be made smaller. It takes
-// the url_list and for each URL in the list it first determines if it is unique.
-// If it is then it creates a DNODE (using malloc) and URLNODE (using malloc).
-// It copies the URL to the URLNODE and initialises it and then links it into the
-// DNODE (and initialise it). Then it links the DNODE into the linked list dict.
-// at the point in the list where its key cluster is (assuming that there are
-// elements hashed at the same slot and the URL was found to be unique. It does
-// this for *every* URL in the url_list
+// updateIndex: given a word and document ID, this function will hash the word and 
+// if there are other WordNodes in that slot, it will check if the WordNode for this 
+// word exists already. If not, it goes through the list and checks. If none exists,
+// it will insert the WordNode to the end of the list and update the index.
+int updateIndex(INVERTED_INDEX* index, char* word, int documentId);
 
-void updateListLinkToBeVisited(char *url_list[ ], int depth);
+// sanitize: this will sanitize a buffer, stripping everything that should not be
+// parsed into words: e.g. -- newline characters, @, & etc. When choosing what to 
+// sanitize, there is a trade off between obfuscating possible words that could be
+// using them. 
+void sanitize(char* loadedDocument);
 
-// getAddressFromTheLinksToBeVisited: Scan down thie hash table (part of dict) and
-// find the first URL that has not already been visited and return the pointer 
-// to that URL. Note, that the pointer to the depth is also passed. Update the
-// depth using the depth of the URLNODE that is next to be visited. 
+// buildIndexFromDir:  scans through the target directory. It iterates through 
+// each file in the directory and uses the getNextWordFromHTMLDocument to 
+// parse it and then subsequently update the index
+void buildIndexFromDir(char* dir, int numOfFiles, INVERTED_INDEX* index);
 
-char *getAddressFromTheLinksToBeVisited(int *depth);
+// initStructure: This function initializes the primary index used to read the HTML files 
+// It will hold the hash list which holds the WordNodes which hold the 
+// Document Nodes
+int initStructures();
 
+// initReloadStructure: This function initializes the reloaded index structure that will be used
+// to "reload" the index via reading the index.dat and writing output to
+// an index_new.dat. We do this to make sure that the index file can be 
+// properly retrieved
+int initReloadStructure();
+
+// saveIndexToFile: this function will save the index in memory to a file
+// by going through each WordNode and Document Node, parsing them 
+// and writing them in the specified format
+// cat 2 2 3 4 5 
+// the first 2 indicates that there are 2 documents with 'cat' found
+// the second 2 indicates the document ID with 3 occurrences of 'cat'
+// the 4 indicates the document ID with 5 occurrences of 'cat'
+int saveIndexToFile(INVERTED_INDEX* index, char* targetFile);
+
+// cleanupIndex: Cleans up the index by freeing the wordnode, documentnode
+// and entire index
+void cleanupIndex(INVERTED_INDEX* index);
+
+// reconstructIndex: this function will reconstruct the entire index with a
+// word, document ID and page frequency passed to it. It is used in 
+// debug mode to ensure that the index can be "reloaded" 
+int reconstructIndex(char* word, int documentId, int page_word_frequency);
+
+// reloadIndexFromFile: This function does the heavy lifting of 
+// "reloading" a file into an index in memory. It goes through
+// each of the characters and uses strtok to split by space
+int reloadIndexFromFile(char* loadFile, char* writeReload);
 #endif

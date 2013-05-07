@@ -44,9 +44,11 @@ clean:
 	rm -f *.o
 	rm -f *.gch
 	rm -f core.*
+	rm ./indexer
 
 cleanlog:
 	rm -f *log.*
 	rm -f index.dat
+	rm -f index_new.dat
 
 

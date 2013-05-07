@@ -367,15 +367,12 @@ int updateIndex(INVERTED_INDEX* index, char* word, int documentId){
   return 1;
 }
 
-/****
 
-*getNextWordFromHTMLDocument*
-------------
-
-Grabs the next word from HTML Document and returns the position of the word.
-This is used by a bigger loop to continuously index the HTML page
-
-*/
+//Grabs the next word from HTML Document and returns the position of the word.
+//This is used by a bigger loop to continuously index the HTML page
+// grabNextWordFromHTMLDocument: uses the loadedDocument buffer to parse for the words
+// it will retrieve everything between a set of tags, including javascript. The word
+// retrieved from this function is passed to updateIndex to be updated
 int getNextWordFromHTMLDocument(char* loadedDocument, char* word, int position, 
 INVERTED_INDEX* index, int documentId){
   int tagFlag = 0;
@@ -466,6 +463,10 @@ INVERTED_INDEX* index, int documentId){
 
 
 // Strips the buffer of non-letters
+// sanitize: this will sanitize a buffer, stripping everything that should not be
+// parsed into words: e.g. -- newline characters, @, & etc. When choosing what to 
+// sanitize, there is a trade off between obfuscating possible words that could be
+// using them. 
 void sanitize(char* loadedDocument){
   char* temp;
   char* clear;
@@ -537,6 +538,9 @@ void sanitize(char* loadedDocument){
 }
 
 // Builds an index from the files in the directory
+// buildIndexFromDir:  scans through the target directory. It iterates through 
+// each file in the directory and uses the getNextWordFromHTMLDocument to 
+// parse it and then subsequently update the index
 void buildIndexFromDir(char* dir, int numOfFiles, INVERTED_INDEX* index){
   char* writable;
   char* loadedDocument;
@@ -588,6 +592,9 @@ void buildIndexFromDir(char* dir, int numOfFiles, INVERTED_INDEX* index){
 }
 
 
+// This function initializes the primary index used to read the HTML files 
+// It will hold the hash list which holds the WordNodes which hold the 
+// Document Nodes
 int initStructures(){
   // create the index structure
   index = (INVERTED_INDEX*)malloc(sizeof(INVERTED_INDEX));
@@ -602,6 +609,10 @@ int initStructures(){
   return 1;
 }
 
+// This function initializes the reloaded index structure that will be used
+// to "reload" the index via reading the index.dat and writing output to
+// an index_new.dat. We do this to make sure that the index file can be 
+// properly retrieved
 int initReloadStructure(){
   // create the index structure
   indexReload = (INVERTED_INDEX*)malloc(sizeof(INVERTED_INDEX));
@@ -618,6 +629,13 @@ int initReloadStructure(){
 
 // saves the inverted index into a file
 // returns 1 if successful, 0 if not
+// saveIndexToFile: this function will save the index in memory to a file
+// by going through each WordNode and Document Node, parsing them 
+// and writing them in the specified format
+// cat 2 2 3 4 5 
+// the first 2 indicates that there are 2 documents with 'cat' found
+// the second 2 indicates the document ID with 3 occurrences of 'cat'
+// the 4 indicates the document ID with 5 occurrences of 'cat'
 int saveIndexToFile(INVERTED_INDEX* index, char* targetFile){
   WordNode* startWordNode;
   DocumentNode* startPage;
@@ -676,6 +694,8 @@ int saveIndexToFile(INVERTED_INDEX* index, char* targetFile){
   return 1;
 }
 
+// Cleans up the index by freeing the wordnode, documentnode
+// and entire index
 void cleanupIndex(INVERTED_INDEX* index){
   WordNode* startWordNode;
   WordNode* toWordFreedom;
@@ -717,6 +737,9 @@ void cleanupIndex(INVERTED_INDEX* index){
 
 }
 
+// reconstructIndex: this function will reconstruct the entire index with a
+// word, document ID and page frequency passed to it. It is used in 
+// debug mode to ensure that the index can be "reloaded" 
 int reconstructIndex(char* word, int documentId, int page_word_frequency){
   int wordHash = hash1(word) % MAX_NUMBER_OF_SLOTS;
 
@@ -890,6 +913,9 @@ int reconstructIndex(char* word, int documentId, int page_word_frequency){
 }
 
 // "reloads" the index data structure from the file 
+// reloadIndexFromFile: This function does the heavy lifting of 
+// "reloading" a file into an index in memory. It goes through
+// each of the characters and uses strtok to split by space
 int reloadIndexFromFile(char* loadFile, char* writeReload){
   FILE* fp;
 
@@ -993,6 +1019,8 @@ int main(int argc, char* argv[]){
     validateDebugArgs(argv[3], argv[4]);
   }
   if ( argc == 5){
+    LOG("Testing index");
+
     char* loadFile = argv[3];
     char* writeReload = argv[4];
 

@@ -27,6 +27,11 @@ debug: $(SRCS)
 	$(CC) $(CFLAGS1) -c $(CFLAGS1SRCS)
 	$(CC) $(CFLAGS) -g -ggdb -o $(EXEC) $(OBJS)
 	gdb --args indexer ../crawler_dir/data/ index.dat
+debug2: $(SRCS)
+	$(CC) $(CFLAGS) -g -ggdb -c $(SRCS)
+	$(CC) $(CFLAGS1) -c $(CFLAGS1SRCS)
+	$(CC) $(CFLAGS) -g -ggdb -o $(EXEC) $(OBJS)
+	gdb --args indexer ../crawler_dir/data/ index.dat index.dat index_new.dat
 
 valgrind: $(OBJS)
 	$(CC) $(CFLAGS) -o $(EXEC) $(OBJS)

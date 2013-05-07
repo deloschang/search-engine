@@ -51,10 +51,10 @@ let j++
 
 
 # correct input for 3 parameters
-testName[j]="$j. testing correct input arguments for filename index.dat (3 parameters)"
-testExpected[j]="No errors expected."
-testCmd[j]="./indexer ../crawler_dir/data/ index.dat"
-let j++
+#testName[j]="$j. testing correct input arguments for filename index.dat (3 parameters)"
+#testExpected[j]="No errors expected."
+#testCmd[j]="./indexer ../crawler_dir/data/ index.dat"
+#let j++
 
 # correct input for 3 parameters (DIFFERENT URL without trailing slash)
 #testName[j]="$j. testing correct input arguments for filename index.dat (3 parameters)"
@@ -65,7 +65,7 @@ let j++
 # test nonexistent file input for 5 parameters
 testName[j]="$j. testing nonexistent file arguments for filename index.dat (5 parameters)"
 testExpected[j]="Error: Nonexistent file"
-testCmd[j]="./indexer ../crawler_dir/data/ nonexistent1242.dat index.dat index_new.dat"
+testCmd[j]="./indexer ../crawler_dir/data/ nonexistent1242.dat nonexistent1242.dat index_new.dat"
 let j++
 
 # correct input for 5 parameters

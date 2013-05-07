@@ -41,6 +41,7 @@ written to the result file in the format of:
 
 // create the index
 INVERTED_INDEX* index = NULL;
+INVERTED_INDEX* indexReload = NULL;
 
 
 // this function prints generic usage information 
@@ -78,7 +79,7 @@ void validateArgs(int argc, char* argv[]){
 
   // Warn user that the destination file will be overwritten
   if ( stat(argv[2], &checkDest) == 0){
-    fprintf(stderr, "Warning: The file %s already exists and will be overwritten", argv[2]);
+    fprintf(stderr, "Warning: The file %s already exists and will be overwritten \n", argv[2]);
   }
 
   // Validate that directory is readable
@@ -568,7 +569,7 @@ void buildIndexFromDir(char* dir, int numOfFiles, INVERTED_INDEX* index){
       }
 
     free(loadedDocument);
-    LOG("Indexing document %d \n", i);
+    printf("Indexing document %d\n", i);
   }
 
 
@@ -583,6 +584,20 @@ int initStructures(){
   BZERO(index, sizeof(INVERTED_INDEX));
 
   if (index == NULL){
+    return 0;
+  }
+
+  return 1;
+}
+
+int initReloadStructure(){
+  // create the index structure
+  indexReload = (INVERTED_INDEX*)malloc(sizeof(INVERTED_INDEX));
+  MALLOC_CHECK(indexReload);
+  indexReload->start = indexReload->end = NULL;
+  BZERO(indexReload, sizeof(INVERTED_INDEX));
+
+  if (indexReload == NULL){
     return 0;
   }
 
@@ -637,7 +652,7 @@ int saveIndexToFile(INVERTED_INDEX* index, char* targetFile){
 
   // sort the outputted list with a command
 
-  size_t string1 = "sort -o ";
+  size_t string1 = strlen("sort -o ");
   size_t string2 = strlen(targetFile);
   char* sortCommand = (char*) malloc(string1 + string2 + string2 + 1);
 
@@ -649,7 +664,7 @@ int saveIndexToFile(INVERTED_INDEX* index, char* targetFile){
   return 1;
 }
 
-void cleanupIndex(){
+void cleanupIndex(INVERTED_INDEX* index){
   WordNode* startWordNode;
   WordNode* toWordFreedom;
   DocumentNode* startPage;
@@ -659,6 +674,7 @@ void cleanupIndex(){
   // loop through each hash slot
   for(int i=0; i < MAX_NUMBER_OF_SLOTS; i++){
 
+    startWordNode = index->hash[i];
     // loop through every word in the list
     while (startWordNode != NULL){
 
@@ -688,20 +704,22 @@ void cleanupIndex(){
 
   }
 
+  free(index);
+
+}
+
+int reconstructIndex(char* wordNode, int docNode, int page_word_frequency){
+
 }
 
 // "reloads" the index data structure from the file 
 int reloadIndexFromFile(char* loadFile, char* writeReload){
-  struct stat checkWriteReload;
   struct stat checkLoadFile;
+  struct stat checkWriteReload;
   FILE* fp;
 
-  // test URL with default correct exit status
-  int readableResult = 0;
-  char* readableTest = NULL; // dynamically allocate to prevent overflow
-
   // Validate that loadFile exists
-  if ( stat(loadFile, &checkLoadFile) == 0){
+  if ( stat(loadFile, &checkLoadFile) != 0){
     fprintf(stderr, "Error: The target file argument %s was not found \n", loadFile);
     printUsage();
     return 0;
@@ -718,8 +736,48 @@ int reloadIndexFromFile(char* loadFile, char* writeReload){
     return 0;
   }
 
+  // Commence reloading the index from the file
+  // indexReload has been initialized already
+  char* placeholder;
+  char* loadedFile = loadDocument(loadFile);
+
+  size_t string1 = strlen(loadedFile);
+
+  placeholder = (char*) malloc(sizeof(char) * string1 + 1);
+  BZERO(placeholder, string1 + 1);
+
+  while(1){
+    // continue until end
+    if (fgets(placeholder, string1 + 1, fp) == NULL){
+      break;
+    } else {
+      char buffer[string1 + 1];
+      strcpy(buffer, placeholder);
+
+      // takes the first word from the line
+      char* docNode;
+      char* wordNode = strtok(buffer, " ");
+      char* numberOfDocs = strtok(NULL, " ");
+
+      while ((docNode = strtok(NULL, " ")) != NULL){
+        char* page_word_frequency = strtok(NULL, " ");
+        // insert into index here
+        reconstructIndex(wordNode, atoi(docNode), atoi(page_word_frequency));
+      }
+    }
+
+  }
+
+  
+  // every line represents a word node with all its Document Nodes
 
 
+  // Write the index to the file
+  /*saveIndexFromFile(indexReload, writeReload);*/
+
+  /*cleanupIndex(indexReload);*/
+
+  fclose(fp);
   return 1;
 }
 
@@ -758,10 +816,7 @@ int main(int argc, char* argv[]){
     }
 
     // clean up here
-    cleanupIndex();
-
-    // free all the DocNodes and WordNodes
-    free(index);
+    cleanupIndex(index);
   }
 
   // DEBUG MODE: reloading the index file
@@ -770,6 +825,11 @@ int main(int argc, char* argv[]){
     char* writeReload = argv[4];
 
     // will reload the index from the saved file (e.g. from index.dat)
+    if (initReloadStructure() != 1){
+      fprintf(stderr, "Could not initialize data structures. Exiting");
+      exit(1);
+    }
+
     int reloadResult = reloadIndexFromFile(loadFile, writeReload);
     if (reloadResult != 1){
       fprintf(stderr, "Could not reload the index from the file! \n");
@@ -777,6 +837,9 @@ int main(int argc, char* argv[]){
     } else {
       LOG("Reloading index from file finished");
     }
+
+    // clean up here;
+    cleanupIndex(indexReload);
 
     // run a script to test the integrity of the reloaded file
 

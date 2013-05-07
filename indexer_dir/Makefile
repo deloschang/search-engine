@@ -35,7 +35,7 @@ debug2: $(SRCS)
 
 valgrind: $(OBJS)
 	$(CC) $(CFLAGS) -o $(EXEC) $(OBJS)
-	valgrind --tool=memcheck --leak-check=full --track-origins=yes ./indexer ../crawler_dir/data index.dat
+	valgrind --tool=memcheck --leak-check=full --track-origins=yes ./indexer ../crawler_dir/test_data index.dat
 
 clean:
 	rm -f *~

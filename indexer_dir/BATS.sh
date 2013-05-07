@@ -14,6 +14,8 @@
 # Pseudocode: It runs through a list of incorrect parameters 
 # with an expectant result
 
+INDEX_FILE="index.dat"
+NEW_INDEX_FILE="index_new.dat"
 
 indexer_testlog="indexer_testlog.`date`"
 
@@ -63,8 +65,6 @@ let j++
 #let j++
 
 # correct input for 5 parameters
-INDEX_FILE="index.dat"
-NEW_INDEX_FILE="index_new.dat"
 testName[j]="$j. testing correct input arguments for filename index.dat (5 parameters)"
 testExpected[j]="No errors expected (or warning that file will be overwritten)"
 testCmd[j]="./indexer ../crawler_dir/data/ $INDEX_FILE $INDEX_FILE $NEW_INDEX_FILE"

@@ -140,6 +140,7 @@ char* loadDocument(char* filepath){
   // Could be problem of skipped files i.e. (1, 3, 4, 5)
   if (fp == NULL){
     fprintf(stderr, "Could not read file %s. Aborting. \n", filepath);
+    cleanupIndex(index);
     exit(1);
   }
 
@@ -665,7 +666,7 @@ int saveIndexToFile(INVERTED_INDEX* index, char* targetFile){
 
   size_t string1 = strlen("sort -o ");
   size_t string2 = strlen(targetFile);
-  char* sortCommand = (char*) malloc(string1 + string2 + string2 + 1);
+  char* sortCommand = (char*) malloc(string1 + string2 + string2 + 2); // last byte
 
   sprintf(sortCommand, "%s%s %s", "sort -o ", targetFile, targetFile); 
   system(sortCommand);

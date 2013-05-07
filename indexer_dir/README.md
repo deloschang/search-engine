@@ -25,12 +25,14 @@ as documentID is practical based on the crawler.
 3. The indexer will overwrite the target destination file (though it
    gives a warning)
 
-4. In an attempt to cleanly parse the HTML words, the indexer will do the following from the buffer: 
+4. To cleanly parse the HTML words, the indexer will do the following from the buffer: 
   a. filter any word that is less than 3 characters
   b. convert uppercase letters to lowercase letters
   c. remove commas, apostrophes, quotes, majority of non-alpha
   characters (preserving the '<' and '>'
   d. filtering all ASCII characters below and including 13.
+  -- The result is that HTML words are scraped without much of the 
+  "junk" that comes with it (like newlines).
   
 5. The reload file for the 5 parameter DEBUG mode will overwrite files
    (with warning)

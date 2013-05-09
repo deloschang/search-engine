@@ -2,3 +2,4 @@ This is a search engine written in C. It includes:
 
 1. Crawler -- crawls web pages recursively with a specified depth
 2. Indexer -- creates an inverted index list of words and their occurrences along with the document ID
+3. Query Engine -- command-line interface that creates a ranking system and query processor

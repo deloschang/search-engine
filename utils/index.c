@@ -79,16 +79,6 @@ void cleanupIndex(INVERTED_INDEX* index){
   free(index);
 }
 
-// Function that filters capital letters and makes them
-// lower case letters
-void capitalToLower(char* buffer){
-    for(int index = 0; buffer[index]; index++){
-        if (buffer[index] >= 'A' && buffer[index] <= 'Z'){
-            buffer[index] = 'a' + buffer[index] - 'A';
-        } 
-    }
-}
-
 // Strips the buffer of non-letters
 // sanitize: this will sanitize a buffer, stripping everything that should not be
 // parsed into words: e.g. -- newline characters, @, & etc. When choosing what to 

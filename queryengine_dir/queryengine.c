@@ -118,6 +118,9 @@ char** curateWords(char** queryList, char* query){
   queryCopy = (char*) malloc(sizeof(char) * 1000);
   BZERO(queryCopy, 1000);
 
+
+  /// BEGIN PARSING THE QUERY ///
+  strcpy(queryCopy, query);
   keyword = strtok(queryCopy, " ");
 
   // index for the word in the list
@@ -128,7 +131,7 @@ char** curateWords(char** queryList, char* query){
   // move keyword in 
   strcpy(queryList[num], keyword);
 
-  // loop through the list of words and add to the queryList
+  /// LOOP THROUGH THE QUERY FOR KEYWORDS ///
   while ( (keyword = strtok(NULL, " ")) != NULL){
     num++;
     queryList[num] = (char*) malloc(sizeof(char) * 1000);
@@ -136,7 +139,6 @@ char** curateWords(char** queryList, char* query){
 
     // move keyword in 
     strcpy(queryList[num], keyword);
-    printf("Word %d, %s", num, keyword);
   }
 
   return queryList;

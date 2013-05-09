@@ -11,6 +11,8 @@ Inputs: ./queryengine [TARGET INDEXER FILENAME] [RESULTS FILE NAME]
   - a space (" ") represents an 'AND' operator
   - a capital OR represents an 'OR' operator
 
+  TO EXIT: '!exit'
+
 Outputs: The query engine will output a ranking based on the queries that the 
 user enters
 
@@ -124,12 +126,34 @@ int main(int argc, char* argv[]){
     fprintf(stderr, "Could not reload the index from the file! \n");
     exit(1);
   } else {
-    LOG("Reloading index from file finished");
+    LOG("Finished reloading index from file");
   }
 
-  // clean up here;
+  // (3) Query the user via the command line
+  while (1) {
+    char query[1000];
+    printf(" \n KEY WORD:> ");
+    scanf("%999s", query);
+
+    // (3b) Change capital letters to lower case letters
+    capitalToLower(query);
+
+    // (3c) Check for exit parameter
+    if (!strncmp(query, "!exit", strlen("!exit") + 1) ){
+      break;
+    }
+
+    LOG("Query..\n");
+    
+
+    // (4) Cross-reference the query with the index and retrieve results
+  }
+
+  // (5) Rank results via an algorithm based on word frequency with AND / OR operators
+
+  // (7) Clean up the indexing
   LOG("Cleaning up");
-  /*cleanupIndex(indexReload);*/
+  cleanupIndex(indexReload);
 
   return 0;
 }

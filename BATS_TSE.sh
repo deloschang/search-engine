@@ -28,7 +28,6 @@ if [ $? -eq 0 ]; then
   ./queryengine ../indexer_dir/index.dat ../data
 else 
   echo "Building search engine failed (make)"
-
 fi
 
 #INDEX_FILE="index.dat"

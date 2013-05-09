@@ -69,4 +69,8 @@ INVERTED_INDEX* initReloadStructure();
 /*int reloadIndexFromFile(char* loadFile, char* writeReload){*/
 INVERTED_INDEX* reloadIndexFromFile(char* loadFile, char* writeReload, INVERTED_INDEX* indexReload);
 
+void capitalToLower(char* buffer);
+
+void cleanupIndex(INVERTED_INDEX* index);
+
 #endif

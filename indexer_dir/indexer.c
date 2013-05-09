@@ -518,6 +518,7 @@ void sanitize(char* loadedDocument){
       }
 
       // if letters, convert them from upper case to lower case
+      // capitalToLower(loadedDocument)
       if (loadedDocument[i] >= 'A' && loadedDocument[i] <= 'Z'){
         loadedDocument[i] = 'a' + loadedDocument[i] - 'A';
       } 

@@ -43,7 +43,7 @@ INVERTED_INDEX* indexReload = NULL;
 
 // this function prints generic usage information 
 void printUsage(){
-    printf("Usage: ./queryengine ../indexer_dir/index.dat ../../data \n"); 
+    printf("Usage: ./queryengine ../indexer_dir/index.dat ../data \n"); 
 }
 
 void validateArgs(int argc, char* argv[]){
@@ -106,10 +106,6 @@ void validateArgs(int argc, char* argv[]){
 }
 
 int main(int argc, char* argv[]){
-  /*char* targetDir;*/
-  /*char* targetFile;*/
-  /*int numOfFiles;*/
-
   // (1) Validate the parameters
   validateArgs(argc, argv);
 

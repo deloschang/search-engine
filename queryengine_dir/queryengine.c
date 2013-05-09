@@ -115,52 +115,21 @@ int main(int argc, char* argv[]){
     exit(1);
   }
 
-  // NORMAL CREATE-INDEX MODE
-    // (2) Grab number of files in target dir to loop through
-    /*targetDir = argv[1]; // set the directory*/
-    /*targetFile = argv[2]; // set the new file to be written to */
-    /*numOfFiles = dirScan(targetDir); */
+  // (2b) Load the index into memory
+  char* loadFile = argv[1];
+  char* writeReload = "index_new.dat";
 
+  INVERTED_INDEX* reloadResult = reloadIndexFromFile(loadFile, writeReload, indexReload);
+  if (reloadResult == NULL){
+    fprintf(stderr, "Could not reload the index from the file! \n");
+    exit(1);
+  } else {
+    LOG("Reloading index from file finished");
+  }
 
-    /*// (4) Loop through files to build index*/
-    /*buildIndexFromDir(targetDir, numOfFiles, index);*/
-    LOG("Index finished building");
+  // clean up here;
+  LOG("Cleaning up");
+  /*cleanupIndex(indexReload);*/
 
-    // (5) Save the index to a file (sorted)
-    /*int saveResult = saveIndexToFile(index, targetFile);*/
-    /*if (saveResult != 1){*/
-      /*fprintf(stderr, "Could not save index to file! \n");*/
-      /*exit(1);*/
-    /*} else {*/
-      /*LOG("Writing index to file finished");*/
-    /*}*/
-
-    // clean up here
-    /*cleanupIndex(index);*/
-
-  // DEBUG MODE: reloading the index file
-  /*if ( argc == 5){*/
-    /*validateDebugArgs(argv[3], argv[4]);*/
-    /*LOG("Testing index");*/
-
-    /*char* loadFile = argv[3];*/
-    /*char* writeReload = argv[4];*/
-
-    // will reload the index from the saved file (e.g. from index.dat)
-
-    /*int reloadResult = reloadIndexFromFile(loadFile, writeReload);*/
-    /*if (reloadResult != 1){*/
-      /*fprintf(stderr, "Could not reload the index from the file! \n");*/
-      /*exit(1);*/
-    /*} else {*/
-      /*LOG("Reloading index from file finished");*/
-    /*}*/
-
-    // clean up here;
-    LOG("Cleaning up");
-    /*cleanupIndex(indexReload);*/
-
-    // BATS.sh will test the integrity of the reloaded index.
-  /*}*/
   return 0;
 }

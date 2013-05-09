@@ -24,7 +24,12 @@ make
 # Run query engine unit tests
 
 # Launch the query engine
-./queryengine ../indexer_dir/index.dat ../data
+if [ $? -eq 0 ]; then
+  ./queryengine ../indexer_dir/index.dat ../data
+else 
+  echo "Building search engine failed (make)"
+
+fi
 
 #INDEX_FILE="index.dat"
 #NEW_INDEX_FILE="index_new.dat"

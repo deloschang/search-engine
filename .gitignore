@@ -3,3 +3,4 @@
 *.core
 data/
 index.dat
+*.o

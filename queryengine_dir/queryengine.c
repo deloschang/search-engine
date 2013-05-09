@@ -36,9 +36,6 @@ Implementation Spec Pseudocode:
 #include <unistd.h>
 #include <ctype.h>
 
-/*#include "indexer.h"*/
-/*#include "hash.h"*/
-/*#include "file.h"*/
 #include "../utils/index.h"
 
 INVERTED_INDEX* indexReload = NULL;
@@ -107,6 +104,44 @@ void validateArgs(int argc, char* argv[]){
   free(readableTest);
 }
 
+// converts the raw query from the command line processing into
+// a list of words to be cross-referenced with the index
+char** curateWords(char** queryList, char* query){
+  char* keyword;
+  char* queryCopy;
+
+  // create storage for keyword
+  keyword = (char*) malloc(sizeof(char) * 1000);
+  BZERO(keyword, 1000);
+
+  // create storage for the query command
+  queryCopy = (char*) malloc(sizeof(char) * 1000);
+  BZERO(queryCopy, 1000);
+
+  keyword = strtok(queryCopy, " ");
+
+  // index for the word in the list
+  int num = 0;
+  queryList[num] = (char*) malloc(sizeof(char) * 1000);
+  BZERO(queryList[num], 1000); // being safe
+
+  // move keyword in 
+  strcpy(queryList[num], keyword);
+
+  // loop through the list of words and add to the queryList
+  while ( (keyword = strtok(NULL, " ")) != NULL){
+    num++;
+    queryList[num] = (char*) malloc(sizeof(char) * 1000);
+    BZERO(queryList[num], 1000); // being safe
+
+    // move keyword in 
+    strcpy(queryList[num], keyword);
+    printf("Word %d, %s", num, keyword);
+  }
+
+  return queryList;
+}
+
 int main(int argc, char* argv[]){
   // (1) Validate the parameters
   validateArgs(argc, argv);
@@ -133,25 +168,27 @@ int main(int argc, char* argv[]){
   while (1) {
     char query[1000];
     printf(" \n KEY WORD:> ");
-    scanf("%999s", query);
+    fgets(query, 999, stdin);
 
     // (3b) Change capital letters to lower case letters
-    capitalToLower(query);
+    sanitize(query);
 
     // (3c) Check for exit parameter
     if (!strncmp(query, "!exit", strlen("!exit") + 1) ){
       break;
     }
 
-    LOG("Query..\n");
-    
+    LOG("Querying..\n");
+    printf("You queried:  %s \n", query); 
 
     // (4) Cross-reference the query with the index and retrieve results
+    char* queryList[1000];
+    curateWords(queryList, query);
   }
 
   // (5) Rank results via an algorithm based on word frequency with AND / OR operators
 
-  // (7) Clean up the indexing
+  // (7) Clean up the reloaded index
   LOG("Cleaning up");
   cleanupIndex(indexReload);
 

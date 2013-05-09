@@ -27,7 +27,7 @@ Implementation Spec Pseudocode:
 
 #include <stdio.h>
 #include <stdlib.h>
-/*#include <string.h>*/
+#include <string.h>
 
 #include <sys/types.h>
 #include <sys/stat.h>
@@ -37,13 +37,13 @@ Implementation Spec Pseudocode:
 /*#include "indexer.h"*/
 /*#include "hash.h"*/
 /*#include "file.h"*/
-#include "../util/index.h"
+#include "../utils/index.h"
 
 INVERTED_INDEX* indexReload = NULL;
 
 // this function prints generic usage information 
 void printUsage(){
-    printf("Usage: ./queryengine ../indexer_dir/index.dat ../../data \n");
+    printf("Usage: ./queryengine ../indexer_dir/index.dat ../../data \n"); 
 }
 
 void validateArgs(int argc, char* argv[]){
@@ -106,55 +106,51 @@ void validateArgs(int argc, char* argv[]){
 }
 
 int main(int argc, char* argv[]){
-  char* targetDir;
-  char* targetFile;
-  int numOfFiles;
+  /*char* targetDir;*/
+  /*char* targetFile;*/
+  /*int numOfFiles;*/
 
   // (1) Validate the parameters
   validateArgs(argc, argv);
 
   // (2) Initialize the inverted index
-  if (initStructures() != 1){
-    fprintf(stderr, "Could not initialize data structures. Exiting \n");
+  if ( (indexReload = initReloadStructure()) == NULL){
+    fprintf(stderr, "Could not initialize data structures. Exiting");
     exit(1);
   }
 
   // NORMAL CREATE-INDEX MODE
     // (2) Grab number of files in target dir to loop through
-    targetDir = argv[1]; // set the directory
-    targetFile = argv[2]; // set the new file to be written to 
-    numOfFiles = dirScan(targetDir); 
+    /*targetDir = argv[1]; // set the directory*/
+    /*targetFile = argv[2]; // set the new file to be written to */
+    /*numOfFiles = dirScan(targetDir); */
 
 
-    // (4) Loop through files to build index
-    buildIndexFromDir(targetDir, numOfFiles, index);
+    /*// (4) Loop through files to build index*/
+    /*buildIndexFromDir(targetDir, numOfFiles, index);*/
     LOG("Index finished building");
 
     // (5) Save the index to a file (sorted)
-    int saveResult = saveIndexToFile(index, targetFile);
-    if (saveResult != 1){
-      fprintf(stderr, "Could not save index to file! \n");
-      exit(1);
-    } else {
-      LOG("Writing index to file finished");
-    }
+    /*int saveResult = saveIndexToFile(index, targetFile);*/
+    /*if (saveResult != 1){*/
+      /*fprintf(stderr, "Could not save index to file! \n");*/
+      /*exit(1);*/
+    /*} else {*/
+      /*LOG("Writing index to file finished");*/
+    /*}*/
 
     // clean up here
-    cleanupIndex(index);
+    /*cleanupIndex(index);*/
 
   // DEBUG MODE: reloading the index file
-  if ( argc == 5){
-    validateDebugArgs(argv[3], argv[4]);
-    LOG("Testing index");
+  /*if ( argc == 5){*/
+    /*validateDebugArgs(argv[3], argv[4]);*/
+    /*LOG("Testing index");*/
 
-    char* loadFile = argv[3];
-    char* writeReload = argv[4];
+    /*char* loadFile = argv[3];*/
+    /*char* writeReload = argv[4];*/
 
     // will reload the index from the saved file (e.g. from index.dat)
-    if (initReloadStructure() != 1){
-      fprintf(stderr, "Could not initialize data structures. Exiting");
-      exit(1);
-    }
 
     /*int reloadResult = reloadIndexFromFile(loadFile, writeReload);*/
     /*if (reloadResult != 1){*/
@@ -169,6 +165,6 @@ int main(int argc, char* argv[]){
     /*cleanupIndex(indexReload);*/
 
     // BATS.sh will test the integrity of the reloaded index.
-  }
+  /*}*/
   return 0;
 }

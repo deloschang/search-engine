@@ -165,8 +165,9 @@ void sanitizeKeywords(char** queryList){
 }
 
 // looks up the keywords
-void lookUp(char** queryList){
+void lookUp(char** queryList, char* urlDir){
     // loop through each keyword
+    // REFACTOR *** return a match if found. otherwise return NULL
     for (int i=0; queryList[i]; i++){
       // look for the keyword in the inverted index
       int wordHash = hash1(queryList[i]) % MAX_NUMBER_OF_SLOTS;
@@ -201,7 +202,53 @@ void lookUp(char** queryList){
         while(matchedDocNode != NULL){
           // do some ranking algorithm
           // valid document with the word in it
-          printf("Document ID:%d URL: \n", matchedDocNode->document_id);
+          int document_id_int = matchedDocNode->document_id;
+
+          // find the URL name with the document id
+          /////////////// REFACTOR ///////////////
+          // Construct the filepath
+          char* readableTest;
+
+          char* document_id;
+          document_id = malloc(sizeof(char) * 1000);
+          BZERO(document_id, 1000);
+          sprintf(document_id, "%d", document_id_int);
+
+          size_t string1 = strlen(urlDir); 
+          size_t string2 = strlen("/");
+          size_t string3 = strlen(document_id);
+
+          // Allocate space for the filepath
+          readableTest = (char*) malloc(string1 + string2 + string3 + 1);
+          sprintf(readableTest, "%s/%s", urlDir, document_id);
+
+          free(document_id);
+
+          ///////////// REFACTOR /////////////////
+
+          FILE* fp;
+          fp = fopen(readableTest, "r");
+          if (fp == NULL){
+            fprintf(stderr, "Error opening the document! \n");
+            free(readableTest);
+            break;
+          }
+
+          char* docURL;
+          docURL = (char*) malloc(sizeof(char) * MAX_URL_LENGTH);
+          BZERO(docURL, MAX_URL_LENGTH);
+
+          if (fgets(docURL, MAX_URL_LENGTH, fp) == NULL){
+            fprintf(stderr, "Error copying URL from document. \n");
+            free(docURL);
+            free(readableTest);
+            break;
+          }
+
+          printf("Document ID:%d URL:%s \n", matchedDocNode->document_id, docURL);
+          fclose(fp);
+          free(docURL);
+          free(readableTest);
           
           matchedDocNode = matchedDocNode->next;
         }
@@ -232,6 +279,8 @@ int main(int argc, char* argv[]){
 
   // (2b) Load the index into memory
   char* loadFile = argv[1];
+  char* urlDir = argv[2];
+
   char* writeReload = "index_new.dat";
 
   INVERTED_INDEX* reloadResult = reloadIndexFromFile(loadFile, writeReload, indexReload);
@@ -267,7 +316,7 @@ int main(int argc, char* argv[]){
     sanitizeKeywords(queryList);
 
     // (4b) Validate the keywords
-    lookUp(queryList);
+    lookUp(queryList, urlDir);
       // if one word present, then make sure it is not OR
 
     // Clean up the word list

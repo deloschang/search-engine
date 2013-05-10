@@ -317,7 +317,7 @@ Input: string_buffer
 
 ****/
 
-void removeWhiteSpace(char *html) {
+void removeWhiteSpace(charndes *html) {
      int i;
      char *buffer, *p;
      buffer = malloc(strlen(html)+1);

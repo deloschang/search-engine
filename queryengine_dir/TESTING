@@ -4,3 +4,6 @@ TESTING FILE
 1. Non-alpha characters like !#$[] etc.
 2. Nonexistent index file
 3. Unreadable index file
+4. Unreadable target directory folder
+5. Nonexistent target directory folder
+6. Same keywords (e.g. "dog dog dog")

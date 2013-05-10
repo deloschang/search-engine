@@ -49,7 +49,6 @@ void printUsage(){
 void validateArgs(int argc, char* argv[]){
   // struct for checking whether directory exists
   struct stat s;
-  struct stat checkDest;
 
   // test URL with default correct exit status
   int readableResult = 0;
@@ -77,11 +76,6 @@ void validateArgs(int argc, char* argv[]){
     printUsage();
 
     exit(1);
-  }
-
-  // Warn user that the destination file will be overwritten
-  if ( stat(argv[2], &checkDest) == 0){
-    fprintf(stderr, "Warning: The file %s already exists and will be overwritten \n", argv[2]);
   }
 
   // Validate that file is readable
@@ -155,6 +149,7 @@ char** curateWords(char** queryList, char* query){
     strcpy(queryList[num], keyword);
   }
 
+  free(queryCopy);
   free(keyword);
   return queryList;
 }
@@ -169,8 +164,120 @@ void sanitizeKeywords(char** queryList){
             capitalToLower(queryList[i]);
         }
 
+        if (strncmp(queryList[i], "AND", strlen("AND") + 1) ){
+            capitalToLower(queryList[i]);
+        }
+
         printf("%s \n", queryList[i]);
     }
+}
+
+// given a word to search for, it will return a list of 
+// Document Nodes with the word in it
+DocumentNode** searchForKeyword(DocumentNode** list, char* keyword){
+  // look for the keyword in the inverted index
+  int wordHash = hash1(keyword) % MAX_NUMBER_OF_SLOTS;
+
+  WordNode* checkWordNode = NULL; 
+  checkWordNode = indexReload->hash[wordHash];
+  if (checkWordNode == NULL){
+    printf("Word %s could not be found in indexer \n", keyword);
+
+    // next word
+    return NULL;
+  }
+
+  // hash slot wasn't empty
+  WordNode* matchedWordNode = NULL;
+
+  // loop through each wordNode
+  for (checkWordNode = indexReload->hash[wordHash];
+      checkWordNode != NULL; checkWordNode = checkWordNode->next){
+    if (!strncmp(checkWordNode->word, keyword, WORD_LENGTH)){
+      // found a match that wasn't the first in the list
+      matchedWordNode = checkWordNode;
+      break;
+    } 
+  }
+
+  // check if the match was found
+  if (matchedWordNode != NULL){
+    // match was found, save all the URL docs to a list
+    // for intersecting
+
+    // sort by word frequency at end
+
+
+    // loop through the URL docs
+    // REFACTOR *****
+    DocumentNode* matchedDocNode = matchedWordNode->page;
+    int num = 0;
+    while(matchedDocNode != NULL){
+      list[num] = (DocumentNode*) malloc(sizeof(char) * 1000);
+      BZERO(list[num], 1000);
+
+      // save into the list and return
+      list[num] = matchedDocNode;
+
+      /********************/
+      /*int document_id_int = matchedDocNode->document_id;*/
+
+       /*find the URL name with the document id*/
+      /*///////////// REFACTOR ///////////////*/
+       /*Construct the filepath*/
+      /*char* readableTest;*/
+
+      /*char* document_id;*/
+      /*document_id = malloc(sizeof(char) * 1000);*/
+      /*BZERO(document_id, 1000);*/
+      /*sprintf(document_id, "%d", document_id_int);*/
+
+      /*size_t string1 = strlen(urlDir); */
+      /*size_t string2 = strlen("/");*/
+      /*size_t string3 = strlen(document_id);*/
+
+       /*Allocate space for the filepath*/
+      /*readableTest = (char*) malloc(string1 + string2 + string3 + 1);*/
+      /*sprintf(readableTest, "%s/%s", urlDir, document_id);*/
+
+      /*free(document_id);*/
+
+      /*/////////// REFACTOR /////////////////*/
+
+      /*FILE* fp;*/
+      /*fp = fopen(readableTest, "r");*/
+      /*if (fp == NULL){*/
+        /*fprintf(stderr, "Error opening the document! \n");*/
+        /*free(readableTest);*/
+        /*break;*/
+      /*}*/
+
+      /*char* docURL;*/
+      /*docURL = (char*) malloc(sizeof(char) * MAX_URL_LENGTH);*/
+      /*BZERO(docURL, MAX_URL_LENGTH);*/
+
+      /*if (fgets(docURL, MAX_URL_LENGTH, fp) == NULL){*/
+        /*fprintf(stderr, "Error copying URL from document. \n");*/
+        /*free(docURL);*/
+        /*free(readableTest);*/
+        /*break;*/
+      /*}*/
+
+      /*printf("Document ID:%d URL:%s", matchedDocNode->document_id, docURL);*/
+      /*fclose(fp);*/
+      /*free(docURL);*/
+      /*free(readableTest);*/
+
+      matchedDocNode = matchedDocNode->next;
+      num++;
+    }
+    return list;
+
+  } else {
+    printf("Word %s could not be found in indexer \n", keyword);
+    return NULL;
+  }
+
 }
 
 // looks up the keywords
@@ -178,93 +285,29 @@ void lookUp(char** queryList, char* urlDir){
     // loop through each keyword
     // REFACTOR *** return a match if found. otherwise return NULL
     for (int i=0; queryList[i]; i++){
-      // look for the keyword in the inverted index
-      int wordHash = hash1(queryList[i]) % MAX_NUMBER_OF_SLOTS;
+      int orFlag = 0;
 
-      WordNode* checkWordNode = NULL; 
-      checkWordNode = indexReload->hash[wordHash];
-      if (checkWordNode == NULL){
-        printf("Word %s could not be found in indexer", queryList[i]);
-
-        // next word
+      // if the word is OR, that means we will concatenate
+      // otherwise, default to AND'ing
+      if (!strncmp(queryList[i], "OR", strlen("OR") + 1) ){
+        orFlag = 1;
         continue;
       }
 
-      // hash slot wasn't empty
-      WordNode* matchedWordNode = NULL;
-
-      // loop through each wordNode
-      for (checkWordNode = indexReload->hash[wordHash];
-        checkWordNode != NULL; checkWordNode = checkWordNode->next){
-        if (!strncmp(checkWordNode->word, queryList[i], WORD_LENGTH)){
-          // found a match that wasn't the first in the list
-          matchedWordNode = checkWordNode;
-          break;
-        } 
-      }
-
-      // check if the match was found
-      if (matchedWordNode != NULL){
-        // loop through the URL docs
-        // REFACTOR *****
-        DocumentNode* matchedDocNode = matchedWordNode->page;
-        while(matchedDocNode != NULL){
-          // do some ranking algorithm
-          // valid document with the word in it
-          int document_id_int = matchedDocNode->document_id;
-
-          // find the URL name with the document id
-          /////////////// REFACTOR ///////////////
-          // Construct the filepath
-          char* readableTest;
-
-          char* document_id;
-          document_id = malloc(sizeof(char) * 1000);
-          BZERO(document_id, 1000);
-          sprintf(document_id, "%d", document_id_int);
-
-          size_t string1 = strlen(urlDir); 
-          size_t string2 = strlen("/");
-          size_t string3 = strlen(document_id);
-
-          // Allocate space for the filepath
-          readableTest = (char*) malloc(string1 + string2 + string3 + 1);
-          sprintf(readableTest, "%s/%s", urlDir, document_id);
-
-          free(document_id);
-
-          ///////////// REFACTOR /////////////////
-
-          FILE* fp;
-          fp = fopen(readableTest, "r");
-          if (fp == NULL){
-            fprintf(stderr, "Error opening the document! \n");
-            free(readableTest);
-            break;
-          }
-
-          char* docURL;
-          docURL = (char*) malloc(sizeof(char) * MAX_URL_LENGTH);
-          BZERO(docURL, MAX_URL_LENGTH);
-
-          if (fgets(docURL, MAX_URL_LENGTH, fp) == NULL){
-            fprintf(stderr, "Error copying URL from document. \n");
-            free(docURL);
-            free(readableTest);
-            break;
-          }
-
-          printf("Document ID:%d URL:%s", matchedDocNode->document_id, docURL);
-          fclose(fp);
-          free(docURL);
-          free(readableTest);
-          
-          matchedDocNode = matchedDocNode->next;
-        }
-      } else {
-        printf("Word %s could not be found in indexer", queryList[i]);
+      if (!strncmp(queryList[i], "AND", strlen("AND") + 1) ){
         continue;
       }
+
+      DocumentNode* list[1000];
+      searchForKeyword(list, queryList[i]);
+
+      // sanity check
+      int num = 0;
+      while (list[num]){
+        printf("Document ID: %d\n", list[num]->document_id);
+        num++;
+      }
+
     }
 }
 
@@ -326,7 +369,6 @@ int main(int argc, char* argv[]){
 
     // (4b) Validate the keywords
     lookUp(queryList, urlDir);
-      // if one word present, then make sure it is not OR
 
     // Clean up the word list
     cleanUpQueryList(queryList);

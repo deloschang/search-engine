@@ -25,7 +25,7 @@ debug: $(SRCS)
 	$(CC) $(CFLAGS) -g -ggdb -c $(SRCS)
 	#$(CC) $(CFLAGS1) -c $(CFLAGS1SRCS)
 	$(CC) $(CFLAGS) -g -ggdb -o $(EXEC) $(OBJS)
-	gdb --args queryengine ../indexer_dir/index.dat ../crawler_dir/data
+	gdb --args queryengine ../indexer_dir/index.dat ../crawler_dir/daty
 debug2: $(SRCS)
 	$(CC) $(CFLAGS) -g -ggdb -c $(SRCS)
 	#$(CC) $(CFLAGS1) -c $(CFLAGS1SRCS)
@@ -34,7 +34,7 @@ debug2: $(SRCS)
 
 valgrind: $(OBJS)
 	$(CC) $(CFLAGS) -o $(EXEC) $(OBJS)
-	valgrind --tool=memcheck --leak-check=full --track-origins=yes ./queryengine ../indexer_dir/index.dat ../data
+	valgrind --tool=memcheck --leak-check=full --track-origins=yes ./queryengine ../indexer_dir/index.dat ../crawler_dir/data
 
 clean:
 	rm -f *~

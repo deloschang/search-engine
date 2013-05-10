@@ -148,6 +148,20 @@ char** curateWords(char** queryList, char* query){
   return queryList;
 }
 
+// Filters the keywords with sanitize. But if a keyword is
+// OR then don't sanitize, because that is distinct from 'or'
+void sanitizeKeywords(char** queryList){
+  // convert keywords to lowercase
+  // if the keyword is OR then don't convert
+  for (int i=0; queryList[i]; i++){
+    if (strncmp(queryList[i], "OR", strlen("OR") + 1) ){
+      sanitize(queryList[i]);
+    }
+
+    printf("%s \n", queryList[i]);
+  }
+}
+
 int main(int argc, char* argv[]){
   // (1) Validate the parameters
   validateArgs(argc, argv);
@@ -176,10 +190,7 @@ int main(int argc, char* argv[]){
     printf(" \n KEY WORD:> ");
     fgets(query, 999, stdin);
 
-    // (3a) Change capital letters to lower case letters
-    sanitize(query);
-
-    // (3b) Check for exit parameter
+    // (3a) Check for exit parameter
     if (!strncmp(query, "!exit", strlen("!exit") + 1) ){
       break;
     }
@@ -188,11 +199,17 @@ int main(int argc, char* argv[]){
     printf("You queried:  %s \n", query); 
 
     // (4) Cross-reference the query with the index and retrieve results
-    // (4a) Convert the actual query into a list of keywords
+    // (4a) Convert the actual query into a list of keywords, in queryList
     char* queryList[1000];
     curateWords(queryList, query);
 
-    // (4b) Validate the arguments for the keywords
+    // (4b) Sanitize the keywords
+    sanitizeKeywords(queryList);
+
+    // (4b) Validate the keywords
+
+    // if one word present, then make sure it is not OR
+
   }
 
   // (5) Rank results via an algorithm based on word frequency with AND / OR operators

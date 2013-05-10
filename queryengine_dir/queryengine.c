@@ -6,7 +6,7 @@ By: Delos Chang
 Description: a command-line processing engine that asks users for input
 and creates a ranking from the crawler and indexer to display to the user
 
-Inputs: ./queryengine [TARGET INDEXER FILENAME] [RESULTS FILE NAME]
+INPUTS: ./queryengine [TARGET INDEXER FILENAME] [RESULTS FILE NAME]
   AND / OR operators for command-line processing
   - a space (" ") represents an 'AND' operator
   - a capital OR represents an 'OR' operator
@@ -43,7 +43,7 @@ INVERTED_INDEX* indexReload = NULL;
 
 // this function prints generic usage information 
 void printUsage(){
-    printf("Usage: ./queryengine ../indexer_dir/index.dat ../data \n"); 
+    printf("Usage: ./queryengine ../indexer_dir/index.dat ../crawler_dir/data \n"); 
 }
 
 void validateArgs(int argc, char* argv[]){
@@ -65,8 +65,15 @@ void validateArgs(int argc, char* argv[]){
 
   // Validate that file exists
   if ( stat(argv[1], &s) != 0){
-    fprintf(stderr, "Error: The file argument %s was not found.  Please \
-    enter a readable and valid file. \n", argv[1]);
+    fprintf(stderr, "Error: The file argument %s was not found.  Please enter a readable and valid file. \n", argv[1]);
+    printUsage();
+
+    exit(1);
+  }
+
+  // Validate that file exists
+  if ( stat(argv[2], &s) != 0){
+    fprintf(stderr, "Error: The file argument %s was not found.  Please enter a readable and valid file. \n", argv[2]);
     printUsage();
 
     exit(1);
@@ -103,6 +110,8 @@ void validateArgs(int argc, char* argv[]){
     exit(1);
   }
   free(readableTest);
+
+  // VALIDATE THAT argv[2] is readable
 }
 
 // converts the raw query from the command line processing into
@@ -144,9 +153,9 @@ char** curateWords(char** queryList, char* query){
 
     // move keyword in 
     strcpy(queryList[num], keyword);
-    free(keyword);
   }
 
+  free(keyword);
   return queryList;
 }
 
@@ -245,7 +254,7 @@ void lookUp(char** queryList, char* urlDir){
             break;
           }
 
-          printf("Document ID:%d URL:%s \n", matchedDocNode->document_id, docURL);
+          printf("Document ID:%d URL:%s", matchedDocNode->document_id, docURL);
           fclose(fp);
           free(docURL);
           free(readableTest);

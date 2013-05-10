@@ -25,7 +25,7 @@ make
 
 # Launch the query engine
 if [ $? -eq 0 ]; then
-  ./queryengine ../indexer_dir/index.dat ../data
+  ./queryengine ../indexer_dir/index.dat ../crawler_dir/data
 else 
   echo "Building search engine failed (make)"
   exit 1

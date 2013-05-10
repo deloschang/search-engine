@@ -155,7 +155,7 @@ void sanitizeKeywords(char** queryList){
   // if the keyword is OR then don't convert
   for (int i=0; queryList[i]; i++){
     if (strncmp(queryList[i], "OR", strlen("OR") + 1) ){
-      sanitize(queryList[i]);
+      capitalToLower(queryList[i]);
     }
 
     printf("%s \n", queryList[i]);
@@ -195,6 +195,8 @@ int main(int argc, char* argv[]){
       break;
     }
 
+    sanitize(query);
+
     LOG("Querying..\n");
     printf("You queried:  %s \n", query); 
 
@@ -203,13 +205,14 @@ int main(int argc, char* argv[]){
     char* queryList[1000];
     curateWords(queryList, query);
 
-    // (4b) Sanitize the keywords
+    // (4b) Convert keywords from uppercase to lowercase (except OR)
     sanitizeKeywords(queryList);
 
     // (4b) Validate the keywords
+      // if one word present, then make sure it is not OR
 
-    // if one word present, then make sure it is not OR
-
+    // Clean up the word list
+      // keyword, queryList
   }
 
   // (5) Rank results via an algorithm based on word frequency with AND / OR operators

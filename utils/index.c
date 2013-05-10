@@ -78,6 +78,14 @@ void cleanupIndex(INVERTED_INDEX* index){
 
   free(index);
 }
+void capitalToLower(char* buffer){
+    // if letters, convert them from upper case to lower case
+  for (int i = 0; buffer[i]; i++){
+    if (buffer[i] >= 'A' && buffer[i] <= 'Z'){
+        buffer[i] = 'a' + buffer[i] - 'A';
+    } 
+  }
+}
 
 // Strips the buffer of non-letters
 // sanitize: this will sanitize a buffer, stripping everything that should not be
@@ -133,10 +141,6 @@ void sanitize(char* loadedDocument){
         continue;
       }
 
-      // if letters, convert them from upper case to lower case
-      if (loadedDocument[i] >= 'A' && loadedDocument[i] <= 'Z'){
-        loadedDocument[i] = 'a' + loadedDocument[i] - 'A';
-      } 
 
       // put that character into the clearzone
       sprintf(clear, "%c", loadedDocument[i]);

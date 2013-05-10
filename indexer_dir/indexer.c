@@ -567,6 +567,7 @@ void buildIndexFromDir(char* dir, int numOfFiles, INVERTED_INDEX* index){
     // Load the document from the filepath
     loadedDocument = loadDocument(writable);
     sanitize(loadedDocument);
+    capitalToLower(loadedDocument);
 
     free(writable);
 

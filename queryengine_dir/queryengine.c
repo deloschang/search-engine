@@ -191,7 +191,7 @@ int main(int argc, char* argv[]){
     fgets(query, 999, stdin);
 
     // (3a) Check for exit parameter
-    if (!strncmp(query, "!exit", strlen("!exit") + 1) ){
+    if (!strncmp(query, "!exit\n", strlen("!exit\n") + 1) ){
       break;
     }
 

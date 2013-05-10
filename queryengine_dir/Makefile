@@ -12,7 +12,7 @@ LDFLAGS =
 OBJS = queryengine.o index.o hash.o
 
 #SRCS = indexer.c hash.c indexer.h hash.h file.h
-SRCS = queryengine.c ../utils/index.c ../utils/index.h ../utils/hash.c  ../utils/hash.h
+SRCS = queryengine.c queryengine.h ../utils/index.c ../utils/index.h ../utils/hash.c  ../utils/hash.h
 #CFLAGS1SRCS = file.c # need diff flags
 
 # Commands start with TAB not spaces

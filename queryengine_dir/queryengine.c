@@ -37,6 +37,7 @@ Implementation Spec Pseudocode:
 #include <ctype.h>
 
 #include "../utils/index.h"
+#include "../utils/hash.h"
 
 INVERTED_INDEX* indexReload = NULL;
 
@@ -143,6 +144,7 @@ char** curateWords(char** queryList, char* query){
 
     // move keyword in 
     strcpy(queryList[num], keyword);
+    free(keyword);
   }
 
   return queryList;
@@ -151,14 +153,70 @@ char** curateWords(char** queryList, char* query){
 // Filters the keywords with sanitize. But if a keyword is
 // OR then don't sanitize, because that is distinct from 'or'
 void sanitizeKeywords(char** queryList){
-  // convert keywords to lowercase
-  // if the keyword is OR then don't convert
-  for (int i=0; queryList[i]; i++){
-    if (strncmp(queryList[i], "OR", strlen("OR") + 1) ){
-      capitalToLower(queryList[i]);
-    }
+    // convert keywords to lowercase
+    // if the keyword is OR then don't convert
+    for (int i=0; queryList[i]; i++){
+        if (strncmp(queryList[i], "OR", strlen("OR") + 1) ){
+            capitalToLower(queryList[i]);
+        }
 
-    printf("%s \n", queryList[i]);
+        printf("%s \n", queryList[i]);
+    }
+}
+
+// looks up the keywords
+void lookUp(char** queryList){
+    // loop through each keyword
+    for (int i=0; queryList[i]; i++){
+      // look for the keyword in the inverted index
+      int wordHash = hash1(queryList[i]) % MAX_NUMBER_OF_SLOTS;
+
+      WordNode* checkWordNode = NULL; 
+      checkWordNode = indexReload->hash[wordHash];
+      if (checkWordNode == NULL){
+        printf("Word %s could not be found in indexer", queryList[i]);
+
+        // next word
+        continue;
+      }
+
+      // hash slot wasn't empty
+      WordNode* matchedWordNode = NULL;
+
+      // loop through each wordNode
+      for (checkWordNode = indexReload->hash[wordHash];
+        checkWordNode != NULL; checkWordNode = checkWordNode->next){
+        if (!strncmp(checkWordNode->word, queryList[i], WORD_LENGTH)){
+          // found a match that wasn't the first in the list
+          matchedWordNode = checkWordNode;
+          break;
+        } 
+      }
+
+      // check if the match was found
+      if (matchedWordNode != NULL){
+        // loop through the URL docs
+        // REFACTOR *****
+        DocumentNode* matchedDocNode = matchedWordNode->page;
+        while(matchedDocNode != NULL){
+          // do some ranking algorithm
+          // valid document with the word in it
+          printf("Document ID:%d URL: \n", matchedDocNode->document_id);
+          
+          matchedDocNode = matchedDocNode->next;
+        }
+      } else {
+        printf("Word %s could not be found in indexer", queryList[i]);
+        continue;
+      }
+    }
+}
+
+void cleanUpQueryList(char** queryList){
+  int i = 0;
+  while (queryList[i]){
+    free(queryList[i]);
+    i++;
   }
 }
 
@@ -209,10 +267,11 @@ int main(int argc, char* argv[]){
     sanitizeKeywords(queryList);
 
     // (4b) Validate the keywords
+    lookUp(queryList);
       // if one word present, then make sure it is not OR
 
     // Clean up the word list
-      // keyword, queryList
+    cleanUpQueryList(queryList);
   }
 
   // (5) Rank results via an algorithm based on word frequency with AND / OR operators

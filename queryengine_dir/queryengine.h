@@ -14,10 +14,10 @@
 
 // Make the hash large 
 // This will minimize collisions 
-//#define MAX_NUMBER_OF_SLOTS 10000
+#define MAX_NUMBER_OF_SLOTS 10000
 
 // Word length maximum
-//#define WORD_LENGTH 1000
+#define WORD_LENGTH 1000
 
 //! Check whether arg is NULL or not on a memory allocation. Quit this program if it is NULL.
 //#define MALLOC_CHECK(s)  if ((s) == NULL)   {                     \

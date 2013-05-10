@@ -73,4 +73,6 @@ void cleanupIndex(INVERTED_INDEX* index);
 
 void sanitize(char* loadedDocument);
 
+void capitalToLower(char* buffer);
+
 #endif

@@ -123,13 +123,17 @@ char** curateWords(char** queryList, char* query){
   strcpy(queryCopy, query);
   keyword = strtok(queryCopy, " ");
 
-  // index for the word in the list
   int num = 0;
-  queryList[num] = (char*) malloc(sizeof(char) * 1000);
-  BZERO(queryList[num], 1000); // being safe
+  if ( keyword != NULL){
+    // index for the word in the list
+    queryList[num] = (char*) malloc(sizeof(char) * 1000);
+    BZERO(queryList[num], 1000); // being safe
 
-  // move keyword in 
-  strcpy(queryList[num], keyword);
+    // move keyword in 
+    strcpy(queryList[num], keyword);
+  } else {
+    printf("No keywords were valid in your query \n");
+  }
 
   /// LOOP THROUGH THE QUERY FOR KEYWORDS ///
   while ( (keyword = strtok(NULL, " ")) != NULL){
@@ -172,10 +176,10 @@ int main(int argc, char* argv[]){
     printf(" \n KEY WORD:> ");
     fgets(query, 999, stdin);
 
-    // (3b) Change capital letters to lower case letters
+    // (3a) Change capital letters to lower case letters
     sanitize(query);
 
-    // (3c) Check for exit parameter
+    // (3b) Check for exit parameter
     if (!strncmp(query, "!exit", strlen("!exit") + 1) ){
       break;
     }
@@ -184,8 +188,11 @@ int main(int argc, char* argv[]){
     printf("You queried:  %s \n", query); 
 
     // (4) Cross-reference the query with the index and retrieve results
+    // (4a) Convert the actual query into a list of keywords
     char* queryList[1000];
     curateWords(queryList, query);
+
+    // (4b) Validate the arguments for the keywords
   }
 
   // (5) Rank results via an algorithm based on word frequency with AND / OR operators

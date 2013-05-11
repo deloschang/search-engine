@@ -287,8 +287,6 @@ DocumentNode** intersection(DocumentNode** final, DocumentNode** list,
   DocumentNode** result){
   int i = 0; 
   int j = 0;
-  int added = 0;
-
 
   while ( (final[i] != NULL) ){
     while ( (final[j] != NULL) ) {
@@ -297,7 +295,7 @@ DocumentNode** intersection(DocumentNode** final, DocumentNode** list,
       if ( (final[i]->document_id == final[j]->document_id) ){
         // check if the DocNode has been added already
         // since DocIDs are unique, there cannot be collisions
-        if ( result[document_id] != NULL){
+        if ( result[final[i]->document_id] != NULL){
           // should not happen
           fprintf(stderr, "COLLISION SHOULD NOT HAVE HAPPENED *??? \n");
 
@@ -316,7 +314,7 @@ DocumentNode** intersection(DocumentNode** final, DocumentNode** list,
           MALLOC_CHECK(docNode);
           BZERO(docNode, sizeof(DocumentNode));
           docNode->next = NULL; 
-          docNode->document_id = documentId;
+          docNode->document_id = final[i]->document_id;
 
           // combine the two frequencies
           docNode->page_word_frequency = final[i]->page_word_frequency +
@@ -371,9 +369,9 @@ void lookUp(char** queryList, char* urlDir){
     // if nothing is in final yet
     if ( final[0] == NULL){
       int j = 0;
-      // save to the final list
-      while (queryList[j]){
-        final[j] = queryList[j];
+      // save the list to the final list
+      while (list[j]){
+        final[j] = list[j];
         j++;
       }
     } else {
@@ -389,7 +387,7 @@ void lookUp(char** queryList, char* urlDir){
           next_free++;
         }
         // next slot that will be free in saved list
-        next_free = k;
+        next_free = index;
         BZERO(final, 1000); // clear out the "final" list because it was banked
 
         orFlag = 0;
@@ -422,6 +420,7 @@ void lookUp(char** queryList, char* urlDir){
     }
 
   }
+
   // ending with AND
   // at end, concatenate the "final" and "saved" list again
   if (final[0] != NULL){
@@ -435,9 +434,13 @@ void lookUp(char** queryList, char* urlDir){
 
   // sanity check
   int num = 0;
-  while (saved[num]){
-    printf("***LIST: Document ID: %d\n", list[num]->document_id);
-    num++;
+  if (saved[num] != NULL){
+    while (saved[num]){
+      printf("***RESULTANT LIST: Document ID: %d\n", saved[num]->document_id);
+      num++;
+    }
+  } else {
+    printf("No matches from search \n \n");
   }
 
 }

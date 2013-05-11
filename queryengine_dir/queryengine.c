@@ -360,6 +360,8 @@ void lookUp(char** queryList, char* urlDir){
   DocumentNode* saved[1000];
   BZERO(final, 1000);
 
+  int firstRunFlag = 1;
+
 
   // if there is a 'space', it will default to AND'ing with orFlag = 0;
   int orFlag = 0;
@@ -381,7 +383,7 @@ void lookUp(char** queryList, char* urlDir){
     searchForKeyword(list, queryList[i]);
 
     // if nothing is in final yet
-    if ( final[0] == NULL){
+    if ( final[0] == NULL && firstRunFlag){
       int j = 0;
       // save the list to the final list
       while (list[j]){
@@ -417,30 +419,37 @@ void lookUp(char** queryList, char* urlDir){
         // AND'ing (default)
         // AND list and final together
 
-        intersection(final, list, result, resultSlot);
-        // intersection will be stored in result
-        // result needs to be indexed by matching document id
+        // edge case where no results were found
+        if (list[0] != NULL){
+          intersection(final, list, result, resultSlot);
+          // intersection will be stored in result
+          // result needs to be indexed by matching document id
 
-        BZERO(final, 1000);
+          BZERO(final, 1000);
 
-        // copy result back into final
-        int k = 0;
-        if (resultSlot[k] != NULL){
-          while (resultSlot[k]){
-            final[k] = result[resultSlot[k]];
-            k++;
+          // copy result back into final
+          int k = 0;
+          if (resultSlot[k] != NULL){
+            while (resultSlot[k]){
+              final[k] = result[resultSlot[k]];
+              k++;
+            }
           }
+        } else {
+          BZERO(final, 1000);
+          firstRunFlag = 0;
         }
 
         BZERO(result, 1000);
-
+        BZERO(resultSlot, 1000);
+        nextFreeSlot = 0;
       }
     }
 
     // sanity check
     int num = 0;
     while (list[num]){
-      printf("***LIST: Document ID: %d\n", list[num]->document_id);
+      printf("***LIST: %d\n", list[num]->document_id);
       num++;
     }
     printf("\n\n\nDONE*** \n\n\n");
@@ -464,7 +473,7 @@ void lookUp(char** queryList, char* urlDir){
 
     while (saved[num]){
       printf("***RESULTANT LIST: Document ID: %d\n", saved[num]->document_id);
-      free(saved[resultSlot[num]]);
+      free(saved[num]);
 
       num++;
     }
@@ -475,7 +484,7 @@ void lookUp(char** queryList, char* urlDir){
   // reset
   BZERO(resultSlot, 1000);
   nextFreeSlot = 0;
-  next_free = 0;
+  next_free = 0;  // for saved, reset for the new search
 }
 
 void cleanUpQueryList(char** queryList){

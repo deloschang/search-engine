@@ -7,11 +7,11 @@ Description: a command-line processing engine that asks users for input
 and creates a ranking from the crawler and indexer to display to the user
 
 INPUTS: ./queryengine [TARGET INDEXER FILENAME] [RESULTS FILE NAME]
-  AND / OR operators for command-line processing
-  - a space (" ") represents an 'AND' operator
-  - a capital OR represents an 'OR' operator
+AND / OR operators for command-line processing
+- a space (" ") represents an 'AND' operator
+- a capital OR represents an 'OR' operator
 
-  TO EXIT: '!exit'
+TO EXIT: '!exit'
 
 Outputs: The query engine will output a ranking based on the queries that the 
 user enters
@@ -19,13 +19,13 @@ user enters
 Design Spec: 
 
 Implementation Spec Pseudocode: 
-  1. Validate user input arguments
-  2. Load the indexer's index file into memory
-  3. Query the user via the command line
-  4. Change the capital letters to lower case letters
-  5. Cross-reference the query with the index and retrieve results
-  6. Rank results via an algorithm based on word frequency with AND / OR operators
-*/
+1. Validate user input arguments
+2. Load the indexer's index file into memory
+3. Query the user via the command line
+4. Change the capital letters to lower case letters
+5. Cross-reference the query with the index and retrieve results
+6. Rank results via an algorithm based on word frequency with AND / OR operators
+ */
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -47,7 +47,7 @@ int next_free = 0; // stores the position of the next free slot in results array
 
 // this function prints generic usage information 
 void printUsage(){
-    printf("Usage: ./queryengine ../indexer_dir/index.dat ../crawler_dir/data \n"); 
+  printf("Usage: ./queryengine ../indexer_dir/index.dat ../crawler_dir/data \n"); 
 }
 
 void validateArgs(int argc, char* argv[]){
@@ -101,7 +101,7 @@ void validateArgs(int argc, char* argv[]){
   // check the exit status
   if ( readableResult != 0){
     fprintf(stderr, "Error: The file argument %s was not readable. \
-    Please enter readable and valid file. \n", argv[1]);
+        Please enter readable and valid file. \n", argv[1]);
     printUsage();
 
     free(readableTest);
@@ -161,21 +161,21 @@ char** curateWords(char** queryList, char* query){
 // Filters the keywords with sanitize. But if a keyword is
 // OR then don't sanitize, because that is distinct from 'or'
 void sanitizeKeywords(char** queryList){
-    // convert keywords to lowercase
-    // if the keyword is OR then don't convert
-    for (int i=0; queryList[i]; i++){
-        // if it matches special operators OR and AND, skip.
-        if (!strncmp(queryList[i], "OR", strlen("OR") + 1) ){
-          continue;
-        }
-
-        if (!strncmp(queryList[i], "AND", strlen("AND") + 1) ){
-          continue;
-        }
-        capitalToLower(queryList[i]);
-
-        printf("%s \n", queryList[i]);
+  // convert keywords to lowercase
+  // if the keyword is OR then don't convert
+  for (int i=0; queryList[i]; i++){
+    // if it matches special operators OR and AND, skip.
+    if (!strncmp(queryList[i], "OR", strlen("OR") + 1) ){
+      continue;
     }
+
+    if (!strncmp(queryList[i], "AND", strlen("AND") + 1) ){
+      continue;
+    }
+    capitalToLower(queryList[i]);
+
+    printf("%s \n", queryList[i]);
+  }
 }
 
 // given a word to search for, it will return a list of 
@@ -228,9 +228,9 @@ DocumentNode** searchForKeyword(DocumentNode** list, char* keyword){
       /********************/
       /*int document_id_int = matchedDocNode->document_id;*/
 
-       /*find the URL name with the document id*/
+      /*find the URL name with the document id*/
       /*///////////// REFACTOR ///////////////*/
-       /*Construct the filepath*/
+      /*Construct the filepath*/
       /*char* readableTest;*/
 
       /*char* document_id;*/
@@ -242,7 +242,7 @@ DocumentNode** searchForKeyword(DocumentNode** list, char* keyword){
       /*size_t string2 = strlen("/");*/
       /*size_t string3 = strlen(document_id);*/
 
-       /*Allocate space for the filepath*/
+      /*Allocate space for the filepath*/
       /*readableTest = (char*) malloc(string1 + string2 + string3 + 1);*/
       /*sprintf(readableTest, "%s/%s", urlDir, document_id);*/
 
@@ -253,9 +253,9 @@ DocumentNode** searchForKeyword(DocumentNode** list, char* keyword){
       /*FILE* fp;*/
       /*fp = fopen(readableTest, "r");*/
       /*if (fp == NULL){*/
-        /*fprintf(stderr, "Error opening the document! \n");*/
-        /*free(readableTest);*/
-        /*break;*/
+      /*fprintf(stderr, "Error opening the document! \n");*/
+      /*free(readableTest);*/
+      /*break;*/
       /*}*/
 
       /*char* docURL;*/
@@ -263,10 +263,10 @@ DocumentNode** searchForKeyword(DocumentNode** list, char* keyword){
       /*BZERO(docURL, MAX_URL_LENGTH);*/
 
       /*if (fgets(docURL, MAX_URL_LENGTH, fp) == NULL){*/
-        /*fprintf(stderr, "Error copying URL from document. \n");*/
-        /*free(docURL);*/
-        /*free(readableTest);*/
-        /*break;*/
+      /*fprintf(stderr, "Error copying URL from document. \n");*/
+      /*free(docURL);*/
+      /*free(readableTest);*/
+      /*break;*/
       /*}*/
 
       /*printf("Document ID:%d URL:%s", matchedDocNode->document_id, docURL);*/
@@ -288,7 +288,7 @@ DocumentNode** searchForKeyword(DocumentNode** list, char* keyword){
 
 // returns the intersection of the two lists (final and list)
 DocumentNode** intersection(DocumentNode** final, DocumentNode** list,
-  DocumentNode** result, int* resultSlot){
+    DocumentNode** result, int* resultSlot){
   int i = 0; 
   int j = 0;
 
@@ -326,7 +326,7 @@ DocumentNode** intersection(DocumentNode** final, DocumentNode** list,
           // combine the two frequencies for ranking algorithm
           docNode->page_word_frequency = final[i]->page_word_frequency +
             list[j]->page_word_frequency;
-          
+
           // add docNode into the result list
           result[final[i]->document_id] = docNode;
 

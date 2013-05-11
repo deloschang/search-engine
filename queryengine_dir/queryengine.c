@@ -323,7 +323,7 @@ DocumentNode** intersection(DocumentNode** final, DocumentNode** list,
           docNode->next = NULL; 
           docNode->document_id = final[i]->document_id;
 
-          // combine the two frequencies
+          // combine the two frequencies for ranking algorithm
           docNode->page_word_frequency = final[i]->page_word_frequency +
             list[j]->page_word_frequency;
           
@@ -340,7 +340,7 @@ DocumentNode** intersection(DocumentNode** final, DocumentNode** list,
     }
 
     i++;
-    j = 0;
+    j = 0; // start from beginning of other list again
   }
   return result;
 }
@@ -376,6 +376,7 @@ void lookUp(char** queryList, char* urlDir){
     }
 
     if (!strncmp(queryList[i], "AND", strlen("AND") + 1) ){
+      orFlag = 0;
       continue;
     }
 

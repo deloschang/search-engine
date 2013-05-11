@@ -41,6 +41,10 @@ Implementation Spec Pseudocode:
 
 INVERTED_INDEX* indexReload = NULL;
 
+int resultSlot[1000]; // stores the document_id of matches
+int nextFreeSlot = 0; // stores the position of the next free slot in results array
+int next_free = 0; // stores the position of the next free slot in results array
+
 // this function prints generic usage information 
 void printUsage(){
     printf("Usage: ./queryengine ../indexer_dir/index.dat ../crawler_dir/data \n"); 
@@ -284,15 +288,18 @@ DocumentNode** searchForKeyword(DocumentNode** list, char* keyword){
 
 // returns the intersection of the two lists (final and list)
 DocumentNode** intersection(DocumentNode** final, DocumentNode** list,
-  DocumentNode** result){
+  DocumentNode** result, int* resultSlot){
   int i = 0; 
   int j = 0;
+
+  int nextFreeSlot = 0;
 
   while ( (final[i] != NULL) ){
     while ( (final[j] != NULL) ) {
 
       // check if the doc ID's match
       if ( (final[i]->document_id == final[j]->document_id) ){
+        printf("\n\n MATCH MATCH MATCH: %d \n\n", final[j]->document_id);
         // check if the DocNode has been added already
         // since DocIDs are unique, there cannot be collisions
         if ( result[final[i]->document_id] != NULL){
@@ -319,6 +326,13 @@ DocumentNode** intersection(DocumentNode** final, DocumentNode** list,
           // combine the two frequencies
           docNode->page_word_frequency = final[i]->page_word_frequency +
             final[j]->page_word_frequency;
+          
+          // add docNode into the result list
+          result[final[i]->document_id] = docNode;
+
+          // store the valid document ID into resultSlot for looping
+          resultSlot[nextFreeSlot] = final[i]->document_id;
+          nextFreeSlot++;
         }
         break;
       }
@@ -331,6 +345,7 @@ DocumentNode** intersection(DocumentNode** final, DocumentNode** list,
 }
 
 // looks up the keywords
+// only runs once to return the result
 void lookUp(char** queryList, char* urlDir){
   // loop through each keyword
   // REFACTOR *** return a match if found. otherwise return NULL
@@ -345,9 +360,8 @@ void lookUp(char** queryList, char* urlDir){
   DocumentNode* saved[1000];
   BZERO(final, 1000);
 
-  int next_free = 0;
 
-  // if there is a 'space', it will default to AND'ing with orFlag =0;
+  // if there is a 'space', it will default to AND'ing with orFlag = 0;
   int orFlag = 0;
   for (int i=0; queryList[i]; i++){
 
@@ -403,16 +417,19 @@ void lookUp(char** queryList, char* urlDir){
         // AND'ing (default)
         // AND list and final together
 
-        intersection(final, list, result);
+        intersection(final, list, result, resultSlot);
         // intersection will be stored in result
+        // result needs to be indexed by matching document id
 
         BZERO(final, 1000);
 
         // copy result back into final
         int k = 0;
-        while (result[k]){
-          final[k] = result[k];
-          k++;
+        if (resultSlot[k] != NULL){
+          while (resultSlot[k]){
+            final[k] = result[resultSlot[k]];
+            k++;
+          }
         }
 
         BZERO(result, 1000);
@@ -444,15 +461,21 @@ void lookUp(char** queryList, char* urlDir){
   // sanity check
   int num = 0;
   if (saved[num] != NULL){
+
     while (saved[num]){
       printf("***RESULTANT LIST: Document ID: %d\n", saved[num]->document_id);
-      free(saved[num]);
+      free(saved[resultSlot[num]]);
+
       num++;
     }
   } else {
     printf("No matches from search \n \n");
   }
 
+  // reset
+  BZERO(resultSlot, 1000);
+  nextFreeSlot = 0;
+  next_free = 0;
 }
 
 void cleanUpQueryList(char** queryList){
@@ -513,6 +536,7 @@ int main(int argc, char* argv[]){
 
     // (4b) Validate the keywords
     lookUp(queryList, urlDir);
+    LOG("Done");
 
     // Clean up the word list
     cleanUpQueryList(queryList);

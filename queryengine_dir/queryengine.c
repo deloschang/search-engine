@@ -299,6 +299,7 @@ void lookUp(char** queryList, char* urlDir){
       }
 
       DocumentNode* list[1000];
+      BZERO(list, 1000);
       searchForKeyword(list, queryList[i]);
 
       // sanity check

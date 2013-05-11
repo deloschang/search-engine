@@ -160,13 +160,15 @@ void sanitizeKeywords(char** queryList){
     // convert keywords to lowercase
     // if the keyword is OR then don't convert
     for (int i=0; queryList[i]; i++){
-        if (strncmp(queryList[i], "OR", strlen("OR") + 1) ){
-            capitalToLower(queryList[i]);
+        // if it matches special operators OR and AND, skip.
+        if (!strncmp(queryList[i], "OR", strlen("OR") + 1) ){
+          continue;
         }
 
-        if (strncmp(queryList[i], "AND", strlen("AND") + 1) ){
-            capitalToLower(queryList[i]);
+        if (!strncmp(queryList[i], "AND", strlen("AND") + 1) ){
+          continue;
         }
+        capitalToLower(queryList[i]);
 
         printf("%s \n", queryList[i]);
     }
@@ -280,36 +282,164 @@ DocumentNode** searchForKeyword(DocumentNode** list, char* keyword){
 
 }
 
+// returns the intersection of the two lists (final and list)
+DocumentNode** intersection(DocumentNode** final, DocumentNode** list,
+  DocumentNode** result){
+  int i = 0; 
+  int j = 0;
+  int added = 0;
+
+
+  while ( (final[i] != NULL) ){
+    while ( (final[j] != NULL) ) {
+
+      // check if the doc ID's match
+      if ( (final[i]->document_id == final[j]->document_id) ){
+        // check if the DocNode has been added already
+        // since DocIDs are unique, there cannot be collisions
+        if ( result[document_id] != NULL){
+          // should not happen
+          fprintf(stderr, "COLLISION SHOULD NOT HAVE HAPPENED *??? \n");
+
+
+        } else {
+          // DocNode doesn't exist already
+
+          // REFACTOR ***** 
+          DocumentNode* docNode = (DocumentNode*)malloc(sizeof(DocumentNode));
+
+          if (docNode == NULL){
+            fprintf(stderr, "Out of memory for indexing! Aborting. \n");
+            return 0;
+          }
+
+          MALLOC_CHECK(docNode);
+          BZERO(docNode, sizeof(DocumentNode));
+          docNode->next = NULL; 
+          docNode->document_id = documentId;
+
+          // combine the two frequencies
+          docNode->page_word_frequency = final[i]->page_word_frequency +
+            final[j]->page_word_frequency;
+        }
+        break;
+      }
+      j++;
+    }
+
+    i++;
+  }
+  return result;
+}
+
 // looks up the keywords
 void lookUp(char** queryList, char* urlDir){
-    // loop through each keyword
-    // REFACTOR *** return a match if found. otherwise return NULL
-    for (int i=0; queryList[i]; i++){
-      int orFlag = 0;
+  // loop through each keyword
+  // REFACTOR *** return a match if found. otherwise return NULL
+  DocumentNode* final[1000];
+  BZERO(final, 1000);
 
-      // if the word is OR, that means we will concatenate
-      // otherwise, default to AND'ing
-      if (!strncmp(queryList[i], "OR", strlen("OR") + 1) ){
-        orFlag = 1;
-        continue;
-      }
+  // placeholder for result intersections etc.
+  DocumentNode* result[1000];
+  BZERO(result, 1000);
 
-      if (!strncmp(queryList[i], "AND", strlen("AND") + 1) ){
-        continue;
-      }
+  // list used to be returned at end
+  DocumentNode* saved[1000];
+  BZERO(final, 1000);
 
-      DocumentNode* list[1000];
-      BZERO(list, 1000);
-      searchForKeyword(list, queryList[i]);
+  int next_free = 0;
 
-      // sanity check
-      int num = 0;
-      while (list[num]){
-        printf("Document ID: %d\n", list[num]->document_id);
-        num++;
-      }
+  // if there is a 'space', it will default to AND'ing with orFlag =0;
+  int orFlag = 0;
+  for (int i=0; queryList[i]; i++){
 
+    // if the word is OR, that means we will concatenate
+    // otherwise, default to AND'ing
+    if (!strncmp(queryList[i], "OR", strlen("OR") + 1) ){
+      orFlag = 1;
+      continue;
     }
+
+    if (!strncmp(queryList[i], "AND", strlen("AND") + 1) ){
+      continue;
+    }
+
+    DocumentNode* list[1000];
+    BZERO(list, 1000);
+    searchForKeyword(list, queryList[i]);
+
+    // if nothing is in final yet
+    if ( final[0] == NULL){
+      int j = 0;
+      // save to the final list
+      while (queryList[j]){
+        final[j] = queryList[j];
+        j++;
+      }
+    } else {
+      if (orFlag == 1 ){
+        // OR'ing
+
+        // bank the "final" list and start a new final list
+        // start where last left off using next_free
+        int index = 0;
+        while (final[index]){
+          saved[next_free] = final[index];
+          index++;
+          next_free++;
+        }
+        // next slot that will be free in saved list
+        next_free = k;
+        BZERO(final, 1000); // clear out the "final" list because it was banked
+
+        orFlag = 0;
+      } else {
+        // AND'ing (default)
+        // AND list and final together
+
+        intersection(final, list, result);
+        // intersection will be stored in result
+
+        BZERO(final, 1000);
+
+        // copy result back into final
+        int k = 0;
+        while (result[k]){
+          final[k] = result[k];
+          k++;
+        }
+
+        BZERO(result, 1000);
+
+      }
+    }
+
+    // sanity check
+    int num = 0;
+    while (list[num]){
+      printf("***LIST: Document ID: %d\n", list[num]->document_id);
+      num++;
+    }
+
+  }
+  // ending with AND
+  // at end, concatenate the "final" and "saved" list again
+  if (final[0] != NULL){
+    int index = 0;
+    while (final[index]){
+      saved[next_free] = final[index];
+      index++;
+      next_free++;
+    }
+  }
+
+  // sanity check
+  int num = 0;
+  while (saved[num]){
+    printf("***LIST: Document ID: %d\n", list[num]->document_id);
+    num++;
+  }
+
 }
 
 void cleanUpQueryList(char** queryList){

@@ -386,9 +386,17 @@ void lookUp(char** queryList, char* urlDir){
           index++;
           next_free++;
         }
+
         // next slot that will be free in saved list
         next_free = index;
         BZERO(final, 1000); // clear out the "final" list because it was banked
+
+        // move current results into the "final" list
+        int q = 0;
+        while (list[q]){
+          final[q] = list[q];
+          q++;
+        }
 
         orFlag = 0;
       } else {
@@ -418,6 +426,7 @@ void lookUp(char** queryList, char* urlDir){
       printf("***LIST: Document ID: %d\n", list[num]->document_id);
       num++;
     }
+    printf("\n\n\nDONE*** \n\n\n");
 
   }
 
@@ -437,6 +446,7 @@ void lookUp(char** queryList, char* urlDir){
   if (saved[num] != NULL){
     while (saved[num]){
       printf("***RESULTANT LIST: Document ID: %d\n", saved[num]->document_id);
+      free(saved[num]);
       num++;
     }
   } else {

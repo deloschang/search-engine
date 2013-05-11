@@ -86,6 +86,7 @@ void validateArgs(int argc, char* argv[]){
   // Allocate memory to prevent overflow
   size_t len1 = strlen("if [[ -r "), len2 = strlen(argv[1]), len3 = strlen(" ]]; then exit 0; else exit 1; fi");
   readableTest = (char*) malloc(len1 + len2 + len3 + 1);
+  MALLOC_CHECK(readableTest);
 
   if (readableTest == NULL){
     fprintf(stderr, "Out of memory! \n ");
@@ -120,10 +121,12 @@ char** curateWords(char** queryList, char* query){
 
   // create storage for keyword
   keyword = (char*) malloc(sizeof(char) * 1000);
+  MALLOC_CHECK(keyword);
   BZERO(keyword, 1000);
 
   // create storage for the query command
   queryCopy = (char*) malloc(sizeof(char) * 1000);
+  MALLOC_CHECK(queryCopy);
   BZERO(queryCopy, 1000);
 
 
@@ -135,6 +138,7 @@ char** curateWords(char** queryList, char* query){
   if ( keyword != NULL){
     // index for the word in the list
     queryList[num] = (char*) malloc(sizeof(char) * 1000);
+    MALLOC_CHECK(queryList[num]);
     BZERO(queryList[num], 1000); // being safe
 
     // move keyword in 
@@ -345,6 +349,14 @@ DocumentNode** intersection(DocumentNode** final, DocumentNode** list,
   return result;
 }
 
+void cleanUpList(DocumentNode** usedList){
+  int num = 0;
+  while (usedList[num]){
+    free(usedList[num]);
+    num++;
+  }
+}
+
 // looks up the keywords
 // only runs once to return the result
 void lookUp(char** queryList, char* urlDir){
@@ -359,7 +371,10 @@ void lookUp(char** queryList, char* urlDir){
 
   // list used to be returned at end
   DocumentNode* saved[1000];
-  BZERO(final, 1000);
+  BZERO(saved, 1000);
+
+  DocumentNode* list[1000];
+  BZERO(list, 1000);
 
   int firstRunFlag = 1;
 
@@ -380,8 +395,8 @@ void lookUp(char** queryList, char* urlDir){
       continue;
     }
 
-    DocumentNode* list[1000];
     BZERO(list, 1000);
+
     searchForKeyword(list, queryList[i]);
 
     // if nothing is in final yet
@@ -421,23 +436,35 @@ void lookUp(char** queryList, char* urlDir){
         // AND'ing (default)
         // AND list and final together
 
-        // edge case where no results were found
         if (list[0] != NULL){
+          // e.g. "dog cat"
+          // dog --> stored in final
+          // cat --> stored in list 
           intersection(final, list, result, resultSlot);
           // intersection will be stored in result
           // result needs to be indexed by matching document id
 
+          // free helper lists 
+          cleanUpList(final); // added from scenario "dog cat" -- original dog
+          cleanUpList(list); // added from scenario "dog cat" -- now cat
           BZERO(final, 1000);
 
           // copy result back into final
           int k = 0;
           if (resultSlot[k] != NULL){
             while (resultSlot[k]){
+              // move the docNodes into final
               final[k] = result[resultSlot[k]];
+
+              // freeing the matched DocNodes and putting them in final
+              /*free(result[resultSlot[k]]);*/
               k++;
             }
           }
         } else {
+          // edge case where no results were found
+          // e.g. "alskdfjsalkdfjk asdflkjsldf"
+          cleanUpList(final);
           BZERO(final, 1000);
           firstRunFlag = 0;
         }
@@ -449,14 +476,24 @@ void lookUp(char** queryList, char* urlDir){
     }
 
     // sanity check
-    int num = 0;
-    while (list[num]){
-      printf("***LIST: %d\n", list[num]->document_id);
-      num++;
-    }
-    printf("\n\n\nDONE*** \n\n\n");
+    /*int num = 0;*/
+    /*while (list[num]){*/
+      /*printf("***LIST: %d\n", list[num]->document_id);*/
+      /*[>free(list[num]);<]*/
+      /*num++;*/
+    /*}*/
+    /*printf("\n\n\nDONE*** \n\n\n");*/
+
+
+    /*int k = 0;*/
+    /*while (resultSlot[k]){*/
+      /*// freeing the matched DocNodes and putting them in final*/
+      /*free(result[resultSlot[k]]);*/
+      /*k++;*/
+    /*}*/
 
   }
+  //////// end of for loop ////////
 
   // ending with AND
   // at end, concatenate the "final" and "saved" list again
@@ -472,7 +509,6 @@ void lookUp(char** queryList, char* urlDir){
   // sanity check
   int num = 0;
   if (saved[num] != NULL){
-
     while (saved[num]){
       printf("***RESULTANT LIST: Document ID: %d\n", saved[num]->document_id);
       free(saved[num]);
@@ -540,6 +576,8 @@ int main(int argc, char* argv[]){
     // (4) Cross-reference the query with the index and retrieve results
     // (4a) Convert the actual query into a list of keywords, in queryList
     char* queryList[1000];
+    BZERO(queryList, 1000);
+
     curateWords(queryList, query);
 
     // (4b) Convert keywords from uppercase to lowercase (except OR)
@@ -549,7 +587,7 @@ int main(int argc, char* argv[]){
     lookUp(queryList, urlDir);
     LOG("Done");
 
-    // Clean up the word list
+    // Clean up the word list with keywords
     cleanUpQueryList(queryList);
   }
 

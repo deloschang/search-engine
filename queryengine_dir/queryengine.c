@@ -295,11 +295,11 @@ DocumentNode** intersection(DocumentNode** final, DocumentNode** list,
   int nextFreeSlot = 0;
 
   while ( (final[i] != NULL) ){
-    while ( (final[j] != NULL) ) {
+    while ( (list[j] != NULL) ) {
 
       // check if the doc ID's match
-      if ( (final[i]->document_id == final[j]->document_id) ){
-        printf("\n\n MATCH MATCH MATCH: %d \n\n", final[j]->document_id);
+      if ( (final[i]->document_id == list[j]->document_id) ){
+        printf("\n\n MATCH : %d \n\n", list[j]->document_id);
         // check if the DocNode has been added already
         // since DocIDs are unique, there cannot be collisions
         if ( result[final[i]->document_id] != NULL){
@@ -325,7 +325,7 @@ DocumentNode** intersection(DocumentNode** final, DocumentNode** list,
 
           // combine the two frequencies
           docNode->page_word_frequency = final[i]->page_word_frequency +
-            final[j]->page_word_frequency;
+            list[j]->page_word_frequency;
           
           // add docNode into the result list
           result[final[i]->document_id] = docNode;
@@ -340,6 +340,7 @@ DocumentNode** intersection(DocumentNode** final, DocumentNode** list,
     }
 
     i++;
+    j = 0;
   }
   return result;
 }

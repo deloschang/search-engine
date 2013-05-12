@@ -51,10 +51,12 @@ void printUsage(){
   printf("Usage: ./queryengine ../indexer_dir/index.dat ../crawler_dir/data \n"); 
 }
 
-void cleanUpList(DocumentNode** usedList, int length){
-  for (int i = 0; i < length; i++){
+void cleanUpList(DocumentNode** usedList){
+  int i = 0;
+  while(usedList[i] != NULL){
     free(usedList[i]);
     usedList[i] = NULL;
+    i++;
   }
 }
 
@@ -368,6 +370,7 @@ void lookUp(char** queryList, char* urlDir){
 
   // if there is a 'space', it will default to AND'ing with orFlag = 0;
   int orFlag = 0;
+  int neitherFlag = 1;
   for (int i=0; queryList[i]; i++){
 
     // if the word is OR, that means we will concatenate
@@ -391,7 +394,8 @@ void lookUp(char** queryList, char* urlDir){
       /*int j = 0;*/
       // save the list to the final list
       copyList(final, list, 1000);
-      cleanUpList(list, 1000);
+      cleanUpList(list);
+
       firstRunFlag = 0;
     } else {
       if (orFlag == 1 ){
@@ -412,7 +416,7 @@ void lookUp(char** queryList, char* urlDir){
 
         // move current results into the "final" list
         copyList(final, list, 1000);
-        cleanUpList(list, 1000);
+        cleanUpList(list);
 
         orFlag = 0;
       } else {
@@ -428,7 +432,7 @@ void lookUp(char** queryList, char* urlDir){
           // result needs to be indexed by matching document id
 
           // free helper lists 
-          /*cleanUpList(final, 1000); // added from scenario "dog cat" -- original dog*/
+          cleanUpList(final); // added from scenario "dog cat" -- original dog
           /*cleanUpList(list); // added from scenario "dog cat" -- now cat*/
           /*BZERO(final, 1000);*/
           BZERO(temp, 1000);
@@ -459,6 +463,9 @@ void lookUp(char** queryList, char* urlDir){
         BZERO(result, 1000);
         BZERO(resultSlot, 1000);
         nextFreeSlot = 0;
+
+        // was AND'ed
+        neitherFlag = 0;
       }
     }
 
@@ -482,9 +489,9 @@ void lookUp(char** queryList, char* urlDir){
   }
   //////// end of for loop ////////
 
-  // ending with AND
-  // at end, concatenate the "final" and "saved" list again
-  if (final[0] != NULL){
+  // neither AND or OR
+  // e.g. "dog"
+  if (final[0] != NULL && orFlag == 0 && neitherFlag == 1){
     int index = 0;
     while (final[index]){
       saved[next_free] = final[index];
@@ -493,6 +500,8 @@ void lookUp(char** queryList, char* urlDir){
     }
   }
 
+  // ending with AND
+  // e.g. "dog cat"
   if (temp[0] != NULL){
     int index = 0;
     while (temp[index]){
@@ -521,6 +530,7 @@ void lookUp(char** queryList, char* urlDir){
   BZERO(resultSlot, 1000);
   nextFreeSlot = 0;
   next_free = 0;  // for saved, reset for the new search
+
 }
 
 void cleanUpQueryList(char** queryList){

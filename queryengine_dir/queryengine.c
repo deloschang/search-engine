@@ -115,15 +115,7 @@ void validateArgs(int argc, char* argv[]){
 
 // converts the raw query from the command line processing into
 // a list of words to be cross-referenced with the index
-char** curateWords(char** queryList, char* query){
-  char* keyword = NULL;
-  /*char* queryCopy;*/
-
-  // create storage for keyword
-  keyword = (char*) malloc(sizeof(char) * 1000);
-  MALLOC_CHECK(keyword);
-  BZERO(keyword, 1000);
-
+char** curateWords(char** queryList, char* query, char* keyword){
   // create storage for the query command
   char copy[1000];
   strcpy(copy, query);
@@ -154,7 +146,7 @@ char** curateWords(char** queryList, char* query){
     strcpy(queryList[num], keyword);
   }
 
-  free(keyword);
+
   return queryList;
 }
 
@@ -182,16 +174,17 @@ void copyDocNode(DocumentNode* docNode, DocumentNode* orig){
 
   if (docNode == NULL){
     fprintf(stderr, "Out of memory for indexing! Aborting. \n");
-    return NULL;
+  } else {
+    MALLOC_CHECK(docNode);
+    BZERO(docNode, sizeof(DocumentNode));
+    docNode->next = NULL; 
+    docNode->document_id = orig->document_id;
+
+    // combine the two frequencies for ranking algorithm
+    docNode->page_word_frequency = orig->page_word_frequency;
+
   }
 
-  MALLOC_CHECK(docNode);
-  BZERO(docNode, sizeof(DocumentNode));
-  docNode->next = NULL; 
-  docNode->document_id = orig->document_id;
-
-  // combine the two frequencies for ranking algorithm
-  docNode->page_word_frequency = orig->page_word_frequency;
 }
 
 // given a word to search for, it will return a list of 
@@ -235,9 +228,6 @@ DocumentNode** searchForKeyword(DocumentNode** list, char* keyword){
     DocumentNode* matchedDocNode = matchedWordNode->page;
     int num = 0;
     while(matchedDocNode != NULL){
-      list[num] = (DocumentNode*) malloc(sizeof(char) * 1000);
-      BZERO(list[num], 1000);
-
       // save into the list and return
       DocumentNode* docNode = (DocumentNode*)malloc(sizeof(DocumentNode));
       copyDocNode(docNode, matchedDocNode);
@@ -534,7 +524,9 @@ void lookUp(char** queryList, char* urlDir){
   if (saved[num] != NULL){
     while (saved[num]){
       printf("***RESULTANT LIST: Document ID: %d\n", saved[num]->document_id);
-      /*free(saved[num]);*/
+
+      free(saved[num]);
+      saved[num] = NULL;
 
       num++;
     }
@@ -546,7 +538,6 @@ void lookUp(char** queryList, char* urlDir){
   BZERO(resultSlot, 1000);
   nextFreeSlot = 0;
   next_free = 0;  // for saved, reset for the new search
-
 }
 
 void cleanUpQueryList(char** queryList){
@@ -602,7 +593,8 @@ int main(int argc, char* argv[]){
     char* queryList[1000];
     BZERO(queryList, 1000);
 
-    curateWords(queryList, query);
+    char* keyword = NULL;
+    curateWords(queryList, query, keyword);
 
     // (4b) Convert keywords from uppercase to lowercase (except OR)
     sanitizeKeywords(queryList);

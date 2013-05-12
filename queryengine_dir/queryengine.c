@@ -116,8 +116,8 @@ void validateArgs(int argc, char* argv[]){
 // converts the raw query from the command line processing into
 // a list of words to be cross-referenced with the index
 char** curateWords(char** queryList, char* query){
-  char* keyword;
-  char* queryCopy;
+  char* keyword = NULL;
+  /*char* queryCopy;*/
 
   // create storage for keyword
   keyword = (char*) malloc(sizeof(char) * 1000);
@@ -178,6 +178,22 @@ void sanitizeKeywords(char** queryList){
   }
 }
 
+void copyDocNode(DocumentNode* docNode, DocumentNode* orig){
+
+  if (docNode == NULL){
+    fprintf(stderr, "Out of memory for indexing! Aborting. \n");
+    return NULL;
+  }
+
+  MALLOC_CHECK(docNode);
+  BZERO(docNode, sizeof(DocumentNode));
+  docNode->next = NULL; 
+  docNode->document_id = orig->document_id;
+
+  // combine the two frequencies for ranking algorithm
+  docNode->page_word_frequency = orig->page_word_frequency;
+}
+
 // given a word to search for, it will return a list of 
 // Document Nodes with the word in it
 DocumentNode** searchForKeyword(DocumentNode** list, char* keyword){
@@ -223,7 +239,10 @@ DocumentNode** searchForKeyword(DocumentNode** list, char* keyword){
       BZERO(list[num], 1000);
 
       // save into the list and return
-      list[num] = matchedDocNode;
+      DocumentNode* docNode = (DocumentNode*)malloc(sizeof(DocumentNode));
+      copyDocNode(docNode, matchedDocNode);
+
+      list[num] = docNode;
 
       /********************/
       /*int document_id_int = matchedDocNode->document_id;*/
@@ -347,8 +366,20 @@ DocumentNode** intersection(DocumentNode** final, DocumentNode** list,
 
 void cleanUpList(DocumentNode** usedList, int length){
   for (int i = 0; i < length; i++){
-    free(usedList[num]);
-    usedList[num] = NULL;
+    free(usedList[i]);
+    usedList[i] = NULL;
+  }
+}
+
+
+void copyList(DocumentNode** result, DocumentNode** orig, int length){
+  int i = 0;
+  while (orig[i] != NULL){
+    DocumentNode* docNode = (DocumentNode*)malloc(sizeof(DocumentNode));
+    copyDocNode(docNode, orig[i]);
+    result[i] = docNode;
+
+    i++;
   }
 }
 
@@ -396,12 +427,10 @@ void lookUp(char** queryList, char* urlDir){
 
     // if nothing is in final yet
     if ( final[0] == NULL && firstRunFlag){
-      int j = 0;
+      /*int j = 0;*/
       // save the list to the final list
-      while (list[j]){
-        final[j] = list[j];
-        j++;
-      }
+      copyList(final, list, 1000);
+      cleanUpList(list, 1000);
       firstRunFlag = 0;
     } else {
       if (orFlag == 1 ){
@@ -421,11 +450,8 @@ void lookUp(char** queryList, char* urlDir){
         BZERO(final, 1000); // clear out the "final" list because it was banked
 
         // move current results into the "final" list
-        int q = 0;
-        while (list[q]){
-          final[q] = list[q];
-          q++;
-        }
+        copyList(final, list, 1000);
+        cleanUpList(list, 1000);
 
         orFlag = 0;
       } else {

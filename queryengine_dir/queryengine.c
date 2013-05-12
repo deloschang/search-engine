@@ -433,8 +433,9 @@ void lookUp(char** queryList, char* urlDir){
 
           // free helper lists 
           cleanUpList(final); // added from scenario "dog cat" -- original dog
-          /*cleanUpList(list); // added from scenario "dog cat" -- now cat*/
-          /*BZERO(final, 1000);*/
+          BZERO(final, 1000);
+
+          cleanUpList(list); // added from scenario "dog cat" -- now cat
           BZERO(temp, 1000);
           BZERO(list, 1000);
 
@@ -454,8 +455,9 @@ void lookUp(char** queryList, char* urlDir){
         } else {
           // edge case where no results were found
           // e.g. "alskdfjsalkdfjk asdflkjsldf"
-          /*cleanUpList(final);*/
-          /*BZERO(final, 1000);*/
+          cleanUpList(final);
+          BZERO(final, 1000);
+
           BZERO(temp, 1000);
           firstRunFlag = 0;
         }

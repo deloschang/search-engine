@@ -252,7 +252,7 @@ int reconstructIndex(char* word, int documentId, int page_word_frequency, INVERT
     // occupied, move down the list checking for identical WordNode
     WordNode* checkWordNode = indexReload->hash[wordHash];
 
-    WordNode* matchedWordNode;
+    WordNode* matchedWordNode = NULL;
     WordNode* endWordNode = NULL;
 
     // check if the pointer is on the current word
@@ -466,8 +466,13 @@ INVERTED_INDEX* reloadIndexFromFile(char* loadFile, char* writeReload, INVERTED_
 
   // Commence reloading the index from the file
   // indexReload has been initialized already
-  char* placeholder;
-  char* loadedFile = loadDocument(loadFile);
+  char* placeholder = NULL;
+  char* loadedFile = NULL;
+  loadedFile = loadDocument(loadFile);
+
+  if (loadedFile == NULL){
+    return NULL;
+  }
 
   size_t string1 = strlen(loadedFile);
 

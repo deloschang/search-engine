@@ -23,7 +23,8 @@ Implementation Spec Pseudocode:
 2. Load the indexer's index file into memory
 3. Query the user via the command line
 4. Change the capital letters to lower case letters
-5. Cross-reference the query with the index and retrieve results
+
+5. Cross-reference the query with the index 
 6. Rank results via an algorithm based on word frequency with AND / OR operators
  */
 
@@ -50,13 +51,16 @@ void printUsage(){
   printf("Usage: ./queryengine ../indexer_dir/index.dat ../crawler_dir/data \n"); 
 }
 
+void cleanUpList(DocumentNode** usedList, int length){
+  for (int i = 0; i < length; i++){
+    free(usedList[i]);
+    usedList[i] = NULL;
+  }
+}
+
 void validateArgs(int argc, char* argv[]){
   // struct for checking whether directory exists
   struct stat s;
-
-  // test URL with default correct exit status
-  int readableResult = 0;
-  char* readableTest = NULL; // dynamically allocate to prevent overflow
 
   // check for correct number of parameters first
   if ( (argc != 3) ){
@@ -76,41 +80,11 @@ void validateArgs(int argc, char* argv[]){
 
   // Validate that file exists
   if ( stat(argv[2], &s) != 0){
-    fprintf(stderr, "Error: The file argument %s was not found.  Please enter a readable and valid file. \n", argv[2]);
+    fprintf(stderr, "Error: The dir argument %s was not found.  Please enter a readable and valid dir. \n", argv[2]);
     printUsage();
 
     exit(1);
   }
-
-  // Validate that file is readable
-  // Allocate memory to prevent overflow
-  size_t len1 = strlen("if [[ -r "), len2 = strlen(argv[1]), len3 = strlen(" ]]; then exit 0; else exit 1; fi");
-  readableTest = (char*) malloc(len1 + len2 + len3 + 1);
-  MALLOC_CHECK(readableTest);
-
-  if (readableTest == NULL){
-    fprintf(stderr, "Out of memory! \n ");
-    exit(1);
-  }
-
-  memcpy(readableTest, "if [[ -r ", len1);
-  memcpy(readableTest+len1, argv[1], len2);
-  strcat(readableTest, " ]]; then exit 0; else exit 1; fi");
-
-  readableResult = system(readableTest);
-
-  // check the exit status
-  if ( readableResult != 0){
-    fprintf(stderr, "Error: The file argument %s was not readable. \
-        Please enter readable and valid file. \n", argv[1]);
-    printUsage();
-
-    free(readableTest);
-    exit(1);
-  }
-  free(readableTest);
-
-  // VALIDATE THAT argv[2] is readable
 }
 
 // converts the raw query from the command line processing into
@@ -354,12 +328,6 @@ DocumentNode** intersection(DocumentNode** final, DocumentNode** list,
   return result;
 }
 
-void cleanUpList(DocumentNode** usedList, int length){
-  for (int i = 0; i < length; i++){
-    free(usedList[i]);
-    usedList[i] = NULL;
-  }
-}
 
 
 void copyList(DocumentNode** result, DocumentNode** orig, int length){
@@ -391,6 +359,9 @@ void lookUp(char** queryList, char* urlDir){
 
   DocumentNode* list[1000];
   BZERO(list, 1000);
+
+  DocumentNode* temp[1000];
+  BZERO(temp, 1000);
 
   int firstRunFlag = 1;
 
@@ -457,28 +428,31 @@ void lookUp(char** queryList, char* urlDir){
           // result needs to be indexed by matching document id
 
           // free helper lists 
-          /*cleanUpList(final); // added from scenario "dog cat" -- original dog*/
+          /*cleanUpList(final, 1000); // added from scenario "dog cat" -- original dog*/
           /*cleanUpList(list); // added from scenario "dog cat" -- now cat*/
-          BZERO(final, 1000);
+          /*BZERO(final, 1000);*/
+          BZERO(temp, 1000);
           BZERO(list, 1000);
 
           // copy result back into final
           int k = 0;
-          if (resultSlot[k] != NULL){
+          if (resultSlot[k] != '\0'){
             while (resultSlot[k]){
               // move the docNodes into final
-              final[k] = result[resultSlot[k]];
+              temp[k] = result[resultSlot[k]];
 
               // freeing the matched DocNodes and putting them in final
               /*free(result[resultSlot[k]]);*/
               k++;
             }
           }
+
         } else {
           // edge case where no results were found
           // e.g. "alskdfjsalkdfjk asdflkjsldf"
           /*cleanUpList(final);*/
-          BZERO(final, 1000);
+          /*BZERO(final, 1000);*/
+          BZERO(temp, 1000);
           firstRunFlag = 0;
         }
 
@@ -514,6 +488,15 @@ void lookUp(char** queryList, char* urlDir){
     int index = 0;
     while (final[index]){
       saved[next_free] = final[index];
+      index++;
+      next_free++;
+    }
+  }
+
+  if (temp[0] != NULL){
+    int index = 0;
+    while (temp[index]){
+      saved[next_free] = temp[index];
       index++;
       next_free++;
     }

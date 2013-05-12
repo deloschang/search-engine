@@ -370,7 +370,6 @@ void lookUp(char** queryList, char* urlDir){
 
   // if there is a 'space', it will default to AND'ing with orFlag = 0;
   int orFlag = 0;
-  int neitherFlag = 1;
   for (int i=0; queryList[i]; i++){
 
     // if the word is OR, that means we will concatenate
@@ -410,8 +409,6 @@ void lookUp(char** queryList, char* urlDir){
           next_free++;
         }
 
-        // next slot that will be free in saved list
-        next_free = index;
         BZERO(final, 1000); // clear out the "final" list because it was banked
 
         // move current results into the "final" list
@@ -436,15 +433,15 @@ void lookUp(char** queryList, char* urlDir){
           BZERO(final, 1000);
 
           cleanUpList(list); // added from scenario "dog cat" -- now cat
-          BZERO(temp, 1000);
           BZERO(list, 1000);
 
           // copy result back into final
+          /*BZERO(temp, 1000);*/
           int k = 0;
           if (resultSlot[k] != '\0'){
             while (resultSlot[k]){
               // move the docNodes into final
-              temp[k] = result[resultSlot[k]];
+              final[k] = result[resultSlot[k]];
 
               // freeing the matched DocNodes and putting them in final
               /*free(result[resultSlot[k]]);*/
@@ -465,9 +462,6 @@ void lookUp(char** queryList, char* urlDir){
         BZERO(result, 1000);
         BZERO(resultSlot, 1000);
         nextFreeSlot = 0;
-
-        // was AND'ed
-        neitherFlag = 0;
       }
     }
 
@@ -493,7 +487,8 @@ void lookUp(char** queryList, char* urlDir){
 
   // neither AND or OR
   // e.g. "dog"
-  if (final[0] != NULL && orFlag == 0 && neitherFlag == 1){
+  /*if (final[0] != NULL && orFlag == 0 && neitherFlag == 1){*/
+  if (final[0] != NULL ){
     int index = 0;
     while (final[index]){
       saved[next_free] = final[index];
@@ -504,14 +499,14 @@ void lookUp(char** queryList, char* urlDir){
 
   // ending with AND
   // e.g. "dog cat"
-  if (temp[0] != NULL){
-    int index = 0;
-    while (temp[index]){
-      saved[next_free] = temp[index];
-      index++;
-      next_free++;
-    }
-  }
+  /*if (temp[0] != NULL){*/
+    /*int index = 0;*/
+    /*while (temp[index]){*/
+      /*saved[next_free] = temp[index];*/
+      /*index++;*/
+      /*next_free++;*/
+    /*}*/
+  /*}*/
 
   // sanity check
   int num = 0;

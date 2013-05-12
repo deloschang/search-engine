@@ -515,5 +515,6 @@ INVERTED_INDEX* reloadIndexFromFile(char* loadFile, char* writeReload, INVERTED_
   fclose(fp);
   free(placeholder);
   /*return 1;*/
+  free(loadedFile);
   return indexReload;
 }

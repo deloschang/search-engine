@@ -125,20 +125,17 @@ char** curateWords(char** queryList, char* query){
   BZERO(keyword, 1000);
 
   // create storage for the query command
-  queryCopy = (char*) malloc(sizeof(char) * 1000);
-  MALLOC_CHECK(queryCopy);
-  BZERO(queryCopy, 1000);
+  char copy[1000];
+  strcpy(copy, query);
 
 
   /// BEGIN PARSING THE QUERY ///
-  strcpy(queryCopy, query);
-  keyword = strtok(queryCopy, " ");
+  keyword = strtok(copy, " ");
 
   int num = 0;
   if ( keyword != NULL){
     // index for the word in the list
     queryList[num] = (char*) malloc(sizeof(char) * 1000);
-    MALLOC_CHECK(queryList[num]);
     BZERO(queryList[num], 1000); // being safe
 
     // move keyword in 
@@ -157,7 +154,6 @@ char** curateWords(char** queryList, char* query){
     strcpy(queryList[num], keyword);
   }
 
-  free(queryCopy);
   free(keyword);
   return queryList;
 }
@@ -349,11 +345,10 @@ DocumentNode** intersection(DocumentNode** final, DocumentNode** list,
   return result;
 }
 
-void cleanUpList(DocumentNode** usedList){
-  int num = 0;
-  while (usedList[num]){
+void cleanUpList(DocumentNode** usedList, int length){
+  for (int i = 0; i < length; i++){
     free(usedList[num]);
-    num++;
+    usedList[num] = NULL;
   }
 }
 
@@ -525,6 +520,7 @@ void lookUp(char** queryList, char* urlDir){
   BZERO(resultSlot, 1000);
   nextFreeSlot = 0;
   next_free = 0;  // for saved, reset for the new search
+
 }
 
 void cleanUpQueryList(char** queryList){
@@ -591,6 +587,7 @@ int main(int argc, char* argv[]){
 
     // Clean up the word list with keywords
     cleanUpQueryList(queryList);
+    BZERO(query, 1000);
   }
 
   // (5) Rank results via an algorithm based on word frequency with AND / OR operators

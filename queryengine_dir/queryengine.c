@@ -303,12 +303,12 @@ DocumentNode** intersection(DocumentNode** final, DocumentNode** list,
 
       // check if the doc ID's match
       if ( (final[i]->document_id == list[j]->document_id) ){
-        printf("\n\n MATCH : %d \n\n", list[j]->document_id);
+        printf("MATCH : %d \n", list[j]->document_id);
         // check if the DocNode has been added already
         // since DocIDs are unique, there cannot be collisions
         if ( result[final[i]->document_id] != NULL){
           // should not happen
-          fprintf(stderr, "COLLISION SHOULD NOT HAVE HAPPENED *??? \n");
+          fprintf(stderr, "Warning: Doc Id: %d is colliding (multiple docs of the same id). Skipping.\n", final[i]->document_id);
 
 
         } else {
@@ -407,6 +407,7 @@ void lookUp(char** queryList, char* urlDir){
         final[j] = list[j];
         j++;
       }
+      firstRunFlag = 0;
     } else {
       if (orFlag == 1 ){
         // OR'ing
@@ -445,9 +446,10 @@ void lookUp(char** queryList, char* urlDir){
           // result needs to be indexed by matching document id
 
           // free helper lists 
-          cleanUpList(final); // added from scenario "dog cat" -- original dog
-          cleanUpList(list); // added from scenario "dog cat" -- now cat
+          /*cleanUpList(final); // added from scenario "dog cat" -- original dog*/
+          /*cleanUpList(list); // added from scenario "dog cat" -- now cat*/
           BZERO(final, 1000);
+          BZERO(list, 1000);
 
           // copy result back into final
           int k = 0;
@@ -464,7 +466,7 @@ void lookUp(char** queryList, char* urlDir){
         } else {
           // edge case where no results were found
           // e.g. "alskdfjsalkdfjk asdflkjsldf"
-          cleanUpList(final);
+          /*cleanUpList(final);*/
           BZERO(final, 1000);
           firstRunFlag = 0;
         }

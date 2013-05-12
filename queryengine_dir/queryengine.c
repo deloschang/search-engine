@@ -511,7 +511,7 @@ void lookUp(char** queryList, char* urlDir){
   if (saved[num] != NULL){
     while (saved[num]){
       printf("***RESULTANT LIST: Document ID: %d\n", saved[num]->document_id);
-      free(saved[num]);
+      /*free(saved[num]);*/
 
       num++;
     }

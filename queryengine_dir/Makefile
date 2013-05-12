@@ -33,7 +33,8 @@ debug2: $(SRCS)
 	#gdb --args indexer ../crawler_dir/data/ index.dat index.dat index_new.dat
 
 valgrind: $(OBJS)
-	$(CC) $(CFLAGS) -o $(EXEC) $(OBJS)
+	$(CC) $(CFLAGS) -g -ggdb -c $(SRCS)
+	$(CC) $(CFLAGS) -g -ggdb -o $(EXEC) $(OBJS)
 	#valgrind --tool=memcheck --leak-check=full --track-origins=yes ./queryengine ../indexer_dir/index.dat ../crawler_dir/data
 	valgrind --tool=memcheck --leak-check=full ./queryengine ../indexer_dir/index.dat ../crawler_dir/data
 

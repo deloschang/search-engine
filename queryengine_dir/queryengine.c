@@ -284,7 +284,7 @@ DocumentNode** intersection(DocumentNode** final, DocumentNode** list,
 
       // check if the doc ID's match
       if ( (final[i]->document_id == list[j]->document_id) ){
-        printf("MATCH : %d \n", list[j]->document_id);
+        /*printf("MATCH : %d \n", list[j]->document_id);*/
         // check if the DocNode has been added already
         // since DocIDs are unique, there cannot be collisions
         if ( result[final[i]->document_id] != NULL){
@@ -348,8 +348,11 @@ void copyList(DocumentNode** result, DocumentNode** orig, int length){
 void lookUp(char** queryList, char* urlDir){
   // loop through each keyword
   // REFACTOR *** return a match if found. otherwise return NULL
-  DocumentNode* final[1000];
-  BZERO(final, 1000);
+  DocumentNode* temp[1000];
+  BZERO(temp, 1000);
+
+  DocumentNode* tempHolder[1000]; 
+  BZERO(tempHolder, 1000);
 
   // placeholder for result intersections etc.
   DocumentNode* result[1000];
@@ -362,8 +365,6 @@ void lookUp(char** queryList, char* urlDir){
   DocumentNode* list[1000];
   BZERO(list, 1000);
 
-  DocumentNode* temp[1000];
-  BZERO(temp, 1000);
 
   int firstRunFlag = 1;
 
@@ -388,11 +389,11 @@ void lookUp(char** queryList, char* urlDir){
 
     searchForKeyword(list, queryList[i]);
 
-    // if nothing is in final yet
-    if ( final[0] == NULL && firstRunFlag){
+    // if nothing is in tempHolder yet
+    if ( tempHolder[0] == NULL && firstRunFlag){
       /*int j = 0;*/
-      // save the list to the final list
-      copyList(final, list, 1000);
+      // save the list to the tempHolder list
+      copyList(tempHolder, list, 1000);
       cleanUpList(list);
 
       firstRunFlag = 0;
@@ -400,50 +401,50 @@ void lookUp(char** queryList, char* urlDir){
       if (orFlag == 1 ){
         // OR'ing
 
-        // bank the "final" list and start a new final list
+        // bank the "tempHolder" list and start a new tempHolder list
         // start where last left off using next_free
         int index = 0;
-        while (final[index]){
-          saved[next_free] = final[index];
+        while (tempHolder[index]){
+          saved[next_free] = tempHolder[index];
           index++;
           next_free++;
         }
 
-        BZERO(final, 1000); // clear out the "final" list because it was banked
+        BZERO(tempHolder, 1000); // clear out the "tempHolder" list because it was banked
 
-        // move current results into the "final" list
-        copyList(final, list, 1000);
+        // move current results into the "tempHolder" list
+        copyList(tempHolder, list, 1000);
         cleanUpList(list);
 
         orFlag = 0;
       } else {
         // AND'ing (default)
-        // AND list and final together
+        // AND list and tempHolder together
 
         if (list[0] != NULL){
           // e.g. "dog cat"
-          // dog --> stored in final
+          // dog --> stored in tempHolder
           // cat --> stored in list 
-          intersection(final, list, result, resultSlot);
+          intersection(tempHolder, list, result, resultSlot);
           // intersection will be stored in result
           // result needs to be indexed by matching document id
 
           // free helper lists 
-          cleanUpList(final); // added from scenario "dog cat" -- original dog
-          BZERO(final, 1000);
+          cleanUpList(tempHolder); // added from scenario "dog cat" -- original dog
+          BZERO(tempHolder, 1000);
 
           cleanUpList(list); // added from scenario "dog cat" -- now cat
           BZERO(list, 1000);
 
-          // copy result back into final
+          // copy result back into tempHolder
           /*BZERO(temp, 1000);*/
           int k = 0;
           if (resultSlot[k] != '\0'){
             while (resultSlot[k]){
-              // move the docNodes into final
-              final[k] = result[resultSlot[k]];
+              // move the docNodes into tempHolder
+              tempHolder[k] = result[resultSlot[k]];
 
-              // freeing the matched DocNodes and putting them in final
+              // freeing the matched DocNodes and putting them in tempHolder
               /*free(result[resultSlot[k]]);*/
               k++;
             }
@@ -452,8 +453,8 @@ void lookUp(char** queryList, char* urlDir){
         } else {
           // edge case where no results were found
           // e.g. "alskdfjsalkdfjk asdflkjsldf"
-          cleanUpList(final);
-          BZERO(final, 1000);
+          cleanUpList(tempHolder);
+          BZERO(tempHolder, 1000);
 
           BZERO(temp, 1000);
           firstRunFlag = 0;
@@ -477,7 +478,7 @@ void lookUp(char** queryList, char* urlDir){
 
     /*int k = 0;*/
     /*while (resultSlot[k]){*/
-      /*// freeing the matched DocNodes and putting them in final*/
+      /*// freeing the matched DocNodes and putting them in tempHolder*/
       /*free(result[resultSlot[k]]);*/
       /*k++;*/
     /*}*/
@@ -487,14 +488,20 @@ void lookUp(char** queryList, char* urlDir){
 
   // neither AND or OR
   // e.g. "dog"
-  /*if (final[0] != NULL && orFlag == 0 && neitherFlag == 1){*/
-  if (final[0] != NULL ){
+  /*if (tempHolder[0] != NULL && orFlag == 0 && neitherFlag == 1){*/
+  if (tempHolder[0] != NULL ){
     int index = 0;
-    while (final[index]){
-      saved[next_free] = final[index];
+    while (tempHolder[index]){
+      /*saved[next_free] = tempHolder[index];*/
+      DocumentNode* docNode = (DocumentNode*)malloc(sizeof(DocumentNode));
+      copyDocNode(docNode, tempHolder[index]);
+      saved[next_free] = docNode;
+
       index++;
       next_free++;
     }
+
+    cleanUpList(tempHolder);
   }
 
   // ending with AND
@@ -511,11 +518,8 @@ void lookUp(char** queryList, char* urlDir){
   // sanity check
   int num = 0;
   if (saved[num] != NULL){
-    while (saved[num]){
+    while (saved[num] != NULL){
       printf("***RESULTANT LIST: Document ID: %d\n", saved[num]->document_id);
-
-      free(saved[num]);
-      saved[num] = NULL;
 
       num++;
     }
@@ -528,6 +532,10 @@ void lookUp(char** queryList, char* urlDir){
   nextFreeSlot = 0;
   next_free = 0;  // for saved, reset for the new search
 
+  BZERO(result, 1000);
+
+  cleanUpList(saved);
+  BZERO(saved, 1000);
 }
 
 void cleanUpQueryList(char** queryList){

@@ -436,8 +436,7 @@ void lookUp(char** queryList, char* urlDir){
           cleanUpList(list); // added from scenario "dog cat" -- now cat
           BZERO(list, 1000);
 
-          // copy result back into tempHolder
-          /*BZERO(temp, 1000);*/
+          // copy result back
           int k = 0;
           if (resultSlot[k] != '\0'){
             while (resultSlot[k]){
@@ -451,17 +450,6 @@ void lookUp(char** queryList, char* urlDir){
               free(result[resultSlot[k]]);
               k++;
             }
-
-            // manual clean up
-
-            /*for (int j = 0; j < 10000; j++){*/
-              /*int i = 0;*/
-              /*while(result[i] != NULL){*/
-                /*free(result[i]);*/
-                /*result[i] = NULL;*/
-                /*i++;*/
-              /*}*/
-            /*}*/
 
           }
 

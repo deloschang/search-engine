@@ -72,7 +72,7 @@ INVERTED_INDEX* initReloadStructure();
 /*int reloadIndexFromFile(char* loadFile, char* writeReload){*/
 INVERTED_INDEX* reloadIndexFromFile(char* loadFile, char* writeReload, INVERTED_INDEX* indexReload);
 
-void cleanupIndex(INVERTED_INDEX* index);
+void cleanUpIndex(INVERTED_INDEX* index);
 
 void sanitize(char* loadedDocument);
 

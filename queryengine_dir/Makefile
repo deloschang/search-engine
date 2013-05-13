@@ -5,22 +5,26 @@ CFLAGS = -Wall -pedantic -std=c99
 CFLAGS1 = -Wall 
 
 EXEC = queryengine
+
 LDFLAGS = 
 
 # my project details
-#OBJS = indexer.o hash.o file.o 
-OBJS = queryengine.o index.o hash.o
+OBJS = queryengine.o index.o hash.o querylogic.o
+SRCS = queryengine.c queryengine.h ../utils/index.c ../utils/index.h ../utils/hash.c  ../utils/hash.h querylogic.c 
 
-#SRCS = indexer.c hash.c indexer.h hash.h file.h
-SRCS = queryengine.c queryengine.h ../utils/index.c ../utils/index.h ../utils/hash.c  ../utils/hash.h
-#CFLAGS1SRCS = file.c # need diff flags
+
+EXEC2 = queryengine_test
+OBJS2 = queryengine_test.o index.o querylogic.o
+SRCS2 = queryengine_test.c ../utils/index.c ../utils/index.h querylogic.c 
 
 # Commands start with TAB not spaces
 $(EXEC): $(OBJS)
 	$(CC) $(CFLAGS) -o $(EXEC) $(OBJS)
 $(OBJS): $(SRCS) $(CFLAGS1SRCS)
 	$(CC) $(CFLAGS) -c $(SRCS)
-	#$(CC) $(CFLAGS1) -c $(CFLAGS1SRCS)
+unit: $(SRCS2) $(CFLAGS1SRCS2)
+	$(CC) $(CFLAGS) -c $(SRCS2)
+	$(CC) $(CFLAGS) -o $(EXEC2) $(OBJS2)
 debug: $(SRCS)
 	$(CC) $(CFLAGS) -g -ggdb -c $(SRCS)
 	#$(CC) $(CFLAGS1) -c $(CFLAGS1SRCS)
@@ -42,6 +46,7 @@ valgrindgdb: $(OBJS)
 	$(CC) $(CFLAGS) -g -ggdb -c $(SRCS)
 	$(CC) $(CFLAGS) -g -ggdb -o $(EXEC) $(OBJS)
 	valgrind --tool=memcheck --leak-check=full --vgdb-error=0 ./queryengine ../indexer_dir/index.dat ../crawler_dir/data
+
 
 
 clean:

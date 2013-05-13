@@ -84,7 +84,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "dictionary.h"
+
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <unistd.h>
+
+#include "../utils/index.h"
+#include "../utils/hash.h"
+#include "querylogic.h"
 
 // Useful MACROS for controlling the unit tests.
 
@@ -145,199 +152,235 @@ unsigned long hash1(char* str) {
 }
 
 
+// Test case: TestArgs:1
+// This test case checks to make sure that arguments are processed
+// by the query engine successfully
+int TestArgs1() {
+  START_TEST_CASE;
+
+  LOG("Initializing INVERTED INDEX structure");
+
+  INVERTED_INDEX* indexReload = NULL;
+  indexReload = initReloadStructure();
+  SHOULD_BE(indexReload != NULL);
+
+  INVERTED_INDEX* result = NULL;
+  result = reloadIndexFromFile("../indexer_dir/index.dat", "dummy", indexReload);
+  SHOULD_BE(result != NULL);
+  LOG("Reloading INVERTED INDEX structure");
+
+  char query[1000] = "dog OR cat";
+  sanitize(query);
+
+  char* queryList[1000];
+  curateWords(queryList, query);
+
+  sanitizeKeywords(queryList); 
+
+  int lookUpResult = 0;
+  lookUpResult = lookUp(queryList, "../crawler_dir/data", indexReload);
+
+  SHOULD_BE(lookUpResult == 1);
+
+  cleanUpQueryList(queryList);
+  cleanUpIndex(indexReload);
+
+  END_TEST_CASE;
+}
+
 // Test case: DADD:1
 // This test case calls DAdd() for the condition where dict is empty
 // result is to add a DNODE to the dictionary and look at its values.
 
-int TestDAdd1() {
-  START_TEST_CASE;
-  DICTIONARY* dict = InitDictionary();
-  int* d1; d1 = (int *)malloc(sizeof(int)); *d1 = 1;
-  hash = 0;
-  DAdd(dict, d1, "1");
-  SHOULD_BE(dict->hash[0]->data == (void*)d1);
-  SHOULD_BE(dict->start == dict->hash[0]);
-  SHOULD_BE(dict->end == dict->hash[0]);
-  SHOULD_BE(dict->hash[0]->prev == NULL);
-  SHOULD_BE(dict->hash[0]->next == NULL);
-  SHOULD_BE(!strcmp(dict->hash[0]->key, "1"));
-  CleanDictionary(dict);
-  free(dict);
-  END_TEST_CASE;
-}
+/*int TestDAdd1() {*/
+  /*START_TEST_CASE;*/
+  /*DICTIONARY* dict = InitDictionary();*/
+  /*int* d1; d1 = (int *)malloc(sizeof(int)); *d1 = 1;*/
+  /*hash = 0;*/
+  /*DAdd(dict, d1, "1");*/
+  /*SHOULD_BE(dict->hash[0]->data == (void*)d1);*/
+  /*SHOULD_BE(dict->start == dict->hash[0]);*/
+  /*SHOULD_BE(dict->end == dict->hash[0]);*/
+  /*SHOULD_BE(dict->hash[0]->prev == NULL);*/
+  /*SHOULD_BE(dict->hash[0]->next == NULL);*/
+  /*SHOULD_BE(!strcmp(dict->hash[0]->key, "1"));*/
+  /*CleanDictionary(dict);*/
+  /*free(dict);*/
+  /*END_TEST_CASE;*/
+/*}*/
 
 // Test case: DADD:2
 // This test case calls DAdd() puts multiple DNODEs on the dict when there is no hash collisions
 // We put multiply elements in dictionary with no collisions.
 
-int TestDAdd2() {
-  START_TEST_CASE;
-  DICTIONARY* dict = InitDictionary();
-  int *d1; d1 = (int *)malloc(sizeof(int)); *d1 = 1;
-  int *d2; d2 = (int *)malloc(sizeof(int)); *d2 = 2;
-  int *d3; d3 = (int *)malloc(sizeof(int)); *d3 = 3;
-  hash = 0;
-  DAdd(dict, d1, "1");
-  hash = 1;
-  DAdd(dict, d2, "2");
-  hash = 2;
-  DAdd(dict, d3, "3");
-  SHOULD_BE(dict->end == dict->hash[2]);
-  SHOULD_BE(dict->start == dict->hash[0]);
-  SHOULD_BE(dict->hash[0]->data == (void*)d1);
-  SHOULD_BE(dict->hash[0]->prev == (void*)NULL);
-  SHOULD_BE(dict->hash[0]->next == dict->hash[1]);
-  SHOULD_BE(dict->hash[1]->data == (void*)d2);
-  SHOULD_BE(dict->hash[1]->prev == dict->hash[0]);
-  SHOULD_BE(dict->hash[1]->next == dict->hash[2]);
-  SHOULD_BE(dict->hash[2]->data == (void*)d3);
-  SHOULD_BE(dict->hash[2]->prev == dict->hash[1]);
-  SHOULD_BE(dict->hash[2]->next == (void*)NULL);
-  CleanDictionary(dict);
-  free(dict);
-  END_TEST_CASE;
-}
+/*int TestDAdd2() {*/
+  /*START_TEST_CASE;*/
+  /*DICTIONARY* dict = InitDictionary();*/
+  /*int *d1; d1 = (int *)malloc(sizeof(int)); *d1 = 1;*/
+  /*int *d2; d2 = (int *)malloc(sizeof(int)); *d2 = 2;*/
+  /*int *d3; d3 = (int *)malloc(sizeof(int)); *d3 = 3;*/
+  /*hash = 0;*/
+  /*DAdd(dict, d1, "1");*/
+  /*hash = 1;*/
+  /*DAdd(dict, d2, "2");*/
+  /*hash = 2;*/
+  /*DAdd(dict, d3, "3");*/
+  /*SHOULD_BE(dict->end == dict->hash[2]);*/
+  /*SHOULD_BE(dict->start == dict->hash[0]);*/
+  /*SHOULD_BE(dict->hash[0]->data == (void*)d1);*/
+  /*SHOULD_BE(dict->hash[0]->prev == (void*)NULL);*/
+  /*SHOULD_BE(dict->hash[0]->next == dict->hash[1]);*/
+  /*SHOULD_BE(dict->hash[1]->data == (void*)d2);*/
+  /*SHOULD_BE(dict->hash[1]->prev == dict->hash[0]);*/
+  /*SHOULD_BE(dict->hash[1]->next == dict->hash[2]);*/
+  /*SHOULD_BE(dict->hash[2]->data == (void*)d3);*/
+  /*SHOULD_BE(dict->hash[2]->prev == dict->hash[1]);*/
+  /*SHOULD_BE(dict->hash[2]->next == (void*)NULL);*/
+  /*CleanDictionary(dict);*/
+  /*free(dict);*/
+  /*END_TEST_CASE;*/
+/*}*/
 
 
 // Test case: DADD:3
 // This test case calls DAdd() puts multiple DNODEs on the dict when there is hash collisions
 // We put multiply elements in dictionary with collisions.
 
-int TestDAdd3() {
-  START_TEST_CASE;
-  DICTIONARY* dict = InitDictionary();
-  int *d1; d1 = (int *)malloc(sizeof(int)); *d1 = 1;
-  int *d2; d2 = (int *)malloc(sizeof(int)); *d2 = 2;
-  hash = 0;
-  DAdd(dict, d1, "1");
-  hash = 0;
-  DAdd(dict, d2, "2");
-  SHOULD_BE(dict->end == dict->hash[0]->next);
-  SHOULD_BE(dict->start == dict->hash[0]);
-  SHOULD_BE(dict->hash[0]->data == (void*)d1);
-  SHOULD_BE(dict->hash[0]->prev == NULL);
-  SHOULD_BE(dict->hash[0]->next->data == (void*)d2);
-  SHOULD_BE(dict->hash[0]->next->prev == dict->hash[0]);
-  SHOULD_BE(dict->hash[0]->next->next == NULL);  
-  CleanDictionary(dict);
-  free(dict);
-  END_TEST_CASE;
-}
+/*int TestDAdd3() {*/
+  /*START_TEST_CASE;*/
+  /*DICTIONARY* dict = InitDictionary();*/
+  /*int *d1; d1 = (int *)malloc(sizeof(int)); *d1 = 1;*/
+  /*int *d2; d2 = (int *)malloc(sizeof(int)); *d2 = 2;*/
+  /*hash = 0;*/
+  /*DAdd(dict, d1, "1");*/
+  /*hash = 0;*/
+  /*DAdd(dict, d2, "2");*/
+  /*SHOULD_BE(dict->end == dict->hash[0]->next);*/
+  /*SHOULD_BE(dict->start == dict->hash[0]);*/
+  /*SHOULD_BE(dict->hash[0]->data == (void*)d1);*/
+  /*SHOULD_BE(dict->hash[0]->prev == NULL);*/
+  /*SHOULD_BE(dict->hash[0]->next->data == (void*)d2);*/
+  /*SHOULD_BE(dict->hash[0]->next->prev == dict->hash[0]);*/
+  /*SHOULD_BE(dict->hash[0]->next->next == NULL);  */
+  /*CleanDictionary(dict);*/
+  /*free(dict);*/
+  /*END_TEST_CASE;*/
+/*}*/
 
 // Test case:DREMOVE:1
 // This test case DAdd() and DRemove()  DNODE from dict for only one element.
-int TestDRemove1() {
-  START_TEST_CASE;
-  DICTIONARY* dict = InitDictionary();
-  int *d1; d1 = (int *)malloc(sizeof(int)); *d1 = 1;
-  hash = 0;
-  DAdd(dict, d1, "1");
-  DRemove(dict, "1");
-  SHOULD_BE(dict->hash[0] == NULL);
-  SHOULD_BE(dict->start == NULL);
-  SHOULD_BE(dict->end == NULL);
-  CleanDictionary(dict);
-  free(dict);
-  END_TEST_CASE;
-}
+/*int TestDRemove1() {*/
+  /*START_TEST_CASE;*/
+  /*DICTIONARY* dict = InitDictionary();*/
+  /*int *d1; d1 = (int *)malloc(sizeof(int)); *d1 = 1;*/
+  /*hash = 0;*/
+  /*DAdd(dict, d1, "1");*/
+  /*DRemove(dict, "1");*/
+  /*SHOULD_BE(dict->hash[0] == NULL);*/
+  /*SHOULD_BE(dict->start == NULL);*/
+  /*SHOULD_BE(dict->end == NULL);*/
+  /*CleanDictionary(dict);*/
+  /*free(dict);*/
+  /*END_TEST_CASE;*/
+/*}*/
 
 
-// Test case:DREMOVE:2
-// This test case is tries to see how DRemove() works with multiple nodes for the same hash value, the node to be deleted is at the end of the dynamic list.
+/*// Test case:DREMOVE:2*/
+/*// This test case is tries to see how DRemove() works with multiple nodes for the same hash value, the node to be deleted is at the end of the dynamic list.*/
 
-int TestDRemove2() {
-  START_TEST_CASE;
-  DICTIONARY* dict = InitDictionary();
-  int *d1; d1 = (int *)malloc(sizeof(int)); *d1 = 1;
-  int *d2; d2 = (int *)malloc(sizeof(int)); *d1 = 2;
-  hash = 0;
-  DAdd(dict, d1, "1");
-  DAdd(dict, d2, "2");
-  DRemove(dict, "2");
-  SHOULD_BE(dict->hash[0]->data == (void*)d1);
-  SHOULD_BE(dict->start == dict->hash[0]);
-  SHOULD_BE(dict->end == dict->hash[0]);
-  SHOULD_BE(dict->hash[0]->prev == NULL);
-  SHOULD_BE(dict->hash[0]->next == NULL);
-  CleanDictionary(dict);
-  free(dict);
-  END_TEST_CASE;
-}
-
-
-// Test case:DREMOVE:3
-// This test case is tries to see how DRemove() works with multiple nodes of the same hash value, the node to be deleted is at the start of the dynamic list
-
-int TestDRemove3() {
-  START_TEST_CASE;
-  DICTIONARY* dict = InitDictionary();
-  int *d1; d1 = (int *)malloc(sizeof(int)); *d1 = 1;
-  int *d2; d2 = (int *)malloc(sizeof(int)); *d2 = 2;
-  hash = 0;
-  DAdd(dict, d1, "1");
-  DAdd(dict, d2, "2");
-  DRemove(dict, "1");
-  SHOULD_BE(dict->hash[0]->data == (void*)d2);
-  SHOULD_BE(dict->start == dict->hash[0]);
-  SHOULD_BE(dict->end == dict->hash[0]);
-  SHOULD_BE(dict->hash[0]->prev == NULL);
-  SHOULD_BE(dict->hash[0]->next == NULL);
-  CleanDictionary(dict);
-  free(dict);
-  END_TEST_CASE;
-}
+/*int TestDRemove2() {*/
+  /*START_TEST_CASE;*/
+  /*DICTIONARY* dict = InitDictionary();*/
+  /*int *d1; d1 = (int *)malloc(sizeof(int)); *d1 = 1;*/
+  /*int *d2; d2 = (int *)malloc(sizeof(int)); *d1 = 2;*/
+  /*hash = 0;*/
+  /*DAdd(dict, d1, "1");*/
+  /*DAdd(dict, d2, "2");*/
+  /*DRemove(dict, "2");*/
+  /*SHOULD_BE(dict->hash[0]->data == (void*)d1);*/
+  /*SHOULD_BE(dict->start == dict->hash[0]);*/
+  /*SHOULD_BE(dict->end == dict->hash[0]);*/
+  /*SHOULD_BE(dict->hash[0]->prev == NULL);*/
+  /*SHOULD_BE(dict->hash[0]->next == NULL);*/
+  /*CleanDictionary(dict);*/
+  /*free(dict);*/
+  /*END_TEST_CASE;*/
+/*}*/
 
 
-// Test case:DREMOVE:4
-// This test case is tries to see how DRemove() works with multiple nodes of the same hash value, the node to be deleted is at the middle of the dynamic list
-int TestDRemove4() {
-  START_TEST_CASE;
-  DICTIONARY* dict = InitDictionary();
-  int *d1; d1 = (int*)malloc(sizeof(int)); *d1 = 1;
-  int *d2; d2 = (int*)malloc(sizeof(int)); *d2 = 2;
-  int *d3; d3 = (int*)malloc(sizeof(int)); *d3 = 3;
-  hash = 0;
-  DAdd(dict, d1, "1");
-  hash = 1;
-  DAdd(dict, d2, "2");
-  DAdd(dict, d3, "3");
-  DRemove(dict, "2");
-  SHOULD_BE(dict->start == dict->hash[0]);
-  SHOULD_BE(dict->end == dict->hash[1]);
-  SHOULD_BE(dict->hash[0]->data == (void*)d1);
-  SHOULD_BE(dict->hash[1]->data == (void*)d3);
-  SHOULD_BE(dict->hash[1]->prev == dict->hash[0]);
-  SHOULD_BE(dict->hash[1]->next == NULL);
-  CleanDictionary(dict);
-  free(dict);
-  END_TEST_CASE;
-}
+/*// Test case:DREMOVE:3*/
+/*// This test case is tries to see how DRemove() works with multiple nodes of the same hash value, the node to be deleted is at the start of the dynamic list*/
 
-// Test case:GetDataWithKey:1
-// This test case tests GetDataWithKey - to get a data with the a certain key.
-int TestGetData1() {
-  START_TEST_CASE;
-  DICTIONARY* dict = InitDictionary();
-  int *d1; d1 = (int*)malloc(sizeof(int)); *d1 = 1;
-  int *d2; d2 = (int*)malloc(sizeof(int)); *d2 = 2;
-  int *d3; d3 = (int*)malloc(sizeof(int)); *d3 = 3;
-  hash = 0;
-  DAdd(dict, d1, "1");
-  hash = 1;
-  DAdd(dict, d2, "2");
-  DAdd(dict, d3, "3");
-  hash = 0;
-  SHOULD_BE(GetDataWithKey(dict, "1") == (void*)d1);
-  hash = 1;
-  SHOULD_BE(GetDataWithKey(dict, "2") == (void*)d2);
-  SHOULD_BE(GetDataWithKey(dict, "3") == (void*)d3);
-  // case that there is no such key in the dictionary
-  SHOULD_BE(GetDataWithKey(dict, "") == NULL);
-  SHOULD_BE(GetDataWithKey(dict, "4") == NULL);
-  CleanDictionary(dict);
-  free(dict);
-  END_TEST_CASE;
-}
+/*int TestDRemove3() {*/
+  /*START_TEST_CASE;*/
+  /*DICTIONARY* dict = InitDictionary();*/
+  /*int *d1; d1 = (int *)malloc(sizeof(int)); *d1 = 1;*/
+  /*int *d2; d2 = (int *)malloc(sizeof(int)); *d2 = 2;*/
+  /*hash = 0;*/
+  /*DAdd(dict, d1, "1");*/
+  /*DAdd(dict, d2, "2");*/
+  /*DRemove(dict, "1");*/
+  /*SHOULD_BE(dict->hash[0]->data == (void*)d2);*/
+  /*SHOULD_BE(dict->start == dict->hash[0]);*/
+  /*SHOULD_BE(dict->end == dict->hash[0]);*/
+  /*SHOULD_BE(dict->hash[0]->prev == NULL);*/
+  /*SHOULD_BE(dict->hash[0]->next == NULL);*/
+  /*CleanDictionary(dict);*/
+  /*free(dict);*/
+  /*END_TEST_CASE;*/
+/*}*/
+
+
+/*// Test case:DREMOVE:4*/
+/*// This test case is tries to see how DRemove() works with multiple nodes of the same hash value, the node to be deleted is at the middle of the dynamic list*/
+/*int TestDRemove4() {*/
+  /*START_TEST_CASE;*/
+  /*DICTIONARY* dict = InitDictionary();*/
+  /*int *d1; d1 = (int*)malloc(sizeof(int)); *d1 = 1;*/
+  /*int *d2; d2 = (int*)malloc(sizeof(int)); *d2 = 2;*/
+  /*int *d3; d3 = (int*)malloc(sizeof(int)); *d3 = 3;*/
+  /*hash = 0;*/
+  /*DAdd(dict, d1, "1");*/
+  /*hash = 1;*/
+  /*DAdd(dict, d2, "2");*/
+  /*DAdd(dict, d3, "3");*/
+  /*DRemove(dict, "2");*/
+  /*SHOULD_BE(dict->start == dict->hash[0]);*/
+  /*SHOULD_BE(dict->end == dict->hash[1]);*/
+  /*SHOULD_BE(dict->hash[0]->data == (void*)d1);*/
+  /*SHOULD_BE(dict->hash[1]->data == (void*)d3);*/
+  /*SHOULD_BE(dict->hash[1]->prev == dict->hash[0]);*/
+  /*SHOULD_BE(dict->hash[1]->next == NULL);*/
+  /*CleanDictionary(dict);*/
+  /*free(dict);*/
+  /*END_TEST_CASE;*/
+/*}*/
+
+/*// Test case:GetDataWithKey:1*/
+/*// This test case tests GetDataWithKey - to get a data with the a certain key.*/
+/*int TestGetData1() {*/
+  /*START_TEST_CASE;*/
+  /*DICTIONARY* dict = InitDictionary();*/
+  /*int *d1; d1 = (int*)malloc(sizeof(int)); *d1 = 1;*/
+  /*int *d2; d2 = (int*)malloc(sizeof(int)); *d2 = 2;*/
+  /*int *d3; d3 = (int*)malloc(sizeof(int)); *d3 = 3;*/
+  /*hash = 0;*/
+  /*DAdd(dict, d1, "1");*/
+  /*hash = 1;*/
+  /*DAdd(dict, d2, "2");*/
+  /*DAdd(dict, d3, "3");*/
+  /*hash = 0;*/
+  /*SHOULD_BE(GetDataWithKey(dict, "1") == (void*)d1);*/
+  /*hash = 1;*/
+  /*SHOULD_BE(GetDataWithKey(dict, "2") == (void*)d2);*/
+  /*SHOULD_BE(GetDataWithKey(dict, "3") == (void*)d3);*/
+  /*// case that there is no such key in the dictionary*/
+  /*SHOULD_BE(GetDataWithKey(dict, "") == NULL);*/
+  /*SHOULD_BE(GetDataWithKey(dict, "4") == NULL);*/
+  /*CleanDictionary(dict);*/
+  /*free(dict);*/
+  /*END_TEST_CASE;*/
+/*}*/
 
 // This is the main test harness for the set of dictionary functions. It tests all the code
 // in dictionary.c:
@@ -360,14 +403,15 @@ int TestGetData1() {
 int main(int argc, char** argv) {
   int cnt = 0;
 
-  RUN_TEST(TestDAdd1, "DAdd Test case 1");
-  RUN_TEST(TestDAdd2, "DAdd Test case 2");
-  RUN_TEST(TestDAdd3, "DAdd Test case 3");
-  RUN_TEST(TestDRemove1, "DRemove Test case 1");
-  RUN_TEST(TestDRemove2, "DRemove Test case 2");
-  RUN_TEST(TestDRemove3, "DRemove Test case 3");
-  RUN_TEST(TestDRemove4, "DRemove Test case 4");
-  RUN_TEST(TestGetData1, "GetDataWithKey Test case 1");
+  RUN_TEST(TestArgs1, "CheckArgs Test case 1");
+  /*RUN_TEST(TestDAdd1, "DAdd Test case 1");*/
+  /*RUN_TEST(TestDAdd2, "DAdd Test case 2");*/
+  /*RUN_TEST(TestDAdd3, "DAdd Test case 3");*/
+  /*RUN_TEST(TestDRemove1, "DRemove Test case 1");*/
+  /*RUN_TEST(TestDRemove2, "DRemove Test case 2");*/
+  /*RUN_TEST(TestDRemove3, "DRemove Test case 3");*/
+  /*RUN_TEST(TestDRemove4, "DRemove Test case 4");*/
+  /*RUN_TEST(TestGetData1, "GetDataWithKey Test case 1");*/
   if (!cnt) {
     printf("All passed!\n"); return 0;
   } else {

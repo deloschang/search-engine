@@ -13,21 +13,37 @@
 # Finally, it runs the search engine and allows for command-line
 # processing
 
+
 # Run script crawler_test.sh to test and run the crawler
 
 # Next, run BATS.sh to build, test and run the indexer.
 
 # Build the search engine
+echo "Building query engine"
 cd ./queryengine_dir/
 make
 
+# Build query engine unit tests
+if [ $? -eq 0 ]; then
+  make unit
+else 
+  echo "Building unit tests failed (make unit)"
+  make clean
+  exit 1
+fi
+
 # Run query engine unit tests
+echo "Running query engine unit tests"
+./queryengine_test
+
 
 # Launch the query engine
 if [ $? -eq 0 ]; then
+  # do something
   ./queryengine ../indexer_dir/index.dat ../crawler_dir/data
 else 
-  echo "Building search engine failed (make)"
+  echo "Running unit tests failed (./queryengine_test)"
+  make clean
   exit 1
 fi
 

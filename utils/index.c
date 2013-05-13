@@ -19,6 +19,7 @@ Outputs:
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
+
 #include "index.h"
 #include "hash.h"
 
@@ -44,7 +45,7 @@ INVERTED_INDEX* initReloadStructure(){
 
 // Cleans up the index by freeing the wordnode, documentnode
 // and entire index
-void cleanupIndex(INVERTED_INDEX* index){
+void cleanUpIndex(INVERTED_INDEX* index){
   WordNode* startWordNode;
   WordNode* toWordFreedom;
   DocumentNode* startPage;

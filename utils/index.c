@@ -2,8 +2,11 @@
 
 FILE: index.c
 
-Description: Shared functions that sanitize a file and loads it into memory.
-Then, reconstruct an inverted index from the file into memory. 
+Description: Shared functions that handle the INVERTED INDEX. Such as:
+
+0. Creating the index structure
+1. Sanitizing the index 
+2. Reconstructing an inverted index from file into memory. 
 
 Inputs: 
 
@@ -26,13 +29,15 @@ Outputs:
 INVERTED_INDEX* initReloadStructure(){
   // create the index structure
   INVERTED_INDEX* indexReload = (INVERTED_INDEX*)malloc(sizeof(INVERTED_INDEX));
+
+  if (indexReload == NULL){
+    return NULL;
+  }
+
   MALLOC_CHECK(indexReload);
   indexReload->start = indexReload->end = NULL;
   BZERO(indexReload, sizeof(INVERTED_INDEX));
 
-  /*if (indexReload == NULL){*/
-    /*return 0;*/
-  /*}*/
 
   return indexReload;
 }

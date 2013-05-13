@@ -41,8 +41,6 @@ valgrind: $(OBJS)
 valgrindgdb: $(OBJS)
 	$(CC) $(CFLAGS) -g -ggdb -c $(SRCS)
 	$(CC) $(CFLAGS) -g -ggdb -o $(EXEC) $(OBJS)
-	#valgrind --tool=memcheck --leak-check=full --track-origins=yes ./queryengine ../indexer_dir/index.dat ../crawler_dir/data
-	#valgrind --tool=memcheck --leak-check=full ./queryengine ../indexer_dir/index.dat ../crawler_dir/data
 	valgrind --tool=memcheck --leak-check=full --vgdb-error=0 ./queryengine ../indexer_dir/index.dat ../crawler_dir/data
 
 

@@ -26,6 +26,7 @@ Implementation Spec Pseudocode:
 
 5. Cross-reference the query with the index 
 6. Rank results via an algorithm based on word frequency with AND / OR operators
+
  */
 
 #include <stdio.h>

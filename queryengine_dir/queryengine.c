@@ -355,8 +355,8 @@ void lookUp(char** queryList, char* urlDir){
   BZERO(tempHolder, 1000);
 
   // placeholder for result intersections etc.
-  DocumentNode* result[1000];
-  BZERO(result, 1000);
+  DocumentNode* result[10000]; // should be max number of possible files
+  BZERO(result, 10000);
 
   // list used to be returned at end
   DocumentNode* saved[1000];
@@ -442,12 +442,27 @@ void lookUp(char** queryList, char* urlDir){
           if (resultSlot[k] != '\0'){
             while (resultSlot[k]){
               // move the docNodes into tempHolder
-              tempHolder[k] = result[resultSlot[k]];
+              /*tempHolder[k] = result[resultSlot[k]];*/
+              DocumentNode* docNode = (DocumentNode*)malloc(sizeof(DocumentNode));
+              copyDocNode(docNode, result[resultSlot[k]]);
+              tempHolder[k] = docNode;
 
               // freeing the matched DocNodes and putting them in tempHolder
-              /*free(result[resultSlot[k]]);*/
+              free(result[resultSlot[k]]);
               k++;
             }
+
+            // manual clean up
+
+            /*for (int j = 0; j < 10000; j++){*/
+              /*int i = 0;*/
+              /*while(result[i] != NULL){*/
+                /*free(result[i]);*/
+                /*result[i] = NULL;*/
+                /*i++;*/
+              /*}*/
+            /*}*/
+
           }
 
         } else {
@@ -460,7 +475,7 @@ void lookUp(char** queryList, char* urlDir){
           firstRunFlag = 0;
         }
 
-        BZERO(result, 1000);
+        BZERO(result, 10000);
         BZERO(resultSlot, 1000);
         nextFreeSlot = 0;
       }
@@ -532,7 +547,7 @@ void lookUp(char** queryList, char* urlDir){
   nextFreeSlot = 0;
   next_free = 0;  // for saved, reset for the new search
 
-  BZERO(result, 1000);
+  BZERO(result, 10000);
 
   cleanUpList(saved);
   BZERO(saved, 1000);

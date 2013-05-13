@@ -46,6 +46,8 @@ int resultSlot[1000]; // stores the document_id of matches
 int nextFreeSlot = 0; // stores the position of the next free slot in results array
 int next_free = 0; // stores the position of the next free slot in results array
 
+char* urlDir;
+
 // this function prints generic usage information 
 void printUsage(){
   printf("Usage: ./queryengine ../indexer_dir/index.dat ../crawler_dir/data \n"); 
@@ -156,7 +158,7 @@ int rankSplit(DocumentNode** saved, int l, int r){
   j = r + 1;
 
   while (1){
-    do ++i; while( saved[i]->page_word_frequency >= pivot && i >= r);
+    do ++i; while( saved[i]->page_word_frequency >= pivot && i < r);
     do --j; while( saved[j]->page_word_frequency < pivot);
     if ( i >= j){
       break;
@@ -253,54 +255,6 @@ DocumentNode** searchForKeyword(DocumentNode** list, char* keyword){
 
       list[num] = docNode;
 
-      /********************/
-      /*int document_id_int = matchedDocNode->document_id;*/
-
-      /*find the URL name with the document id*/
-      /*///////////// REFACTOR ///////////////*/
-      /*Construct the filepath*/
-      /*char* readableTest;*/
-
-      /*char* document_id;*/
-      /*document_id = malloc(sizeof(char) * 1000);*/
-      /*BZERO(document_id, 1000);*/
-      /*sprintf(document_id, "%d", document_id_int);*/
-
-      /*size_t string1 = strlen(urlDir); */
-      /*size_t string2 = strlen("/");*/
-      /*size_t string3 = strlen(document_id);*/
-
-      /*Allocate space for the filepath*/
-      /*readableTest = (char*) malloc(string1 + string2 + string3 + 1);*/
-      /*sprintf(readableTest, "%s/%s", urlDir, document_id);*/
-
-      /*free(document_id);*/
-
-      /*/////////// REFACTOR /////////////////*/
-
-      /*FILE* fp;*/
-      /*fp = fopen(readableTest, "r");*/
-      /*if (fp == NULL){*/
-      /*fprintf(stderr, "Error opening the document! \n");*/
-      /*free(readableTest);*/
-      /*break;*/
-      /*}*/
-
-      /*char* docURL;*/
-      /*docURL = (char*) malloc(sizeof(char) * MAX_URL_LENGTH);*/
-      /*BZERO(docURL, MAX_URL_LENGTH);*/
-
-      /*if (fgets(docURL, MAX_URL_LENGTH, fp) == NULL){*/
-      /*fprintf(stderr, "Error copying URL from document. \n");*/
-      /*free(docURL);*/
-      /*free(readableTest);*/
-      /*break;*/
-      /*}*/
-
-      /*printf("Document ID:%d URL:%s", matchedDocNode->document_id, docURL);*/
-      /*fclose(fp);*/
-      /*free(docURL);*/
-      /*free(readableTest);*/
 
       matchedDocNode = matchedDocNode->next;
       num++;
@@ -312,6 +266,55 @@ DocumentNode** searchForKeyword(DocumentNode** list, char* keyword){
     return NULL;
   }
 
+}
+
+void printOutput(DocumentNode* matchedDocNode){
+  int document_id_int = matchedDocNode->document_id;
+
+  ///////////// REFACTOR ///////////////
+  char* readableTest;
+
+  char* document_id;
+  document_id = malloc(sizeof(char) * 1000);
+  BZERO(document_id, 1000);
+  sprintf(document_id, "%d", document_id_int);
+
+  size_t string1 = strlen(urlDir); 
+  size_t string2 = strlen("/");
+  size_t string3 = strlen(document_id);
+
+  readableTest = (char*) malloc(string1 + string2 + string3 + 1);
+  sprintf(readableTest, "%s/%s", urlDir, document_id);
+
+  free(document_id);
+
+  /////////// REFACTOR /////////////////
+
+  FILE* fp;
+  fp = fopen(readableTest, "r");
+  if (fp == NULL){
+    fprintf(stderr, "Error opening the document! \n");
+    free(readableTest);
+    exit(1);
+  }
+
+  char* docURL;
+  docURL = (char*) malloc(sizeof(char) * MAX_URL_LENGTH);
+  BZERO(docURL, MAX_URL_LENGTH);
+
+  if (fgets(docURL, MAX_URL_LENGTH, fp) == NULL){
+    fprintf(stderr, "Error copying URL from document. \n");
+
+    free(docURL);
+    free(readableTest);
+    exit(1);
+  }
+
+  printf("Document ID:%d URL:%s freq:%d \n", matchedDocNode->document_id, docURL, matchedDocNode->page_word_frequency);
+
+  fclose(fp);
+  free(docURL);
+  free(readableTest);
 }
 
 // returns the intersection of the two lists (final and list)
@@ -558,9 +561,8 @@ void lookUp(char** queryList, char* urlDir){
     // count how many 
     int num = 0;
     while (saved[num] != NULL){
-      printf("***RESULTANT LIST: Document ID: %d with frequency %d \n", saved[num]->document_id,
-        saved[num]->page_word_frequency);
-
+      /*printf("***RESULTANT LIST: Document ID: %d with frequency %d \n", saved[num]->document_id,*/
+        /*saved[num]->page_word_frequency);*/
       num++;
     }
 
@@ -570,8 +572,10 @@ void lookUp(char** queryList, char* urlDir){
     // sanity check
     num = 0;
     while (saved[num] != NULL){
-      printf("***RESULTANT LIST: Document ID: %d with frequency %d \n", saved[num]->document_id,
-        saved[num]->page_word_frequency);
+      /*printf("***RESULTANT LIST: Document ID: %d with frequency %d \n", saved[num]->document_id,*/
+        /*saved[num]->page_word_frequency);*/
+      printOutput(saved[num]);
+
 
       num++;
     }
@@ -613,7 +617,7 @@ int main(int argc, char* argv[]){
 
   // (2b) Load the index into memory
   char* loadFile = argv[1];
-  char* urlDir = argv[2];
+  urlDir = argv[2];
 
   char* writeReload = "index_new.dat";
 

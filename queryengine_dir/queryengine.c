@@ -146,6 +146,49 @@ void sanitizeKeywords(char** queryList){
   }
 }
 
+
+int rankSplit(DocumentNode** saved, int l, int r){
+  int pivot, i, j;
+  DocumentNode* t;
+
+  pivot = saved[l]->page_word_frequency;
+  i = l;
+  j = r + 1;
+
+  while (1){
+    do ++i; while( saved[i]->page_word_frequency >= pivot && i >= r);
+    do --j; while( saved[j]->page_word_frequency < pivot);
+    if ( i >= j){
+      break;
+    }
+    t = saved[i];
+    saved[i] = saved[j];
+    saved[j] = t;
+
+  }
+
+  t = saved[l];
+  saved[l] = saved[j];
+  saved[j] = t;
+
+  return j;
+}
+
+// r is the length of the saved
+// implements QuickSort
+void rankByFrequency(DocumentNode** saved, int l, int r){
+  int num;
+
+  if (l < r){
+    // divide and conquer
+    num = rankSplit(saved, l, r);
+    rankByFrequency(saved, l, num - 1);
+    rankByFrequency(saved, num + 1, r);
+  }
+
+}
+
+
 void copyDocNode(DocumentNode* docNode, DocumentNode* orig){
 
   if (docNode == NULL){
@@ -507,28 +550,37 @@ void lookUp(char** queryList, char* urlDir){
     cleanUpList(tempHolder);
   }
 
-  // ending with AND
-  // e.g. "dog cat"
-  /*if (temp[0] != NULL){*/
-    /*int index = 0;*/
-    /*while (temp[index]){*/
-      /*saved[next_free] = temp[index];*/
-      /*index++;*/
-      /*next_free++;*/
-    /*}*/
-  /*}*/
 
-  // sanity check
-  int num = 0;
-  if (saved[num] != NULL){
+  // Ranking algorithm
+  // saved has the desired list, sort by page frequency
+  if (saved[0] != NULL){
+
+    // count how many 
+    int num = 0;
     while (saved[num] != NULL){
-      printf("***RESULTANT LIST: Document ID: %d\n", saved[num]->document_id);
+      printf("***RESULTANT LIST: Document ID: %d with frequency %d \n", saved[num]->document_id,
+        saved[num]->page_word_frequency);
 
       num++;
     }
+
+    printf("****Length is %d \n", num - 1);
+    rankByFrequency(saved, 0, num - 1);
+
+    // sanity check
+    num = 0;
+    while (saved[num] != NULL){
+      printf("***RESULTANT LIST: Document ID: %d with frequency %d \n", saved[num]->document_id,
+        saved[num]->page_word_frequency);
+
+      num++;
+    }
+
   } else {
     printf("No matches from search \n \n");
   }
+
+
 
   // reset
   BZERO(resultSlot, 1000);

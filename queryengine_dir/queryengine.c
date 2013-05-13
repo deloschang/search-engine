@@ -142,16 +142,15 @@ void sanitizeKeywords(char** queryList){
     if (!strncmp(queryList[i], "AND", strlen("AND") + 1) ){
       continue;
     }
-    capitalToLower(queryList[i]);
 
-    printf("%s \n", queryList[i]);
+    capitalToLower(queryList[i]);
   }
 }
 
 
 int rankSplit(DocumentNode** saved, int l, int r){
-  int pivot, i, j;
   DocumentNode* t;
+  int pivot, i, j;
 
   pivot = saved[l]->page_word_frequency;
   i = l;
@@ -176,8 +175,7 @@ int rankSplit(DocumentNode** saved, int l, int r){
   return j;
 }
 
-// r is the length of the saved
-// implements QuickSort
+// implements QuickSort in descending order
 void rankByFrequency(DocumentNode** saved, int l, int r){
   int num;
 
@@ -192,7 +190,6 @@ void rankByFrequency(DocumentNode** saved, int l, int r){
 
 
 void copyDocNode(DocumentNode* docNode, DocumentNode* orig){
-
   if (docNode == NULL){
     fprintf(stderr, "Out of memory for indexing! Aborting. \n");
   } else {
@@ -203,7 +200,6 @@ void copyDocNode(DocumentNode* docNode, DocumentNode* orig){
 
     // combine the two frequencies for ranking algorithm
     docNode->page_word_frequency = orig->page_word_frequency;
-
   }
 
 }
@@ -216,10 +212,10 @@ DocumentNode** searchForKeyword(DocumentNode** list, char* keyword){
 
   WordNode* checkWordNode = NULL; 
   checkWordNode = indexReload->hash[wordHash];
-  if (checkWordNode == NULL){
-    printf("Word %s could not be found in indexer \n", keyword);
 
-    // next word
+  // Word could not be found in indexer
+  if (checkWordNode == NULL){
+    // move on to next word
     return NULL;
   }
 
@@ -254,7 +250,6 @@ DocumentNode** searchForKeyword(DocumentNode** list, char* keyword){
       copyDocNode(docNode, matchedDocNode);
 
       list[num] = docNode;
-
 
       matchedDocNode = matchedDocNode->next;
       num++;
@@ -310,7 +305,8 @@ void printOutput(DocumentNode* matchedDocNode){
     exit(1);
   }
 
-  printf("Document ID:%d URL:%s freq:%d \n", matchedDocNode->document_id, docURL, matchedDocNode->page_word_frequency);
+  /*printf("Document ID:%d URL:%s freq:%d \n", matchedDocNode->document_id, docURL, matchedDocNode->page_word_frequency);*/
+  printf("Document ID:%d URL:%s", matchedDocNode->document_id, docURL);
 
   fclose(fp);
   free(docURL);
@@ -330,7 +326,6 @@ DocumentNode** intersection(DocumentNode** final, DocumentNode** list,
 
       // check if the doc ID's match
       if ( (final[i]->document_id == list[j]->document_id) ){
-        /*printf("MATCH : %d \n", list[j]->document_id);*/
         // check if the DocNode has been added already
         // since DocIDs are unique, there cannot be collisions
         if ( result[final[i]->document_id] != NULL){
@@ -515,33 +510,15 @@ void lookUp(char** queryList, char* urlDir){
       }
     }
 
-    // sanity check
-    /*int num = 0;*/
-    /*while (list[num]){*/
-      /*printf("***LIST: %d\n", list[num]->document_id);*/
-      /*[>free(list[num]);<]*/
-      /*num++;*/
-    /*}*/
-    /*printf("\n\n\nDONE*** \n\n\n");*/
-
-
-    /*int k = 0;*/
-    /*while (resultSlot[k]){*/
-      /*// freeing the matched DocNodes and putting them in tempHolder*/
-      /*free(result[resultSlot[k]]);*/
-      /*k++;*/
-    /*}*/
 
   }
   //////// end of for loop ////////
 
   // neither AND or OR
   // e.g. "dog"
-  /*if (tempHolder[0] != NULL && orFlag == 0 && neitherFlag == 1){*/
   if (tempHolder[0] != NULL ){
     int index = 0;
     while (tempHolder[index]){
-      /*saved[next_free] = tempHolder[index];*/
       DocumentNode* docNode = (DocumentNode*)malloc(sizeof(DocumentNode));
       copyDocNode(docNode, tempHolder[index]);
       saved[next_free] = docNode;
@@ -558,28 +535,22 @@ void lookUp(char** queryList, char* urlDir){
   // saved has the desired list, sort by page frequency
   if (saved[0] != NULL){
 
-    // count how many 
+    // count length 
     int num = 0;
     while (saved[num] != NULL){
-      /*printf("***RESULTANT LIST: Document ID: %d with frequency %d \n", saved[num]->document_id,*/
-        /*saved[num]->page_word_frequency);*/
       num++;
     }
 
-    printf("****Length is %d \n", num - 1);
+    // Simple ranking algorithm by page frequency
     rankByFrequency(saved, 0, num - 1);
 
     // sanity check
     num = 0;
     while (saved[num] != NULL){
-      /*printf("***RESULTANT LIST: Document ID: %d with frequency %d \n", saved[num]->document_id,*/
-        /*saved[num]->page_word_frequency);*/
       printOutput(saved[num]);
-
 
       num++;
     }
-
   } else {
     printf("No matches from search \n \n");
   }
@@ -643,7 +614,6 @@ int main(int argc, char* argv[]){
     sanitize(query);
 
     LOG("Querying..\n");
-    printf("You queried:  %s \n", query); 
 
     // (4) Cross-reference the query with the index and retrieve results
     // (4a) Convert the actual query into a list of keywords, in queryList

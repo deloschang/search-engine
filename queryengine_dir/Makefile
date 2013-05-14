@@ -15,7 +15,7 @@ SRCS = queryengine.c queryengine.h ../utils/index.c ../utils/hash.c  ../utils/ha
 # query engine unit test details
 EXEC2 = queryengine_test
 OBJS2 = queryengine_test.o index.o querylogic.o file.o
-#SRCS2 = queryengine_test.c ../utils/index.c querylogic.c 
+SRCS2 = queryengine_test.c ../utils/index.c querylogic.c 
 
 CFLAGS1SRCS = ../utils/file.c # need diff flags
 
@@ -26,8 +26,13 @@ $(OBJS): $(SRCS) $(CFLAGS1SRCS)
 	$(CC) $(CFLAGS) -c $(SRCS)
 	$(CC) $(CFLAGS1) -c $(CFLAGS1SRCS)
 unit: $(SRCS2) $(CFLAGS1SRCS2)
-	$(CC) $(CFLAGS) -c $(SRCS)
+	$(CC) $(CFLAGS) -c $(SRCS2)
 	$(CC) $(CFLAGS) -o $(EXEC2) $(OBJS2)
+unit2: $(SRCS2) $(CFLAGS1SRCS2)
+	$(CC) $(CFLAGS) -g -ggdb -c $(SRCS2)
+	$(CC) $(CFLAGS) -g -ggdb -o $(EXEC2) $(OBJS2)
+	gdb --args queryengine_test
+
 debug: $(SRCS)
 	$(CC) $(CFLAGS) -g -ggdb -c $(SRCS)
 	$(CC) $(CFLAGS1) -c $(CFLAGS1SRCS)

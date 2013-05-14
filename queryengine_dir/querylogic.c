@@ -143,16 +143,18 @@ void rankByFrequency(DocumentNode** saved, int l, int r){
 }
 
 // Duplicates the Document nodes
-void copyDocNode(DocumentNode* docNode, DocumentNode* orig){
-  if (docNode == NULL){
-    fprintf(stderr, "Out of memory for indexing! Aborting. \n");
-  } else {
-    MALLOC_CHECK(docNode);
-    BZERO(docNode, sizeof(DocumentNode));
-    docNode->next = NULL; 
-    docNode->document_id = orig->document_id;
-    docNode->page_word_frequency = orig->page_word_frequency;
-  }
+DocumentNode* copyDocNode(DocumentNode* docNode, DocumentNode* orig){
+  docNode = newDocNode(docNode, orig->document_id, orig->page_word_frequency);
+  return docNode;
+  /*if (docNode == NULL){*/
+    /*fprintf(stderr, "Out of memory for indexing! Aborting. \n");*/
+  /*} else {*/
+    /*MALLOC_CHECK(docNode);*/
+    /*BZERO(docNode, sizeof(DocumentNode));*/
+    /*docNode->next = NULL; */
+    /*docNode->document_id = orig->document_id;*/
+    /*docNode->page_word_frequency = orig->page_word_frequency;*/
+  /*}*/
 }
 
 // given a word to search for, this function will return a list of 
@@ -192,8 +194,9 @@ DocumentNode** searchForKeyword(DocumentNode** list, char* keyword, INVERTED_IND
     int num = 0;
     while(matchedDocNode != NULL){
       // save into the list and return
-      DocumentNode* docNode = (DocumentNode*)malloc(sizeof(DocumentNode));
-      copyDocNode(docNode, matchedDocNode);
+      /*DocumentNode* docNode = (DocumentNode*)malloc(sizeof(DocumentNode));*/
+      DocumentNode* docNode = NULL;
+      docNode = copyDocNode(docNode, matchedDocNode);
 
       list[num] = docNode;
 
@@ -211,11 +214,12 @@ DocumentNode** searchForKeyword(DocumentNode** list, char* keyword, INVERTED_IND
 void printOutput(DocumentNode* matchedDocNode, char* urlDir){
   char* filepath = NULL;
   char* document_id;
+  int document_id_int;
   FILE* fp;
   char* docURL;
 
   // make the ID from an int into a char
-  int document_id_int = matchedDocNode->document_id;
+  document_id_int = matchedDocNode->document_id;
   document_id = malloc(sizeof(char) * 1000);
   BZERO(document_id, 1000);
   sprintf(document_id, "%d", document_id_int);
@@ -275,21 +279,24 @@ DocumentNode** intersection(DocumentNode** final, DocumentNode** list,
           // DocNode doesn't exist already
 
           // REFACTOR ***** 
-          DocumentNode* docNode = (DocumentNode*)malloc(sizeof(DocumentNode));
+          DocumentNode* docNode = NULL;
+          docNode = newDocNode(docNode, final[i]->document_id, 
+            final[i]->page_word_frequency + list[j]->page_word_frequency);
+          /*DocumentNode* docNode = (DocumentNode*)malloc(sizeof(DocumentNode));*/
 
-          if (docNode == NULL){
-            fprintf(stderr, "Out of memory for indexing! Aborting. \n");
-            return 0;
-          }
+          /*if (docNode == NULL){*/
+            /*fprintf(stderr, "Out of memory for indexing! Aborting. \n");*/
+            /*return 0;*/
+          /*}*/
 
-          MALLOC_CHECK(docNode);
-          BZERO(docNode, sizeof(DocumentNode));
-          docNode->next = NULL; 
-          docNode->document_id = final[i]->document_id;
+          /*MALLOC_CHECK(docNode);*/
+          /*BZERO(docNode, sizeof(DocumentNode));*/
+          /*docNode->next = NULL; */
+          /*docNode->document_id = final[i]->document_id;*/
 
-          // combine the two frequencies for ranking algorithm
-          docNode->page_word_frequency = final[i]->page_word_frequency +
-            list[j]->page_word_frequency;
+          /*// combine the two frequencies for ranking algorithm*/
+          /*docNode->page_word_frequency = final[i]->page_word_frequency +*/
+            /*list[j]->page_word_frequency;*/
 
           // add docNode into the result list
           result[final[i]->document_id] = docNode;
@@ -314,8 +321,9 @@ DocumentNode** intersection(DocumentNode** final, DocumentNode** list,
 void copyList(DocumentNode** result, DocumentNode** orig){
   int i = 0;
   while (orig[i] != NULL){
-    DocumentNode* docNode = (DocumentNode*)malloc(sizeof(DocumentNode));
-    copyDocNode(docNode, orig[i]);
+    /*DocumentNode* docNode = (DocumentNode*)malloc(sizeof(DocumentNode));*/
+    DocumentNode* docNode = NULL;
+    docNode = copyDocNode(docNode, orig[i]);
     result[i] = docNode;
 
     i++;
@@ -431,8 +439,9 @@ int lookUp(char** queryList, char* urlDir, INVERTED_INDEX* indexReload){
           if (resultSlot[k] != '\0'){
             while (resultSlot[k]){
               // move the docNodes into tempHolder
-              DocumentNode* docNode = (DocumentNode*)malloc(sizeof(DocumentNode));
-              copyDocNode(docNode, result[resultSlot[k]]);
+              /*DocumentNode* docNode = (DocumentNode*)malloc(sizeof(DocumentNode));*/
+              DocumentNode* docNode = NULL;
+              docNode = copyDocNode(docNode, result[resultSlot[k]]);
               tempHolder[k] = docNode;
 
               // freeing the matched DocNodes and putting them in tempHolder
@@ -462,8 +471,9 @@ int lookUp(char** queryList, char* urlDir, INVERTED_INDEX* indexReload){
   if (tempHolder[0] != NULL ){
     int index = 0;
     while (tempHolder[index]){
-      DocumentNode* docNode = (DocumentNode*)malloc(sizeof(DocumentNode));
-      copyDocNode(docNode, tempHolder[index]);
+      /*DocumentNode* docNode = (DocumentNode*)malloc(sizeof(DocumentNode));*/
+      DocumentNode* docNode = NULL;
+      docNode = copyDocNode(docNode, tempHolder[index]);
       saved[next_free] = docNode;
 
       index++;

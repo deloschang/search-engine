@@ -154,22 +154,6 @@ int updateIndex(INVERTED_INDEX* index, char* word, int documentId){
     // create Document node first
     docNode = NULL;
     docNode = newDocNode(docNode, documentId, 1);
-    /*DocumentNode* docNode = (DocumentNode*)malloc(sizeof(DocumentNode));*/
-    
-    /*if (docNode == NULL){*/
-      /*fprintf(stderr, "Out of memory for indexing! Aborting. \n");*/
-      /*return 0;*/
-    /*}*/
-
-    /*MALLOC_CHECK(docNode);*/
-    /*BZERO(docNode, sizeof(DocumentNode));*/
-    /*docNode->next = NULL; // first in hash slot, no connections yet*/
-    /*docNode->document_id = documentId;*/
-
-    /*// loading one word at a time.*/
-    /*// Since this word has not been seen before (nothing in hash slot), */
-    /*// start the count at 1*/
-    /*docNode->page_word_frequency = 1;*/
 
     // create Word Node of word and document node first
     WordNode* wordNode = (WordNode*)malloc(sizeof(WordNode));
@@ -254,22 +238,6 @@ int updateIndex(INVERTED_INDEX* index, char* word, int documentId){
           // create Document node first
           docNode = NULL;
           docNode = newDocNode(docNode, documentId, 1);
-          /*DocumentNode* docNode = (DocumentNode*)malloc(sizeof(DocumentNode));*/
-
-          /*if (docNode == NULL){*/
-            /*fprintf(stderr, "Out of memory for indexing! Aborting. \n");*/
-            /*return 0;*/
-          /*}*/
-
-          /*MALLOC_CHECK(docNode);*/
-          /*BZERO(docNode, sizeof(DocumentNode));*/
-          /*docNode->next = NULL; // first in hash slot, no connections yet*/
-          /*docNode->document_id = documentId;*/
-
-          /*// loading one word at a time.*/
-          /*// Since this word has not been seen before (nothing in hash slot), */
-          /*// start the count at 1*/
-          /*docNode->page_word_frequency = 1;*/
 
           // the docNode should be last now
           endDocNode->next = docNode;
@@ -290,23 +258,6 @@ int updateIndex(INVERTED_INDEX* index, char* word, int documentId){
       // create Document node first
       docNode = NULL;
       docNode = newDocNode(docNode, documentId, 1);
-
-      /*DocumentNode* docNode = (DocumentNode*)malloc(sizeof(DocumentNode));*/
-
-      /*if (docNode == NULL){*/
-        /*fprintf(stderr, "Out of memory for indexing! Aborting. \n");*/
-        /*return 0;*/
-      /*}*/
-
-      /*MALLOC_CHECK(docNode);*/
-      /*BZERO(docNode, sizeof(DocumentNode));*/
-      /*docNode->next = NULL; // first in hash slot, no connections yet*/
-      /*docNode->document_id = documentId;*/
-
-      /*// loading one word at a time.*/
-      /*// Since this word has not been seen before (nothing in hash slot), */
-      /*// start the count at 1*/
-      /*docNode->page_word_frequency = 1;*/
 
       MALLOC_CHECK(wordNode);
       wordNode->prev = endWordNode;
@@ -433,19 +384,10 @@ void buildIndexFromDir(char* dir, int numOfFiles, INVERTED_INDEX* index){
 
   // Loop through each of the files 
   for (int i = 1; i < numOfFiles + 1; i++){
-    char converted_i[1001];
-
     // cut off if more than 1000 digits
+    char converted_i[1001];
     snprintf(converted_i, 1000, "%d", i);
 
-    /*size_t string1 = strlen(dir); */
-    /*size_t string2 = strlen("/");*/
-    /*size_t string3 = strlen(converted_i);*/
-
-    /*writable = (char*) malloc(string1 + string2 + string3 + 1);*/
-
-    // Construct the filepath
-    /*sprintf(writable, "%s/%s", dir, converted_i);*/
     writable = createFilepath(writable, dir, converted_i);
 
     // Load the document from the filepath

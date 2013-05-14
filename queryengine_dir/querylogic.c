@@ -26,6 +26,7 @@ Implementation Spec Pseudocode:
 #include <stdlib.h>
 #include <string.h>
 
+#include "../utils/header.h"
 #include "../utils/index.h"
 #include "../utils/hash.h"
 #include "querylogic.h"

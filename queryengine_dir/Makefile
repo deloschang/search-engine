@@ -10,7 +10,7 @@ LDFLAGS =
 
 # query engine details
 OBJS = queryengine.o index.o hash.o querylogic.o
-SRCS = queryengine.c queryengine.h ../utils/index.c ../utils/index.h ../utils/hash.c  ../utils/hash.h querylogic.c 
+SRCS = queryengine.c queryengine.h ../utils/index.c ../utils/hash.c  ../utils/hash.h querylogic.c 
 
 # query engine unit test details
 EXEC2 = queryengine_test
@@ -29,7 +29,8 @@ debug: $(SRCS)
 	$(CC) $(CFLAGS) -g -ggdb -c $(SRCS)
 	#$(CC) $(CFLAGS1) -c $(CFLAGS1SRCS)
 	$(CC) $(CFLAGS) -g -ggdb -o $(EXEC) $(OBJS)
-	gdb --args queryengine ../indexer_dir/index.dat ../crawler_dir/data
+	#gdb --args queryengine ../indexer_dir/index.dat ../crawler_dir/data
+	gdb --args queryengine index.dat ../crawler_dir/data
 debug2: $(SRCS)
 	$(CC) $(CFLAGS) -g -ggdb -c $(SRCS)
 	#$(CC) $(CFLAGS1) -c $(CFLAGS1SRCS)

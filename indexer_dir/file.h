@@ -4,20 +4,9 @@
 // *****************Impementation Spec********************************
 // File: file.c
 // This file contains useful information for implementing the indexer:
-// - DEFINES
-// - MACROS
-// - DATA STRUCTURES
 // - PROTOTYPES
 
-// DEFINES
 
-
-
-// DATA STRUCTURES. All these structures should be malloc 'd
-
-// This is the key data structure that holds the information of each word.
-
-  
 // function PROTOTYPES used by file.c 
 
 // dirScan: scans through the directory and returns files that

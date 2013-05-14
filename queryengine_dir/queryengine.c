@@ -37,8 +37,8 @@ Implementation Spec Pseudocode:
 #include <sys/stat.h>
 #include <unistd.h>
 
-#include "../utils/index.h"
 #include "../utils/header.h"
+#include "../utils/index.h"
 #include "querylogic.h"
 #include "queryengine.h"
 
@@ -80,10 +80,10 @@ void validateArgs(int argc, char* argv[]){
 
 int main(int argc, char* argv[]){
   // (1) Validate the parameters
-  validateArgs(argc, argv);
+  /*validateArgs(argc, argv);*/
 
   // (2) Initialize the inverted index
-  if ( (indexReload = initReloadStructure()) == NULL){
+  if ( (indexReload = initStructure(indexReload)) == NULL){
     fprintf(stderr, "Could not initialize data structures. Exiting");
     exit(1);
   }
@@ -92,11 +92,8 @@ int main(int argc, char* argv[]){
   char* loadFile = argv[1];
   char* urlDir = argv[2];
 
-  char* writeReload = "index_new.dat";
-
-  INVERTED_INDEX* reloadResult = reloadIndexFromFile(loadFile, writeReload, indexReload);
+  INVERTED_INDEX* reloadResult = reloadIndexFromFile(loadFile, indexReload);
   if (reloadResult == NULL){
-    fprintf(stderr, "Could not reload the index from the file! \n");
     exit(1);
   } else {
     LOG("Finished reloading index from file");

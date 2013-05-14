@@ -20,6 +20,7 @@ Outputs:
 #include <string.h>
 #include <unistd.h>
 
+#include "../utils/header.h"
 #include "index.h"
 #include "hash.h"
 
@@ -27,20 +28,20 @@ Outputs:
 // to "reload" the index via reading the index.dat and writing output to
 // an index_new.dat. We do this to make sure that the index file can be 
 // properly retrieved
-INVERTED_INDEX* initReloadStructure(){
+INVERTED_INDEX* initStructure(INVERTED_INDEX* indexVar){
   // create the index structure
-  INVERTED_INDEX* indexReload = (INVERTED_INDEX*)malloc(sizeof(INVERTED_INDEX));
+  indexVar = (INVERTED_INDEX*)malloc(sizeof(INVERTED_INDEX));
 
-  if (indexReload == NULL){
-    return NULL;
+  if (indexVar == NULL){
+    fprintf(stderr, "Could not initialize data structures. Exiting");
+    exit(1);
   }
 
-  MALLOC_CHECK(indexReload);
-  indexReload->start = indexReload->end = NULL;
-  BZERO(indexReload, sizeof(INVERTED_INDEX));
+  MALLOC_CHECK(indexVar);
+  indexVar->start = indexVar->end = NULL;
+  BZERO(indexVar, sizeof(INVERTED_INDEX));
 
-
-  return indexReload;
+  return indexVar;
 }
 
 // Cleans up the index by freeing the wordnode, documentnode
@@ -147,7 +148,6 @@ void sanitize(char* loadedDocument){
         continue;
       }
 
-
       // put that character into the clearzone
       sprintf(clear, "%c", loadedDocument[i]);
 
@@ -175,7 +175,6 @@ char* loadDocument(char* filepath){
   // Could be problem of skipped files i.e. (1, 3, 4, 5)
   if (fp == NULL){
     fprintf(stderr, "Could not read file %s. Aborting. \n", filepath);
-    /*cleanupIndex(indexReload);*/
     exit(1);
   }
 
@@ -286,7 +285,6 @@ int reconstructIndex(char* word, int documentId, int page_word_frequency, INVERT
           break;
         }
       }
-
     }
 
     // either we ran to end of list and the word was not found
@@ -392,7 +390,7 @@ int reconstructIndex(char* word, int documentId, int page_word_frequency, INVERT
 // the first 2 indicates that there are 2 documents with 'cat' found
 // the second 2 indicates the document ID with 3 occurrences of 'cat'
 // the 4 indicates the document ID with 5 occurrences of 'cat'
-int saveIndexToFile(INVERTED_INDEX* index, char* targetFile){
+void saveIndexToFile(INVERTED_INDEX* index, char* targetFile){
   WordNode* startWordNode;
   DocumentNode* startPage;
   FILE* fp;
@@ -404,6 +402,7 @@ int saveIndexToFile(INVERTED_INDEX* index, char* targetFile){
 
   if (fp == NULL){
     fprintf(stderr, "Error writing to the file %s", targetFile);
+    exit(1);
   }
 
   // loop through every possible hash slot 
@@ -419,7 +418,6 @@ int saveIndexToFile(INVERTED_INDEX* index, char* targetFile){
         count++;
       }
 
-      /*fprintf(fp, "%s %d ", (char*) startWordNode->word, count);*/
       fprintf(fp, "%s %d ", startWordNode->word, count);
 
       // rest are docID and number of occurrences
@@ -452,16 +450,15 @@ int saveIndexToFile(INVERTED_INDEX* index, char* targetFile){
     free(sortCommand);
     exit(1);
   }
-  free(sortCommand);
 
-  return 1;
+  free(sortCommand);
 }
 
 // "reloads" the index data structure from the file 
 // reloadIndexFromFile: This function does the heavy lifting of 
 // "reloading" a file into an index in memory. It goes through
 // each of the characters and uses strtok to split by space
-INVERTED_INDEX* reloadIndexFromFile(char* loadFile, char* writeReload, INVERTED_INDEX* indexReload){
+INVERTED_INDEX* reloadIndexFromFile(char* loadFile, INVERTED_INDEX* indexReload){
   FILE* fp;
 
   fp = fopen(loadFile, "r");
@@ -477,6 +474,7 @@ INVERTED_INDEX* reloadIndexFromFile(char* loadFile, char* writeReload, INVERTED_
   loadedFile = loadDocument(loadFile);
 
   if (loadedFile == NULL){
+    fprintf(stderr, "Could not reload the index from the file! \n");
     return NULL;
   }
 
@@ -520,12 +518,9 @@ INVERTED_INDEX* reloadIndexFromFile(char* loadFile, char* writeReload, INVERTED_
 
   }
 
-  // Write the index to the file
-  /*saveIndexToFile(indexReload, writeReload);*/
 
   fclose(fp);
   free(placeholder);
-  /*return 1;*/
   free(loadedFile);
   return indexReload;
 }

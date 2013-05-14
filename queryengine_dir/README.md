@@ -23,3 +23,8 @@ Basic Query Engine Assumptions
 Functional Credit
 1. To exit, type in "!exit" and press enter
 
+Refactoring Credit
+1. Refactored common definitions and macros to
+   (../utils/header.h)
+2. Refactored common index structs to (../utils/index.h)
+3. Refactored indexer BATS.sh diff test to BATS_TSE.sh

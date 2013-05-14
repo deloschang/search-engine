@@ -52,16 +52,16 @@ testCmd[j]="./indexer ./unreadable/ index.dat"
 let j++
 
 # correct input for 3 parameters
-testName[j]="$j. testing correct input arguments for filename index.dat (3 parameters)"
-testExpected[j]="No errors expected."
-testCmd[j]="./indexer ../crawler_dir/data/ index.dat"
-let j++
+#testName[j]="$j. testing correct input arguments for filename index.dat (3 parameters)"
+#testExpected[j]="No errors expected."
+#testCmd[j]="./indexer ../crawler_dir/data/ index.dat"
+#let j++
 
 # correct input for 5 parameters
-testName[j]="$j. testing correct input arguments for filename index.dat (5 parameters)"
-testExpected[j]="No errors expected (or warning that file will be overwritten)"
-testCmd[j]="./indexer ../crawler_dir/data/ $INDEX_FILE $INDEX_FILE $NEW_INDEX_FILE"
-let j++
+#testName[j]="$j. testing correct input arguments for filename index.dat (5 parameters)"
+#testExpected[j]="No errors expected (or warning that file will be overwritten)"
+#testCmd[j]="./indexer ../crawler_dir/data/ $INDEX_FILE $INDEX_FILE $NEW_INDEX_FILE"
+#let j++
 
 
 iterate=0
@@ -74,27 +74,6 @@ while (($iterate < $j)); do
   echo ${testExpected[iterate]} 2>&1 | tee -a "$indexer_testlog"
   ${testCmd[iterate]} 2>&1 | tee -a "$indexer_testlog"
 
-  # checks if the index file and reloaded index file are the same
-  if [[ -e "$INDEX_FILE" && -e "$NEW_INDEX_FILE" ]]; then
-    echo "Indexes have been built, read and rewritten correctly!" | tee -a "$indexer_testlog"
-
-    # make sure sorting is the same
-    sort -o $INDEX_FILE $INDEX_FILE
-    sort -o $NEW_INDEX_FILE $NEW_INDEX_FILE
-
-    diff $INDEX_FILE $NEW_INDEX_FILE
-
-    # check the integrity of the files
-    if [ $? -eq 0 ]; then
-      echo "Index storage passed test!" | tee -a "$indexer_testlog"
-    else
-      echo "Index storage didn't pass test!" | tee -a "$indexer_testlog"
-    fi
-
-    debugFlag=0;
-  else
-    echo "Index files $INDEX_FILE and $NEW_INDEX_FILE do not exist. Not testing."
-  fi
 
   # increment and test next
   let iterate++

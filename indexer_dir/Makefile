@@ -4,18 +4,16 @@ CFLAGS1 = -Wall
 
 EXEC = indexer
 LDFLAGS = 
-TEST = ./BATS.sh
 
 # my project details
-OBJS = indexer.o hash.o file.o 
+OBJS = indexer.o hash.o file.o index.o
 
-SRCS = indexer.c hash.c indexer.h hash.h file.h
+SRCS = indexer.c ../utils/hash.c ../utils/hash.h file.h ../utils/index.c
 CFLAGS1SRCS = file.c # need diff flags
 
 # Commands start with TAB not spaces
 $(EXEC): $(OBJS)
 	$(CC) $(CFLAGS) -o $(EXEC) $(OBJS)
-	$(TEST) # test the indexer once made
 $(OBJS): $(SRCS) $(CFLAGS1SRCS)
 	$(CC) $(CFLAGS) -c $(SRCS)
 	$(CC) $(CFLAGS1) -c $(CFLAGS1SRCS)
@@ -31,7 +29,9 @@ debug2: $(SRCS)
 	gdb --args indexer ../crawler_dir/data/ index.dat index.dat index_new.dat
 
 valgrind: $(OBJS)
-	$(CC) $(CFLAGS) -o $(EXEC) $(OBJS)
+	$(CC) $(CFLAGS) -g -ggdb -c $(SRCS)
+	$(CC) $(CFLAGS1) -c $(CFLAGS1SRCS)
+	$(CC) $(CFLAGS) -g -ggdb -o $(EXEC) $(OBJS)
 	valgrind --tool=memcheck --leak-check=full --track-origins=yes ./indexer ../crawler_dir/test_data index.dat
 
 clean:

@@ -116,9 +116,6 @@ else
   exit 1
 fi
 
-exit 0
-
-
 ###### QUERY ENGINE ######
 
 # Build the search engine

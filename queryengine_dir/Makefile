@@ -29,8 +29,8 @@ debug: $(SRCS)
 	$(CC) $(CFLAGS) -g -ggdb -c $(SRCS)
 	#$(CC) $(CFLAGS1) -c $(CFLAGS1SRCS)
 	$(CC) $(CFLAGS) -g -ggdb -o $(EXEC) $(OBJS)
-	#gdb --args queryengine ../indexer_dir/index.dat ../crawler_dir/data
-	gdb --args queryengine index.dat ../crawler_dir/data
+	gdb --args queryengine ../indexer_dir/index.dat ../crawler_dir/data
+	#gdb --args queryengine index.dat ../crawler_dir/data
 debug2: $(SRCS)
 	$(CC) $(CFLAGS) -g -ggdb -c $(SRCS)
 	#$(CC) $(CFLAGS1) -c $(CFLAGS1SRCS)

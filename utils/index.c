@@ -164,6 +164,25 @@ void sanitize(char* loadedDocument){
   free(clear);
 }
 
+// Given a doc ID and integer page frequency, this function
+// will create a new Documnendndexet Node
+DocumentNode* newDocNode(DocumentNode* docNode, int docId, int page_freq){
+  docNode = (DocumentNode*)malloc(sizeof(DocumentNode));
+  if (docNode == NULL){
+    fprintf(stderr, "Out of memory for indexing! Aborting. \n");
+    exit(1);
+  }
+
+  MALLOC_CHECK(docNode);
+  BZERO(docNode, sizeof(DocumentNode));
+  docNode->next = NULL; // new doc node so no connections yet
+  docNode->document_id = docId;
+
+  docNode->page_word_frequency = page_freq;
+
+  return docNode;
+}
+
 // Loads the file into memory
 char* loadDocument(char* filepath){
   FILE* fp;
@@ -464,7 +483,7 @@ INVERTED_INDEX* reloadIndexFromFile(char* loadFile, INVERTED_INDEX* indexReload)
   fp = fopen(loadFile, "r");
   if (fp == NULL){
     fprintf(stderr, "Error opening the file to be reloaded: %s \n", loadFile);
-    return 0;
+    exit(1);
   }
 
   // Commence reloading the index from the file
@@ -475,7 +494,7 @@ INVERTED_INDEX* reloadIndexFromFile(char* loadFile, INVERTED_INDEX* indexReload)
 
   if (loadedFile == NULL){
     fprintf(stderr, "Could not reload the index from the file! \n");
-    return NULL;
+    exit(1);
   }
 
   size_t string1 = strlen(loadedFile);
@@ -512,15 +531,13 @@ INVERTED_INDEX* reloadIndexFromFile(char* loadFile, INVERTED_INDEX* indexReload)
         if (result != 1){
           fprintf(stderr, "Reconstruction failed for the word %s \n", wordNode);
         }
-
       }
     }
-
   }
-
 
   fclose(fp);
   free(placeholder);
   free(loadedFile);
+
   return indexReload;
 }

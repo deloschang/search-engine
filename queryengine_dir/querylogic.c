@@ -226,7 +226,7 @@ void printOutput(DocumentNode* matchedDocNode, char* urlDir){
 
   free(document_id);
 
-  fp = fopen(filePath, "r");
+  fp = fopen(filepath, "r");
   if (fp == NULL){
     fprintf(stderr, "Error opening the document! \n");
     free(filepath);
@@ -322,9 +322,18 @@ void copyList(DocumentNode** result, DocumentNode** orig){
   }
 }
 
-// looks up the keywords
-// returns 1 if successful
+// This function looks up each of the keywords in queryList and cross-
+// references them with the index in memory. 
+// It will take AND or OR operators. If there is an "AND", it will
+// take the intersection of the sets. If there is an "OR", it will take
+// the union of the sets
+
+// returns 1 if the lookup was successful 
 int lookUp(char** queryList, char* urlDir, INVERTED_INDEX* indexReload){
+  int numOfFiles;
+  int firstRunFlag = 1;
+  int orFlag = 0;
+
   // loop through each keyword
   // REFACTOR *** return a match if found. otherwise return NULL
   DocumentNode* temp[1000];
@@ -333,9 +342,17 @@ int lookUp(char** queryList, char* urlDir, INVERTED_INDEX* indexReload){
   DocumentNode* tempHolder[1000]; 
   BZERO(tempHolder, 1000);
 
-  // placeholder for result intersections etc.
-  DocumentNode* result[10000]; // should be max number of possible files
+  // Results holds the resultant DocNodes from the "AND" or "OR" operators.
+  // It will save these DocNodes by their ID i.e. for doc #47, result[47]. 
+  // So the number of files in DIR (i.e. the ID's) will determine how big
+  // results should be 
+  /*numOfFiles = dirScan(urlDir);*/
+  /*printf("is %d", numOfFiles);*/
+  DocumentNode* result[10000]; 
   BZERO(result, 10000);
+
+  /*DocumentNode* result[10000]; */
+  /*BZERO(result, 10000);*/
 
   // list used to be returned at end
   DocumentNode* saved[1000];
@@ -344,14 +361,8 @@ int lookUp(char** queryList, char* urlDir, INVERTED_INDEX* indexReload){
   DocumentNode* list[1000];
   BZERO(list, 1000);
 
-
-  int firstRunFlag = 1;
-
-
   // if there is a 'space', it will default to AND'ing with orFlag = 0;
-  int orFlag = 0;
   for (int i=0; queryList[i]; i++){
-
     // if the word is OR, that means we will concatenate
     // otherwise, default to AND'ing
     if (!strncmp(queryList[i], "OR", strlen("OR") + 1) ){

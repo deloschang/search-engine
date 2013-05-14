@@ -44,6 +44,16 @@ int GetNextURL(char* html, char* urlofthispage, char* result, int pos);
 //
 int NormalizeURL(char* URL);
 
+//Description: Removes the white space characters from the input
+//string buffer that contains the html content. This function
+//basically scans through the entire html buffer content character
+//by character, and abandons any white space character it encounters.
+//The ASCII code of the characters are used to determine whether
+//a character is a white space or not; Characters with ASCII code
+//values below 32 are considered white space characters, and are
+//thus removed.
+void removeWhiteSpace(char *html);
+
 #if 0  // This should be isalpha() from the standard <ctype.h> library!
        // So, we'll reimplement IS_ALPHA(c) as isalpha() so as not to disturb anything.
 #define IS_ALPHA(c) ((('a'<=(c))&&((c)<='z'))||(('A'<=(c))&&((c)<='Z'))) 

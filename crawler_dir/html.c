@@ -248,3 +248,56 @@ int NormalizeURL(char *URL) {
      }
      return 1;
 }
+
+/***
+*removeWhiteSpace*
+------------------
+
+Description: Removes the white space characters from the input
+string buffer that contains the html content. This function
+basically scans through the entire html buffer content character
+by character, and abandons any white space character it encounters.
+The ASCII code of the characters are used to determine whether
+a character is a white space or not; Characters with ASCII code
+values below 32 are considered white space characters, and are
+thus removed.
+
+Input: string_buffer
+
+** Pseudo Code **
+
+(1) Create a target buffer one character than the input buffer, and clear it
+(2) FOR (Every character in the input buffer) DO
+      IF (the current character is not a while space character) THEN
+        Append it to the end of the target buffer
+      END
+    DONE
+(3) Overwrite the input buffer with the target buffer
+(4) Release targer buffer
+    
+*****
+
+****/
+
+void removeWhiteSpace(char *html) {
+     int i;
+     char *buffer, *p;
+     buffer = malloc(strlen(html)+1);
+     p=malloc (sizeof(char)+1);
+     if (!buffer || !p)  {
+          fprintf(stderr, "OUT OF MEMORY in RemoveWhiteSpace!\n");
+          exit(1);
+     }
+     
+     memset(buffer,0,strlen(html)+1);
+     for (i=0;html[i];i++) {
+          // ' ' in ascii is 32, it turns out that we don't want characters 
+          // that have an ascii value > 32.
+          if(html[i] > 32){
+               sprintf(p,"%c",html[i]);
+               strcat(buffer,p);
+          }
+     }
+     strcpy(html,buffer);
+     free(buffer); free(p);
+}

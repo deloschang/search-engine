@@ -1,6 +1,10 @@
 README FILE (QUERY ENGINE)
 ================
-Basic Query Engine
+BATS_TSE.sh Assumptions
+0. Script assumes that user is running BATS_TSE.sh from the current dir
+   (i.e. ./BATS_TSE.sh and NOT ../BATS_TSE.sh)
+   
+Basic Query Engine Assumptions
 0. Query has a maximum limit of 999 characters.
 1. Same keywords are treated as one (e.g. dog dog dog yields the same
    as 'dog')

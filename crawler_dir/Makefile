@@ -2,16 +2,14 @@ CC = gcc
 CFLAGS = -Wall -pedantic -std=c99
 EXEC = crawler
 LDFLAGS = 
-TEST = ./crawler_test.sh
 
-# my project details
+# crawler project details
 OBJS = crawler.o hash.o html.o
 SRCS = crawler.c hash.c html.c crawler.h hash.h html.h
 
 # Commands start with TAB not spaces
 $(EXEC): $(OBJS)
 	$(CC) $(CFLAGS) -o $(EXEC) $(OBJS)
-	$(TEST) # test the crawler once made
 $(OBJS): $(SRCS)
 	$(CC) $(CFLAGS) -c $(SRCS)
 debug: $(SRCS)

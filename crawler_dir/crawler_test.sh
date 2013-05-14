@@ -1,7 +1,6 @@
 #!/bin/bash
-# Description: This script will test the crawler that is generated from the 
-# Makefile. Also, this script is automatically run with the default make 
-# as a sanity check
+# Description: This script will test the crawler to make sure
+# everything is running normally.
 
 # Input:   None.
 # Output: Result of the different battery tests of parameters
@@ -26,7 +25,6 @@ j=0
 # Test Name: title of the test
 # Test Expected: expected output of the test 
 # Test Command:  actual command of the test
-
 
 
 # test insufficient arguments
@@ -91,27 +89,27 @@ let j++
 #let j++
 
 # correct input 
-testName[j]="$j. testing correct input arguments for depth 3"
-testExpected[j]="No errors expected. Should not go past depth 3."
-testCmd[j]="./crawler www.cs.dartmouth.edu ./data/ 3"
-let j++
+#testName[j]="$j. testing correct input arguments for depth 3"
+#testExpected[j]="No errors expected. Should not go past depth 3."
+#testCmd[j]="./crawler www.cs.dartmouth.edu ./data/ 3"
+#let j++
 
 iterate=0
 while (($iterate < $j)); do
 
   echo ""
 
-  # test to STDOUT for easy viewing
-  #echo ${testName[iterate]}  
-  #echo ${testExpected[iterate]} 
-  #${testCmd[iterate]}
-
-
   ## send test result to the log
-  echo ${testName[iterate]} >> "$crawler_testlog"
-  echo ${testExpected[iterate]} >> "$crawler_testlog"
-  echo -n "Output -->" >> "$crawler_testlog"
-  ${testCmd[iterate]} >> "$crawler_testlog" 2>&1
+  echo ${testName[iterate]} 2>&1 | tee -a "$crawler_testlog"
+  echo ${testExpected[iterate]} 2>&1 | tee -a "$crawler_testlog"
+  echo -n "Output -->" 2>&1 | tee -a "$crawler_testlog"
+  ${testCmd[iterate]} 2>&1 | tee -a "$crawler_testlog" 
+
+  if [ $? -eq 0 ]; then
+    echo "Test failed! Should not have crawled"
+    exit 1
+  fi
+
   
   # increment and test next
   let iterate++
@@ -122,3 +120,5 @@ echo "Done testing. Cleaning up"
 
 # cleanup
 make clean
+
+exit 0 

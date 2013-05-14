@@ -82,15 +82,8 @@
 //
 
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <unistd.h>
 
 #include "../utils/index.h"
-#include "../utils/hash.h"
 #include "querylogic.h"
 
 // Useful MACROS for controlling the unit tests.
@@ -153,7 +146,7 @@ unsigned long hash1(char* str) {
 
 
 // Test case: TestArgs:1
-// This test case checks to make sure that arguments are processed
+// This test case checks to make sure that all arguments are processed
 // by the query engine successfully
 int TestArgs1() {
   START_TEST_CASE;

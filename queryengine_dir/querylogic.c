@@ -426,7 +426,6 @@ int lookUp(char** queryList, char* urlDir, INVERTED_INDEX* indexReload){
           if (resultSlot[k] != '\0'){
             while (resultSlot[k]){
               // move the docNodes into tempHolder
-              /*tempHolder[k] = result[resultSlot[k]];*/
               DocumentNode* docNode = (DocumentNode*)malloc(sizeof(DocumentNode));
               copyDocNode(docNode, result[resultSlot[k]]);
               tempHolder[k] = docNode;
@@ -455,9 +454,6 @@ int lookUp(char** queryList, char* urlDir, INVERTED_INDEX* indexReload){
     }
   }
   //////// end of for loop ////////
-
-  // neither AND or OR
-  // e.g. "dog"
   if (tempHolder[0] != NULL ){
     int index = 0;
     while (tempHolder[index]){
@@ -511,6 +507,8 @@ int lookUp(char** queryList, char* urlDir, INVERTED_INDEX* indexReload){
   return 1;
 }
 
+// frees up the query list keywords that
+// the user entered
 void cleanUpQueryList(char** queryList){
   int i = 0;
   while (queryList[i]){

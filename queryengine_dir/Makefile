@@ -8,11 +8,11 @@ EXEC = queryengine
 
 LDFLAGS = 
 
-# my project details
+# query engine details
 OBJS = queryengine.o index.o hash.o querylogic.o
 SRCS = queryengine.c queryengine.h ../utils/index.c ../utils/index.h ../utils/hash.c  ../utils/hash.h querylogic.c 
 
-
+# query engine unit test details
 EXEC2 = queryengine_test
 OBJS2 = queryengine_test.o index.o querylogic.o
 SRCS2 = queryengine_test.c ../utils/index.c ../utils/index.h querylogic.c 

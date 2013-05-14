@@ -1,4 +1,4 @@
-// This is some utilites for CS50 search engine project ( or general case)
+// This is some utlites for CS50 search engine project ( or general case)
 // Author: wei pan (wei.pan@dartmouth.edu)
 // useful MACROs for general C programming
 // Filename: header.h

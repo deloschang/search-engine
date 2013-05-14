@@ -12,29 +12,11 @@
 
 // DEFINES
 
-// Make the hash large 
-// This will minimize collisions 
-
-#define MAX_NUMBER_OF_SLOTS 10000
-
 // Word length maximum
 #define WORD_LENGTH 1000
 
 // max url length
 #define MAX_URL_LENGTH 2049
-
-//! Check whether arg is NULL or not on a memory allocation. Quit this program if it is NULL.
-#define MALLOC_CHECK(s)  if ((s) == NULL)   {                     \
-    printf("No enough memory at %s:line%d ", __FILE__, __LINE__); \
-    perror(":");                                                  \
-    exit(-1); \
-  }
-
-//! Set memory space starts at pointer \a n of size \a m to zero. 
-#define BZERO(n,m)  memset(n, 0, m)
-
-// LOG
-#define LOG(s)  printf("[%s:%d]%s\n", __FILE__, __LINE__, s)
 
 // represents the document that was found with the word contained. 
 typedef struct _DocumentNode {

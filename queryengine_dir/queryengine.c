@@ -38,6 +38,7 @@ Implementation Spec Pseudocode:
 #include <unistd.h>
 
 #include "../utils/index.h"
+#include "../utils/header.h"
 #include "querylogic.h"
 #include "queryengine.h"
 

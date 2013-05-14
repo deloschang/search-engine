@@ -31,6 +31,9 @@ fi
 
 # Run the crawler
 if [ $? -eq 0 ]; then
+  #############
+  #############
+  ############# ENABLE SLEEP #####
   echo "(3) Running the crawler"
   ./crawler www.cs.dartmouth.edu ./data/ 2
   make clean

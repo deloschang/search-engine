@@ -105,12 +105,6 @@ while (($iterate < $j)); do
   echo -n "Output -->" 2>&1 | tee -a "$crawler_testlog"
   ${testCmd[iterate]} 2>&1 | tee -a "$crawler_testlog" 
 
-  if [ $? -eq 0 ]; then
-    echo "Test failed! Should not have crawled"
-    exit 1
-  fi
-
-  
   # increment and test next
   let iterate++
 done

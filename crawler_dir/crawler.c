@@ -24,10 +24,10 @@ will start on the third line.
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <unistd.h>
+#include "../utils/header.h"
 #include "crawler.h"
 #include "html.h"
-#include "hash.h"
-#include "header.h"
+#include "../utils/hash.h"
 
 
 // Define the dict structure that holds the hash table 
@@ -101,14 +101,6 @@ void validateArgs(int argc, char* argv[]){
   }
 
   // Validate that directory is writable
-  // Allocate memory to prevent overflow
-
-  // dangerous -- don't use 
-  /*char command[100] = "if [ -w ";*/
-  /*strcat(command, argv[2]);*/
-  /*strcat(command, " ] ; then exit 0 ; else exit 1 ; fi");*/
-  /*writableResult = system(command);*/
-
   size_t len1 = strlen("if [ -w "), len2 = strlen(argv[2]), len3 = strlen(" ] ; then exit 0 ; else exit 1 ; fi");
   writableTest = (char*) malloc(len1 + len2 + len3 + 1);
 
@@ -143,7 +135,7 @@ void validateArgs(int argc, char* argv[]){
 
 int initLists(){
   // malloc the dictionary and initialize with null for 
-  // the MAX_HASH_SLOT amount
+  // the MAX_NUMBER_OF_SLOTS amount
   dict = (DICTIONARY*)malloc(sizeof(DICTIONARY));
   MALLOC_CHECK(dict);
   BZERO(dict, sizeof(DICTIONARY)); // set the bytes to zero
@@ -419,7 +411,7 @@ void updateListLinkToBeVisited(char *url_list[ ], int depth){
   for(int j=0; j < url_listLength; j++){
 
     // Calculate the hash
-    urlHash = hash1(url_list[j]) % MAX_HASH_SLOT;
+    urlHash = hash1(url_list[j]) % MAX_NUMBER_OF_SLOTS;
 
     // Check if spot @ hash exists already
     if (dict->hash[urlHash] == NULL){
@@ -438,7 +430,7 @@ void updateListLinkToBeVisited(char *url_list[ ], int depth){
 // marks the url as visited
 void setURLasVisited(char* url){
   // grab the DNODE by the hash first
-  int urlHash = hash1(url) % MAX_HASH_SLOT;
+  int urlHash = hash1(url) % MAX_NUMBER_OF_SLOTS;
   DNODE* target = dict->hash[urlHash];
 
   // loop until find the URL
@@ -471,15 +463,10 @@ char *getAddressFromTheLinksToBeVisited(int *depth){
   // begin search through hash table
   // since we are using SCHEMA A (from piazza), we cannot follow all links through
   // because the end of cluster will reach a NULL
-  for (int i = 0; i < MAX_HASH_SLOT; i++){
+  for (int i = 0; i < MAX_NUMBER_OF_SLOTS; i++){
     DNode = dict->hash[i];
     
-    // nothing at the hash slot
-    /*if ( !DNode ){*/
-      /*continue;*/
-    /*}*/
-    //
-
+    // check if there is something in the hash slot
     while ( (DNode) ){
       if (((URLNODE *)DNode->data)->visited == 0){
 
@@ -508,7 +495,7 @@ void cleanup(){
 
   // Iterate through each hashslot and free the nodes
   int testcount=0;
-  for (int i = 0; i < MAX_HASH_SLOT; i++){
+  for (int i = 0; i < MAX_NUMBER_OF_SLOTS; i++){
     DNode = dict->hash[i];
     
     while ( (DNode) ){
@@ -584,7 +571,7 @@ int main(int argc, char* argv[]) {
   target_directory = argv[2];
   specified_max_depth = atoi(argv[argc - 1]);
 
-  int seedHash = hash1(seedURL) % MAX_HASH_SLOT;
+  int seedHash = hash1(seedURL) % MAX_NUMBER_OF_SLOTS;
 
   // Set up URLNode for the Seed
   // these mallocs will be free at freeURLList()

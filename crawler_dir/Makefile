@@ -5,7 +5,7 @@ LDFLAGS =
 
 # crawler project details
 OBJS = crawler.o hash.o html.o
-SRCS = crawler.c hash.c html.c crawler.h hash.h html.h
+SRCS = crawler.c ../utils/hash.c html.c ../utils/hash.h html.h
 
 # Commands start with TAB not spaces
 $(EXEC): $(OBJS)
@@ -27,6 +27,7 @@ clean:
 	rm -f *.o
 	rm -f *.gch
 	rm -f *.html.*
+	rm -f index.htma
 	rm -f core.*
 
 # to clean both log and crawled data files

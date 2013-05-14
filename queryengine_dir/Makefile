@@ -14,8 +14,8 @@ SRCS = queryengine.c queryengine.h ../utils/index.c ../utils/hash.c  ../utils/ha
 
 # query engine unit test details
 EXEC2 = queryengine_test
-OBJS2 = queryengine_test.o index.o querylogic.o
-SRCS2 = queryengine_test.c ../utils/index.c querylogic.c 
+OBJS2 = queryengine_test.o index.o querylogic.o file.o
+#SRCS2 = queryengine_test.c ../utils/index.c querylogic.c 
 
 CFLAGS1SRCS = ../utils/file.c # need diff flags
 
@@ -26,7 +26,7 @@ $(OBJS): $(SRCS) $(CFLAGS1SRCS)
 	$(CC) $(CFLAGS) -c $(SRCS)
 	$(CC) $(CFLAGS1) -c $(CFLAGS1SRCS)
 unit: $(SRCS2) $(CFLAGS1SRCS2)
-	$(CC) $(CFLAGS) -c $(SRCS2)
+	$(CC) $(CFLAGS) -c $(SRCS)
 	$(CC) $(CFLAGS) -o $(EXEC2) $(OBJS2)
 debug: $(SRCS)
 	$(CC) $(CFLAGS) -g -ggdb -c $(SRCS)
@@ -51,7 +51,6 @@ valgrindgdb: $(OBJS)
 	valgrind --tool=memcheck --leak-check=full --vgdb-error=0 ./queryengine ../indexer_dir/index.dat ../crawler_dir/data
 
 
-
 clean:
 	rm -f *~
 	rm -f *#
@@ -60,6 +59,8 @@ clean:
 	rm -f *.gch
 	rm -f core.*
 	rm -f vgcore.*
+	rm -f queryengine
+	rm -f queryengine_test
 
 cleanlog:
 	rm -f *log.*

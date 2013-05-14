@@ -102,6 +102,8 @@ void cleanUpList(DocumentNode** usedList){
   }
 }
 
+// Implementation of Quicksort in descending order
+// using page frequencies 
 int rankSplit(DocumentNode** saved, int l, int r){
   DocumentNode* t;
   int pivot, i, j;
@@ -129,7 +131,7 @@ int rankSplit(DocumentNode** saved, int l, int r){
   return j;
 }
 
-// implements QuickSort in descending order
+// implements QuickSort in descending order recursively
 void rankByFrequency(DocumentNode** saved, int l, int r){
   int num;
 
@@ -180,7 +182,6 @@ DocumentNode** searchForKeyword(DocumentNode** list, char* keyword, INVERTED_IND
   if (matchedWordNode != NULL){
 
     // loop through the URL docs
-    // REFACTOR *****
     DocumentNode* matchedDocNode = matchedWordNode->page;
     int num = 0;
     while(matchedDocNode != NULL){
@@ -314,12 +315,10 @@ void copyList(DocumentNode** result, DocumentNode** orig){
 
 // returns 1 if the lookup was successful 
 int lookUp(char** queryList, char* urlDir, INVERTED_INDEX* indexReload){
-  int numOfFiles;
   int firstRunFlag = 1;
   int orFlag = 0;
 
   // loop through each keyword
-  // REFACTOR *** return a match if found. otherwise return NULL
   DocumentNode* temp[1000];
   BZERO(temp, 1000);
 
@@ -330,8 +329,6 @@ int lookUp(char** queryList, char* urlDir, INVERTED_INDEX* indexReload){
   // It will save these DocNodes by their ID i.e. for doc #47, result[47]. 
   // So the number of files in DIR (i.e. the ID's) will determine how big
   // results should be 
-  /*numOfFiles = dirScan(urlDir);*/
-  /*printf("is %d", numOfFiles);*/
   DocumentNode* result[10000]; 
   BZERO(result, 10000);
 

@@ -1,5 +1,5 @@
-// Filename: Test cases for dictionary.h/.c
-// Description: A unit test for query engine processing
+// Filename: Test cases for queryengine.h/.c and querylogic.h/.c
+// Description: A unit test harness for query engine processing
 // 
 
 //
@@ -40,19 +40,23 @@
 //
 //  The following test cases  (1-3) are for function:
 //
-//  void DAdd(DICTIONARY* dict, void* data, char* key);
+//  DocumentNode** intersection(DocumentNode** final, DocumentNode** list,
+//    DocumentNode** result, int* resultSlot);
 //
-//  Test case: DADD:1
-//  This test case calls DAdd() for the condition where dict is empty
-//  result is to add a DNODE to the dictionary and look at its values.
+//  Test case: TestANDOp:1
+//  This test case calls intersection() for the condition where one list is empty
+//  and the other is not. The result should be that the intersection will be
+//  an empty list
 //
-//  Test case: DADD:2
-//  This test case calls DAdd() puts multiple DNODEs on the dict when there is no hash collisions
-//  We put multiply elements in dictionary with no collisions.
+//  Test case: TestANDOp:2
+//  This test case calls intersection() for the condition where both lists
+//  are not empty. They have the same DocumentNode. The result should be that the 
+//  intersection will NOT be an empty list
 //
-//  Test case: DADD:3
-//  This test case calls DAdd() puts multiple DNODEs on the dict when there is hash collisions
-//  We put multiply elements in dictionary with collisions.
+//  Test case: TestANDOp:3
+//  This test case calls intersection() for the condition where both lists
+//  are not empty. They do not have the same DocumentNode. The intersection
+//  and thus resultant list should be empty 
 //
 //  The following test cases (1-4) for function:
 //
@@ -82,29 +86,29 @@
 //
 
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 #include "../utils/header.h"
 #include "../utils/index.h"
+#include "../utils/file.h"
 #include "querylogic.h"
 
 // Useful MACROS for controlling the unit tests.
 
 // each test should start by setting the result count to zero
-
 #define START_TEST_CASE  int rs=0
 
 // check a condition and if false print the test condition failed
 // e.g., SHOULD_BE(dict->start == NULL)
 // note: the construct "#x" below is the sstringification preprocessor operator that
 //       converts the argument x into a character string constant
-
 #define SHOULD_BE(x) if (!(x))  {rs=rs+1; \
     printf("Line %d test [%s] Failed\n", __LINE__,#x); \
   }
 
 
 // return the result count at the end of a test
-
 #define END_TEST_CASE return rs
 
 //
@@ -146,24 +150,44 @@ unsigned long hash1(char* str) {
 }
 
 
+// Main reloaded index structure
+INVERTED_INDEX* indexReload = NULL;
+
+void create(){
+  indexReload = initStructure(indexReload);
+  LOG("Initializing INVERTED INDEX structure");
+}
+
+// Test case: TestStructure:1
+// This test case checks to make sure we can initialize the basic
+// inverted index structure
+int TestStructure1(){
+  START_TEST_CASE;
+  LOG("Initializing INVERTED INDEX structure");
+
+  indexReload = initStructure(indexReload);
+  SHOULD_BE(indexReload != NULL);
+
+  END_TEST_CASE;
+  
+  cleanUpIndex(indexReload);
+}
+
 // Test case: TestArgs:1
-// This test case checks to make sure that all arguments are processed
+// This test case calls reloadIndexFromFile() and lookUp() and 
+// checks to make sure that all arguments are processed
 // by the query engine successfully
 int TestArgs1() {
   START_TEST_CASE;
 
-  LOG("Initializing INVERTED INDEX structure");
-
-  INVERTED_INDEX* indexReload = NULL;
-  indexReload = initStructure(indexReload);
-  SHOULD_BE(indexReload != NULL);
+  create();
 
   INVERTED_INDEX* result = NULL;
   result = reloadIndexFromFile("../indexer_dir/index.dat", indexReload);
   SHOULD_BE(result != NULL);
   LOG("Reloading INVERTED INDEX structure");
 
-  char query[1000] = "dog OR cat";
+  char query[1000] = "andrew";
   sanitize(query);
 
   char* queryList[1000];
@@ -182,26 +206,121 @@ int TestArgs1() {
   END_TEST_CASE;
 }
 
-// Test case: DADD:1
-// This test case calls DAdd() for the condition where dict is empty
-// result is to add a DNODE to the dictionary and look at its values.
+// Test case: TestANDOp:1
+// This test case calls intersection() for the condition where one list is empty
+// and the other is not. The result should be that the intersection will be
+// an empty list
+int TestANDOp1() {
+  START_TEST_CASE;
 
-/*int TestDAdd1() {*/
-  /*START_TEST_CASE;*/
-  /*DICTIONARY* dict = InitDictionary();*/
-  /*int* d1; d1 = (int *)malloc(sizeof(int)); *d1 = 1;*/
-  /*hash = 0;*/
-  /*DAdd(dict, d1, "1");*/
-  /*SHOULD_BE(dict->hash[0]->data == (void*)d1);*/
-  /*SHOULD_BE(dict->start == dict->hash[0]);*/
-  /*SHOULD_BE(dict->end == dict->hash[0]);*/
-  /*SHOULD_BE(dict->hash[0]->prev == NULL);*/
-  /*SHOULD_BE(dict->hash[0]->next == NULL);*/
-  /*SHOULD_BE(!strcmp(dict->hash[0]->key, "1"));*/
-  /*CleanDictionary(dict);*/
-  /*free(dict);*/
-  /*END_TEST_CASE;*/
-/*}*/
+  create();
+
+  INVERTED_INDEX* indexResult = NULL;
+  indexResult = reloadIndexFromFile("../indexer_dir/index.dat", indexReload);
+  SHOULD_BE(indexResult != NULL);
+  LOG("Reloading INVERTED INDEX structure");
+
+  int resultSlot[1000];
+  DocumentNode* result[10000];
+  BZERO(result, 10000);
+  DocumentNode* list1[1000];
+  BZERO(list1, 1000);
+  DocumentNode* list2[1000];
+  BZERO(list2, 1000);
+
+  DocumentNode* docNode = NULL;
+  docNode = newDocNode(docNode, 15, 1);
+
+  list1[0] = docNode;
+
+  intersection(list1, list2, result, resultSlot);
+  SHOULD_BE(result[0] == NULL);
+
+  free(docNode);
+
+  cleanUpIndex(indexReload);
+  END_TEST_CASE;
+}
+
+// Test case: TestANDOp:2
+// This test case calls intersection() for the condition where both lists
+// are not empty. They have the same DocumentNode. The result should be that 
+// the intersection will NOT be an empty list (same DocumentNode)
+int TestANDOp2() {
+  START_TEST_CASE;
+
+  create();
+
+  INVERTED_INDEX* indexResult = NULL;
+  indexResult = reloadIndexFromFile("../indexer_dir/index.dat", indexReload);
+  SHOULD_BE(indexResult != NULL);
+  LOG("Reloading INVERTED INDEX structure");
+
+  int resultSlot[1000];
+  DocumentNode* result[10000];
+  BZERO(result, 10000);
+  DocumentNode* list1[1000];
+  BZERO(list1, 1000);
+  DocumentNode* list2[1000];
+  BZERO(list2, 1000);
+
+  DocumentNode* docNode = NULL;
+  docNode = newDocNode(docNode, 15, 1);
+
+  DocumentNode* docNode2 = NULL;
+  docNode2 = newDocNode(docNode2, 15, 1);
+
+  list2[0] = docNode2;
+
+  intersection(list1, list2, result, resultSlot);
+  SHOULD_BE(result[0] != NULL);
+
+  free(docNode);
+  free(docNode2);
+
+  cleanUpIndex(indexReload);
+  END_TEST_CASE;
+}
+
+// Test case: TestANDOp:3
+// This test case calls intersection() for the condition where both lists
+// are not empty. They do not have the same DocumentNode. The intersection
+// and thus resultant list should be empty 
+int TestANDOp3() {
+  START_TEST_CASE;
+
+  create();
+
+  INVERTED_INDEX* indexResult = NULL;
+  indexResult = reloadIndexFromFile("../indexer_dir/index.dat", indexReload);
+  SHOULD_BE(indexResult != NULL);
+  LOG("Reloading INVERTED INDEX structure");
+
+  int resultSlot[1000];
+  DocumentNode* result[10000];
+  BZERO(result, 10000);
+  DocumentNode* list1[1000];
+  BZERO(list1, 1000);
+  DocumentNode* list2[1000];
+  BZERO(list2, 1000);
+
+  DocumentNode* docNode = NULL;
+  docNode = newDocNode(docNode, 15, 1);
+
+  DocumentNode* docNode2 = NULL;
+  docNode2 = newDocNode(docNode2, 16, 1);
+
+  list2[0] = docNode2;
+
+  intersection(list1, list2, result, resultSlot);
+  SHOULD_BE(result[0] == NULL);
+
+  free(docNode);
+  free(docNode2);
+
+  cleanUpIndex(indexReload);
+  END_TEST_CASE;
+}
 
 // Test case: DADD:2
 // This test case calls DAdd() puts multiple DNODEs on the dict when there is no hash collisions
@@ -397,8 +516,11 @@ int TestArgs1() {
 int main(int argc, char** argv) {
   int cnt = 0;
 
+  RUN_TEST(TestStructure1, "Structure Test case 1");
   RUN_TEST(TestArgs1, "CheckArgs Test case 1");
-  /*RUN_TEST(TestDAdd1, "DAdd Test case 1");*/
+  RUN_TEST(TestANDOp1, "AND operator Test case 1");
+  RUN_TEST(TestANDOp2, "AND operator Test case 2");
+  RUN_TEST(TestANDOp3, "AND operator Test case 3");
   /*RUN_TEST(TestDAdd2, "DAdd Test case 2");*/
   /*RUN_TEST(TestDAdd3, "DAdd Test case 3");*/
   /*RUN_TEST(TestDRemove1, "DRemove Test case 1");*/
@@ -407,9 +529,9 @@ int main(int argc, char** argv) {
   /*RUN_TEST(TestDRemove4, "DRemove Test case 4");*/
   /*RUN_TEST(TestGetData1, "GetDataWithKey Test case 1");*/
   if (!cnt) {
-    printf("All passed!\n"); return 0;
+    printf("All passed!\n Passed: %d \n", cnt); return 0;
   } else {
-    printf("Some fails!\n"); return 1;
+    printf("Some fails!\n Passed: %d \n", cnt"); return 1;
   }
 }
 

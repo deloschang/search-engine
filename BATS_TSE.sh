@@ -160,7 +160,7 @@ fi
 
 # cleanup
 make clean
-
-cd ../
+cd ../utils
+rm -f *.gch
 
 exit 0

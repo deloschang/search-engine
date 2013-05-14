@@ -32,7 +32,7 @@ valgrind: $(OBJS)
 	$(CC) $(CFLAGS) -g -ggdb -c $(SRCS)
 	$(CC) $(CFLAGS1) -c $(CFLAGS1SRCS)
 	$(CC) $(CFLAGS) -g -ggdb -o $(EXEC) $(OBJS)
-	valgrind --tool=memcheck --leak-check=full --track-origins=yes ./indexer ../crawler_dir/test_data index.dat
+	valgrind --tool=memcheck --leak-check=full ./indexer ../crawler_dir/data index.dat
 
 clean:
 	rm -f *~

@@ -147,6 +147,7 @@ int updateIndex(INVERTED_INDEX* index, char* word, int documentId){
   // hash first
   int wordHash = hash1(word) % MAX_NUMBER_OF_SLOTS;
   DocumentNode* docNode = NULL;
+  WordNode* wordNode = NULL;
 
   // check if hash slot occupied first?
   if (index->hash[wordHash] == NULL){
@@ -156,18 +157,8 @@ int updateIndex(INVERTED_INDEX* index, char* word, int documentId){
     docNode = newDocNode(docNode, documentId, 1);
 
     // create Word Node of word and document node first
-    WordNode* wordNode = (WordNode*)malloc(sizeof(WordNode));
-    if (wordNode == NULL){
-      fprintf(stderr, "Out of memory for indexing! Aborting. \n");
-      return 0;
-    }
-
-    MALLOC_CHECK(wordNode);
-    wordNode->prev = wordNode->next = NULL; // first in hash slot, no connections
-    wordNode->page = docNode; // pointer to 1st element of page list
-
-    BZERO(wordNode->word, WORD_LENGTH);
-    strncpy(wordNode->word, word, WORD_LENGTH);
+    wordNode = NULL;
+    wordNode = newWordNode(wordNode, docNode, word);
 
     // indexing at this slot will bring this wordNode up first
     index->hash[wordHash] = wordNode;
@@ -179,7 +170,6 @@ int updateIndex(INVERTED_INDEX* index, char* word, int documentId){
   } else {
     // occupied, move down the list checking for identical WordNode
     WordNode* checkWordNode = index->hash[wordHash];
-
 
     WordNode* matchedWordNode;
     WordNode* endWordNode = NULL;
@@ -259,13 +249,8 @@ int updateIndex(INVERTED_INDEX* index, char* word, int documentId){
       docNode = NULL;
       docNode = newDocNode(docNode, documentId, 1);
 
-      MALLOC_CHECK(wordNode);
-      wordNode->prev = endWordNode;
-      wordNode->next = NULL; // first in hash slot, no connections
-      wordNode->page = docNode; // pointer to 1st element of page list
-
-      BZERO(wordNode->word, WORD_LENGTH);
-      strncpy(wordNode->word, word, WORD_LENGTH);
+      wordNode = NULL;
+      wordNode = newWordNode(wordNode, docNode, word);
 
       // adjust previous 
       endWordNode->next = wordNode;
@@ -440,7 +425,7 @@ int main(int argc, char* argv[]){
 
     LOG("Writing index to file finished");
 
-    // clean up here
+    // Clean up basic index 
     cleanUpIndex(index);
 
   // DEBUG MODE: reloading the index file
@@ -464,7 +449,7 @@ int main(int argc, char* argv[]){
     // Write the index in memory to file
     saveIndexToFile(reloadResult, writeReload);
 
-    // clean up here;
+    // Clean up reloaded index
     LOG("Cleaning up");
     cleanUpIndex(indexReload);
 

@@ -183,6 +183,23 @@ DocumentNode* newDocNode(DocumentNode* docNode, int docId, int page_freq){
   return docNode;
 }
 
+WordNode* newWordNode(WordNode* wordNode, DocumentNode* docNode, char* word){
+  wordNode = (WordNode*)malloc(sizeof(WordNode));
+  if (wordNode == NULL){
+    fprintf(stderr, "Out of memory for indexing! Aborting. \n");
+    exit(1);
+  }
+
+  MALLOC_CHECK(wordNode);
+  wordNode->prev = wordNode->next = NULL; // first in hash slot, no connections
+  wordNode->page = docNode; // pointer to 1st element of page list
+
+  BZERO(wordNode->word, WORD_LENGTH);
+  strncpy(wordNode->word, word, WORD_LENGTH);
+
+  return wordNode;
+}
+
 // Loads the file into memory
 char* loadDocument(char* filepath){
   FILE* fp;

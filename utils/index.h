@@ -48,6 +48,8 @@ INVERTED_INDEX* reloadIndexFromFile(char* loadFile, INVERTED_INDEX* indexReload)
 
 DocumentNode* newDocNode(DocumentNode* docNode, int docId, int page_freq);
 
+WordNode* newWordNode(WordNode* wordNode, DocumentNode* docNode, char* word);
+
 char* loadDocument(char* filepath);
 
 // saves the inverted index into a file

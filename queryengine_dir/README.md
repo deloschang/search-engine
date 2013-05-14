@@ -1,4 +1,8 @@
 README FILE (QUERY ENGINE)
+
+Created by: Delos Chang
+Description: 
+
 ================
 BATS_TSE.sh Assumptions
 0. Script assumes that user is running BATS_TSE.sh from the current dir
@@ -30,4 +34,4 @@ Refactoring Credit
 3. Refactored indexer BATS.sh diff test to BATS_TSE.sh
 4. Refactored common idioms in indexer and query engine to
    ../utils/index.c (i.e. creating a Document Node with X docId and Y
-   frequency)
+   frequency, getting a filepath, creating a WordNode)

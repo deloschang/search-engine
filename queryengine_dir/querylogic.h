@@ -18,6 +18,9 @@ void rankByFrequency(DocumentNode** saved, int l, int r);
 
 DocumentNode* copyDocNode(DocumentNode* docNode, DocumentNode* orig);
 
+DocumentNode** intersection(DocumentNode** final, DocumentNode** list,
+    DocumentNode** result, int* resultSlot);
+
 DocumentNode** searchForKeyword(DocumentNode** list, char* keyword, INVERTED_INDEX* indexReload);
 
 void printOutput(DocumentNode* matchedDocNode, char* urlDir);

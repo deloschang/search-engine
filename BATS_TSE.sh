@@ -40,6 +40,9 @@ else
   exit 1
 fi
 
+exit 0
+#########
+
 # Next, run BATS.sh to build, test and run the indexer.
 
 # Build the search engine

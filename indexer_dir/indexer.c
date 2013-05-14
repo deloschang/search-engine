@@ -427,7 +427,7 @@ INVERTED_INDEX* index, int documentId){
 // each file in the directory and uses the getNextWordFromHTMLDocument to 
 // parse it and then subsequently update the index
 void buildIndexFromDir(char* dir, int numOfFiles, INVERTED_INDEX* index){
-  char* writable;
+  char* writable = NULL;
   char* loadedDocument;
   int currentPosition;
 
@@ -438,14 +438,15 @@ void buildIndexFromDir(char* dir, int numOfFiles, INVERTED_INDEX* index){
     // cut off if more than 1000 digits
     snprintf(converted_i, 1000, "%d", i);
 
-    size_t string1 = strlen(dir); 
-    size_t string2 = strlen("/");
-    size_t string3 = strlen(converted_i);
+    /*size_t string1 = strlen(dir); */
+    /*size_t string2 = strlen("/");*/
+    /*size_t string3 = strlen(converted_i);*/
 
-    writable = (char*) malloc(string1 + string2 + string3 + 1);
+    /*writable = (char*) malloc(string1 + string2 + string3 + 1);*/
 
     // Construct the filepath
-    sprintf(writable, "%s/%s", dir, converted_i);
+    /*sprintf(writable, "%s/%s", dir, converted_i);*/
+    writable = createFilepath(writable, dir, converted_i);
 
     // Load the document from the filepath
     loadedDocument = loadDocument(writable);

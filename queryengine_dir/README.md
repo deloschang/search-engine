@@ -28,3 +28,6 @@ Refactoring Credit
    (../utils/header.h)
 2. Refactored common index structs to (../utils/index.h)
 3. Refactored indexer BATS.sh diff test to BATS_TSE.sh
+4. Refactored common idioms in indexer and query engine to
+   ../utils/index.c (i.e. creating a Document Node with X docId and Y
+   frequency)

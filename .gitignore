@@ -1,6 +1,9 @@
 *log.*
 *.gch
 *.core
+vg.core*
+core.*
 data/
 index.dat
+index_new.dat
 *.o

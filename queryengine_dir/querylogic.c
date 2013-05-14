@@ -202,7 +202,6 @@ DocumentNode** searchForKeyword(DocumentNode** list, char* keyword, INVERTED_IND
     return list;
 
   } else {
-    printf("Word %s could not be found in indexer \n", keyword);
     return NULL;
   }
 

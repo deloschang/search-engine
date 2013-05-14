@@ -29,6 +29,7 @@ Implementation Spec Pseudocode:
 #include "../utils/header.h"
 #include "../utils/index.h"
 #include "../utils/hash.h"
+#include "../utils/file.h"
 #include "querylogic.h"
  
 int resultSlot[1000]; // stores the document_id of matches
@@ -208,36 +209,30 @@ DocumentNode** searchForKeyword(DocumentNode** list, char* keyword, INVERTED_IND
 }
 
 void printOutput(DocumentNode* matchedDocNode, char* urlDir){
-  int document_id_int = matchedDocNode->document_id;
-
-  ///////////// REFACTOR ///////////////
-  char* readableTest;
-
+  char* filepath = NULL;
   char* document_id;
+  FILE* fp;
+  char* docURL;
+
+  // make the ID from an int into a char
+  int document_id_int = matchedDocNode->document_id;
   document_id = malloc(sizeof(char) * 1000);
   BZERO(document_id, 1000);
   sprintf(document_id, "%d", document_id_int);
 
-  size_t string1 = strlen(urlDir); 
-  size_t string2 = strlen("/");
-  size_t string3 = strlen(document_id);
-
-  readableTest = (char*) malloc(string1 + string2 + string3 + 1);
-  sprintf(readableTest, "%s/%s", urlDir, document_id);
+  // create filepath from the dir and the doc id
+  // e.g. ../crawler_dir/data/2
+  filepath = createFilepath(filepath, urlDir, document_id);
 
   free(document_id);
 
-  /////////// REFACTOR /////////////////
-
-  FILE* fp;
-  fp = fopen(readableTest, "r");
+  fp = fopen(filePath, "r");
   if (fp == NULL){
     fprintf(stderr, "Error opening the document! \n");
-    free(readableTest);
+    free(filepath);
     exit(1);
   }
 
-  char* docURL;
   docURL = (char*) malloc(sizeof(char) * MAX_URL_LENGTH);
   BZERO(docURL, MAX_URL_LENGTH);
 
@@ -245,16 +240,15 @@ void printOutput(DocumentNode* matchedDocNode, char* urlDir){
     fprintf(stderr, "Error copying URL from document. \n");
 
     free(docURL);
-    free(readableTest);
+    free(filepath);
     exit(1);
   }
 
-  /*printf("Document ID:%d URL:%s freq:%d \n", matchedDocNode->document_id, docURL, matchedDocNode->page_word_frequency);*/
   printf("Document ID:%d URL:%s", matchedDocNode->document_id, docURL);
 
   fclose(fp);
   free(docURL);
-  free(readableTest);
+  free(filepath);
 }
 
 // returns the intersection of the two lists (final and list)

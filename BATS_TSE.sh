@@ -50,7 +50,7 @@ if [ $? -eq 0 ]; then
   #############
   #############
   ############# ENABLE CRAWLER #####
-  ./crawler $CRAWL_SITE ./$CRAWLER_DIR $DEPTH
+  #./crawler $CRAWL_SITE ./$CRAWLER_DIR $DEPTH
 else 
   echo "Testing crawler failed (BATS.sh)"
   make clean
@@ -160,5 +160,7 @@ fi
 
 # cleanup
 make clean
+
+cd ../
 
 exit 0

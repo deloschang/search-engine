@@ -9,7 +9,7 @@ EXEC = queryengine
 LDFLAGS = 
 
 # query engine details
-OBJS = queryengine.o index.o hash.o querylogic.o
+OBJS = queryengine.o index.o hash.o querylogic.o file.o
 SRCS = queryengine.c queryengine.h ../utils/index.c ../utils/hash.c  ../utils/hash.h querylogic.c 
 
 # query engine unit test details
@@ -17,23 +17,25 @@ EXEC2 = queryengine_test
 OBJS2 = queryengine_test.o index.o querylogic.o
 SRCS2 = queryengine_test.c ../utils/index.c querylogic.c 
 
+CFLAGS1SRCS = ../utils/file.c # need diff flags
+
 # Commands start with TAB not spaces
 $(EXEC): $(OBJS)
 	$(CC) $(CFLAGS) -o $(EXEC) $(OBJS)
 $(OBJS): $(SRCS) $(CFLAGS1SRCS)
 	$(CC) $(CFLAGS) -c $(SRCS)
+	$(CC) $(CFLAGS1) -c $(CFLAGS1SRCS)
 unit: $(SRCS2) $(CFLAGS1SRCS2)
 	$(CC) $(CFLAGS) -c $(SRCS2)
 	$(CC) $(CFLAGS) -o $(EXEC2) $(OBJS2)
 debug: $(SRCS)
 	$(CC) $(CFLAGS) -g -ggdb -c $(SRCS)
-	#$(CC) $(CFLAGS1) -c $(CFLAGS1SRCS)
+	$(CC) $(CFLAGS1) -c $(CFLAGS1SRCS)
 	$(CC) $(CFLAGS) -g -ggdb -o $(EXEC) $(OBJS)
 	gdb --args queryengine ../indexer_dir/index.dat ../crawler_dir/data
-	#gdb --args queryengine index.dat ../crawler_dir/data
 debug2: $(SRCS)
 	$(CC) $(CFLAGS) -g -ggdb -c $(SRCS)
-	#$(CC) $(CFLAGS1) -c $(CFLAGS1SRCS)
+	$(CC) $(CFLAGS1) -c $(CFLAGS1SRCS)
 	$(CC) $(CFLAGS) -g -ggdb -o $(EXEC) $(OBJS)
 	#gdb --args indexer ../crawler_dir/data/ index.dat index.dat index_new.dat
 

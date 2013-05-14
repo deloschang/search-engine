@@ -39,8 +39,8 @@ written to the result file in the format of:
 #include "../utils/header.h"
 #include "../utils/index.h"
 #include "../utils/hash.h"
+#include "../utils/file.h"
 #include "indexer.h"
-#include "file.h"
 
 // create the index
 INVERTED_INDEX* index = NULL;

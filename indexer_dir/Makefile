@@ -8,8 +8,8 @@ LDFLAGS =
 # my project details
 OBJS = indexer.o hash.o file.o index.o
 
-SRCS = indexer.c ../utils/hash.c ../utils/hash.h file.h ../utils/index.c
-CFLAGS1SRCS = file.c # need diff flags
+SRCS = indexer.c ../utils/hash.c ../utils/hash.h ../utils/file.h ../utils/index.c
+CFLAGS1SRCS = ../utils/file.c # need diff flags
 
 # Commands start with TAB not spaces
 $(EXEC): $(OBJS)

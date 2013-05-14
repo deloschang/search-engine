@@ -29,7 +29,7 @@ if [ $? -eq 0 ]; then
   #############
   #############
   ############# ENABLE CRAWLER #####
-  #echo -e "\n (2) Testing crawler"
+  echo -e "\n (2) Testing crawler"
   ./BATS.sh
 else 
   echo "Building crawler failed (make [crawler])"
@@ -46,7 +46,7 @@ if [ $? -eq 0 ]; then
   #############
   #############
   ############# ENABLE CRAWLER #####
-  #./crawler www.cs.dartmouth.edu ./$CRAWLER_DIR 2
+  ./crawler www.cs.dartmouth.edu ./$CRAWLER_DIR 2
 else 
   echo "Testing crawler failed (BATS.sh)"
   make clean
@@ -96,7 +96,8 @@ if [ $? -eq 0 ]; then
     sort -o $INDEX_FILE $INDEX_FILE
     sort -o $NEW_INDEX_FILE $NEW_INDEX_FILE
 
-    diff -q $INDEX_FILE $NEW_INDEX_FILE > /dev/null
+    #diff -q $INDEX_FILE $NEW_INDEX_FILE > /dev/null
+    diff $INDEX_FILE $NEW_INDEX_FILE 
 
     # check the integrity of the files
     if [ $? -eq 0 ]; then
@@ -148,6 +149,7 @@ fi
 
 # Launch the query engine
 if [ $? -eq 0 ]; then
+  echo -e "\n (11) Running query engine (type !exit as query to exit"
   ./queryengine ../indexer_dir/$INDEX_FILE ../crawler_dir/$CRAWLER_DIR
 else 
   echo "Running unit tests failed (./queryengine_test)"

@@ -283,6 +283,12 @@ int updateIndex(INVERTED_INDEX* index, char* word, int documentId){
       DocumentNode* endDocNode;
 
       while (matchDocNode != NULL){
+        // check if the matched Doc Node has the same document ID
+        if (matchDocNode->document_id == documentId){
+          // this is the correct document to increase page frequency
+          matchDocNode->page_word_frequency++;
+          break;
+        }
         if ( (matchDocNode->next == NULL) ){
 
           // end of the doc node listing
@@ -312,12 +318,6 @@ int updateIndex(INVERTED_INDEX* index, char* word, int documentId){
         }
 
         matchDocNode = matchDocNode->next;
-        // check if the matched Doc Node has the same document ID
-        if (matchDocNode->document_id == documentId){
-          // this is the correct document to increase page frequency
-          matchDocNode->page_word_frequency++;
-          break;
-        }
       }
     } else {
       // WordNode doesn't exist, create new
@@ -580,8 +580,7 @@ void buildIndexFromDir(char* dir, int numOfFiles, INVERTED_INDEX* index){
 
     // Updating the index is done within the getNextWordFromHTMLDocument function
     while ( (currentPosition = getNextWordFromHTMLDocument(
-      loadedDocument, word, currentPosition, index, documentId)) != -1){
-      }
+      loadedDocument, word, currentPosition, index, documentId)) != -1){}
 
     free(loadedDocument);
     printf("Indexing document %d\n", i);

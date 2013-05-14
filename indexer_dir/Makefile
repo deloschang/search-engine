@@ -41,6 +41,7 @@ clean:
 	rm -f *.o
 	rm -f *.gch
 	rm -f core.*
+	rm -f vgcore.*
 
 cleanlog:
 	rm -f *log.*

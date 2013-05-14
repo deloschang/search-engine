@@ -15,8 +15,12 @@
 
 
 CRAWLER_DIR="data/"
+CRAWL_SITE="www.cs.dartmouth.edu"
+DEPTH=2
+
 INDEX_FILE="index.dat"
 NEW_INDEX_FILE="index_new.dat"
+
 ###### CRAWLER ######
 
 # Build the crawler
@@ -46,7 +50,7 @@ if [ $? -eq 0 ]; then
   #############
   #############
   ############# ENABLE CRAWLER #####
-  ./crawler www.cs.dartmouth.edu ./$CRAWLER_DIR 2
+  ./crawler $CRAWL_SITE ./$CRAWLER_DIR $DEPTH
 else 
   echo "Testing crawler failed (BATS.sh)"
   make clean

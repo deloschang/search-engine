@@ -83,6 +83,7 @@
 
 #include <stdio.h>
 
+#include "../utils/header.h"
 #include "../utils/index.h"
 #include "querylogic.h"
 
@@ -154,11 +155,11 @@ int TestArgs1() {
   LOG("Initializing INVERTED INDEX structure");
 
   INVERTED_INDEX* indexReload = NULL;
-  indexReload = initReloadStructure();
+  indexReload = initStructure(indexReload);
   SHOULD_BE(indexReload != NULL);
 
   INVERTED_INDEX* result = NULL;
-  result = reloadIndexFromFile("../indexer_dir/index.dat", "dummy", indexReload);
+  result = reloadIndexFromFile("../indexer_dir/index.dat", indexReload);
   SHOULD_BE(result != NULL);
   LOG("Reloading INVERTED INDEX structure");
 

@@ -15,7 +15,7 @@ SRCS = queryengine.c queryengine.h ../utils/index.c ../utils/hash.c  ../utils/ha
 # query engine unit test details
 EXEC2 = queryengine_test
 OBJS2 = queryengine_test.o index.o querylogic.o
-SRCS2 = queryengine_test.c ../utils/index.c ../utils/index.h querylogic.c 
+SRCS2 = queryengine_test.c ../utils/index.c querylogic.c 
 
 # Commands start with TAB not spaces
 $(EXEC): $(OBJS)

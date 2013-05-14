@@ -27,7 +27,7 @@ clean:
 	rm -f *.o
 	rm -f *.gch
 	rm -f *.html.*
-	rm -f index.htma
+	rm -f index.html
 	rm -f core.*
 
 # to clean both log and crawled data files

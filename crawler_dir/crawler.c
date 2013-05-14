@@ -26,9 +26,9 @@ will start on the third line.
 #include <unistd.h>
 
 #include "../utils/header.h"
+#include "../utils/hash.h"
 #include "crawler.h"
 #include "html.h"
-#include "../utils/hash.h"
 
 
 // Define the dict structure that holds the hash table 

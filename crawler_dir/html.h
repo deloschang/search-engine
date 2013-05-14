@@ -3,7 +3,7 @@
 
 // FILE: html.h
 //
-// This is the HTML parser for the CS50 search engine project
+// Functions to grab the next URL and parse HTML
 //
 // HTML parser utility implementation
 // see html.h for detail usage
@@ -37,9 +37,6 @@
 // warning:  Make sure result buffer is big enough to hold any URL up to our max length.
 int GetNextURL(char* html, char* urlofthispage, char* result, int pos);
 
-//  Make all letters in word be in lower cases.
-void NormalizeWord(char* word);
-
 //  normalize URL 
 // 
 // URL:    url to be normalized
@@ -47,12 +44,8 @@ void NormalizeWord(char* word);
 //
 int NormalizeURL(char* URL);
 
-//  removes all white space char's in a large string
-//
-void removeWhiteSpace(char* html);
-
-#if 0  // CCP - This should be isalpha() from the standard <ctype.h> library!
-       //       So, we'll reimplement IS_ALPHA(c) as isalpha() so as not to disturb anything.
+#if 0  // This should be isalpha() from the standard <ctype.h> library!
+       // So, we'll reimplement IS_ALPHA(c) as isalpha() so as not to disturb anything.
 #define IS_ALPHA(c) ((('a'<=(c))&&((c)<='z'))||(('A'<=(c))&&((c)<='Z'))) 
 #else
 #include <ctype.h>

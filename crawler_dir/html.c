@@ -1,6 +1,6 @@
 // FILE: html.c
 //
-// This is the HTML parser for the CS50 search engine project
+// Description: Functions to grab URL and parse HTML
 //
 // HTML parser utility implementation
 // see html.h for detail usage
@@ -166,44 +166,6 @@ int GetNextURL(char *html, char *urlofthispage, char *result, int pos) {
       return -1;
  }
                            
-/****                        
-*NormalizeWord*
----------------
-
-Description: Make sure all the Roman letters in the URL are
-of lower cases, for ease of carrying out string comparison in
-the future when trying to decide if two URL are the same or not.
-Basically a linear scan, starting from the beginning of the URL,
-is performed. Whenever a capital letter character is encountered
-(by checking its ASCII code value), it is replaced by the
-corresponding lower case letter.
-
-Input: input_url
-
-** Pseudo Code **
-
-(1) FOR (every character in the input string) DO
-      IF (this character is a capital letter) DO
-        Change this letter to lower case
-      END
-    DONE
-
-*****
-
-****/
-
-void NormalizeWord(char *word) {
-     int i = 0;
-     while (word[i]) {
-          // NEW
-          if (word[i] < 91 && word[i] > 64) { 
-               // Bounded below so this funct. can run on all urls
-               // /NEW
-               word[i] += 32;
-          }
-          i++;
-     }
-}
 
 /****
 *NormalizeURL*
@@ -285,57 +247,4 @@ int NormalizeURL(char *URL) {
           }
      }
      return 1;
-}
-
-/***
-*removeWhiteSpace*
-------------------
-
-Description: Removes the white space characters from the input
-string buffer that contains the html content. This function
-basically scans through the entire html buffer content character
-by character, and abandons any white space character it encounters.
-The ASCII code of the characters are used to determine whether
-a character is a white space or not; Characters with ASCII code
-values below 32 are considered white space characters, and are
-thus removed.
-
-Input: string_buffer
-
-** Pseudo Code **
-
-(1) Create a target buffer one character than the input buffer, and clear it
-(2) FOR (Every character in the input buffer) DO
-      IF (the current character is not a while space character) THEN
-        Append it to the end of the target buffer
-      END
-    DONE
-(3) Overwrite the input buffer with the target buffer
-(4) Release targer buffer
-    
-*****
-
-****/
-
-void removeWhiteSpace(char *html) {
-     int i;
-     char *buffer, *p;
-     buffer = malloc(strlen(html)+1);
-     p=malloc (sizeof(char)+1);
-     if (!buffer || !p)  {
-          fprintf(stderr, "OUT OF MEMORY in RemoveWhiteSpace!\n");
-          exit(1);
-     }
-     
-     memset(buffer,0,strlen(html)+1);
-     for (i=0;html[i];i++) {
-          // ' ' in ascii is 32, it turns out that we don't want characters 
-          // that have an ascii value > 32.
-          if(html[i] > 32){
-               sprintf(p,"%c",html[i]);
-               strcat(buffer,p);
-          }
-     }
-     strcpy(html,buffer);
-     free(buffer); free(p);
 }

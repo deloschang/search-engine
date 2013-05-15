@@ -391,6 +391,7 @@ DocumentNode** lookUp(DocumentNode** saved, char** queryList, INVERTED_INDEX* in
       cleanUpList(list);
 
       firstRunFlag = 0;
+      orFlag = 0; // negate extraneous OR's in beginning
     } else {
       if (orFlag == 1 ){
         // OR'ing

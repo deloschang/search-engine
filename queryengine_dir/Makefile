@@ -29,6 +29,8 @@ unit: $(SRCS2) $(CFLAGS1SRCS2)
 	$(CC) $(CFLAGS) -c $(SRCS2)
 	$(CC) $(CFLAGS1) -c $(CFLAGS1SRCS)
 	$(CC) $(CFLAGS) -o $(EXEC2) $(OBJS2)
+	./queryengine_test
+
 unit2: $(SRCS2) $(CFLAGS1SRCS2)
 	$(CC) $(CFLAGS) -g -ggdb -c $(SRCS2)
 	$(CC) $(CFLAGS) -g -ggdb -o $(EXEC2) $(OBJS2)

@@ -90,7 +90,7 @@
 //  This test case calls rankByFrequency() for the condition the DocumentNode
 //  page frequencies are different and need to be ranked accordingly
 //
-//  The following test cases (1) for function:
+//  The following test cases (1-5) for function:
 //
 //   DocumentNode** lookUp(DocumentNode** saved, char** queryList, INVERTED_INDEX* indexReload);
 //
@@ -98,6 +98,23 @@
 //  This test calls lookUp() for the condition where 
 //  the query has an OR operator. 
 //
+//  Test case: TestLookUp:2
+//  This test calls lookUp() for the condition where 
+//  the query has an AND operator. 
+//  Tests that summed page frequencies returned are correct 
+//
+//  Test case: TestLookUp:3
+//  This test calls lookUp() for the condition where 
+//  the query has an IMPLICIT AND operator. 
+//  Tests that summed page frequencies returned are correct 
+//
+//  Test case: TestLookUp:4
+//  This test calls lookUp() for the condition where 
+//  the query has extraneous AND and OR queries
+//
+//  Test case: TestLookUp:5
+//  This test calls lookUp() for the condition where 
+//  the query has both AND and OR
 //
 
 #include <stdio.h>
@@ -461,7 +478,8 @@ int TestLookUp1() {
 // Test case: TestLookUp:2
 // This test calls lookUp() for the condition where 
 // the query has an AND operator. 
-int TestLookUp1() {
+// Tests that summed page frequencies returned are correct 
+int TestLookUp2() {
   START_TEST_CASE;
   INVERTED_INDEX* testIndex = NULL;
 
@@ -480,14 +498,14 @@ int TestLookUp1() {
 
   wordHash2 = hash1("cat") % MAX_NUMBER_OF_SLOTS;
   DocumentNode* docNode2 = NULL;
-  docNode2 = newDocNode(docNode2, 20, 2);
+  docNode2 = newDocNode(docNode2, 15, 2);
 
   WordNode* wordNode2 = NULL;
   wordNode2 = newWordNode(wordNode2, docNode2, "cat");
 
   testIndex->hash[wordHash2] = wordNode2;
 
-  char query[1000] = "dog OR cat";
+  char query[1000] = "dog AND cat";
   sanitize(query);
 
   char* temp[1000];
@@ -498,7 +516,7 @@ int TestLookUp1() {
 
   curateWords(queryList, query);
   SHOULD_BE(strcmp(queryList[0],"dog") == 0);
-  SHOULD_BE(strcmp(queryList[1],"OR") == 0);
+  SHOULD_BE(strcmp(queryList[1],"AND") == 0);
   SHOULD_BE(strcmp(queryList[2],"cat") == 0);
 
   DocumentNode* saved[1000];
@@ -506,9 +524,200 @@ int TestLookUp1() {
   lookUp(saved, queryList, testIndex);
 
   SHOULD_BE(saved[0]->document_id == docNode->document_id);
-  SHOULD_BE(saved[0]->page_word_frequency == docNode->page_word_frequency);
-  SHOULD_BE(saved[1]->document_id == docNode2->document_id);
-  SHOULD_BE(saved[1]->page_word_frequency == docNode2->page_word_frequency);
+  SHOULD_BE(saved[0]->page_word_frequency == 3);
+  
+  cleanUpList(saved);
+  cleanUpQueryList(queryList);
+  BZERO(saved, 1000);
+
+  cleanUpIndex(testIndex);
+
+  END_TEST_CASE;
+}
+
+// Test case: TestLookUp:3
+// This test calls lookUp() for the condition where 
+// the query has an IMPLICIT AND operator. 
+// Tests that summed page frequencies returned are correct 
+int TestLookUp3() {
+  START_TEST_CASE;
+  INVERTED_INDEX* testIndex = NULL;
+
+  int wordHash;
+  int wordHash2;
+  testIndex = initStructure(testIndex);
+
+  wordHash = hash1("dog") % MAX_NUMBER_OF_SLOTS;
+  DocumentNode* docNode = NULL;
+  docNode = newDocNode(docNode, 15, 1);
+
+  WordNode* wordNode = NULL;
+  wordNode = newWordNode(wordNode, docNode, "dog");
+  testIndex->hash[wordHash] = wordNode;
+
+
+  wordHash2 = hash1("cat") % MAX_NUMBER_OF_SLOTS;
+  DocumentNode* docNode2 = NULL;
+  docNode2 = newDocNode(docNode2, 15, 2);
+
+  WordNode* wordNode2 = NULL;
+  wordNode2 = newWordNode(wordNode2, docNode2, "cat");
+
+  testIndex->hash[wordHash2] = wordNode2;
+
+  char query[1000] = "dog cat";
+  sanitize(query);
+
+  char* temp[1000];
+  BZERO(temp, 1000);
+
+  char* queryList[1000];
+  BZERO(queryList, 1000);
+
+  curateWords(queryList, query);
+  SHOULD_BE(strcmp(queryList[0],"dog") == 0);
+  SHOULD_BE(strcmp(queryList[1],"cat") == 0);
+
+  DocumentNode* saved[1000];
+  BZERO(saved, 1000);
+  lookUp(saved, queryList, testIndex);
+
+  SHOULD_BE(saved[0]->document_id == docNode->document_id);
+  SHOULD_BE(saved[0]->page_word_frequency == 3);
+  
+  cleanUpList(saved);
+  cleanUpQueryList(queryList);
+  BZERO(saved, 1000);
+
+  cleanUpIndex(testIndex);
+
+  END_TEST_CASE;
+}
+
+// Test case: TestLookUp:4
+// This test calls lookUp() for the condition where 
+// the query has extraneous AND and OR queries
+int TestLookUp4() {
+  START_TEST_CASE;
+  INVERTED_INDEX* testIndex = NULL;
+
+  int wordHash;
+  int wordHash2;
+  testIndex = initStructure(testIndex);
+
+  wordHash = hash1("dog") % MAX_NUMBER_OF_SLOTS;
+  DocumentNode* docNode = NULL;
+  docNode = newDocNode(docNode, 15, 1);
+
+  WordNode* wordNode = NULL;
+  wordNode = newWordNode(wordNode, docNode, "dog");
+  testIndex->hash[wordHash] = wordNode;
+
+
+  wordHash2 = hash1("cat") % MAX_NUMBER_OF_SLOTS;
+  DocumentNode* docNode2 = NULL;
+  docNode2 = newDocNode(docNode2, 15, 2);
+
+  WordNode* wordNode2 = NULL;
+  wordNode2 = newWordNode(wordNode2, docNode2, "cat");
+
+  testIndex->hash[wordHash2] = wordNode2;
+
+  char query[1000] = "AND OR dog cat AND OR AND";
+  sanitize(query);
+
+  char* temp[1000];
+  BZERO(temp, 1000);
+
+  char* queryList[1000];
+  BZERO(queryList, 1000);
+
+  curateWords(queryList, query);
+
+  DocumentNode* saved[1000];
+  BZERO(saved, 1000);
+  lookUp(saved, queryList, testIndex);
+
+  SHOULD_BE(saved[0]->document_id == docNode->document_id);
+  SHOULD_BE(saved[0]->page_word_frequency == 3);
+  
+  cleanUpList(saved);
+  cleanUpQueryList(queryList);
+  BZERO(saved, 1000);
+
+  cleanUpIndex(testIndex);
+
+  END_TEST_CASE;
+}
+
+// Test case: TestLookUp:5
+// This test calls lookUp() for the condition where 
+// the query has both AND and OR
+int TestLookUp5() {
+  START_TEST_CASE;
+  INVERTED_INDEX* testIndex = NULL;
+
+  int wordHash;
+  int wordHash2;
+  int wordHash3;
+  int wordHash4;
+  testIndex = initStructure(testIndex);
+
+  wordHash = hash1("dog") % MAX_NUMBER_OF_SLOTS;
+  DocumentNode* docNode = NULL;
+  docNode = newDocNode(docNode, 15, 1);
+
+  WordNode* wordNode = NULL;
+  wordNode = newWordNode(wordNode, docNode, "dog");
+  testIndex->hash[wordHash] = wordNode;
+
+
+  wordHash2 = hash1("cat") % MAX_NUMBER_OF_SLOTS;
+  DocumentNode* docNode2 = NULL;
+  docNode2 = newDocNode(docNode2, 15, 2);
+
+  WordNode* wordNode2 = NULL;
+  wordNode2 = newWordNode(wordNode2, docNode2, "cat");
+
+  testIndex->hash[wordHash2] = wordNode2;
+
+  wordHash3 = hash1("mouse") % MAX_NUMBER_OF_SLOTS;
+  DocumentNode* docNode3 = NULL;
+  docNode3 = newDocNode(docNode3, 23, 2);
+
+  WordNode* wordNode3 = NULL;
+  wordNode3 = newWordNode(wordNode3, docNode3, "mouse");
+
+  testIndex->hash[wordHash3] = wordNode3;
+
+  wordHash4 = hash1("lion") % MAX_NUMBER_OF_SLOTS;
+  DocumentNode* docNode4 = NULL;
+  docNode4 = newDocNode(docNode4, 23, 2);
+
+  WordNode* wordNode4 = NULL;
+  wordNode4 = newWordNode(wordNode4, docNode4, "lion");
+
+  testIndex->hash[wordHash4] = wordNode4;
+
+  char query[1000] = "dog cat OR mouse lion";
+  sanitize(query);
+
+  char* temp[1000];
+  BZERO(temp, 1000);
+
+  char* queryList[1000];
+  BZERO(queryList, 1000);
+
+  curateWords(queryList, query);
+
+  DocumentNode* saved[1000];
+  BZERO(saved, 1000);
+  lookUp(saved, queryList, testIndex);
+
+  SHOULD_BE(saved[0]->document_id == docNode->document_id);
+  SHOULD_BE(saved[0]->page_word_frequency == 3);
+  SHOULD_BE(saved[1]->document_id == docNode3->document_id);
+  SHOULD_BE(saved[1]->page_word_frequency == 4);
   
   cleanUpList(saved);
   cleanUpQueryList(queryList);
@@ -549,6 +758,10 @@ int main(int argc, char** argv) {
   RUN_TEST(TestCurate2, "Curate Keywords Test case 2");
   RUN_TEST(TestRanking1, "Quicksort Ranking Test case 1");
   RUN_TEST(TestLookUp1, "Look Up Test case 1");
+  RUN_TEST(TestLookUp2, "Look Up Test case 2");
+  RUN_TEST(TestLookUp3, "Look Up Test case 3");
+  RUN_TEST(TestLookUp4, "Look Up Test case 4");
+  RUN_TEST(TestLookUp5, "Look Up Test case 5");
 
   if (!cnt) {
     printf("All passed!\n Passed: %d \n", cnt); return 0;

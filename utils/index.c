@@ -1,19 +1,15 @@
 /*
 
 FILE: index.c
-
 Description: Shared functions that handle the INVERTED INDEX. Such as:
 
 0. Creating the index structure
 1. Sanitizing the index 
 2. Reconstructing an inverted index from file into memory. 
 
-Inputs: 
+By: Delos Chang
 
-Outputs: 
-
-
- */
+*/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -85,6 +81,9 @@ void cleanUpIndex(INVERTED_INDEX* index){
 
   free(index);
 }
+
+// This function goes through the buffer and lower cases all the
+// capital letters using the ASCII table
 void capitalToLower(char* buffer){
     // if letters, convert them from upper case to lower case
   for (int i = 0; buffer[i]; i++){

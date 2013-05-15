@@ -1,7 +1,6 @@
 // Filename: Test cases for queryengine.h/.c and querylogic.h/.c
 // Description: A unit test harness for query engine processing
 // 
-
 //
 // Test Harness Spec:
 // ------------------

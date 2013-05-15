@@ -29,8 +29,6 @@ unit: $(SRCS2) $(CFLAGS1SRCS2)
 	$(CC) $(CFLAGS) -c $(SRCS2)
 	$(CC) $(CFLAGS1) -c $(CFLAGS1SRCS)
 	$(CC) $(CFLAGS) -o $(EXEC2) $(OBJS2)
-	./queryengine_test
-
 unit2: $(SRCS2) $(CFLAGS1SRCS2)
 	$(CC) $(CFLAGS) -g -ggdb -c $(SRCS2)
 	$(CC) $(CFLAGS) -g -ggdb -o $(EXEC2) $(OBJS2)
@@ -57,11 +55,6 @@ valgrindgdb: $(OBJS)
 	$(CC) $(CFLAGS) -g -ggdb -c $(SRCS)
 	$(CC) $(CFLAGS) -g -ggdb -o $(EXEC) $(OBJS)
 	valgrind --tool=memcheck --leak-check=full --vgdb-error=0 ./queryengine ../indexer_dir/index.dat ../crawler_dir/data
-
-valgrindunit: $(SRCS2) $(CFLAGS1SRCS2)
-	$(CC) $(CFLAGS) -g -ggdb -c $(SRCS2)
-	$(CC) $(CFLAGS) -g -ggdb -o $(EXEC2) $(OBJS2)
-	valgrind --tool=memcheck --leak-check=full ./queryengine_test
 
 clean:
 	rm -f *~

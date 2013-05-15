@@ -1,7 +1,68 @@
-This is a search engine written in C. It includes:
+Description: This is a search engine written in C. 
+It includes:
 
 1. Crawler -- crawls web pages recursively with a specified depth
 2. Indexer -- creates an inverted index list of words and their occurrences along with the document ID
 3. Query Engine -- command-line interface that creates a ranking system and query processor
 
-How to build, test, and run the search engine system
+How to build/test/clean:
+* Run BATS_TSE.sh to build/test/clean crawler/indexer/query engine
+* To clean the crawler logs and the crawler indexed HTML data, use "make cleanlog" in crawler dir
+* To clean the indexer logs, use "make cleanlog" in indexer dir
+
+Author: Delos Chang
+
+Directory Structure:
+.
+├── BATS_TSE.sh
+├── crawler_dir
+│   ├── BATS.sh
+│   ├── crawler
+│   ├── crawler.c
+│   ├── crawler.h
+│   ├── data
+│   ├── html.c
+│   ├── html.h
+│   ├── Makefile
+│   ├── README
+│   └── TESTING
+├── indexer_dir
+│   ├── BATS.sh
+│   ├── documentation.pdf
+│   ├── indexer
+│   ├── indexer.c
+│   ├── indexer.h
+│   ├── Makefile
+│   ├── README
+│   └── TESTING
+├── queryengine_dir
+│   ├── Makefile
+│   ├── queryengine.c
+│   ├── queryengine.h
+│   ├── queryengine_test.c
+│   ├── querylogic.c
+│   ├── querylogic.h
+│   ├── README.md
+│   └── TESTING
+├── README
+└── utils
+    ├── file.c
+    ├── file.h
+    ├── hash.c
+    ├── hash.h
+    ├── header.h
+    ├── index.c
+    └── index.h
+
+-- For Query Engine -- 
+Functional Credit
+1. To exit, type in "!exit" and press enter
+
+Refactoring Credit
+1. Refactored common definitions and macros to
+   (../utils/header.h)
+2. Refactored common index structs to (../utils/index.h)
+3. Refactored indexer BATS.sh diff test to BATS_TSE.sh
+4. Refactored common idioms in indexer and query engine to
+   ../utils/index.c (i.e. creating a Document Node with X docId and Y
+   frequency, getting a filepath, creating a WordNode)

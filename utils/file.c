@@ -1,6 +1,11 @@
 // FILE: file.c
 //
+// Description:
 // These are utility functions that deal with files
+// used by the search engine such as:
+//  1. Scanning the directory for the number of files and excluding
+//     folders
+//  2. Creating a filepath from a directory and the filename
 //
 
 #include <stdio.h>
@@ -11,6 +16,14 @@
 #include <sys/stat.h>
 #include <unistd.h>
 
+/****
+
+*createFilePath*
+------------
+
+Creates a filepath from a directory. Allocates memory dynamically
+
+*/
 char* createFilepath(char* filepath, char* dir, char* name){
   size_t string1 = strlen(dir); 
   size_t string2 = strlen("/");
@@ -28,7 +41,6 @@ char* createFilepath(char* filepath, char* dir, char* name){
 ------------
 
 uses scandir function to retrieve the number of files
-
 excluding '.' or '..' or '.git' (only numbers) and non-files (e.g. directories)
 
 */
@@ -96,4 +108,3 @@ int dirScan(char *dir) {
     return (saveN - notNum);
   }
 }
-

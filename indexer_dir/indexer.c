@@ -1,6 +1,7 @@
 /*
-
 FILE: indexer.c
+
+Author: Delos Chang
 
 Description: an indexer that creates an inverted list of words
 and their occurrences amongst different documents. This inverted index
@@ -238,13 +239,6 @@ int updateIndex(INVERTED_INDEX* index, char* word, int documentId){
       }
     } else {
       // WordNode doesn't exist, create new
-      ////// IDIOM //////
-      WordNode* wordNode = (WordNode*)malloc(sizeof(WordNode));
-      if (wordNode == NULL){
-        fprintf(stderr, "Out of memory for indexing! Aborting. \n");
-        return 0;
-      }
-
       // create Document node first
       docNode = NULL;
       docNode = newDocNode(docNode, documentId, 1);

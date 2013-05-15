@@ -1,7 +1,9 @@
 #ifndef _HEADER_H_
 #define _HEADER_H_
+
 // Filename: header.h
-// Description: General macros and definitions for the search macros and
+// Description: General macros and definitions for the search engine
+// This includes DEFINES constants and common macros
 //
 
 // DEFINES

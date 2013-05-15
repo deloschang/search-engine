@@ -6,6 +6,9 @@ Description: Shared functions that handle the INVERTED INDEX. Such as:
 0. Creating the index structure
 1. Sanitizing the index 
 2. Reconstructing an inverted index from file into memory. 
+3. Creating WordNodes
+4. Creating DocNodes
+
 
 By: Delos Chang
 
@@ -164,7 +167,7 @@ void sanitize(char* loadedDocument){
 }
 
 // Given a doc ID and integer page frequency, this function
-// will create a new Documnendndexet Node
+// will create a new Document Node
 DocumentNode* newDocNode(DocumentNode* docNode, int docId, int page_freq){
   docNode = (DocumentNode*)malloc(sizeof(DocumentNode));
   if (docNode == NULL){
@@ -182,6 +185,8 @@ DocumentNode* newDocNode(DocumentNode* docNode, int docId, int page_freq){
   return docNode;
 }
 
+// Given a word node and a doc Node, this function will create
+// a new Word Node and return it
 WordNode* newWordNode(WordNode* wordNode, DocumentNode* docNode, char* word){
   wordNode = (WordNode*)malloc(sizeof(WordNode));
   if (wordNode == NULL){
@@ -249,39 +254,17 @@ char* loadDocument(char* filepath){
 // debug mode to ensure that the index can be "reloaded" 
 int reconstructIndex(char* word, int documentId, int page_word_frequency, INVERTED_INDEX* indexReload){
   int wordHash = hash1(word) % MAX_NUMBER_OF_SLOTS;
+  DocumentNode* docNode;
+  WordNode* wordNode;
 
   // check if hash slot occupied first
   if (indexReload->hash[wordHash] == NULL){
-    DocumentNode* docNode = (DocumentNode*)malloc(sizeof(DocumentNode));
-
-    if (docNode == NULL){
-      fprintf(stderr, "Out of memory for indexing! Aborting. \n");
-      return 0;
-    }
-
-    MALLOC_CHECK(docNode);
-    BZERO(docNode, sizeof(DocumentNode));
-    docNode->next = NULL; // first in hash slot, no connections yet
-    docNode->document_id = documentId;
-
-    // loading one word at a time.
-    // Since this word has not been seen before (nothing in hash slot), 
-    // start the count at 1
-    docNode->page_word_frequency = page_word_frequency;
+    docNode = NULL;
+    docNode = newDocNode(docNode, documentId, page_word_frequency);
 
     // create Word Node of word and document node first
-    WordNode* wordNode = (WordNode*)malloc(sizeof(WordNode));
-    if (wordNode == NULL){
-      fprintf(stderr, "Out of memory for indexing! Aborting. \n");
-      return 0;
-    }
-
-    MALLOC_CHECK(wordNode);
-    wordNode->prev = wordNode->next = NULL; // first in hash slot, no connections
-    wordNode->page = docNode; // pointer to 1st element of page list
-
-    BZERO(wordNode->word, WORD_LENGTH);
-    strncpy(wordNode->word, word, WORD_LENGTH);
+    wordNode = NULL;
+    wordNode = newWordNode(wordNode, docNode, word);
 
     // indexing at this slot will bring this wordNode up first
     indexReload->hash[wordHash] = wordNode;
@@ -339,22 +322,8 @@ int reconstructIndex(char* word, int documentId, int page_word_frequency, INVERT
           endDocNode = matchDocNode;
 
           // create Document node first
-          DocumentNode* docNode = (DocumentNode*)malloc(sizeof(DocumentNode));
-
-          if (docNode == NULL){
-            fprintf(stderr, "Out of memory for indexing! Aborting. \n");
-            return 0;
-          }
-
-          MALLOC_CHECK(docNode);
-          BZERO(docNode, sizeof(DocumentNode));
-          docNode->next = NULL; // first in hash slot, no connections yet
-          docNode->document_id = documentId;
-
-          // loading one word at a time.
-          // Since this word has not been seen before (nothing in hash slot), 
-          // start the count at 1
-          docNode->page_word_frequency = page_word_frequency;
+          docNode = NULL;
+          docNode = newDocNode(docNode, documentId, page_word_frequency);
 
           // the docNode should be last now
           endDocNode->next = docNode;
@@ -370,39 +339,13 @@ int reconstructIndex(char* word, int documentId, int page_word_frequency, INVERT
         }
       }
     } else {
-      // WordNode doesn't exist, create new
-      ////// IDIOM //////
-      WordNode* wordNode = (WordNode*)malloc(sizeof(WordNode));
-      if (wordNode == NULL){
-        fprintf(stderr, "Out of memory for indexing! Aborting. \n");
-        return 0;
-      }
-
       // create Document node first
-      DocumentNode* docNode = (DocumentNode*)malloc(sizeof(DocumentNode));
+      docNode = NULL;
+      docNode = newDocNode(docNode, documentId, page_word_frequency);
 
-      if (docNode == NULL){
-        fprintf(stderr, "Out of memory for indexing! Aborting. \n");
-        return 0;
-      }
-
-      MALLOC_CHECK(docNode);
-      BZERO(docNode, sizeof(DocumentNode));
-      docNode->next = NULL; // first in hash slot, no connections yet
-      docNode->document_id = documentId;
-
-      // loading one word at a time.
-      // Since this word has not been seen before (nothing in hash slot), 
-      // start the count at 1
-      docNode->page_word_frequency = page_word_frequency;
-
-      MALLOC_CHECK(wordNode);
-      wordNode->prev = endWordNode;
-      wordNode->next = NULL; // first in hash slot, no connections
-      wordNode->page = docNode; // pointer to 1st element of page list
-
-      BZERO(wordNode->word, WORD_LENGTH);
-      strncpy(wordNode->word, word, WORD_LENGTH);
+      // WordNode doesn't exist, create new
+      wordNode = NULL;
+      wordNode = newWordNode(wordNode, docNode, word);
 
       // adjust previous 
       endWordNode->next = wordNode;

@@ -82,7 +82,4 @@ done
 echo ""
 echo "Done testing. Cleaning up"
 
-# cleanup
-make clean
-
 exit 0

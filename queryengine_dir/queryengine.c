@@ -17,17 +17,28 @@ Outputs: The query engine will output a ranking based on the queries that the
 user enters
 
 Design Spec: 
+The query engine reloads from index.dat into memory via an inverted index structure.
+When the user enters a query, it is sanitized (removing extraneous characters) and then
+split into a keyword list (queryList). Each keyword is checked against the inverted index:
+hashing the word, then checking the hash slot and traversing until a WordNode is found.
+If a WordNode is not found, then the word was not indexed. If it is found, all the URLNodes
+of that WordNode are returned as a list. 
+
+If the next keyword in the queryList is AND, the engine will find the intersection of word1's
+list with word2's list. If the next keyword is OR, the engine will find the union of word1's
+list with word2's list. This approach is iterated across the entire queryList.
+
+A quicksort algorithm is used to rank the page word frequencies and sort the URLs. This is 
+printed out for the user.
 
 Implementation Spec Pseudocode: 
 1. Validate user input arguments
 2. Load the indexer's index file into memory
 3. Query the user via the command line
 4. Change the capital letters to lower case letters
-
 5. Cross-reference the query with the index 
 6. Rank results via an algorithm based on word frequency with AND / OR operators
-
- */
+*/
 
 #include <stdio.h>
 #include <stdlib.h>

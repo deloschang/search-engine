@@ -8,10 +8,21 @@
 #
 # Command Line Options: None.
 
-# Pseudocode: The script uses the makefile to build the search engine.
-# Then it runs unit tests to test the search engine.
-# Finally, it runs the search engine and allows for command-line
-# processing
+# Pseudocode: 
+#
+# 1. Build Crawler with make
+# 2. Test crawler with BATS.sh script
+# 3. Run the crawler
+#
+# 4. Build the indexer with make
+# 5. Test the indexer with BATS.sh script
+# 6. Run the indexer 
+# 7. Test the indexer reloading with diff
+
+# 8. Build the query engine
+# 9. Build query engine unit tests
+# 10. Run query engine unit tests
+# 11. Run query engine
 
 
 CRAWLER_DIR="data/"
@@ -50,7 +61,7 @@ if [ $? -eq 0 ]; then
   #############
   #############
   ############# ENABLE CRAWLER #####
-  #./crawler $CRAWL_SITE ./$CRAWLER_DIR $DEPTH
+  ./crawler $CRAWL_SITE ./$CRAWLER_DIR $DEPTH
 else 
   echo "Testing crawler failed (BATS.sh)"
   make clean
@@ -162,5 +173,7 @@ fi
 make clean
 cd ../utils
 rm -f *.gch
+rm -f *.o
+cd ..
 
 exit 0

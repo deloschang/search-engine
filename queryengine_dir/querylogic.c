@@ -17,6 +17,19 @@ Outputs: The query engine will output a ranking based on the queries that the
 user enters
 
 Design Spec: 
+The query is parsed by curateWords which puts the keywords in the queryList. It goes through
+each keyword and checks if that WordNode exists in the inverted index (via hashing).
+
+searchForKeyword then goes through each keyword and finds if the WordNode
+exists in the inverted index. If so, it grabs all the DocumentNodes and 
+puts them in the list.
+
+lookUp does the heavy lifting for the AND and OR. It uses the intersection()
+method to find any intersection between two sets. lookUp also implements
+a union method if an OR is detected as a keyword.
+
+rankByFrequency using a quicksort method with the 
+DocumentNodes to sort them by frequency
 
 Implementation Spec Pseudocode: 
 
@@ -477,31 +490,6 @@ DocumentNode** lookUp(DocumentNode** saved, char** queryList, INVERTED_INDEX* in
 
     cleanUpList(tempHolder);
   }
-
-
-  // Ranking algorithm
-  // saved has the desired list, sort by page frequency
-  /*if (saved[0] != NULL){*/
-
-    /*// count length */
-    /*int num = 0;*/
-    /*while (saved[num] != NULL){*/
-      /*num++;*/
-    /*}*/
-
-    /*// Simple ranking algorithm by page frequency*/
-    /*rankByFrequency(saved, 0, num - 1);*/
-
-    /*num = 0;*/
-    /*while (saved[num] != NULL){*/
-      /*printOutput(saved[num], urlDir);*/
-
-      /*num++;*/
-    /*}*/
-  /*} else {*/
-    /*printf("No matches from search \n \n");*/
-  /*}*/
-
 
   // reset
   BZERO(resultSlot, 1000);

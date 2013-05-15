@@ -3,7 +3,9 @@
 
 // *****************Impementation Spec********************************
 // File: file.c
-// This file contains useful information for implementing the indexer:
+// This file contains useful information for implementing the query
+// engine:
+
 // - PROTOTYPES
 
 

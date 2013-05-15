@@ -125,7 +125,34 @@ int main(int argc, char* argv[]){
     sanitizeKeywords(queryList);
 
     // (4c) Lookup the keywords, apply operators, and return results
-    lookUp(queryList, urlDir, indexReload);
+    DocumentNode* saved[1000];
+    BZERO(saved, 1000);
+    lookUp(saved, queryList, urlDir, indexReload);
+    /*lookUp(queryList, urlDir, indexReload);*/
+
+  if (saved[0] != NULL){
+
+    // count length 
+    int num = 0;
+    while (saved[num] != NULL){
+      num++;
+    }
+
+    // Simple ranking algorithm by page frequency
+    rankByFrequency(saved, 0, num - 1);
+
+    num = 0;
+    while (saved[num] != NULL){
+      printOutput(saved[num], urlDir);
+
+      num++;
+    }
+  } else {
+    printf("No matches from search \n \n");
+  }
+  cleanUpList(saved);
+  BZERO(saved, 1000);
+
     LOG("Done");
 
     // (5) Rank results via an algorithm based on word frequency with AND / OR operators

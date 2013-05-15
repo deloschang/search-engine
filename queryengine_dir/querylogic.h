@@ -27,7 +27,8 @@ void printOutput(DocumentNode* matchedDocNode, char* urlDir);
 
 void copyList(DocumentNode** result, DocumentNode** orig);
 
-int lookUp(char** queryList, char* urlDir, INVERTED_INDEX* indexReload);
+DocumentNode** lookUp(DocumentNode** saved, char** queryList, char* urlDir, INVERTED_INDEX* indexReload);
+//int lookUp(char** queryList, char* urlDir, INVERTED_INDEX* indexReload);
 
 void cleanUpQueryList(char** queryList);
 #endif

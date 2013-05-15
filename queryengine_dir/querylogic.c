@@ -314,7 +314,9 @@ void copyList(DocumentNode** result, DocumentNode** orig){
 // the union of the sets
 
 // returns 1 if the lookup was successful 
-int lookUp(char** queryList, char* urlDir, INVERTED_INDEX* indexReload){
+DocumentNode** lookUp(DocumentNode** saved, char** queryList, char* urlDir,
+/*int lookUp(char** queryList, char* urlDir, */
+INVERTED_INDEX* indexReload){
   int firstRunFlag = 1;
   int orFlag = 0;
 
@@ -333,8 +335,8 @@ int lookUp(char** queryList, char* urlDir, INVERTED_INDEX* indexReload){
   BZERO(result, 10000);
 
   // list used to be returned at end
-  DocumentNode* saved[1000];
-  BZERO(saved, 1000);
+  /*DocumentNode* saved[1000];*/
+  /*BZERO(saved, 1000);*/
 
   DocumentNode* list[1000];
   BZERO(list, 1000);
@@ -455,27 +457,26 @@ int lookUp(char** queryList, char* urlDir, INVERTED_INDEX* indexReload){
 
   // Ranking algorithm
   // saved has the desired list, sort by page frequency
-  if (saved[0] != NULL){
+  /*if (saved[0] != NULL){*/
 
-    // count length 
-    int num = 0;
-    while (saved[num] != NULL){
-      num++;
-    }
+    /*// count length */
+    /*int num = 0;*/
+    /*while (saved[num] != NULL){*/
+      /*num++;*/
+    /*}*/
 
-    // Simple ranking algorithm by page frequency
-    rankByFrequency(saved, 0, num - 1);
+    /*// Simple ranking algorithm by page frequency*/
+    /*rankByFrequency(saved, 0, num - 1);*/
 
-    // sanity check
-    num = 0;
-    while (saved[num] != NULL){
-      printOutput(saved[num], urlDir);
+    /*num = 0;*/
+    /*while (saved[num] != NULL){*/
+      /*printOutput(saved[num], urlDir);*/
 
-      num++;
-    }
-  } else {
-    printf("No matches from search \n \n");
-  }
+      /*num++;*/
+    /*}*/
+  /*} else {*/
+    /*printf("No matches from search \n \n");*/
+  /*}*/
 
 
   // reset
@@ -485,10 +486,11 @@ int lookUp(char** queryList, char* urlDir, INVERTED_INDEX* indexReload){
 
   BZERO(result, 10000);
 
-  cleanUpList(saved);
-  BZERO(saved, 1000);
+  /*cleanUpList(saved);*/
+  /*BZERO(saved, 1000);*/
 
-  return 1;
+  return saved;
+  /*return 1;*/
 }
 
 // frees up the query list keywords that

@@ -80,7 +80,7 @@ void validateArgs(int argc, char* argv[]){
 
 int main(int argc, char* argv[]){
   // (1) Validate the parameters
-  /*validateArgs(argc, argv);*/
+  validateArgs(argc, argv);
 
   // (2) Initialize the inverted index
   if ( (indexReload = initStructure(indexReload)) == NULL){
@@ -91,6 +91,7 @@ int main(int argc, char* argv[]){
   // (2b) Load the index into memory
   char* loadFile = argv[1];
   char* urlDir = argv[2];
+  int rankingResult = 0;
 
   INVERTED_INDEX* reloadResult = reloadIndexFromFile(loadFile, indexReload);
   if (reloadResult == NULL){
@@ -127,35 +128,17 @@ int main(int argc, char* argv[]){
     // (4c) Lookup the keywords, apply operators, and return results
     DocumentNode* saved[1000];
     BZERO(saved, 1000);
-    lookUp(saved, queryList, urlDir, indexReload);
-    /*lookUp(queryList, urlDir, indexReload);*/
+    lookUp(saved, queryList, indexReload);
 
-  if (saved[0] != NULL){
-
-    // count length 
-    int num = 0;
-    while (saved[num] != NULL){
-      num++;
+    // (5) Rank results via an algorithm based on word frequency with AND / OR operators
+    rankingResult = rankAndPrint(saved, urlDir); 
+    if ( rankingResult != 1){
+      fprintf(stderr, "Couldn't rank results");
+      exit(1);
     }
-
-    // Simple ranking algorithm by page frequency
-    rankByFrequency(saved, 0, num - 1);
-
-    num = 0;
-    while (saved[num] != NULL){
-      printOutput(saved[num], urlDir);
-
-      num++;
-    }
-  } else {
-    printf("No matches from search \n \n");
-  }
-  cleanUpList(saved);
-  BZERO(saved, 1000);
 
     LOG("Done");
 
-    // (5) Rank results via an algorithm based on word frequency with AND / OR operators
 
     // (6) Clean up the word list with keywords
     cleanUpQueryList(queryList);

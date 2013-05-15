@@ -14,6 +14,8 @@ void cleanUpList(DocumentNode** usedList);
 
 int rankSplit(DocumentNode** saved, int l, int r);
 
+int rankAndPrint(DocumentNode** saved, char* urlDir);
+
 void rankByFrequency(DocumentNode** saved, int l, int r);
 
 DocumentNode* copyDocNode(DocumentNode* docNode, DocumentNode* orig);
@@ -27,7 +29,7 @@ void printOutput(DocumentNode* matchedDocNode, char* urlDir);
 
 void copyList(DocumentNode** result, DocumentNode** orig);
 
-DocumentNode** lookUp(DocumentNode** saved, char** queryList, char* urlDir, INVERTED_INDEX* indexReload);
+DocumentNode** lookUp(DocumentNode** saved, char** queryList, INVERTED_INDEX* indexReload);
 //int lookUp(char** queryList, char* urlDir, INVERTED_INDEX* indexReload);
 
 void cleanUpQueryList(char** queryList);

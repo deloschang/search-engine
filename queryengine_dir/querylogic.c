@@ -143,6 +143,34 @@ void rankByFrequency(DocumentNode** saved, int l, int r){
   }
 }
 
+int rankAndPrint(DocumentNode** saved, char* urlDir){
+  if (saved[0] != NULL){
+    // count length 
+    int num = 0;
+    while (saved[num] != NULL){
+      num++;
+    }
+
+    // Simple ranking algorithm by page frequency
+    rankByFrequency(saved, 0, num - 1);
+
+    num = 0;
+    while (saved[num] != NULL){
+      printOutput(saved[num], urlDir);
+
+      num++;
+    }
+  } else {
+    printf("No matches from search \n \n");
+  }
+
+  // final clean up
+  cleanUpList(saved);
+  BZERO(saved, 1000);
+  
+  return 1;
+}
+
 // Duplicates the Document nodes
 DocumentNode* copyDocNode(DocumentNode* docNode, DocumentNode* orig){
   docNode = newDocNode(docNode, orig->document_id, orig->page_word_frequency);
@@ -314,9 +342,7 @@ void copyList(DocumentNode** result, DocumentNode** orig){
 // the union of the sets
 
 // returns 1 if the lookup was successful 
-DocumentNode** lookUp(DocumentNode** saved, char** queryList, char* urlDir,
-/*int lookUp(char** queryList, char* urlDir, */
-INVERTED_INDEX* indexReload){
+DocumentNode** lookUp(DocumentNode** saved, char** queryList, INVERTED_INDEX* indexReload){
   int firstRunFlag = 1;
   int orFlag = 0;
 
@@ -335,9 +361,6 @@ INVERTED_INDEX* indexReload){
   BZERO(result, 10000);
 
   // list used to be returned at end
-  /*DocumentNode* saved[1000];*/
-  /*BZERO(saved, 1000);*/
-
   DocumentNode* list[1000];
   BZERO(list, 1000);
 

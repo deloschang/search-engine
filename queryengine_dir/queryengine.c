@@ -124,16 +124,17 @@ int main(int argc, char* argv[]){
     // (4b) Convert keywords from uppercase to lowercase (except OR)
     sanitizeKeywords(queryList);
 
-    // (4b) Validate the keywords
+    // (4c) Lookup the keywords, apply operators, and return results
     lookUp(queryList, urlDir, indexReload);
     LOG("Done");
 
-    // Clean up the word list with keywords
+    // (5) Rank results via an algorithm based on word frequency with AND / OR operators
+
+    // (6) Clean up the word list with keywords
     cleanUpQueryList(queryList);
     BZERO(query, 1000);
   }
 
-  // (5) Rank results via an algorithm based on word frequency with AND / OR operators
 
   // (7) Clean up the reloaded index
   LOG("Cleaning up");

@@ -20,6 +20,7 @@
 //   DocumentNode** intersection(DocumentNode** final, DocumentNode** list,
 //   char** curateWords(char** queryList, char* query);
 //   void rankByFrequency(DocumentNode** saved, int l, int r);
+//   int lookUp(char** queryList, char* urlDir, INVERTED_INDEX* indexReload);
 //
 //  If any of the tests fail it prints status 
 //  If all tests pass it prints status.
@@ -88,6 +89,10 @@
 //  Test case: TestRanking:1
 //  This test case calls rankByFrequency() for the condition the DocumentNode
 //  page frequencies are different and need to be ranked accordingly
+//
+//  The following test cases (1) for function:
+//
+//   int lookUp(char** queryList, char* urlDir, INVERTED_INDEX* indexReload);
 //
 //  Test case:DREMOVE:4
 //  This test case is tries to see how DRemove() works with multiple nodes of the same hash value, 
@@ -340,23 +345,29 @@ int TestCurate1() {
   SHOULD_BE(strcmp(queryList[2],"mouse") == 0);
   SHOULD_BE(strcmp(queryList[3],"world") == 0);
 
+  cleanUpQueryList(queryList);
   END_TEST_CASE;
 }
 
 // Test case: TestCurate:2
 // This test case calls curateWords() for the condition where the query
-// is empty.
+// are invalid (non-alpha characters).
 int TestCurate2() {
   START_TEST_CASE;
 
-  char query[1000] = "";
-  sanitize(query);
+  char empty[1000] = "$$";
+  sanitize(empty);
 
-  char* queryList[1000];
-  curateWords(queryList, query);
+  char* list[1000];
+  BZERO(list, 1000);
+  list[0] = (char*) malloc(sizeof(char) * 1000);
+  BZERO(list[0], 1000); 
 
-  SHOULD_BE(strcmp(queryList[0],"") == 0);
+  curateWords(list, empty);
 
+  SHOULD_BE(strcmp(list[0], "") == 0);
+
+  free(list[0]);
   END_TEST_CASE;
 }
 
@@ -393,6 +404,66 @@ int TestRanking1() {
   free(docNode3);
   free(docNode4);
 
+  END_TEST_CASE;
+}
+
+// Test case: TestLookUp:1
+// This test case calls intersection() for the condition where both lists
+// are not empty. They do not have the same DocumentNode. The intersection
+// and thus resultant list should be empty 
+int TestLookUp1() {
+  START_TEST_CASE;
+  create();
+
+  int wordHash = hash1("dog") % MAX_NUMBER_OF_SLOTS;
+
+  DocumentNode* docNode = NULL;
+  docNode = newDocNode(docNode, 15, 1);
+
+  WordNode* wordNode = NULL;
+  wordNode = newWordNode(wordNode, docNode, "dog");
+
+  indexReload->hash[wordHash] = wordNode;
+
+  int wordHash = hash1("cat") % MAX_NUMBER_OF_SLOTS;
+
+  DocumentNode* docNode2 = NULL;
+  docNode2 = newDocNode(docNode2, 20, 2);
+
+  WordNode* wordNode2 = NULL;
+  wordNode2 = newWordNode(wordNode2, docNode2, "cat");
+
+  indexReload->hash[wordHash] = wordNode2;
+
+  char query[1000] = "dog OR cat";
+  sanitize(query);
+
+  char* queryList[1000];
+  curateWords(queryList, query);
+
+  int lookUp(queryList, ../crawler_dir/data, indexReload);
+
+  int resultSlot[1000];
+  DocumentNode* result[10000];
+  BZERO(result, 10000);
+  DocumentNode* list1[1000];
+  BZERO(list1, 1000);
+  DocumentNode* list2[1000];
+  BZERO(list2, 1000);
+
+  DocumentNode* docNode2 = NULL;
+  docNode2 = newDocNode(docNode2, 16, 1);
+
+  list1[0] = docNode;
+  list2[0] = docNode2;
+
+  free(wordNode);
+  free(wordNode2);
+
+  free(docNode);
+  free(docNode2);
+
+  cleanUpIndex(indexReload);
   END_TEST_CASE;
 }
 

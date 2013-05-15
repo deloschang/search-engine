@@ -38,9 +38,6 @@
 //  up the environment the code expects when integrated in the real
 //  system.
 //
-  /*The test harness dummies out the real hash function and through*/
-  /*use of a variable called hash manipulates where DNODEs are */
-  /*inserted into the DICTIONARY. For example, collisions can be controlled. */
 //
 //  The following test cases  (1) are for function:
 //
@@ -728,23 +725,25 @@ int TestLookUp5() {
   END_TEST_CASE;
 }
 
-// This is the main test harness for the set of dictionary functions. It tests all the code
-// in dictionary.c:
+// This is the main test harness for the set of query engine functions. It tests all the code
+// in querylogic.c:
 //
 //  It uses these files but they are not unit tested in this test harness:
 //
-//  DICTIONARY* InitDictionary();
-//  int make_hash(char* c);
-//  void CleanDictionary(DICTIONARY* dict)
+//   void sanitizeKeywords(char** queryList);
+//   void cleanUpIndex(INVERTED_INDEX* index);
+//   DocumentNode* newDocNode(DocumentNode* docNode, int docId, int page_freq);
+//   void cleanUpQueryList(char** queryList);
+//   
 // 
-//  It test the following functions:
+//  It tests the following functions:
 //
-//   void DAdd(DICTIONARY* dict, void* data, char* key);
-//   void DRemove(DICTIONARY* dict, char* key);
-//   void* GetDataWithKey(DICTIONARY* dict, char* key);
+//   INVERTED_INDEX* initStructure(INVERTED_INDEX* index);
+//   DocumentNode** intersection(DocumentNode** final, DocumentNode** list,
+//   char** curateWords(char** queryList, char* query);
+//   void rankByFrequency(DocumentNode** saved, int l, int r);
+//   DocumentNode** lookUp(DocumentNode** saved, char** queryList, INVERTED_INDEX* indexReload);
 //
-//  If any of the tests fail it prints status 
-//  If all tests pass it prints status.
 
 int main(int argc, char** argv) {
   int cnt = 0;
